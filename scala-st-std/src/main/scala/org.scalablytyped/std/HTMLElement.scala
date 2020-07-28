@@ -88,7 +88,6 @@ trait HTMLElement extends Element {
   val offsetParent: Element = js.native
   val offsetTop: Double = js.native
   val offsetWidth: Double = js.native
-  var outerHTML: java.lang.String = js.native
   var outerText: java.lang.String = js.native
   var spellcheck: scala.Boolean = js.native
   val style: CSSStyleDeclaration = js.native
@@ -705,6 +704,5 @@ trait HTMLElement extends Element {
   def ontimeupdate(ev: Event): js.Any = js.native
   def onvolumechange(ev: Event): js.Any = js.native
   def onwaiting(ev: Event): js.Any = js.native
-  def setActive(): Unit = js.native
 }
 

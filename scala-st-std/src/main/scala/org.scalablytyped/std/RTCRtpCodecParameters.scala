@@ -11,6 +11,7 @@ trait RTCRtpCodecParameters extends js.Object {
   var numChannels: js.UndefOr[Double] = js.undefined
   var parameters: js.UndefOr[js.Any] = js.undefined
   var payloadType: js.UndefOr[js.Any] = js.undefined
+  var ptime: js.UndefOr[Double] = js.undefined
   var rtcpFeedback: js.UndefOr[js.Array[RTCRtcpFeedback]] = js.undefined
 }
 
@@ -55,6 +56,10 @@ object RTCRtpCodecParameters {
     def setPayloadType(value: js.Any): Self = this.set("payloadType", value.asInstanceOf[js.Any])
     @scala.inline
     def deletePayloadType: Self = this.set("payloadType", js.undefined)
+    @scala.inline
+    def setPtime(value: Double): Self = this.set("ptime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePtime: Self = this.set("ptime", js.undefined)
     @scala.inline
     def setRtcpFeedbackVarargs(value: RTCRtcpFeedback*): Self = this.set("rtcpFeedback", js.Array(value :_*))
     @scala.inline

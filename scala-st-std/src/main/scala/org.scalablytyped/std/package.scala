@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 package object std {
   type AAGUID = java.lang.String
   type AlgorithmIdentifier = java.lang.String | org.scalablytyped.std.Algorithm
+  type BodyInit = js.Any
+  type ByteString = java.lang.String
   type CDATASection = org.scalablytyped.std.Text
   type CSSSupportsRule = org.scalablytyped.std.CSSConditionRule
   type ChannelMergerNode = org.scalablytyped.std.AudioNode
@@ -17,7 +19,7 @@ package object std {
   type ConstrainDouble = scala.Double | org.scalablytyped.std.ConstrainDoubleRange
   type ConstrainLong = scala.Double | org.scalablytyped.std.ConstrainLongRange
   type CryptoOperationData = org.scalablytyped.std.ArrayBufferView
-  type DOMStringMap = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  type DOMStringMap = org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]
   type DecodeErrorCallback = js.Function1[/* error */ org.scalablytyped.std.DOMException, scala.Unit]
   type DecodeSuccessCallback = js.Function1[/* decodedData */ org.scalablytyped.std.AudioBuffer, scala.Unit]
   type ErrorEventHandler = js.Function5[
@@ -48,7 +50,9 @@ package object std {
   type GLubyte = scala.Double
   type GLuint = scala.Double
   type GLushort = scala.Double
-  type HTMLTableDataCellElement = org.scalablytyped.std.HTMLTableCellElement
+  type Generator = org.scalablytyped.std.Iterator[js.Any]
+  type HTMLAreasCollection = org.scalablytyped.std.HTMLCollectionBase
+  type HeadersInit = js.Any
   type IDBKeyPath = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - scala.Double
@@ -57,6 +61,11 @@ package object std {
     - `org.scalablytyped`.std.IDBArrayKey
   */
   type IDBValidKey = org.scalablytyped.std._IDBValidKey | scala.Double | java.lang.String
+  type IntersectionObserverCallback = js.Function2[
+    /* entries */ js.Array[org.scalablytyped.std.IntersectionObserverEntry], 
+    /* observer */ org.scalablytyped.std.IntersectionObserver, 
+    scala.Unit
+  ]
   type KeyFormat = java.lang.String
   type KeyType = java.lang.String
   type KeyUsage = java.lang.String
@@ -80,6 +89,7 @@ package object std {
   ]
   type NavigatorUserMediaErrorCallback = js.Function1[/* error */ org.scalablytyped.std.MediaStreamError, scala.Unit]
   type NavigatorUserMediaSuccessCallback = js.Function1[/* stream */ org.scalablytyped.std.MediaStream, scala.Unit]
+  type NotificationPermissionCallback = js.Function1[/* permission */ java.lang.String, scala.Unit]
   type ParameterDecorator = js.Function3[
     /* target */ js.Object, 
     /* propertyKey */ java.lang.String | js.Symbol, 
@@ -92,6 +102,7 @@ package object std {
   type Partial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? T[P]}
     */ org.scalablytyped.std.stdStrings.Partial with org.scalablytyped.runtime.TopLevel[T]
+  type PaymentRequestUpdateEventInit = org.scalablytyped.std.EventInit
   type PerformanceMark = org.scalablytyped.std.PerformanceEntry
   type PerformanceMeasure = org.scalablytyped.std.PerformanceEntry
   /**
@@ -113,6 +124,9 @@ package object std {
   type PropertyDecorator = js.Function2[/* target */ js.Object, /* propertyKey */ java.lang.String | js.Symbol, scala.Unit]
   type PropertyDescriptorMap = org.scalablytyped.runtime.StringDictionary[org.scalablytyped.std.PropertyDescriptor]
   type PropertyKey = java.lang.String | scala.Double | js.Symbol
+  type RTCPeerConnectionErrorCallback = js.Function1[/* error */ org.scalablytyped.std.DOMError, scala.Unit]
+  type RTCSessionDescriptionCallback = js.Function1[/* sdp */ org.scalablytyped.std.RTCSessionDescription, scala.Unit]
+  type RTCStatsCallback = js.Function1[/* report */ org.scalablytyped.std.RTCStatsReport, scala.Unit]
   type RangeError = org.scalablytyped.std.Error
   /**
     * Make all properties in T readonly
@@ -125,20 +139,21 @@ package object std {
     */
   type Record[K /* <: java.lang.String */, T] = org.scalablytyped.runtime.StringDictionary[T]
   type ReferenceError = org.scalablytyped.std.Error
-  type SVGFEFuncAElement = org.scalablytyped.std.SVGComponentTransferFunctionElement
-  type SVGFEFuncBElement = org.scalablytyped.std.SVGComponentTransferFunctionElement
-  type SVGFEFuncGElement = org.scalablytyped.std.SVGComponentTransferFunctionElement
-  type SVGFEFuncRElement = org.scalablytyped.std.SVGComponentTransferFunctionElement
+  type RequestInfo = org.scalablytyped.std.Request | java.lang.String
   type SVGPathSegClosePath = org.scalablytyped.std.SVGPathSeg
-  type SVGTSpanElement = org.scalablytyped.std.SVGTextPositioningElement
   type SyntaxError = org.scalablytyped.std.Error
   type TypeError = org.scalablytyped.std.Error
   type URIError = org.scalablytyped.std.Error
+  type USVString = java.lang.String
+  type VoidFunction = js.Function0[scala.Unit]
   type WebGLBuffer = org.scalablytyped.std.WebGLObject
   type WebGLFramebuffer = org.scalablytyped.std.WebGLObject
   type WebGLProgram = org.scalablytyped.std.WebGLObject
   type WebGLRenderbuffer = org.scalablytyped.std.WebGLObject
   type WebGLShader = org.scalablytyped.std.WebGLObject
   type WebGLTexture = org.scalablytyped.std.WebGLObject
+  type WebKitEntriesCallback = js.Function1[/* evt */ org.scalablytyped.std.Event, scala.Unit]
+  type WebKitErrorCallback = js.Function1[/* evt */ org.scalablytyped.std.Event, scala.Unit]
+  type WebKitFileCallback = js.Function1[/* evt */ org.scalablytyped.std.Event, scala.Unit]
   type payloadtype = scala.Double
 }

@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait MSAppAsyncOperationEventMap extends js.Object {
   var complete: Event
-  var error: ErrorEvent
+  var error: Event
 }
 
 object MSAppAsyncOperationEventMap {
   @scala.inline
-  def apply(complete: Event, error: ErrorEvent): MSAppAsyncOperationEventMap = {
+  def apply(complete: Event, error: Event): MSAppAsyncOperationEventMap = {
     val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[MSAppAsyncOperationEventMap]
   }
@@ -29,7 +29,7 @@ object MSAppAsyncOperationEventMap {
     @scala.inline
     def setComplete(value: Event): Self = this.set("complete", value.asInstanceOf[js.Any])
     @scala.inline
-    def setError(value: ErrorEvent): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setError(value: Event): Self = this.set("error", value.asInstanceOf[js.Any])
   }
   
 }

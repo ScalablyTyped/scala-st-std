@@ -19,6 +19,5 @@ object XMLHttpRequest
   val LOADING: Double = js.native
   val OPENED: Double = js.native
   val UNSENT: Double = js.native
-  def create(): org.scalablytyped.std.XMLHttpRequest = js.native
 }
 

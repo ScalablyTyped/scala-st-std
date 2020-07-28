@@ -24,7 +24,7 @@ trait HTMLFormElement
   /**
     * Retrieves a collection, in source order, of all controls in a given form.
     */
-  val elements: HTMLCollection = js.native
+  val elements: HTMLFormControlsCollection = js.native
   /**
     * Sets or retrieves the MIME encoding for the form.
     */

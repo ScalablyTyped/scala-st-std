@@ -3,6 +3,7 @@ package org.scalablytyped.std.global
 import org.scalablytyped.std.ApplicationCache
 import org.scalablytyped.std.Console
 import org.scalablytyped.std.Crypto
+import org.scalablytyped.std.CustomElementRegistry
 import org.scalablytyped.std.Document
 import org.scalablytyped.std.EnumeratorConstructor
 import org.scalablytyped.std.ErrorEventHandler
@@ -19,6 +20,7 @@ import org.scalablytyped.std.PromiseConstructor
 import org.scalablytyped.std.ProxyConstructor
 import org.scalablytyped.std.Screen
 import org.scalablytyped.std.SetConstructor
+import org.scalablytyped.std.SpeechSynthesis
 import org.scalablytyped.std.StyleMedia
 import org.scalablytyped.std.VBArrayConstructor
 import org.scalablytyped.std.WeakMapConstructor
@@ -45,10 +47,12 @@ object ^ extends js.Object {
   var WeakMap: WeakMapConstructor = js.native
   var WeakSet: WeakSetConstructor = js.native
   var applicationCache: ApplicationCache = js.native
+  var caches: org.scalablytyped.std.CacheStorage = js.native
   var clientInformation: Navigator = js.native
   var closed: scala.Boolean = js.native
   var console: Console = js.native
   var crypto: Crypto = js.native
+  var customElements: CustomElementRegistry = js.native
   var defaultStatus: java.lang.String = js.native
   var devicePixelRatio: Double = js.native
   var doNotTrack: java.lang.String = js.native
@@ -61,11 +65,13 @@ object ^ extends js.Object {
   var indexedDB: org.scalablytyped.std.IDBFactory = js.native
   var innerHeight: Double = js.native
   var innerWidth: Double = js.native
+  var isSecureContext: scala.Boolean = js.native
   var length: Double = js.native
   var localStorage: org.scalablytyped.std.Storage = js.native
   var location: Location = js.native
   var locationbar: org.scalablytyped.std.BarProp = js.native
   var menubar: org.scalablytyped.std.BarProp = js.native
+  var msContentScript: org.scalablytyped.std.ExtensionScriptApis = js.native
   var msCredentials: MSCredentials = js.native
   var navigator: Navigator = js.native
   var offscreenBuffering: java.lang.String | scala.Boolean = js.native
@@ -188,6 +194,7 @@ object ^ extends js.Object {
   var scrollbars: org.scalablytyped.std.BarProp = js.native
   var self: Window = js.native
   var sessionStorage: org.scalablytyped.std.Storage = js.native
+  var speechSynthesis: SpeechSynthesis = js.native
   var status: java.lang.String = js.native
   var statusbar: org.scalablytyped.std.BarProp = js.native
   var styleMedia: StyleMedia = js.native

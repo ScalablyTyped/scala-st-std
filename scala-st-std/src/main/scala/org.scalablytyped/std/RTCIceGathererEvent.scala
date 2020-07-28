@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RTCIceGathererEvent extends Event {
-  val candidate: RTCIceCandidate | RTCIceCandidateComplete
+  val candidate: RTCIceCandidateDictionary | RTCIceCandidateComplete
 }
 
 object RTCIceGathererEvent {
@@ -17,7 +17,7 @@ object RTCIceGathererEvent {
     bubbles: scala.Boolean,
     cancelBubble: scala.Boolean,
     cancelable: scala.Boolean,
-    candidate: RTCIceCandidate | RTCIceCandidateComplete,
+    candidate: RTCIceCandidateDictionary | RTCIceCandidateComplete,
     currentTarget: EventTarget,
     deepPath: () => js.Array[EventTarget],
     defaultPrevented: scala.Boolean,
@@ -49,7 +49,7 @@ object RTCIceGathererEvent {
         x
     }
     @scala.inline
-    def setCandidate(value: RTCIceCandidate | RTCIceCandidateComplete): Self = this.set("candidate", value.asInstanceOf[js.Any])
+    def setCandidate(value: RTCIceCandidateDictionary | RTCIceCandidateComplete): Self = this.set("candidate", value.asInstanceOf[js.Any])
   }
   
 }

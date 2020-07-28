@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class WebGLContextEvent protected ()
   extends org.scalablytyped.std.WebGLContextEvent {
-  def this(`type`: java.lang.String) = this()
-  def this(`type`: java.lang.String, eventInitDict: WebGLContextEventInit) = this()
+  def this(typeArg: java.lang.String) = this()
+  def this(typeArg: java.lang.String, eventInitDict: WebGLContextEventInit) = this()
   /* CompleteClass */
   override val AT_TARGET: Double = js.native
   /* CompleteClass */
@@ -62,9 +62,9 @@ class WebGLContextEvent protected ()
 @JSGlobal("WebGLContextEvent")
 @js.native
 object WebGLContextEvent
-  extends Instantiable1[/* type */ java.lang.String, org.scalablytyped.std.WebGLContextEvent]
+  extends Instantiable1[/* typeArg */ java.lang.String, org.scalablytyped.std.WebGLContextEvent]
      with Instantiable2[
-      /* type */ java.lang.String, 
+      /* typeArg */ java.lang.String, 
       /* eventInitDict */ WebGLContextEventInit, 
       org.scalablytyped.std.WebGLContextEvent
     ]

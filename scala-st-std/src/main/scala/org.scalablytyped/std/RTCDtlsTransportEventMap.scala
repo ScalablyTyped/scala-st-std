@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait RTCDtlsTransportEventMap extends js.Object {
   var dtlsstatechange: RTCDtlsTransportStateChangedEvent
-  var error: ErrorEvent
+  var error: Event
 }
 
 object RTCDtlsTransportEventMap {
   @scala.inline
-  def apply(dtlsstatechange: RTCDtlsTransportStateChangedEvent, error: ErrorEvent): RTCDtlsTransportEventMap = {
+  def apply(dtlsstatechange: RTCDtlsTransportStateChangedEvent, error: Event): RTCDtlsTransportEventMap = {
     val __obj = js.Dynamic.literal(dtlsstatechange = dtlsstatechange.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCDtlsTransportEventMap]
   }
@@ -29,7 +29,7 @@ object RTCDtlsTransportEventMap {
     @scala.inline
     def setDtlsstatechange(value: RTCDtlsTransportStateChangedEvent): Self = this.set("dtlsstatechange", value.asInstanceOf[js.Any])
     @scala.inline
-    def setError(value: ErrorEvent): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setError(value: Event): Self = this.set("error", value.asInstanceOf[js.Any])
   }
   
 }

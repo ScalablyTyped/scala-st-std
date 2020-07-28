@@ -4,9 +4,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/////////////////////////////
-/// IE DOM APIs
-/////////////////////////////
 trait Algorithm extends js.Object {
   var name: java.lang.String
 }

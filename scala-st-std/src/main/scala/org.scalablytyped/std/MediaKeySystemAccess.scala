@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation._
 
 trait MediaKeySystemAccess extends js.Object {
   val keySystem: java.lang.String
-  def createMediaKeys(): js.Thenable[MediaKeys]
+  def createMediaKeys(): js.Promise[MediaKeys]
   def getConfiguration(): MediaKeySystemConfiguration
 }
 
 object MediaKeySystemAccess {
   @scala.inline
   def apply(
-    createMediaKeys: () => js.Thenable[MediaKeys],
+    createMediaKeys: () => js.Promise[MediaKeys],
     getConfiguration: () => MediaKeySystemConfiguration,
     keySystem: java.lang.String
   ): MediaKeySystemAccess = {
@@ -32,7 +32,7 @@ object MediaKeySystemAccess {
         x
     }
     @scala.inline
-    def setCreateMediaKeys(value: () => js.Thenable[MediaKeys]): Self = this.set("createMediaKeys", js.Any.fromFunction0(value))
+    def setCreateMediaKeys(value: () => js.Promise[MediaKeys]): Self = this.set("createMediaKeys", js.Any.fromFunction0(value))
     @scala.inline
     def setGetConfiguration(value: () => MediaKeySystemConfiguration): Self = this.set("getConfiguration", js.Any.fromFunction0(value))
     @scala.inline

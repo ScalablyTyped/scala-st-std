@@ -14,21 +14,25 @@ class SVGFEImageElement ()
   /* CompleteClass */
   override val children: org.scalablytyped.std.HTMLCollection = js.native
   /* CompleteClass */
-  override val externalResourcesRequired: org.scalablytyped.std.SVGAnimatedBoolean = js.native
+  override val firstElementChild: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
-  override val firstElementChild: org.scalablytyped.std.Element = js.native
+  override val height: org.scalablytyped.std.SVGAnimatedLength = js.native
   /* CompleteClass */
   override val href: org.scalablytyped.std.SVGAnimatedString = js.native
   /* CompleteClass */
-  override val lastElementChild: org.scalablytyped.std.Element = js.native
+  override val lastElementChild: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
-  override val nextElementSibling: org.scalablytyped.std.Element = js.native
+  override val nextElementSibling: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
-  override val previousElementSibling: org.scalablytyped.std.Element = js.native
+  override val previousElementSibling: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
-  override var xmllang: java.lang.String = js.native
+  override val result: org.scalablytyped.std.SVGAnimatedString = js.native
   /* CompleteClass */
-  override var xmlspace: java.lang.String = js.native
+  override val width: org.scalablytyped.std.SVGAnimatedLength = js.native
+  /* CompleteClass */
+  override val x: org.scalablytyped.std.SVGAnimatedLength = js.native
+  /* CompleteClass */
+  override val y: org.scalablytyped.std.SVGAnimatedLength = js.native
   /* CompleteClass */
   override def remove(): Unit = js.native
 }

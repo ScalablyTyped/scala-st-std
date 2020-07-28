@@ -13,7 +13,7 @@ class MediaKeySystemAccess ()
   /* CompleteClass */
   override val keySystem: java.lang.String = js.native
   /* CompleteClass */
-  override def createMediaKeys(): js.Thenable[org.scalablytyped.std.MediaKeys] = js.native
+  override def createMediaKeys(): js.Promise[org.scalablytyped.std.MediaKeys] = js.native
   /* CompleteClass */
   override def getConfiguration(): MediaKeySystemConfiguration = js.native
 }

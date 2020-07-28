@@ -53,7 +53,7 @@ trait MediaStreamTrack extends EventTarget {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     useCapture: scala.Boolean
   ): Unit = js.native
-  def applyConstraints(constraints: MediaTrackConstraints): js.Thenable[Unit] = js.native
+  def applyConstraints(constraints: MediaTrackConstraints): js.Promise[Unit] = js.native
   def getCapabilities(): MediaTrackCapabilities = js.native
   def getConstraints(): MediaTrackConstraints = js.native
   def getSettings(): MediaTrackSettings = js.native

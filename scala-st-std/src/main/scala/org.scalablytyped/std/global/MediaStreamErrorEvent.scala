@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class MediaStreamErrorEvent protected ()
   extends org.scalablytyped.std.MediaStreamErrorEvent {
-  def this(`type`: java.lang.String) = this()
-  def this(`type`: java.lang.String, eventInitDict: MediaStreamErrorEventInit) = this()
+  def this(typeArg: java.lang.String) = this()
+  def this(typeArg: java.lang.String, eventInitDict: MediaStreamErrorEventInit) = this()
   /* CompleteClass */
   override val AT_TARGET: Double = js.native
   /* CompleteClass */
@@ -62,9 +62,9 @@ class MediaStreamErrorEvent protected ()
 @JSGlobal("MediaStreamErrorEvent")
 @js.native
 object MediaStreamErrorEvent
-  extends Instantiable1[/* type */ java.lang.String, org.scalablytyped.std.MediaStreamErrorEvent]
+  extends Instantiable1[/* typeArg */ java.lang.String, org.scalablytyped.std.MediaStreamErrorEvent]
      with Instantiable2[
-      /* type */ java.lang.String, 
+      /* typeArg */ java.lang.String, 
       /* eventInitDict */ MediaStreamErrorEventInit, 
       org.scalablytyped.std.MediaStreamErrorEvent
     ]

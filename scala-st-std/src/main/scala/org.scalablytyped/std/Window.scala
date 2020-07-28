@@ -101,13 +101,16 @@ trait Window
      with WindowConsole
      with GlobalEventHandlers
      with IDBEnvironment
-     with WindowBase64 {
+     with WindowBase64
+     with GlobalFetch {
   var Blob: InstantiableBlob = js.native
   var URL: Instantiable = js.native
   val applicationCache: ApplicationCache = js.native
+  val caches: CacheStorage = js.native
   val clientInformation: Navigator = js.native
   val closed: scala.Boolean = js.native
   val crypto: Crypto = js.native
+  var customElements: CustomElementRegistry = js.native
   var defaultStatus: java.lang.String = js.native
   val devicePixelRatio: Double = js.native
   val doNotTrack: java.lang.String = js.native
@@ -119,10 +122,12 @@ trait Window
   val history: History = js.native
   val innerHeight: Double = js.native
   val innerWidth: Double = js.native
+  val isSecureContext: scala.Boolean = js.native
   val length: Double = js.native
   val location: Location = js.native
   val locationbar: BarProp = js.native
   val menubar: BarProp = js.native
+  val msContentScript: ExtensionScriptApis = js.native
   val msCredentials: MSCredentials = js.native
   var name: java.lang.String = js.native
   val navigator: Navigator = js.native
@@ -147,6 +152,7 @@ trait Window
   val scrollY: Double = js.native
   val scrollbars: BarProp = js.native
   val self: Window = js.native
+  val speechSynthesis: SpeechSynthesis = js.native
   var status: java.lang.String = js.native
   val statusbar: BarProp = js.native
   val styleMedia: StyleMedia = js.native
@@ -910,6 +916,63 @@ trait Window
   def close(): Unit = js.native
   def confirm(): scala.Boolean = js.native
   def confirm(message: java.lang.String): scala.Boolean = js.native
+  def createImageBitmap(image: Blob): js.Promise[ImageBitmap] = js.native
+  def createImageBitmap(image: Blob, options: ImageBitmapOptions): js.Promise[ImageBitmap] = js.native
+  def createImageBitmap(image: Blob, sx: Double, sy: Double, sw: Double, sh: Double): js.Promise[ImageBitmap] = js.native
+  def createImageBitmap(image: Blob, sx: Double, sy: Double, sw: Double, sh: Double, options: ImageBitmapOptions): js.Promise[ImageBitmap] = js.native
+  def createImageBitmap(image: HTMLCanvasElement): js.Promise[ImageBitmap] = js.native
+  def createImageBitmap(image: HTMLCanvasElement, options: ImageBitmapOptions): js.Promise[ImageBitmap] = js.native
+  def createImageBitmap(image: HTMLCanvasElement, sx: Double, sy: Double, sw: Double, sh: Double): js.Promise[ImageBitmap] = js.native
+  def createImageBitmap(
+    image: HTMLCanvasElement,
+    sx: Double,
+    sy: Double,
+    sw: Double,
+    sh: Double,
+    options: ImageBitmapOptions
+  ): js.Promise[ImageBitmap] = js.native
+  def createImageBitmap(image: HTMLImageElement): js.Promise[ImageBitmap] = js.native
+  def createImageBitmap(image: HTMLImageElement, options: ImageBitmapOptions): js.Promise[ImageBitmap] = js.native
+  def createImageBitmap(image: HTMLImageElement, sx: Double, sy: Double, sw: Double, sh: Double): js.Promise[ImageBitmap] = js.native
+  def createImageBitmap(
+    image: HTMLImageElement,
+    sx: Double,
+    sy: Double,
+    sw: Double,
+    sh: Double,
+    options: ImageBitmapOptions
+  ): js.Promise[ImageBitmap] = js.native
+  def createImageBitmap(image: HTMLVideoElement): js.Promise[ImageBitmap] = js.native
+  def createImageBitmap(image: HTMLVideoElement, options: ImageBitmapOptions): js.Promise[ImageBitmap] = js.native
+  def createImageBitmap(image: HTMLVideoElement, sx: Double, sy: Double, sw: Double, sh: Double): js.Promise[ImageBitmap] = js.native
+  def createImageBitmap(
+    image: HTMLVideoElement,
+    sx: Double,
+    sy: Double,
+    sw: Double,
+    sh: Double,
+    options: ImageBitmapOptions
+  ): js.Promise[ImageBitmap] = js.native
+  def createImageBitmap(image: ImageBitmap): js.Promise[ImageBitmap] = js.native
+  def createImageBitmap(image: ImageBitmap, options: ImageBitmapOptions): js.Promise[ImageBitmap] = js.native
+  def createImageBitmap(image: ImageBitmap, sx: Double, sy: Double, sw: Double, sh: Double): js.Promise[ImageBitmap] = js.native
+  def createImageBitmap(image: ImageBitmap, sx: Double, sy: Double, sw: Double, sh: Double, options: ImageBitmapOptions): js.Promise[ImageBitmap] = js.native
+  def createImageBitmap(image: ImageData): js.Promise[ImageBitmap] = js.native
+  def createImageBitmap(image: ImageData, options: ImageBitmapOptions): js.Promise[ImageBitmap] = js.native
+  def createImageBitmap(image: ImageData, sx: Double, sy: Double, sw: Double, sh: Double): js.Promise[ImageBitmap] = js.native
+  def createImageBitmap(image: ImageData, sx: Double, sy: Double, sw: Double, sh: Double, options: ImageBitmapOptions): js.Promise[ImageBitmap] = js.native
+  def createImageBitmap(image: SVGImageElement): js.Promise[ImageBitmap] = js.native
+  def createImageBitmap(image: SVGImageElement, options: ImageBitmapOptions): js.Promise[ImageBitmap] = js.native
+  def createImageBitmap(image: SVGImageElement, sx: Double, sy: Double, sw: Double, sh: Double): js.Promise[ImageBitmap] = js.native
+  def createImageBitmap(
+    image: SVGImageElement,
+    sx: Double,
+    sy: Double,
+    sw: Double,
+    sh: Double,
+    options: ImageBitmapOptions
+  ): js.Promise[ImageBitmap] = js.native
+  def departFocus(navigationReason: java.lang.String, origin: FocusNavigationOrigin): Unit = js.native
   def focus(): Unit = js.native
   def getComputedStyle(elt: Element): CSSStyleDeclaration = js.native
   def getComputedStyle(elt: Element, pseudoElt: java.lang.String): CSSStyleDeclaration = js.native
@@ -1172,6 +1235,7 @@ trait Window
   def scrollTo(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
   def scrollTo(x: Double): Unit = js.native
   def scrollTo(x: Double, y: Double): Unit = js.native
+  def stop(): Unit = js.native
   def webkitCancelAnimationFrame(handle: Double): Unit = js.native
   def webkitConvertPointFromNodeToPage(node: Node, pt: WebKitPoint): WebKitPoint = js.native
   def webkitConvertPointFromPageToNode(node: Node, pt: WebKitPoint): WebKitPoint = js.native

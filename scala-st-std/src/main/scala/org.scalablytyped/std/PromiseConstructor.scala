@@ -24,7 +24,7 @@ Instantiable1[
   @JSName(js.Symbol.species)
   val species: js.Function = js.native
   /**
-    * Creates a Promise that is resolved with an array of results when all of the provided Promises 
+    * Creates a Promise that is resolved with an array of results when all of the provided Promises
     * resolve, or rejected when any Promise is rejected.
     * @param values An array of Promises.
     * @returns A new Promise.
@@ -166,7 +166,7 @@ Instantiable1[
     ]
   ): js.Promise[js.Tuple10[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10]] = js.native
   /**
-    * Creates a Promise that is resolved or rejected when any of the provided Promises are resolved 
+    * Creates a Promise that is resolved or rejected when any of the provided Promises are resolved
     * or rejected.
     * @param values An array of Promises.
     * @returns A new Promise.

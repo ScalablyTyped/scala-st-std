@@ -23,11 +23,14 @@ trait MediaStream extends EventTarget {
     useCapture: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_addtrack(`type`: addtrack, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _]): Unit = js.native
+  def addEventListener_addtrack(
+    `type`: addtrack,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, _]
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_addtrack(
     `type`: addtrack,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, _],
     useCapture: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -39,11 +42,14 @@ trait MediaStream extends EventTarget {
     useCapture: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_removetrack(`type`: removetrack, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _]): Unit = js.native
+  def addEventListener_removetrack(
+    `type`: removetrack,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, _]
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_removetrack(
     `type`: removetrack,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, _],
     useCapture: scala.Boolean
   ): Unit = js.native
   def addTrack(track: MediaStreamTrack): Unit = js.native
@@ -52,9 +58,9 @@ trait MediaStream extends EventTarget {
   def getTracks(): js.Array[MediaStreamTrack] = js.native
   def getVideoTracks(): js.Array[MediaStreamTrack] = js.native
   def onactive(ev: Event): js.Any = js.native
-  def onaddtrack(ev: TrackEvent): js.Any = js.native
+  def onaddtrack(ev: MediaStreamTrackEvent): js.Any = js.native
   def oninactive(ev: Event): js.Any = js.native
-  def onremovetrack(ev: TrackEvent): js.Any = js.native
+  def onremovetrack(ev: MediaStreamTrackEvent): js.Any = js.native
   def removeTrack(track: MediaStreamTrack): Unit = js.native
   def stop(): Unit = js.native
 }

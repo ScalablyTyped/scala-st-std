@@ -59,6 +59,7 @@ import org.scalablytyped.std.stdStrings.col
 import org.scalablytyped.std.stdStrings.colgroup
 import org.scalablytyped.std.stdStrings.componentTransferFunction
 import org.scalablytyped.std.stdStrings.contextmenu
+import org.scalablytyped.std.stdStrings.data
 import org.scalablytyped.std.stdStrings.datalist
 import org.scalablytyped.std.stdStrings.dblclick
 import org.scalablytyped.std.stdStrings.dd
@@ -211,6 +212,7 @@ import org.scalablytyped.std.stdStrings.noscript
 import org.scalablytyped.std.stdStrings.ol
 import org.scalablytyped.std.stdStrings.optgroup
 import org.scalablytyped.std.stdStrings.option
+import org.scalablytyped.std.stdStrings.output
 import org.scalablytyped.std.stdStrings.p
 import org.scalablytyped.std.stdStrings.param
 import org.scalablytyped.std.stdStrings.path
@@ -273,6 +275,7 @@ import org.scalablytyped.std.stdStrings.textpath_
 import org.scalablytyped.std.stdStrings.tfoot
 import org.scalablytyped.std.stdStrings.th
 import org.scalablytyped.std.stdStrings.thead
+import org.scalablytyped.std.stdStrings.time
 import org.scalablytyped.std.stdStrings.timeupdate
 import org.scalablytyped.std.stdStrings.title
 import org.scalablytyped.std.stdStrings.touchcancel
@@ -354,10 +357,6 @@ trait Document
   val compatMode: java.lang.String = js.native
   var cookie: java.lang.String = js.native
   val currentScript: HTMLScriptElement | SVGScriptElement = js.native
-  /**
-    * Gets the default character set from the current regional language settings.
-    */
-  val defaultCharset: java.lang.String = js.native
   val defaultView: Window = js.native
   /**
     * Sets or gets a value that indicates whether the document can be edited.
@@ -1050,14 +1049,11 @@ trait Document
     useCapture: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_readystatechange(
-    `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]
-  ): Unit = js.native
+  def addEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     useCapture: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -1361,6 +1357,8 @@ trait Document
   @JSName("createElement")
   def createElement_colgroup(tagName: colgroup): HTMLTableColElement = js.native
   @JSName("createElement")
+  def createElement_data(tagName: data): HTMLDataElement = js.native
+  @JSName("createElement")
   def createElement_datalist(tagName: datalist): HTMLDataListElement = js.native
   @JSName("createElement")
   def createElement_del(tagName: del): HTMLModElement = js.native
@@ -1441,6 +1439,8 @@ trait Document
   @JSName("createElement")
   def createElement_option(tagName: option): HTMLOptionElement = js.native
   @JSName("createElement")
+  def createElement_output(tagName: output): HTMLOutputElement = js.native
+  @JSName("createElement")
   def createElement_p(tagName: p): HTMLParagraphElement = js.native
   @JSName("createElement")
   def createElement_param(tagName: param): HTMLParamElement = js.native
@@ -1478,6 +1478,8 @@ trait Document
   def createElement_th(tagName: th): HTMLTableHeaderCellElement = js.native
   @JSName("createElement")
   def createElement_thead(tagName: thead): HTMLTableSectionElement = js.native
+  @JSName("createElement")
+  def createElement_time(tagName: time): HTMLTimeElement = js.native
   @JSName("createElement")
   def createElement_title(tagName: title): HTMLTitleElement = js.native
   @JSName("createElement")
@@ -1687,6 +1689,8 @@ trait Document
   @JSName("getElementsByTagName")
   def getElementsByTagName_colgroup(tagname: colgroup): NodeListOf[HTMLTableColElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_data(tagname: data): NodeListOf[HTMLDataElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_datalist(tagname: datalist): NodeListOf[HTMLDataListElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_dd(tagname: dd): NodeListOf[HTMLElement] = js.native
@@ -1873,6 +1877,8 @@ trait Document
   @JSName("getElementsByTagName")
   def getElementsByTagName_option(tagname: option): NodeListOf[HTMLOptionElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_output(tagname: output): NodeListOf[HTMLOutputElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_p(tagname: p): NodeListOf[HTMLParagraphElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_param(tagname: param): NodeListOf[HTMLParamElement] = js.native
@@ -1956,6 +1962,8 @@ trait Document
   def getElementsByTagName_th(tagname: th): NodeListOf[HTMLTableHeaderCellElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_thead(tagname: thead): NodeListOf[HTMLTableSectionElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_time(tagname: time): NodeListOf[HTMLTimeElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_title(tagname: title): NodeListOf[HTMLTitleElement] = js.native
   @JSName("getElementsByTagName")
@@ -2230,7 +2238,7 @@ trait Document
     * Fires when the state of the object has changed.
     * @param ev The event
     */
-  def onreadystatechange(ev: ProgressEvent): js.Any = js.native
+  def onreadystatechange(ev: Event): js.Any = js.native
   /**
     * Fires when the user resets a form. 
     * @param ev The event.

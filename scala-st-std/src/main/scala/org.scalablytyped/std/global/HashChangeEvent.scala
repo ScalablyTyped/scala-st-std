@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class HashChangeEvent protected ()
   extends org.scalablytyped.std.HashChangeEvent {
-  def this(`type`: java.lang.String) = this()
-  def this(`type`: java.lang.String, eventInitDict: HashChangeEventInit) = this()
+  def this(typeArg: java.lang.String) = this()
+  def this(typeArg: java.lang.String, eventInitDict: HashChangeEventInit) = this()
   /* CompleteClass */
   override val AT_TARGET: Double = js.native
   /* CompleteClass */
@@ -64,9 +64,9 @@ class HashChangeEvent protected ()
 @JSGlobal("HashChangeEvent")
 @js.native
 object HashChangeEvent
-  extends Instantiable1[/* type */ java.lang.String, org.scalablytyped.std.HashChangeEvent]
+  extends Instantiable1[/* typeArg */ java.lang.String, org.scalablytyped.std.HashChangeEvent]
      with Instantiable2[
-      /* type */ java.lang.String, 
+      /* typeArg */ java.lang.String, 
       /* eventInitDict */ HashChangeEventInit, 
       org.scalablytyped.std.HashChangeEvent
     ]

@@ -6,22 +6,16 @@ import scala.scalajs.js.annotation._
 
 trait ElementTraversal extends js.Object {
   val childElementCount: Double
-  val firstElementChild: Element
-  val lastElementChild: Element
-  val nextElementSibling: Element
-  val previousElementSibling: Element
+  val firstElementChild: Element | Null
+  val lastElementChild: Element | Null
+  val nextElementSibling: Element | Null
+  val previousElementSibling: Element | Null
 }
 
 object ElementTraversal {
   @scala.inline
-  def apply(
-    childElementCount: Double,
-    firstElementChild: Element,
-    lastElementChild: Element,
-    nextElementSibling: Element,
-    previousElementSibling: Element
-  ): ElementTraversal = {
-    val __obj = js.Dynamic.literal(childElementCount = childElementCount.asInstanceOf[js.Any], firstElementChild = firstElementChild.asInstanceOf[js.Any], lastElementChild = lastElementChild.asInstanceOf[js.Any], nextElementSibling = nextElementSibling.asInstanceOf[js.Any], previousElementSibling = previousElementSibling.asInstanceOf[js.Any])
+  def apply(childElementCount: Double): ElementTraversal = {
+    val __obj = js.Dynamic.literal(childElementCount = childElementCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementTraversal]
   }
   @scala.inline
@@ -40,11 +34,19 @@ object ElementTraversal {
     @scala.inline
     def setFirstElementChild(value: Element): Self = this.set("firstElementChild", value.asInstanceOf[js.Any])
     @scala.inline
+    def setFirstElementChildNull: Self = this.set("firstElementChild", null)
+    @scala.inline
     def setLastElementChild(value: Element): Self = this.set("lastElementChild", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLastElementChildNull: Self = this.set("lastElementChild", null)
     @scala.inline
     def setNextElementSibling(value: Element): Self = this.set("nextElementSibling", value.asInstanceOf[js.Any])
     @scala.inline
+    def setNextElementSiblingNull: Self = this.set("nextElementSibling", null)
+    @scala.inline
     def setPreviousElementSibling(value: Element): Self = this.set("previousElementSibling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPreviousElementSiblingNull: Self = this.set("previousElementSibling", null)
   }
   
 }

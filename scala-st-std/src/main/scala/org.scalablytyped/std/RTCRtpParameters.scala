@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait RTCRtpParameters extends js.Object {
   var codecs: js.UndefOr[js.Array[RTCRtpCodecParameters]] = js.undefined
+  var degradationPreference: js.UndefOr[java.lang.String] = js.undefined
   var encodings: js.UndefOr[js.Array[RTCRtpEncodingParameters]] = js.undefined
   var headerExtensions: js.UndefOr[js.Array[RTCRtpHeaderExtensionParameters]] = js.undefined
   var muxId: js.UndefOr[java.lang.String] = js.undefined
@@ -35,6 +36,10 @@ object RTCRtpParameters {
     def setCodecs(value: js.Array[RTCRtpCodecParameters]): Self = this.set("codecs", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteCodecs: Self = this.set("codecs", js.undefined)
+    @scala.inline
+    def setDegradationPreference(value: java.lang.String): Self = this.set("degradationPreference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDegradationPreference: Self = this.set("degradationPreference", js.undefined)
     @scala.inline
     def setEncodingsVarargs(value: RTCRtpEncodingParameters*): Self = this.set("encodings", js.Array(value :_*))
     @scala.inline

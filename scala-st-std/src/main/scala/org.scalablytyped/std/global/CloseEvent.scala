@@ -1,14 +1,18 @@
 package org.scalablytyped.std.global
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.std.CloseEventInit
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSGlobal("CloseEvent")
 @js.native
-class CloseEvent ()
+class CloseEvent protected ()
   extends org.scalablytyped.std.CloseEvent {
+  def this(typeArg: java.lang.String) = this()
+  def this(typeArg: java.lang.String, eventInitDict: CloseEventInit) = this()
   /* CompleteClass */
   override val AT_TARGET: Double = js.native
   /* CompleteClass */
@@ -71,5 +75,10 @@ class CloseEvent ()
 @JSGlobal("CloseEvent")
 @js.native
 object CloseEvent
-  extends Instantiable0[org.scalablytyped.std.CloseEvent]
+  extends Instantiable1[/* typeArg */ java.lang.String, org.scalablytyped.std.CloseEvent]
+     with Instantiable2[
+      /* typeArg */ java.lang.String, 
+      /* eventInitDict */ CloseEventInit, 
+      org.scalablytyped.std.CloseEvent
+    ]
 

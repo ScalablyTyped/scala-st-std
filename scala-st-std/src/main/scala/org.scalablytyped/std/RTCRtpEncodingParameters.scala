@@ -10,9 +10,9 @@ trait RTCRtpEncodingParameters extends js.Object {
   var dependencyEncodingIds: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var encodingId: js.UndefOr[java.lang.String] = js.undefined
   var fec: js.UndefOr[RTCRtpFecParameters] = js.undefined
-  var framerateBias: js.UndefOr[Double] = js.undefined
   var framerateScale: js.UndefOr[Double] = js.undefined
   var maxBitrate: js.UndefOr[Double] = js.undefined
+  var maxFramerate: js.UndefOr[Double] = js.undefined
   var minQuality: js.UndefOr[Double] = js.undefined
   var priority: js.UndefOr[Double] = js.undefined
   var resolutionScale: js.UndefOr[Double] = js.undefined
@@ -61,10 +61,6 @@ object RTCRtpEncodingParameters {
     @scala.inline
     def deleteFec: Self = this.set("fec", js.undefined)
     @scala.inline
-    def setFramerateBias(value: Double): Self = this.set("framerateBias", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteFramerateBias: Self = this.set("framerateBias", js.undefined)
-    @scala.inline
     def setFramerateScale(value: Double): Self = this.set("framerateScale", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteFramerateScale: Self = this.set("framerateScale", js.undefined)
@@ -72,6 +68,10 @@ object RTCRtpEncodingParameters {
     def setMaxBitrate(value: Double): Self = this.set("maxBitrate", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteMaxBitrate: Self = this.set("maxBitrate", js.undefined)
+    @scala.inline
+    def setMaxFramerate(value: Double): Self = this.set("maxFramerate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxFramerate: Self = this.set("maxFramerate", js.undefined)
     @scala.inline
     def setMinQuality(value: Double): Self = this.set("minQuality", value.asInstanceOf[js.Any])
     @scala.inline

@@ -27,6 +27,8 @@ class TouchEvent ()
   /* CompleteClass */
   override val changedTouches: org.scalablytyped.std.TouchList = js.native
   /* CompleteClass */
+  override val charCode: Double = js.native
+  /* CompleteClass */
   override val ctrlKey: scala.Boolean = js.native
   /* CompleteClass */
   override val currentTarget: org.scalablytyped.std.EventTarget = js.native
@@ -38,6 +40,8 @@ class TouchEvent ()
   override val eventPhase: Double = js.native
   /* CompleteClass */
   override val isTrusted: scala.Boolean = js.native
+  /* CompleteClass */
+  override val keyCode: Double = js.native
   /* CompleteClass */
   override val metaKey: scala.Boolean = js.native
   /* CompleteClass */
@@ -60,6 +64,8 @@ class TouchEvent ()
   override val `type`: java.lang.String = js.native
   /* CompleteClass */
   override val view: Window = js.native
+  /* CompleteClass */
+  override val which: Double = js.native
   /* CompleteClass */
   override def deepPath(): js.Array[org.scalablytyped.std.EventTarget] = js.native
   /* CompleteClass */

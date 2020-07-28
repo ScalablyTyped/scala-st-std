@@ -49,6 +49,7 @@ import org.scalablytyped.std.stdStrings.code
 import org.scalablytyped.std.stdStrings.col
 import org.scalablytyped.std.stdStrings.colgroup
 import org.scalablytyped.std.stdStrings.command
+import org.scalablytyped.std.stdStrings.data
 import org.scalablytyped.std.stdStrings.datalist
 import org.scalablytyped.std.stdStrings.dd
 import org.scalablytyped.std.stdStrings.defs
@@ -145,6 +146,7 @@ import org.scalablytyped.std.stdStrings.noscript
 import org.scalablytyped.std.stdStrings.ol
 import org.scalablytyped.std.stdStrings.optgroup
 import org.scalablytyped.std.stdStrings.option
+import org.scalablytyped.std.stdStrings.output
 import org.scalablytyped.std.stdStrings.p
 import org.scalablytyped.std.stdStrings.param
 import org.scalablytyped.std.stdStrings.path
@@ -187,6 +189,7 @@ import org.scalablytyped.std.stdStrings.textpath_
 import org.scalablytyped.std.stdStrings.tfoot
 import org.scalablytyped.std.stdStrings.th
 import org.scalablytyped.std.stdStrings.thead
+import org.scalablytyped.std.stdStrings.time
 import org.scalablytyped.std.stdStrings.title
 import org.scalablytyped.std.stdStrings.touchcancel
 import org.scalablytyped.std.stdStrings.touchend
@@ -227,13 +230,14 @@ trait Element
   val clientTop: Double = js.native
   val clientWidth: Double = js.native
   /* InferMemberOverrides */
-  override val firstElementChild: Element = js.native
+  override val firstElementChild: Element | Null = js.native
   var id: java.lang.String = js.native
   var innerHTML: java.lang.String = js.native
   /* InferMemberOverrides */
-  override val lastElementChild: Element = js.native
+  override val lastElementChild: Element | Null = js.native
   var msContentZoomFactor: Double = js.native
   val msRegionOverflow: java.lang.String = js.native
+  var outerHTML: java.lang.String = js.native
   val prefix: java.lang.String | Null = js.native
   val scrollHeight: Double = js.native
   var scrollLeft: Double = js.native
@@ -422,22 +426,19 @@ trait Element
     useCapture: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_ariarequest(
-    `type`: ariarequest,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ AriaRequestEvent, _]
-  ): Unit = js.native
+  def addEventListener_ariarequest(`type`: ariarequest, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ariarequest(
     `type`: ariarequest,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ AriaRequestEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     useCapture: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_command(`type`: command, listener: js.ThisFunction1[/* this */ this.type, /* ev */ CommandEvent, _]): Unit = js.native
+  def addEventListener_command(`type`: command, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_command(
     `type`: command,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ CommandEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     useCapture: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -582,6 +583,8 @@ trait Element
   def getElementsByTagName_col(name: col): NodeListOf[HTMLTableColElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_colgroup(name: colgroup): NodeListOf[HTMLTableColElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_data(name: data): NodeListOf[HTMLDataElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_datalist(name: datalist): NodeListOf[HTMLDataListElement] = js.native
   @JSName("getElementsByTagName")
@@ -769,6 +772,8 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_option(name: option): NodeListOf[HTMLOptionElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_output(name: output): NodeListOf[HTMLOutputElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_p(name: p): NodeListOf[HTMLParagraphElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_param(name: param): NodeListOf[HTMLParamElement] = js.native
@@ -853,6 +858,8 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_thead(name: thead): NodeListOf[HTMLTableSectionElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_time(name: time): NodeListOf[HTMLTimeElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_title(name: title): NodeListOf[HTMLTitleElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_tr(name: tr): NodeListOf[HTMLTableRowElement] = js.native
@@ -892,8 +899,8 @@ trait Element
   def msReleasePointerCapture(pointerId: Double): Unit = js.native
   def msSetPointerCapture(pointerId: Double): Unit = js.native
   def msZoomTo(args: MsZoomToOptions): Unit = js.native
-  def onariarequest(ev: AriaRequestEvent): js.Any = js.native
-  def oncommand(ev: CommandEvent): js.Any = js.native
+  def onariarequest(ev: Event): js.Any = js.native
+  def oncommand(ev: Event): js.Any = js.native
   def ongotpointercapture(ev: PointerEvent): js.Any = js.native
   def onlostpointercapture(ev: PointerEvent): js.Any = js.native
   def onmsgesturechange(ev: MSGestureEvent): js.Any = js.native
@@ -920,8 +927,7 @@ trait Element
   def onwebkitfullscreenchange(ev: Event): js.Any = js.native
   def onwebkitfullscreenerror(ev: Event): js.Any = js.native
   def releasePointerCapture(pointerId: Double): Unit = js.native
-  def removeAttribute(): Unit = js.native
-  def removeAttribute(name: java.lang.String): Unit = js.native
+  def removeAttribute(qualifiedName: java.lang.String): Unit = js.native
   def removeAttributeNS(namespaceURI: java.lang.String, localName: java.lang.String): Unit = js.native
   def removeAttributeNode(oldAttr: Attr): Attr = js.native
   def requestFullscreen(): Unit = js.native

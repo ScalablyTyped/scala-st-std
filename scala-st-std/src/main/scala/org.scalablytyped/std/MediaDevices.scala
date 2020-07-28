@@ -17,7 +17,7 @@ trait MediaDevices extends EventTarget {
   ): Unit = js.native
   def enumerateDevices(): js.Any = js.native
   def getSupportedConstraints(): MediaTrackSupportedConstraints = js.native
-  def getUserMedia(constraints: MediaStreamConstraints): js.Thenable[MediaStream] = js.native
+  def getUserMedia(constraints: MediaStreamConstraints): js.Promise[MediaStream] = js.native
   def ondevicechange(ev: Event): js.Any = js.native
 }
 

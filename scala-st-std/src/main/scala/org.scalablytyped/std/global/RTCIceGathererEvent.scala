@@ -1,7 +1,7 @@
 package org.scalablytyped.std.global
 
-import org.scalablytyped.std.RTCIceCandidate
 import org.scalablytyped.std.RTCIceCandidateComplete
+import org.scalablytyped.std.RTCIceCandidateDictionary
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,7 +24,7 @@ class RTCIceGathererEvent ()
   /* CompleteClass */
   override val cancelable: scala.Boolean = js.native
   /* CompleteClass */
-  override val candidate: RTCIceCandidate | RTCIceCandidateComplete = js.native
+  override val candidate: RTCIceCandidateDictionary | RTCIceCandidateComplete = js.native
   /* CompleteClass */
   override val currentTarget: org.scalablytyped.std.EventTarget = js.native
   /* CompleteClass */

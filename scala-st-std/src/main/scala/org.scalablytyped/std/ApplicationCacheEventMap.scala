@@ -8,7 +8,7 @@ trait ApplicationCacheEventMap extends js.Object {
   var cached: Event
   var checking: Event
   var downloading: Event
-  var error: ErrorEvent
+  var error: Event
   var noupdate: Event
   var obsolete: Event
   var progress: ProgressEvent
@@ -21,7 +21,7 @@ object ApplicationCacheEventMap {
     cached: Event,
     checking: Event,
     downloading: Event,
-    error: ErrorEvent,
+    error: Event,
     noupdate: Event,
     obsolete: Event,
     progress: ProgressEvent,
@@ -48,7 +48,7 @@ object ApplicationCacheEventMap {
     @scala.inline
     def setDownloading(value: Event): Self = this.set("downloading", value.asInstanceOf[js.Any])
     @scala.inline
-    def setError(value: ErrorEvent): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setError(value: Event): Self = this.set("error", value.asInstanceOf[js.Any])
     @scala.inline
     def setNoupdate(value: Event): Self = this.set("noupdate", value.asInstanceOf[js.Any])
     @scala.inline

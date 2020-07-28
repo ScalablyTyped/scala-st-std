@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IDBRequestEventMap extends js.Object {
-  var error: ErrorEvent
+  var error: Event
   var success: Event
 }
 
 object IDBRequestEventMap {
   @scala.inline
-  def apply(error: ErrorEvent, success: Event): IDBRequestEventMap = {
+  def apply(error: Event, success: Event): IDBRequestEventMap = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDBRequestEventMap]
   }
@@ -27,7 +27,7 @@ object IDBRequestEventMap {
         x
     }
     @scala.inline
-    def setError(value: ErrorEvent): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setError(value: Event): Self = this.set("error", value.asInstanceOf[js.Any])
     @scala.inline
     def setSuccess(value: Event): Self = this.set("success", value.asInstanceOf[js.Any])
   }

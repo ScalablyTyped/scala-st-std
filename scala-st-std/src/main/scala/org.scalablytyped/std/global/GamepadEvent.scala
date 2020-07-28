@@ -1,14 +1,18 @@
 package org.scalablytyped.std.global
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.std.GamepadEventInit
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSGlobal("GamepadEvent")
 @js.native
-class GamepadEvent ()
+class GamepadEvent protected ()
   extends org.scalablytyped.std.GamepadEvent {
+  def this(typeArg: java.lang.String) = this()
+  def this(typeArg: java.lang.String, eventInitDict: GamepadEventInit) = this()
   /* CompleteClass */
   override val AT_TARGET: Double = js.native
   /* CompleteClass */
@@ -58,5 +62,10 @@ class GamepadEvent ()
 @JSGlobal("GamepadEvent")
 @js.native
 object GamepadEvent
-  extends Instantiable0[org.scalablytyped.std.GamepadEvent]
+  extends Instantiable1[/* typeArg */ java.lang.String, org.scalablytyped.std.GamepadEvent]
+     with Instantiable2[
+      /* typeArg */ java.lang.String, 
+      /* eventInitDict */ GamepadEventInit, 
+      org.scalablytyped.std.GamepadEvent
+    ]
 

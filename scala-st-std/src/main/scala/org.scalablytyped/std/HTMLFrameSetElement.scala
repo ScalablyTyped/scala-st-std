@@ -1,5 +1,6 @@
 package org.scalablytyped.std
 
+import org.scalablytyped.std.stdStrings.afterprint
 import org.scalablytyped.std.stdStrings.beforeprint
 import org.scalablytyped.std.stdStrings.beforeunload
 import org.scalablytyped.std.stdStrings.hashchange
@@ -9,6 +10,7 @@ import org.scalablytyped.std.stdStrings.online
 import org.scalablytyped.std.stdStrings.orientationchange
 import org.scalablytyped.std.stdStrings.pagehide
 import org.scalablytyped.std.stdStrings.pageshow
+import org.scalablytyped.std.stdStrings.popstate
 import org.scalablytyped.std.stdStrings.resize
 import org.scalablytyped.std.stdStrings.storage
 import org.scalablytyped.std.stdStrings.unload
@@ -40,6 +42,14 @@ trait HTMLFrameSetElement extends HTMLElement {
     * Sets or retrieves the frame heights of the object.
     */
   var rows: java.lang.String = js.native
+  @JSName("addEventListener")
+  def addEventListener_afterprint(`type`: afterprint, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_afterprint(
+    `type`: afterprint,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_beforeprint(`type`: beforeprint, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
@@ -122,6 +132,14 @@ trait HTMLFrameSetElement extends HTMLElement {
     useCapture: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
+  def addEventListener_popstate(`type`: popstate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ PopStateEvent, _]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_popstate(
+    `type`: popstate,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PopStateEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
   def addEventListener_resize(`type`: resize, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_resize(
@@ -155,6 +173,7 @@ trait HTMLFrameSetElement extends HTMLElement {
   def onorientationchange(ev: Event): js.Any = js.native
   def onpagehide(ev: PageTransitionEvent): js.Any = js.native
   def onpageshow(ev: PageTransitionEvent): js.Any = js.native
+  def onpopstate(ev: PopStateEvent): js.Any = js.native
   def onresize(ev: UIEvent): js.Any = js.native
   def onstorage(ev: StorageEvent): js.Any = js.native
   def onunload(ev: Event): js.Any = js.native

@@ -1,14 +1,18 @@
 package org.scalablytyped.std.global
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.std.TrackEventInit
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSGlobal("TrackEvent")
 @js.native
-class TrackEvent ()
+class TrackEvent protected ()
   extends org.scalablytyped.std.TrackEvent {
+  def this(typeArg: java.lang.String) = this()
+  def this(typeArg: java.lang.String, eventInitDict: TrackEventInit) = this()
   /* CompleteClass */
   override val AT_TARGET: Double = js.native
   /* CompleteClass */
@@ -40,7 +44,7 @@ class TrackEvent ()
   /* CompleteClass */
   override val timeStamp: Double = js.native
   /* CompleteClass */
-  override val track: js.Any = js.native
+  override val track: org.scalablytyped.std.VideoTrack | org.scalablytyped.std.AudioTrack | org.scalablytyped.std.TextTrack | Null = js.native
   /* CompleteClass */
   override val `type`: java.lang.String = js.native
   /* CompleteClass */
@@ -58,5 +62,10 @@ class TrackEvent ()
 @JSGlobal("TrackEvent")
 @js.native
 object TrackEvent
-  extends Instantiable0[org.scalablytyped.std.TrackEvent]
+  extends Instantiable1[/* typeArg */ java.lang.String, org.scalablytyped.std.TrackEvent]
+     with Instantiable2[
+      /* typeArg */ java.lang.String, 
+      /* eventInitDict */ TrackEventInit, 
+      org.scalablytyped.std.TrackEvent
+    ]
 

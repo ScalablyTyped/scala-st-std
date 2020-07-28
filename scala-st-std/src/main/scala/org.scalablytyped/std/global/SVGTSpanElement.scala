@@ -8,31 +8,25 @@ import scala.scalajs.js.annotation._
 @JSGlobal("SVGTSpanElement")
 @js.native
 class SVGTSpanElement ()
-  extends org.scalablytyped.std.SVGTextPositioningElement {
+  extends org.scalablytyped.std.SVGTSpanElement {
   /* CompleteClass */
   override val childElementCount: Double = js.native
   /* CompleteClass */
   override val children: org.scalablytyped.std.HTMLCollection = js.native
   /* CompleteClass */
-  override val externalResourcesRequired: org.scalablytyped.std.SVGAnimatedBoolean = js.native
+  override val firstElementChild: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
-  override val firstElementChild: org.scalablytyped.std.Element = js.native
+  override val lastElementChild: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
-  override val lastElementChild: org.scalablytyped.std.Element = js.native
+  override val nextElementSibling: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
-  override val nextElementSibling: org.scalablytyped.std.Element = js.native
-  /* CompleteClass */
-  override val previousElementSibling: org.scalablytyped.std.Element = js.native
+  override val previousElementSibling: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
   override val requiredExtensions: org.scalablytyped.std.SVGStringList = js.native
   /* CompleteClass */
   override val requiredFeatures: org.scalablytyped.std.SVGStringList = js.native
   /* CompleteClass */
   override val systemLanguage: org.scalablytyped.std.SVGStringList = js.native
-  /* CompleteClass */
-  override var xmllang: java.lang.String = js.native
-  /* CompleteClass */
-  override var xmlspace: java.lang.String = js.native
   /* CompleteClass */
   override def hasExtension(extension: java.lang.String): scala.Boolean = js.native
   /* CompleteClass */

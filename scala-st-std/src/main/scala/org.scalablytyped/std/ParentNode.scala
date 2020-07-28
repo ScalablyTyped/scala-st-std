@@ -7,19 +7,14 @@ import scala.scalajs.js.annotation._
 trait ParentNode extends js.Object {
   val childElementCount: Double
   val children: HTMLCollection
-  val firstElementChild: Element
-  val lastElementChild: Element
+  val firstElementChild: Element | Null
+  val lastElementChild: Element | Null
 }
 
 object ParentNode {
   @scala.inline
-  def apply(
-    childElementCount: Double,
-    children: HTMLCollection,
-    firstElementChild: Element,
-    lastElementChild: Element
-  ): ParentNode = {
-    val __obj = js.Dynamic.literal(childElementCount = childElementCount.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], firstElementChild = firstElementChild.asInstanceOf[js.Any], lastElementChild = lastElementChild.asInstanceOf[js.Any])
+  def apply(childElementCount: Double, children: HTMLCollection): ParentNode = {
+    val __obj = js.Dynamic.literal(childElementCount = childElementCount.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParentNode]
   }
   @scala.inline
@@ -40,7 +35,11 @@ object ParentNode {
     @scala.inline
     def setFirstElementChild(value: Element): Self = this.set("firstElementChild", value.asInstanceOf[js.Any])
     @scala.inline
+    def setFirstElementChildNull: Self = this.set("firstElementChild", null)
+    @scala.inline
     def setLastElementChild(value: Element): Self = this.set("lastElementChild", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLastElementChildNull: Self = this.set("lastElementChild", null)
   }
   
 }

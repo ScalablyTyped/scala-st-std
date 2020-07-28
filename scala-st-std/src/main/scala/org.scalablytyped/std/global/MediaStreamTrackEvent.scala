@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class MediaStreamTrackEvent protected ()
   extends org.scalablytyped.std.MediaStreamTrackEvent {
-  def this(`type`: java.lang.String) = this()
-  def this(`type`: java.lang.String, eventInitDict: MediaStreamTrackEventInit) = this()
+  def this(typeArg: java.lang.String) = this()
+  def this(typeArg: java.lang.String, eventInitDict: MediaStreamTrackEventInit) = this()
   /* CompleteClass */
   override val AT_TARGET: Double = js.native
   /* CompleteClass */
@@ -62,9 +62,9 @@ class MediaStreamTrackEvent protected ()
 @JSGlobal("MediaStreamTrackEvent")
 @js.native
 object MediaStreamTrackEvent
-  extends Instantiable1[/* type */ java.lang.String, org.scalablytyped.std.MediaStreamTrackEvent]
+  extends Instantiable1[/* typeArg */ java.lang.String, org.scalablytyped.std.MediaStreamTrackEvent]
      with Instantiable2[
-      /* type */ java.lang.String, 
+      /* typeArg */ java.lang.String, 
       /* eventInitDict */ MediaStreamTrackEventInit, 
       org.scalablytyped.std.MediaStreamTrackEvent
     ]

@@ -76,10 +76,6 @@ trait HTMLObjectElement
     * Sets or retrieves the name of the object.
     */
   var name: java.lang.String = js.native
-  /**
-    * Retrieves the contained object.
-    */
-  val `object`: js.Any = js.native
   val readyState: Double = js.native
   /**
     * Sets or retrieves a message to be displayed while an object is loading.

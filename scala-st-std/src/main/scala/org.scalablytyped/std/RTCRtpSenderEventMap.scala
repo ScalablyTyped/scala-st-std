@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RTCRtpSenderEventMap extends js.Object {
-  var error: ErrorEvent
+  var error: Event
   var ssrcconflict: RTCSsrcConflictEvent
 }
 
 object RTCRtpSenderEventMap {
   @scala.inline
-  def apply(error: ErrorEvent, ssrcconflict: RTCSsrcConflictEvent): RTCRtpSenderEventMap = {
+  def apply(error: Event, ssrcconflict: RTCSsrcConflictEvent): RTCRtpSenderEventMap = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], ssrcconflict = ssrcconflict.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpSenderEventMap]
   }
@@ -27,7 +27,7 @@ object RTCRtpSenderEventMap {
         x
     }
     @scala.inline
-    def setError(value: ErrorEvent): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setError(value: Event): Self = this.set("error", value.asInstanceOf[js.Any])
     @scala.inline
     def setSsrcconflict(value: RTCSsrcConflictEvent): Self = this.set("ssrcconflict", value.asInstanceOf[js.Any])
   }

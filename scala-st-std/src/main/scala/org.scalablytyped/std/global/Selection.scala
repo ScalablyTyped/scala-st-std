@@ -14,6 +14,14 @@ class Selection ()
   /* CompleteClass */
   override val anchorOffset: Double = js.native
   /* CompleteClass */
+  override val baseNode: org.scalablytyped.std.Node = js.native
+  /* CompleteClass */
+  override val baseOffset: Double = js.native
+  /* CompleteClass */
+  override val extentNode: org.scalablytyped.std.Node = js.native
+  /* CompleteClass */
+  override val extentOffset: Double = js.native
+  /* CompleteClass */
   override val focusNode: org.scalablytyped.std.Node = js.native
   /* CompleteClass */
   override val focusOffset: Double = js.native
@@ -54,6 +62,8 @@ class Selection ()
     extentNode: org.scalablytyped.std.Node,
     extentOffset: Double
   ): Unit = js.native
+  /* CompleteClass */
+  override def setPosition(parentNode: org.scalablytyped.std.Node, offset: Double): Unit = js.native
 }
 
 @JSGlobal("Selection")

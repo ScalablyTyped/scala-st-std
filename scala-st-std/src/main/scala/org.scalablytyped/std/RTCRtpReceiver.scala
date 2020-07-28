@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait RTCRtpReceiver extends RTCStatsProvider {
-  var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _]) | Null = js.native
+  var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   val rtcpTransport: RTCDtlsTransport = js.native
   val track: MediaStreamTrack | Null = js.native
   val transport: RTCDtlsTransport | RTCSrtpSdesTransport = js.native
   @JSName("addEventListener")
-  def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _]): Unit = js.native
+  def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(
     `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     useCapture: scala.Boolean
   ): Unit = js.native
   def getContributingSources(): js.Array[RTCRtpContributingSource] = js.native

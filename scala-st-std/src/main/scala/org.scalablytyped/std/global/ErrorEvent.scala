@@ -1,14 +1,18 @@
 package org.scalablytyped.std.global
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.std.ErrorEventInit
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSGlobal("ErrorEvent")
 @js.native
-class ErrorEvent ()
+class ErrorEvent protected ()
   extends org.scalablytyped.std.ErrorEvent {
+  def this(`type`: java.lang.String) = this()
+  def this(`type`: java.lang.String, errorEventInitDict: ErrorEventInit) = this()
   /* CompleteClass */
   override val AT_TARGET: Double = js.native
   /* CompleteClass */
@@ -75,5 +79,10 @@ class ErrorEvent ()
 @JSGlobal("ErrorEvent")
 @js.native
 object ErrorEvent
-  extends Instantiable0[org.scalablytyped.std.ErrorEvent]
+  extends Instantiable1[/* type */ java.lang.String, org.scalablytyped.std.ErrorEvent]
+     with Instantiable2[
+      /* type */ java.lang.String, 
+      /* errorEventInitDict */ ErrorEventInit, 
+      org.scalablytyped.std.ErrorEvent
+    ]
 

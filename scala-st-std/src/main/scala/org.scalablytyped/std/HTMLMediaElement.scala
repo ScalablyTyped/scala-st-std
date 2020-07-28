@@ -33,7 +33,7 @@ trait HTMLMediaElement extends HTMLElement {
     * Gets or sets a flag that indicates whether the client provides a set of controls for the media (in case the developer does not include controls for the player).
     */
   var controls: scala.Boolean = js.native
-  var crossOrigin: java.lang.String = js.native
+  var crossOrigin: java.lang.String | Null = js.native
   /**
     * Gets the address or URL of the current media resource that is selected by IHTMLMediaElement.
     */
@@ -201,7 +201,7 @@ trait HTMLMediaElement extends HTMLElement {
     * Loads and starts playback of a media resource.
     */
   def play(): Unit = js.native
-  def setMediaKeys(): js.Thenable[Unit] = js.native
-  def setMediaKeys(mediaKeys: MediaKeys): js.Thenable[Unit] = js.native
+  def setMediaKeys(): js.Promise[Unit] = js.native
+  def setMediaKeys(mediaKeys: MediaKeys): js.Promise[Unit] = js.native
 }
 

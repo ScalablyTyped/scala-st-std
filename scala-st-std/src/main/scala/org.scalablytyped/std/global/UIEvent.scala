@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class UIEvent protected ()
   extends org.scalablytyped.std.UIEvent {
-  def this(`type`: java.lang.String) = this()
-  def this(`type`: java.lang.String, eventInitDict: UIEventInit) = this()
+  def this(typeArg: java.lang.String) = this()
+  def this(typeArg: java.lang.String, eventInitDict: UIEventInit) = this()
   /* CompleteClass */
   override val AT_TARGET: Double = js.native
   /* CompleteClass */
@@ -73,9 +73,9 @@ class UIEvent protected ()
 @JSGlobal("UIEvent")
 @js.native
 object UIEvent
-  extends Instantiable1[/* type */ java.lang.String, org.scalablytyped.std.UIEvent]
+  extends Instantiable1[/* typeArg */ java.lang.String, org.scalablytyped.std.UIEvent]
      with Instantiable2[
-      /* type */ java.lang.String, 
+      /* typeArg */ java.lang.String, 
       /* eventInitDict */ UIEventInit, 
       org.scalablytyped.std.UIEvent
     ]

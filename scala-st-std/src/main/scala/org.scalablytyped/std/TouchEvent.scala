@@ -7,11 +7,14 @@ import scala.scalajs.js.annotation._
 trait TouchEvent extends UIEvent {
   val altKey: scala.Boolean
   val changedTouches: TouchList
+  val charCode: Double
   val ctrlKey: scala.Boolean
+  val keyCode: Double
   val metaKey: scala.Boolean
   val shiftKey: scala.Boolean
   val targetTouches: TouchList
   val touches: TouchList
+  val which: Double
 }
 
 object TouchEvent {
@@ -25,6 +28,7 @@ object TouchEvent {
     cancelBubble: scala.Boolean,
     cancelable: scala.Boolean,
     changedTouches: TouchList,
+    charCode: Double,
     ctrlKey: scala.Boolean,
     currentTarget: EventTarget,
     deepPath: () => js.Array[EventTarget],
@@ -34,6 +38,7 @@ object TouchEvent {
     initEvent: (java.lang.String, scala.Boolean, scala.Boolean) => Unit,
     initUIEvent: (java.lang.String, scala.Boolean, scala.Boolean, Window, Double) => Unit,
     isTrusted: scala.Boolean,
+    keyCode: Double,
     metaKey: scala.Boolean,
     preventDefault: () => Unit,
     returnValue: scala.Boolean,
@@ -46,9 +51,10 @@ object TouchEvent {
     timeStamp: Double,
     touches: TouchList,
     `type`: java.lang.String,
-    view: Window
+    view: Window,
+    which: Double
   ): TouchEvent = {
-    val __obj = js.Dynamic.literal(AT_TARGET = AT_TARGET.asInstanceOf[js.Any], BUBBLING_PHASE = BUBBLING_PHASE.asInstanceOf[js.Any], CAPTURING_PHASE = CAPTURING_PHASE.asInstanceOf[js.Any], altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelBubble = cancelBubble.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], deepPath = js.Any.fromFunction0(deepPath), defaultPrevented = defaultPrevented.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], initEvent = js.Any.fromFunction3(initEvent), initUIEvent = js.Any.fromFunction5(initUIEvent), isTrusted = isTrusted.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), returnValue = returnValue.asInstanceOf[js.Any], scoped = scoped.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(AT_TARGET = AT_TARGET.asInstanceOf[js.Any], BUBBLING_PHASE = BUBBLING_PHASE.asInstanceOf[js.Any], CAPTURING_PHASE = CAPTURING_PHASE.asInstanceOf[js.Any], altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelBubble = cancelBubble.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], deepPath = js.Any.fromFunction0(deepPath), defaultPrevented = defaultPrevented.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], initEvent = js.Any.fromFunction3(initEvent), initUIEvent = js.Any.fromFunction5(initUIEvent), isTrusted = isTrusted.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), returnValue = returnValue.asInstanceOf[js.Any], scoped = scoped.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchEvent]
   }
@@ -68,7 +74,11 @@ object TouchEvent {
     @scala.inline
     def setChangedTouches(value: TouchList): Self = this.set("changedTouches", value.asInstanceOf[js.Any])
     @scala.inline
+    def setCharCode(value: Double): Self = this.set("charCode", value.asInstanceOf[js.Any])
+    @scala.inline
     def setCtrlKey(value: scala.Boolean): Self = this.set("ctrlKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKeyCode(value: Double): Self = this.set("keyCode", value.asInstanceOf[js.Any])
     @scala.inline
     def setMetaKey(value: scala.Boolean): Self = this.set("metaKey", value.asInstanceOf[js.Any])
     @scala.inline
@@ -77,6 +87,8 @@ object TouchEvent {
     def setTargetTouches(value: TouchList): Self = this.set("targetTouches", value.asInstanceOf[js.Any])
     @scala.inline
     def setTouches(value: TouchList): Self = this.set("touches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWhich(value: Double): Self = this.set("which", value.asInstanceOf[js.Any])
   }
   
 }

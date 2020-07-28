@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RTCIceParameters extends js.Object {
+  var iceLite: js.UndefOr[scala.Boolean] = js.undefined
   var password: js.UndefOr[java.lang.String] = js.undefined
   var usernameFragment: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -26,6 +27,10 @@ object RTCIceParameters {
         x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
         x
     }
+    @scala.inline
+    def setIceLite(value: scala.Boolean): Self = this.set("iceLite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIceLite: Self = this.set("iceLite", js.undefined)
     @scala.inline
     def setPassword(value: java.lang.String): Self = this.set("password", value.asInstanceOf[js.Any])
     @scala.inline

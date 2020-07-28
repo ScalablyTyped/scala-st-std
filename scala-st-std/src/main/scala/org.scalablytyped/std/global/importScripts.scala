@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object importScripts extends js.Object {
   /////////////////////////////
-  /// WorkerGlobalScope APIs 
+  /// WorkerGlobalScope APIs
   /////////////////////////////
-  // These are only available in a Web Worker 
+  // These are only available in a Web Worker
   def apply(urls: java.lang.String*): Unit = js.native
 }
 

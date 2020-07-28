@@ -17,11 +17,15 @@ import scala.scalajs.js.annotation._
 @js.native
 class Navigator_ () extends Navigator {
   /* CompleteClass */
+  override val appCodeName: java.lang.String = js.native
+  /* CompleteClass */
   override val appName: java.lang.String = js.native
   /* CompleteClass */
   override val appVersion: java.lang.String = js.native
   /* CompleteClass */
   override val geolocation: org.scalablytyped.std.Geolocation = js.native
+  /* CompleteClass */
+  override val hardwareConcurrency: Double = js.native
   /* CompleteClass */
   override val mediaDevices: org.scalablytyped.std.MediaDevices = js.native
   /* CompleteClass */

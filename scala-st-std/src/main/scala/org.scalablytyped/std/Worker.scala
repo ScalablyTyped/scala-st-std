@@ -27,7 +27,7 @@ trait Worker
   ): Unit = js.native
   def onmessage(ev: MessageEvent): js.Any = js.native
   def postMessage(message: js.Any): Unit = js.native
-  def postMessage(message: js.Any, ports: js.Any): Unit = js.native
+  def postMessage(message: js.Any, transfer: js.Array[_]): Unit = js.native
   def terminate(): Unit = js.native
 }
 

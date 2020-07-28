@@ -36,13 +36,13 @@ trait RTCIceTransport extends RTCStatsProvider {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceTransportStateChangedEvent, _],
     useCapture: scala.Boolean
   ): Unit = js.native
-  def addRemoteCandidate(remoteCandidate: RTCIceCandidate): Unit = js.native
   def addRemoteCandidate(remoteCandidate: RTCIceCandidateComplete): Unit = js.native
+  def addRemoteCandidate(remoteCandidate: RTCIceCandidateDictionary): Unit = js.native
   def createAssociatedTransport(): RTCIceTransport = js.native
   def getNominatedCandidatePair(): RTCIceCandidatePair | Null = js.native
-  def getRemoteCandidates(): js.Array[RTCIceCandidate] = js.native
+  def getRemoteCandidates(): js.Array[RTCIceCandidateDictionary] = js.native
   def getRemoteParameters(): RTCIceParameters | Null = js.native
-  def setRemoteCandidates(remoteCandidates: js.Array[RTCIceCandidate]): Unit = js.native
+  def setRemoteCandidates(remoteCandidates: js.Array[RTCIceCandidateDictionary]): Unit = js.native
   def start(gatherer: RTCIceGatherer, remoteParameters: RTCIceParameters): Unit = js.native
   def start(gatherer: RTCIceGatherer, remoteParameters: RTCIceParameters, role: java.lang.String): Unit = js.native
   def stop(): Unit = js.native

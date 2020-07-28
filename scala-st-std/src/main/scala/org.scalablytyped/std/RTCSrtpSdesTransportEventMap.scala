@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RTCSrtpSdesTransportEventMap extends js.Object {
-  var error: ErrorEvent
+  var error: Event
 }
 
 object RTCSrtpSdesTransportEventMap {
   @scala.inline
-  def apply(error: ErrorEvent): RTCSrtpSdesTransportEventMap = {
+  def apply(error: Event): RTCSrtpSdesTransportEventMap = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCSrtpSdesTransportEventMap]
   }
@@ -26,7 +26,7 @@ object RTCSrtpSdesTransportEventMap {
         x
     }
     @scala.inline
-    def setError(value: ErrorEvent): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setError(value: Event): Self = this.set("error", value.asInstanceOf[js.Any])
   }
   
 }

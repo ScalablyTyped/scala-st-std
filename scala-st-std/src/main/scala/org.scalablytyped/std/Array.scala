@@ -37,7 +37,7 @@ trait Array[T] extends /* n */ NumberDictionary[T] {
     */
   def copyWithin(target: Double, start: Double): this.type = js.native
   def copyWithin(target: Double, start: Double, end: Double): this.type = js.native
-  /** 
+  /**
     * Returns an array of key, value pairs for every entry in the array
     */
   def entries(): IterableIterator[js.Tuple2[Double, T]] = js.native
@@ -47,11 +47,27 @@ trait Array[T] extends /* n */ NumberDictionary[T] {
     * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
     */
   def every(
-    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], scala.Boolean]
+    callbackfn: js.ThisFunction3[
+      /* this */ js.UndefOr[scala.Nothing], 
+      /* value */ T, 
+      /* index */ Double, 
+      /* array */ js.Array[T], 
+      scala.Boolean
+    ]
   ): scala.Boolean = js.native
   def every(
-    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], scala.Boolean],
-    thisArg: js.Any
+    callbackfn: js.ThisFunction3[
+      /* this */ js.UndefOr[scala.Nothing], 
+      /* value */ T, 
+      /* index */ Double, 
+      /* array */ js.Array[T], 
+      scala.Boolean
+    ],
+    thisArg: js.UndefOr[scala.Nothing]
+  ): scala.Boolean = js.native
+  def every[Z](
+    callbackfn: js.ThisFunction3[/* this */ Z, /* value */ T, /* index */ Double, /* array */ js.Array[T], scala.Boolean],
+    thisArg: Z
   ): scala.Boolean = js.native
   /**
     * Returns the this object after filling the section identified by start and end with value
@@ -70,10 +86,28 @@ trait Array[T] extends /* n */ NumberDictionary[T] {
     * @param callbackfn A function that accepts up to three arguments. The filter method calls the callbackfn function one time for each element in the array.
     * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
     */
-  def filter(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], _]): js.Array[T] = js.native
   def filter(
-    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], _],
-    thisArg: js.Any
+    callbackfn: js.ThisFunction3[
+      /* this */ js.UndefOr[scala.Nothing], 
+      /* value */ T, 
+      /* index */ Double, 
+      /* array */ js.Array[T], 
+      _
+    ]
+  ): js.Array[T] = js.native
+  def filter(
+    callbackfn: js.ThisFunction3[
+      /* this */ js.UndefOr[scala.Nothing], 
+      /* value */ T, 
+      /* index */ Double, 
+      /* array */ js.Array[T], 
+      _
+    ],
+    thisArg: js.UndefOr[scala.Nothing]
+  ): js.Array[T] = js.native
+  def filter[Z](
+    callbackfn: js.ThisFunction3[/* this */ Z, /* value */ T, /* index */ Double, /* array */ js.Array[T], _],
+    thisArg: Z
   ): js.Array[T] = js.native
   /**
     * Returns the value of the first element in the array where predicate is true, and undefined
@@ -84,10 +118,28 @@ trait Array[T] extends /* n */ NumberDictionary[T] {
     * @param thisArg If provided, it will be used as the this value for each invocation of
     * predicate. If it is not provided, undefined is used instead.
     */
-  def find(predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], scala.Boolean]): js.UndefOr[T] = js.native
   def find(
-    predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], scala.Boolean],
-    thisArg: js.Any
+    predicate: js.ThisFunction3[
+      /* this */ js.UndefOr[scala.Nothing], 
+      /* value */ T, 
+      /* index */ Double, 
+      /* obj */ js.Array[T], 
+      scala.Boolean
+    ]
+  ): js.UndefOr[T] = js.native
+  def find(
+    predicate: js.ThisFunction3[
+      /* this */ js.UndefOr[scala.Nothing], 
+      /* value */ T, 
+      /* index */ Double, 
+      /* obj */ js.Array[T], 
+      scala.Boolean
+    ],
+    thisArg: js.UndefOr[scala.Nothing]
+  ): js.UndefOr[T] = js.native
+  def find[Z](
+    predicate: js.ThisFunction3[/* this */ Z, /* value */ T, /* index */ Double, /* obj */ js.Array[T], scala.Boolean],
+    thisArg: Z
   ): js.UndefOr[T] = js.native
   /**
     * Returns the index of the first element in the array where predicate is true, and -1
@@ -98,20 +150,56 @@ trait Array[T] extends /* n */ NumberDictionary[T] {
     * @param thisArg If provided, it will be used as the this value for each invocation of
     * predicate. If it is not provided, undefined is used instead.
     */
-  def findIndex(predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], scala.Boolean]): Double = js.native
   def findIndex(
-    predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], scala.Boolean],
-    thisArg: js.Any
+    predicate: js.ThisFunction3[
+      /* this */ js.UndefOr[scala.Nothing], 
+      /* value */ T, 
+      /* index */ Double, 
+      /* obj */ js.Array[T], 
+      scala.Boolean
+    ]
+  ): Double = js.native
+  def findIndex(
+    predicate: js.ThisFunction3[
+      /* this */ js.UndefOr[scala.Nothing], 
+      /* value */ T, 
+      /* index */ Double, 
+      /* obj */ js.Array[T], 
+      scala.Boolean
+    ],
+    thisArg: js.UndefOr[scala.Nothing]
+  ): Double = js.native
+  def findIndex[Z](
+    predicate: js.ThisFunction3[/* this */ Z, /* value */ T, /* index */ Double, /* obj */ js.Array[T], scala.Boolean],
+    thisArg: Z
   ): Double = js.native
   /**
     * Performs the specified action for each element in an array.
     * @param callbackfn  A function that accepts up to three arguments. forEach calls the callbackfn function one time for each element in the array.
     * @param thisArg  An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
     */
-  def forEach(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Unit]): Unit = js.native
   def forEach(
-    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Unit],
-    thisArg: js.Any
+    callbackfn: js.ThisFunction3[
+      /* this */ js.UndefOr[scala.Nothing], 
+      /* value */ T, 
+      /* index */ Double, 
+      /* array */ js.Array[T], 
+      Unit
+    ]
+  ): Unit = js.native
+  def forEach(
+    callbackfn: js.ThisFunction3[
+      /* this */ js.UndefOr[scala.Nothing], 
+      /* value */ T, 
+      /* index */ Double, 
+      /* array */ js.Array[T], 
+      Unit
+    ],
+    thisArg: js.UndefOr[scala.Nothing]
+  ): Unit = js.native
+  def forEach[Z](
+    callbackfn: js.ThisFunction3[/* this */ Z, /* value */ T, /* index */ Double, /* array */ js.Array[T], Unit],
+    thisArg: Z
   ): Unit = js.native
   /**
     * Returns the index of the first occurrence of a value in an array.
@@ -126,7 +214,7 @@ trait Array[T] extends /* n */ NumberDictionary[T] {
     */
   def join(): java.lang.String = js.native
   def join(separator: java.lang.String): java.lang.String = js.native
-  /** 
+  /**
     * Returns an list of keys in the array
     */
   def keys(): IterableIterator[Double] = js.native
@@ -142,22 +230,28 @@ trait Array[T] extends /* n */ NumberDictionary[T] {
     * @param callbackfn A function that accepts up to three arguments. The map method calls the callbackfn function one time for each element in the array.
     * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
     */
-  def map[U](callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U]): js.Tuple4[U, U, U, U] = js.native
   def map[U](
-    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U],
-    thisArg: js.Any
+    callbackfn: js.ThisFunction3[
+      /* this */ js.UndefOr[scala.Nothing], 
+      /* value */ T, 
+      /* index */ Double, 
+      /* array */ js.Array[T], 
+      U
+    ]
   ): js.Tuple4[U, U, U, U] = js.native
-  /**
-    * Calls a defined callback function on each element of an array, and returns an array that contains the results.
-    * @param callbackfn A function that accepts up to three arguments. The map method calls the callbackfn function one time for each element in the array.
-    * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
-    */
-  @JSName("map")
-  def map_U_Array[U](callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U]): js.Array[U] = js.native
-  @JSName("map")
-  def map_U_Array[U](
-    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U],
-    thisArg: js.Any
+  def map[U](
+    callbackfn: js.ThisFunction3[
+      /* this */ js.UndefOr[scala.Nothing], 
+      /* value */ T, 
+      /* index */ Double, 
+      /* array */ js.Array[T], 
+      U
+    ],
+    thisArg: js.UndefOr[scala.Nothing]
+  ): js.Tuple4[U, U, U, U] = js.native
+  def map[Z, U](
+    callbackfn: js.ThisFunction3[/* this */ Z, /* value */ T, /* index */ Double, /* array */ js.Array[T], U],
+    thisArg: Z
   ): js.Array[U] = js.native
   /**
     * Calls a defined callback function on each element of an array, and returns an array that contains the results.
@@ -165,11 +259,51 @@ trait Array[T] extends /* n */ NumberDictionary[T] {
     * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
     */
   @JSName("map")
-  def map_U_Tuple2[U](callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U]): js.Tuple2[U, U] = js.native
+  def map_U_Array[U](
+    callbackfn: js.ThisFunction3[
+      /* this */ js.UndefOr[scala.Nothing], 
+      /* value */ T, 
+      /* index */ Double, 
+      /* array */ js.Array[T], 
+      U
+    ]
+  ): js.Array[U] = js.native
+  @JSName("map")
+  def map_U_Array[U](
+    callbackfn: js.ThisFunction3[
+      /* this */ js.UndefOr[scala.Nothing], 
+      /* value */ T, 
+      /* index */ Double, 
+      /* array */ js.Array[T], 
+      U
+    ],
+    thisArg: js.UndefOr[scala.Nothing]
+  ): js.Array[U] = js.native
+  /**
+    * Calls a defined callback function on each element of an array, and returns an array that contains the results.
+    * @param callbackfn A function that accepts up to three arguments. The map method calls the callbackfn function one time for each element in the array.
+    * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
+    */
   @JSName("map")
   def map_U_Tuple2[U](
-    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U],
-    thisArg: js.Any
+    callbackfn: js.ThisFunction3[
+      /* this */ js.UndefOr[scala.Nothing], 
+      /* value */ T, 
+      /* index */ Double, 
+      /* array */ js.Array[T], 
+      U
+    ]
+  ): js.Tuple2[U, U] = js.native
+  @JSName("map")
+  def map_U_Tuple2[U](
+    callbackfn: js.ThisFunction3[
+      /* this */ js.UndefOr[scala.Nothing], 
+      /* value */ T, 
+      /* index */ Double, 
+      /* array */ js.Array[T], 
+      U
+    ],
+    thisArg: js.UndefOr[scala.Nothing]
   ): js.Tuple2[U, U] = js.native
   /**
     * Calls a defined callback function on each element of an array, and returns an array that contains the results.
@@ -177,11 +311,25 @@ trait Array[T] extends /* n */ NumberDictionary[T] {
     * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
     */
   @JSName("map")
-  def map_U_Tuple3[U](callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U]): js.Tuple3[U, U, U] = js.native
+  def map_U_Tuple3[U](
+    callbackfn: js.ThisFunction3[
+      /* this */ js.UndefOr[scala.Nothing], 
+      /* value */ T, 
+      /* index */ Double, 
+      /* array */ js.Array[T], 
+      U
+    ]
+  ): js.Tuple3[U, U, U] = js.native
   @JSName("map")
   def map_U_Tuple3[U](
-    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U],
-    thisArg: js.Any
+    callbackfn: js.ThisFunction3[
+      /* this */ js.UndefOr[scala.Nothing], 
+      /* value */ T, 
+      /* index */ Double, 
+      /* array */ js.Array[T], 
+      U
+    ],
+    thisArg: js.UndefOr[scala.Nothing]
   ): js.Tuple3[U, U, U] = js.native
   /**
     * Calls a defined callback function on each element of an array, and returns an array that contains the results.
@@ -189,11 +337,45 @@ trait Array[T] extends /* n */ NumberDictionary[T] {
     * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
     */
   @JSName("map")
-  def map_U_Tuple5[U](callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U]): js.Tuple5[U, U, U, U, U] = js.native
+  def map_U_Tuple5[U](
+    callbackfn: js.ThisFunction3[
+      /* this */ js.UndefOr[scala.Nothing], 
+      /* value */ T, 
+      /* index */ Double, 
+      /* array */ js.Array[T], 
+      U
+    ]
+  ): js.Tuple5[U, U, U, U, U] = js.native
   @JSName("map")
   def map_U_Tuple5[U](
-    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U],
-    thisArg: js.Any
+    callbackfn: js.ThisFunction3[
+      /* this */ js.UndefOr[scala.Nothing], 
+      /* value */ T, 
+      /* index */ Double, 
+      /* array */ js.Array[T], 
+      U
+    ],
+    thisArg: js.UndefOr[scala.Nothing]
+  ): js.Tuple5[U, U, U, U, U] = js.native
+  @JSName("map")
+  def map_ZU_Tuple2[Z, U](
+    callbackfn: js.ThisFunction3[/* this */ Z, /* value */ T, /* index */ Double, /* array */ js.Array[T], U],
+    thisArg: Z
+  ): js.Tuple2[U, U] = js.native
+  @JSName("map")
+  def map_ZU_Tuple3[Z, U](
+    callbackfn: js.ThisFunction3[/* this */ Z, /* value */ T, /* index */ Double, /* array */ js.Array[T], U],
+    thisArg: Z
+  ): js.Tuple3[U, U, U] = js.native
+  @JSName("map")
+  def map_ZU_Tuple4[Z, U](
+    callbackfn: js.ThisFunction3[/* this */ Z, /* value */ T, /* index */ Double, /* array */ js.Array[T], U],
+    thisArg: Z
+  ): js.Tuple4[U, U, U, U] = js.native
+  @JSName("map")
+  def map_ZU_Tuple5[Z, U](
+    callbackfn: js.ThisFunction3[/* this */ Z, /* value */ T, /* index */ Double, /* array */ js.Array[T], U],
+    thisArg: Z
   ): js.Tuple5[U, U, U, U, U] = js.native
   /**
     * Removes the last element from an array and returns it.
@@ -307,11 +489,27 @@ trait Array[T] extends /* n */ NumberDictionary[T] {
     * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
     */
   def some(
-    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], scala.Boolean]
+    callbackfn: js.ThisFunction3[
+      /* this */ js.UndefOr[scala.Nothing], 
+      /* value */ T, 
+      /* index */ Double, 
+      /* array */ js.Array[T], 
+      scala.Boolean
+    ]
   ): scala.Boolean = js.native
   def some(
-    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], scala.Boolean],
-    thisArg: js.Any
+    callbackfn: js.ThisFunction3[
+      /* this */ js.UndefOr[scala.Nothing], 
+      /* value */ T, 
+      /* index */ Double, 
+      /* array */ js.Array[T], 
+      scala.Boolean
+    ],
+    thisArg: js.UndefOr[scala.Nothing]
+  ): scala.Boolean = js.native
+  def some[Z](
+    callbackfn: js.ThisFunction3[/* this */ Z, /* value */ T, /* index */ Double, /* array */ js.Array[T], scala.Boolean],
+    thisArg: Z
   ): scala.Boolean = js.native
   /**
     * Sorts an array.
@@ -338,7 +536,7 @@ trait Array[T] extends /* n */ NumberDictionary[T] {
     * @param items  Elements to insert at the start of the Array.
     */
   def unshift(items: T*): Double = js.native
-  /** 
+  /**
     * Returns an list of values in the array
     */
   def values(): IterableIterator[T] = js.native

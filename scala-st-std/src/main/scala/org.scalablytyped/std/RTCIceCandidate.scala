@@ -4,22 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RTCIceCandidate extends RTCIceGatherCandidate {
-  var foundation: js.UndefOr[java.lang.String] = js.undefined
-  var ip: js.UndefOr[java.lang.String] = js.undefined
-  var port: js.UndefOr[Double] = js.undefined
-  var priority: js.UndefOr[Double] = js.undefined
-  var protocol: js.UndefOr[java.lang.String] = js.undefined
-  var relatedAddress: js.UndefOr[java.lang.String] = js.undefined
-  var relatedPort: js.UndefOr[Double] = js.undefined
-  var tcpType: js.UndefOr[java.lang.String] = js.undefined
-  var `type`: js.UndefOr[java.lang.String] = js.undefined
+trait RTCIceCandidate extends js.Object {
+  var candidate: java.lang.String | Null
+  var sdpMLineIndex: Double | Null
+  var sdpMid: java.lang.String | Null
+  def toJSON(): js.Any
 }
 
 object RTCIceCandidate {
   @scala.inline
-  def apply(): RTCIceCandidate = {
-    val __obj = js.Dynamic.literal()
+  def apply(toJSON: () => js.Any): RTCIceCandidate = {
+    val __obj = js.Dynamic.literal(toJSON = js.Any.fromFunction0(toJSON))
     __obj.asInstanceOf[RTCIceCandidate]
   }
   @scala.inline
@@ -34,41 +29,19 @@ object RTCIceCandidate {
         x
     }
     @scala.inline
-    def setFoundation(value: java.lang.String): Self = this.set("foundation", value.asInstanceOf[js.Any])
+    def setToJSON(value: () => js.Any): Self = this.set("toJSON", js.Any.fromFunction0(value))
     @scala.inline
-    def deleteFoundation: Self = this.set("foundation", js.undefined)
+    def setCandidate(value: java.lang.String): Self = this.set("candidate", value.asInstanceOf[js.Any])
     @scala.inline
-    def setIp(value: java.lang.String): Self = this.set("ip", value.asInstanceOf[js.Any])
+    def setCandidateNull: Self = this.set("candidate", null)
     @scala.inline
-    def deleteIp: Self = this.set("ip", js.undefined)
+    def setSdpMLineIndex(value: Double): Self = this.set("sdpMLineIndex", value.asInstanceOf[js.Any])
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setSdpMLineIndexNull: Self = this.set("sdpMLineIndex", null)
     @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setSdpMid(value: java.lang.String): Self = this.set("sdpMid", value.asInstanceOf[js.Any])
     @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
-    @scala.inline
-    def setProtocol(value: java.lang.String): Self = this.set("protocol", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteProtocol: Self = this.set("protocol", js.undefined)
-    @scala.inline
-    def setRelatedAddress(value: java.lang.String): Self = this.set("relatedAddress", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteRelatedAddress: Self = this.set("relatedAddress", js.undefined)
-    @scala.inline
-    def setRelatedPort(value: Double): Self = this.set("relatedPort", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteRelatedPort: Self = this.set("relatedPort", js.undefined)
-    @scala.inline
-    def setTcpType(value: java.lang.String): Self = this.set("tcpType", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteTcpType: Self = this.set("tcpType", js.undefined)
-    @scala.inline
-    def setType(value: java.lang.String): Self = this.set("type", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setSdpMidNull: Self = this.set("sdpMid", null)
   }
   
 }

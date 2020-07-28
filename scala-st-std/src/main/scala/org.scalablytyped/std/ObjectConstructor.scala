@@ -44,35 +44,31 @@ trait ObjectConstructor
     */
   def assign[T, U, V, W](target: T, source1: U, source2: V, source3: W): T with U with V with W = js.native
   /**
+    * Creates an object that has the specified prototype or that has null prototype.
+    * @param o Object to use as a prototype. May be null.
+    */
+  def create(): js.Any = js.native
+  def create(o: js.Object): js.Any = js.native
+  /**
     * Creates an object that has the specified prototype, and that optionally contains specified properties.
     * @param o Object to use as a prototype. May be null
     * @param properties JavaScript object that contains one or more property descriptors.
     */
-  def create(o: js.Object, properties: PropertyDescriptorMap): js.Any = js.native
-  /**
-    * Creates an object that has null prototype.
-    * @param o Object to use as a prototype. May be null
-    */
-  def create(o: Null): js.Any = js.native
-  def create(o: Null, properties: PropertyDescriptorMap): js.Any = js.native
-  /**
-    * Creates an object that has the specified prototype, and that optionally contains specified properties.
-    * @param o Object to use as a prototype. May be null
-    */
-  def create[T /* <: js.Object */](o: T): T = js.native
+  def create(o: js.Object, properties: PropertyDescriptorMap with ThisType[_]): js.Any = js.native
+  def create(o: Null, properties: PropertyDescriptorMap with ThisType[_]): js.Any = js.native
   /**
     * Adds one or more properties to an object, and/or modifies attributes of existing properties.
     * @param o Object on which to add or modify the properties. This can be a native JavaScript object or a DOM object.
     * @param properties JavaScript object that contains one or more descriptor objects. Each descriptor object describes a data property or an accessor property.
     */
-  def defineProperties(o: js.Any, properties: PropertyDescriptorMap): js.Any = js.native
+  def defineProperties(o: js.Any, properties: PropertyDescriptorMap with ThisType[_]): js.Any = js.native
   /**
     * Adds a property to an object, or modifies attributes of an existing property.
     * @param o Object on which to add or modify the property. This can be a native JavaScript object (that is, a user-defined object or a built in object) or a DOM object.
     * @param p The property name.
     * @param attributes Descriptor for the property. It can be for a data property or an accessor property.
     */
-  def defineProperty(o: js.Any, p: java.lang.String, attributes: PropertyDescriptor): js.Any = js.native
+  def defineProperty(o: js.Any, p: java.lang.String, attributes: PropertyDescriptor with ThisType[_]): js.Any = js.native
   /**
     * Adds a property to an object, or modifies attributes of an existing property.
     * @param o Object on which to add or modify the property. This can be a native JavaScript

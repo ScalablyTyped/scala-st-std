@@ -14,10 +14,12 @@ trait Navigator
      with NavigatorGeolocation
      with MSNavigatorDoNotTrack
      with MSFileSaver
+     with NavigatorBeacon
+     with NavigatorConcurrentHardware
      with NavigatorUserMedia {
-  val appCodeName: java.lang.String = js.native
+  val authentication: WebAuthentication = js.native
   val cookieEnabled: scala.Boolean = js.native
-  val hardwareConcurrency: Double = js.native
+  var gamepadInputEmulation: java.lang.String = js.native
   val language: java.lang.String = js.native
   val maxTouchPoints: Double = js.native
   val mimeTypes: MimeTypeArray = js.native
@@ -26,6 +28,7 @@ trait Navigator
   val msPointerEnabled: scala.Boolean = js.native
   val plugins: PluginArray = js.native
   val pointerEnabled: scala.Boolean = js.native
+  val serviceWorker: ServiceWorkerContainer = js.native
   val webdriver: scala.Boolean = js.native
   def getGamepads(): js.Array[Gamepad] = js.native
   def javaEnabled(): scala.Boolean = js.native
@@ -41,7 +44,7 @@ trait Navigator
     successCallback: MSLaunchUriCallback,
     noHandlerCallback: MSLaunchUriCallback
   ): Unit = js.native
-  def requestMediaKeySystemAccess(keySystem: java.lang.String, supportedConfigurations: js.Array[MediaKeySystemConfiguration]): js.Thenable[MediaKeySystemAccess] = js.native
+  def requestMediaKeySystemAccess(keySystem: java.lang.String, supportedConfigurations: js.Array[MediaKeySystemConfiguration]): js.Promise[MediaKeySystemAccess] = js.native
   def vibrate(pattern: js.Array[Double]): scala.Boolean = js.native
   def vibrate(pattern: Double): scala.Boolean = js.native
 }

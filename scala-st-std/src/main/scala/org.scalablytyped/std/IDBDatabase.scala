@@ -21,11 +21,11 @@ trait IDBDatabase extends EventTarget {
     useCapture: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _]): Unit = js.native
+  def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(
     `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     useCapture: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -41,7 +41,7 @@ trait IDBDatabase extends EventTarget {
   def createObjectStore(name: java.lang.String, optionalParameters: IDBObjectStoreParameters): IDBObjectStore = js.native
   def deleteObjectStore(name: java.lang.String): Unit = js.native
   def onabort(ev: Event): js.Any = js.native
-  def onerror(ev: ErrorEvent): js.Any = js.native
+  def onerror(ev: Event): js.Any = js.native
   def onversionchange(ev: IDBVersionChangeEvent): js.Any = js.native
   def transaction(storeNames: java.lang.String): IDBTransaction = js.native
   def transaction(storeNames: java.lang.String, mode: java.lang.String): IDBTransaction = js.native

@@ -30,6 +30,7 @@ import org.scalablytyped.std.stdStrings.clippath_
 import org.scalablytyped.std.stdStrings.code
 import org.scalablytyped.std.stdStrings.col
 import org.scalablytyped.std.stdStrings.colgroup
+import org.scalablytyped.std.stdStrings.data
 import org.scalablytyped.std.stdStrings.datalist
 import org.scalablytyped.std.stdStrings.dd
 import org.scalablytyped.std.stdStrings.defs
@@ -122,6 +123,7 @@ import org.scalablytyped.std.stdStrings.noscript
 import org.scalablytyped.std.stdStrings.ol
 import org.scalablytyped.std.stdStrings.optgroup
 import org.scalablytyped.std.stdStrings.option
+import org.scalablytyped.std.stdStrings.output
 import org.scalablytyped.std.stdStrings.p
 import org.scalablytyped.std.stdStrings.param
 import org.scalablytyped.std.stdStrings.path
@@ -164,6 +166,7 @@ import org.scalablytyped.std.stdStrings.textpath_
 import org.scalablytyped.std.stdStrings.tfoot
 import org.scalablytyped.std.stdStrings.th
 import org.scalablytyped.std.stdStrings.thead
+import org.scalablytyped.std.stdStrings.time
 import org.scalablytyped.std.stdStrings.title
 import org.scalablytyped.std.stdStrings.tr
 import org.scalablytyped.std.stdStrings.track
@@ -238,6 +241,8 @@ trait NodeSelector extends js.Object {
   def querySelectorAll_col(selectors: col): NodeListOf[HTMLTableColElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_colgroup(selectors: colgroup): NodeListOf[HTMLTableColElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_data(selectors: data): NodeListOf[HTMLDataElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_datalist(selectors: datalist): NodeListOf[HTMLDataListElement] = js.native
   @JSName("querySelectorAll")
@@ -425,6 +430,8 @@ trait NodeSelector extends js.Object {
   @JSName("querySelectorAll")
   def querySelectorAll_option(selectors: option): NodeListOf[HTMLOptionElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_output(selectors: output): NodeListOf[HTMLOutputElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_p(selectors: p): NodeListOf[HTMLParagraphElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_param(selectors: param): NodeListOf[HTMLParamElement] = js.native
@@ -509,6 +516,8 @@ trait NodeSelector extends js.Object {
   @JSName("querySelectorAll")
   def querySelectorAll_thead(selectors: thead): NodeListOf[HTMLTableSectionElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_time(selectors: time): NodeListOf[HTMLTimeElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_title(selectors: title): NodeListOf[HTMLTitleElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_tr(selectors: tr): NodeListOf[HTMLTableRowElement] = js.native
@@ -590,6 +599,8 @@ trait NodeSelector extends js.Object {
   def querySelector_col(selectors: col): HTMLTableColElement | Null = js.native
   @JSName("querySelector")
   def querySelector_colgroup(selectors: colgroup): HTMLTableColElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_data(selectors: data): HTMLDataElement | Null = js.native
   @JSName("querySelector")
   def querySelector_datalist(selectors: datalist): HTMLDataListElement | Null = js.native
   @JSName("querySelector")
@@ -777,6 +788,8 @@ trait NodeSelector extends js.Object {
   @JSName("querySelector")
   def querySelector_option(selectors: option): HTMLOptionElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_output(selectors: output): HTMLOutputElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_p(selectors: p): HTMLParagraphElement | Null = js.native
   @JSName("querySelector")
   def querySelector_param(selectors: param): HTMLParamElement | Null = js.native
@@ -860,6 +873,8 @@ trait NodeSelector extends js.Object {
   def querySelector_th(selectors: th): HTMLTableHeaderCellElement | Null = js.native
   @JSName("querySelector")
   def querySelector_thead(selectors: thead): HTMLTableSectionElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_time(selectors: time): HTMLTimeElement | Null = js.native
   @JSName("querySelector")
   def querySelector_title(selectors: title): HTMLTitleElement | Null = js.native
   @JSName("querySelector")

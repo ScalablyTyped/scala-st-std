@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait IDBDatabaseEventMap extends js.Object {
   var abort: Event
-  var error: ErrorEvent
+  var error: Event
 }
 
 object IDBDatabaseEventMap {
   @scala.inline
-  def apply(abort: Event, error: ErrorEvent): IDBDatabaseEventMap = {
+  def apply(abort: Event, error: Event): IDBDatabaseEventMap = {
     val __obj = js.Dynamic.literal(abort = abort.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDBDatabaseEventMap]
   }
@@ -29,7 +29,7 @@ object IDBDatabaseEventMap {
     @scala.inline
     def setAbort(value: Event): Self = this.set("abort", value.asInstanceOf[js.Any])
     @scala.inline
-    def setError(value: ErrorEvent): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setError(value: Event): Self = this.set("error", value.asInstanceOf[js.Any])
   }
   
 }

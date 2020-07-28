@@ -13,6 +13,7 @@ trait HTMLIFrameElement
     */
   var align: java.lang.String = js.native
   var allowFullscreen: scala.Boolean = js.native
+  var allowPaymentRequest: scala.Boolean = js.native
   /**
     * Specifies the properties of a border drawn around an object.
     */

@@ -14,7 +14,7 @@ trait Console extends js.Object {
   def count(): Unit = js.native
   def count(countTitle: java.lang.String): Unit = js.native
   def debug(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
-  def debug(message: java.lang.String, optionalParams: js.Any*): Unit = js.native
+  def debug(message: js.Any, optionalParams: js.Any*): Unit = js.native
   def dir(value: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
   def dir(value: js.Any, optionalParams: js.Any*): Unit = js.native
   def dirxml(value: js.Any): Unit = js.native

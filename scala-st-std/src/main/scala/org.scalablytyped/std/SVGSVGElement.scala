@@ -10,15 +10,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- `org.scalablytyped`.std.SVGStylable because var conflicts: className. Inlined style */ @js.native
+@js.native
 trait SVGSVGElement
-  extends SVGElement
+  extends SVGGraphicsElement
      with DocumentEvent
-     with SVGLocatable
-     with SVGTests
-     with SVGLangSpace
-     with SVGExternalResourcesRequired
      with SVGFitToViewBox
      with SVGZoomAndPan {
   var contentScriptType: java.lang.String = js.native
@@ -30,7 +25,6 @@ trait SVGSVGElement
   val pixelUnitToMillimeterY: Double = js.native
   val screenPixelToMillimeterX: Double = js.native
   val screenPixelToMillimeterY: Double = js.native
-  val style: CSSStyleDeclaration = js.native
   val viewport: SVGRect = js.native
   val width: SVGAnimatedLength = js.native
   val x: SVGAnimatedLength = js.native

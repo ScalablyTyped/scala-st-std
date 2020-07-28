@@ -11,6 +11,7 @@ trait HTMLScriptElement extends HTMLElement {
     * Sets or retrieves the character set used to encode the object.
     */
   var charset: java.lang.String = js.native
+  var crossOrigin: java.lang.String | Null = js.native
   /**
     * Sets or retrieves the status of the script.
     */

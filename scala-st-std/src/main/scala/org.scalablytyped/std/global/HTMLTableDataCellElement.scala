@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("HTMLTableDataCellElement")
 @js.native
 class HTMLTableDataCellElement ()
-  extends org.scalablytyped.std.HTMLTableCellElement {
+  extends org.scalablytyped.std.HTMLTableDataCellElement {
   /**
     * Sets or retrieves a value that you can use to implement your own ch functionality for the object.
     */
@@ -24,13 +24,13 @@ class HTMLTableDataCellElement ()
   /* CompleteClass */
   override val children: org.scalablytyped.std.HTMLCollection = js.native
   /* CompleteClass */
-  override val firstElementChild: org.scalablytyped.std.Element = js.native
+  override val firstElementChild: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
-  override val lastElementChild: org.scalablytyped.std.Element = js.native
+  override val lastElementChild: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
-  override val nextElementSibling: org.scalablytyped.std.Element = js.native
+  override val nextElementSibling: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
-  override val previousElementSibling: org.scalablytyped.std.Element = js.native
+  override val previousElementSibling: org.scalablytyped.std.Element | Null = js.native
   /**
     * Sets or retrieves how text and other content are vertically aligned within the object that contains them.
     */

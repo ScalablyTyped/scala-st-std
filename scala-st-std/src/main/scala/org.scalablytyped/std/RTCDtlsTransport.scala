@@ -11,7 +11,7 @@ trait RTCDtlsTransport
   extends RTCStatsProvider
      with RTCTransport {
   var ondtlsstatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ RTCDtlsTransportStateChangedEvent, _]) | Null = js.native
-  var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _]) | Null = js.native
+  var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   val state: java.lang.String = js.native
   val transport: RTCIceTransport = js.native
   @JSName("addEventListener")
@@ -26,11 +26,11 @@ trait RTCDtlsTransport
     useCapture: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _]): Unit = js.native
+  def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(
     `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     useCapture: scala.Boolean
   ): Unit = js.native
   def getLocalParameters(): RTCDtlsParameters = js.native

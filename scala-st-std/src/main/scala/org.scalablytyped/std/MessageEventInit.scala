@@ -10,7 +10,7 @@ trait MessageEventInit extends EventInit {
   var lastEventId: js.UndefOr[java.lang.String] = js.undefined
   var origin: js.UndefOr[java.lang.String] = js.undefined
   var ports: js.UndefOr[js.Array[MessagePort]] = js.undefined
-  var source: js.UndefOr[js.Any] = js.undefined
+  var source: js.UndefOr[Window] = js.undefined
 }
 
 object MessageEventInit {
@@ -53,7 +53,7 @@ object MessageEventInit {
     @scala.inline
     def deletePorts: Self = this.set("ports", js.undefined)
     @scala.inline
-    def setSource(value: js.Any): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setSource(value: Window): Self = this.set("source", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteSource: Self = this.set("source", js.undefined)
   }

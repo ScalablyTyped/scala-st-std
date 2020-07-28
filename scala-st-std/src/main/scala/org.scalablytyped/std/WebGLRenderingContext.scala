@@ -472,6 +472,7 @@ trait WebGLRenderingContext extends js.Object {
   def lineWidth(width: Double): Unit = js.native
   def linkProgram(): Unit = js.native
   def linkProgram(program: WebGLProgram): Unit = js.native
+  def pixelStorei(pname: Double, param: scala.Boolean): Unit = js.native
   def pixelStorei(pname: Double, param: Double): Unit = js.native
   def polygonOffset(factor: Double, units: Double): Unit = js.native
   def readPixels(x: Double, y: Double, width: Double, height: Double, format: Double, `type`: Double): Unit = js.native
@@ -495,7 +496,6 @@ trait WebGLRenderingContext extends js.Object {
   def stencilMaskSeparate(face: Double, mask: Double): Unit = js.native
   def stencilOp(fail: Double, zfail: Double, zpass: Double): Unit = js.native
   def stencilOpSeparate(face: Double, fail: Double, zfail: Double, zpass: Double): Unit = js.native
-  def texImage2D(target: Double, level: Double, internalformat: Double, format: Double, `type`: Double): Unit = js.native
   def texImage2D(
     target: Double,
     level: Double,
@@ -519,6 +519,14 @@ trait WebGLRenderingContext extends js.Object {
     format: Double,
     `type`: Double,
     pixels: HTMLVideoElement
+  ): Unit = js.native
+  def texImage2D(
+    target: Double,
+    level: Double,
+    internalformat: Double,
+    format: Double,
+    `type`: Double,
+    pixels: ImageBitmap
   ): Unit = js.native
   def texImage2D(
     target: Double,
@@ -551,7 +559,6 @@ trait WebGLRenderingContext extends js.Object {
   ): Unit = js.native
   def texParameterf(target: Double, pname: Double, param: Double): Unit = js.native
   def texParameteri(target: Double, pname: Double, param: Double): Unit = js.native
-  def texSubImage2D(target: Double, level: Double, xoffset: Double, yoffset: Double, format: Double, `type`: Double): Unit = js.native
   def texSubImage2D(
     target: Double,
     level: Double,
@@ -578,6 +585,15 @@ trait WebGLRenderingContext extends js.Object {
     format: Double,
     `type`: Double,
     pixels: HTMLVideoElement
+  ): Unit = js.native
+  def texSubImage2D(
+    target: Double,
+    level: Double,
+    xoffset: Double,
+    yoffset: Double,
+    format: Double,
+    `type`: Double,
+    pixels: ImageBitmap
   ): Unit = js.native
   def texSubImage2D(
     target: Double,

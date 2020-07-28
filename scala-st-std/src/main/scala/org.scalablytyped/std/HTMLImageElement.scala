@@ -22,7 +22,7 @@ trait HTMLImageElement extends HTMLElement {
     * Retrieves whether the object is fully loaded.
     */
   val complete: scala.Boolean = js.native
-  var crossOrigin: java.lang.String = js.native
+  var crossOrigin: java.lang.String | Null = js.native
   val currentSrc: java.lang.String = js.native
   /**
     * Sets or retrieves the height of the object.

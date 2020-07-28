@@ -1,0 +1,34 @@
+package org.scalablytyped.std
+
+import org.scalablytyped.std.stdStrings.statechange
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait ServiceWorker
+  extends EventTarget
+     with AbstractWorker {
+  val scriptURL: USVString = js.native
+  val state: java.lang.String = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(
+    `type`: java.lang.String,
+    listener: js.UndefOr[EventListenerOrEventListenerObject],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_statechange(`type`: statechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_statechange(
+    `type`: statechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  def onstatechange(ev: Event): js.Any = js.native
+  def postMessage(message: js.Any): Unit = js.native
+  def postMessage(message: js.Any, transfer: js.Array[_]): Unit = js.native
+}
+

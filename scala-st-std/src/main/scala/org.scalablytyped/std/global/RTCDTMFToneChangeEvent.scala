@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class RTCDTMFToneChangeEvent protected ()
   extends org.scalablytyped.std.RTCDTMFToneChangeEvent {
-  def this(`type`: java.lang.String, eventInitDict: RTCDTMFToneChangeEventInit) = this()
+  def this(typeArg: java.lang.String, eventInitDict: RTCDTMFToneChangeEventInit) = this()
   /* CompleteClass */
   override val AT_TARGET: Double = js.native
   /* CompleteClass */
@@ -61,7 +61,7 @@ class RTCDTMFToneChangeEvent protected ()
 @js.native
 object RTCDTMFToneChangeEvent
   extends Instantiable2[
-      /* type */ java.lang.String, 
+      /* typeArg */ java.lang.String, 
       /* eventInitDict */ RTCDTMFToneChangeEventInit, 
       org.scalablytyped.std.RTCDTMFToneChangeEvent
     ]

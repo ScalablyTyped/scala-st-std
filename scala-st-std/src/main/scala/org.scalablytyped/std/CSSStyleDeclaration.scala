@@ -129,10 +129,16 @@ trait CSSStyleDeclaration
   var imeMode: java.lang.String | Null = js.native
   var justifyContent: java.lang.String | Null = js.native
   var kerning: java.lang.String | Null = js.native
+  var layoutGrid: java.lang.String | Null = js.native
+  var layoutGridChar: java.lang.String | Null = js.native
+  var layoutGridLine: java.lang.String | Null = js.native
+  var layoutGridMode: java.lang.String | Null = js.native
+  var layoutGridType: java.lang.String | Null = js.native
   var left: java.lang.String | Null = js.native
   val length: Double = js.native
   var letterSpacing: java.lang.String | Null = js.native
   var lightingColor: java.lang.String | Null = js.native
+  var lineBreak: java.lang.String | Null = js.native
   var lineHeight: java.lang.String | Null = js.native
   var listStyle: java.lang.String | Null = js.native
   var listStyleImage: java.lang.String | Null = js.native
@@ -204,6 +210,7 @@ trait CSSStyleDeclaration
   var orphans: java.lang.String | Null = js.native
   var outline: java.lang.String | Null = js.native
   var outlineColor: java.lang.String | Null = js.native
+  var outlineOffset: java.lang.String | Null = js.native
   var outlineStyle: java.lang.String | Null = js.native
   var outlineWidth: java.lang.String | Null = js.native
   var overflow: java.lang.String | Null = js.native
@@ -225,9 +232,11 @@ trait CSSStyleDeclaration
   var quotes: java.lang.String | Null = js.native
   var resize: java.lang.String | Null = js.native
   var right: java.lang.String | Null = js.native
+  var rotate: java.lang.String | Null = js.native
   var rubyAlign: java.lang.String | Null = js.native
   var rubyOverhang: java.lang.String | Null = js.native
   var rubyPosition: java.lang.String | Null = js.native
+  var scale: java.lang.String | Null = js.native
   var stopColor: java.lang.String | Null = js.native
   var stopOpacity: java.lang.String | Null = js.native
   var stroke: java.lang.String | Null = js.native
@@ -261,7 +270,9 @@ trait CSSStyleDeclaration
   var transitionDuration: java.lang.String | Null = js.native
   var transitionProperty: java.lang.String | Null = js.native
   var transitionTimingFunction: java.lang.String | Null = js.native
+  var translate: java.lang.String | Null = js.native
   var unicodeBidi: java.lang.String | Null = js.native
+  var userSelect: java.lang.String | Null = js.native
   var verticalAlign: java.lang.String | Null = js.native
   var visibility: java.lang.String | Null = js.native
   var webkitAlignContent: java.lang.String | Null = js.native
@@ -321,6 +332,9 @@ trait CSSStyleDeclaration
   var webkitTapHighlightColor: java.lang.String | Null = js.native
   var webkitTextFillColor: java.lang.String | Null = js.native
   var webkitTextSizeAdjust: js.Any = js.native
+  var webkitTextStroke: java.lang.String | Null = js.native
+  var webkitTextStrokeColor: java.lang.String | Null = js.native
+  var webkitTextStrokeWidth: java.lang.String | Null = js.native
   var webkitTransform: java.lang.String | Null = js.native
   var webkitTransformOrigin: java.lang.String | Null = js.native
   var webkitTransformStyle: java.lang.String | Null = js.native

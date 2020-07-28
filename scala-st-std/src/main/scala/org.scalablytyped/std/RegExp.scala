@@ -37,7 +37,7 @@ trait RegExp extends js.Object {
     * Replaces text in a string, using this regular expression.
     * @param string A String object or string literal whose contents matching against
     *               this regular expression will be replaced
-    * @param replaceValue A String object or string literal containing the text to replace for every 
+    * @param replaceValue A String object or string literal containing the text to replace for every
     *                     successful match of this regular expression.
     */
   /**

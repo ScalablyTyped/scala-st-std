@@ -18,9 +18,9 @@ trait MessagePort extends EventTarget {
   def close(): Unit = js.native
   def onmessage(ev: MessageEvent): js.Any = js.native
   def postMessage(): Unit = js.native
-  def postMessage(message: js.UndefOr[scala.Nothing], ports: js.Any): Unit = js.native
+  def postMessage(message: js.UndefOr[scala.Nothing], transfer: js.Array[_]): Unit = js.native
   def postMessage(message: js.Any): Unit = js.native
-  def postMessage(message: js.Any, ports: js.Any): Unit = js.native
+  def postMessage(message: js.Any, transfer: js.Array[_]): Unit = js.native
   def start(): Unit = js.native
 }
 

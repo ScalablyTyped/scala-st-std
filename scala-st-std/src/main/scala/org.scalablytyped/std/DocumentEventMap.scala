@@ -72,7 +72,7 @@ trait DocumentEventMap extends GlobalEventHandlersEventMap {
   var pointerlockerror: Event
   var progress: ProgressEvent
   var ratechange: Event
-  var readystatechange: ProgressEvent
+  var readystatechange: Event
   var reset: Event
   var scroll: UIEvent
   var seeked: Event
@@ -173,7 +173,7 @@ object DocumentEventMap {
     pointerup: PointerEvent,
     progress: ProgressEvent,
     ratechange: Event,
-    readystatechange: ProgressEvent,
+    readystatechange: Event,
     reset: Event,
     scroll: UIEvent,
     seeked: Event,
@@ -345,7 +345,7 @@ object DocumentEventMap {
     @scala.inline
     def setRatechange(value: Event): Self = this.set("ratechange", value.asInstanceOf[js.Any])
     @scala.inline
-    def setReadystatechange(value: ProgressEvent): Self = this.set("readystatechange", value.asInstanceOf[js.Any])
+    def setReadystatechange(value: Event): Self = this.set("readystatechange", value.asInstanceOf[js.Any])
     @scala.inline
     def setReset(value: Event): Self = this.set("reset", value.asInstanceOf[js.Any])
     @scala.inline

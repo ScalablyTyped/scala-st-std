@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait MSVideoPayload extends MSPayloadBase {
   var durationSeconds: js.UndefOr[Double] = js.undefined
-  var resoluton: js.UndefOr[java.lang.String] = js.undefined
+  var resolution: js.UndefOr[java.lang.String] = js.undefined
   var videoBitRateAvg: js.UndefOr[Double] = js.undefined
   var videoBitRateMax: js.UndefOr[Double] = js.undefined
   var videoFrameRateAvg: js.UndefOr[Double] = js.undefined
@@ -35,9 +35,9 @@ object MSVideoPayload {
     @scala.inline
     def deleteDurationSeconds: Self = this.set("durationSeconds", js.undefined)
     @scala.inline
-    def setResoluton(value: java.lang.String): Self = this.set("resoluton", value.asInstanceOf[js.Any])
+    def setResolution(value: java.lang.String): Self = this.set("resolution", value.asInstanceOf[js.Any])
     @scala.inline
-    def deleteResoluton: Self = this.set("resoluton", js.undefined)
+    def deleteResolution: Self = this.set("resolution", js.undefined)
     @scala.inline
     def setVideoBitRateAvg(value: Double): Self = this.set("videoBitRateAvg", value.asInstanceOf[js.Any])
     @scala.inline

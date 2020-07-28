@@ -34,6 +34,8 @@ class URL protected ()
   /* CompleteClass */
   override var search: java.lang.String = js.native
   /* CompleteClass */
+  override val searchParams: org.scalablytyped.std.URLSearchParams = js.native
+  /* CompleteClass */
   override var username: java.lang.String = js.native
 }
 

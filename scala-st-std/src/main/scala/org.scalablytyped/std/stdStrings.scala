@@ -12,9 +12,6 @@ object stdStrings {
   sealed trait AnimationEvent extends js.Object
   
   @js.native
-  sealed trait AriaRequestEvent extends js.Object
-  
-  @js.native
   sealed trait ArrayBuffer extends js.Object
   
   @js.native
@@ -28,9 +25,6 @@ object stdStrings {
   
   @js.native
   sealed trait CloseEvent extends js.Object
-  
-  @js.native
-  sealed trait CommandEvent extends js.Object
   
   @js.native
   sealed trait CompositionEvent extends js.Object
@@ -70,6 +64,9 @@ object stdStrings {
   
   @js.native
   sealed trait FocusEvent extends js.Object
+  
+  @js.native
+  sealed trait FocusNavigationEvent extends js.Object
   
   @js.native
   sealed trait GamepadEvent extends js.Object
@@ -216,6 +213,9 @@ object stdStrings {
   sealed trait MediaStreamErrorEvent extends js.Object
   
   @js.native
+  sealed trait MediaStreamEvent extends js.Object
+  
+  @js.native
   sealed trait MediaStreamTrackEvent extends js.Object
   
   @js.native
@@ -267,6 +267,9 @@ object stdStrings {
   sealed trait Partial extends js.Object
   
   @js.native
+  sealed trait PaymentRequestUpdateEvent extends js.Object
+  
+  @js.native
   sealed trait PermissionRequestedEvent extends js.Object
   
   @js.native
@@ -300,6 +303,9 @@ object stdStrings {
   sealed trait RTCIceTransportStateChangedEvent extends js.Object
   
   @js.native
+  sealed trait RTCPeerConnectionIceEvent extends js.Object
+  
+  @js.native
   sealed trait RTCSsrcConflictEvent extends js.Object
   
   @js.native
@@ -327,7 +333,13 @@ object stdStrings {
   sealed trait ScriptNotifyEvent extends js.Object
   
   @js.native
+  sealed trait ServiceWorkerMessageEvent extends js.Object
+  
+  @js.native
   sealed trait Set extends js.Object
+  
+  @js.native
+  sealed trait SpeechSynthesisEvent extends js.Object
   
   @js.native
   sealed trait StorageEvent extends js.Object
@@ -400,6 +412,9 @@ object stdStrings {
   
   @js.native
   sealed trait address extends js.Object
+  
+  @js.native
+  sealed trait addstream extends js.Object
   
   @js.native
   sealed trait addtrack extends js.Object
@@ -485,6 +500,9 @@ object stdStrings {
   sealed trait bounce extends js.Object
   
   @js.native
+  sealed trait boundary extends js.Object
+  
+  @js.native
   sealed trait br extends js.Object
   
   @js.native
@@ -563,6 +581,9 @@ object stdStrings {
   sealed trait contextmenu extends js.Object
   
   @js.native
+  sealed trait controllerchange extends js.Object
+  
+  @js.native
   sealed trait copy extends js.Object
   
   @js.native
@@ -570,6 +591,9 @@ object stdStrings {
   
   @js.native
   sealed trait cut extends js.Object
+  
+  @js.native
+  sealed trait data extends js.Object
   
   @js.native
   sealed trait datalist extends js.Object
@@ -845,6 +869,9 @@ object stdStrings {
   sealed trait finish extends js.Object
   
   @js.native
+  sealed trait flipY extends js.Object
+  
+  @js.native
   sealed trait focus extends js.Object
   
   @js.native
@@ -920,6 +947,9 @@ object stdStrings {
   sealed trait hgroup extends js.Object
   
   @js.native
+  sealed trait high extends js.Object
+  
+  @js.native
   sealed trait hr extends js.Object
   
   @js.native
@@ -933,6 +963,15 @@ object stdStrings {
   
   @js.native
   sealed trait i extends js.Object
+  
+  @js.native
+  sealed trait icecandidate extends js.Object
+  
+  @js.native
+  sealed trait iceconnectionstatechange extends js.Object
+  
+  @js.native
+  sealed trait icegatheringstatechange extends js.Object
   
   @js.native
   sealed trait icestatechange extends js.Object
@@ -1028,6 +1067,9 @@ object stdStrings {
   sealed trait lostpointercapture extends js.Object
   
   @js.native
+  sealed trait low extends js.Object
+  
+  @js.native
   sealed trait manual extends ScrollRestoration
   
   @js.native
@@ -1044,6 +1086,9 @@ object stdStrings {
   
   @js.native
   sealed trait mask extends js.Object
+  
+  @js.native
+  sealed trait medium extends js.Object
   
   @js.native
   sealed trait menu extends js.Object
@@ -1103,6 +1148,9 @@ object stdStrings {
   sealed trait nearest extends ScrollLogicalPosition
   
   @js.native
+  sealed trait negotiationneeded extends js.Object
+  
+  @js.native
   sealed trait nextid extends js.Object
   
   @js.native
@@ -1110,6 +1158,9 @@ object stdStrings {
   
   @js.native
   sealed trait noframes extends js.Object
+  
+  @js.native
+  sealed trait none extends js.Object
   
   @js.native
   sealed trait noscript extends js.Object
@@ -1148,6 +1199,9 @@ object stdStrings {
   sealed trait orientationchange extends js.Object
   
   @js.native
+  sealed trait output extends js.Object
+  
+  @js.native
   sealed trait overconstrained extends js.Object
   
   @js.native
@@ -1176,6 +1230,9 @@ object stdStrings {
   
   @js.native
   sealed trait picture extends js.Object
+  
+  @js.native
+  sealed trait pixelated extends js.Object
   
   @js.native
   sealed trait pkcs8 extends js.Object
@@ -1232,6 +1289,9 @@ object stdStrings {
   sealed trait pre extends js.Object
   
   @js.native
+  sealed trait premultiply extends js.Object
+  
+  @js.native
   sealed trait progress extends js.Object
   
   @js.native
@@ -1256,6 +1316,9 @@ object stdStrings {
   sealed trait rect extends js.Object
   
   @js.native
+  sealed trait removestream extends js.Object
+  
+  @js.native
   sealed trait removetrack extends js.Object
   
   @js.native
@@ -1263,6 +1326,9 @@ object stdStrings {
   
   @js.native
   sealed trait resize extends js.Object
+  
+  @js.native
+  sealed trait resume extends js.Object
   
   @js.native
   sealed trait rt extends js.Object
@@ -1301,6 +1367,18 @@ object stdStrings {
   sealed trait selectstart extends js.Object
   
   @js.native
+  sealed trait shippingaddresschange extends js.Object
+  
+  @js.native
+  sealed trait shippingoptionchange extends js.Object
+  
+  @js.native
+  sealed trait show extends js.Object
+  
+  @js.native
+  sealed trait signalingstatechange extends js.Object
+  
+  @js.native
   sealed trait small extends js.Object
   
   @js.native
@@ -1323,6 +1401,9 @@ object stdStrings {
   
   @js.native
   sealed trait start extends ScrollLogicalPosition
+  
+  @js.native
+  sealed trait statechange extends js.Object
   
   @js.native
   sealed trait stop extends js.Object
@@ -1406,6 +1487,9 @@ object stdStrings {
   sealed trait thead extends js.Object
   
   @js.native
+  sealed trait time extends js.Object
+  
+  @js.native
   sealed trait timeout extends js.Object
   
   @js.native
@@ -1454,6 +1538,9 @@ object stdStrings {
   sealed trait unmute extends js.Object
   
   @js.native
+  sealed trait updatefound extends js.Object
+  
+  @js.native
   sealed trait updateready extends js.Object
   
   @js.native
@@ -1473,6 +1560,9 @@ object stdStrings {
   
   @js.native
   sealed trait view extends js.Object
+  
+  @js.native
+  sealed trait voiceschanged extends js.Object
   
   @js.native
   sealed trait volumechange extends js.Object
@@ -1506,8 +1596,6 @@ object stdStrings {
   @scala.inline
   def AnimationEvent: AnimationEvent = "AnimationEvent".asInstanceOf[AnimationEvent]
   @scala.inline
-  def AriaRequestEvent: AriaRequestEvent = "AriaRequestEvent".asInstanceOf[AriaRequestEvent]
-  @scala.inline
   def ArrayBuffer: ArrayBuffer = "ArrayBuffer".asInstanceOf[ArrayBuffer]
   @scala.inline
   def AudioProcessingEvent: AudioProcessingEvent = "AudioProcessingEvent".asInstanceOf[AudioProcessingEvent]
@@ -1517,8 +1605,6 @@ object stdStrings {
   def ClipboardEvent: ClipboardEvent = "ClipboardEvent".asInstanceOf[ClipboardEvent]
   @scala.inline
   def CloseEvent: CloseEvent = "CloseEvent".asInstanceOf[CloseEvent]
-  @scala.inline
-  def CommandEvent: CommandEvent = "CommandEvent".asInstanceOf[CommandEvent]
   @scala.inline
   def CompositionEvent: CompositionEvent = "CompositionEvent".asInstanceOf[CompositionEvent]
   @scala.inline
@@ -1545,6 +1631,8 @@ object stdStrings {
   def Float64Array: Float64Array = "Float64Array".asInstanceOf[Float64Array]
   @scala.inline
   def FocusEvent: FocusEvent = "FocusEvent".asInstanceOf[FocusEvent]
+  @scala.inline
+  def FocusNavigationEvent: FocusNavigationEvent = "FocusNavigationEvent".asInstanceOf[FocusNavigationEvent]
   @scala.inline
   def GamepadEvent: GamepadEvent = "GamepadEvent".asInstanceOf[GamepadEvent]
   @scala.inline
@@ -1642,6 +1730,8 @@ object stdStrings {
   @scala.inline
   def MediaStreamErrorEvent: MediaStreamErrorEvent = "MediaStreamErrorEvent".asInstanceOf[MediaStreamErrorEvent]
   @scala.inline
+  def MediaStreamEvent: MediaStreamEvent = "MediaStreamEvent".asInstanceOf[MediaStreamEvent]
+  @scala.inline
   def MediaStreamTrackEvent: MediaStreamTrackEvent = "MediaStreamTrackEvent".asInstanceOf[MediaStreamTrackEvent]
   @scala.inline
   def MessageEvent: MessageEvent = "MessageEvent".asInstanceOf[MessageEvent]
@@ -1676,6 +1766,8 @@ object stdStrings {
   @scala.inline
   def Partial: Partial = "Partial".asInstanceOf[Partial]
   @scala.inline
+  def PaymentRequestUpdateEvent: PaymentRequestUpdateEvent = "PaymentRequestUpdateEvent".asInstanceOf[PaymentRequestUpdateEvent]
+  @scala.inline
   def PermissionRequestedEvent: PermissionRequestedEvent = "PermissionRequestedEvent".asInstanceOf[PermissionRequestedEvent]
   @scala.inline
   def Pick: Pick = "Pick".asInstanceOf[Pick]
@@ -1698,6 +1790,8 @@ object stdStrings {
   @scala.inline
   def RTCIceTransportStateChangedEvent: RTCIceTransportStateChangedEvent = "RTCIceTransportStateChangedEvent".asInstanceOf[RTCIceTransportStateChangedEvent]
   @scala.inline
+  def RTCPeerConnectionIceEvent: RTCPeerConnectionIceEvent = "RTCPeerConnectionIceEvent".asInstanceOf[RTCPeerConnectionIceEvent]
+  @scala.inline
   def RTCSsrcConflictEvent: RTCSsrcConflictEvent = "RTCSsrcConflictEvent".asInstanceOf[RTCSsrcConflictEvent]
   @scala.inline
   def Readonly: Readonly = "Readonly".asInstanceOf[Readonly]
@@ -1716,7 +1810,11 @@ object stdStrings {
   @scala.inline
   def ScriptNotifyEvent: ScriptNotifyEvent = "ScriptNotifyEvent".asInstanceOf[ScriptNotifyEvent]
   @scala.inline
+  def ServiceWorkerMessageEvent: ServiceWorkerMessageEvent = "ServiceWorkerMessageEvent".asInstanceOf[ServiceWorkerMessageEvent]
+  @scala.inline
   def Set: Set = "Set".asInstanceOf[Set]
+  @scala.inline
+  def SpeechSynthesisEvent: SpeechSynthesisEvent = "SpeechSynthesisEvent".asInstanceOf[SpeechSynthesisEvent]
   @scala.inline
   def StorageEvent: StorageEvent = "StorageEvent".asInstanceOf[StorageEvent]
   @scala.inline
@@ -1765,6 +1863,8 @@ object stdStrings {
   def active: active = "active".asInstanceOf[active]
   @scala.inline
   def address: address = "address".asInstanceOf[address]
+  @scala.inline
+  def addstream: addstream = "addstream".asInstanceOf[addstream]
   @scala.inline
   def addtrack: addtrack = "addtrack".asInstanceOf[addtrack]
   @scala.inline
@@ -1820,6 +1920,8 @@ object stdStrings {
   @scala.inline
   def bounce: bounce = "bounce".asInstanceOf[bounce]
   @scala.inline
+  def boundary: boundary = "boundary".asInstanceOf[boundary]
+  @scala.inline
   def br: br = "br".asInstanceOf[br]
   @scala.inline
   def button: button = "button".asInstanceOf[button]
@@ -1872,11 +1974,15 @@ object stdStrings {
   @scala.inline
   def contextmenu: contextmenu = "contextmenu".asInstanceOf[contextmenu]
   @scala.inline
+  def controllerchange: controllerchange = "controllerchange".asInstanceOf[controllerchange]
+  @scala.inline
   def copy: copy = "copy".asInstanceOf[copy]
   @scala.inline
   def cuechange: cuechange = "cuechange".asInstanceOf[cuechange]
   @scala.inline
   def cut: cut = "cut".asInstanceOf[cut]
+  @scala.inline
+  def data: data = "data".asInstanceOf[data]
   @scala.inline
   def datalist: datalist = "datalist".asInstanceOf[datalist]
   @scala.inline
@@ -2060,6 +2166,8 @@ object stdStrings {
   @scala.inline
   def finish: finish = "finish".asInstanceOf[finish]
   @scala.inline
+  def flipY: flipY = "flipY".asInstanceOf[flipY]
+  @scala.inline
   def focus: focus = "focus".asInstanceOf[focus]
   @scala.inline
   def focusin: focusin = "focusin".asInstanceOf[focusin]
@@ -2110,6 +2218,8 @@ object stdStrings {
   @scala.inline
   def hgroup: hgroup = "hgroup".asInstanceOf[hgroup]
   @scala.inline
+  def high: high = "high".asInstanceOf[high]
+  @scala.inline
   def hr: hr = "hr".asInstanceOf[hr]
   @scala.inline
   def html: html = "html".asInstanceOf[html]
@@ -2119,6 +2229,12 @@ object stdStrings {
   def httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg = "http://www.w3.org/2000/svg".asInstanceOf[httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg]
   @scala.inline
   def i: i = "i".asInstanceOf[i]
+  @scala.inline
+  def icecandidate: icecandidate = "icecandidate".asInstanceOf[icecandidate]
+  @scala.inline
+  def iceconnectionstatechange: iceconnectionstatechange = "iceconnectionstatechange".asInstanceOf[iceconnectionstatechange]
+  @scala.inline
+  def icegatheringstatechange: icegatheringstatechange = "icegatheringstatechange".asInstanceOf[icegatheringstatechange]
   @scala.inline
   def icestatechange: icestatechange = "icestatechange".asInstanceOf[icestatechange]
   @scala.inline
@@ -2182,6 +2298,8 @@ object stdStrings {
   @scala.inline
   def lostpointercapture: lostpointercapture = "lostpointercapture".asInstanceOf[lostpointercapture]
   @scala.inline
+  def low: low = "low".asInstanceOf[low]
+  @scala.inline
   def manual: manual = "manual".asInstanceOf[manual]
   @scala.inline
   def map_ : map_ = "map".asInstanceOf[map_]
@@ -2193,6 +2311,8 @@ object stdStrings {
   def marquee: marquee = "marquee".asInstanceOf[marquee]
   @scala.inline
   def mask: mask = "mask".asInstanceOf[mask]
+  @scala.inline
+  def medium: medium = "medium".asInstanceOf[medium]
   @scala.inline
   def menu: menu = "menu".asInstanceOf[menu]
   @scala.inline
@@ -2232,11 +2352,15 @@ object stdStrings {
   @scala.inline
   def nearest: nearest = "nearest".asInstanceOf[nearest]
   @scala.inline
+  def negotiationneeded: negotiationneeded = "negotiationneeded".asInstanceOf[negotiationneeded]
+  @scala.inline
   def nextid: nextid = "nextid".asInstanceOf[nextid]
   @scala.inline
   def nobr: nobr = "nobr".asInstanceOf[nobr]
   @scala.inline
   def noframes: noframes = "noframes".asInstanceOf[noframes]
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
   @scala.inline
   def noscript: noscript = "noscript".asInstanceOf[noscript]
   @scala.inline
@@ -2262,6 +2386,8 @@ object stdStrings {
   @scala.inline
   def orientationchange: orientationchange = "orientationchange".asInstanceOf[orientationchange]
   @scala.inline
+  def output: output = "output".asInstanceOf[output]
+  @scala.inline
   def overconstrained: overconstrained = "overconstrained".asInstanceOf[overconstrained]
   @scala.inline
   def p: p = "p".asInstanceOf[p]
@@ -2281,6 +2407,8 @@ object stdStrings {
   def pause: pause = "pause".asInstanceOf[pause]
   @scala.inline
   def picture: picture = "picture".asInstanceOf[picture]
+  @scala.inline
+  def pixelated: pixelated = "pixelated".asInstanceOf[pixelated]
   @scala.inline
   def pkcs8: pkcs8 = "pkcs8".asInstanceOf[pkcs8]
   @scala.inline
@@ -2318,6 +2446,8 @@ object stdStrings {
   @scala.inline
   def pre: pre = "pre".asInstanceOf[pre]
   @scala.inline
+  def premultiply: premultiply = "premultiply".asInstanceOf[premultiply]
+  @scala.inline
   def progress: progress = "progress".asInstanceOf[progress]
   @scala.inline
   def q: q = "q".asInstanceOf[q]
@@ -2334,11 +2464,15 @@ object stdStrings {
   @scala.inline
   def rect: rect = "rect".asInstanceOf[rect]
   @scala.inline
+  def removestream: removestream = "removestream".asInstanceOf[removestream]
+  @scala.inline
   def removetrack: removetrack = "removetrack".asInstanceOf[removetrack]
   @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
   @scala.inline
   def resize: resize = "resize".asInstanceOf[resize]
+  @scala.inline
+  def resume: resume = "resume".asInstanceOf[resume]
   @scala.inline
   def rt: rt = "rt".asInstanceOf[rt]
   @scala.inline
@@ -2364,6 +2498,14 @@ object stdStrings {
   @scala.inline
   def selectstart: selectstart = "selectstart".asInstanceOf[selectstart]
   @scala.inline
+  def shippingaddresschange: shippingaddresschange = "shippingaddresschange".asInstanceOf[shippingaddresschange]
+  @scala.inline
+  def shippingoptionchange: shippingoptionchange = "shippingoptionchange".asInstanceOf[shippingoptionchange]
+  @scala.inline
+  def show: show = "show".asInstanceOf[show]
+  @scala.inline
+  def signalingstatechange: signalingstatechange = "signalingstatechange".asInstanceOf[signalingstatechange]
+  @scala.inline
   def small: small = "small".asInstanceOf[small]
   @scala.inline
   def smooth: smooth = "smooth".asInstanceOf[smooth]
@@ -2379,6 +2521,8 @@ object stdStrings {
   def stalled: stalled = "stalled".asInstanceOf[stalled]
   @scala.inline
   def start: start = "start".asInstanceOf[start]
+  @scala.inline
+  def statechange: statechange = "statechange".asInstanceOf[statechange]
   @scala.inline
   def stop: stop = "stop".asInstanceOf[stop]
   @scala.inline
@@ -2434,6 +2578,8 @@ object stdStrings {
   @scala.inline
   def thead: thead = "thead".asInstanceOf[thead]
   @scala.inline
+  def time: time = "time".asInstanceOf[time]
+  @scala.inline
   def timeout: timeout = "timeout".asInstanceOf[timeout]
   @scala.inline
   def timeupdate: timeupdate = "timeupdate".asInstanceOf[timeupdate]
@@ -2466,6 +2612,8 @@ object stdStrings {
   @scala.inline
   def unmute: unmute = "unmute".asInstanceOf[unmute]
   @scala.inline
+  def updatefound: updatefound = "updatefound".asInstanceOf[updatefound]
+  @scala.inline
   def updateready: updateready = "updateready".asInstanceOf[updateready]
   @scala.inline
   def upgradeneeded: upgradeneeded = "upgradeneeded".asInstanceOf[upgradeneeded]
@@ -2479,6 +2627,8 @@ object stdStrings {
   def video: video = "video".asInstanceOf[video]
   @scala.inline
   def view: view = "view".asInstanceOf[view]
+  @scala.inline
+  def voiceschanged: voiceschanged = "voiceschanged".asInstanceOf[voiceschanged]
   @scala.inline
   def volumechange: volumechange = "volumechange".asInstanceOf[volumechange]
   @scala.inline

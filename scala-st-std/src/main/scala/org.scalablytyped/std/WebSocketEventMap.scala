@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation._
 
 trait WebSocketEventMap extends js.Object {
   var close: CloseEvent
-  var error: ErrorEvent
+  var error: Event
   var message: MessageEvent
   var open: Event
 }
 
 object WebSocketEventMap {
   @scala.inline
-  def apply(close: CloseEvent, error: ErrorEvent, message: MessageEvent, open: Event): WebSocketEventMap = {
+  def apply(close: CloseEvent, error: Event, message: MessageEvent, open: Event): WebSocketEventMap = {
     val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebSocketEventMap]
   }
@@ -31,7 +31,7 @@ object WebSocketEventMap {
     @scala.inline
     def setClose(value: CloseEvent): Self = this.set("close", value.asInstanceOf[js.Any])
     @scala.inline
-    def setError(value: ErrorEvent): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setError(value: Event): Self = this.set("error", value.asInstanceOf[js.Any])
     @scala.inline
     def setMessage(value: MessageEvent): Self = this.set("message", value.asInstanceOf[js.Any])
     @scala.inline

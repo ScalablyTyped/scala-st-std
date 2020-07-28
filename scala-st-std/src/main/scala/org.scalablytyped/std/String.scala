@@ -114,10 +114,6 @@ trait String
     * @param matcher An object that supports being matched against.
     */
   def `match`(matcher: Match): RegExpMatchArray | Null = js.native
-  /**
-    * Matches a string with a regular expression, and returns an array containing the results of that search.
-    * @param regexp A regular expression object that contains the regular expression pattern and applicable flags.
-    */
   def `match`(regexp: RegExp): RegExpMatchArray | Null = js.native
   /**
     * Matches a string with a regular expression, and returns an array containing the results of that search.
@@ -152,17 +148,7 @@ trait String
     * @param count number of copies to append
     */
   def repeat(count: Double): java.lang.String = js.native
-  /**
-    * Replaces text in a string, using a regular expression or search string.
-    * @param searchValue A Regular Expression object containing the regular expression pattern and applicable flags.
-    * @param replaceValue A string containing the text to replace for every successful match of searchValue in this string.
-    */
   def replace(searchValue: RegExp, replaceValue: java.lang.String): java.lang.String = js.native
-  /**
-    * Replaces text in a string, using a regular expression or search string.
-    * @param searchValue A Regular Expression object containing the regular expression pattern and applicable flags
-    * @param replacer A function that returns the replacement text.
-    */
   def replace(
     searchValue: RegExp,
     replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
@@ -184,23 +170,19 @@ trait String
   ): java.lang.String = js.native
   /**
     * Replaces text in a string, using a regular expression or search string.
-    * @param searchValue A string that represents the regular expression.
+    * @param searchValue A string to search for.
     * @param replaceValue A string containing the text to replace for every successful match of searchValue in this string.
     */
   def replace(searchValue: java.lang.String, replaceValue: java.lang.String): java.lang.String = js.native
   /**
     * Replaces text in a string, using a regular expression or search string.
-    * @param searchValue A string that represents the regular expression.
+    * @param searchValue A string to search for.
     * @param replacer A function that returns the replacement text.
     */
   def replace(
     searchValue: java.lang.String,
     replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
   ): java.lang.String = js.native
-  /**
-    * Finds the first substring match in a regular expression search.
-    * @param regexp The regular expression pattern and applicable flags.
-    */
   def search(regexp: RegExp): Double = js.native
   /**
     * Finds the first substring match in a regular expression search.
@@ -224,11 +206,6 @@ trait String
   def slice(start: Double, end: Double): java.lang.String = js.native
   /** Returns a <small> HTML element */
   def small(): java.lang.String = js.native
-  /**
-    * Split a string into substrings using the specified separator and return them as an array.
-    * @param separator A Regular Express that identifies character or characters to use in separating the string. If omitted, a single-element array containing the entire string is returned.
-    * @param limit A value used to limit the number of elements returned in the array.
-    */
   def split(separator: RegExp): js.Array[java.lang.String] = js.native
   def split(separator: RegExp, limit: Double): js.Array[java.lang.String] = js.native
   /**

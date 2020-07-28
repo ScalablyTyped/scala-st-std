@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SVGElement extends Element {
   val ownerSVGElement: SVGSVGElement = js.native
+  val style: CSSStyleDeclaration = js.native
   val viewportElement: SVGElement = js.native
   var xmlbase: java.lang.String = js.native
   @JSName("addEventListener")

@@ -1,16 +1,15 @@
 package org.scalablytyped.std
 
+import org.scalablytyped.runtime.NumberDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait HTMLAllCollection extends HTMLCollection
-
-object HTMLAllCollection {
-  @scala.inline
-  def apply(item: Double => Element, length: Double, namedItem: java.lang.String => Element): HTMLAllCollection = {
-    val __obj = js.Dynamic.literal(item = js.Any.fromFunction1(item), length = length.asInstanceOf[js.Any], namedItem = js.Any.fromFunction1(namedItem))
-    __obj.asInstanceOf[HTMLAllCollection]
-  }
+@js.native
+trait HTMLAllCollection extends /* index */ NumberDictionary[Element] {
+  val length: Double = js.native
+  def item(): HTMLCollection | Element | Null = js.native
+  def item(nameOrIndex: java.lang.String): HTMLCollection | Element | Null = js.native
+  def namedItem(name: java.lang.String): HTMLCollection | Element | Null = js.native
 }
 

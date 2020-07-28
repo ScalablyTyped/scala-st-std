@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SVGScriptElement
   extends SVGElement
-     with SVGExternalResourcesRequired
      with SVGURIReference {
   var `type`: java.lang.String = js.native
   /* InferMemberOverrides */

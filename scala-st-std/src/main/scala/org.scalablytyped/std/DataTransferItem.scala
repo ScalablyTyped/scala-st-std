@@ -11,5 +11,6 @@ trait DataTransferItem extends js.Object {
   def getAsFile(): File | Null = js.native
   def getAsString(): Unit = js.native
   def getAsString(_callback: FunctionStringCallback): Unit = js.native
+  def webkitGetAsEntry(): js.Any = js.native
 }
 

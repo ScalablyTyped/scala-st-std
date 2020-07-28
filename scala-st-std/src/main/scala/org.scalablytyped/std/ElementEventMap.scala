@@ -22,8 +22,8 @@ trait ElementEventMap extends GlobalEventHandlersEventMap {
   var MSPointerOut: MSPointerEvent
   var MSPointerOver: MSPointerEvent
   var MSPointerUp: MSPointerEvent
-  var ariarequest: AriaRequestEvent
-  var command: CommandEvent
+  var ariarequest: Event
+  var command: Event
   var gotpointercapture: PointerEvent
   var lostpointercapture: PointerEvent
   var touchcancel: TouchEvent
@@ -54,8 +54,8 @@ object ElementEventMap {
     MSPointerOut: MSPointerEvent,
     MSPointerOver: MSPointerEvent,
     MSPointerUp: MSPointerEvent,
-    ariarequest: AriaRequestEvent,
-    command: CommandEvent,
+    ariarequest: Event,
+    command: Event,
     gotpointercapture: PointerEvent,
     lostpointercapture: PointerEvent,
     pointercancel: PointerEvent,
@@ -123,9 +123,9 @@ object ElementEventMap {
     @scala.inline
     def setMSPointerUp(value: MSPointerEvent): Self = this.set("MSPointerUp", value.asInstanceOf[js.Any])
     @scala.inline
-    def setAriarequest(value: AriaRequestEvent): Self = this.set("ariarequest", value.asInstanceOf[js.Any])
+    def setAriarequest(value: Event): Self = this.set("ariarequest", value.asInstanceOf[js.Any])
     @scala.inline
-    def setCommand(value: CommandEvent): Self = this.set("command", value.asInstanceOf[js.Any])
+    def setCommand(value: Event): Self = this.set("command", value.asInstanceOf[js.Any])
     @scala.inline
     def setGotpointercapture(value: PointerEvent): Self = this.set("gotpointercapture", value.asInstanceOf[js.Any])
     @scala.inline

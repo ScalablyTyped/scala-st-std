@@ -40,7 +40,7 @@ trait Node extends EventTarget {
   val parentNode: Node | Null = js.native
   val previousSibling: Node | Null = js.native
   var textContent: java.lang.String | Null = js.native
-  def appendChild(newChild: Node): Node = js.native
+  def appendChild[T /* <: Node */](newChild: T): T = js.native
   def cloneNode(): Node = js.native
   def cloneNode(deep: scala.Boolean): Node = js.native
   def compareDocumentPosition(other: Node): Double = js.native

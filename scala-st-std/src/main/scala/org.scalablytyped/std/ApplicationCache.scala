@@ -47,11 +47,11 @@ trait ApplicationCache extends EventTarget {
     useCapture: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _]): Unit = js.native
+  def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(
     `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     useCapture: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -89,7 +89,7 @@ trait ApplicationCache extends EventTarget {
   def oncached(ev: Event): js.Any = js.native
   def onchecking(ev: Event): js.Any = js.native
   def ondownloading(ev: Event): js.Any = js.native
-  def onerror(ev: ErrorEvent): js.Any = js.native
+  def onerror(ev: Event): js.Any = js.native
   def onnoupdate(ev: Event): js.Any = js.native
   def onobsolete(ev: Event): js.Any = js.native
   def onprogress(ev: ProgressEvent): js.Any = js.native

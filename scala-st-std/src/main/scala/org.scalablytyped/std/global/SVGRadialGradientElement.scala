@@ -20,17 +20,15 @@ class SVGRadialGradientElement ()
   /* CompleteClass */
   override val children: org.scalablytyped.std.HTMLCollection = js.native
   /* CompleteClass */
-  override val externalResourcesRequired: org.scalablytyped.std.SVGAnimatedBoolean = js.native
-  /* CompleteClass */
-  override val firstElementChild: org.scalablytyped.std.Element = js.native
+  override val firstElementChild: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
   override val href: org.scalablytyped.std.SVGAnimatedString = js.native
   /* CompleteClass */
-  override val lastElementChild: org.scalablytyped.std.Element = js.native
+  override val lastElementChild: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
-  override val nextElementSibling: org.scalablytyped.std.Element = js.native
+  override val nextElementSibling: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
-  override val previousElementSibling: org.scalablytyped.std.Element = js.native
+  override val previousElementSibling: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
   override def remove(): Unit = js.native
 }

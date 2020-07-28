@@ -19,6 +19,7 @@ trait HTMLElementTagNameMap extends js.Object {
   var caption: HTMLTableCaptionElement
   var col: HTMLTableColElement
   var colgroup: HTMLTableColElement
+  var data: HTMLDataElement
   var datalist: HTMLDataListElement
   var del: HTMLModElement
   var dir: HTMLDirectoryElement
@@ -59,6 +60,7 @@ trait HTMLElementTagNameMap extends js.Object {
   var ol: HTMLOListElement
   var optgroup: HTMLOptGroupElement
   var option: HTMLOptionElement
+  var output: HTMLOutputElement
   var p: HTMLParagraphElement
   var param: HTMLParamElement
   var picture: HTMLPictureElement
@@ -78,6 +80,7 @@ trait HTMLElementTagNameMap extends js.Object {
   var tfoot: HTMLTableSectionElement
   var th: HTMLTableHeaderCellElement
   var thead: HTMLTableSectionElement
+  var time: HTMLTimeElement
   var title: HTMLTitleElement
   var tr: HTMLTableRowElement
   var track: HTMLTrackElement
@@ -104,6 +107,7 @@ object HTMLElementTagNameMap {
     caption: HTMLTableCaptionElement,
     col: HTMLTableColElement,
     colgroup: HTMLTableColElement,
+    data: HTMLDataElement,
     datalist: HTMLDataListElement,
     del: HTMLModElement,
     dir: HTMLDirectoryElement,
@@ -144,6 +148,7 @@ object HTMLElementTagNameMap {
     ol: HTMLOListElement,
     optgroup: HTMLOptGroupElement,
     option: HTMLOptionElement,
+    output: HTMLOutputElement,
     p: HTMLParagraphElement,
     param: HTMLParamElement,
     picture: HTMLPictureElement,
@@ -163,6 +168,7 @@ object HTMLElementTagNameMap {
     tfoot: HTMLTableSectionElement,
     th: HTMLTableHeaderCellElement,
     thead: HTMLTableSectionElement,
+    time: HTMLTimeElement,
     title: HTMLTitleElement,
     tr: HTMLTableRowElement,
     track: HTMLTrackElement,
@@ -171,7 +177,7 @@ object HTMLElementTagNameMap {
     `x-ms-webview`: MSHTMLWebViewElement,
     xmp: HTMLPreElement
   ): HTMLElementTagNameMap = {
-    val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], applet = applet.asInstanceOf[js.Any], area = area.asInstanceOf[js.Any], audio = audio.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], basefont = basefont.asInstanceOf[js.Any], blockquote = blockquote.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], br = br.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], canvas = canvas.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], colgroup = colgroup.asInstanceOf[js.Any], datalist = datalist.asInstanceOf[js.Any], del = del.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any], div = div.asInstanceOf[js.Any], dl = dl.asInstanceOf[js.Any], embed = embed.asInstanceOf[js.Any], fieldset = fieldset.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], frameset = frameset.asInstanceOf[js.Any], h1 = h1.asInstanceOf[js.Any], h2 = h2.asInstanceOf[js.Any], h3 = h3.asInstanceOf[js.Any], h4 = h4.asInstanceOf[js.Any], h5 = h5.asInstanceOf[js.Any], h6 = h6.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], hr = hr.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], iframe = iframe.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], ins = ins.asInstanceOf[js.Any], isindex = isindex.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any], li = li.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], listing = listing.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], marquee = marquee.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], meter = meter.asInstanceOf[js.Any], nextid = nextid.asInstanceOf[js.Any], ol = ol.asInstanceOf[js.Any], optgroup = optgroup.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], param = param.asInstanceOf[js.Any], picture = picture.asInstanceOf[js.Any], pre = pre.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], tbody = tbody.asInstanceOf[js.Any], td = td.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], textarea = textarea.asInstanceOf[js.Any], tfoot = tfoot.asInstanceOf[js.Any], th = th.asInstanceOf[js.Any], thead = thead.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], tr = tr.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any], ul = ul.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], xmp = xmp.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], applet = applet.asInstanceOf[js.Any], area = area.asInstanceOf[js.Any], audio = audio.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], basefont = basefont.asInstanceOf[js.Any], blockquote = blockquote.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], br = br.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], canvas = canvas.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], colgroup = colgroup.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], datalist = datalist.asInstanceOf[js.Any], del = del.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any], div = div.asInstanceOf[js.Any], dl = dl.asInstanceOf[js.Any], embed = embed.asInstanceOf[js.Any], fieldset = fieldset.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], frameset = frameset.asInstanceOf[js.Any], h1 = h1.asInstanceOf[js.Any], h2 = h2.asInstanceOf[js.Any], h3 = h3.asInstanceOf[js.Any], h4 = h4.asInstanceOf[js.Any], h5 = h5.asInstanceOf[js.Any], h6 = h6.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], hr = hr.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], iframe = iframe.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], ins = ins.asInstanceOf[js.Any], isindex = isindex.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any], li = li.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], listing = listing.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], marquee = marquee.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], meter = meter.asInstanceOf[js.Any], nextid = nextid.asInstanceOf[js.Any], ol = ol.asInstanceOf[js.Any], optgroup = optgroup.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], param = param.asInstanceOf[js.Any], picture = picture.asInstanceOf[js.Any], pre = pre.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], tbody = tbody.asInstanceOf[js.Any], td = td.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], textarea = textarea.asInstanceOf[js.Any], tfoot = tfoot.asInstanceOf[js.Any], th = th.asInstanceOf[js.Any], thead = thead.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], tr = tr.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any], ul = ul.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], xmp = xmp.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("x-ms-webview")(`x-ms-webview`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTMLElementTagNameMap]
@@ -215,6 +221,8 @@ object HTMLElementTagNameMap {
     def setCol(value: HTMLTableColElement): Self = this.set("col", value.asInstanceOf[js.Any])
     @scala.inline
     def setColgroup(value: HTMLTableColElement): Self = this.set("colgroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setData(value: HTMLDataElement): Self = this.set("data", value.asInstanceOf[js.Any])
     @scala.inline
     def setDatalist(value: HTMLDataListElement): Self = this.set("datalist", value.asInstanceOf[js.Any])
     @scala.inline
@@ -296,6 +304,8 @@ object HTMLElementTagNameMap {
     @scala.inline
     def setOption(value: HTMLOptionElement): Self = this.set("option", value.asInstanceOf[js.Any])
     @scala.inline
+    def setOutput(value: HTMLOutputElement): Self = this.set("output", value.asInstanceOf[js.Any])
+    @scala.inline
     def setP(value: HTMLParagraphElement): Self = this.set("p", value.asInstanceOf[js.Any])
     @scala.inline
     def setParam(value: HTMLParamElement): Self = this.set("param", value.asInstanceOf[js.Any])
@@ -333,6 +343,8 @@ object HTMLElementTagNameMap {
     def setTh(value: HTMLTableHeaderCellElement): Self = this.set("th", value.asInstanceOf[js.Any])
     @scala.inline
     def setThead(value: HTMLTableSectionElement): Self = this.set("thead", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTime(value: HTMLTimeElement): Self = this.set("time", value.asInstanceOf[js.Any])
     @scala.inline
     def setTitle(value: HTMLTitleElement): Self = this.set("title", value.asInstanceOf[js.Any])
     @scala.inline

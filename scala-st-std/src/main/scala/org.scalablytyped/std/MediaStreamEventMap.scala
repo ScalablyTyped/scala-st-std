@@ -6,14 +6,19 @@ import scala.scalajs.js.annotation._
 
 trait MediaStreamEventMap extends js.Object {
   var active: Event
-  var addtrack: TrackEvent
+  var addtrack: MediaStreamTrackEvent
   var inactive: Event
-  var removetrack: TrackEvent
+  var removetrack: MediaStreamTrackEvent
 }
 
 object MediaStreamEventMap {
   @scala.inline
-  def apply(active: Event, addtrack: TrackEvent, inactive: Event, removetrack: TrackEvent): MediaStreamEventMap = {
+  def apply(
+    active: Event,
+    addtrack: MediaStreamTrackEvent,
+    inactive: Event,
+    removetrack: MediaStreamTrackEvent
+  ): MediaStreamEventMap = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], addtrack = addtrack.asInstanceOf[js.Any], inactive = inactive.asInstanceOf[js.Any], removetrack = removetrack.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaStreamEventMap]
   }
@@ -31,11 +36,11 @@ object MediaStreamEventMap {
     @scala.inline
     def setActive(value: Event): Self = this.set("active", value.asInstanceOf[js.Any])
     @scala.inline
-    def setAddtrack(value: TrackEvent): Self = this.set("addtrack", value.asInstanceOf[js.Any])
+    def setAddtrack(value: MediaStreamTrackEvent): Self = this.set("addtrack", value.asInstanceOf[js.Any])
     @scala.inline
     def setInactive(value: Event): Self = this.set("inactive", value.asInstanceOf[js.Any])
     @scala.inline
-    def setRemovetrack(value: TrackEvent): Self = this.set("removetrack", value.asInstanceOf[js.Any])
+    def setRemovetrack(value: MediaStreamTrackEvent): Self = this.set("removetrack", value.asInstanceOf[js.Any])
   }
   
 }

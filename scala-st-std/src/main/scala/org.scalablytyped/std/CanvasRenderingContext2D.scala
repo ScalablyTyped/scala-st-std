@@ -13,6 +13,7 @@ trait CanvasRenderingContext2D
   var font: java.lang.String = js.native
   var globalAlpha: Double = js.native
   var globalCompositeOperation: java.lang.String = js.native
+  var imageSmoothingEnabled: scala.Boolean = js.native
   var lineCap: java.lang.String = js.native
   var lineDashOffset: Double = js.native
   var lineJoin: java.lang.String = js.native
@@ -20,7 +21,6 @@ trait CanvasRenderingContext2D
   var miterLimit: Double = js.native
   var mozImageSmoothingEnabled: scala.Boolean = js.native
   var msFillRule: java.lang.String = js.native
-  var msImageSmoothingEnabled: scala.Boolean = js.native
   var oImageSmoothingEnabled: scala.Boolean = js.native
   var shadowBlur: Double = js.native
   var shadowColor: java.lang.String = js.native
@@ -43,16 +43,58 @@ trait CanvasRenderingContext2D
   def createPattern(image: HTMLImageElement, repetition: java.lang.String): CanvasPattern = js.native
   def createPattern(image: HTMLVideoElement, repetition: java.lang.String): CanvasPattern = js.native
   def createRadialGradient(x0: Double, y0: Double, r0: Double, x1: Double, y1: Double, r1: Double): CanvasGradient = js.native
+  def drawFocusIfNeeded(element: Element): Unit = js.native
+  def drawImage(image: HTMLCanvasElement, dstX: Double, dstY: Double): Unit = js.native
+  def drawImage(image: HTMLCanvasElement, dstX: Double, dstY: Double, dstW: Double, dstH: Double): Unit = js.native
   def drawImage(
-    image: HTMLImageElement | HTMLCanvasElement | HTMLVideoElement,
-    offsetX: Double,
-    offsetY: Double,
-    width: js.UndefOr[Double],
-    height: js.UndefOr[Double],
-    canvasOffsetX: js.UndefOr[Double],
-    canvasOffsetY: js.UndefOr[Double],
-    canvasImageWidth: js.UndefOr[Double],
-    canvasImageHeight: js.UndefOr[Double]
+    image: HTMLCanvasElement,
+    srcX: Double,
+    srcY: Double,
+    srcW: Double,
+    srcH: Double,
+    dstX: Double,
+    dstY: Double,
+    dstW: Double,
+    dstH: Double
+  ): Unit = js.native
+  def drawImage(image: HTMLImageElement, dstX: Double, dstY: Double): Unit = js.native
+  def drawImage(image: HTMLImageElement, dstX: Double, dstY: Double, dstW: Double, dstH: Double): Unit = js.native
+  def drawImage(
+    image: HTMLImageElement,
+    srcX: Double,
+    srcY: Double,
+    srcW: Double,
+    srcH: Double,
+    dstX: Double,
+    dstY: Double,
+    dstW: Double,
+    dstH: Double
+  ): Unit = js.native
+  def drawImage(image: HTMLVideoElement, dstX: Double, dstY: Double): Unit = js.native
+  def drawImage(image: HTMLVideoElement, dstX: Double, dstY: Double, dstW: Double, dstH: Double): Unit = js.native
+  def drawImage(
+    image: HTMLVideoElement,
+    srcX: Double,
+    srcY: Double,
+    srcW: Double,
+    srcH: Double,
+    dstX: Double,
+    dstY: Double,
+    dstW: Double,
+    dstH: Double
+  ): Unit = js.native
+  def drawImage(image: ImageBitmap, dstX: Double, dstY: Double): Unit = js.native
+  def drawImage(image: ImageBitmap, dstX: Double, dstY: Double, dstW: Double, dstH: Double): Unit = js.native
+  def drawImage(
+    image: ImageBitmap,
+    srcX: Double,
+    srcY: Double,
+    srcW: Double,
+    srcH: Double,
+    dstX: Double,
+    dstY: Double,
+    dstW: Double,
+    dstH: Double
   ): Unit = js.native
   def fill(): Unit = js.native
   def fill(fillRule: java.lang.String): Unit = js.native
@@ -172,6 +214,7 @@ trait CanvasRenderingContext2D
   def setLineDash(segments: js.Array[Double]): Unit = js.native
   def setTransform(m11: Double, m12: Double, m21: Double, m22: Double, dx: Double, dy: Double): Unit = js.native
   def stroke(): Unit = js.native
+  def stroke(path: Path2D): Unit = js.native
   def strokeRect(x: Double, y: Double, w: Double, h: Double): Unit = js.native
   def strokeText(text: java.lang.String, x: Double, y: Double): Unit = js.native
   def strokeText(text: java.lang.String, x: Double, y: Double, maxWidth: Double): Unit = js.native

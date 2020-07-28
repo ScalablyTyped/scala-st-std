@@ -8,5 +8,7 @@ import scala.scalajs.js.annotation._
 trait DocumentFragment
   extends Node
      with NodeSelector
-     with ParentNode
+     with ParentNode {
+  def getElementById(elementId: java.lang.String): HTMLElement | Null = js.native
+}
 

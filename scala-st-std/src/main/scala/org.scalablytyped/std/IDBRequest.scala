@@ -15,12 +15,12 @@ trait IDBRequest extends EventTarget {
   @JSName("addEventListener")
   def addEventListener_error(
     `type`: org.scalablytyped.std.stdStrings.error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(
     `type`: org.scalablytyped.std.stdStrings.error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     useCapture: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -31,7 +31,7 @@ trait IDBRequest extends EventTarget {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     useCapture: scala.Boolean
   ): Unit = js.native
-  def onerror(ev: ErrorEvent): js.Any = js.native
+  def onerror(ev: Event): js.Any = js.native
   def onsuccess(ev: Event): js.Any = js.native
 }
 

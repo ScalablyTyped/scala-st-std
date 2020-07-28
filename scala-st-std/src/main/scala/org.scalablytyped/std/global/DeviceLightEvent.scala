@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class DeviceLightEvent protected ()
   extends org.scalablytyped.std.DeviceLightEvent {
-  def this(`type`: java.lang.String) = this()
-  def this(`type`: java.lang.String, eventInitDict: DeviceLightEventInit) = this()
+  def this(typeArg: java.lang.String) = this()
+  def this(typeArg: java.lang.String, eventInitDict: DeviceLightEventInit) = this()
   /* CompleteClass */
   override val AT_TARGET: Double = js.native
   /* CompleteClass */
@@ -62,9 +62,9 @@ class DeviceLightEvent protected ()
 @JSGlobal("DeviceLightEvent")
 @js.native
 object DeviceLightEvent
-  extends Instantiable1[/* type */ java.lang.String, org.scalablytyped.std.DeviceLightEvent]
+  extends Instantiable1[/* typeArg */ java.lang.String, org.scalablytyped.std.DeviceLightEvent]
      with Instantiable2[
-      /* type */ java.lang.String, 
+      /* typeArg */ java.lang.String, 
       /* eventInitDict */ DeviceLightEventInit, 
       org.scalablytyped.std.DeviceLightEvent
     ]

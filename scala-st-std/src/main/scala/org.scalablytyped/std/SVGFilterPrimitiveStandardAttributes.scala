@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SVGFilterPrimitiveStandardAttributes extends SVGStylable {
+trait SVGFilterPrimitiveStandardAttributes extends js.Object {
   val height: SVGAnimatedLength
   val result: SVGAnimatedString
   val width: SVGAnimatedLength
@@ -15,15 +15,13 @@ trait SVGFilterPrimitiveStandardAttributes extends SVGStylable {
 object SVGFilterPrimitiveStandardAttributes {
   @scala.inline
   def apply(
-    className: js.Any,
     height: SVGAnimatedLength,
     result: SVGAnimatedString,
-    style: CSSStyleDeclaration,
     width: SVGAnimatedLength,
     x: SVGAnimatedLength,
     y: SVGAnimatedLength
   ): SVGFilterPrimitiveStandardAttributes = {
-    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[SVGFilterPrimitiveStandardAttributes]
   }
   @scala.inline

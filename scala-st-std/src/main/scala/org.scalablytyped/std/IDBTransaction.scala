@@ -34,17 +34,17 @@ trait IDBTransaction extends EventTarget {
   @JSName("addEventListener")
   def addEventListener_error(
     `type`: org.scalablytyped.std.stdStrings.error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(
     `type`: org.scalablytyped.std.stdStrings.error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     useCapture: scala.Boolean
   ): Unit = js.native
   def objectStore(name: java.lang.String): IDBObjectStore = js.native
   def onabort(ev: Event): js.Any = js.native
   def oncomplete(ev: Event): js.Any = js.native
-  def onerror(ev: ErrorEvent): js.Any = js.native
+  def onerror(ev: Event): js.Any = js.native
 }
 

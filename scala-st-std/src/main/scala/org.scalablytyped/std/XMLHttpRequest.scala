@@ -20,7 +20,7 @@ trait XMLHttpRequest
   val responseText: java.lang.String = js.native
   var responseType: java.lang.String = js.native
   val responseURL: java.lang.String = js.native
-  val responseXML: js.Any = js.native
+  val responseXML: Document | Null = js.native
   val status: Double = js.native
   val statusText: java.lang.String = js.native
   var timeout: Double = js.native
