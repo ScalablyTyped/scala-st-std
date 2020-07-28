@@ -9,14 +9,19 @@ import scala.scalajs.js.annotation._
 @js.native
 class AudioListener ()
   extends org.scalablytyped.std.AudioListener {
+  /** @deprecated */
   /* CompleteClass */
   override var dopplerFactor: Double = js.native
+  /** @deprecated */
   /* CompleteClass */
   override var speedOfSound: Double = js.native
+  /** @deprecated */
   /* CompleteClass */
   override def setOrientation(x: Double, y: Double, z: Double, xUp: Double, yUp: Double, zUp: Double): Unit = js.native
+  /** @deprecated */
   /* CompleteClass */
   override def setPosition(x: Double, y: Double, z: Double): Unit = js.native
+  /** @deprecated */
   /* CompleteClass */
   override def setVelocity(x: Double, y: Double, z: Double): Unit = js.native
 }

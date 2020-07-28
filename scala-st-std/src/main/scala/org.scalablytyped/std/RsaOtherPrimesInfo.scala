@@ -5,15 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RsaOtherPrimesInfo extends js.Object {
-  var d: java.lang.String
-  var r: java.lang.String
-  var t: java.lang.String
+  var d: js.UndefOr[java.lang.String] = js.undefined
+  var r: js.UndefOr[java.lang.String] = js.undefined
+  var t: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object RsaOtherPrimesInfo {
   @scala.inline
-  def apply(d: java.lang.String, r: java.lang.String, t: java.lang.String): RsaOtherPrimesInfo = {
-    val __obj = js.Dynamic.literal(d = d.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any])
+  def apply(): RsaOtherPrimesInfo = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RsaOtherPrimesInfo]
   }
   @scala.inline
@@ -30,9 +30,15 @@ object RsaOtherPrimesInfo {
     @scala.inline
     def setD(value: java.lang.String): Self = this.set("d", value.asInstanceOf[js.Any])
     @scala.inline
+    def deleteD: Self = this.set("d", js.undefined)
+    @scala.inline
     def setR(value: java.lang.String): Self = this.set("r", value.asInstanceOf[js.Any])
     @scala.inline
+    def deleteR: Self = this.set("r", js.undefined)
+    @scala.inline
     def setT(value: java.lang.String): Self = this.set("t", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteT: Self = this.set("t", js.undefined)
   }
   
 }

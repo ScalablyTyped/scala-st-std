@@ -10,6 +10,7 @@ trait HTMLSourceElement extends HTMLElement {
     * Gets or sets the intended media type of the media source.
     */
   var media: java.lang.String = js.native
+  /** @deprecated */
   var msKeySystem: java.lang.String = js.native
   var sizes: java.lang.String = js.native
   /**

@@ -5,14 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait HkdfCtrParams extends Algorithm {
-  var context: BufferSource
-  var hash: AlgorithmIdentifier
-  var label: BufferSource
+  var context: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
+  var hash: java.lang.String | Algorithm
+  var label: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
 }
 
 object HkdfCtrParams {
   @scala.inline
-  def apply(context: BufferSource, hash: AlgorithmIdentifier, label: BufferSource, name: java.lang.String): HkdfCtrParams = {
+  def apply(
+    context: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
+    hash: java.lang.String | Algorithm,
+    label: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
+    name: java.lang.String
+  ): HkdfCtrParams = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[HkdfCtrParams]
   }
@@ -28,11 +33,15 @@ object HkdfCtrParams {
         x
     }
     @scala.inline
-    def setContext(value: BufferSource): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setContext(
+      value: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
+    ): Self = this.set("context", value.asInstanceOf[js.Any])
     @scala.inline
-    def setHash(value: AlgorithmIdentifier): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setHash(value: java.lang.String | Algorithm): Self = this.set("hash", value.asInstanceOf[js.Any])
     @scala.inline
-    def setLabel(value: BufferSource): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLabel(
+      value: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
+    ): Self = this.set("label", value.asInstanceOf[js.Any])
   }
   
 }

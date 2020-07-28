@@ -13,7 +13,7 @@ class ImageData protected ()
   def this(width: Double, height: Double) = this()
   def this(array: org.scalablytyped.std.Uint8ClampedArray, width: Double, height: Double) = this()
   /* CompleteClass */
-  override var data: org.scalablytyped.std.Uint8ClampedArray = js.native
+  override val data: org.scalablytyped.std.Uint8ClampedArray = js.native
   /* CompleteClass */
   override val height: Double = js.native
   /* CompleteClass */

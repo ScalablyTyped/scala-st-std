@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait ScopedCredentialOptions extends js.Object {
   var excludeList: js.UndefOr[js.Array[ScopedCredentialDescriptor]] = js.undefined
   var extensions: js.UndefOr[WebAuthnExtensions] = js.undefined
-  var rpId: js.UndefOr[USVString] = js.undefined
+  var rpId: js.UndefOr[java.lang.String] = js.undefined
   var timeoutSeconds: js.UndefOr[Double] = js.undefined
 }
 
@@ -39,7 +39,7 @@ object ScopedCredentialOptions {
     @scala.inline
     def deleteExtensions: Self = this.set("extensions", js.undefined)
     @scala.inline
-    def setRpId(value: USVString): Self = this.set("rpId", value.asInstanceOf[js.Any])
+    def setRpId(value: java.lang.String): Self = this.set("rpId", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteRpId: Self = this.set("rpId", js.undefined)
     @scala.inline

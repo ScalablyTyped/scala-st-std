@@ -5,28 +5,41 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PerformanceNavigationTiming extends PerformanceEntry {
+  /** @deprecated */
   val connectEnd: Double
+  /** @deprecated */
   val connectStart: Double
   val domComplete: Double
   val domContentLoadedEventEnd: Double
   val domContentLoadedEventStart: Double
   val domInteractive: Double
+  /** @deprecated */
   val domLoading: Double
+  /** @deprecated */
   val domainLookupEnd: Double
+  /** @deprecated */
   val domainLookupStart: Double
+  /** @deprecated */
   val fetchStart: Double
   val loadEventEnd: Double
   val loadEventStart: Double
+  /** @deprecated */
   val navigationStart: Double
   val redirectCount: Double
+  /** @deprecated */
   val redirectEnd: Double
+  /** @deprecated */
   val redirectStart: Double
+  /** @deprecated */
   val requestStart: Double
+  /** @deprecated */
   val responseEnd: Double
+  /** @deprecated */
   val responseStart: Double
   val `type`: NavigationType
   val unloadEventEnd: Double
   val unloadEventStart: Double
+  val workerStart: Double
 }
 
 object PerformanceNavigationTiming {
@@ -55,11 +68,13 @@ object PerformanceNavigationTiming {
     responseEnd: Double,
     responseStart: Double,
     startTime: Double,
+    toJSON: () => js.Any,
     `type`: NavigationType,
     unloadEventEnd: Double,
-    unloadEventStart: Double
+    unloadEventStart: Double,
+    workerStart: Double
   ): PerformanceNavigationTiming = {
-    val __obj = js.Dynamic.literal(connectEnd = connectEnd.asInstanceOf[js.Any], connectStart = connectStart.asInstanceOf[js.Any], domComplete = domComplete.asInstanceOf[js.Any], domContentLoadedEventEnd = domContentLoadedEventEnd.asInstanceOf[js.Any], domContentLoadedEventStart = domContentLoadedEventStart.asInstanceOf[js.Any], domInteractive = domInteractive.asInstanceOf[js.Any], domLoading = domLoading.asInstanceOf[js.Any], domainLookupEnd = domainLookupEnd.asInstanceOf[js.Any], domainLookupStart = domainLookupStart.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], entryType = entryType.asInstanceOf[js.Any], fetchStart = fetchStart.asInstanceOf[js.Any], loadEventEnd = loadEventEnd.asInstanceOf[js.Any], loadEventStart = loadEventStart.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], navigationStart = navigationStart.asInstanceOf[js.Any], redirectCount = redirectCount.asInstanceOf[js.Any], redirectEnd = redirectEnd.asInstanceOf[js.Any], redirectStart = redirectStart.asInstanceOf[js.Any], requestStart = requestStart.asInstanceOf[js.Any], responseEnd = responseEnd.asInstanceOf[js.Any], responseStart = responseStart.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], unloadEventEnd = unloadEventEnd.asInstanceOf[js.Any], unloadEventStart = unloadEventStart.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(connectEnd = connectEnd.asInstanceOf[js.Any], connectStart = connectStart.asInstanceOf[js.Any], domComplete = domComplete.asInstanceOf[js.Any], domContentLoadedEventEnd = domContentLoadedEventEnd.asInstanceOf[js.Any], domContentLoadedEventStart = domContentLoadedEventStart.asInstanceOf[js.Any], domInteractive = domInteractive.asInstanceOf[js.Any], domLoading = domLoading.asInstanceOf[js.Any], domainLookupEnd = domainLookupEnd.asInstanceOf[js.Any], domainLookupStart = domainLookupStart.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], entryType = entryType.asInstanceOf[js.Any], fetchStart = fetchStart.asInstanceOf[js.Any], loadEventEnd = loadEventEnd.asInstanceOf[js.Any], loadEventStart = loadEventStart.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], navigationStart = navigationStart.asInstanceOf[js.Any], redirectCount = redirectCount.asInstanceOf[js.Any], redirectEnd = redirectEnd.asInstanceOf[js.Any], redirectStart = redirectStart.asInstanceOf[js.Any], requestStart = requestStart.asInstanceOf[js.Any], responseEnd = responseEnd.asInstanceOf[js.Any], responseStart = responseStart.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), unloadEventEnd = unloadEventEnd.asInstanceOf[js.Any], unloadEventStart = unloadEventStart.asInstanceOf[js.Any], workerStart = workerStart.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PerformanceNavigationTiming]
   }
@@ -118,6 +133,8 @@ object PerformanceNavigationTiming {
     def setUnloadEventEnd(value: Double): Self = this.set("unloadEventEnd", value.asInstanceOf[js.Any])
     @scala.inline
     def setUnloadEventStart(value: Double): Self = this.set("unloadEventStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWorkerStart(value: Double): Self = this.set("workerStart", value.asInstanceOf[js.Any])
   }
   
 }

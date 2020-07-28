@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait SVGTests extends js.Object {
   val requiredExtensions: SVGStringList
+  /** @deprecated */
   val requiredFeatures: SVGStringList
   val systemLanguage: SVGStringList
+  /** @deprecated */
   def hasExtension(extension: java.lang.String): scala.Boolean
 }
 

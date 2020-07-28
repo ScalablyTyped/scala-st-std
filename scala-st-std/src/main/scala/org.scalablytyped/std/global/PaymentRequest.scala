@@ -1,6 +1,6 @@
 package org.scalablytyped.std.global
 
-import org.scalablytyped.std.PaymentDetails
+import org.scalablytyped.std.PaymentDetailsInit
 import org.scalablytyped.std.PaymentMethodData
 import org.scalablytyped.std.PaymentOptions
 import org.scalablytyped.runtime.Instantiable2
@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class PaymentRequest protected ()
   extends org.scalablytyped.std.PaymentRequest {
-  def this(methodData: js.Array[PaymentMethodData], details: PaymentDetails) = this()
-  def this(methodData: js.Array[PaymentMethodData], details: PaymentDetails, options: PaymentOptions) = this()
+  def this(methodData: js.Array[PaymentMethodData], details: PaymentDetailsInit) = this()
+  def this(methodData: js.Array[PaymentMethodData], details: PaymentDetailsInit, options: PaymentOptions) = this()
 }
 
 @JSGlobal("PaymentRequest")
@@ -22,12 +22,12 @@ class PaymentRequest protected ()
 object PaymentRequest
   extends Instantiable2[
       /* methodData */ js.Array[PaymentMethodData], 
-      /* details */ PaymentDetails, 
+      /* details */ PaymentDetailsInit, 
       org.scalablytyped.std.PaymentRequest
     ]
      with Instantiable3[
       /* methodData */ js.Array[PaymentMethodData], 
-      /* details */ PaymentDetails, 
+      /* details */ PaymentDetailsInit, 
       /* options */ PaymentOptions, 
       org.scalablytyped.std.PaymentRequest
     ]

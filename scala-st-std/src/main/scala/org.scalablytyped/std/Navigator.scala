@@ -6,23 +6,22 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Navigator
-  extends Object
-     with NavigatorID
+  extends NavigatorID
      with NavigatorOnLine
      with NavigatorContentUtils
      with NavigatorStorageUtils
-     with NavigatorGeolocation
      with MSNavigatorDoNotTrack
      with MSFileSaver
      with NavigatorBeacon
      with NavigatorConcurrentHardware
-     with NavigatorUserMedia {
+     with NavigatorUserMedia
+     with NavigatorLanguage {
+  val activeVRDisplays: js.Array[VRDisplay] = js.native
   val authentication: WebAuthentication = js.native
   val cookieEnabled: scala.Boolean = js.native
   val doNotTrack: java.lang.String | Null = js.native
   var gamepadInputEmulation: GamepadInputEmulationType = js.native
-  val language: java.lang.String = js.native
-  val languages: js.Array[java.lang.String] = js.native
+  val geolocation: Geolocation = js.native
   val maxTouchPoints: Double = js.native
   val mimeTypes: MimeTypeArray = js.native
   val msManipulationViewsEnabled: scala.Boolean = js.native
@@ -32,7 +31,8 @@ trait Navigator
   val pointerEnabled: scala.Boolean = js.native
   val serviceWorker: ServiceWorkerContainer = js.native
   val webdriver: scala.Boolean = js.native
-  def getGamepads(): js.Array[Gamepad] = js.native
+  def getGamepads(): js.Array[Gamepad | Null] = js.native
+  def getVRDisplays(): js.Promise[js.Array[VRDisplay]] = js.native
   def javaEnabled(): scala.Boolean = js.native
   def msLaunchUri(uri: java.lang.String): Unit = js.native
   def msLaunchUri(

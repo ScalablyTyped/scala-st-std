@@ -18,8 +18,6 @@ class SVGPatternElement ()
   /* CompleteClass */
   override val childElementCount: Double = js.native
   /* CompleteClass */
-  override val children: org.scalablytyped.std.HTMLCollection = js.native
-  /* CompleteClass */
   override val firstElementChild: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
   override val href: org.scalablytyped.std.SVGAnimatedString = js.native
@@ -33,12 +31,16 @@ class SVGPatternElement ()
   override val previousElementSibling: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
   override val requiredExtensions: org.scalablytyped.std.SVGStringList = js.native
+  /** @deprecated */
   /* CompleteClass */
   override val requiredFeatures: org.scalablytyped.std.SVGStringList = js.native
+  /* CompleteClass */
+  override val style: org.scalablytyped.std.CSSStyleDeclaration = js.native
   /* CompleteClass */
   override val systemLanguage: org.scalablytyped.std.SVGStringList = js.native
   /* CompleteClass */
   override val viewBox: org.scalablytyped.std.SVGAnimatedRect = js.native
+  /** @deprecated */
   /* CompleteClass */
   override def hasExtension(extension: java.lang.String): scala.Boolean = js.native
   /* CompleteClass */

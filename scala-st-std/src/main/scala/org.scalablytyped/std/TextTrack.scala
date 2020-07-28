@@ -22,7 +22,10 @@ trait TextTrack extends EventTarget {
   val kind: java.lang.String = js.native
   val label: java.lang.String = js.native
   val language: java.lang.String = js.native
-  var mode: js.Any = js.native
+  var mode: TextTrackMode | Double = js.native
+  var oncuechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onload: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   val readyState: Double = js.native
   def addCue(cue: TextTrackCue): Unit = js.native
   @JSName("addEventListener")
@@ -67,9 +70,6 @@ trait TextTrack extends EventTarget {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
-  def oncuechange(ev: Event): js.Any = js.native
-  def onerror(ev: Event): js.Any = js.native
-  def onload(ev: Event): js.Any = js.native
   def removeCue(cue: TextTrackCue): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_cuechange(`type`: cuechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native

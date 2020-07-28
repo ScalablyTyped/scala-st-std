@@ -5,7 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PushSubscription extends js.Object {
-  val endpoint: USVString
+  val endpoint: java.lang.String
+  val expirationTime: Double | Null
   val options: PushSubscriptionOptions
   def getKey(name: PushEncryptionKeyName): ArrayBuffer | Null
   def toJSON(): js.Any
@@ -15,7 +16,7 @@ trait PushSubscription extends js.Object {
 object PushSubscription {
   @scala.inline
   def apply(
-    endpoint: USVString,
+    endpoint: java.lang.String,
     getKey: PushEncryptionKeyName => ArrayBuffer | Null,
     options: PushSubscriptionOptions,
     toJSON: () => js.Any,
@@ -36,7 +37,7 @@ object PushSubscription {
         x
     }
     @scala.inline
-    def setEndpoint(value: USVString): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    def setEndpoint(value: java.lang.String): Self = this.set("endpoint", value.asInstanceOf[js.Any])
     @scala.inline
     def setGetKey(value: PushEncryptionKeyName => ArrayBuffer | Null): Self = this.set("getKey", js.Any.fromFunction1(value))
     @scala.inline
@@ -45,6 +46,10 @@ object PushSubscription {
     def setToJSON(value: () => js.Any): Self = this.set("toJSON", js.Any.fromFunction0(value))
     @scala.inline
     def setUnsubscribe(value: () => js.Promise[scala.Boolean]): Self = this.set("unsubscribe", js.Any.fromFunction0(value))
+    @scala.inline
+    def setExpirationTime(value: Double): Self = this.set("expirationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExpirationTimeNull: Self = this.set("expirationTime", null)
   }
   
 }

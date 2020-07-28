@@ -1,11 +1,12 @@
 package org.scalablytyped.std
 
+import org.scalablytyped.std.stdStrings.required_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.required
+  - `org.scalablytyped`.std.stdStrings.required_
   - `org.scalablytyped`.std.stdStrings.optional
   - `org.scalablytyped`.std.stdStrings.`not-allowed`
 */
@@ -17,6 +18,6 @@ object MediaKeysRequirement {
   @scala.inline
   def optional: org.scalablytyped.std.stdStrings.optional = "optional".asInstanceOf[org.scalablytyped.std.stdStrings.optional]
   @scala.inline
-  def required: org.scalablytyped.std.stdStrings.required = "required".asInstanceOf[org.scalablytyped.std.stdStrings.required]
+  def required: required_ = "required".asInstanceOf[required_]
 }
 

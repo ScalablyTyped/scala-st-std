@@ -1,7 +1,8 @@
 package org.scalablytyped.std.anon
 
-import org.scalablytyped.std.ObjectURLOptions
-import org.scalablytyped.std.URL
+import org.scalablytyped.std.Blob
+import org.scalablytyped.std.BlobPropertyBag
+import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
@@ -10,10 +11,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Instantiable
-  extends Instantiable1[/* url */ String, URL]
-     with Instantiable2[/* url */ String, (/* base */ String) | (/* base */ URL), URL] {
-  def createObjectURL(`object`: js.Any): String = js.native
-  def createObjectURL(`object`: js.Any, options: ObjectURLOptions): String = js.native
-  def revokeObjectURL(url: String): Unit = js.native
-}
+  extends Instantiable0[Blob]
+     with Instantiable1[/* blobParts */ js.Array[js.Any], Blob]
+     with Instantiable2[js.UndefOr[/* blobParts */ js.Array[js.Any]], /* options */ BlobPropertyBag, Blob]
 

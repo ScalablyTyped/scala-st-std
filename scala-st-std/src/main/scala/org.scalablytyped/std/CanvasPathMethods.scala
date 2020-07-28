@@ -15,6 +15,7 @@ trait CanvasPathMethods extends js.Object {
     endAngle: Double,
     anticlockwise: scala.Boolean
   ): Unit = js.native
+  def arcTo(x1: Double, y1: Double, x2: Double, y2: Double, radiusX: Double, radiusY: Double, rotation: Double): Unit = js.native
   def arcTo(x1: Double, y1: Double, x2: Double, y2: Double, radius: Double): Unit = js.native
   def bezierCurveTo(cp1x: Double, cp1y: Double, cp2x: Double, cp2y: Double, x: Double, y: Double): Unit = js.native
   def closePath(): Unit = js.native

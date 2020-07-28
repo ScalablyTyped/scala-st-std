@@ -5,9 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait CanvasRenderingContext2D
-  extends Object
-     with CanvasPathMethods {
+trait CanvasRenderingContext2D extends CanvasPathMethods {
   val canvas: HTMLCanvasElement = js.native
   var fillStyle: java.lang.String | CanvasGradient | CanvasPattern = js.native
   var font: java.lang.String = js.native
@@ -46,6 +44,7 @@ trait CanvasRenderingContext2D
   def createPattern(image: HTMLVideoElement, repetition: java.lang.String): CanvasPattern = js.native
   def createRadialGradient(x0: Double, y0: Double, r0: Double, x1: Double, y1: Double, r1: Double): CanvasGradient = js.native
   def drawFocusIfNeeded(element: Element): Unit = js.native
+  def drawFocusIfNeeded(path: Path2D, element: Element): Unit = js.native
   def drawImage(image: HTMLCanvasElement, dstX: Double, dstY: Double): Unit = js.native
   def drawImage(image: HTMLCanvasElement, dstX: Double, dstY: Double, dstW: Double, dstH: Double): Unit = js.native
   def drawImage(
@@ -111,6 +110,10 @@ trait CanvasRenderingContext2D
   def isPointInPath(path: Path2D, x: Double, y: Double, fillRule: CanvasFillRule): scala.Boolean = js.native
   def isPointInPath(x: Double, y: Double): scala.Boolean = js.native
   def isPointInPath(x: Double, y: Double, fillRule: CanvasFillRule): scala.Boolean = js.native
+  def isPointInStroke(path: Path2D, x: Double, y: Double): scala.Boolean = js.native
+  def isPointInStroke(path: Path2D, x: Double, y: Double, fillRule: CanvasFillRule): scala.Boolean = js.native
+  def isPointInStroke(x: Double, y: Double): scala.Boolean = js.native
+  def isPointInStroke(x: Double, y: Double, fillRule: CanvasFillRule): scala.Boolean = js.native
   def measureText(text: java.lang.String): TextMetrics = js.native
   def putImageData(imagedata: ImageData, dx: Double, dy: Double): Unit = js.native
   def putImageData(

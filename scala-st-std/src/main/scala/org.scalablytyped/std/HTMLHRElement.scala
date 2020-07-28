@@ -12,15 +12,18 @@ trait HTMLHRElement
   /**
     * Sets or retrieves how the object is aligned with adjacent text.
     */
+  /** @deprecated */
   var align: java.lang.String = js.native
   /**
     * Sets or retrieves whether the horizontal rule is drawn with 3-D shading.
     */
+  /** @deprecated */
   var noShade: scala.Boolean = js.native
   /**
     * Sets or retrieves the width of the object.
     */
-  var width: Double = js.native
+  /** @deprecated */
+  var width: java.lang.String = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */

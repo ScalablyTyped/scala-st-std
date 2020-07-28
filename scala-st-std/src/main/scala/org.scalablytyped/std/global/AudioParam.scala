@@ -14,7 +14,7 @@ class AudioParam ()
   /* CompleteClass */
   override var value: Double = js.native
   /* CompleteClass */
-  override def cancelScheduledValues(startTime: Double): org.scalablytyped.std.AudioParam = js.native
+  override def cancelScheduledValues(cancelTime: Double): org.scalablytyped.std.AudioParam = js.native
   /* CompleteClass */
   override def exponentialRampToValueAtTime(value: Double, endTime: Double): org.scalablytyped.std.AudioParam = js.native
   /* CompleteClass */
@@ -24,7 +24,7 @@ class AudioParam ()
   /* CompleteClass */
   override def setValueAtTime(value: Double, startTime: Double): org.scalablytyped.std.AudioParam = js.native
   /* CompleteClass */
-  override def setValueCurveAtTime(values: org.scalablytyped.std.Float32Array, startTime: Double, duration: Double): org.scalablytyped.std.AudioParam = js.native
+  override def setValueCurveAtTime(values: js.Array[Double], startTime: Double, duration: Double): org.scalablytyped.std.AudioParam = js.native
 }
 
 @JSGlobal("AudioParam")

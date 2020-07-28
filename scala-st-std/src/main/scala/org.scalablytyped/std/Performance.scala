@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Performance extends js.Object {
+  /** @deprecated */
   val navigation: PerformanceNavigation = js.native
+  val timeOrigin: Double = js.native
+  /** @deprecated */
   val timing: PerformanceTiming = js.native
   def clearMarks(): Unit = js.native
   def clearMarks(markName: java.lang.String): Unit = js.native
@@ -15,10 +18,12 @@ trait Performance extends js.Object {
   def clearResourceTimings(): Unit = js.native
   def getEntries(): js.Any = js.native
   def getEntriesByName(name: java.lang.String): js.Any = js.native
-  def getEntriesByName(name: java.lang.String, entryType: java.lang.String): js.Any = js.native
-  def getEntriesByType(entryType: java.lang.String): js.Any = js.native
+  def getEntriesByName(name: java.lang.String, `type`: java.lang.String): js.Any = js.native
+  def getEntriesByType(`type`: java.lang.String): js.Any = js.native
+  /** @deprecated */
   def getMarks(): js.Any = js.native
   def getMarks(markName: java.lang.String): js.Any = js.native
+  /** @deprecated */
   def getMeasures(): js.Any = js.native
   def getMeasures(measureName: java.lang.String): js.Any = js.native
   def mark(markName: java.lang.String): Unit = js.native

@@ -1,5 +1,7 @@
 package org.scalablytyped.std.global
 
+import org.scalablytyped.std.GamepadHand
+import org.scalablytyped.std.GamepadMappingType
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,11 +18,19 @@ class Gamepad ()
   /* CompleteClass */
   override val connected: scala.Boolean = js.native
   /* CompleteClass */
+  override val displayId: Double = js.native
+  /* CompleteClass */
+  override val hand: GamepadHand = js.native
+  /* CompleteClass */
+  override val hapticActuators: js.Array[org.scalablytyped.std.GamepadHapticActuator] = js.native
+  /* CompleteClass */
   override val id: java.lang.String = js.native
   /* CompleteClass */
   override val index: Double = js.native
   /* CompleteClass */
-  override val mapping: java.lang.String = js.native
+  override val mapping: GamepadMappingType = js.native
+  /* CompleteClass */
+  override val pose: org.scalablytyped.std.GamepadPose | Null = js.native
   /* CompleteClass */
   override val timestamp: Double = js.native
 }

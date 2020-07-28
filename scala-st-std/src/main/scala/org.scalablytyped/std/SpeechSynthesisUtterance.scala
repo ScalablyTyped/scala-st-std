@@ -14,6 +14,13 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SpeechSynthesisUtterance extends EventTarget {
   var lang: java.lang.String = js.native
+  var onboundary: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onend: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onmark: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onpause: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onresume: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onstart: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var pitch: Double = js.native
   var rate: Double = js.native
   var text: java.lang.String = js.native
@@ -117,13 +124,6 @@ trait SpeechSynthesisUtterance extends EventTarget {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
-  def onboundary(ev: Event): js.Any = js.native
-  def onend(ev: Event): js.Any = js.native
-  def onerror(ev: Event): js.Any = js.native
-  def onmark(ev: Event): js.Any = js.native
-  def onpause(ev: Event): js.Any = js.native
-  def onresume(ev: Event): js.Any = js.native
-  def onstart(ev: Event): js.Any = js.native
   @JSName("removeEventListener")
   def removeEventListener_boundary(`type`: boundary, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")

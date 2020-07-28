@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait WindowTimers
-  extends Object
-     with WindowTimersExtension {
+trait WindowTimers extends WindowTimersExtension {
+  def clearInterval(): Unit = js.native
   def clearInterval(handle: Double): Unit = js.native
+  def clearTimeout(): Unit = js.native
   def clearTimeout(handle: Double): Unit = js.native
   def setInterval(handler: js.Any, timeout: js.UndefOr[scala.Nothing], args: js.Any*): Double = js.native
   def setInterval(handler: js.Any, timeout: js.Any, args: js.Any*): Double = js.native

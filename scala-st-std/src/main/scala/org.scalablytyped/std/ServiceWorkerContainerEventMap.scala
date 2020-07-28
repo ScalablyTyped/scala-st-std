@@ -7,12 +7,13 @@ import scala.scalajs.js.annotation._
 trait ServiceWorkerContainerEventMap extends js.Object {
   var controllerchange: Event
   var message: ServiceWorkerMessageEvent
+  var messageerror: MessageEvent
 }
 
 object ServiceWorkerContainerEventMap {
   @scala.inline
-  def apply(controllerchange: Event, message: ServiceWorkerMessageEvent): ServiceWorkerContainerEventMap = {
-    val __obj = js.Dynamic.literal(controllerchange = controllerchange.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+  def apply(controllerchange: Event, message: ServiceWorkerMessageEvent, messageerror: MessageEvent): ServiceWorkerContainerEventMap = {
+    val __obj = js.Dynamic.literal(controllerchange = controllerchange.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], messageerror = messageerror.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceWorkerContainerEventMap]
   }
   @scala.inline
@@ -30,6 +31,8 @@ object ServiceWorkerContainerEventMap {
     def setControllerchange(value: Event): Self = this.set("controllerchange", value.asInstanceOf[js.Any])
     @scala.inline
     def setMessage(value: ServiceWorkerMessageEvent): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMessageerror(value: MessageEvent): Self = this.set("messageerror", value.asInstanceOf[js.Any])
   }
   
 }

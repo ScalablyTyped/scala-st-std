@@ -4,44 +4,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MediaKeyStatusMap extends js.Object {
-  val size: Double
-  def forEach(callback: ForEachCallback): Unit
-  def get(keyId: BufferSource): MediaKeyStatus
-  def has(keyId: BufferSource): scala.Boolean
-}
-
-object MediaKeyStatusMap {
-  @scala.inline
-  def apply(
-    forEach: ForEachCallback => Unit,
-    get: BufferSource => MediaKeyStatus,
-    has: BufferSource => scala.Boolean,
-    size: Double
-  ): MediaKeyStatusMap = {
-    val __obj = js.Dynamic.literal(forEach = js.Any.fromFunction1(forEach), get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), size = size.asInstanceOf[js.Any])
-    __obj.asInstanceOf[MediaKeyStatusMap]
-  }
-  @scala.inline
-  implicit class MediaKeyStatusMapOps[Self <: MediaKeyStatusMap] (val x: Self) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setForEach(value: ForEachCallback => Unit): Self = this.set("forEach", js.Any.fromFunction1(value))
-    @scala.inline
-    def setGet(value: BufferSource => MediaKeyStatus): Self = this.set("get", js.Any.fromFunction1(value))
-    @scala.inline
-    def setHas(value: BufferSource => scala.Boolean): Self = this.set("has", js.Any.fromFunction1(value))
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
-  }
-  
+  val size: Double = js.native
+  def forEach(callback: js.Function): Unit = js.native
+  def forEach(callback: js.Function, thisArg: js.Any): Unit = js.native
+  def get(): MediaKeyStatus = js.native
+  def get(keyId: ArrayBuffer): MediaKeyStatus = js.native
+  def get(keyId: DataView): MediaKeyStatus = js.native
+  def get(keyId: Float32Array): MediaKeyStatus = js.native
+  def get(keyId: Float64Array): MediaKeyStatus = js.native
+  def get(keyId: Int16Array): MediaKeyStatus = js.native
+  def get(keyId: Int32Array): MediaKeyStatus = js.native
+  def get(keyId: Int8Array): MediaKeyStatus = js.native
+  def get(keyId: Uint16Array): MediaKeyStatus = js.native
+  def get(keyId: Uint32Array): MediaKeyStatus = js.native
+  def get(keyId: Uint8Array): MediaKeyStatus = js.native
+  def get(keyId: Uint8ClampedArray): MediaKeyStatus = js.native
+  def has(): scala.Boolean = js.native
+  def has(keyId: ArrayBuffer): scala.Boolean = js.native
+  def has(keyId: DataView): scala.Boolean = js.native
+  def has(keyId: Float32Array): scala.Boolean = js.native
+  def has(keyId: Float64Array): scala.Boolean = js.native
+  def has(keyId: Int16Array): scala.Boolean = js.native
+  def has(keyId: Int32Array): scala.Boolean = js.native
+  def has(keyId: Int8Array): scala.Boolean = js.native
+  def has(keyId: Uint16Array): scala.Boolean = js.native
+  def has(keyId: Uint32Array): scala.Boolean = js.native
+  def has(keyId: Uint8Array): scala.Boolean = js.native
+  def has(keyId: Uint8ClampedArray): scala.Boolean = js.native
 }
 

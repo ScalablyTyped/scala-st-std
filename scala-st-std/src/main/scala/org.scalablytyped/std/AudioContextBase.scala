@@ -10,6 +10,7 @@ trait AudioContextBase extends EventTarget {
   val currentTime: Double = js.native
   val destination: AudioDestinationNode = js.native
   val listener: AudioListener = js.native
+  var onstatechange: (js.ThisFunction1[/* this */ AudioContext, /* ev */ Event, _]) | Null = js.native
   val sampleRate: Double = js.native
   val state: AudioContextState = js.native
   @JSName("addEventListener")
@@ -77,7 +78,6 @@ trait AudioContextBase extends EventTarget {
   ): js.Promise[AudioBuffer] = js.native
   def decodeAudioData(audioData: ArrayBuffer, successCallback: DecodeSuccessCallback): js.Promise[AudioBuffer] = js.native
   def decodeAudioData(audioData: ArrayBuffer, successCallback: DecodeSuccessCallback, errorCallback: DecodeErrorCallback): js.Promise[AudioBuffer] = js.native
-  def onstatechange(ev: Event): js.Any = js.native
   @JSName("removeEventListener")
   def removeEventListener_statechange(`type`: statechange, listener: js.ThisFunction1[/* this */ AudioContext, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")

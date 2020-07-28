@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation._
 trait TextTrackCue extends EventTarget {
   var endTime: Double = js.native
   var id: java.lang.String = js.native
+  var onenter: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onexit: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var pauseOnExit: scala.Boolean = js.native
   var startTime: Double = js.native
   var text: java.lang.String = js.native
@@ -43,8 +45,6 @@ trait TextTrackCue extends EventTarget {
     options: scala.Boolean
   ): Unit = js.native
   def getCueAsHTML(): DocumentFragment = js.native
-  def onenter(ev: Event): js.Any = js.native
-  def onexit(ev: Event): js.Any = js.native
   @JSName("removeEventListener")
   def removeEventListener_enter(`type`: enter, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")

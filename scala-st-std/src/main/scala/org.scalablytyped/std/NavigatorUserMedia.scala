@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait NavigatorUserMedia extends js.Object {
   val mediaDevices: MediaDevices
+  def getDisplayMedia(constraints: MediaStreamConstraints): js.Promise[MediaStream]
   def getUserMedia(
     constraints: MediaStreamConstraints,
     successCallback: NavigatorUserMediaSuccessCallback,
@@ -16,10 +17,11 @@ trait NavigatorUserMedia extends js.Object {
 object NavigatorUserMedia {
   @scala.inline
   def apply(
+    getDisplayMedia: MediaStreamConstraints => js.Promise[MediaStream],
     getUserMedia: (MediaStreamConstraints, NavigatorUserMediaSuccessCallback, NavigatorUserMediaErrorCallback) => Unit,
     mediaDevices: MediaDevices
   ): NavigatorUserMedia = {
-    val __obj = js.Dynamic.literal(getUserMedia = js.Any.fromFunction3(getUserMedia), mediaDevices = mediaDevices.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(getDisplayMedia = js.Any.fromFunction1(getDisplayMedia), getUserMedia = js.Any.fromFunction3(getUserMedia), mediaDevices = mediaDevices.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigatorUserMedia]
   }
   @scala.inline
@@ -33,6 +35,8 @@ object NavigatorUserMedia {
         x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
         x
     }
+    @scala.inline
+    def setGetDisplayMedia(value: MediaStreamConstraints => js.Promise[MediaStream]): Self = this.set("getDisplayMedia", js.Any.fromFunction1(value))
     @scala.inline
     def setGetUserMedia(
       value: (MediaStreamConstraints, NavigatorUserMediaSuccessCallback, NavigatorUserMediaErrorCallback) => Unit

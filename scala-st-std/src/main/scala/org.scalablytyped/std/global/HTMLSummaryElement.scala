@@ -8,11 +8,9 @@ import scala.scalajs.js.annotation._
 @JSGlobal("HTMLSummaryElement")
 @js.native
 class HTMLSummaryElement ()
-  extends org.scalablytyped.std.HTMLElement {
+  extends org.scalablytyped.std.HTMLSummaryElement {
   /* CompleteClass */
   override val childElementCount: Double = js.native
-  /* CompleteClass */
-  override val children: org.scalablytyped.std.HTMLCollection = js.native
   /* CompleteClass */
   override val firstElementChild: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
@@ -21,6 +19,8 @@ class HTMLSummaryElement ()
   override val nextElementSibling: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
   override val previousElementSibling: org.scalablytyped.std.Element | Null = js.native
+  /* CompleteClass */
+  override val style: org.scalablytyped.std.CSSStyleDeclaration = js.native
   /* CompleteClass */
   override def remove(): Unit = js.native
 }

@@ -8,9 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IDBRequest extends EventTarget {
   val error: DOMException = js.native
+  var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onsuccess: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   val readyState: IDBRequestReadyState = js.native
   val result: js.Any = js.native
-  var source: IDBObjectStore | IDBIndex | IDBCursor = js.native
+  val source: IDBObjectStore | IDBIndex | IDBCursor = js.native
   val transaction: IDBTransaction = js.native
   @JSName("addEventListener")
   def addEventListener_error(
@@ -43,8 +45,6 @@ trait IDBRequest extends EventTarget {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
-  def onerror(ev: Event): js.Any = js.native
-  def onsuccess(ev: Event): js.Any = js.native
   @JSName("removeEventListener")
   def removeEventListener_error(
     `type`: org.scalablytyped.std.stdStrings.error,

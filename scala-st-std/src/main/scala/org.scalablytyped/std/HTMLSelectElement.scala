@@ -39,7 +39,7 @@ trait HTMLSelectElement
     * Sets or retrieves the index of the selected option in a select object.
     */
   var selectedIndex: Double = js.native
-  var selectedOptions: HTMLCollectionOf[HTMLOptionElement] = js.native
+  val selectedOptions: HTMLCollectionOf[HTMLOptionElement] = js.native
   /**
     * Sets or retrieves the number of rows in the list box.
     */
@@ -64,14 +64,17 @@ trait HTMLSelectElement
     * Returns whether an element will successfully validate based on forms validation rules and constraints.
     */
   val willValidate: scala.Boolean = js.native
+  def add(element: HTMLOptGroupElement): Unit = js.native
+  def add(element: HTMLOptGroupElement, before: HTMLElement): Unit = js.native
+  def add(element: HTMLOptGroupElement, before: Double): Unit = js.native
   /**
     * Adds an element to the areas, controlRange, or options collection.
     * @param element Variant of type Number that specifies the index position in the collection where the element is placed. If no value is given, the method places the element at the end of the collection.
     * @param before Variant of type Object that specifies an element to insert before, or null to append the object to the collection.
     */
-  def add(element: HTMLElement): Unit = js.native
-  def add(element: HTMLElement, before: HTMLElement): Unit = js.native
-  def add(element: HTMLElement, before: Double): Unit = js.native
+  def add(element: HTMLOptionElement): Unit = js.native
+  def add(element: HTMLOptionElement, before: HTMLElement): Unit = js.native
+  def add(element: HTMLOptionElement, before: Double): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -91,10 +94,10 @@ trait HTMLSelectElement
     * @param name Variant of type Number or String that specifies the object or collection to retrieve. If this parameter is an integer, it is the zero-based index of the object. If this parameter is a string, all objects with matching name or id properties are retrieved, and a collection is returned if more than one match is made.
     * @param index Variant of type Number that specifies the zero-based index of the object to retrieve when a collection is returned.
     */
-  def item(): js.Any = js.native
-  def item(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
-  def item(name: js.Any): js.Any = js.native
-  def item(name: js.Any, index: js.Any): js.Any = js.native
+  def item(): Element | Null = js.native
+  def item(name: js.UndefOr[scala.Nothing], index: js.Any): Element | Null = js.native
+  def item(name: js.Any): Element | Null = js.native
+  def item(name: js.Any, index: js.Any): Element | Null = js.native
   /**
     * Retrieves a select object or an object from an options collection.
     * @param namedItem A String that specifies the name or id property of the object to retrieve. A collection is returned if more than one match is made.

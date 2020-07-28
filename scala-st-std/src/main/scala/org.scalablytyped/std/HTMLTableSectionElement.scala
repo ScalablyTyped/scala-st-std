@@ -5,27 +5,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait HTMLTableSectionElement
-  extends HTMLElement
-     with HTMLTableAlignment {
+trait HTMLTableSectionElement extends HTMLElement {
   /**
     * Sets or retrieves a value that indicates the table alignment.
     */
+  /** @deprecated */
   var align: java.lang.String = js.native
+  /** @deprecated */
+  var ch: java.lang.String = js.native
+  /** @deprecated */
+  var chOff: java.lang.String = js.native
   /**
     * Sets or retrieves the number of horizontal rows contained in the object.
     */
-  var rows: HTMLCollectionOf[HTMLTableRowElement] = js.native
-  /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
-  /* InferMemberOverrides */
-  override def addEventListener(
-    `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  val rows: HTMLCollectionOf[HTMLTableRowElement] = js.native
+  /** @deprecated */
+  var vAlign: java.lang.String = js.native
   /**
     * Removes the specified row (tr) from the element and from the rows collection.
     * @param index Number that specifies the zero-based position in the rows collection of the row to remove.
@@ -38,15 +33,5 @@ trait HTMLTableSectionElement
     */
   def insertRow(): HTMLTableRowElement = js.native
   def insertRow(index: Double): HTMLTableRowElement = js.native
-  /* InferMemberOverrides */
-  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
-  /* InferMemberOverrides */
-  override def removeEventListener(
-    `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
-    options: EventListenerOptions
-  ): Unit = js.native
-  /* InferMemberOverrides */
-  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
 }
 

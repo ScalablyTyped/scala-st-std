@@ -14,11 +14,11 @@ class MediaList ()
   /* CompleteClass */
   override var mediaText: java.lang.String = js.native
   /* CompleteClass */
-  override def appendMedium(newMedium: java.lang.String): Unit = js.native
+  override def appendMedium(medium: java.lang.String): Unit = js.native
   /* CompleteClass */
-  override def deleteMedium(oldMedium: java.lang.String): Unit = js.native
+  override def deleteMedium(medium: java.lang.String): Unit = js.native
   /* CompleteClass */
-  override def item(index: Double): java.lang.String = js.native
+  override def item(index: Double): java.lang.String | Null = js.native
 }
 
 @JSGlobal("MediaList")

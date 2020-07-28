@@ -20,6 +20,14 @@ trait ApplicationCache extends EventTarget {
   val OBSOLETE: Double = js.native
   val UNCACHED: Double = js.native
   val UPDATEREADY: Double = js.native
+  var oncached: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onchecking: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var ondownloading: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onnoupdate: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onobsolete: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onprogress: (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]) | Null = js.native
+  var onupdateready: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   val status: Double = js.native
   def abort(): Unit = js.native
   @JSName("addEventListener")
@@ -134,14 +142,6 @@ trait ApplicationCache extends EventTarget {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
-  def oncached(ev: Event): js.Any = js.native
-  def onchecking(ev: Event): js.Any = js.native
-  def ondownloading(ev: Event): js.Any = js.native
-  def onerror(ev: Event): js.Any = js.native
-  def onnoupdate(ev: Event): js.Any = js.native
-  def onobsolete(ev: Event): js.Any = js.native
-  def onprogress(ev: ProgressEvent): js.Any = js.native
-  def onupdateready(ev: Event): js.Any = js.native
   @JSName("removeEventListener")
   def removeEventListener_cached(`type`: cached, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")

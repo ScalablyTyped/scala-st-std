@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object onwheel
   extends TopLevel[
-      js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.WheelEvent, js.Any]
+      (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.WheelEvent, js.Any]) | Null
     ]
 

@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RsaHashedKeyGenParams extends RsaKeyGenParams {
-  var hash: AlgorithmIdentifier
+  var hash: java.lang.String | Algorithm
 }
 
 object RsaHashedKeyGenParams {
   @scala.inline
   def apply(
-    hash: AlgorithmIdentifier,
+    hash: java.lang.String | Algorithm,
     modulusLength: Double,
     name: java.lang.String,
     publicExponent: Uint8Array
@@ -31,7 +31,7 @@ object RsaHashedKeyGenParams {
         x
     }
     @scala.inline
-    def setHash(value: AlgorithmIdentifier): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setHash(value: java.lang.String | Algorithm): Self = this.set("hash", value.asInstanceOf[js.Any])
   }
   
 }

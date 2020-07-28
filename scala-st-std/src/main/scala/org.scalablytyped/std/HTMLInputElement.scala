@@ -16,6 +16,7 @@ trait HTMLInputElement extends HTMLElement {
   /**
     * Sets or retrieves how the object is aligned with adjacent text.
     */
+  /** @deprecated */
   var align: java.lang.String = js.native
   /**
     * Sets or retrieves a text alternative to the graphic.
@@ -30,17 +31,9 @@ trait HTMLInputElement extends HTMLElement {
     */
   var autofocus: scala.Boolean = js.native
   /**
-    * Sets or retrieves the width of the border to draw around the object.
-    */
-  var border: java.lang.String = js.native
-  /**
     * Sets or retrieves the state of the check box or radio button.
     */
   var checked: scala.Boolean = js.native
-  /**
-    * Retrieves whether the object is fully loaded.
-    */
-  val complete: scala.Boolean = js.native
   /**
     * Sets or retrieves the state of the check box or radio button.
     */
@@ -73,7 +66,7 @@ trait HTMLInputElement extends HTMLElement {
   /**
     * Overrides any validation or required attributes on a form or form elements to allow it to be submitted without validation. This can be used to create a "save draft"-type submit option.
     */
-  var formNoValidate: java.lang.String = js.native
+  var formNoValidate: scala.Boolean = js.native
   /**
     * Overrides the target attribute on a form element.
     */
@@ -81,16 +74,12 @@ trait HTMLInputElement extends HTMLElement {
   /**
     * Sets or retrieves the height of the object.
     */
-  var height: java.lang.String = js.native
-  /**
-    * Sets or retrieves the width of the border to draw around the object.
-    */
-  var hspace: Double = js.native
+  var height: Double = js.native
   var indeterminate: scala.Boolean = js.native
   /**
     * Specifies the ID of a pre-defined datalist of options for an input element.
     */
-  val list: HTMLElement = js.native
+  val list: HTMLElement | Null = js.native
   /**
     * Defines the maximum acceptable value for an input element with type="number".When used with the min and step attributes, lets you control the range and increment (such as only even numbers) that the user can enter into an input field.
     */
@@ -125,21 +114,20 @@ trait HTMLInputElement extends HTMLElement {
     * When present, marks an element that can't be submitted without a value.
     */
   var required: scala.Boolean = js.native
-  var selectionDirection: java.lang.String = js.native
+  var selectionDirection: java.lang.String | Null = js.native
   /**
     * Gets or sets the end position or offset of a text selection.
     */
-  var selectionEnd: Double = js.native
+  var selectionEnd: Double | Null = js.native
   /**
     * Gets or sets the starting position or offset of a text selection.
     */
-  var selectionStart: Double = js.native
+  var selectionStart: Double | Null = js.native
   var size: Double = js.native
   /**
     * The address or URL of the a media resource that is to be considered.
     */
   var src: java.lang.String = js.native
-  var status: scala.Boolean = js.native
   /**
     * Defines an increment or jump between values that you want to allow the user to enter. When used with the max and min attributes, lets you control the range and increment (for example, allow only even numbers) that the user can enter into an input field.
     */
@@ -151,6 +139,7 @@ trait HTMLInputElement extends HTMLElement {
   /**
     * Sets or retrieves the URL, often with a bookmark extension (#name), to use as a client-side image map.
     */
+  /** @deprecated */
   var useMap: java.lang.String = js.native
   /**
     * Returns the error message that would be displayed if the user submits the form, or an empty string if no error message. It also triggers the standard error message, such as "this is a required field". The result is that the user sees validation messages without actually submitting.
@@ -164,20 +153,16 @@ trait HTMLInputElement extends HTMLElement {
     * Returns the value of the data at the cursor's current position.
     */
   var value: java.lang.String = js.native
-  var valueAsDate: Date = js.native
+  var valueAsDate: js.Any = js.native
   /**
     * Returns the input field value as a number.
     */
   var valueAsNumber: Double = js.native
-  /**
-    * Sets or retrieves the vertical margin for the object.
-    */
-  var vspace: Double = js.native
   var webkitdirectory: scala.Boolean = js.native
   /**
     * Sets or retrieves the width of the object.
     */
-  var width: java.lang.String = js.native
+  var width: Double = js.native
   /**
     * Returns whether an element will successfully validate based on forms validation rules and constraints.
     */

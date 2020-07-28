@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait SpeechSynthesisEventInit extends EventInit {
   var charIndex: js.UndefOr[Double] = js.undefined
+  var charLength: js.UndefOr[Double] = js.undefined
   var elapsedTime: js.UndefOr[Double] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var utterance: js.UndefOr[SpeechSynthesisUtterance | Null] = js.undefined
@@ -32,6 +33,10 @@ object SpeechSynthesisEventInit {
     def setCharIndex(value: Double): Self = this.set("charIndex", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteCharIndex: Self = this.set("charIndex", js.undefined)
+    @scala.inline
+    def setCharLength(value: Double): Self = this.set("charLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCharLength: Self = this.set("charLength", js.undefined)
     @scala.inline
     def setElapsedTime(value: Double): Self = this.set("elapsedTime", value.asInstanceOf[js.Any])
     @scala.inline

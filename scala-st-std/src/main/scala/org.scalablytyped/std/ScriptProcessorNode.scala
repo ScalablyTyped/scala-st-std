@@ -7,7 +7,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ScriptProcessorNode extends AudioNode {
+  /** @deprecated */
   val bufferSize: Double = js.native
+  /** @deprecated */
+  var onaudioprocess: (js.ThisFunction1[/* this */ this.type, /* ev */ AudioProcessingEvent, _]) | Null = js.native
   @JSName("addEventListener")
   def addEventListener_audioprocess(
     `type`: audioprocess,
@@ -25,7 +28,6 @@ trait ScriptProcessorNode extends AudioNode {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ AudioProcessingEvent, _],
     options: scala.Boolean
   ): Unit = js.native
-  def onaudioprocess(ev: AudioProcessingEvent): js.Any = js.native
   @JSName("removeEventListener")
   def removeEventListener_audioprocess(
     `type`: audioprocess,

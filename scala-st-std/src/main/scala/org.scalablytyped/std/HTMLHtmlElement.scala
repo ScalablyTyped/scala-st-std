@@ -9,6 +9,7 @@ trait HTMLHtmlElement extends HTMLElement {
   /**
     * Sets or retrieves the DTD version that governs the current document.
     */
+  /** @deprecated */
   var version: java.lang.String = js.native
 }
 

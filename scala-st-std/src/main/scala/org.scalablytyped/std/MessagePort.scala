@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait MessagePort extends EventTarget {
+  var onmessage: (js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _]) | Null = js.native
   @JSName("addEventListener")
   def addEventListener_message(`type`: message, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _]): Unit = js.native
   @JSName("addEventListener")
@@ -22,7 +23,6 @@ trait MessagePort extends EventTarget {
     options: scala.Boolean
   ): Unit = js.native
   def close(): Unit = js.native
-  def onmessage(ev: MessageEvent): js.Any = js.native
   def postMessage(): Unit = js.native
   def postMessage(message: js.UndefOr[scala.Nothing], transfer: js.Array[_]): Unit = js.native
   def postMessage(message: js.Any): Unit = js.native

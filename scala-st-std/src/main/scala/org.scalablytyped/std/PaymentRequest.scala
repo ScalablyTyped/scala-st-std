@@ -8,6 +8,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PaymentRequest extends EventTarget {
+  val id: java.lang.String = js.native
+  var onshippingaddresschange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onshippingoptionchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   val shippingAddress: PaymentAddress | Null = js.native
   val shippingOption: java.lang.String | Null = js.native
   val shippingType: PaymentShippingType | Null = js.native
@@ -40,8 +43,7 @@ trait PaymentRequest extends EventTarget {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
-  def onshippingaddresschange(ev: Event): js.Any = js.native
-  def onshippingoptionchange(ev: Event): js.Any = js.native
+  def canMakePayment(): js.Promise[scala.Boolean] = js.native
   @JSName("removeEventListener")
   def removeEventListener_shippingaddresschange(`type`: shippingaddresschange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")

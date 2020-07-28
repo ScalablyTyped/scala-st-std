@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AbstractWorker extends js.Object {
+  var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _]) | Null = js.native
   def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   def addEventListener(
     `type`: java.lang.String,
@@ -28,7 +29,6 @@ trait AbstractWorker extends js.Object {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _],
     options: scala.Boolean
   ): Unit = js.native
-  def onerror(ev: ErrorEvent): js.Any = js.native
   def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   def removeEventListener(
     `type`: java.lang.String,

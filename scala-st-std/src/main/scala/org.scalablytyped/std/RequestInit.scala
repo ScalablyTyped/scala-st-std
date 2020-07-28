@@ -5,7 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RequestInit extends js.Object {
-  var body: js.UndefOr[Blob | BufferSource | FormData | java.lang.String | Null] = js.undefined
+  var body: js.UndefOr[
+    Blob | Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer | FormData | java.lang.String | Null
+  ] = js.undefined
   var cache: js.UndefOr[RequestCache] = js.undefined
   var credentials: js.UndefOr[RequestCredentials] = js.undefined
   var headers: js.UndefOr[HeadersInit] = js.undefined
@@ -38,7 +40,9 @@ object RequestInit {
         x
     }
     @scala.inline
-    def setBody(value: Blob | BufferSource | FormData | java.lang.String): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setBody(
+      value: Blob | Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer | FormData | java.lang.String
+    ): Self = this.set("body", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteBody: Self = this.set("body", js.undefined)
     @scala.inline

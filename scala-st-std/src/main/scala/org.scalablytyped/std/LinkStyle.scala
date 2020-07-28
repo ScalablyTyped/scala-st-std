@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LinkStyle extends js.Object {
-  val sheet: StyleSheet
+  val sheet: StyleSheet | Null
 }
 
 object LinkStyle {
   @scala.inline
-  def apply(sheet: StyleSheet): LinkStyle = {
-    val __obj = js.Dynamic.literal(sheet = sheet.asInstanceOf[js.Any])
+  def apply(): LinkStyle = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LinkStyle]
   }
   @scala.inline
@@ -27,6 +27,8 @@ object LinkStyle {
     }
     @scala.inline
     def setSheet(value: StyleSheet): Self = this.set("sheet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSheetNull: Self = this.set("sheet", null)
   }
   
 }

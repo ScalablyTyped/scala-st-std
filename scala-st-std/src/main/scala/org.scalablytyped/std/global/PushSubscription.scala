@@ -1,7 +1,6 @@
 package org.scalablytyped.std.global
 
 import org.scalablytyped.std.PushEncryptionKeyName
-import org.scalablytyped.std.USVString
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +11,9 @@ import scala.scalajs.js.annotation._
 class PushSubscription ()
   extends org.scalablytyped.std.PushSubscription {
   /* CompleteClass */
-  override val endpoint: USVString = js.native
+  override val endpoint: java.lang.String = js.native
+  /* CompleteClass */
+  override val expirationTime: Double | Null = js.native
   /* CompleteClass */
   override val options: org.scalablytyped.std.PushSubscriptionOptions = js.native
   /* CompleteClass */

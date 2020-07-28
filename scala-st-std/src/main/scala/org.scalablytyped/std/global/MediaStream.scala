@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class MediaStream ()
   extends org.scalablytyped.std.MediaStream {
-  def this(streamOrTracks: org.scalablytyped.std.MediaStream) = this()
-  def this(streamOrTracks: js.Array[org.scalablytyped.std.MediaStreamTrack]) = this()
+  def this(stream: org.scalablytyped.std.MediaStream) = this()
+  def this(tracks: js.Array[org.scalablytyped.std.MediaStreamTrack]) = this()
 }
 
 @JSGlobal("MediaStream")
@@ -19,7 +19,7 @@ class MediaStream ()
 object MediaStream
   extends Instantiable0[org.scalablytyped.std.MediaStream]
      with Instantiable1[
-      (/* streamOrTracks */ js.Array[org.scalablytyped.std.MediaStreamTrack]) | (/* streamOrTracks */ org.scalablytyped.std.MediaStream), 
+      (/* tracks */ js.Array[org.scalablytyped.std.MediaStreamTrack]) | (/* stream */ org.scalablytyped.std.MediaStream), 
       org.scalablytyped.std.MediaStream
     ]
 

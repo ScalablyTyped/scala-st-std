@@ -9,9 +9,9 @@ trait MediaList
   extends /* index */ NumberDictionary[java.lang.String] {
   val length: Double
   var mediaText: java.lang.String
-  def appendMedium(newMedium: java.lang.String): Unit
-  def deleteMedium(oldMedium: java.lang.String): Unit
-  def item(index: Double): java.lang.String
+  def appendMedium(medium: java.lang.String): Unit
+  def deleteMedium(medium: java.lang.String): Unit
+  def item(index: Double): java.lang.String | Null
 }
 
 object MediaList {
@@ -19,7 +19,7 @@ object MediaList {
   def apply(
     appendMedium: java.lang.String => Unit,
     deleteMedium: java.lang.String => Unit,
-    item: Double => java.lang.String,
+    item: Double => java.lang.String | Null,
     length: Double,
     mediaText: java.lang.String
   ): MediaList = {
@@ -42,7 +42,7 @@ object MediaList {
     @scala.inline
     def setDeleteMedium(value: java.lang.String => Unit): Self = this.set("deleteMedium", js.Any.fromFunction1(value))
     @scala.inline
-    def setItem(value: Double => java.lang.String): Self = this.set("item", js.Any.fromFunction1(value))
+    def setItem(value: Double => java.lang.String | Null): Self = this.set("item", js.Any.fromFunction1(value))
     @scala.inline
     def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
     @scala.inline

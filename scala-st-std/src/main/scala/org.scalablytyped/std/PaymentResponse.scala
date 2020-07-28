@@ -11,6 +11,7 @@ trait PaymentResponse extends js.Object {
   val payerEmail: java.lang.String | Null = js.native
   val payerName: java.lang.String | Null = js.native
   val payerPhone: java.lang.String | Null = js.native
+  val requestId: java.lang.String = js.native
   val shippingAddress: PaymentAddress | Null = js.native
   val shippingOption: java.lang.String | Null = js.native
   def complete(): js.Promise[Unit] = js.native

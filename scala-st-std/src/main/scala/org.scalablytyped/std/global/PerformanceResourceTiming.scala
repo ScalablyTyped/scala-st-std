@@ -39,6 +39,10 @@ class PerformanceResourceTiming ()
   override val responseStart: Double = js.native
   /* CompleteClass */
   override val startTime: Double = js.native
+  /* CompleteClass */
+  override val workerStart: Double = js.native
+  /* CompleteClass */
+  override def toJSON(): js.Any = js.native
 }
 
 @JSGlobal("PerformanceResourceTiming")

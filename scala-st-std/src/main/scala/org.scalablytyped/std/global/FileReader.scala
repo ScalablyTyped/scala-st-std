@@ -13,5 +13,9 @@ class FileReader ()
 @JSGlobal("FileReader")
 @js.native
 object FileReader
-  extends Instantiable0[org.scalablytyped.std.FileReader]
+  extends Instantiable0[org.scalablytyped.std.FileReader] {
+  val DONE: Double = js.native
+  val EMPTY: Double = js.native
+  val LOADING: Double = js.native
+}
 

@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EcKeyAlgorithm extends KeyAlgorithm {
-  var typedCurve: java.lang.String
+  var namedCurve: java.lang.String
 }
 
 object EcKeyAlgorithm {
   @scala.inline
-  def apply(typedCurve: java.lang.String): EcKeyAlgorithm = {
-    val __obj = js.Dynamic.literal(typedCurve = typedCurve.asInstanceOf[js.Any])
+  def apply(name: java.lang.String, namedCurve: java.lang.String): EcKeyAlgorithm = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], namedCurve = namedCurve.asInstanceOf[js.Any])
     __obj.asInstanceOf[EcKeyAlgorithm]
   }
   @scala.inline
@@ -26,7 +26,7 @@ object EcKeyAlgorithm {
         x
     }
     @scala.inline
-    def setTypedCurve(value: java.lang.String): Self = this.set("typedCurve", value.asInstanceOf[js.Any])
+    def setNamedCurve(value: java.lang.String): Self = this.set("namedCurve", value.asInstanceOf[js.Any])
   }
   
 }

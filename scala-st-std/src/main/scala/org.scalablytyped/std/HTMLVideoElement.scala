@@ -19,6 +19,9 @@ trait HTMLVideoElement extends HTMLMediaElement {
   var msStereo3DPackingMode: java.lang.String = js.native
   var msStereo3DRenderMode: java.lang.String = js.native
   var msZoom: scala.Boolean = js.native
+  var onMSVideoFormatChanged: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onMSVideoFrameStepCompleted: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onMSVideoOptimalLayoutChanged: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   /**
     * Gets or sets a URL of an image to display, for example, like a movie poster. This can be a still frame from the video, or another image if no video data is available.
     */
@@ -90,9 +93,6 @@ trait HTMLVideoElement extends HTMLMediaElement {
   def msInsertVideoEffect(activatableClassId: java.lang.String, effectRequired: scala.Boolean): Unit = js.native
   def msInsertVideoEffect(activatableClassId: java.lang.String, effectRequired: scala.Boolean, config: js.Any): Unit = js.native
   def msSetVideoRectangle(left: Double, top: Double, right: Double, bottom: Double): Unit = js.native
-  def onMSVideoFormatChanged(ev: Event): js.Any = js.native
-  def onMSVideoFrameStepCompleted(ev: Event): js.Any = js.native
-  def onMSVideoOptimalLayoutChanged(ev: Event): js.Any = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSVideoFormatChanged(`type`: MSVideoFormatChanged, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")

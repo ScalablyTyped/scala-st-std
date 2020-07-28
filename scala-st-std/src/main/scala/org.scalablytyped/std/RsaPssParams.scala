@@ -4,14 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RsaPssParams extends js.Object {
+trait RsaPssParams extends Algorithm {
   var saltLength: Double
 }
 
 object RsaPssParams {
   @scala.inline
-  def apply(saltLength: Double): RsaPssParams = {
-    val __obj = js.Dynamic.literal(saltLength = saltLength.asInstanceOf[js.Any])
+  def apply(name: java.lang.String, saltLength: Double): RsaPssParams = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], saltLength = saltLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[RsaPssParams]
   }
   @scala.inline

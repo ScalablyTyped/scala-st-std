@@ -20,7 +20,6 @@ trait AudioNode extends EventTarget {
   def connect(destination: AudioParam, output: Double): Unit = js.native
   def disconnect(): Unit = js.native
   def disconnect(destination: AudioNode): Unit = js.native
-  def disconnect(destination: AudioNode, output: js.UndefOr[scala.Nothing], input: Double): Unit = js.native
   def disconnect(destination: AudioNode, output: Double): Unit = js.native
   def disconnect(destination: AudioNode, output: Double, input: Double): Unit = js.native
   def disconnect(destination: AudioParam): Unit = js.native

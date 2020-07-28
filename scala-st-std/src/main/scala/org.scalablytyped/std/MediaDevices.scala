@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait MediaDevices extends EventTarget {
+  var ondevicechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   @JSName("addEventListener")
   def addEventListener_devicechange(`type`: devicechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
@@ -24,7 +25,6 @@ trait MediaDevices extends EventTarget {
   def enumerateDevices(): js.Promise[js.Array[MediaDeviceInfo]] = js.native
   def getSupportedConstraints(): MediaTrackSupportedConstraints = js.native
   def getUserMedia(constraints: MediaStreamConstraints): js.Promise[MediaStream] = js.native
-  def ondevicechange(ev: Event): js.Any = js.native
   @JSName("removeEventListener")
   def removeEventListener_devicechange(`type`: devicechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")

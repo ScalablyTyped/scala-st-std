@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait CSSRuleList extends /* index */ NumberDictionary[CSSRule] {
   val length: Double
-  def item(index: Double): CSSRule
+  def item(index: Double): CSSRule | Null
 }
 
 object CSSRuleList {
   @scala.inline
-  def apply(item: Double => CSSRule, length: Double): CSSRuleList = {
+  def apply(item: Double => CSSRule | Null, length: Double): CSSRuleList = {
     val __obj = js.Dynamic.literal(item = js.Any.fromFunction1(item), length = length.asInstanceOf[js.Any])
     __obj.asInstanceOf[CSSRuleList]
   }
@@ -28,7 +28,7 @@ object CSSRuleList {
         x
     }
     @scala.inline
-    def setItem(value: Double => CSSRule): Self = this.set("item", js.Any.fromFunction1(value))
+    def setItem(value: Double => CSSRule | Null): Self = this.set("item", js.Any.fromFunction1(value))
     @scala.inline
     def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
   }

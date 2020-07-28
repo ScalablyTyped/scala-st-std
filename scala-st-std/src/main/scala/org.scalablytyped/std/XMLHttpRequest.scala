@@ -14,7 +14,8 @@ trait XMLHttpRequest
   val LOADING: Double = js.native
   val OPENED: Double = js.native
   val UNSENT: Double = js.native
-  var msCaching: js.UndefOr[java.lang.String] = js.native
+  var msCaching: java.lang.String = js.native
+  var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   val readyState: Double = js.native
   val response: js.Any = js.native
   val responseText: java.lang.String = js.native
@@ -28,19 +29,15 @@ trait XMLHttpRequest
   var withCredentials: scala.Boolean = js.native
   def abort(): Unit = js.native
   /* InferMemberOverrides */
+  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: js.UndefOr[EventListenerOrEventListenerObject],
+    listener: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(
-    `type`: java.lang.String,
-    listener: js.UndefOr[EventListenerOrEventListenerObject],
-    options: scala.Boolean
-  ): Unit = js.native
-  /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
@@ -58,7 +55,6 @@ trait XMLHttpRequest
   def getAllResponseHeaders(): java.lang.String = js.native
   def getResponseHeader(header: java.lang.String): java.lang.String | Null = js.native
   def msCachingEnabled(): scala.Boolean = js.native
-  def onreadystatechange(ev: Event): js.Any = js.native
   def open(method: java.lang.String, url: java.lang.String): Unit = js.native
   def open(
     method: java.lang.String,
@@ -80,6 +76,13 @@ trait XMLHttpRequest
     user: java.lang.String,
     password: java.lang.String
   ): Unit = js.native
+  def open(
+    method: java.lang.String,
+    url: java.lang.String,
+    async: js.UndefOr[scala.Nothing],
+    user: Null,
+    password: java.lang.String
+  ): Unit = js.native
   def open(method: java.lang.String, url: java.lang.String, async: scala.Boolean): Unit = js.native
   def open(
     method: java.lang.String,
@@ -94,6 +97,13 @@ trait XMLHttpRequest
     url: java.lang.String,
     async: scala.Boolean,
     user: java.lang.String,
+    password: java.lang.String
+  ): Unit = js.native
+  def open(
+    method: java.lang.String,
+    url: java.lang.String,
+    async: scala.Boolean,
+    user: Null,
     password: java.lang.String
   ): Unit = js.native
   def overrideMimeType(mime: java.lang.String): Unit = js.native
@@ -126,8 +136,6 @@ trait XMLHttpRequest
     options: scala.Boolean
   ): Unit = js.native
   def send(): Unit = js.native
-  def send(data: Document): Unit = js.native
-  def send(data: java.lang.String): Unit = js.native
   def send(data: js.Any): Unit = js.native
   def setRequestHeader(header: java.lang.String, value: java.lang.String): Unit = js.native
 }

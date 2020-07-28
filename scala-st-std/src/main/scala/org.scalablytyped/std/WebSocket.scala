@@ -14,9 +14,13 @@ trait WebSocket extends EventTarget {
   val CLOSING: Double = js.native
   val CONNECTING: Double = js.native
   val OPEN: Double = js.native
-  var binaryType: java.lang.String = js.native
+  var binaryType: BinaryType = js.native
   val bufferedAmount: Double = js.native
   val extensions: java.lang.String = js.native
+  var onclose: (js.ThisFunction1[/* this */ this.type, /* ev */ CloseEvent, _]) | Null = js.native
+  var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onmessage: (js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _]) | Null = js.native
+  var onopen: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   val protocol: java.lang.String = js.native
   val readyState: Double = js.native
   val url: java.lang.String = js.native
@@ -80,10 +84,6 @@ trait WebSocket extends EventTarget {
   def close(code: js.UndefOr[scala.Nothing], reason: java.lang.String): Unit = js.native
   def close(code: Double): Unit = js.native
   def close(code: Double, reason: java.lang.String): Unit = js.native
-  def onclose(ev: CloseEvent): js.Any = js.native
-  def onerror(ev: Event): js.Any = js.native
-  def onmessage(ev: MessageEvent): js.Any = js.native
-  def onopen(ev: Event): js.Any = js.native
   @JSName("removeEventListener")
   def removeEventListener_close(`type`: close, listener: js.ThisFunction1[/* this */ this.type, /* ev */ CloseEvent, _]): Unit = js.native
   @JSName("removeEventListener")
@@ -140,6 +140,9 @@ trait WebSocket extends EventTarget {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
-  def send(data: js.Any): Unit = js.native
+  def send(data: ArrayBuffer): Unit = js.native
+  def send(data: ArrayBufferView): Unit = js.native
+  def send(data: Blob): Unit = js.native
+  def send(data: java.lang.String): Unit = js.native
 }
 

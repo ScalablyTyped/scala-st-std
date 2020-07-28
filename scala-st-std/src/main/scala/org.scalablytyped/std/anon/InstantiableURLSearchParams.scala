@@ -9,9 +9,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait InstantiableURLSearchParams
-  extends /**
-  * Constructor returning a URLSearchParams object.
-  */
-Instantiable0[URLSearchParams]
+  extends Instantiable0[URLSearchParams]
      with Instantiable1[(/* init */ String) | (/* init */ URLSearchParams), URLSearchParams]
 

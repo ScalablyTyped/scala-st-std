@@ -13,6 +13,9 @@ trait AudioTrackList
   extends EventTarget
      with /* index */ NumberDictionary[AudioTrack] {
   val length: Double = js.native
+  var onaddtrack: (js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _]) | Null = js.native
+  var onchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onremovetrack: (js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _]) | Null = js.native
   @JSName("addEventListener")
   def addEventListener_addtrack(`type`: addtrack, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _]): Unit = js.native
   @JSName("addEventListener")
@@ -57,9 +60,6 @@ trait AudioTrackList
   ): Unit = js.native
   def getTrackById(id: java.lang.String): AudioTrack | Null = js.native
   def item(index: Double): AudioTrack = js.native
-  def onaddtrack(ev: TrackEvent): js.Any = js.native
-  def onchange(ev: Event): js.Any = js.native
-  def onremovetrack(ev: TrackEvent): js.Any = js.native
   @JSName("removeEventListener")
   def removeEventListener_addtrack(`type`: addtrack, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _]): Unit = js.native
   @JSName("removeEventListener")

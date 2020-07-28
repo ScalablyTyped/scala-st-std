@@ -11,10 +11,12 @@ trait HTMLBaseFontElement
   /**
     * Sets or retrieves the current typeface family.
     */
+  /** @deprecated */
   var face: java.lang.String = js.native
   /**
     * Sets or retrieves the font size of the object.
     */
+  /** @deprecated */
   var size: Double = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native

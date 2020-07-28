@@ -6,39 +6,39 @@ import scala.scalajs.js.annotation._
 
 trait HTMLMediaElementEventMap extends HTMLElementEventMap {
   var encrypted: MediaEncryptedEvent
-  var msneedkey: MSMediaKeyNeededEvent
+  var msneedkey: Event
 }
 
 object HTMLMediaElementEventMap {
   @scala.inline
   def apply(
-    MSContentZoom: UIEvent,
-    MSGestureChange: MSGestureEvent,
-    MSGestureDoubleTap: MSGestureEvent,
-    MSGestureEnd: MSGestureEvent,
-    MSGestureHold: MSGestureEvent,
-    MSGestureStart: MSGestureEvent,
-    MSGestureTap: MSGestureEvent,
-    MSGotPointerCapture: MSPointerEvent,
-    MSInertiaStart: MSGestureEvent,
-    MSLostPointerCapture: MSPointerEvent,
-    MSManipulationStateChanged: MSManipulationEvent,
-    MSPointerCancel: MSPointerEvent,
-    MSPointerDown: MSPointerEvent,
-    MSPointerEnter: MSPointerEvent,
-    MSPointerLeave: MSPointerEvent,
-    MSPointerMove: MSPointerEvent,
-    MSPointerOut: MSPointerEvent,
-    MSPointerOver: MSPointerEvent,
-    MSPointerUp: MSPointerEvent,
+    MSContentZoom: Event,
+    MSGestureChange: Event,
+    MSGestureDoubleTap: Event,
+    MSGestureEnd: Event,
+    MSGestureHold: Event,
+    MSGestureStart: Event,
+    MSGestureTap: Event,
+    MSGotPointerCapture: Event,
+    MSInertiaStart: Event,
+    MSLostPointerCapture: Event,
+    MSManipulationStateChanged: Event,
+    MSPointerCancel: Event,
+    MSPointerDown: Event,
+    MSPointerEnter: Event,
+    MSPointerLeave: Event,
+    MSPointerMove: Event,
+    MSPointerOut: Event,
+    MSPointerOver: Event,
+    MSPointerUp: Event,
     abort: UIEvent,
-    activate: UIEvent,
+    activate: Event,
     ariarequest: Event,
-    beforeactivate: UIEvent,
-    beforecopy: ClipboardEvent,
-    beforecut: ClipboardEvent,
-    beforedeactivate: UIEvent,
-    beforepaste: ClipboardEvent,
+    beforeactivate: Event,
+    beforecopy: Event,
+    beforecut: Event,
+    beforedeactivate: Event,
+    beforepaste: Event,
     blur: FocusEvent,
     canplay: Event,
     canplaythrough: Event,
@@ -50,7 +50,7 @@ object HTMLMediaElementEventMap {
     cuechange: Event,
     cut: ClipboardEvent,
     dblclick: MouseEvent,
-    deactivate: UIEvent,
+    deactivate: Event,
     drag: DragEvent,
     dragend: DragEvent,
     dragenter: DragEvent,
@@ -61,7 +61,7 @@ object HTMLMediaElementEventMap {
     durationchange: Event,
     emptied: Event,
     encrypted: MediaEncryptedEvent,
-    ended: MediaStreamErrorEvent,
+    ended: Event,
     error: ErrorEvent,
     focus: FocusEvent,
     gotpointercapture: PointerEvent,
@@ -83,7 +83,7 @@ object HTMLMediaElementEventMap {
     mouseover: MouseEvent,
     mouseup: MouseEvent,
     mousewheel: WheelEvent,
-    msneedkey: MSMediaKeyNeededEvent,
+    msneedkey: Event,
     paste: ClipboardEvent,
     pause: Event,
     play: Event,
@@ -108,10 +108,10 @@ object HTMLMediaElementEventMap {
     submit: Event,
     suspend: Event,
     timeupdate: Event,
-    touchcancel: TouchEvent,
-    touchend: TouchEvent,
-    touchmove: TouchEvent,
-    touchstart: TouchEvent,
+    touchcancel: Event,
+    touchend: Event,
+    touchmove: Event,
+    touchstart: Event,
     volumechange: Event,
     waiting: Event,
     webkitfullscreenchange: Event,
@@ -135,7 +135,7 @@ object HTMLMediaElementEventMap {
     @scala.inline
     def setEncrypted(value: MediaEncryptedEvent): Self = this.set("encrypted", value.asInstanceOf[js.Any])
     @scala.inline
-    def setMsneedkey(value: MSMediaKeyNeededEvent): Self = this.set("msneedkey", value.asInstanceOf[js.Any])
+    def setMsneedkey(value: Event): Self = this.set("msneedkey", value.asInstanceOf[js.Any])
   }
   
 }

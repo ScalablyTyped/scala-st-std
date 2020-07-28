@@ -2,7 +2,6 @@ package org.scalablytyped.std
 
 import org.scalablytyped.std.stdStrings.abort
 import org.scalablytyped.std.stdStrings.error
-import org.scalablytyped.std.stdStrings.versionchange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +10,10 @@ import scala.scalajs.js.annotation._
 trait IDBDatabase extends EventTarget {
   val name: java.lang.String = js.native
   val objectStoreNames: DOMStringList = js.native
-  var version: Double = js.native
+  var onabort: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onversionchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  val version: Double = js.native
   @JSName("addEventListener")
   def addEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
@@ -40,30 +42,10 @@ trait IDBDatabase extends EventTarget {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_versionchange(
-    `type`: versionchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, _]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_versionchange(
-    `type`: versionchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, _],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_versionchange(
-    `type`: versionchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, _],
-    options: scala.Boolean
-  ): Unit = js.native
   def close(): Unit = js.native
   def createObjectStore(name: java.lang.String): IDBObjectStore = js.native
   def createObjectStore(name: java.lang.String, optionalParameters: IDBObjectStoreParameters): IDBObjectStore = js.native
   def deleteObjectStore(name: java.lang.String): Unit = js.native
-  def onabort(ev: Event): js.Any = js.native
-  def onerror(ev: Event): js.Any = js.native
-  def onversionchange(ev: IDBVersionChangeEvent): js.Any = js.native
   @JSName("removeEventListener")
   def removeEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
@@ -90,23 +72,6 @@ trait IDBDatabase extends EventTarget {
   def removeEventListener_error(
     `type`: error,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_versionchange(
-    `type`: versionchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, _]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_versionchange(
-    `type`: versionchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, _],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_versionchange(
-    `type`: versionchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, _],
     options: scala.Boolean
   ): Unit = js.native
   def transaction(storeNames: java.lang.String): IDBTransaction = js.native

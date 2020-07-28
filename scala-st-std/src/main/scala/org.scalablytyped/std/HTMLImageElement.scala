@@ -9,6 +9,7 @@ trait HTMLImageElement extends HTMLElement {
   /**
     * Sets or retrieves how the object is aligned with adjacent text.
     */
+  /** @deprecated */
   var align: java.lang.String = js.native
   /**
     * Sets or retrieves a text alternative to the graphic.
@@ -17,6 +18,7 @@ trait HTMLImageElement extends HTMLElement {
   /**
     * Specifies the properties of a border drawn around an object.
     */
+  /** @deprecated */
   var border: java.lang.String = js.native
   /**
     * Retrieves whether the object is fully loaded.
@@ -31,6 +33,7 @@ trait HTMLImageElement extends HTMLElement {
   /**
     * Sets or retrieves the width of the border to draw around the object.
     */
+  /** @deprecated */
   var hspace: Double = js.native
   /**
     * Sets or retrieves whether the image is a server-side image map.
@@ -40,6 +43,7 @@ trait HTMLImageElement extends HTMLElement {
     * Sets or retrieves a Uniform Resource Identifier (URI) to a long description of the object.
     */
   var longDesc: java.lang.String = js.native
+  /** @deprecated */
   var lowsrc: java.lang.String = js.native
   /**
     * Gets or sets whether the DLNA PlayTo device is available.
@@ -57,6 +61,7 @@ trait HTMLImageElement extends HTMLElement {
   /**
     * Sets or retrieves the name of the object.
     */
+  /** @deprecated */
   var name: java.lang.String = js.native
   /**
     * The original height of the image resource before sizing.
@@ -79,6 +84,7 @@ trait HTMLImageElement extends HTMLElement {
   /**
     * Sets or retrieves the vertical margin for the object.
     */
+  /** @deprecated */
   var vspace: Double = js.native
   /**
     * Sets or retrieves the width of the object.

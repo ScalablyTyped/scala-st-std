@@ -9,20 +9,17 @@ import scala.scalajs.js.annotation._
 trait Worker
   extends EventTarget
      with AbstractWorker {
+  var onmessage: (js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _]) | Null = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: js.UndefOr[EventListenerOrEventListenerObject],
+    listener: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(
-    `type`: java.lang.String,
-    listener: js.UndefOr[EventListenerOrEventListenerObject],
-    options: scala.Boolean
-  ): Unit = js.native
-  /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_message(`type`: message, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _]): Unit = js.native
   @JSName("addEventListener")
@@ -37,7 +34,7 @@ trait Worker
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _],
     options: scala.Boolean
   ): Unit = js.native
-  def onmessage(ev: MessageEvent): js.Any = js.native
+  /** @deprecated */
   def postMessage(message: js.Any): Unit = js.native
   def postMessage(message: js.Any, transfer: js.Array[_]): Unit = js.native
   /* InferMemberOverrides */

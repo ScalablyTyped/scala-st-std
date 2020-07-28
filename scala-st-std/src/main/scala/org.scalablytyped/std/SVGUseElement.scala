@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 trait SVGUseElement
   extends SVGGraphicsElement
      with SVGURIReference {
-  val animatedInstanceRoot: SVGElementInstance = js.native
+  val animatedInstanceRoot: SVGElementInstance | Null = js.native
   val height: SVGAnimatedLength = js.native
-  val instanceRoot: SVGElementInstance = js.native
+  val instanceRoot: SVGElementInstance | Null = js.native
   val width: SVGAnimatedLength = js.native
   val x: SVGAnimatedLength = js.native
   val y: SVGAnimatedLength = js.native

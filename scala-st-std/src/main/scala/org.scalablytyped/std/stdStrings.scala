@@ -21,6 +21,9 @@ object stdStrings {
   sealed trait AnimationEvent extends js.Object
   
   @js.native
+  sealed trait AnimationPlaybackEvent extends js.Object
+  
+  @js.native
   sealed trait ArrayBuffer extends js.Object
   
   @js.native
@@ -108,6 +111,9 @@ object stdStrings {
   sealed trait GeneratorFunction extends js.Object
   
   @js.native
+  sealed trait HRTF extends PanningModelType
+  
+  @js.native
   sealed trait HashChangeEvent extends js.Object
   
   @js.native
@@ -132,9 +138,6 @@ object stdStrings {
   sealed trait ListeningStateChangedEvent extends js.Object
   
   @js.native
-  sealed trait LongRunningScriptDetectedEvent extends js.Object
-  
-  @js.native
   sealed trait MSCandidateWindowHide extends js.Object
   
   @js.native
@@ -147,6 +150,12 @@ object stdStrings {
   sealed trait MSContentZoom extends js.Object
   
   @js.native
+  sealed trait MSDCCEvent extends js.Object
+  
+  @js.native
+  sealed trait MSDSHEvent extends js.Object
+  
+  @js.native
   sealed trait MSGestureChange extends js.Object
   
   @js.native
@@ -154,9 +163,6 @@ object stdStrings {
   
   @js.native
   sealed trait MSGestureEnd extends js.Object
-  
-  @js.native
-  sealed trait MSGestureEvent extends js.Object
   
   @js.native
   sealed trait MSGestureHold extends js.Object
@@ -175,9 +181,6 @@ object stdStrings {
   
   @js.native
   sealed trait MSLostPointerCapture extends js.Object
-  
-  @js.native
-  sealed trait MSManipulationEvent extends js.Object
   
   @js.native
   sealed trait MSManipulationStateChanged extends js.Object
@@ -201,9 +204,6 @@ object stdStrings {
   sealed trait MSPointerEnter extends js.Object
   
   @js.native
-  sealed trait MSPointerEvent extends js.Object
-  
-  @js.native
   sealed trait MSPointerLeave extends js.Object
   
   @js.native
@@ -217,9 +217,6 @@ object stdStrings {
   
   @js.native
   sealed trait MSPointerUp extends js.Object
-  
-  @js.native
-  sealed trait MSSiteModeEvent extends js.Object
   
   @js.native
   sealed trait MSVideoFormatChanged extends js.Object
@@ -279,15 +276,6 @@ object stdStrings {
   sealed trait NFKD extends js.Object
   
   @js.native
-  sealed trait NavigationCompletedEvent extends js.Object
-  
-  @js.native
-  sealed trait NavigationEvent extends js.Object
-  
-  @js.native
-  sealed trait NavigationEventWithReferrer extends js.Object
-  
-  @js.native
   sealed trait OES_element_index_uint extends js.Object
   
   @js.native
@@ -342,6 +330,9 @@ object stdStrings {
   sealed trait Promise extends js.Object
   
   @js.native
+  sealed trait PromiseRejectionEvent extends js.Object
+  
+  @js.native
   sealed trait RTCDTMFToneChangeEvent extends js.Object
   
   @js.native
@@ -372,6 +363,9 @@ object stdStrings {
   sealed trait Readonly extends js.Object
   
   @js.native
+  sealed trait Required extends js.Object
+  
+  @js.native
   sealed trait SVGAbort extends js.Object
   
   @js.native
@@ -393,7 +387,7 @@ object stdStrings {
   sealed trait ScopedCred extends js.Object
   
   @js.native
-  sealed trait ScriptNotifyEvent extends js.Object
+  sealed trait SecurityPolicyViolationEvent extends js.Object
   
   @js.native
   sealed trait ServiceWorkerMessageEvent extends js.Object
@@ -412,9 +406,6 @@ object stdStrings {
   
   @js.native
   sealed trait TextEvent extends js.Object
-  
-  @js.native
-  sealed trait TouchEvent extends js.Object
   
   @js.native
   sealed trait TrackEvent extends js.Object
@@ -444,7 +435,10 @@ object stdStrings {
   sealed trait Uint8ClampedArray extends js.Object
   
   @js.native
-  sealed trait UnviewableContentIdentifiedEvent extends js.Object
+  sealed trait VRDisplayEvent extends js.Object
+  
+  @js.native
+  sealed trait `VRDisplayEvent ` extends js.Object
   
   @js.native
   sealed trait WEBGL_color_buffer_float extends js.Object
@@ -487,7 +481,9 @@ object stdStrings {
   
   @js.native
   sealed trait _empty
-    extends PaymentComplete
+    extends CanPlayTypeResult
+       with GamepadHand
+       with GamepadMappingType
        with ReferrerPolicy
        with RequestDestination
        with RequestType
@@ -539,7 +535,8 @@ object stdStrings {
   
   @js.native
   sealed trait all
-    extends RTCIceGatherPolicy
+    extends ClientTypes
+       with RTCIceGatherPolicy
        with RTCIceTransportPolicy
   
   @js.native
@@ -549,10 +546,22 @@ object stdStrings {
   sealed trait allpass extends BiquadFilterType
   
   @js.native
+  sealed trait alternate extends js.Object
+  
+  @js.native
+  sealed trait `alternate-reverse` extends js.Object
+  
+  @js.native
   sealed trait answer extends RTCSdpType
   
   @js.native
+  sealed trait any extends OrientationLockType
+  
+  @js.native
   sealed trait applet extends js.Object
+  
+  @js.native
+  sealed trait application extends DisplayCaptureSurfaceType
   
   @js.native
   sealed trait area extends js.Object
@@ -561,13 +570,18 @@ object stdStrings {
   sealed trait ariarequest extends js.Object
   
   @js.native
-  sealed trait arraybuffer_ extends XMLHttpRequestResponseType
+  sealed trait arraybuffer_
+    extends BinaryType
+       with XMLHttpRequestResponseType
   
   @js.native
   sealed trait article extends js.Object
   
   @js.native
   sealed trait aside extends js.Object
+  
+  @js.native
+  sealed trait attributes extends MutationRecordType
   
   @js.native
   sealed trait audio extends RequestType
@@ -601,8 +615,12 @@ object stdStrings {
   sealed trait backward extends js.Object
   
   @js.native
+  sealed trait backwards extends js.Object
+  
+  @js.native
   sealed trait balanced
-    extends RTCBundlePolicy
+    extends AudioContextLatencyCategory
+       with RTCBundlePolicy
        with RTCDegradationPreference
   
   @js.native
@@ -654,7 +672,9 @@ object stdStrings {
   sealed trait ble extends Transport
   
   @js.native
-  sealed trait blob extends XMLHttpRequestResponseType
+  sealed trait blob
+    extends BinaryType
+       with XMLHttpRequestResponseType
   
   @js.native
   sealed trait blocked extends js.Object
@@ -669,6 +689,9 @@ object stdStrings {
   sealed trait body extends js.Object
   
   @js.native
+  sealed trait both extends js.Object
+  
+  @js.native
   sealed trait bounce extends js.Object
   
   @js.native
@@ -676,6 +699,9 @@ object stdStrings {
   
   @js.native
   sealed trait br extends js.Object
+  
+  @js.native
+  sealed trait browser extends DisplayCaptureSurfaceType
   
   @js.native
   sealed trait button extends js.Object
@@ -705,18 +731,30 @@ object stdStrings {
   sealed trait caption extends js.Object
   
   @js.native
+  sealed trait captions extends TextTrackKind
+  
+  @js.native
   sealed trait center extends ScrollLogicalPosition
   
   @js.native
   sealed trait change extends js.Object
   
   @js.native
+  sealed trait chapters extends TextTrackKind
+  
+  @js.native
   sealed trait character extends ExpandGranularity
+  
+  @js.native
+  sealed trait characterData extends MutationRecordType
   
   @js.native
   sealed trait checking
     extends RTCIceConnectionState
        with RTCIceTransportState
+  
+  @js.native
+  sealed trait childList extends MutationRecordType
   
   @js.native
   sealed trait circle extends js.Object
@@ -749,6 +787,7 @@ object stdStrings {
        with RTCIceConnectionState
        with RTCIceTransportState
        with RTCSignalingState
+       with ReadyState
   
   @js.native
   sealed trait code extends js.Object
@@ -835,6 +874,12 @@ object stdStrings {
   sealed trait deactivate extends js.Object
   
   @js.native
+  sealed trait decode extends EndOfStreamError
+  
+  @js.native
+  sealed trait decrypt extends KeyUsage
+  
+  @js.native
   sealed trait default
     extends NotificationPermission
        with RequestCache
@@ -861,10 +906,19 @@ object stdStrings {
   sealed trait deny extends MSWebViewPermissionState
   
   @js.native
+  sealed trait deriveBits extends KeyUsage
+  
+  @js.native
+  sealed trait deriveKey extends KeyUsage
+  
+  @js.native
   sealed trait desc extends js.Object
   
   @js.native
   sealed trait description extends MSStatsType
+  
+  @js.native
+  sealed trait descriptions extends TextTrackKind
   
   @js.native
   sealed trait devicechange extends js.Object
@@ -886,6 +940,9 @@ object stdStrings {
   
   @js.native
   sealed trait direct extends MSIceType
+  
+  @js.native
+  sealed trait disabled extends TextTrackMode
   
   @js.native
   sealed trait disambiguation extends ListeningState
@@ -964,13 +1021,18 @@ object stdStrings {
   sealed trait emptied extends js.Object
   
   @js.native
+  sealed trait encrypt extends KeyUsage
+  
+  @js.native
   sealed trait encrypted extends js.Object
   
   @js.native
   sealed trait end extends ScrollLogicalPosition
   
   @js.native
-  sealed trait ended extends MediaStreamTrackState
+  sealed trait ended
+    extends MediaStreamTrackState
+       with ReadyState
   
   @js.native
   sealed trait enter extends js.Object
@@ -979,7 +1041,7 @@ object stdStrings {
   sealed trait environment extends VideoFacingModeEnum
   
   @js.native
-  sealed trait equalpower extends js.Object
+  sealed trait equalpower extends PanningModelType
   
   @js.native
   sealed trait error
@@ -1173,6 +1235,9 @@ object stdStrings {
   sealed trait finish extends js.Object
   
   @js.native
+  sealed trait finished extends js.Object
+  
+  @js.native
   sealed trait flipY extends js.Object
   
   @js.native
@@ -1207,6 +1272,9 @@ object stdStrings {
   
   @js.native
   sealed trait forward extends js.Object
+  
+  @js.native
+  sealed trait forwards extends js.Object
   
   @js.native
   sealed trait frame extends js.Object
@@ -1291,7 +1359,9 @@ object stdStrings {
   sealed trait hgroup extends js.Object
   
   @js.native
-  sealed trait hidden extends VisibilityState
+  sealed trait hidden
+    extends TextTrackMode
+       with VisibilityState
   
   @js.native
   sealed trait high extends js.Object
@@ -1333,6 +1403,9 @@ object stdStrings {
   
   @js.native
   sealed trait icestatechange extends js.Object
+  
+  @js.native
+  sealed trait idle extends js.Object
   
   @js.native
   sealed trait iframe extends js.Object
@@ -1380,6 +1453,9 @@ object stdStrings {
   sealed trait instant extends ScrollBehavior
   
   @js.native
+  sealed trait interactive extends AudioContextLatencyCategory
+  
+  @js.native
   sealed trait `internal-error` extends MediaKeyStatus
   
   @js.native
@@ -1395,7 +1471,7 @@ object stdStrings {
   sealed trait json_ extends XMLHttpRequestResponseType
   
   @js.native
-  sealed trait jwk extends js.Object
+  sealed trait jwk extends KeyFormat
   
   @js.native
   sealed trait kbd extends js.Object
@@ -1419,8 +1495,19 @@ object stdStrings {
   sealed trait label extends js.Object
   
   @js.native
+  sealed trait landscape extends OrientationLockType
+  
+  @js.native
+  sealed trait `landscape-primary` extends OrientationLockType
+  
+  @js.native
+  sealed trait `landscape-secondary` extends OrientationLockType
+  
+  @js.native
   sealed trait left
-    extends NavigationReason
+    extends GamepadHand
+       with NavigationReason
+       with VREye
        with VideoFacingModeEnum
   
   @js.native
@@ -1531,6 +1618,9 @@ object stdStrings {
   sealed trait `max-compat` extends RTCBundlePolicy
   
   @js.native
+  sealed trait maybe extends CanPlayTypeResult
+  
+  @js.native
   sealed trait media extends MSWebViewPermissionType
   
   @js.native
@@ -1549,10 +1639,16 @@ object stdStrings {
   sealed trait meta extends js.Object
   
   @js.native
-  sealed trait metadata extends js.Object
+  sealed trait metadata extends TextTrackKind
   
   @js.native
   sealed trait meter extends js.Object
+  
+  @js.native
+  sealed trait monitor extends DisplayCaptureSurfaceType
+  
+  @js.native
+  sealed trait mounted extends VRDisplayEventReason
   
   @js.native
   sealed trait mouse extends GamepadInputEmulationType
@@ -1582,6 +1678,12 @@ object stdStrings {
   sealed trait mousewheel extends js.Object
   
   @js.native
+  sealed trait msdecodercapacitychange extends js.Object
+  
+  @js.native
+  sealed trait msdsh extends js.Object
+  
+  @js.native
   sealed trait msneedkey extends js.Object
   
   @js.native
@@ -1594,6 +1696,9 @@ object stdStrings {
   sealed trait mute extends js.Object
   
   @js.native
+  sealed trait natural extends OrientationLockType
+  
+  @js.native
   sealed trait nav extends js.Object
   
   @js.native
@@ -1602,10 +1707,16 @@ object stdStrings {
        with RequestMode
   
   @js.native
+  sealed trait navigation extends VRDisplayEventReason
+  
+  @js.native
   sealed trait nearest extends ScrollLogicalPosition
   
   @js.native
   sealed trait negotiationneeded extends js.Object
+  
+  @js.native
+  sealed trait network extends EndOfStreamError
   
   @js.native
   sealed trait `new`
@@ -1660,6 +1771,9 @@ object stdStrings {
   sealed trait nonzero extends CanvasFillRule
   
   @js.native
+  sealed trait normal extends js.Object
+  
+  @js.native
   sealed trait noscript extends js.Object
   
   @js.native
@@ -1702,7 +1816,7 @@ object stdStrings {
   sealed trait opaqueredirect extends ResponseType
   
   @js.native
-  sealed trait open extends js.Object
+  sealed trait open extends ReadyState
   
   @js.native
   sealed trait optgroup extends js.Object
@@ -1777,6 +1891,9 @@ object stdStrings {
   sealed trait pause extends js.Object
   
   @js.native
+  sealed trait paused extends js.Object
+  
+  @js.native
   sealed trait peaking extends BiquadFilterType
   
   @js.native
@@ -1804,13 +1921,16 @@ object stdStrings {
   sealed trait pixelated extends js.Object
   
   @js.native
-  sealed trait pkcs8 extends js.Object
+  sealed trait pkcs8 extends KeyFormat
   
   @js.native
   sealed trait plaintext extends js.Object
   
   @js.native
   sealed trait play extends js.Object
+  
+  @js.native
+  sealed trait playback extends AudioContextLatencyCategory
   
   @js.native
   sealed trait playing extends js.Object
@@ -1858,6 +1978,15 @@ object stdStrings {
   sealed trait popstate extends js.Object
   
   @js.native
+  sealed trait portrait extends OrientationLockType
+  
+  @js.native
+  sealed trait `portrait-primary` extends OrientationLockType
+  
+  @js.native
+  sealed trait `portrait-secondary` extends OrientationLockType
+  
+  @js.native
   sealed trait pranswer extends RTCSdpType
   
   @js.native
@@ -1881,10 +2010,19 @@ object stdStrings {
   sealed trait prflx extends RTCIceCandidateType
   
   @js.native
+  sealed trait `private` extends KeyType
+  
+  @js.native
+  sealed trait probably extends CanPlayTypeResult
+  
+  @js.native
   sealed trait progress extends js.Object
   
   @js.native
   sealed trait prompt extends PushPermissionState
+  
+  @js.native
+  sealed trait public extends KeyType
   
   @js.native
   sealed trait q extends js.Object
@@ -1899,7 +2037,7 @@ object stdStrings {
   sealed trait ratechange extends js.Object
   
   @js.native
-  sealed trait raw extends js.Object
+  sealed trait raw extends KeyFormat
   
   @js.native
   sealed trait readonly_ extends IDBTransactionMode
@@ -1941,7 +2079,10 @@ object stdStrings {
   sealed trait removetrack extends js.Object
   
   @js.native
-  sealed trait required extends MediaKeysRequirement
+  sealed trait requested extends VRDisplayEventReason
+  
+  @js.native
+  sealed trait required_ extends MediaKeysRequirement
   
   @js.native
   sealed trait reset extends js.Object
@@ -1953,8 +2094,13 @@ object stdStrings {
   sealed trait resume extends js.Object
   
   @js.native
+  sealed trait reverse extends js.Object
+  
+  @js.native
   sealed trait right
-    extends NavigationReason
+    extends GamepadHand
+       with NavigationReason
+       with VREye
        with VideoFacingModeEnum
   
   @js.native
@@ -1988,6 +2134,9 @@ object stdStrings {
   
   @js.native
   sealed trait scroll extends js.Object
+  
+  @js.native
+  sealed trait secret extends KeyType
   
   @js.native
   sealed trait section extends js.Object
@@ -2026,7 +2175,9 @@ object stdStrings {
   sealed trait session extends RTCStatsType
   
   @js.native
-  sealed trait sharedworker extends RequestDestination
+  sealed trait sharedworker
+    extends ClientTypes
+       with RequestDestination
   
   @js.native
   sealed trait shipping extends PaymentShippingType
@@ -2041,10 +2192,19 @@ object stdStrings {
   sealed trait show extends js.Object
   
   @js.native
+  sealed trait showing extends TextTrackMode
+  
+  @js.native
+  sealed trait sign extends KeyUsage
+  
+  @js.native
   sealed trait signalingstatechange extends js.Object
   
   @js.native
   sealed trait sine extends OscillatorType
+  
+  @js.native
+  sealed trait slot extends js.Object
   
   @js.native
   sealed trait small extends js.Object
@@ -2065,7 +2225,7 @@ object stdStrings {
   sealed trait speakers extends ChannelInterpretation
   
   @js.native
-  sealed trait spki extends js.Object
+  sealed trait spki extends KeyFormat
   
   @js.native
   sealed trait square extends OscillatorType
@@ -2081,6 +2241,9 @@ object stdStrings {
   
   @js.native
   sealed trait stalled extends js.Object
+  
+  @js.native
+  sealed trait standard extends GamepadMappingType
   
   @js.native
   sealed trait start extends ScrollLogicalPosition
@@ -2120,6 +2283,9 @@ object stdStrings {
   
   @js.native
   sealed trait subresource extends RequestDestination
+  
+  @js.native
+  sealed trait subtitles extends TextTrackKind
   
   @js.native
   sealed trait succeeded extends RTCStatsIceCandidatePairState
@@ -2258,6 +2424,7 @@ object stdStrings {
   @js.native
   sealed trait unknown
     extends MSWebViewPermissionState
+       with PaymentComplete
        with RequestDestination
   
   @js.native
@@ -2270,10 +2437,16 @@ object stdStrings {
   sealed trait unloaded extends VisibilityState
   
   @js.native
+  sealed trait unmounted extends VRDisplayEventReason
+  
+  @js.native
   sealed trait unmute extends js.Object
   
   @js.native
   sealed trait `unsafe-url` extends ReferrerPolicy
+  
+  @js.native
+  sealed trait unwrapKey extends KeyUsage
   
   @js.native
   sealed trait up extends NavigationReason
@@ -2303,7 +2476,13 @@ object stdStrings {
   sealed trait `var` extends js.Object
   
   @js.native
+  sealed trait verify extends KeyUsage
+  
+  @js.native
   sealed trait versionchange extends IDBTransactionMode
+  
+  @js.native
+  sealed trait vibration extends js.Object
   
   @js.native
   sealed trait video extends RequestType
@@ -2322,6 +2501,33 @@ object stdStrings {
   
   @js.native
   sealed trait volumechange extends js.Object
+  
+  @js.native
+  sealed trait vrdisplayactivate extends js.Object
+  
+  @js.native
+  sealed trait vrdisplayblur extends js.Object
+  
+  @js.native
+  sealed trait vrdisplayconnect extends js.Object
+  
+  @js.native
+  sealed trait vrdisplaydeactivate extends js.Object
+  
+  @js.native
+  sealed trait vrdisplaydisconnect extends js.Object
+  
+  @js.native
+  sealed trait vrdisplayfocus extends js.Object
+  
+  @js.native
+  sealed trait vrdisplaypointerrestricted extends js.Object
+  
+  @js.native
+  sealed trait vrdisplaypointerunrestricted extends js.Object
+  
+  @js.native
+  sealed trait vrdisplaypresentchange extends js.Object
   
   @js.native
   sealed trait waiting extends RTCStatsIceCandidatePairState
@@ -2345,13 +2551,20 @@ object stdStrings {
   sealed trait wheel extends js.Object
   
   @js.native
+  sealed trait window
+    extends ClientTypes
+       with DisplayCaptureSurfaceType
+  
+  @js.native
   sealed trait word extends ExpandGranularity
   
   @js.native
-  sealed trait worker extends RequestDestination
+  sealed trait worker
+    extends ClientTypes
+       with RequestDestination
   
   @js.native
-  sealed trait `x-ms-webview` extends js.Object
+  sealed trait wrapKey extends KeyUsage
   
   @js.native
   sealed trait xmp extends js.Object
@@ -2366,6 +2579,8 @@ object stdStrings {
   def ANGLE_instanced_arrays: ANGLE_instanced_arrays = "ANGLE_instanced_arrays".asInstanceOf[ANGLE_instanced_arrays]
   @scala.inline
   def AnimationEvent: AnimationEvent = "AnimationEvent".asInstanceOf[AnimationEvent]
+  @scala.inline
+  def AnimationPlaybackEvent: AnimationPlaybackEvent = "AnimationPlaybackEvent".asInstanceOf[AnimationPlaybackEvent]
   @scala.inline
   def ArrayBuffer: ArrayBuffer = "ArrayBuffer".asInstanceOf[ArrayBuffer]
   @scala.inline
@@ -2425,6 +2640,8 @@ object stdStrings {
   @scala.inline
   def GeneratorFunction: GeneratorFunction = "GeneratorFunction".asInstanceOf[GeneratorFunction]
   @scala.inline
+  def HRTF: HRTF = "HRTF".asInstanceOf[HRTF]
+  @scala.inline
   def HashChangeEvent: HashChangeEvent = "HashChangeEvent".asInstanceOf[HashChangeEvent]
   @scala.inline
   def IDBVersionChangeEvent: IDBVersionChangeEvent = "IDBVersionChangeEvent".asInstanceOf[IDBVersionChangeEvent]
@@ -2441,8 +2658,6 @@ object stdStrings {
   @scala.inline
   def ListeningStateChangedEvent: ListeningStateChangedEvent = "ListeningStateChangedEvent".asInstanceOf[ListeningStateChangedEvent]
   @scala.inline
-  def LongRunningScriptDetectedEvent: LongRunningScriptDetectedEvent = "LongRunningScriptDetectedEvent".asInstanceOf[LongRunningScriptDetectedEvent]
-  @scala.inline
   def MSCandidateWindowHide: MSCandidateWindowHide = "MSCandidateWindowHide".asInstanceOf[MSCandidateWindowHide]
   @scala.inline
   def MSCandidateWindowShow: MSCandidateWindowShow = "MSCandidateWindowShow".asInstanceOf[MSCandidateWindowShow]
@@ -2451,13 +2666,15 @@ object stdStrings {
   @scala.inline
   def MSContentZoom: MSContentZoom = "MSContentZoom".asInstanceOf[MSContentZoom]
   @scala.inline
+  def MSDCCEvent: MSDCCEvent = "MSDCCEvent".asInstanceOf[MSDCCEvent]
+  @scala.inline
+  def MSDSHEvent: MSDSHEvent = "MSDSHEvent".asInstanceOf[MSDSHEvent]
+  @scala.inline
   def MSGestureChange: MSGestureChange = "MSGestureChange".asInstanceOf[MSGestureChange]
   @scala.inline
   def MSGestureDoubleTap: MSGestureDoubleTap = "MSGestureDoubleTap".asInstanceOf[MSGestureDoubleTap]
   @scala.inline
   def MSGestureEnd: MSGestureEnd = "MSGestureEnd".asInstanceOf[MSGestureEnd]
-  @scala.inline
-  def MSGestureEvent: MSGestureEvent = "MSGestureEvent".asInstanceOf[MSGestureEvent]
   @scala.inline
   def MSGestureHold: MSGestureHold = "MSGestureHold".asInstanceOf[MSGestureHold]
   @scala.inline
@@ -2470,8 +2687,6 @@ object stdStrings {
   def MSInertiaStart: MSInertiaStart = "MSInertiaStart".asInstanceOf[MSInertiaStart]
   @scala.inline
   def MSLostPointerCapture: MSLostPointerCapture = "MSLostPointerCapture".asInstanceOf[MSLostPointerCapture]
-  @scala.inline
-  def MSManipulationEvent: MSManipulationEvent = "MSManipulationEvent".asInstanceOf[MSManipulationEvent]
   @scala.inline
   def MSManipulationStateChanged: MSManipulationStateChanged = "MSManipulationStateChanged".asInstanceOf[MSManipulationStateChanged]
   @scala.inline
@@ -2487,8 +2702,6 @@ object stdStrings {
   @scala.inline
   def MSPointerEnter: MSPointerEnter = "MSPointerEnter".asInstanceOf[MSPointerEnter]
   @scala.inline
-  def MSPointerEvent: MSPointerEvent = "MSPointerEvent".asInstanceOf[MSPointerEvent]
-  @scala.inline
   def MSPointerLeave: MSPointerLeave = "MSPointerLeave".asInstanceOf[MSPointerLeave]
   @scala.inline
   def MSPointerMove: MSPointerMove = "MSPointerMove".asInstanceOf[MSPointerMove]
@@ -2498,8 +2711,6 @@ object stdStrings {
   def MSPointerOver: MSPointerOver = "MSPointerOver".asInstanceOf[MSPointerOver]
   @scala.inline
   def MSPointerUp: MSPointerUp = "MSPointerUp".asInstanceOf[MSPointerUp]
-  @scala.inline
-  def MSSiteModeEvent: MSSiteModeEvent = "MSSiteModeEvent".asInstanceOf[MSSiteModeEvent]
   @scala.inline
   def MSVideoFormatChanged: MSVideoFormatChanged = "MSVideoFormatChanged".asInstanceOf[MSVideoFormatChanged]
   @scala.inline
@@ -2539,12 +2750,6 @@ object stdStrings {
   @scala.inline
   def NFKD: NFKD = "NFKD".asInstanceOf[NFKD]
   @scala.inline
-  def NavigationCompletedEvent: NavigationCompletedEvent = "NavigationCompletedEvent".asInstanceOf[NavigationCompletedEvent]
-  @scala.inline
-  def NavigationEvent: NavigationEvent = "NavigationEvent".asInstanceOf[NavigationEvent]
-  @scala.inline
-  def NavigationEventWithReferrer: NavigationEventWithReferrer = "NavigationEventWithReferrer".asInstanceOf[NavigationEventWithReferrer]
-  @scala.inline
   def OES_element_index_uint: OES_element_index_uint = "OES_element_index_uint".asInstanceOf[OES_element_index_uint]
   @scala.inline
   def OES_standard_derivatives: OES_standard_derivatives = "OES_standard_derivatives".asInstanceOf[OES_standard_derivatives]
@@ -2581,6 +2786,8 @@ object stdStrings {
   @scala.inline
   def Promise: Promise = "Promise".asInstanceOf[Promise]
   @scala.inline
+  def PromiseRejectionEvent: PromiseRejectionEvent = "PromiseRejectionEvent".asInstanceOf[PromiseRejectionEvent]
+  @scala.inline
   def RTCDTMFToneChangeEvent: RTCDTMFToneChangeEvent = "RTCDTMFToneChangeEvent".asInstanceOf[RTCDTMFToneChangeEvent]
   @scala.inline
   def RTCDtlsTransportStateChangedEvent: RTCDtlsTransportStateChangedEvent = "RTCDtlsTransportStateChangedEvent".asInstanceOf[RTCDtlsTransportStateChangedEvent]
@@ -2601,6 +2808,8 @@ object stdStrings {
   @scala.inline
   def Readonly: Readonly = "Readonly".asInstanceOf[Readonly]
   @scala.inline
+  def Required: Required = "Required".asInstanceOf[Required]
+  @scala.inline
   def SVGAbort: SVGAbort = "SVGAbort".asInstanceOf[SVGAbort]
   @scala.inline
   def SVGError: SVGError = "SVGError".asInstanceOf[SVGError]
@@ -2615,7 +2824,7 @@ object stdStrings {
   @scala.inline
   def ScopedCred: ScopedCred = "ScopedCred".asInstanceOf[ScopedCred]
   @scala.inline
-  def ScriptNotifyEvent: ScriptNotifyEvent = "ScriptNotifyEvent".asInstanceOf[ScriptNotifyEvent]
+  def SecurityPolicyViolationEvent: SecurityPolicyViolationEvent = "SecurityPolicyViolationEvent".asInstanceOf[SecurityPolicyViolationEvent]
   @scala.inline
   def ServiceWorkerMessageEvent: ServiceWorkerMessageEvent = "ServiceWorkerMessageEvent".asInstanceOf[ServiceWorkerMessageEvent]
   @scala.inline
@@ -2628,8 +2837,6 @@ object stdStrings {
   def Symbol: Symbol = "Symbol".asInstanceOf[Symbol]
   @scala.inline
   def TextEvent: TextEvent = "TextEvent".asInstanceOf[TextEvent]
-  @scala.inline
-  def TouchEvent: TouchEvent = "TouchEvent".asInstanceOf[TouchEvent]
   @scala.inline
   def TrackEvent: TrackEvent = "TrackEvent".asInstanceOf[TrackEvent]
   @scala.inline
@@ -2649,7 +2856,9 @@ object stdStrings {
   @scala.inline
   def Uint8ClampedArray: Uint8ClampedArray = "Uint8ClampedArray".asInstanceOf[Uint8ClampedArray]
   @scala.inline
-  def UnviewableContentIdentifiedEvent: UnviewableContentIdentifiedEvent = "UnviewableContentIdentifiedEvent".asInstanceOf[UnviewableContentIdentifiedEvent]
+  def VRDisplayEvent: VRDisplayEvent = "VRDisplayEvent".asInstanceOf[VRDisplayEvent]
+  @scala.inline
+  def `VRDisplayEvent `: `VRDisplayEvent ` = ("VRDisplayEvent ").asInstanceOf[`VRDisplayEvent `]
   @scala.inline
   def WEBGL_color_buffer_float: WEBGL_color_buffer_float = "WEBGL_color_buffer_float".asInstanceOf[WEBGL_color_buffer_float]
   @scala.inline
@@ -2713,9 +2922,17 @@ object stdStrings {
   @scala.inline
   def allpass: allpass = "allpass".asInstanceOf[allpass]
   @scala.inline
+  def alternate: alternate = "alternate".asInstanceOf[alternate]
+  @scala.inline
+  def `alternate-reverse`: `alternate-reverse` = "alternate-reverse".asInstanceOf[`alternate-reverse`]
+  @scala.inline
   def answer: answer = "answer".asInstanceOf[answer]
   @scala.inline
+  def any: any = "any".asInstanceOf[any]
+  @scala.inline
   def applet: applet = "applet".asInstanceOf[applet]
+  @scala.inline
+  def application: application = "application".asInstanceOf[application]
   @scala.inline
   def area: area = "area".asInstanceOf[area]
   @scala.inline
@@ -2726,6 +2943,8 @@ object stdStrings {
   def article: article = "article".asInstanceOf[article]
   @scala.inline
   def aside: aside = "aside".asInstanceOf[aside]
+  @scala.inline
+  def attributes: attributes = "attributes".asInstanceOf[attributes]
   @scala.inline
   def audio: audio = "audio".asInstanceOf[audio]
   @scala.inline
@@ -2744,6 +2963,8 @@ object stdStrings {
   def back_forward: back_forward = "back_forward".asInstanceOf[back_forward]
   @scala.inline
   def backward: backward = "backward".asInstanceOf[backward]
+  @scala.inline
+  def backwards: backwards = "backwards".asInstanceOf[backwards]
   @scala.inline
   def balanced: balanced = "balanced".asInstanceOf[balanced]
   @scala.inline
@@ -2789,11 +3010,15 @@ object stdStrings {
   @scala.inline
   def body: body = "body".asInstanceOf[body]
   @scala.inline
+  def both: both = "both".asInstanceOf[both]
+  @scala.inline
   def bounce: bounce = "bounce".asInstanceOf[bounce]
   @scala.inline
   def boundary: boundary = "boundary".asInstanceOf[boundary]
   @scala.inline
   def br: br = "br".asInstanceOf[br]
+  @scala.inline
+  def browser: browser = "browser".asInstanceOf[browser]
   @scala.inline
   def button: button = "button".asInstanceOf[button]
   @scala.inline
@@ -2813,13 +3038,21 @@ object stdStrings {
   @scala.inline
   def caption: caption = "caption".asInstanceOf[caption]
   @scala.inline
+  def captions: captions = "captions".asInstanceOf[captions]
+  @scala.inline
   def center: center = "center".asInstanceOf[center]
   @scala.inline
   def change: change = "change".asInstanceOf[change]
   @scala.inline
+  def chapters: chapters = "chapters".asInstanceOf[chapters]
+  @scala.inline
   def character: character = "character".asInstanceOf[character]
   @scala.inline
+  def characterData: characterData = "characterData".asInstanceOf[characterData]
+  @scala.inline
   def checking: checking = "checking".asInstanceOf[checking]
+  @scala.inline
+  def childList: childList = "childList".asInstanceOf[childList]
   @scala.inline
   def circle: circle = "circle".asInstanceOf[circle]
   @scala.inline
@@ -2889,6 +3122,10 @@ object stdStrings {
   @scala.inline
   def deactivate: deactivate = "deactivate".asInstanceOf[deactivate]
   @scala.inline
+  def decode: decode = "decode".asInstanceOf[decode]
+  @scala.inline
+  def decrypt: decrypt = "decrypt".asInstanceOf[decrypt]
+  @scala.inline
   def default: default = "default".asInstanceOf[default]
   @scala.inline
   def defer: defer = "defer".asInstanceOf[defer]
@@ -2903,9 +3140,15 @@ object stdStrings {
   @scala.inline
   def deny: deny = "deny".asInstanceOf[deny]
   @scala.inline
+  def deriveBits: deriveBits = "deriveBits".asInstanceOf[deriveBits]
+  @scala.inline
+  def deriveKey: deriveKey = "deriveKey".asInstanceOf[deriveKey]
+  @scala.inline
   def desc: desc = "desc".asInstanceOf[desc]
   @scala.inline
   def description: description = "description".asInstanceOf[description]
+  @scala.inline
+  def descriptions: descriptions = "descriptions".asInstanceOf[descriptions]
   @scala.inline
   def devicechange: devicechange = "devicechange".asInstanceOf[devicechange]
   @scala.inline
@@ -2920,6 +3163,8 @@ object stdStrings {
   def dir: dir = "dir".asInstanceOf[dir]
   @scala.inline
   def direct: direct = "direct".asInstanceOf[direct]
+  @scala.inline
+  def disabled: disabled = "disabled".asInstanceOf[disabled]
   @scala.inline
   def disambiguation: disambiguation = "disambiguation".asInstanceOf[disambiguation]
   @scala.inline
@@ -2968,6 +3213,8 @@ object stdStrings {
   def embed: embed = "embed".asInstanceOf[embed]
   @scala.inline
   def emptied: emptied = "emptied".asInstanceOf[emptied]
+  @scala.inline
+  def encrypt: encrypt = "encrypt".asInstanceOf[encrypt]
   @scala.inline
   def encrypted: encrypted = "encrypted".asInstanceOf[encrypted]
   @scala.inline
@@ -3105,6 +3352,8 @@ object stdStrings {
   @scala.inline
   def finish: finish = "finish".asInstanceOf[finish]
   @scala.inline
+  def finished: finished = "finished".asInstanceOf[finished]
+  @scala.inline
   def flipY: flipY = "flipY".asInstanceOf[flipY]
   @scala.inline
   def focus: focus = "focus".asInstanceOf[focus]
@@ -3128,6 +3377,8 @@ object stdStrings {
   def form: form = "form".asInstanceOf[form]
   @scala.inline
   def forward: forward = "forward".asInstanceOf[forward]
+  @scala.inline
+  def forwards: forwards = "forwards".asInstanceOf[forwards]
   @scala.inline
   def frame: frame = "frame".asInstanceOf[frame]
   @scala.inline
@@ -3209,6 +3460,8 @@ object stdStrings {
   @scala.inline
   def icestatechange: icestatechange = "icestatechange".asInstanceOf[icestatechange]
   @scala.inline
+  def idle: idle = "idle".asInstanceOf[idle]
+  @scala.inline
   def iframe: iframe = "iframe".asInstanceOf[iframe]
   @scala.inline
   def image: image = "image".asInstanceOf[image]
@@ -3239,6 +3492,8 @@ object stdStrings {
   @scala.inline
   def instant: instant = "instant".asInstanceOf[instant]
   @scala.inline
+  def interactive: interactive = "interactive".asInstanceOf[interactive]
+  @scala.inline
   def `internal-error`: `internal-error` = "internal-error".asInstanceOf[`internal-error`]
   @scala.inline
   def invalid: invalid = "invalid".asInstanceOf[invalid]
@@ -3264,6 +3519,12 @@ object stdStrings {
   def keyup: keyup = "keyup".asInstanceOf[keyup]
   @scala.inline
   def label: label = "label".asInstanceOf[label]
+  @scala.inline
+  def landscape: landscape = "landscape".asInstanceOf[landscape]
+  @scala.inline
+  def `landscape-primary`: `landscape-primary` = "landscape-primary".asInstanceOf[`landscape-primary`]
+  @scala.inline
+  def `landscape-secondary`: `landscape-secondary` = "landscape-secondary".asInstanceOf[`landscape-secondary`]
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline
@@ -3337,6 +3598,8 @@ object stdStrings {
   @scala.inline
   def `max-compat`: `max-compat` = "max-compat".asInstanceOf[`max-compat`]
   @scala.inline
+  def maybe: maybe = "maybe".asInstanceOf[maybe]
+  @scala.inline
   def media: media = "media".asInstanceOf[media]
   @scala.inline
   def medium: medium = "medium".asInstanceOf[medium]
@@ -3352,6 +3615,10 @@ object stdStrings {
   def metadata: metadata = "metadata".asInstanceOf[metadata]
   @scala.inline
   def meter: meter = "meter".asInstanceOf[meter]
+  @scala.inline
+  def monitor: monitor = "monitor".asInstanceOf[monitor]
+  @scala.inline
+  def mounted: mounted = "mounted".asInstanceOf[mounted]
   @scala.inline
   def mouse: mouse = "mouse".asInstanceOf[mouse]
   @scala.inline
@@ -3371,6 +3638,10 @@ object stdStrings {
   @scala.inline
   def mousewheel: mousewheel = "mousewheel".asInstanceOf[mousewheel]
   @scala.inline
+  def msdecodercapacitychange: msdecodercapacitychange = "msdecodercapacitychange".asInstanceOf[msdecodercapacitychange]
+  @scala.inline
+  def msdsh: msdsh = "msdsh".asInstanceOf[msdsh]
+  @scala.inline
   def msneedkey: msneedkey = "msneedkey".asInstanceOf[msneedkey]
   @scala.inline
   def mssitemodejumplistitemremoved: mssitemodejumplistitemremoved = "mssitemodejumplistitemremoved".asInstanceOf[mssitemodejumplistitemremoved]
@@ -3379,13 +3650,19 @@ object stdStrings {
   @scala.inline
   def mute: mute = "mute".asInstanceOf[mute]
   @scala.inline
+  def natural: natural = "natural".asInstanceOf[natural]
+  @scala.inline
   def nav: nav = "nav".asInstanceOf[nav]
   @scala.inline
   def navigate: navigate = "navigate".asInstanceOf[navigate]
   @scala.inline
+  def navigation: navigation = "navigation".asInstanceOf[navigation]
+  @scala.inline
   def nearest: nearest = "nearest".asInstanceOf[nearest]
   @scala.inline
   def negotiationneeded: negotiationneeded = "negotiationneeded".asInstanceOf[negotiationneeded]
+  @scala.inline
+  def network: network = "network".asInstanceOf[network]
   @scala.inline
   def `new`: `new` = "new".asInstanceOf[`new`]
   @scala.inline
@@ -3416,6 +3693,8 @@ object stdStrings {
   def none: none = "none".asInstanceOf[none]
   @scala.inline
   def nonzero: nonzero = "nonzero".asInstanceOf[nonzero]
+  @scala.inline
+  def normal: normal = "normal".asInstanceOf[normal]
   @scala.inline
   def noscript: noscript = "noscript".asInstanceOf[noscript]
   @scala.inline
@@ -3495,6 +3774,8 @@ object stdStrings {
   @scala.inline
   def pause: pause = "pause".asInstanceOf[pause]
   @scala.inline
+  def paused: paused = "paused".asInstanceOf[paused]
+  @scala.inline
   def peaking: peaking = "peaking".asInstanceOf[peaking]
   @scala.inline
   def `peer-derived`: `peer-derived` = "peer-derived".asInstanceOf[`peer-derived`]
@@ -3518,6 +3799,8 @@ object stdStrings {
   def plaintext: plaintext = "plaintext".asInstanceOf[plaintext]
   @scala.inline
   def play: play = "play".asInstanceOf[play]
+  @scala.inline
+  def playback: playback = "playback".asInstanceOf[playback]
   @scala.inline
   def playing: playing = "playing".asInstanceOf[playing]
   @scala.inline
@@ -3549,6 +3832,12 @@ object stdStrings {
   @scala.inline
   def popstate: popstate = "popstate".asInstanceOf[popstate]
   @scala.inline
+  def portrait: portrait = "portrait".asInstanceOf[portrait]
+  @scala.inline
+  def `portrait-primary`: `portrait-primary` = "portrait-primary".asInstanceOf[`portrait-primary`]
+  @scala.inline
+  def `portrait-secondary`: `portrait-secondary` = "portrait-secondary".asInstanceOf[`portrait-secondary`]
+  @scala.inline
   def pranswer: pranswer = "pranswer".asInstanceOf[pranswer]
   @scala.inline
   def pre: pre = "pre".asInstanceOf[pre]
@@ -3563,9 +3852,15 @@ object stdStrings {
   @scala.inline
   def prflx: prflx = "prflx".asInstanceOf[prflx]
   @scala.inline
+  def `private`: `private` = "private".asInstanceOf[`private`]
+  @scala.inline
+  def probably: probably = "probably".asInstanceOf[probably]
+  @scala.inline
   def progress: progress = "progress".asInstanceOf[progress]
   @scala.inline
   def prompt: prompt = "prompt".asInstanceOf[prompt]
+  @scala.inline
+  def public: public = "public".asInstanceOf[public]
   @scala.inline
   def q: q = "q".asInstanceOf[q]
   @scala.inline
@@ -3599,13 +3894,17 @@ object stdStrings {
   @scala.inline
   def removetrack: removetrack = "removetrack".asInstanceOf[removetrack]
   @scala.inline
-  def required: required = "required".asInstanceOf[required]
+  def requested: requested = "requested".asInstanceOf[requested]
+  @scala.inline
+  def required_ : required_ = "required".asInstanceOf[required_]
   @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
   @scala.inline
   def resize: resize = "resize".asInstanceOf[resize]
   @scala.inline
   def resume: resume = "resume".asInstanceOf[resume]
+  @scala.inline
+  def reverse: reverse = "reverse".asInstanceOf[reverse]
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   @scala.inline
@@ -3628,6 +3927,8 @@ object stdStrings {
   def script: script = "script".asInstanceOf[script]
   @scala.inline
   def scroll: scroll = "scroll".asInstanceOf[scroll]
+  @scala.inline
+  def secret: secret = "secret".asInstanceOf[secret]
   @scala.inline
   def section: section = "section".asInstanceOf[section]
   @scala.inline
@@ -3663,9 +3964,15 @@ object stdStrings {
   @scala.inline
   def show: show = "show".asInstanceOf[show]
   @scala.inline
+  def showing: showing = "showing".asInstanceOf[showing]
+  @scala.inline
+  def sign: sign = "sign".asInstanceOf[sign]
+  @scala.inline
   def signalingstatechange: signalingstatechange = "signalingstatechange".asInstanceOf[signalingstatechange]
   @scala.inline
   def sine: sine = "sine".asInstanceOf[sine]
+  @scala.inline
+  def slot: slot = "slot".asInstanceOf[slot]
   @scala.inline
   def small: small = "small".asInstanceOf[small]
   @scala.inline
@@ -3690,6 +3997,8 @@ object stdStrings {
   def stable: stable = "stable".asInstanceOf[stable]
   @scala.inline
   def stalled: stalled = "stalled".asInstanceOf[stalled]
+  @scala.inline
+  def standard: standard = "standard".asInstanceOf[standard]
   @scala.inline
   def start: start = "start".asInstanceOf[start]
   @scala.inline
@@ -3716,6 +4025,8 @@ object stdStrings {
   def submit: submit = "submit".asInstanceOf[submit]
   @scala.inline
   def subresource: subresource = "subresource".asInstanceOf[subresource]
+  @scala.inline
+  def subtitles: subtitles = "subtitles".asInstanceOf[subtitles]
   @scala.inline
   def succeeded: succeeded = "succeeded".asInstanceOf[succeeded]
   @scala.inline
@@ -3813,9 +4124,13 @@ object stdStrings {
   @scala.inline
   def unloaded: unloaded = "unloaded".asInstanceOf[unloaded]
   @scala.inline
+  def unmounted: unmounted = "unmounted".asInstanceOf[unmounted]
+  @scala.inline
   def unmute: unmute = "unmute".asInstanceOf[unmute]
   @scala.inline
   def `unsafe-url`: `unsafe-url` = "unsafe-url".asInstanceOf[`unsafe-url`]
+  @scala.inline
+  def unwrapKey: unwrapKey = "unwrapKey".asInstanceOf[unwrapKey]
   @scala.inline
   def up: up = "up".asInstanceOf[up]
   @scala.inline
@@ -3835,7 +4150,11 @@ object stdStrings {
   @scala.inline
   def `var`: `var` = "var".asInstanceOf[`var`]
   @scala.inline
+  def verify: verify = "verify".asInstanceOf[verify]
+  @scala.inline
   def versionchange: versionchange = "versionchange".asInstanceOf[versionchange]
+  @scala.inline
+  def vibration: vibration = "vibration".asInstanceOf[vibration]
   @scala.inline
   def video: video = "video".asInstanceOf[video]
   @scala.inline
@@ -3848,6 +4167,24 @@ object stdStrings {
   def voiceschanged: voiceschanged = "voiceschanged".asInstanceOf[voiceschanged]
   @scala.inline
   def volumechange: volumechange = "volumechange".asInstanceOf[volumechange]
+  @scala.inline
+  def vrdisplayactivate: vrdisplayactivate = "vrdisplayactivate".asInstanceOf[vrdisplayactivate]
+  @scala.inline
+  def vrdisplayblur: vrdisplayblur = "vrdisplayblur".asInstanceOf[vrdisplayblur]
+  @scala.inline
+  def vrdisplayconnect: vrdisplayconnect = "vrdisplayconnect".asInstanceOf[vrdisplayconnect]
+  @scala.inline
+  def vrdisplaydeactivate: vrdisplaydeactivate = "vrdisplaydeactivate".asInstanceOf[vrdisplaydeactivate]
+  @scala.inline
+  def vrdisplaydisconnect: vrdisplaydisconnect = "vrdisplaydisconnect".asInstanceOf[vrdisplaydisconnect]
+  @scala.inline
+  def vrdisplayfocus: vrdisplayfocus = "vrdisplayfocus".asInstanceOf[vrdisplayfocus]
+  @scala.inline
+  def vrdisplaypointerrestricted: vrdisplaypointerrestricted = "vrdisplaypointerrestricted".asInstanceOf[vrdisplaypointerrestricted]
+  @scala.inline
+  def vrdisplaypointerunrestricted: vrdisplaypointerunrestricted = "vrdisplaypointerunrestricted".asInstanceOf[vrdisplaypointerunrestricted]
+  @scala.inline
+  def vrdisplaypresentchange: vrdisplaypresentchange = "vrdisplaypresentchange".asInstanceOf[vrdisplaypresentchange]
   @scala.inline
   def waiting: waiting = "waiting".asInstanceOf[waiting]
   @scala.inline
@@ -3863,11 +4200,13 @@ object stdStrings {
   @scala.inline
   def wheel: wheel = "wheel".asInstanceOf[wheel]
   @scala.inline
+  def window: window = "window".asInstanceOf[window]
+  @scala.inline
   def word: word = "word".asInstanceOf[word]
   @scala.inline
   def worker: worker = "worker".asInstanceOf[worker]
   @scala.inline
-  def `x-ms-webview`: `x-ms-webview` = "x-ms-webview".asInstanceOf[`x-ms-webview`]
+  def wrapKey: wrapKey = "wrapKey".asInstanceOf[wrapKey]
   @scala.inline
   def xmp: xmp = "xmp".asInstanceOf[xmp]
 }

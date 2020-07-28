@@ -71,8 +71,6 @@ class Option ()
   /* CompleteClass */
   override val childElementCount: Double = js.native
   /* CompleteClass */
-  override val children: org.scalablytyped.std.HTMLCollection = js.native
-  /* CompleteClass */
   override val firstElementChild: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
   override val lastElementChild: org.scalablytyped.std.Element | Null = js.native
@@ -80,6 +78,8 @@ class Option ()
   override val nextElementSibling: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
   override val previousElementSibling: org.scalablytyped.std.Element | Null = js.native
+  /* CompleteClass */
+  override val style: org.scalablytyped.std.CSSStyleDeclaration = js.native
   /* CompleteClass */
   override def remove(): Unit = js.native
 }

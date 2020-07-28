@@ -23,9 +23,11 @@ class Navigator_ () extends Navigator {
   /* CompleteClass */
   override val appVersion: java.lang.String = js.native
   /* CompleteClass */
-  override val geolocation: org.scalablytyped.std.Geolocation = js.native
-  /* CompleteClass */
   override val hardwareConcurrency: Double = js.native
+  /* CompleteClass */
+  override val language: java.lang.String = js.native
+  /* CompleteClass */
+  override val languages: js.Array[java.lang.String] = js.native
   /* CompleteClass */
   override val mediaDevices: org.scalablytyped.std.MediaDevices = js.native
   /* CompleteClass */
@@ -46,6 +48,8 @@ class Navigator_ () extends Navigator {
   override def confirmSiteSpecificTrackingException(args: ConfirmSiteSpecificExceptionsInformation): scala.Boolean = js.native
   /* CompleteClass */
   override def confirmWebWideTrackingException(args: ExceptionInformation): scala.Boolean = js.native
+  /* CompleteClass */
+  override def getDisplayMedia(constraints: MediaStreamConstraints): js.Promise[org.scalablytyped.std.MediaStream] = js.native
   /* CompleteClass */
   override def getUserMedia(
     constraints: MediaStreamConstraints,

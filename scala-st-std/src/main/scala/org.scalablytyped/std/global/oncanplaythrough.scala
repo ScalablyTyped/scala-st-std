@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("oncanplaythrough")
 @js.native
 object oncanplaythrough
-  extends TopLevel[js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]]
+  extends TopLevel[(js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null]
 

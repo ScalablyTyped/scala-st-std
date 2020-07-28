@@ -19,7 +19,6 @@ import org.scalablytyped.std.stdStrings.MSPointerOver
 import org.scalablytyped.std.stdStrings.MSPointerUp
 import org.scalablytyped.std.stdStrings.`object`
 import org.scalablytyped.std.stdStrings.`var`
-import org.scalablytyped.std.stdStrings.`x-ms-webview`
 import org.scalablytyped.std.stdStrings.a
 import org.scalablytyped.std.stdStrings.abbr
 import org.scalablytyped.std.stdStrings.abort
@@ -247,6 +246,7 @@ import org.scalablytyped.std.stdStrings.seeking
 import org.scalablytyped.std.stdStrings.select
 import org.scalablytyped.std.stdStrings.selectionchange
 import org.scalablytyped.std.stdStrings.selectstart
+import org.scalablytyped.std.stdStrings.slot
 import org.scalablytyped.std.stdStrings.small
 import org.scalablytyped.std.stdStrings.source
 import org.scalablytyped.std.stdStrings.span
@@ -305,10 +305,8 @@ import scala.scalajs.js.annotation._
 trait Document
   extends Node
      with GlobalEventHandlers
-     with NodeSelector
-     with DocumentEvent
      with ParentNode
-     with DocumentOrShadowRoot {
+     with DocumentEvent {
   /**
     * Sets or gets the URL for the current document.
     */
@@ -320,8 +318,7 @@ trait Document
   /**
     * Gets the object that has the focus when the parent document has focus.
     */
-  @JSName("activeElement")
-  val activeElement_Document: Element = js.native
+  val activeElement: Element = js.native
   /**
     * Sets or gets the color of all active links in the document.
     */
@@ -333,11 +330,11 @@ trait Document
   /**
     * Retrieves a collection of all a objects that have a name and/or id property. Objects in this collection are in HTML source order.
     */
-  var anchors: HTMLCollectionOf[HTMLAnchorElement] = js.native
+  val anchors: HTMLCollectionOf[HTMLAnchorElement] = js.native
   /**
     * Retrieves a collection of all applet objects in the document.
     */
-  var applets: HTMLCollectionOf[HTMLAppletElement] = js.native
+  val applets: HTMLCollectionOf[HTMLAppletElement] = js.native
   /**
     * Deprecated. Sets or retrieves a value that indicates the background color behind the object.
     */
@@ -373,7 +370,7 @@ trait Document
   /**
     * Gets a reference to the root node of the document.
     */
-  var documentElement: HTMLElement = js.native
+  val documentElement: HTMLElement = js.native
   /**
     * Sets or gets the security domain of the document.
     */
@@ -381,7 +378,7 @@ trait Document
   /**
     * Retrieves a collection of all embed objects in the document.
     */
-  var embeds: HTMLCollectionOf[HTMLEmbedElement] = js.native
+  val embeds: HTMLCollectionOf[HTMLEmbedElement] = js.native
   /**
     * Sets or gets the foreground (text) color of the document.
     */
@@ -389,7 +386,7 @@ trait Document
   /**
     * Retrieves a collection, in source order, of all form objects in the document.
     */
-  var forms: HTMLCollectionOf[HTMLFormElement] = js.native
+  val forms: HTMLCollectionOf[HTMLFormElement] = js.native
   val fullscreenElement: Element | Null = js.native
   val fullscreenEnabled: scala.Boolean = js.native
   val head: HTMLHeadElement = js.native
@@ -397,7 +394,7 @@ trait Document
   /**
     * Retrieves a collection, in source order, of img objects in the document.
     */
-  var images: HTMLCollectionOf[HTMLImageElement] = js.native
+  val images: HTMLCollectionOf[HTMLImageElement] = js.native
   /**
     * Gets the implementation object of the current document.
     */
@@ -417,14 +414,322 @@ trait Document
   /**
     * Retrieves a collection of all a objects that specify the href property and all area objects in the document.
     */
-  var links: HTMLCollectionOf[HTMLAnchorElement | HTMLAreaElement] = js.native
+  val links: HTMLCollectionOf[HTMLAnchorElement | HTMLAreaElement] = js.native
   /**
     * Contains information about the current URL.
     */
-  val location: Location = js.native
+  var location: Location = js.native
   var msCSSOMElementFloatMetrics: scala.Boolean = js.native
   var msCapsLockWarningOff: scala.Boolean = js.native
-  var plugins: HTMLCollectionOf[HTMLEmbedElement] = js.native
+  /**
+    * Fires when the user aborts the download.
+    * @param ev The event.
+    */
+  var onabort: (js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]) | Null = js.native
+  /**
+    * Fires when the object is set as the active element.
+    * @param ev The event.
+    */
+  var onactivate: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /**
+    * Fires immediately before the object is set as the active element.
+    * @param ev The event.
+    */
+  var onbeforeactivate: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /**
+    * Fires immediately before the activeElement is changed from the current object to another object in the parent document.
+    * @param ev The event.
+    */
+  var onbeforedeactivate: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /**
+    * Fires when the object loses the input focus.
+    * @param ev The focus event.
+    */
+  var onblur: (js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]) | Null = js.native
+  /**
+    * Occurs when playback is possible, but would require further buffering.
+    * @param ev The event.
+    */
+  var oncanplay: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var oncanplaythrough: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /**
+    * Fires when the contents of the object or selection have changed.
+    * @param ev The event.
+    */
+  var onchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /**
+    * Fires when the user clicks the left mouse button on the object
+    * @param ev The mouse event.
+    */
+  var onclick: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null = js.native
+  /**
+    * Fires when the user clicks the right mouse button in the client area, opening the context menu.
+    * @param ev The mouse event.
+    */
+  var oncontextmenu: (js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null = js.native
+  /**
+    * Fires when the user double-clicks the object.
+    * @param ev The mouse event.
+    */
+  var ondblclick: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null = js.native
+  /**
+    * Fires when the activeElement is changed from the current object to another object in the parent document.
+    * @param ev The UI Event
+    */
+  var ondeactivate: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /**
+    * Fires on the source object continuously during a drag operation.
+    * @param ev The event.
+    */
+  var ondrag: (js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]) | Null = js.native
+  /**
+    * Fires on the source object when the user releases the mouse at the close of a drag operation.
+    * @param ev The event.
+    */
+  var ondragend: (js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]) | Null = js.native
+  /**
+    * Fires on the target element when the user drags the object to a valid drop target.
+    * @param ev The drag event.
+    */
+  var ondragenter: (js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]) | Null = js.native
+  /**
+    * Fires on the target object when the user moves the mouse out of a valid drop target during a drag operation.
+    * @param ev The drag event.
+    */
+  var ondragleave: (js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]) | Null = js.native
+  /**
+    * Fires on the target element continuously while the user drags the object over a valid drop target.
+    * @param ev The event.
+    */
+  var ondragover: (js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]) | Null = js.native
+  /**
+    * Fires on the source object when the user starts to drag a text selection or selected object.
+    * @param ev The event.
+    */
+  var ondragstart: (js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]) | Null = js.native
+  var ondrop: (js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]) | Null = js.native
+  /**
+    * Occurs when the duration attribute is updated.
+    * @param ev The event.
+    */
+  var ondurationchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /**
+    * Occurs when the media element is reset to its initial state.
+    * @param ev The event.
+    */
+  var onemptied: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /**
+    * Occurs when the end of playback is reached.
+    * @param ev The event
+    */
+  var onended: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /**
+    * Fires when an error occurs during object loading.
+    * @param ev The event.
+    */
+  var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _]) | Null = js.native
+  /**
+    * Fires when the object receives focus.
+    * @param ev The event.
+    */
+  var onfocus: (js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]) | Null = js.native
+  var onfullscreenchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onfullscreenerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var oninput: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var oninvalid: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /**
+    * Fires when the user presses a key.
+    * @param ev The keyboard event
+    */
+  var onkeydown: (js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _]) | Null = js.native
+  /**
+    * Fires when the user presses an alphanumeric key.
+    * @param ev The event.
+    */
+  var onkeypress: (js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _]) | Null = js.native
+  /**
+    * Fires when the user releases a key.
+    * @param ev The keyboard event
+    */
+  var onkeyup: (js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _]) | Null = js.native
+  /**
+    * Fires immediately after the browser loads the object.
+    * @param ev The event.
+    */
+  var onload: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /**
+    * Occurs when media data is loaded at the current playback position.
+    * @param ev The event.
+    */
+  var onloadeddata: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /**
+    * Occurs when the duration and dimensions of the media have been determined.
+    * @param ev The event.
+    */
+  var onloadedmetadata: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /**
+    * Occurs when Internet Explorer begins looking for media data.
+    * @param ev The event.
+    */
+  var onloadstart: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /**
+    * Fires when the user clicks the object with either mouse button.
+    * @param ev The mouse event.
+    */
+  var onmousedown: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null = js.native
+  /**
+    * Fires when the user moves the mouse over the object.
+    * @param ev The mouse event.
+    */
+  var onmousemove: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null = js.native
+  /**
+    * Fires when the user moves the mouse pointer outside the boundaries of the object.
+    * @param ev The mouse event.
+    */
+  var onmouseout: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null = js.native
+  /**
+    * Fires when the user moves the mouse pointer into the object.
+    * @param ev The mouse event.
+    */
+  var onmouseover: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null = js.native
+  /**
+    * Fires when the user releases a mouse button while the mouse is over the object.
+    * @param ev The mouse event.
+    */
+  var onmouseup: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null = js.native
+  /**
+    * Fires when the wheel button is rotated.
+    * @param ev The mouse event
+    */
+  var onmousewheel: (js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, _]) | Null = js.native
+  var onmscontentzoom: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onmsgesturechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onmsgesturedoubletap: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onmsgestureend: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onmsgesturehold: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onmsgesturestart: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onmsgesturetap: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onmsinertiastart: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onmsmanipulationstatechanged: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onmspointercancel: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onmspointerdown: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onmspointerenter: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onmspointerleave: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onmspointermove: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onmspointerout: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onmspointerover: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onmspointerup: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /**
+    * Occurs when an item is removed from a Jump List of a webpage running in Site Mode.
+    * @param ev The event.
+    */
+  var onmssitemodejumplistitemremoved: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /**
+    * Occurs when a user clicks a button in a Thumbnail Toolbar of a webpage running in Site Mode.
+    * @param ev The event.
+    */
+  var onmsthumbnailclick: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /**
+    * Occurs when playback is paused.
+    * @param ev The event.
+    */
+  var onpause: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /**
+    * Occurs when the play method is requested.
+    * @param ev The event.
+    */
+  var onplay: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /**
+    * Occurs when the audio or video has started playing.
+    * @param ev The event.
+    */
+  var onplaying: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onpointerlockchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onpointerlockerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /**
+    * Occurs to indicate progress while downloading media data.
+    * @param ev The event.
+    */
+  var onprogress: (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]) | Null = js.native
+  /**
+    * Occurs when the playback rate is increased or decreased.
+    * @param ev The event.
+    */
+  var onratechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /**
+    * Fires when the state of the object has changed.
+    * @param ev The event
+    */
+  var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /**
+    * Fires when the user resets a form.
+    * @param ev The event.
+    */
+  var onreset: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /**
+    * Fires when the user repositions the scroll box in the scroll bar on the object.
+    * @param ev The event.
+    */
+  var onscroll: (js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]) | Null = js.native
+  /**
+    * Occurs when the seek operation ends.
+    * @param ev The event.
+    */
+  var onseeked: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /**
+    * Occurs when the current playback position is moved.
+    * @param ev The event.
+    */
+  var onseeking: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /**
+    * Fires when the current selection changes.
+    * @param ev The event.
+    */
+  var onselect: (js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]) | Null = js.native
+  /**
+    * Fires when the selection state of a document changes.
+    * @param ev The event.
+    */
+  var onselectionchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onselectstart: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /**
+    * Occurs when the download has stopped.
+    * @param ev The event.
+    */
+  var onstalled: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /**
+    * Fires when the user clicks the Stop button or leaves the Web page.
+    * @param ev The event.
+    */
+  var onstop: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onsubmit: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /**
+    * Occurs if the load operation has been intentionally halted.
+    * @param ev The event.
+    */
+  var onsuspend: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /**
+    * Occurs to indicate the current playback position.
+    * @param ev The event.
+    */
+  var ontimeupdate: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var ontouchcancel: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var ontouchend: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var ontouchmove: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var ontouchstart: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /**
+    * Occurs when the volume is changed, or playback is muted or unmuted.
+    * @param ev The event.
+    */
+  var onvolumechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /**
+    * Occurs when playback stops because the next frame of a video resource is not available.
+    * @param ev The event.
+    */
+  var onwaiting: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onwebkitfullscreenchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onwebkitfullscreenerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  val plugins: HTMLCollectionOf[HTMLEmbedElement] = js.native
   val pointerLockElement: Element = js.native
   /**
     * Retrieves a value that indicates the current state of the object.
@@ -441,7 +746,7 @@ trait Document
   /**
     * Retrieves a collection of all script objects in the document.
     */
-  var scripts: HTMLCollectionOf[HTMLScriptElement] = js.native
+  val scripts: HTMLCollectionOf[HTMLScriptElement] = js.native
   val scrollingElement: Element | Null = js.native
   /**
     * Retrieves a collection of styleSheet objects representing the style sheets that correspond to each instance of a link or style object in the document.
@@ -477,277 +782,244 @@ trait Document
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSContentZoom(`type`: MSContentZoom, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
+  def addEventListener_MSContentZoom(`type`: MSContentZoom, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSContentZoom(
     `type`: MSContentZoom,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSContentZoom(
     `type`: MSContentZoom,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSGestureChange(
-    `type`: MSGestureChange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _]
-  ): Unit = js.native
+  def addEventListener_MSGestureChange(`type`: MSGestureChange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSGestureChange(
     `type`: MSGestureChange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSGestureChange(
     `type`: MSGestureChange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSGestureDoubleTap(
-    `type`: MSGestureDoubleTap,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _]
-  ): Unit = js.native
+  def addEventListener_MSGestureDoubleTap(`type`: MSGestureDoubleTap, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSGestureDoubleTap(
     `type`: MSGestureDoubleTap,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSGestureDoubleTap(
     `type`: MSGestureDoubleTap,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSGestureEnd(`type`: MSGestureEnd, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _]): Unit = js.native
+  def addEventListener_MSGestureEnd(`type`: MSGestureEnd, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSGestureEnd(
     `type`: MSGestureEnd,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSGestureEnd(
     `type`: MSGestureEnd,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSGestureHold(
-    `type`: MSGestureHold,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _]
-  ): Unit = js.native
+  def addEventListener_MSGestureHold(`type`: MSGestureHold, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSGestureHold(
     `type`: MSGestureHold,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSGestureHold(
     `type`: MSGestureHold,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSGestureStart(
-    `type`: MSGestureStart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _]
-  ): Unit = js.native
+  def addEventListener_MSGestureStart(`type`: MSGestureStart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSGestureStart(
     `type`: MSGestureStart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSGestureStart(
     `type`: MSGestureStart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSGestureTap(`type`: MSGestureTap, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _]): Unit = js.native
+  def addEventListener_MSGestureTap(`type`: MSGestureTap, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSGestureTap(
     `type`: MSGestureTap,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSGestureTap(
     `type`: MSGestureTap,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSInertiaStart(
-    `type`: MSInertiaStart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _]
-  ): Unit = js.native
+  def addEventListener_MSInertiaStart(`type`: MSInertiaStart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSInertiaStart(
     `type`: MSInertiaStart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSInertiaStart(
     `type`: MSInertiaStart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSManipulationStateChanged(
     `type`: MSManipulationStateChanged,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSManipulationEvent, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSManipulationStateChanged(
     `type`: MSManipulationStateChanged,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSManipulationEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSManipulationStateChanged(
     `type`: MSManipulationStateChanged,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSManipulationEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSPointerCancel(
-    `type`: MSPointerCancel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]
-  ): Unit = js.native
+  def addEventListener_MSPointerCancel(`type`: MSPointerCancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSPointerCancel(
     `type`: MSPointerCancel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSPointerCancel(
     `type`: MSPointerCancel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSPointerDown(
-    `type`: MSPointerDown,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]
-  ): Unit = js.native
+  def addEventListener_MSPointerDown(`type`: MSPointerDown, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSPointerDown(
     `type`: MSPointerDown,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSPointerDown(
     `type`: MSPointerDown,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSPointerEnter(
-    `type`: MSPointerEnter,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]
-  ): Unit = js.native
+  def addEventListener_MSPointerEnter(`type`: MSPointerEnter, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSPointerEnter(
     `type`: MSPointerEnter,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSPointerEnter(
     `type`: MSPointerEnter,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSPointerLeave(
-    `type`: MSPointerLeave,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]
-  ): Unit = js.native
+  def addEventListener_MSPointerLeave(`type`: MSPointerLeave, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSPointerLeave(
     `type`: MSPointerLeave,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSPointerLeave(
     `type`: MSPointerLeave,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSPointerMove(
-    `type`: MSPointerMove,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]
-  ): Unit = js.native
+  def addEventListener_MSPointerMove(`type`: MSPointerMove, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSPointerMove(
     `type`: MSPointerMove,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSPointerMove(
     `type`: MSPointerMove,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSPointerOut(`type`: MSPointerOut, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]): Unit = js.native
+  def addEventListener_MSPointerOut(`type`: MSPointerOut, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSPointerOut(
     `type`: MSPointerOut,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSPointerOut(
     `type`: MSPointerOut,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSPointerOver(
-    `type`: MSPointerOver,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]
-  ): Unit = js.native
+  def addEventListener_MSPointerOver(`type`: MSPointerOver, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSPointerOver(
     `type`: MSPointerOver,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSPointerOver(
     `type`: MSPointerOver,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSPointerUp(`type`: MSPointerUp, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]): Unit = js.native
+  def addEventListener_MSPointerUp(`type`: MSPointerUp, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSPointerUp(
     `type`: MSPointerUp,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSPointerUp(
     `type`: MSPointerUp,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -765,45 +1037,45 @@ trait Document
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_activate(`type`: activate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
+  def addEventListener_activate(`type`: activate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_activate(
     `type`: activate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_activate(
     `type`: activate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_beforeactivate(`type`: beforeactivate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
+  def addEventListener_beforeactivate(`type`: beforeactivate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_beforeactivate(
     `type`: beforeactivate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_beforeactivate(
     `type`: beforeactivate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_beforedeactivate(`type`: beforedeactivate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
+  def addEventListener_beforedeactivate(`type`: beforedeactivate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_beforedeactivate(
     `type`: beforedeactivate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_beforedeactivate(
     `type`: beforedeactivate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -905,17 +1177,17 @@ trait Document
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_deactivate(`type`: deactivate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
+  def addEventListener_deactivate(`type`: deactivate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_deactivate(
     `type`: deactivate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_deactivate(
     `type`: deactivate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -1045,17 +1317,17 @@ trait Document
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_ended(`type`: ended, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _]): Unit = js.native
+  def addEventListener_ended(`type`: ended, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ended(
     `type`: ended,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ended(
     `type`: ended,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -1327,35 +1599,32 @@ trait Document
   @JSName("addEventListener")
   def addEventListener_mssitemodejumplistitemremoved(
     `type`: mssitemodejumplistitemremoved,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSSiteModeEvent, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mssitemodejumplistitemremoved(
     `type`: mssitemodejumplistitemremoved,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSSiteModeEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mssitemodejumplistitemremoved(
     `type`: mssitemodejumplistitemremoved,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSSiteModeEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_msthumbnailclick(
-    `type`: msthumbnailclick,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSSiteModeEvent, _]
-  ): Unit = js.native
+  def addEventListener_msthumbnailclick(`type`: msthumbnailclick, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_msthumbnailclick(
     `type`: msthumbnailclick,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSSiteModeEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_msthumbnailclick(
     `type`: msthumbnailclick,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSSiteModeEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -1639,59 +1908,59 @@ trait Document
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_touchcancel(`type`: touchcancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
+  def addEventListener_touchcancel(`type`: touchcancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_touchcancel(
     `type`: touchcancel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_touchcancel(
     `type`: touchcancel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_touchend(`type`: touchend, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
+  def addEventListener_touchend(`type`: touchend, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_touchend(
     `type`: touchend,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_touchend(
     `type`: touchend,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_touchmove(`type`: touchmove, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
+  def addEventListener_touchmove(`type`: touchmove, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_touchmove(
     `type`: touchmove,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_touchmove(
     `type`: touchmove,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_touchstart(`type`: touchstart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
+  def addEventListener_touchstart(`type`: touchstart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_touchstart(
     `type`: touchstart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_touchstart(
     `type`: touchstart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -1779,6 +2048,7 @@ trait Document
     */
   def createDocumentFragment(): DocumentFragment = js.native
   def createElement(tagName: java.lang.String): HTMLElement = js.native
+  def createElement(tagName: java.lang.String, options: ElementCreationOptions): HTMLElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: a): SVGAElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: circle): SVGCircleElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: clipPath): SVGClipPathElement = js.native
@@ -1865,255 +2135,507 @@ trait Document
   @JSName("createElement")
   def createElement_a(tagName: a): HTMLAnchorElement = js.native
   @JSName("createElement")
+  def createElement_a(tagName: a, options: ElementCreationOptions): HTMLAnchorElement = js.native
+  @JSName("createElement")
   def createElement_abbr(tagName: abbr): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_abbr(tagName: abbr, options: ElementCreationOptions): HTMLElement = js.native
   @JSName("createElement")
   def createElement_acronym(tagName: acronym): HTMLElement = js.native
   @JSName("createElement")
+  def createElement_acronym(tagName: acronym, options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
   def createElement_address(tagName: address): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_address(tagName: address, options: ElementCreationOptions): HTMLElement = js.native
   @JSName("createElement")
   def createElement_applet(tagName: applet): HTMLAppletElement = js.native
   @JSName("createElement")
+  def createElement_applet(tagName: applet, options: ElementCreationOptions): HTMLAppletElement = js.native
+  @JSName("createElement")
   def createElement_area(tagName: area): HTMLAreaElement = js.native
+  @JSName("createElement")
+  def createElement_area(tagName: area, options: ElementCreationOptions): HTMLAreaElement = js.native
   @JSName("createElement")
   def createElement_article(tagName: article): HTMLElement = js.native
   @JSName("createElement")
+  def createElement_article(tagName: article, options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
   def createElement_aside(tagName: aside): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_aside(tagName: aside, options: ElementCreationOptions): HTMLElement = js.native
   @JSName("createElement")
   def createElement_audio(tagName: audio): HTMLAudioElement = js.native
   @JSName("createElement")
+  def createElement_audio(tagName: audio, options: ElementCreationOptions): HTMLAudioElement = js.native
+  @JSName("createElement")
   def createElement_b(tagName: b): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_b(tagName: b, options: ElementCreationOptions): HTMLElement = js.native
   @JSName("createElement")
   def createElement_base(tagName: base): HTMLBaseElement = js.native
   @JSName("createElement")
+  def createElement_base(tagName: base, options: ElementCreationOptions): HTMLBaseElement = js.native
+  @JSName("createElement")
   def createElement_basefont(tagName: basefont): HTMLBaseFontElement = js.native
+  @JSName("createElement")
+  def createElement_basefont(tagName: basefont, options: ElementCreationOptions): HTMLBaseFontElement = js.native
   @JSName("createElement")
   def createElement_bdo(tagName: bdo): HTMLElement = js.native
   @JSName("createElement")
+  def createElement_bdo(tagName: bdo, options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
   def createElement_big(tagName: big): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_big(tagName: big, options: ElementCreationOptions): HTMLElement = js.native
   @JSName("createElement")
   def createElement_blockquote(tagName: blockquote): HTMLQuoteElement = js.native
   @JSName("createElement")
+  def createElement_blockquote(tagName: blockquote, options: ElementCreationOptions): HTMLQuoteElement = js.native
+  @JSName("createElement")
   def createElement_body(tagName: body): HTMLBodyElement = js.native
+  @JSName("createElement")
+  def createElement_body(tagName: body, options: ElementCreationOptions): HTMLBodyElement = js.native
   @JSName("createElement")
   def createElement_br(tagName: br): HTMLBRElement = js.native
   @JSName("createElement")
+  def createElement_br(tagName: br, options: ElementCreationOptions): HTMLBRElement = js.native
+  @JSName("createElement")
   def createElement_button(tagName: button): HTMLButtonElement = js.native
+  @JSName("createElement")
+  def createElement_button(tagName: button, options: ElementCreationOptions): HTMLButtonElement = js.native
   @JSName("createElement")
   def createElement_canvas(tagName: canvas): HTMLCanvasElement = js.native
   @JSName("createElement")
+  def createElement_canvas(tagName: canvas, options: ElementCreationOptions): HTMLCanvasElement = js.native
+  @JSName("createElement")
   def createElement_caption(tagName: caption): HTMLTableCaptionElement = js.native
+  @JSName("createElement")
+  def createElement_caption(tagName: caption, options: ElementCreationOptions): HTMLTableCaptionElement = js.native
   @JSName("createElement")
   def createElement_center(tagName: center): HTMLElement = js.native
   @JSName("createElement")
+  def createElement_center(tagName: center, options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
   def createElement_cite(tagName: cite): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_cite(tagName: cite, options: ElementCreationOptions): HTMLElement = js.native
   @JSName("createElement")
   def createElement_code(tagName: code): HTMLElement = js.native
   @JSName("createElement")
+  def createElement_code(tagName: code, options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
   def createElement_col(tagName: col): HTMLTableColElement = js.native
+  @JSName("createElement")
+  def createElement_col(tagName: col, options: ElementCreationOptions): HTMLTableColElement = js.native
   @JSName("createElement")
   def createElement_colgroup(tagName: colgroup): HTMLTableColElement = js.native
   @JSName("createElement")
+  def createElement_colgroup(tagName: colgroup, options: ElementCreationOptions): HTMLTableColElement = js.native
+  @JSName("createElement")
   def createElement_data(tagName: data): HTMLDataElement = js.native
+  @JSName("createElement")
+  def createElement_data(tagName: data, options: ElementCreationOptions): HTMLDataElement = js.native
   @JSName("createElement")
   def createElement_datalist(tagName: datalist): HTMLDataListElement = js.native
   @JSName("createElement")
+  def createElement_datalist(tagName: datalist, options: ElementCreationOptions): HTMLDataListElement = js.native
+  @JSName("createElement")
   def createElement_dd(tagName: dd): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_dd(tagName: dd, options: ElementCreationOptions): HTMLElement = js.native
   @JSName("createElement")
   def createElement_del(tagName: del): HTMLModElement = js.native
   @JSName("createElement")
+  def createElement_del(tagName: del, options: ElementCreationOptions): HTMLModElement = js.native
+  @JSName("createElement")
   def createElement_dfn(tagName: dfn): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_dfn(tagName: dfn, options: ElementCreationOptions): HTMLElement = js.native
   @JSName("createElement")
   def createElement_dir(tagName: dir): HTMLDirectoryElement = js.native
   @JSName("createElement")
+  def createElement_dir(tagName: dir, options: ElementCreationOptions): HTMLDirectoryElement = js.native
+  @JSName("createElement")
   def createElement_div(tagName: div): HTMLDivElement = js.native
+  @JSName("createElement")
+  def createElement_div(tagName: div, options: ElementCreationOptions): HTMLDivElement = js.native
   @JSName("createElement")
   def createElement_dl(tagName: dl): HTMLDListElement = js.native
   @JSName("createElement")
+  def createElement_dl(tagName: dl, options: ElementCreationOptions): HTMLDListElement = js.native
+  @JSName("createElement")
   def createElement_dt(tagName: dt): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_dt(tagName: dt, options: ElementCreationOptions): HTMLElement = js.native
   @JSName("createElement")
   def createElement_em(tagName: em): HTMLElement = js.native
   @JSName("createElement")
+  def createElement_em(tagName: em, options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
   def createElement_embed(tagName: embed): HTMLEmbedElement = js.native
+  @JSName("createElement")
+  def createElement_embed(tagName: embed, options: ElementCreationOptions): HTMLEmbedElement = js.native
   @JSName("createElement")
   def createElement_fieldset(tagName: fieldset): HTMLFieldSetElement = js.native
   @JSName("createElement")
+  def createElement_fieldset(tagName: fieldset, options: ElementCreationOptions): HTMLFieldSetElement = js.native
+  @JSName("createElement")
   def createElement_figcaption(tagName: figcaption): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_figcaption(tagName: figcaption, options: ElementCreationOptions): HTMLElement = js.native
   @JSName("createElement")
   def createElement_figure(tagName: figure): HTMLElement = js.native
   @JSName("createElement")
+  def createElement_figure(tagName: figure, options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
   def createElement_font(tagName: font): HTMLFontElement = js.native
+  @JSName("createElement")
+  def createElement_font(tagName: font, options: ElementCreationOptions): HTMLFontElement = js.native
   @JSName("createElement")
   def createElement_footer(tagName: footer): HTMLElement = js.native
   @JSName("createElement")
+  def createElement_footer(tagName: footer, options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
   def createElement_form(tagName: form): HTMLFormElement = js.native
+  @JSName("createElement")
+  def createElement_form(tagName: form, options: ElementCreationOptions): HTMLFormElement = js.native
   @JSName("createElement")
   def createElement_frame(tagName: frame): HTMLFrameElement = js.native
   @JSName("createElement")
+  def createElement_frame(tagName: frame, options: ElementCreationOptions): HTMLFrameElement = js.native
+  @JSName("createElement")
   def createElement_frameset(tagName: frameset): HTMLFrameSetElement = js.native
+  @JSName("createElement")
+  def createElement_frameset(tagName: frameset, options: ElementCreationOptions): HTMLFrameSetElement = js.native
   @JSName("createElement")
   def createElement_h1(tagName: h1): HTMLHeadingElement = js.native
   @JSName("createElement")
+  def createElement_h1(tagName: h1, options: ElementCreationOptions): HTMLHeadingElement = js.native
+  @JSName("createElement")
   def createElement_h2(tagName: h2): HTMLHeadingElement = js.native
+  @JSName("createElement")
+  def createElement_h2(tagName: h2, options: ElementCreationOptions): HTMLHeadingElement = js.native
   @JSName("createElement")
   def createElement_h3(tagName: h3): HTMLHeadingElement = js.native
   @JSName("createElement")
+  def createElement_h3(tagName: h3, options: ElementCreationOptions): HTMLHeadingElement = js.native
+  @JSName("createElement")
   def createElement_h4(tagName: h4): HTMLHeadingElement = js.native
+  @JSName("createElement")
+  def createElement_h4(tagName: h4, options: ElementCreationOptions): HTMLHeadingElement = js.native
   @JSName("createElement")
   def createElement_h5(tagName: h5): HTMLHeadingElement = js.native
   @JSName("createElement")
+  def createElement_h5(tagName: h5, options: ElementCreationOptions): HTMLHeadingElement = js.native
+  @JSName("createElement")
   def createElement_h6(tagName: h6): HTMLHeadingElement = js.native
+  @JSName("createElement")
+  def createElement_h6(tagName: h6, options: ElementCreationOptions): HTMLHeadingElement = js.native
   @JSName("createElement")
   def createElement_head(tagName: org.scalablytyped.std.stdStrings.head): HTMLHeadElement = js.native
   @JSName("createElement")
+  def createElement_head(tagName: org.scalablytyped.std.stdStrings.head, options: ElementCreationOptions): HTMLHeadElement = js.native
+  @JSName("createElement")
   def createElement_header(tagName: header): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_header(tagName: header, options: ElementCreationOptions): HTMLElement = js.native
   @JSName("createElement")
   def createElement_hgroup(tagName: hgroup): HTMLElement = js.native
   @JSName("createElement")
+  def createElement_hgroup(tagName: hgroup, options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
   def createElement_hr(tagName: hr): HTMLHRElement = js.native
+  @JSName("createElement")
+  def createElement_hr(tagName: hr, options: ElementCreationOptions): HTMLHRElement = js.native
   @JSName("createElement")
   def createElement_html(tagName: html): HTMLHtmlElement = js.native
   @JSName("createElement")
+  def createElement_html(tagName: html, options: ElementCreationOptions): HTMLHtmlElement = js.native
+  @JSName("createElement")
   def createElement_i(tagName: i): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_i(tagName: i, options: ElementCreationOptions): HTMLElement = js.native
   @JSName("createElement")
   def createElement_iframe(tagName: iframe): HTMLIFrameElement = js.native
   @JSName("createElement")
+  def createElement_iframe(tagName: iframe, options: ElementCreationOptions): HTMLIFrameElement = js.native
+  @JSName("createElement")
   def createElement_img(tagName: img): HTMLImageElement = js.native
+  @JSName("createElement")
+  def createElement_img(tagName: img, options: ElementCreationOptions): HTMLImageElement = js.native
   @JSName("createElement")
   def createElement_input(tagName: input): HTMLInputElement = js.native
   @JSName("createElement")
+  def createElement_input(tagName: input, options: ElementCreationOptions): HTMLInputElement = js.native
+  @JSName("createElement")
   def createElement_ins(tagName: ins): HTMLModElement = js.native
+  @JSName("createElement")
+  def createElement_ins(tagName: ins, options: ElementCreationOptions): HTMLModElement = js.native
   @JSName("createElement")
   def createElement_isindex(tagName: isindex): HTMLUnknownElement = js.native
   @JSName("createElement")
+  def createElement_isindex(tagName: isindex, options: ElementCreationOptions): HTMLUnknownElement = js.native
+  @JSName("createElement")
   def createElement_kbd(tagName: kbd): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_kbd(tagName: kbd, options: ElementCreationOptions): HTMLElement = js.native
   @JSName("createElement")
   def createElement_keygen(tagName: keygen): HTMLElement = js.native
   @JSName("createElement")
+  def createElement_keygen(tagName: keygen, options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
   def createElement_label(tagName: label): HTMLLabelElement = js.native
+  @JSName("createElement")
+  def createElement_label(tagName: label, options: ElementCreationOptions): HTMLLabelElement = js.native
   @JSName("createElement")
   def createElement_legend(tagName: legend): HTMLLegendElement = js.native
   @JSName("createElement")
+  def createElement_legend(tagName: legend, options: ElementCreationOptions): HTMLLegendElement = js.native
+  @JSName("createElement")
   def createElement_li(tagName: li): HTMLLIElement = js.native
+  @JSName("createElement")
+  def createElement_li(tagName: li, options: ElementCreationOptions): HTMLLIElement = js.native
   @JSName("createElement")
   def createElement_link(tagName: link): HTMLLinkElement = js.native
   @JSName("createElement")
+  def createElement_link(tagName: link, options: ElementCreationOptions): HTMLLinkElement = js.native
+  @JSName("createElement")
   def createElement_listing(tagName: listing): HTMLPreElement = js.native
+  @JSName("createElement")
+  def createElement_listing(tagName: listing, options: ElementCreationOptions): HTMLPreElement = js.native
   @JSName("createElement")
   def createElement_map(tagName: map_): HTMLMapElement = js.native
   @JSName("createElement")
+  def createElement_map(tagName: map_, options: ElementCreationOptions): HTMLMapElement = js.native
+  @JSName("createElement")
   def createElement_mark(tagName: mark): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_mark(tagName: mark, options: ElementCreationOptions): HTMLElement = js.native
   @JSName("createElement")
   def createElement_marquee(tagName: marquee): HTMLMarqueeElement = js.native
   @JSName("createElement")
+  def createElement_marquee(tagName: marquee, options: ElementCreationOptions): HTMLMarqueeElement = js.native
+  @JSName("createElement")
   def createElement_menu(tagName: menu): HTMLMenuElement = js.native
+  @JSName("createElement")
+  def createElement_menu(tagName: menu, options: ElementCreationOptions): HTMLMenuElement = js.native
   @JSName("createElement")
   def createElement_meta(tagName: meta): HTMLMetaElement = js.native
   @JSName("createElement")
+  def createElement_meta(tagName: meta, options: ElementCreationOptions): HTMLMetaElement = js.native
+  @JSName("createElement")
   def createElement_meter(tagName: meter): HTMLMeterElement = js.native
+  @JSName("createElement")
+  def createElement_meter(tagName: meter, options: ElementCreationOptions): HTMLMeterElement = js.native
   @JSName("createElement")
   def createElement_nav(tagName: nav): HTMLElement = js.native
   @JSName("createElement")
+  def createElement_nav(tagName: nav, options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
   def createElement_nextid(tagName: nextid): HTMLUnknownElement = js.native
+  @JSName("createElement")
+  def createElement_nextid(tagName: nextid, options: ElementCreationOptions): HTMLUnknownElement = js.native
   @JSName("createElement")
   def createElement_nobr(tagName: nobr): HTMLElement = js.native
   @JSName("createElement")
+  def createElement_nobr(tagName: nobr, options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
   def createElement_noframes(tagName: noframes): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_noframes(tagName: noframes, options: ElementCreationOptions): HTMLElement = js.native
   @JSName("createElement")
   def createElement_noscript(tagName: noscript): HTMLElement = js.native
   @JSName("createElement")
+  def createElement_noscript(tagName: noscript, options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
   def createElement_object(tagName: `object`): HTMLObjectElement = js.native
+  @JSName("createElement")
+  def createElement_object(tagName: `object`, options: ElementCreationOptions): HTMLObjectElement = js.native
   @JSName("createElement")
   def createElement_ol(tagName: ol): HTMLOListElement = js.native
   @JSName("createElement")
+  def createElement_ol(tagName: ol, options: ElementCreationOptions): HTMLOListElement = js.native
+  @JSName("createElement")
   def createElement_optgroup(tagName: optgroup): HTMLOptGroupElement = js.native
+  @JSName("createElement")
+  def createElement_optgroup(tagName: optgroup, options: ElementCreationOptions): HTMLOptGroupElement = js.native
   @JSName("createElement")
   def createElement_option(tagName: option): HTMLOptionElement = js.native
   @JSName("createElement")
+  def createElement_option(tagName: option, options: ElementCreationOptions): HTMLOptionElement = js.native
+  @JSName("createElement")
   def createElement_output(tagName: output): HTMLOutputElement = js.native
+  @JSName("createElement")
+  def createElement_output(tagName: output, options: ElementCreationOptions): HTMLOutputElement = js.native
   @JSName("createElement")
   def createElement_p(tagName: p): HTMLParagraphElement = js.native
   @JSName("createElement")
+  def createElement_p(tagName: p, options: ElementCreationOptions): HTMLParagraphElement = js.native
+  @JSName("createElement")
   def createElement_param(tagName: param): HTMLParamElement = js.native
+  @JSName("createElement")
+  def createElement_param(tagName: param, options: ElementCreationOptions): HTMLParamElement = js.native
   @JSName("createElement")
   def createElement_picture(tagName: picture): HTMLPictureElement = js.native
   @JSName("createElement")
+  def createElement_picture(tagName: picture, options: ElementCreationOptions): HTMLPictureElement = js.native
+  @JSName("createElement")
   def createElement_plaintext(tagName: plaintext): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_plaintext(tagName: plaintext, options: ElementCreationOptions): HTMLElement = js.native
   @JSName("createElement")
   def createElement_pre(tagName: pre): HTMLPreElement = js.native
   @JSName("createElement")
+  def createElement_pre(tagName: pre, options: ElementCreationOptions): HTMLPreElement = js.native
+  @JSName("createElement")
   def createElement_progress(tagName: progress): HTMLProgressElement = js.native
+  @JSName("createElement")
+  def createElement_progress(tagName: progress, options: ElementCreationOptions): HTMLProgressElement = js.native
   @JSName("createElement")
   def createElement_q(tagName: q): HTMLQuoteElement = js.native
   @JSName("createElement")
+  def createElement_q(tagName: q, options: ElementCreationOptions): HTMLQuoteElement = js.native
+  @JSName("createElement")
   def createElement_rt(tagName: rt): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_rt(tagName: rt, options: ElementCreationOptions): HTMLElement = js.native
   @JSName("createElement")
   def createElement_ruby(tagName: ruby): HTMLElement = js.native
   @JSName("createElement")
+  def createElement_ruby(tagName: ruby, options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
   def createElement_s(tagName: s): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_s(tagName: s, options: ElementCreationOptions): HTMLElement = js.native
   @JSName("createElement")
   def createElement_samp(tagName: samp): HTMLElement = js.native
   @JSName("createElement")
+  def createElement_samp(tagName: samp, options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
   def createElement_script(tagName: script): HTMLScriptElement = js.native
+  @JSName("createElement")
+  def createElement_script(tagName: script, options: ElementCreationOptions): HTMLScriptElement = js.native
   @JSName("createElement")
   def createElement_section(tagName: section): HTMLElement = js.native
   @JSName("createElement")
+  def createElement_section(tagName: section, options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
   def createElement_select(tagName: select): HTMLSelectElement = js.native
+  @JSName("createElement")
+  def createElement_select(tagName: select, options: ElementCreationOptions): HTMLSelectElement = js.native
+  @JSName("createElement")
+  def createElement_slot(tagName: slot): HTMLSlotElement = js.native
+  @JSName("createElement")
+  def createElement_slot(tagName: slot, options: ElementCreationOptions): HTMLSlotElement = js.native
   @JSName("createElement")
   def createElement_small(tagName: small): HTMLElement = js.native
   @JSName("createElement")
+  def createElement_small(tagName: small, options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
   def createElement_source(tagName: source): HTMLSourceElement = js.native
+  @JSName("createElement")
+  def createElement_source(tagName: source, options: ElementCreationOptions): HTMLSourceElement = js.native
   @JSName("createElement")
   def createElement_span(tagName: span): HTMLSpanElement = js.native
   @JSName("createElement")
+  def createElement_span(tagName: span, options: ElementCreationOptions): HTMLSpanElement = js.native
+  @JSName("createElement")
   def createElement_strike(tagName: strike): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_strike(tagName: strike, options: ElementCreationOptions): HTMLElement = js.native
   @JSName("createElement")
   def createElement_strong(tagName: strong): HTMLElement = js.native
   @JSName("createElement")
+  def createElement_strong(tagName: strong, options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
   def createElement_style(tagName: style): HTMLStyleElement = js.native
+  @JSName("createElement")
+  def createElement_style(tagName: style, options: ElementCreationOptions): HTMLStyleElement = js.native
   @JSName("createElement")
   def createElement_sub(tagName: sub): HTMLElement = js.native
   @JSName("createElement")
+  def createElement_sub(tagName: sub, options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
   def createElement_sup(tagName: sup): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_sup(tagName: sup, options: ElementCreationOptions): HTMLElement = js.native
   @JSName("createElement")
   def createElement_table(tagName: table): HTMLTableElement = js.native
   @JSName("createElement")
+  def createElement_table(tagName: table, options: ElementCreationOptions): HTMLTableElement = js.native
+  @JSName("createElement")
   def createElement_tbody(tagName: tbody): HTMLTableSectionElement = js.native
+  @JSName("createElement")
+  def createElement_tbody(tagName: tbody, options: ElementCreationOptions): HTMLTableSectionElement = js.native
   @JSName("createElement")
   def createElement_td(tagName: td): HTMLTableDataCellElement = js.native
   @JSName("createElement")
+  def createElement_td(tagName: td, options: ElementCreationOptions): HTMLTableDataCellElement = js.native
+  @JSName("createElement")
   def createElement_template(tagName: template): HTMLTemplateElement = js.native
+  @JSName("createElement")
+  def createElement_template(tagName: template, options: ElementCreationOptions): HTMLTemplateElement = js.native
   @JSName("createElement")
   def createElement_textarea(tagName: textarea): HTMLTextAreaElement = js.native
   @JSName("createElement")
+  def createElement_textarea(tagName: textarea, options: ElementCreationOptions): HTMLTextAreaElement = js.native
+  @JSName("createElement")
   def createElement_tfoot(tagName: tfoot): HTMLTableSectionElement = js.native
+  @JSName("createElement")
+  def createElement_tfoot(tagName: tfoot, options: ElementCreationOptions): HTMLTableSectionElement = js.native
   @JSName("createElement")
   def createElement_th(tagName: th): HTMLTableHeaderCellElement = js.native
   @JSName("createElement")
+  def createElement_th(tagName: th, options: ElementCreationOptions): HTMLTableHeaderCellElement = js.native
+  @JSName("createElement")
   def createElement_thead(tagName: thead): HTMLTableSectionElement = js.native
+  @JSName("createElement")
+  def createElement_thead(tagName: thead, options: ElementCreationOptions): HTMLTableSectionElement = js.native
   @JSName("createElement")
   def createElement_time(tagName: time): HTMLTimeElement = js.native
   @JSName("createElement")
+  def createElement_time(tagName: time, options: ElementCreationOptions): HTMLTimeElement = js.native
+  @JSName("createElement")
   def createElement_title(tagName: title): HTMLTitleElement = js.native
+  @JSName("createElement")
+  def createElement_title(tagName: title, options: ElementCreationOptions): HTMLTitleElement = js.native
   @JSName("createElement")
   def createElement_tr(tagName: tr): HTMLTableRowElement = js.native
   @JSName("createElement")
+  def createElement_tr(tagName: tr, options: ElementCreationOptions): HTMLTableRowElement = js.native
+  @JSName("createElement")
   def createElement_track(tagName: track): HTMLTrackElement = js.native
+  @JSName("createElement")
+  def createElement_track(tagName: track, options: ElementCreationOptions): HTMLTrackElement = js.native
   @JSName("createElement")
   def createElement_tt(tagName: tt): HTMLElement = js.native
   @JSName("createElement")
+  def createElement_tt(tagName: tt, options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
   def createElement_u(tagName: u): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_u(tagName: u, options: ElementCreationOptions): HTMLElement = js.native
   @JSName("createElement")
   def createElement_ul(tagName: ul): HTMLUListElement = js.native
   @JSName("createElement")
+  def createElement_ul(tagName: ul, options: ElementCreationOptions): HTMLUListElement = js.native
+  @JSName("createElement")
   def createElement_var(tagName: `var`): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_var(tagName: `var`, options: ElementCreationOptions): HTMLElement = js.native
   @JSName("createElement")
   def createElement_video(tagName: video): HTMLVideoElement = js.native
   @JSName("createElement")
+  def createElement_video(tagName: video, options: ElementCreationOptions): HTMLVideoElement = js.native
+  @JSName("createElement")
   def createElement_wbr(tagName: wbr): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_wbr(tagName: wbr, options: ElementCreationOptions): HTMLElement = js.native
   @JSName("createElement")
   def createElement_xmp(tagName: xmp): HTMLPreElement = js.native
   @JSName("createElement")
-  def createElement_xmswebview(tagName: `x-ms-webview`): MSHTMLWebViewElement = js.native
+  def createElement_xmp(tagName: xmp, options: ElementCreationOptions): HTMLPreElement = js.native
   def createExpression(expression: java.lang.String, resolver: XPathNSResolver): XPathExpression = js.native
   def createNSResolver(nodeResolver: Node): XPathNSResolver = js.native
   /**
@@ -2196,6 +2718,12 @@ trait Document
   ): TreeWalker = js.native
   def createTreeWalker(root: Node, whatToShow: Double, filter: NodeFilter): TreeWalker = js.native
   def createTreeWalker(root: Node, whatToShow: Double, filter: NodeFilter, entityReferenceExpansion: scala.Boolean): TreeWalker = js.native
+  /**
+    * Returns the element for the specified x coordinate and the specified y coordinate.
+    * @param x The x-offset
+    * @param y The y-offset
+    */
+  def elementFromPoint(x: Double, y: Double): Element = js.native
   def evaluate(expression: java.lang.String, contextNode: Node, resolver: XPathNSResolver, `type`: Double): XPathResult = js.native
   def evaluate(
     expression: java.lang.String,
@@ -2232,6 +2760,7 @@ trait Document
   /**
     * Causes the element to receive the focus and executes the code specified by the onfocus event.
     */
+  /** @deprecated */
   def focus(): Unit = js.native
   /**
     * Returns a reference to the first object with the specified value of the ID or NAME attribute.
@@ -2539,6 +3068,8 @@ trait Document
   @JSName("getElementsByTagName")
   def getElementsByTagName_select(tagname: select): NodeListOf[HTMLSelectElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_slot(tagname: slot): NodeListOf[HTMLSlotElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_small(tagname: small): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_source(tagname: source): NodeListOf[HTMLSourceElement] = js.native
@@ -2610,8 +3141,10 @@ trait Document
   def getElementsByTagName_wbr(tagname: wbr): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_xmp(tagname: xmp): NodeListOf[HTMLPreElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_xmswebview(tagname: `x-ms-webview`): NodeListOf[MSHTMLWebViewElement] = js.native
+  /**
+    * Returns an object representing the current selection of the document that is loaded into the object displaying a webpage.
+    */
+  def getSelection(): Selection = js.native
   /**
     * Gets a value indicating whether the object currently has focus.
     */
@@ -2619,314 +3152,7 @@ trait Document
   def importNode[T /* <: Node */](importedNode: T, deep: scala.Boolean): T = js.native
   def msElementsFromPoint(x: Double, y: Double): NodeListOf[Element] = js.native
   def msElementsFromRect(left: Double, top: Double, width: Double, height: Double): NodeListOf[Element] = js.native
-  /**
-    * Fires when the user aborts the download.
-    * @param ev The event.
-    */
-  def onabort(ev: UIEvent): js.Any = js.native
-  /**
-    * Fires when the object is set as the active element.
-    * @param ev The event.
-    */
-  def onactivate(ev: UIEvent): js.Any = js.native
-  /**
-    * Fires immediately before the object is set as the active element.
-    * @param ev The event.
-    */
-  def onbeforeactivate(ev: UIEvent): js.Any = js.native
-  /**
-    * Fires immediately before the activeElement is changed from the current object to another object in the parent document.
-    * @param ev The event.
-    */
-  def onbeforedeactivate(ev: UIEvent): js.Any = js.native
-  /**
-    * Fires when the object loses the input focus.
-    * @param ev The focus event.
-    */
-  def onblur(ev: FocusEvent): js.Any = js.native
-  /**
-    * Occurs when playback is possible, but would require further buffering.
-    * @param ev The event.
-    */
-  def oncanplay(ev: Event): js.Any = js.native
-  def oncanplaythrough(ev: Event): js.Any = js.native
-  /**
-    * Fires when the contents of the object or selection have changed.
-    * @param ev The event.
-    */
-  def onchange(ev: Event): js.Any = js.native
-  /**
-    * Fires when the user clicks the left mouse button on the object
-    * @param ev The mouse event.
-    */
-  def onclick(ev: MouseEvent): js.Any = js.native
-  /**
-    * Fires when the user clicks the right mouse button in the client area, opening the context menu.
-    * @param ev The mouse event.
-    */
-  def oncontextmenu(ev: PointerEvent): js.Any = js.native
-  /**
-    * Fires when the user double-clicks the object.
-    * @param ev The mouse event.
-    */
-  def ondblclick(ev: MouseEvent): js.Any = js.native
-  /**
-    * Fires when the activeElement is changed from the current object to another object in the parent document.
-    * @param ev The UI Event
-    */
-  def ondeactivate(ev: UIEvent): js.Any = js.native
-  /**
-    * Fires on the source object continuously during a drag operation.
-    * @param ev The event.
-    */
-  def ondrag(ev: DragEvent): js.Any = js.native
-  /**
-    * Fires on the source object when the user releases the mouse at the close of a drag operation.
-    * @param ev The event.
-    */
-  def ondragend(ev: DragEvent): js.Any = js.native
-  /**
-    * Fires on the target element when the user drags the object to a valid drop target.
-    * @param ev The drag event.
-    */
-  def ondragenter(ev: DragEvent): js.Any = js.native
-  /**
-    * Fires on the target object when the user moves the mouse out of a valid drop target during a drag operation.
-    * @param ev The drag event.
-    */
-  def ondragleave(ev: DragEvent): js.Any = js.native
-  /**
-    * Fires on the target element continuously while the user drags the object over a valid drop target.
-    * @param ev The event.
-    */
-  def ondragover(ev: DragEvent): js.Any = js.native
-  /**
-    * Fires on the source object when the user starts to drag a text selection or selected object.
-    * @param ev The event.
-    */
-  def ondragstart(ev: DragEvent): js.Any = js.native
-  def ondrop(ev: DragEvent): js.Any = js.native
-  /**
-    * Occurs when the duration attribute is updated.
-    * @param ev The event.
-    */
-  def ondurationchange(ev: Event): js.Any = js.native
-  /**
-    * Occurs when the media element is reset to its initial state.
-    * @param ev The event.
-    */
-  def onemptied(ev: Event): js.Any = js.native
-  /**
-    * Occurs when the end of playback is reached.
-    * @param ev The event
-    */
-  def onended(ev: MediaStreamErrorEvent): js.Any = js.native
-  /**
-    * Fires when an error occurs during object loading.
-    * @param ev The event.
-    */
-  def onerror(ev: ErrorEvent): js.Any = js.native
-  /**
-    * Fires when the object receives focus.
-    * @param ev The event.
-    */
-  def onfocus(ev: FocusEvent): js.Any = js.native
-  def onfullscreenchange(ev: Event): js.Any = js.native
-  def onfullscreenerror(ev: Event): js.Any = js.native
-  def oninput(ev: Event): js.Any = js.native
-  def oninvalid(ev: Event): js.Any = js.native
-  /**
-    * Fires when the user presses a key.
-    * @param ev The keyboard event
-    */
-  def onkeydown(ev: KeyboardEvent): js.Any = js.native
-  /**
-    * Fires when the user presses an alphanumeric key.
-    * @param ev The event.
-    */
-  def onkeypress(ev: KeyboardEvent): js.Any = js.native
-  /**
-    * Fires when the user releases a key.
-    * @param ev The keyboard event
-    */
-  def onkeyup(ev: KeyboardEvent): js.Any = js.native
-  /**
-    * Fires immediately after the browser loads the object.
-    * @param ev The event.
-    */
-  def onload(ev: Event): js.Any = js.native
-  /**
-    * Occurs when media data is loaded at the current playback position.
-    * @param ev The event.
-    */
-  def onloadeddata(ev: Event): js.Any = js.native
-  /**
-    * Occurs when the duration and dimensions of the media have been determined.
-    * @param ev The event.
-    */
-  def onloadedmetadata(ev: Event): js.Any = js.native
-  /**
-    * Occurs when Internet Explorer begins looking for media data.
-    * @param ev The event.
-    */
-  def onloadstart(ev: Event): js.Any = js.native
-  /**
-    * Fires when the user clicks the object with either mouse button.
-    * @param ev The mouse event.
-    */
-  def onmousedown(ev: MouseEvent): js.Any = js.native
-  /**
-    * Fires when the user moves the mouse over the object.
-    * @param ev The mouse event.
-    */
-  def onmousemove(ev: MouseEvent): js.Any = js.native
-  /**
-    * Fires when the user moves the mouse pointer outside the boundaries of the object.
-    * @param ev The mouse event.
-    */
-  def onmouseout(ev: MouseEvent): js.Any = js.native
-  /**
-    * Fires when the user moves the mouse pointer into the object.
-    * @param ev The mouse event.
-    */
-  def onmouseover(ev: MouseEvent): js.Any = js.native
-  /**
-    * Fires when the user releases a mouse button while the mouse is over the object.
-    * @param ev The mouse event.
-    */
-  def onmouseup(ev: MouseEvent): js.Any = js.native
-  /**
-    * Fires when the wheel button is rotated.
-    * @param ev The mouse event
-    */
-  def onmousewheel(ev: WheelEvent): js.Any = js.native
-  def onmscontentzoom(ev: UIEvent): js.Any = js.native
-  def onmsgesturechange(ev: MSGestureEvent): js.Any = js.native
-  def onmsgesturedoubletap(ev: MSGestureEvent): js.Any = js.native
-  def onmsgestureend(ev: MSGestureEvent): js.Any = js.native
-  def onmsgesturehold(ev: MSGestureEvent): js.Any = js.native
-  def onmsgesturestart(ev: MSGestureEvent): js.Any = js.native
-  def onmsgesturetap(ev: MSGestureEvent): js.Any = js.native
-  def onmsinertiastart(ev: MSGestureEvent): js.Any = js.native
-  def onmsmanipulationstatechanged(ev: MSManipulationEvent): js.Any = js.native
-  def onmspointercancel(ev: MSPointerEvent): js.Any = js.native
-  def onmspointerdown(ev: MSPointerEvent): js.Any = js.native
-  def onmspointerenter(ev: MSPointerEvent): js.Any = js.native
-  def onmspointerleave(ev: MSPointerEvent): js.Any = js.native
-  def onmspointermove(ev: MSPointerEvent): js.Any = js.native
-  def onmspointerout(ev: MSPointerEvent): js.Any = js.native
-  def onmspointerover(ev: MSPointerEvent): js.Any = js.native
-  def onmspointerup(ev: MSPointerEvent): js.Any = js.native
-  /**
-    * Occurs when an item is removed from a Jump List of a webpage running in Site Mode.
-    * @param ev The event.
-    */
-  def onmssitemodejumplistitemremoved(ev: MSSiteModeEvent): js.Any = js.native
-  /**
-    * Occurs when a user clicks a button in a Thumbnail Toolbar of a webpage running in Site Mode.
-    * @param ev The event.
-    */
-  def onmsthumbnailclick(ev: MSSiteModeEvent): js.Any = js.native
-  /**
-    * Occurs when playback is paused.
-    * @param ev The event.
-    */
-  def onpause(ev: Event): js.Any = js.native
-  /**
-    * Occurs when the play method is requested.
-    * @param ev The event.
-    */
-  def onplay(ev: Event): js.Any = js.native
-  /**
-    * Occurs when the audio or video has started playing.
-    * @param ev The event.
-    */
-  def onplaying(ev: Event): js.Any = js.native
-  def onpointerlockchange(ev: Event): js.Any = js.native
-  def onpointerlockerror(ev: Event): js.Any = js.native
-  /**
-    * Occurs to indicate progress while downloading media data.
-    * @param ev The event.
-    */
-  def onprogress(ev: ProgressEvent): js.Any = js.native
-  /**
-    * Occurs when the playback rate is increased or decreased.
-    * @param ev The event.
-    */
-  def onratechange(ev: Event): js.Any = js.native
-  /**
-    * Fires when the state of the object has changed.
-    * @param ev The event
-    */
-  def onreadystatechange(ev: Event): js.Any = js.native
-  /**
-    * Fires when the user resets a form.
-    * @param ev The event.
-    */
-  def onreset(ev: Event): js.Any = js.native
-  /**
-    * Fires when the user repositions the scroll box in the scroll bar on the object.
-    * @param ev The event.
-    */
-  def onscroll(ev: UIEvent): js.Any = js.native
-  /**
-    * Occurs when the seek operation ends.
-    * @param ev The event.
-    */
-  def onseeked(ev: Event): js.Any = js.native
-  /**
-    * Occurs when the current playback position is moved.
-    * @param ev The event.
-    */
-  def onseeking(ev: Event): js.Any = js.native
-  /**
-    * Fires when the current selection changes.
-    * @param ev The event.
-    */
-  def onselect(ev: UIEvent): js.Any = js.native
-  /**
-    * Fires when the selection state of a document changes.
-    * @param ev The event.
-    */
-  def onselectionchange(ev: Event): js.Any = js.native
-  def onselectstart(ev: Event): js.Any = js.native
-  /**
-    * Occurs when the download has stopped.
-    * @param ev The event.
-    */
-  def onstalled(ev: Event): js.Any = js.native
-  /**
-    * Fires when the user clicks the Stop button or leaves the Web page.
-    * @param ev The event.
-    */
-  def onstop(ev: Event): js.Any = js.native
-  def onsubmit(ev: Event): js.Any = js.native
-  /**
-    * Occurs if the load operation has been intentionally halted.
-    * @param ev The event.
-    */
-  def onsuspend(ev: Event): js.Any = js.native
-  /**
-    * Occurs to indicate the current playback position.
-    * @param ev The event.
-    */
-  def ontimeupdate(ev: Event): js.Any = js.native
-  def ontouchcancel(ev: TouchEvent): js.Any = js.native
-  def ontouchend(ev: TouchEvent): js.Any = js.native
-  def ontouchmove(ev: TouchEvent): js.Any = js.native
-  def ontouchstart(ev: TouchEvent): js.Any = js.native
-  /**
-    * Occurs when the volume is changed, or playback is muted or unmuted.
-    * @param ev The event.
-    */
-  def onvolumechange(ev: Event): js.Any = js.native
-  /**
-    * Occurs when playback stops because the next frame of a video resource is not available.
-    * @param ev The event.
-    */
-  def onwaiting(ev: Event): js.Any = js.native
-  def onwebkitfullscreenchange(ev: Event): js.Any = js.native
-  def onwebkitfullscreenerror(ev: Event): js.Any = js.native
+  def onvisibilitychange(ev: Event): js.Any = js.native
   /**
     * Opens a new window and loads a document specified by a given URL. Also, opens a new window that uses the url parameter and the name parameter to collect the output of the write method and the writeln method.
     * @param url Specifies a MIME type for the document.
@@ -3027,277 +3253,244 @@ trait Document
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_MSContentZoom(`type`: MSContentZoom, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
+  def removeEventListener_MSContentZoom(`type`: MSContentZoom, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSContentZoom(
     `type`: MSContentZoom,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSContentZoom(
     `type`: MSContentZoom,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_MSGestureChange(
-    `type`: MSGestureChange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _]
-  ): Unit = js.native
+  def removeEventListener_MSGestureChange(`type`: MSGestureChange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSGestureChange(
     `type`: MSGestureChange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSGestureChange(
     `type`: MSGestureChange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_MSGestureDoubleTap(
-    `type`: MSGestureDoubleTap,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _]
-  ): Unit = js.native
+  def removeEventListener_MSGestureDoubleTap(`type`: MSGestureDoubleTap, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSGestureDoubleTap(
     `type`: MSGestureDoubleTap,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSGestureDoubleTap(
     `type`: MSGestureDoubleTap,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_MSGestureEnd(`type`: MSGestureEnd, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _]): Unit = js.native
+  def removeEventListener_MSGestureEnd(`type`: MSGestureEnd, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSGestureEnd(
     `type`: MSGestureEnd,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSGestureEnd(
     `type`: MSGestureEnd,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_MSGestureHold(
-    `type`: MSGestureHold,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _]
-  ): Unit = js.native
+  def removeEventListener_MSGestureHold(`type`: MSGestureHold, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSGestureHold(
     `type`: MSGestureHold,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSGestureHold(
     `type`: MSGestureHold,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_MSGestureStart(
-    `type`: MSGestureStart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _]
-  ): Unit = js.native
+  def removeEventListener_MSGestureStart(`type`: MSGestureStart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSGestureStart(
     `type`: MSGestureStart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSGestureStart(
     `type`: MSGestureStart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_MSGestureTap(`type`: MSGestureTap, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _]): Unit = js.native
+  def removeEventListener_MSGestureTap(`type`: MSGestureTap, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSGestureTap(
     `type`: MSGestureTap,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSGestureTap(
     `type`: MSGestureTap,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_MSInertiaStart(
-    `type`: MSInertiaStart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _]
-  ): Unit = js.native
+  def removeEventListener_MSInertiaStart(`type`: MSInertiaStart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSInertiaStart(
     `type`: MSInertiaStart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSInertiaStart(
     `type`: MSInertiaStart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSManipulationStateChanged(
     `type`: MSManipulationStateChanged,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSManipulationEvent, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSManipulationStateChanged(
     `type`: MSManipulationStateChanged,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSManipulationEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSManipulationStateChanged(
     `type`: MSManipulationStateChanged,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSManipulationEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_MSPointerCancel(
-    `type`: MSPointerCancel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]
-  ): Unit = js.native
+  def removeEventListener_MSPointerCancel(`type`: MSPointerCancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSPointerCancel(
     `type`: MSPointerCancel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSPointerCancel(
     `type`: MSPointerCancel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_MSPointerDown(
-    `type`: MSPointerDown,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]
-  ): Unit = js.native
+  def removeEventListener_MSPointerDown(`type`: MSPointerDown, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSPointerDown(
     `type`: MSPointerDown,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSPointerDown(
     `type`: MSPointerDown,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_MSPointerEnter(
-    `type`: MSPointerEnter,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]
-  ): Unit = js.native
+  def removeEventListener_MSPointerEnter(`type`: MSPointerEnter, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSPointerEnter(
     `type`: MSPointerEnter,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSPointerEnter(
     `type`: MSPointerEnter,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_MSPointerLeave(
-    `type`: MSPointerLeave,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]
-  ): Unit = js.native
+  def removeEventListener_MSPointerLeave(`type`: MSPointerLeave, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSPointerLeave(
     `type`: MSPointerLeave,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSPointerLeave(
     `type`: MSPointerLeave,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_MSPointerMove(
-    `type`: MSPointerMove,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]
-  ): Unit = js.native
+  def removeEventListener_MSPointerMove(`type`: MSPointerMove, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSPointerMove(
     `type`: MSPointerMove,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSPointerMove(
     `type`: MSPointerMove,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_MSPointerOut(`type`: MSPointerOut, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]): Unit = js.native
+  def removeEventListener_MSPointerOut(`type`: MSPointerOut, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSPointerOut(
     `type`: MSPointerOut,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSPointerOut(
     `type`: MSPointerOut,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_MSPointerOver(
-    `type`: MSPointerOver,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]
-  ): Unit = js.native
+  def removeEventListener_MSPointerOver(`type`: MSPointerOver, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSPointerOver(
     `type`: MSPointerOver,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSPointerOver(
     `type`: MSPointerOver,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_MSPointerUp(`type`: MSPointerUp, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]): Unit = js.native
+  def removeEventListener_MSPointerUp(`type`: MSPointerUp, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSPointerUp(
     `type`: MSPointerUp,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSPointerUp(
     `type`: MSPointerUp,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
@@ -3315,45 +3508,45 @@ trait Document
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_activate(`type`: activate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
+  def removeEventListener_activate(`type`: activate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_activate(
     `type`: activate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_activate(
     `type`: activate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_beforeactivate(`type`: beforeactivate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
+  def removeEventListener_beforeactivate(`type`: beforeactivate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_beforeactivate(
     `type`: beforeactivate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_beforeactivate(
     `type`: beforeactivate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_beforedeactivate(`type`: beforedeactivate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
+  def removeEventListener_beforedeactivate(`type`: beforedeactivate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_beforedeactivate(
     `type`: beforedeactivate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_beforedeactivate(
     `type`: beforedeactivate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
@@ -3455,17 +3648,17 @@ trait Document
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_deactivate(`type`: deactivate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
+  def removeEventListener_deactivate(`type`: deactivate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_deactivate(
     `type`: deactivate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_deactivate(
     `type`: deactivate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
@@ -3595,17 +3788,17 @@ trait Document
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_ended(`type`: ended, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _]): Unit = js.native
+  def removeEventListener_ended(`type`: ended, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_ended(
     `type`: ended,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_ended(
     `type`: ended,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
@@ -3877,35 +4070,32 @@ trait Document
   @JSName("removeEventListener")
   def removeEventListener_mssitemodejumplistitemremoved(
     `type`: mssitemodejumplistitemremoved,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSSiteModeEvent, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_mssitemodejumplistitemremoved(
     `type`: mssitemodejumplistitemremoved,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSSiteModeEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_mssitemodejumplistitemremoved(
     `type`: mssitemodejumplistitemremoved,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSSiteModeEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_msthumbnailclick(
-    `type`: msthumbnailclick,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSSiteModeEvent, _]
-  ): Unit = js.native
+  def removeEventListener_msthumbnailclick(`type`: msthumbnailclick, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_msthumbnailclick(
     `type`: msthumbnailclick,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSSiteModeEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_msthumbnailclick(
     `type`: msthumbnailclick,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSSiteModeEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
@@ -4189,59 +4379,59 @@ trait Document
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_touchcancel(`type`: touchcancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
+  def removeEventListener_touchcancel(`type`: touchcancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_touchcancel(
     `type`: touchcancel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_touchcancel(
     `type`: touchcancel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_touchend(`type`: touchend, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
+  def removeEventListener_touchend(`type`: touchend, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_touchend(
     `type`: touchend,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_touchend(
     `type`: touchend,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_touchmove(`type`: touchmove, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
+  def removeEventListener_touchmove(`type`: touchmove, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_touchmove(
     `type`: touchmove,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_touchmove(
     `type`: touchmove,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_touchstart(`type`: touchstart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
+  def removeEventListener_touchstart(`type`: touchstart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_touchstart(
     `type`: touchstart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_touchstart(
     `type`: touchstart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
@@ -4303,10 +4493,6 @@ trait Document
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
-  /**
-    * Allows updating the print settings for the page.
-    */
-  def updateSettings(): Unit = js.native
   def webkitCancelFullScreen(): Unit = js.native
   def webkitExitFullscreen(): Unit = js.native
   /**

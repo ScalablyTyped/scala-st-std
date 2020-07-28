@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait DocumentOrShadowRoot extends js.Object {
   val activeElement: Element | Null
-  val stylesheets: StyleSheetList
+  val styleSheets: StyleSheetList
   def elementFromPoint(x: Double, y: Double): Element | Null
   def elementsFromPoint(x: Double, y: Double): js.Array[Element]
   def getSelection(): Selection | Null
@@ -18,9 +18,9 @@ object DocumentOrShadowRoot {
     elementFromPoint: (Double, Double) => Element | Null,
     elementsFromPoint: (Double, Double) => js.Array[Element],
     getSelection: () => Selection | Null,
-    stylesheets: StyleSheetList
+    styleSheets: StyleSheetList
   ): DocumentOrShadowRoot = {
-    val __obj = js.Dynamic.literal(elementFromPoint = js.Any.fromFunction2(elementFromPoint), elementsFromPoint = js.Any.fromFunction2(elementsFromPoint), getSelection = js.Any.fromFunction0(getSelection), stylesheets = stylesheets.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(elementFromPoint = js.Any.fromFunction2(elementFromPoint), elementsFromPoint = js.Any.fromFunction2(elementsFromPoint), getSelection = js.Any.fromFunction0(getSelection), styleSheets = styleSheets.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentOrShadowRoot]
   }
   @scala.inline
@@ -41,7 +41,7 @@ object DocumentOrShadowRoot {
     @scala.inline
     def setGetSelection(value: () => Selection | Null): Self = this.set("getSelection", js.Any.fromFunction0(value))
     @scala.inline
-    def setStylesheets(value: StyleSheetList): Self = this.set("stylesheets", value.asInstanceOf[js.Any])
+    def setStyleSheets(value: StyleSheetList): Self = this.set("styleSheets", value.asInstanceOf[js.Any])
     @scala.inline
     def setActiveElement(value: Element): Self = this.set("activeElement", value.asInstanceOf[js.Any])
     @scala.inline

@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait HashChangeEventInit extends EventInit {
-  var newURL: js.UndefOr[java.lang.String | Null] = js.undefined
-  var oldURL: js.UndefOr[java.lang.String | Null] = js.undefined
+  var newURL: js.UndefOr[java.lang.String] = js.undefined
+  var oldURL: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object HashChangeEventInit {
@@ -31,13 +31,9 @@ object HashChangeEventInit {
     @scala.inline
     def deleteNewURL: Self = this.set("newURL", js.undefined)
     @scala.inline
-    def setNewURLNull: Self = this.set("newURL", null)
-    @scala.inline
     def setOldURL(value: java.lang.String): Self = this.set("oldURL", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteOldURL: Self = this.set("oldURL", js.undefined)
-    @scala.inline
-    def setOldURLNull: Self = this.set("oldURL", null)
   }
   
 }

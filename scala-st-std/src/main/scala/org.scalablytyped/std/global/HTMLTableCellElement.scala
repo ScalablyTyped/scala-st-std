@@ -9,20 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class HTMLTableCellElement ()
   extends org.scalablytyped.std.HTMLTableCellElement {
-  /**
-    * Sets or retrieves a value that you can use to implement your own ch functionality for the object.
-    */
-  /* CompleteClass */
-  override var ch: java.lang.String = js.native
-  /**
-    * Sets or retrieves a value that you can use to implement your own chOff functionality for the object.
-    */
-  /* CompleteClass */
-  override var chOff: java.lang.String = js.native
   /* CompleteClass */
   override val childElementCount: Double = js.native
-  /* CompleteClass */
-  override val children: org.scalablytyped.std.HTMLCollection = js.native
   /* CompleteClass */
   override val firstElementChild: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
@@ -31,11 +19,8 @@ class HTMLTableCellElement ()
   override val nextElementSibling: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
   override val previousElementSibling: org.scalablytyped.std.Element | Null = js.native
-  /**
-    * Sets or retrieves how text and other content are vertically aligned within the object that contains them.
-    */
   /* CompleteClass */
-  override var vAlign: java.lang.String = js.native
+  override val style: org.scalablytyped.std.CSSStyleDeclaration = js.native
   /* CompleteClass */
   override def remove(): Unit = js.native
 }

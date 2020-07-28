@@ -5,31 +5,31 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ElementEventMap extends GlobalEventHandlersEventMap {
-  var MSGestureChange: MSGestureEvent
-  var MSGestureDoubleTap: MSGestureEvent
-  var MSGestureEnd: MSGestureEvent
-  var MSGestureHold: MSGestureEvent
-  var MSGestureStart: MSGestureEvent
-  var MSGestureTap: MSGestureEvent
-  var MSGotPointerCapture: MSPointerEvent
-  var MSInertiaStart: MSGestureEvent
-  var MSLostPointerCapture: MSPointerEvent
-  var MSPointerCancel: MSPointerEvent
-  var MSPointerDown: MSPointerEvent
-  var MSPointerEnter: MSPointerEvent
-  var MSPointerLeave: MSPointerEvent
-  var MSPointerMove: MSPointerEvent
-  var MSPointerOut: MSPointerEvent
-  var MSPointerOver: MSPointerEvent
-  var MSPointerUp: MSPointerEvent
+  var MSGestureChange: Event
+  var MSGestureDoubleTap: Event
+  var MSGestureEnd: Event
+  var MSGestureHold: Event
+  var MSGestureStart: Event
+  var MSGestureTap: Event
+  var MSGotPointerCapture: Event
+  var MSInertiaStart: Event
+  var MSLostPointerCapture: Event
+  var MSPointerCancel: Event
+  var MSPointerDown: Event
+  var MSPointerEnter: Event
+  var MSPointerLeave: Event
+  var MSPointerMove: Event
+  var MSPointerOut: Event
+  var MSPointerOver: Event
+  var MSPointerUp: Event
   var ariarequest: Event
   var command: Event
   var gotpointercapture: PointerEvent
   var lostpointercapture: PointerEvent
-  var touchcancel: TouchEvent
-  var touchend: TouchEvent
-  var touchmove: TouchEvent
-  var touchstart: TouchEvent
+  var touchcancel: Event
+  var touchend: Event
+  var touchmove: Event
+  var touchstart: Event
   var webkitfullscreenchange: Event
   var webkitfullscreenerror: Event
 }
@@ -37,23 +37,23 @@ trait ElementEventMap extends GlobalEventHandlersEventMap {
 object ElementEventMap {
   @scala.inline
   def apply(
-    MSGestureChange: MSGestureEvent,
-    MSGestureDoubleTap: MSGestureEvent,
-    MSGestureEnd: MSGestureEvent,
-    MSGestureHold: MSGestureEvent,
-    MSGestureStart: MSGestureEvent,
-    MSGestureTap: MSGestureEvent,
-    MSGotPointerCapture: MSPointerEvent,
-    MSInertiaStart: MSGestureEvent,
-    MSLostPointerCapture: MSPointerEvent,
-    MSPointerCancel: MSPointerEvent,
-    MSPointerDown: MSPointerEvent,
-    MSPointerEnter: MSPointerEvent,
-    MSPointerLeave: MSPointerEvent,
-    MSPointerMove: MSPointerEvent,
-    MSPointerOut: MSPointerEvent,
-    MSPointerOver: MSPointerEvent,
-    MSPointerUp: MSPointerEvent,
+    MSGestureChange: Event,
+    MSGestureDoubleTap: Event,
+    MSGestureEnd: Event,
+    MSGestureHold: Event,
+    MSGestureStart: Event,
+    MSGestureTap: Event,
+    MSGotPointerCapture: Event,
+    MSInertiaStart: Event,
+    MSLostPointerCapture: Event,
+    MSPointerCancel: Event,
+    MSPointerDown: Event,
+    MSPointerEnter: Event,
+    MSPointerLeave: Event,
+    MSPointerMove: Event,
+    MSPointerOut: Event,
+    MSPointerOver: Event,
+    MSPointerUp: Event,
     ariarequest: Event,
     command: Event,
     gotpointercapture: PointerEvent,
@@ -66,10 +66,10 @@ object ElementEventMap {
     pointerout: PointerEvent,
     pointerover: PointerEvent,
     pointerup: PointerEvent,
-    touchcancel: TouchEvent,
-    touchend: TouchEvent,
-    touchmove: TouchEvent,
-    touchstart: TouchEvent,
+    touchcancel: Event,
+    touchend: Event,
+    touchmove: Event,
+    touchstart: Event,
     webkitfullscreenchange: Event,
     webkitfullscreenerror: Event,
     wheel: WheelEvent
@@ -89,39 +89,39 @@ object ElementEventMap {
         x
     }
     @scala.inline
-    def setMSGestureChange(value: MSGestureEvent): Self = this.set("MSGestureChange", value.asInstanceOf[js.Any])
+    def setMSGestureChange(value: Event): Self = this.set("MSGestureChange", value.asInstanceOf[js.Any])
     @scala.inline
-    def setMSGestureDoubleTap(value: MSGestureEvent): Self = this.set("MSGestureDoubleTap", value.asInstanceOf[js.Any])
+    def setMSGestureDoubleTap(value: Event): Self = this.set("MSGestureDoubleTap", value.asInstanceOf[js.Any])
     @scala.inline
-    def setMSGestureEnd(value: MSGestureEvent): Self = this.set("MSGestureEnd", value.asInstanceOf[js.Any])
+    def setMSGestureEnd(value: Event): Self = this.set("MSGestureEnd", value.asInstanceOf[js.Any])
     @scala.inline
-    def setMSGestureHold(value: MSGestureEvent): Self = this.set("MSGestureHold", value.asInstanceOf[js.Any])
+    def setMSGestureHold(value: Event): Self = this.set("MSGestureHold", value.asInstanceOf[js.Any])
     @scala.inline
-    def setMSGestureStart(value: MSGestureEvent): Self = this.set("MSGestureStart", value.asInstanceOf[js.Any])
+    def setMSGestureStart(value: Event): Self = this.set("MSGestureStart", value.asInstanceOf[js.Any])
     @scala.inline
-    def setMSGestureTap(value: MSGestureEvent): Self = this.set("MSGestureTap", value.asInstanceOf[js.Any])
+    def setMSGestureTap(value: Event): Self = this.set("MSGestureTap", value.asInstanceOf[js.Any])
     @scala.inline
-    def setMSGotPointerCapture(value: MSPointerEvent): Self = this.set("MSGotPointerCapture", value.asInstanceOf[js.Any])
+    def setMSGotPointerCapture(value: Event): Self = this.set("MSGotPointerCapture", value.asInstanceOf[js.Any])
     @scala.inline
-    def setMSInertiaStart(value: MSGestureEvent): Self = this.set("MSInertiaStart", value.asInstanceOf[js.Any])
+    def setMSInertiaStart(value: Event): Self = this.set("MSInertiaStart", value.asInstanceOf[js.Any])
     @scala.inline
-    def setMSLostPointerCapture(value: MSPointerEvent): Self = this.set("MSLostPointerCapture", value.asInstanceOf[js.Any])
+    def setMSLostPointerCapture(value: Event): Self = this.set("MSLostPointerCapture", value.asInstanceOf[js.Any])
     @scala.inline
-    def setMSPointerCancel(value: MSPointerEvent): Self = this.set("MSPointerCancel", value.asInstanceOf[js.Any])
+    def setMSPointerCancel(value: Event): Self = this.set("MSPointerCancel", value.asInstanceOf[js.Any])
     @scala.inline
-    def setMSPointerDown(value: MSPointerEvent): Self = this.set("MSPointerDown", value.asInstanceOf[js.Any])
+    def setMSPointerDown(value: Event): Self = this.set("MSPointerDown", value.asInstanceOf[js.Any])
     @scala.inline
-    def setMSPointerEnter(value: MSPointerEvent): Self = this.set("MSPointerEnter", value.asInstanceOf[js.Any])
+    def setMSPointerEnter(value: Event): Self = this.set("MSPointerEnter", value.asInstanceOf[js.Any])
     @scala.inline
-    def setMSPointerLeave(value: MSPointerEvent): Self = this.set("MSPointerLeave", value.asInstanceOf[js.Any])
+    def setMSPointerLeave(value: Event): Self = this.set("MSPointerLeave", value.asInstanceOf[js.Any])
     @scala.inline
-    def setMSPointerMove(value: MSPointerEvent): Self = this.set("MSPointerMove", value.asInstanceOf[js.Any])
+    def setMSPointerMove(value: Event): Self = this.set("MSPointerMove", value.asInstanceOf[js.Any])
     @scala.inline
-    def setMSPointerOut(value: MSPointerEvent): Self = this.set("MSPointerOut", value.asInstanceOf[js.Any])
+    def setMSPointerOut(value: Event): Self = this.set("MSPointerOut", value.asInstanceOf[js.Any])
     @scala.inline
-    def setMSPointerOver(value: MSPointerEvent): Self = this.set("MSPointerOver", value.asInstanceOf[js.Any])
+    def setMSPointerOver(value: Event): Self = this.set("MSPointerOver", value.asInstanceOf[js.Any])
     @scala.inline
-    def setMSPointerUp(value: MSPointerEvent): Self = this.set("MSPointerUp", value.asInstanceOf[js.Any])
+    def setMSPointerUp(value: Event): Self = this.set("MSPointerUp", value.asInstanceOf[js.Any])
     @scala.inline
     def setAriarequest(value: Event): Self = this.set("ariarequest", value.asInstanceOf[js.Any])
     @scala.inline
@@ -131,13 +131,13 @@ object ElementEventMap {
     @scala.inline
     def setLostpointercapture(value: PointerEvent): Self = this.set("lostpointercapture", value.asInstanceOf[js.Any])
     @scala.inline
-    def setTouchcancel(value: TouchEvent): Self = this.set("touchcancel", value.asInstanceOf[js.Any])
+    def setTouchcancel(value: Event): Self = this.set("touchcancel", value.asInstanceOf[js.Any])
     @scala.inline
-    def setTouchend(value: TouchEvent): Self = this.set("touchend", value.asInstanceOf[js.Any])
+    def setTouchend(value: Event): Self = this.set("touchend", value.asInstanceOf[js.Any])
     @scala.inline
-    def setTouchmove(value: TouchEvent): Self = this.set("touchmove", value.asInstanceOf[js.Any])
+    def setTouchmove(value: Event): Self = this.set("touchmove", value.asInstanceOf[js.Any])
     @scala.inline
-    def setTouchstart(value: TouchEvent): Self = this.set("touchstart", value.asInstanceOf[js.Any])
+    def setTouchstart(value: Event): Self = this.set("touchstart", value.asInstanceOf[js.Any])
     @scala.inline
     def setWebkitfullscreenchange(value: Event): Self = this.set("webkitfullscreenchange", value.asInstanceOf[js.Any])
     @scala.inline

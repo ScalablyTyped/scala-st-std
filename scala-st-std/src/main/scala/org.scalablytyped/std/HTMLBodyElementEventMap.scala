@@ -4,54 +4,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait HTMLBodyElementEventMap extends HTMLElementEventMap {
-  var afterprint: Event
-  var beforeprint: Event
-  var beforeunload: BeforeUnloadEvent
-  var hashchange: HashChangeEvent
-  var message: MessageEvent
-  var offline: Event
-  var online: Event
+trait HTMLBodyElementEventMap
+  extends HTMLElementEventMap
+     with WindowEventHandlersEventMap {
   var orientationchange: Event
-  var pagehide: PageTransitionEvent
-  var pageshow: PageTransitionEvent
-  var popstate: PopStateEvent
   var resize: UIEvent
-  var storage: StorageEvent
-  var unload: Event
 }
 
 object HTMLBodyElementEventMap {
   @scala.inline
   def apply(
-    MSContentZoom: UIEvent,
-    MSGestureChange: MSGestureEvent,
-    MSGestureDoubleTap: MSGestureEvent,
-    MSGestureEnd: MSGestureEvent,
-    MSGestureHold: MSGestureEvent,
-    MSGestureStart: MSGestureEvent,
-    MSGestureTap: MSGestureEvent,
-    MSGotPointerCapture: MSPointerEvent,
-    MSInertiaStart: MSGestureEvent,
-    MSLostPointerCapture: MSPointerEvent,
-    MSManipulationStateChanged: MSManipulationEvent,
-    MSPointerCancel: MSPointerEvent,
-    MSPointerDown: MSPointerEvent,
-    MSPointerEnter: MSPointerEvent,
-    MSPointerLeave: MSPointerEvent,
-    MSPointerMove: MSPointerEvent,
-    MSPointerOut: MSPointerEvent,
-    MSPointerOver: MSPointerEvent,
-    MSPointerUp: MSPointerEvent,
+    MSContentZoom: Event,
+    MSGestureChange: Event,
+    MSGestureDoubleTap: Event,
+    MSGestureEnd: Event,
+    MSGestureHold: Event,
+    MSGestureStart: Event,
+    MSGestureTap: Event,
+    MSGotPointerCapture: Event,
+    MSInertiaStart: Event,
+    MSLostPointerCapture: Event,
+    MSManipulationStateChanged: Event,
+    MSPointerCancel: Event,
+    MSPointerDown: Event,
+    MSPointerEnter: Event,
+    MSPointerLeave: Event,
+    MSPointerMove: Event,
+    MSPointerOut: Event,
+    MSPointerOver: Event,
+    MSPointerUp: Event,
     abort: UIEvent,
-    activate: UIEvent,
+    activate: Event,
     afterprint: Event,
     ariarequest: Event,
-    beforeactivate: UIEvent,
-    beforecopy: ClipboardEvent,
-    beforecut: ClipboardEvent,
-    beforedeactivate: UIEvent,
-    beforepaste: ClipboardEvent,
+    beforeactivate: Event,
+    beforecopy: Event,
+    beforecut: Event,
+    beforedeactivate: Event,
+    beforepaste: Event,
     beforeprint: Event,
     beforeunload: BeforeUnloadEvent,
     blur: FocusEvent,
@@ -65,7 +55,7 @@ object HTMLBodyElementEventMap {
     cuechange: Event,
     cut: ClipboardEvent,
     dblclick: MouseEvent,
-    deactivate: UIEvent,
+    deactivate: Event,
     drag: DragEvent,
     dragend: DragEvent,
     dragenter: DragEvent,
@@ -75,7 +65,7 @@ object HTMLBodyElementEventMap {
     drop: DragEvent,
     durationchange: Event,
     emptied: Event,
-    ended: MediaStreamErrorEvent,
+    ended: Event,
     error: ErrorEvent,
     focus: FocusEvent,
     gotpointercapture: PointerEvent,
@@ -131,10 +121,10 @@ object HTMLBodyElementEventMap {
     submit: Event,
     suspend: Event,
     timeupdate: Event,
-    touchcancel: TouchEvent,
-    touchend: TouchEvent,
-    touchmove: TouchEvent,
-    touchstart: TouchEvent,
+    touchcancel: Event,
+    touchend: Event,
+    touchmove: Event,
+    touchstart: Event,
     unload: Event,
     volumechange: Event,
     waiting: Event,
@@ -157,33 +147,9 @@ object HTMLBodyElementEventMap {
         x
     }
     @scala.inline
-    def setAfterprint(value: Event): Self = this.set("afterprint", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setBeforeprint(value: Event): Self = this.set("beforeprint", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setBeforeunload(value: BeforeUnloadEvent): Self = this.set("beforeunload", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setHashchange(value: HashChangeEvent): Self = this.set("hashchange", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setMessage(value: MessageEvent): Self = this.set("message", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setOffline(value: Event): Self = this.set("offline", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setOnline(value: Event): Self = this.set("online", value.asInstanceOf[js.Any])
-    @scala.inline
     def setOrientationchange(value: Event): Self = this.set("orientationchange", value.asInstanceOf[js.Any])
     @scala.inline
-    def setPagehide(value: PageTransitionEvent): Self = this.set("pagehide", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setPageshow(value: PageTransitionEvent): Self = this.set("pageshow", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setPopstate(value: PopStateEvent): Self = this.set("popstate", value.asInstanceOf[js.Any])
-    @scala.inline
     def setResize(value: UIEvent): Self = this.set("resize", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setStorage(value: StorageEvent): Self = this.set("storage", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setUnload(value: Event): Self = this.set("unload", value.asInstanceOf[js.Any])
   }
   
 }

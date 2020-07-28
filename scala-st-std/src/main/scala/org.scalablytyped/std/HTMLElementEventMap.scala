@@ -5,15 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait HTMLElementEventMap extends ElementEventMap {
-  var MSContentZoom: UIEvent
-  var MSManipulationStateChanged: MSManipulationEvent
+  var MSContentZoom: Event
+  var MSManipulationStateChanged: Event
   var abort: UIEvent
-  var activate: UIEvent
-  var beforeactivate: UIEvent
-  var beforecopy: ClipboardEvent
-  var beforecut: ClipboardEvent
-  var beforedeactivate: UIEvent
-  var beforepaste: ClipboardEvent
+  var activate: Event
+  var beforeactivate: Event
+  var beforecopy: Event
+  var beforecut: Event
+  var beforedeactivate: Event
+  var beforepaste: Event
   var blur: FocusEvent
   var canplay: Event
   var canplaythrough: Event
@@ -24,7 +24,7 @@ trait HTMLElementEventMap extends ElementEventMap {
   var cuechange: Event
   var cut: ClipboardEvent
   var dblclick: MouseEvent
-  var deactivate: UIEvent
+  var deactivate: Event
   var drag: DragEvent
   var dragend: DragEvent
   var dragenter: DragEvent
@@ -34,7 +34,7 @@ trait HTMLElementEventMap extends ElementEventMap {
   var drop: DragEvent
   var durationchange: Event
   var emptied: Event
-  var ended: MediaStreamErrorEvent
+  var ended: Event
   var error: ErrorEvent
   var focus: FocusEvent
   var input: Event
@@ -77,33 +77,33 @@ trait HTMLElementEventMap extends ElementEventMap {
 object HTMLElementEventMap {
   @scala.inline
   def apply(
-    MSContentZoom: UIEvent,
-    MSGestureChange: MSGestureEvent,
-    MSGestureDoubleTap: MSGestureEvent,
-    MSGestureEnd: MSGestureEvent,
-    MSGestureHold: MSGestureEvent,
-    MSGestureStart: MSGestureEvent,
-    MSGestureTap: MSGestureEvent,
-    MSGotPointerCapture: MSPointerEvent,
-    MSInertiaStart: MSGestureEvent,
-    MSLostPointerCapture: MSPointerEvent,
-    MSManipulationStateChanged: MSManipulationEvent,
-    MSPointerCancel: MSPointerEvent,
-    MSPointerDown: MSPointerEvent,
-    MSPointerEnter: MSPointerEvent,
-    MSPointerLeave: MSPointerEvent,
-    MSPointerMove: MSPointerEvent,
-    MSPointerOut: MSPointerEvent,
-    MSPointerOver: MSPointerEvent,
-    MSPointerUp: MSPointerEvent,
+    MSContentZoom: Event,
+    MSGestureChange: Event,
+    MSGestureDoubleTap: Event,
+    MSGestureEnd: Event,
+    MSGestureHold: Event,
+    MSGestureStart: Event,
+    MSGestureTap: Event,
+    MSGotPointerCapture: Event,
+    MSInertiaStart: Event,
+    MSLostPointerCapture: Event,
+    MSManipulationStateChanged: Event,
+    MSPointerCancel: Event,
+    MSPointerDown: Event,
+    MSPointerEnter: Event,
+    MSPointerLeave: Event,
+    MSPointerMove: Event,
+    MSPointerOut: Event,
+    MSPointerOver: Event,
+    MSPointerUp: Event,
     abort: UIEvent,
-    activate: UIEvent,
+    activate: Event,
     ariarequest: Event,
-    beforeactivate: UIEvent,
-    beforecopy: ClipboardEvent,
-    beforecut: ClipboardEvent,
-    beforedeactivate: UIEvent,
-    beforepaste: ClipboardEvent,
+    beforeactivate: Event,
+    beforecopy: Event,
+    beforecut: Event,
+    beforedeactivate: Event,
+    beforepaste: Event,
     blur: FocusEvent,
     canplay: Event,
     canplaythrough: Event,
@@ -115,7 +115,7 @@ object HTMLElementEventMap {
     cuechange: Event,
     cut: ClipboardEvent,
     dblclick: MouseEvent,
-    deactivate: UIEvent,
+    deactivate: Event,
     drag: DragEvent,
     dragend: DragEvent,
     dragenter: DragEvent,
@@ -125,7 +125,7 @@ object HTMLElementEventMap {
     drop: DragEvent,
     durationchange: Event,
     emptied: Event,
-    ended: MediaStreamErrorEvent,
+    ended: Event,
     error: ErrorEvent,
     focus: FocusEvent,
     gotpointercapture: PointerEvent,
@@ -171,10 +171,10 @@ object HTMLElementEventMap {
     submit: Event,
     suspend: Event,
     timeupdate: Event,
-    touchcancel: TouchEvent,
-    touchend: TouchEvent,
-    touchmove: TouchEvent,
-    touchstart: TouchEvent,
+    touchcancel: Event,
+    touchend: Event,
+    touchmove: Event,
+    touchstart: Event,
     volumechange: Event,
     waiting: Event,
     webkitfullscreenchange: Event,
@@ -196,23 +196,23 @@ object HTMLElementEventMap {
         x
     }
     @scala.inline
-    def setMSContentZoom(value: UIEvent): Self = this.set("MSContentZoom", value.asInstanceOf[js.Any])
+    def setMSContentZoom(value: Event): Self = this.set("MSContentZoom", value.asInstanceOf[js.Any])
     @scala.inline
-    def setMSManipulationStateChanged(value: MSManipulationEvent): Self = this.set("MSManipulationStateChanged", value.asInstanceOf[js.Any])
+    def setMSManipulationStateChanged(value: Event): Self = this.set("MSManipulationStateChanged", value.asInstanceOf[js.Any])
     @scala.inline
     def setAbort(value: UIEvent): Self = this.set("abort", value.asInstanceOf[js.Any])
     @scala.inline
-    def setActivate(value: UIEvent): Self = this.set("activate", value.asInstanceOf[js.Any])
+    def setActivate(value: Event): Self = this.set("activate", value.asInstanceOf[js.Any])
     @scala.inline
-    def setBeforeactivate(value: UIEvent): Self = this.set("beforeactivate", value.asInstanceOf[js.Any])
+    def setBeforeactivate(value: Event): Self = this.set("beforeactivate", value.asInstanceOf[js.Any])
     @scala.inline
-    def setBeforecopy(value: ClipboardEvent): Self = this.set("beforecopy", value.asInstanceOf[js.Any])
+    def setBeforecopy(value: Event): Self = this.set("beforecopy", value.asInstanceOf[js.Any])
     @scala.inline
-    def setBeforecut(value: ClipboardEvent): Self = this.set("beforecut", value.asInstanceOf[js.Any])
+    def setBeforecut(value: Event): Self = this.set("beforecut", value.asInstanceOf[js.Any])
     @scala.inline
-    def setBeforedeactivate(value: UIEvent): Self = this.set("beforedeactivate", value.asInstanceOf[js.Any])
+    def setBeforedeactivate(value: Event): Self = this.set("beforedeactivate", value.asInstanceOf[js.Any])
     @scala.inline
-    def setBeforepaste(value: ClipboardEvent): Self = this.set("beforepaste", value.asInstanceOf[js.Any])
+    def setBeforepaste(value: Event): Self = this.set("beforepaste", value.asInstanceOf[js.Any])
     @scala.inline
     def setBlur(value: FocusEvent): Self = this.set("blur", value.asInstanceOf[js.Any])
     @scala.inline
@@ -234,7 +234,7 @@ object HTMLElementEventMap {
     @scala.inline
     def setDblclick(value: MouseEvent): Self = this.set("dblclick", value.asInstanceOf[js.Any])
     @scala.inline
-    def setDeactivate(value: UIEvent): Self = this.set("deactivate", value.asInstanceOf[js.Any])
+    def setDeactivate(value: Event): Self = this.set("deactivate", value.asInstanceOf[js.Any])
     @scala.inline
     def setDrag(value: DragEvent): Self = this.set("drag", value.asInstanceOf[js.Any])
     @scala.inline
@@ -254,7 +254,7 @@ object HTMLElementEventMap {
     @scala.inline
     def setEmptied(value: Event): Self = this.set("emptied", value.asInstanceOf[js.Any])
     @scala.inline
-    def setEnded(value: MediaStreamErrorEvent): Self = this.set("ended", value.asInstanceOf[js.Any])
+    def setEnded(value: Event): Self = this.set("ended", value.asInstanceOf[js.Any])
     @scala.inline
     def setError(value: ErrorEvent): Self = this.set("error", value.asInstanceOf[js.Any])
     @scala.inline

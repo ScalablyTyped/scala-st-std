@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NodeFilter extends js.Object {
-  def acceptNode(n: Node): Double
+  def acceptNode(node: Node): Double
 }
 
 object NodeFilter {

@@ -17,6 +17,13 @@ trait RTCPeerConnection extends EventTarget {
   val iceConnectionState: RTCIceConnectionState = js.native
   val iceGatheringState: RTCIceGatheringState = js.native
   val localDescription: RTCSessionDescription | Null = js.native
+  var onaddstream: (js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamEvent, _]) | Null = js.native
+  var onicecandidate: (js.ThisFunction1[/* this */ this.type, /* ev */ RTCPeerConnectionIceEvent, _]) | Null = js.native
+  var oniceconnectionstatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onicegatheringstatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onnegotiationneeded: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onremovestream: (js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamEvent, _]) | Null = js.native
+  var onsignalingstatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   val remoteDescription: RTCSessionDescription | Null = js.native
   val signalingState: RTCSignalingState = js.native
   @JSName("addEventListener")
@@ -130,47 +137,13 @@ trait RTCPeerConnection extends EventTarget {
     options: scala.Boolean
   ): Unit = js.native
   def addIceCandidate(candidate: RTCIceCandidate): js.Promise[Unit] = js.native
-  def addIceCandidate(
-    candidate: RTCIceCandidate,
-    successCallback: js.UndefOr[scala.Nothing],
-    failureCallback: RTCPeerConnectionErrorCallback
-  ): js.Promise[Unit] = js.native
-  def addIceCandidate(candidate: RTCIceCandidate, successCallback: VoidFunction): js.Promise[Unit] = js.native
-  def addIceCandidate(
-    candidate: RTCIceCandidate,
-    successCallback: VoidFunction,
-    failureCallback: RTCPeerConnectionErrorCallback
-  ): js.Promise[Unit] = js.native
+  def addIceCandidate(candidate: RTCIceCandidateInit): js.Promise[Unit] = js.native
   def addStream(stream: MediaStream): Unit = js.native
   def close(): Unit = js.native
-  def createAnswer(): js.Promise[RTCSessionDescription] = js.native
-  def createAnswer(successCallback: js.UndefOr[scala.Nothing], failureCallback: RTCPeerConnectionErrorCallback): js.Promise[RTCSessionDescription] = js.native
-  def createAnswer(successCallback: RTCSessionDescriptionCallback): js.Promise[RTCSessionDescription] = js.native
-  def createAnswer(successCallback: RTCSessionDescriptionCallback, failureCallback: RTCPeerConnectionErrorCallback): js.Promise[RTCSessionDescription] = js.native
-  def createOffer(): js.Promise[RTCSessionDescription] = js.native
-  def createOffer(
-    successCallback: js.UndefOr[scala.Nothing],
-    failureCallback: js.UndefOr[scala.Nothing],
-    options: RTCOfferOptions
-  ): js.Promise[RTCSessionDescription] = js.native
-  def createOffer(successCallback: js.UndefOr[scala.Nothing], failureCallback: RTCPeerConnectionErrorCallback): js.Promise[RTCSessionDescription] = js.native
-  def createOffer(
-    successCallback: js.UndefOr[scala.Nothing],
-    failureCallback: RTCPeerConnectionErrorCallback,
-    options: RTCOfferOptions
-  ): js.Promise[RTCSessionDescription] = js.native
-  def createOffer(successCallback: RTCSessionDescriptionCallback): js.Promise[RTCSessionDescription] = js.native
-  def createOffer(
-    successCallback: RTCSessionDescriptionCallback,
-    failureCallback: js.UndefOr[scala.Nothing],
-    options: RTCOfferOptions
-  ): js.Promise[RTCSessionDescription] = js.native
-  def createOffer(successCallback: RTCSessionDescriptionCallback, failureCallback: RTCPeerConnectionErrorCallback): js.Promise[RTCSessionDescription] = js.native
-  def createOffer(
-    successCallback: RTCSessionDescriptionCallback,
-    failureCallback: RTCPeerConnectionErrorCallback,
-    options: RTCOfferOptions
-  ): js.Promise[RTCSessionDescription] = js.native
+  def createAnswer(): js.Promise[RTCSessionDescriptionInit] = js.native
+  def createAnswer(options: RTCOfferOptions): js.Promise[RTCSessionDescriptionInit] = js.native
+  def createOffer(): js.Promise[RTCSessionDescriptionInit] = js.native
+  def createOffer(options: RTCOfferOptions): js.Promise[RTCSessionDescriptionInit] = js.native
   def getConfiguration(): RTCConfiguration = js.native
   def getLocalStreams(): js.Array[MediaStream] = js.native
   def getRemoteStreams(): js.Array[MediaStream] = js.native
@@ -195,13 +168,6 @@ trait RTCPeerConnection extends EventTarget {
   def getStats(selector: Null, successCallback: RTCStatsCallback): js.Promise[RTCStatsReport] = js.native
   def getStats(selector: Null, successCallback: RTCStatsCallback, failureCallback: RTCPeerConnectionErrorCallback): js.Promise[RTCStatsReport] = js.native
   def getStreamById(streamId: java.lang.String): MediaStream | Null = js.native
-  def onaddstream(ev: MediaStreamEvent): js.Any = js.native
-  def onicecandidate(ev: RTCPeerConnectionIceEvent): js.Any = js.native
-  def oniceconnectionstatechange(ev: Event): js.Any = js.native
-  def onicegatheringstatechange(ev: Event): js.Any = js.native
-  def onnegotiationneeded(ev: Event): js.Any = js.native
-  def onremovestream(ev: MediaStreamEvent): js.Any = js.native
-  def onsignalingstatechange(ev: Event): js.Any = js.native
   @JSName("removeEventListener")
   def removeEventListener_addstream(`type`: addstream, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamEvent, _]): Unit = js.native
   @JSName("removeEventListener")
@@ -313,29 +279,7 @@ trait RTCPeerConnection extends EventTarget {
     options: scala.Boolean
   ): Unit = js.native
   def removeStream(stream: MediaStream): Unit = js.native
-  def setLocalDescription(description: RTCSessionDescription): js.Promise[Unit] = js.native
-  def setLocalDescription(
-    description: RTCSessionDescription,
-    successCallback: js.UndefOr[scala.Nothing],
-    failureCallback: RTCPeerConnectionErrorCallback
-  ): js.Promise[Unit] = js.native
-  def setLocalDescription(description: RTCSessionDescription, successCallback: VoidFunction): js.Promise[Unit] = js.native
-  def setLocalDescription(
-    description: RTCSessionDescription,
-    successCallback: VoidFunction,
-    failureCallback: RTCPeerConnectionErrorCallback
-  ): js.Promise[Unit] = js.native
-  def setRemoteDescription(description: RTCSessionDescription): js.Promise[Unit] = js.native
-  def setRemoteDescription(
-    description: RTCSessionDescription,
-    successCallback: js.UndefOr[scala.Nothing],
-    failureCallback: RTCPeerConnectionErrorCallback
-  ): js.Promise[Unit] = js.native
-  def setRemoteDescription(description: RTCSessionDescription, successCallback: VoidFunction): js.Promise[Unit] = js.native
-  def setRemoteDescription(
-    description: RTCSessionDescription,
-    successCallback: VoidFunction,
-    failureCallback: RTCPeerConnectionErrorCallback
-  ): js.Promise[Unit] = js.native
+  def setLocalDescription(description: RTCSessionDescriptionInit): js.Promise[Unit] = js.native
+  def setRemoteDescription(description: RTCSessionDescriptionInit): js.Promise[Unit] = js.native
 }
 

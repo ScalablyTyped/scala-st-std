@@ -9,8 +9,9 @@ import scala.scalajs.js.annotation._
 trait ServiceWorkerRegistration extends EventTarget {
   val active: ServiceWorker | Null = js.native
   val installing: ServiceWorker | Null = js.native
+  var onupdatefound: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   val pushManager: PushManager = js.native
-  val scope: USVString = js.native
+  val scope: java.lang.String = js.native
   val sync: SyncManager = js.native
   val waiting: ServiceWorker | Null = js.native
   @JSName("addEventListener")
@@ -29,7 +30,6 @@ trait ServiceWorkerRegistration extends EventTarget {
   ): Unit = js.native
   def getNotifications(): js.Promise[js.Array[Notification]] = js.native
   def getNotifications(filter: GetNotificationOptions): js.Promise[js.Array[Notification]] = js.native
-  def onupdatefound(ev: Event): js.Any = js.native
   @JSName("removeEventListener")
   def removeEventListener_updatefound(`type`: updatefound, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")

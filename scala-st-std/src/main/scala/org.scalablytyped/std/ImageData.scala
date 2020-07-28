@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ImageData extends js.Object {
-  var data: Uint8ClampedArray
+  val data: Uint8ClampedArray
   val height: Double
   val width: Double
 }

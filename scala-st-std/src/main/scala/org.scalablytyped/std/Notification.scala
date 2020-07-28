@@ -10,12 +10,17 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Notification extends EventTarget {
-  val body: java.lang.String = js.native
+  val body: java.lang.String | Null = js.native
+  val data: js.Any = js.native
   val dir: NotificationDirection = js.native
-  val icon: java.lang.String = js.native
-  val lang: java.lang.String = js.native
+  val icon: java.lang.String | Null = js.native
+  val lang: java.lang.String | Null = js.native
+  var onclick: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onclose: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onshow: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   val permission: NotificationPermission = js.native
-  val tag: java.lang.String = js.native
+  val tag: java.lang.String | Null = js.native
   val title: java.lang.String = js.native
   @JSName("addEventListener")
   def addEventListener_click(`type`: click, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -74,10 +79,6 @@ trait Notification extends EventTarget {
     options: scala.Boolean
   ): Unit = js.native
   def close(): Unit = js.native
-  def onclick(ev: Event): js.Any = js.native
-  def onclose(ev: Event): js.Any = js.native
-  def onerror(ev: Event): js.Any = js.native
-  def onshow(ev: Event): js.Any = js.native
   @JSName("removeEventListener")
   def removeEventListener_click(`type`: click, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")

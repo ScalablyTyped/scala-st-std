@@ -24,9 +24,8 @@ trait Node extends EventTarget {
   val NOTATION_NODE: Double = js.native
   val PROCESSING_INSTRUCTION_NODE: Double = js.native
   val TEXT_NODE: Double = js.native
-  val attributes: NamedNodeMap = js.native
   val baseURI: java.lang.String | Null = js.native
-  val childNodes: NodeList = js.native
+  val childNodes: NodeListOf[Node with ChildNode] = js.native
   val firstChild: Node | Null = js.native
   val lastChild: Node | Null = js.native
   val localName: java.lang.String | Null = js.native
@@ -45,7 +44,6 @@ trait Node extends EventTarget {
   def cloneNode(deep: scala.Boolean): Node = js.native
   def compareDocumentPosition(other: Node): Double = js.native
   def contains(child: Node): scala.Boolean = js.native
-  def hasAttributes(): scala.Boolean = js.native
   def hasChildNodes(): scala.Boolean = js.native
   def insertBefore[T /* <: Node */](newChild: T): T = js.native
   def insertBefore[T /* <: Node */](newChild: T, refChild: Node): T = js.native

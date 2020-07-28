@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IDBOpenDBRequest extends IDBRequest {
+  var onblocked: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onupgradeneeded: (js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, _]) | Null = js.native
   @JSName("addEventListener")
   def addEventListener_blocked(`type`: blocked, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
@@ -39,8 +41,6 @@ trait IDBOpenDBRequest extends IDBRequest {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, _],
     options: scala.Boolean
   ): Unit = js.native
-  def onblocked(ev: Event): js.Any = js.native
-  def onupgradeneeded(ev: IDBVersionChangeEvent): js.Any = js.native
   @JSName("removeEventListener")
   def removeEventListener_blocked(`type`: blocked, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")

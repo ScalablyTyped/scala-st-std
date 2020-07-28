@@ -9,12 +9,19 @@ trait PerformanceEntry extends js.Object {
   val entryType: java.lang.String
   val name: java.lang.String
   val startTime: Double
+  def toJSON(): js.Any
 }
 
 object PerformanceEntry {
   @scala.inline
-  def apply(duration: Double, entryType: java.lang.String, name: java.lang.String, startTime: Double): PerformanceEntry = {
-    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], entryType = entryType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
+  def apply(
+    duration: Double,
+    entryType: java.lang.String,
+    name: java.lang.String,
+    startTime: Double,
+    toJSON: () => js.Any
+  ): PerformanceEntry = {
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], entryType = entryType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
     __obj.asInstanceOf[PerformanceEntry]
   }
   @scala.inline
@@ -36,6 +43,8 @@ object PerformanceEntry {
     def setName(value: java.lang.String): Self = this.set("name", value.asInstanceOf[js.Any])
     @scala.inline
     def setStartTime(value: Double): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setToJSON(value: () => js.Any): Self = this.set("toJSON", js.Any.fromFunction0(value))
   }
   
 }

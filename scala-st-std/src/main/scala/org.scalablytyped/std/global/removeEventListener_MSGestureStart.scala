@@ -1,5 +1,6 @@
 package org.scalablytyped.std.global
 
+import org.scalablytyped.std.Event
 import org.scalablytyped.std.EventListenerOptions
 import org.scalablytyped.std.Window
 import org.scalablytyped.std.stdStrings.MSGestureStart
@@ -10,18 +11,15 @@ import scala.scalajs.js.annotation._
 @JSGlobal("removeEventListener")
 @js.native
 object removeEventListener_MSGestureStart extends js.Object {
+  def apply(`type`: MSGestureStart, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _]): Unit = js.native
   def apply(
     `type`: MSGestureStart,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.MSGestureEvent, _]
-  ): Unit = js.native
-  def apply(
-    `type`: MSGestureStart,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   def apply(
     `type`: MSGestureStart,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
 }

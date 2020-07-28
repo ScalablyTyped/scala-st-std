@@ -11,7 +11,10 @@ trait HTMLLinkElement
   /**
     * Sets or retrieves the character set used to encode the object.
     */
+  /** @deprecated */
   var charset: java.lang.String = js.native
+  var crossOrigin: java.lang.String | Null = js.native
+  /** @deprecated */
   var disabled: scala.Boolean = js.native
   /**
     * Sets or retrieves a destination URL or an anchor point.
@@ -34,10 +37,12 @@ trait HTMLLinkElement
   /**
     * Sets or retrieves the relationship between the object and the destination of the link.
     */
+  /** @deprecated */
   var rev: java.lang.String = js.native
   /**
     * Sets or retrieves the window or frame at which to target content.
     */
+  /** @deprecated */
   var target: java.lang.String = js.native
   /**
     * Sets or retrieves the MIME type of the object.

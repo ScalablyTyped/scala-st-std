@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 trait AudioParam extends js.Object {
   val defaultValue: Double
   var value: Double
-  def cancelScheduledValues(startTime: Double): AudioParam
+  def cancelScheduledValues(cancelTime: Double): AudioParam
   def exponentialRampToValueAtTime(value: Double, endTime: Double): AudioParam
   def linearRampToValueAtTime(value: Double, endTime: Double): AudioParam
   def setTargetAtTime(target: Double, startTime: Double, timeConstant: Double): AudioParam
   def setValueAtTime(value: Double, startTime: Double): AudioParam
-  def setValueCurveAtTime(values: Float32Array, startTime: Double, duration: Double): AudioParam
+  def setValueCurveAtTime(values: js.Array[Double], startTime: Double, duration: Double): AudioParam
 }
 
 object AudioParam {
@@ -24,7 +24,7 @@ object AudioParam {
     linearRampToValueAtTime: (Double, Double) => AudioParam,
     setTargetAtTime: (Double, Double, Double) => AudioParam,
     setValueAtTime: (Double, Double) => AudioParam,
-    setValueCurveAtTime: (Float32Array, Double, Double) => AudioParam,
+    setValueCurveAtTime: (js.Array[Double], Double, Double) => AudioParam,
     value: Double
   ): AudioParam = {
     val __obj = js.Dynamic.literal(cancelScheduledValues = js.Any.fromFunction1(cancelScheduledValues), defaultValue = defaultValue.asInstanceOf[js.Any], exponentialRampToValueAtTime = js.Any.fromFunction2(exponentialRampToValueAtTime), linearRampToValueAtTime = js.Any.fromFunction2(linearRampToValueAtTime), setTargetAtTime = js.Any.fromFunction3(setTargetAtTime), setValueAtTime = js.Any.fromFunction2(setValueAtTime), setValueCurveAtTime = js.Any.fromFunction3(setValueCurveAtTime), value = value.asInstanceOf[js.Any])
@@ -54,7 +54,7 @@ object AudioParam {
     @scala.inline
     def setSetValueAtTime(value: (Double, Double) => AudioParam): Self = this.set("setValueAtTime", js.Any.fromFunction2(value))
     @scala.inline
-    def setSetValueCurveAtTime(value: (Float32Array, Double, Double) => AudioParam): Self = this.set("setValueCurveAtTime", js.Any.fromFunction3(value))
+    def setSetValueCurveAtTime(value: (js.Array[Double], Double, Double) => AudioParam): Self = this.set("setValueCurveAtTime", js.Any.fromFunction3(value))
     @scala.inline
     def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
   }

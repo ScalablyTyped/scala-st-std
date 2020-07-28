@@ -30,7 +30,7 @@ trait HTMLButtonElement extends HTMLElement {
   /**
     * Overrides any validation or required attributes on a form or form elements to allow it to be submitted without validation. This can be used to create a "save draft"-type submit option.
     */
-  var formNoValidate: java.lang.String = js.native
+  var formNoValidate: scala.Boolean = js.native
   /**
     * Overrides the target attribute on a form element.
     */

@@ -9,6 +9,7 @@ trait HTMLHeadingElement extends HTMLElement {
   /**
     * Sets or retrieves a value that indicates the table alignment.
     */
+  /** @deprecated */
   var align: java.lang.String = js.native
 }
 

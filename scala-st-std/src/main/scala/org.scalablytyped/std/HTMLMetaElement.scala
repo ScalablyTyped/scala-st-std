@@ -9,6 +9,7 @@ trait HTMLMetaElement extends HTMLElement {
   /**
     * Sets or retrieves the character set used to encode the object.
     */
+  /** @deprecated */
   var charset: java.lang.String = js.native
   /**
     * Gets or sets meta-information to associate with httpEquiv or name.
@@ -25,10 +26,12 @@ trait HTMLMetaElement extends HTMLElement {
   /**
     * Sets or retrieves a scheme to be used in interpreting the value of a property specified for the object.
     */
+  /** @deprecated */
   var scheme: java.lang.String = js.native
   /**
     * Sets or retrieves the URL property that will be loaded after the specified time has elapsed.
     */
+  /** @deprecated */
   var url: java.lang.String = js.native
 }
 

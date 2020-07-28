@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait MSFIDOCredentialParameters extends MSCredentialParameters {
   var algorithm: js.UndefOr[java.lang.String | Algorithm] = js.undefined
-  var authenticators: js.UndefOr[js.Array[AAGUID]] = js.undefined
+  var authenticators: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
 object MSFIDOCredentialParameters {
@@ -31,9 +31,9 @@ object MSFIDOCredentialParameters {
     @scala.inline
     def deleteAlgorithm: Self = this.set("algorithm", js.undefined)
     @scala.inline
-    def setAuthenticatorsVarargs(value: AAGUID*): Self = this.set("authenticators", js.Array(value :_*))
+    def setAuthenticatorsVarargs(value: java.lang.String*): Self = this.set("authenticators", js.Array(value :_*))
     @scala.inline
-    def setAuthenticators(value: js.Array[AAGUID]): Self = this.set("authenticators", value.asInstanceOf[js.Any])
+    def setAuthenticators(value: js.Array[java.lang.String]): Self = this.set("authenticators", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteAuthenticators: Self = this.set("authenticators", js.undefined)
   }

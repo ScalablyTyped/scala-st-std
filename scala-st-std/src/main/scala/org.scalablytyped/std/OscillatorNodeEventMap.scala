@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OscillatorNodeEventMap extends js.Object {
-  var ended: MediaStreamErrorEvent
+  var ended: Event
 }
 
 object OscillatorNodeEventMap {
   @scala.inline
-  def apply(ended: MediaStreamErrorEvent): OscillatorNodeEventMap = {
+  def apply(ended: Event): OscillatorNodeEventMap = {
     val __obj = js.Dynamic.literal(ended = ended.asInstanceOf[js.Any])
     __obj.asInstanceOf[OscillatorNodeEventMap]
   }
@@ -26,7 +26,7 @@ object OscillatorNodeEventMap {
         x
     }
     @scala.inline
-    def setEnded(value: MediaStreamErrorEvent): Self = this.set("ended", value.asInstanceOf[js.Any])
+    def setEnded(value: Event): Self = this.set("ended", value.asInstanceOf[js.Any])
   }
   
 }

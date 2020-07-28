@@ -20,7 +20,7 @@ class Storage ()
   /* CompleteClass */
   override def removeItem(key: java.lang.String): Unit = js.native
   /* CompleteClass */
-  override def setItem(key: java.lang.String, data: java.lang.String): Unit = js.native
+  override def setItem(key: java.lang.String, value: java.lang.String): Unit = js.native
 }
 
 @JSGlobal("Storage")

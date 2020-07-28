@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object onmessage
   extends TopLevel[
-      js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.MessageEvent, js.Any]
+      (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.MessageEvent, js.Any]) | Null
     ]
 

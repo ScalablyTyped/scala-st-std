@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SpeechSynthesis extends EventTarget {
+  var onvoiceschanged: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   val paused: scala.Boolean = js.native
   val pending: scala.Boolean = js.native
   val speaking: scala.Boolean = js.native
@@ -26,7 +27,6 @@ trait SpeechSynthesis extends EventTarget {
   ): Unit = js.native
   def cancel(): Unit = js.native
   def getVoices(): js.Array[SpeechSynthesisVoice] = js.native
-  def onvoiceschanged(ev: Event): js.Any = js.native
   def pause(): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_voiceschanged(`type`: voiceschanged, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native

@@ -14,8 +14,7 @@ trait JsonWebKey extends js.Object {
   var ext: js.UndefOr[scala.Boolean] = js.undefined
   var k: js.UndefOr[java.lang.String] = js.undefined
   var key_ops: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  var kid: js.UndefOr[java.lang.String] = js.undefined
-  var kty: java.lang.String
+  var kty: js.UndefOr[java.lang.String] = js.undefined
   var n: js.UndefOr[java.lang.String] = js.undefined
   var oth: js.UndefOr[js.Array[RsaOtherPrimesInfo]] = js.undefined
   var p: js.UndefOr[java.lang.String] = js.undefined
@@ -23,16 +22,13 @@ trait JsonWebKey extends js.Object {
   var qi: js.UndefOr[java.lang.String] = js.undefined
   var use: js.UndefOr[java.lang.String] = js.undefined
   var x: js.UndefOr[java.lang.String] = js.undefined
-  var x5c: js.UndefOr[java.lang.String] = js.undefined
-  var x5t: js.UndefOr[java.lang.String] = js.undefined
-  var x5u: js.UndefOr[java.lang.String] = js.undefined
   var y: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object JsonWebKey {
   @scala.inline
-  def apply(kty: java.lang.String): JsonWebKey = {
-    val __obj = js.Dynamic.literal(kty = kty.asInstanceOf[js.Any])
+  def apply(): JsonWebKey = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JsonWebKey]
   }
   @scala.inline
@@ -46,8 +42,6 @@ object JsonWebKey {
         x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
         x
     }
-    @scala.inline
-    def setKty(value: java.lang.String): Self = this.set("kty", value.asInstanceOf[js.Any])
     @scala.inline
     def setAlg(value: java.lang.String): Self = this.set("alg", value.asInstanceOf[js.Any])
     @scala.inline
@@ -87,9 +81,9 @@ object JsonWebKey {
     @scala.inline
     def deleteKey_ops: Self = this.set("key_ops", js.undefined)
     @scala.inline
-    def setKid(value: java.lang.String): Self = this.set("kid", value.asInstanceOf[js.Any])
+    def setKty(value: java.lang.String): Self = this.set("kty", value.asInstanceOf[js.Any])
     @scala.inline
-    def deleteKid: Self = this.set("kid", js.undefined)
+    def deleteKty: Self = this.set("kty", js.undefined)
     @scala.inline
     def setN(value: java.lang.String): Self = this.set("n", value.asInstanceOf[js.Any])
     @scala.inline
@@ -120,18 +114,6 @@ object JsonWebKey {
     def setX(value: java.lang.String): Self = this.set("x", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteX: Self = this.set("x", js.undefined)
-    @scala.inline
-    def setX5c(value: java.lang.String): Self = this.set("x5c", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteX5c: Self = this.set("x5c", js.undefined)
-    @scala.inline
-    def setX5t(value: java.lang.String): Self = this.set("x5t", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteX5t: Self = this.set("x5t", js.undefined)
-    @scala.inline
-    def setX5u(value: java.lang.String): Self = this.set("x5u", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteX5u: Self = this.set("x5u", js.undefined)
     @scala.inline
     def setY(value: java.lang.String): Self = this.set("y", value.asInstanceOf[js.Any])
     @scala.inline

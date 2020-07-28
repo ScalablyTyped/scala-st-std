@@ -1,20 +1,18 @@
 package org.scalablytyped.std
 
-import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Storage
-  extends /* index */ NumberDictionary[java.lang.String]
-     with /* key */ StringDictionary[js.Any] {
+  extends /* key */ StringDictionary[js.Any] {
   val length: Double
   def clear(): Unit
   def getItem(key: java.lang.String): java.lang.String | Null
   def key(index: Double): java.lang.String | Null
   def removeItem(key: java.lang.String): Unit
-  def setItem(key: java.lang.String, data: java.lang.String): Unit
+  def setItem(key: java.lang.String, value: java.lang.String): Unit
 }
 
 object Storage {

@@ -12,6 +12,7 @@ trait HTMLFontElement
   /**
     * Sets or retrieves the current typeface family.
     */
+  /** @deprecated */
   var face: java.lang.String = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native

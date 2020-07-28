@@ -9,6 +9,7 @@ trait HTMLPreElement extends HTMLElement {
   /**
     * Sets or gets a value that you can use to implement your own width functionality for the object.
     */
+  /** @deprecated */
   var width: Double = js.native
 }
 

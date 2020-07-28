@@ -12,40 +12,39 @@ trait HTMLObjectElement
     * Retrieves a string of the URL where the object tag can be found. This is often the href of the document that the object is in, or the value set by a base element.
     */
   val BaseHref: java.lang.String = js.native
+  /** @deprecated */
   var align: java.lang.String = js.native
-  /**
-    * Sets or retrieves a text alternative to the graphic.
-    */
-  var alt: java.lang.String = js.native
-  /**
-    * Gets or sets the optional alternative HTML script to execute if the object fails to load.
-    */
-  var altHtml: java.lang.String = js.native
   /**
     * Sets or retrieves a character string that can be used to implement your own archive functionality for the object.
     */
+  /** @deprecated */
   var archive: java.lang.String = js.native
+  /** @deprecated */
   var border: java.lang.String = js.native
   /**
     * Sets or retrieves the URL of the file containing the compiled Java class.
     */
+  /** @deprecated */
   var code: java.lang.String = js.native
   /**
     * Sets or retrieves the URL of the component.
     */
+  /** @deprecated */
   var codeBase: java.lang.String = js.native
   /**
     * Sets or retrieves the Internet media type for the code associated with the object.
     */
+  /** @deprecated */
   var codeType: java.lang.String = js.native
   /**
     * Retrieves the document object of the page or frame.
     */
-  val contentDocument: Document = js.native
+  val contentDocument: Document | Null = js.native
   /**
     * Sets or retrieves the URL that references the data of the object.
     */
   var data: java.lang.String = js.native
+  /** @deprecated */
   var declare: scala.Boolean = js.native
   /**
     * Retrieves a reference to the form that the object is embedded in.
@@ -55,6 +54,7 @@ trait HTMLObjectElement
     * Sets or retrieves the height of the object.
     */
   var height: java.lang.String = js.native
+  /** @deprecated */
   var hspace: Double = js.native
   /**
     * Gets or sets whether the DLNA PlayTo device is available.
@@ -80,6 +80,7 @@ trait HTMLObjectElement
   /**
     * Sets or retrieves a message to be displayed while an object is loading.
     */
+  /** @deprecated */
   var standby: java.lang.String = js.native
   /**
     * Sets or retrieves the MIME type of the object.
@@ -98,6 +99,7 @@ trait HTMLObjectElement
     * Returns a  ValidityState object that represents the validity states of an element.
     */
   val validity: ValidityState = js.native
+  /** @deprecated */
   var vspace: Double = js.native
   /**
     * Sets or retrieves the width of the object.

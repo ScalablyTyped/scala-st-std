@@ -5,12 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AesCfbParams extends Algorithm {
-  var iv: BufferSource
+  var iv: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
 }
 
 object AesCfbParams {
   @scala.inline
-  def apply(iv: BufferSource, name: java.lang.String): AesCfbParams = {
+  def apply(
+    iv: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
+    name: java.lang.String
+  ): AesCfbParams = {
     val __obj = js.Dynamic.literal(iv = iv.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AesCfbParams]
   }
@@ -26,7 +29,9 @@ object AesCfbParams {
         x
     }
     @scala.inline
-    def setIv(value: BufferSource): Self = this.set("iv", value.asInstanceOf[js.Any])
+    def setIv(
+      value: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
+    ): Self = this.set("iv", value.asInstanceOf[js.Any])
   }
   
 }

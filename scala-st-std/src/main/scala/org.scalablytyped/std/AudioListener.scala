@@ -5,10 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AudioListener extends js.Object {
+  /** @deprecated */
   var dopplerFactor: Double
+  /** @deprecated */
   var speedOfSound: Double
+  /** @deprecated */
   def setOrientation(x: Double, y: Double, z: Double, xUp: Double, yUp: Double, zUp: Double): Unit
+  /** @deprecated */
   def setPosition(x: Double, y: Double, z: Double): Unit
+  /** @deprecated */
   def setVelocity(x: Double, y: Double, z: Double): Unit
 }
 

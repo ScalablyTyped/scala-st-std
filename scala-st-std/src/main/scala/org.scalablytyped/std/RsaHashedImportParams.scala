@@ -4,14 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RsaHashedImportParams extends js.Object {
-  var hash: AlgorithmIdentifier
+trait RsaHashedImportParams extends Algorithm {
+  var hash: java.lang.String | Algorithm
 }
 
 object RsaHashedImportParams {
   @scala.inline
-  def apply(hash: AlgorithmIdentifier): RsaHashedImportParams = {
-    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any])
+  def apply(hash: java.lang.String | Algorithm, name: java.lang.String): RsaHashedImportParams = {
+    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[RsaHashedImportParams]
   }
   @scala.inline
@@ -26,7 +26,7 @@ object RsaHashedImportParams {
         x
     }
     @scala.inline
-    def setHash(value: AlgorithmIdentifier): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setHash(value: java.lang.String | Algorithm): Self = this.set("hash", value.asInstanceOf[js.Any])
   }
   
 }

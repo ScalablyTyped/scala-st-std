@@ -31,6 +31,7 @@ trait HTMLEmbedElement
   /**
     * Sets or retrieves the name of the object.
     */
+  /** @deprecated */
   var name: java.lang.String = js.native
   /**
     * Retrieves the palette used for the embedded document.

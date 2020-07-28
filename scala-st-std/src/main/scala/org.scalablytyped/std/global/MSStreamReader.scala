@@ -13,5 +13,9 @@ class MSStreamReader ()
 @JSGlobal("MSStreamReader")
 @js.native
 object MSStreamReader
-  extends Instantiable0[org.scalablytyped.std.MSStreamReader]
+  extends Instantiable0[org.scalablytyped.std.MSStreamReader] {
+  val DONE: Double = js.native
+  val EMPTY: Double = js.native
+  val LOADING: Double = js.native
+}
 

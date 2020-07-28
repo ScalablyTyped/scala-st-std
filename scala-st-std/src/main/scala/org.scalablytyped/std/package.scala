@@ -8,13 +8,7 @@ package object std {
   type AAGUID = java.lang.String
   type AlgorithmIdentifier = java.lang.String | org.scalablytyped.std.Algorithm
   type ArrayBufferLike = org.scalablytyped.std.ArrayBuffer
-  /* Rewritten from type alias, can be one of: 
-    - `org.scalablytyped`.std.Blob
-    - `org.scalablytyped`.std.BufferSource
-    - `org.scalablytyped`.std.FormData
-    - java.lang.String
-  */
-  type BodyInit = org.scalablytyped.std._BodyInit | java.lang.String
+  type BodyInit = js.Any
   type ByteString = java.lang.String
   type CDATASection = org.scalablytyped.std.Text
   type CSSSupportsRule = org.scalablytyped.std.CSSConditionRule
@@ -30,17 +24,31 @@ package object std {
   type DecodeErrorCallback = js.Function1[/* error */ org.scalablytyped.std.DOMException, scala.Unit]
   type DecodeSuccessCallback = js.Function1[/* decodedData */ org.scalablytyped.std.AudioBuffer, scala.Unit]
   type ErrorEventHandler = js.Function5[
-    /* message */ java.lang.String, 
-    /* filename */ js.UndefOr[java.lang.String], 
-    /* lineno */ js.UndefOr[scala.Double], 
-    /* colno */ js.UndefOr[scala.Double], 
+    /* event */ org.scalablytyped.std.Event | java.lang.String, 
+    /* source */ js.UndefOr[java.lang.String], 
+    /* fileno */ js.UndefOr[scala.Double], 
+    /* columnNumber */ js.UndefOr[scala.Double], 
     /* error */ js.UndefOr[org.scalablytyped.std.Error], 
     scala.Unit
   ]
   type EvalError = org.scalablytyped.std.Error
+  type EventHandlerNonNull = js.Function1[/* event */ org.scalablytyped.std.Event, js.Any]
   type EventListener = js.Function1[/* evt */ org.scalablytyped.std.Event, scala.Unit]
   type EventListenerOrEventListenerObject = org.scalablytyped.std.EventListener | org.scalablytyped.std.EventListenerObject
-  type ForEachCallback = js.Function2[/* keyId */ js.Any, /* status */ org.scalablytyped.std.MediaKeyStatus, scala.Unit]
+  /**
+    * Exclude from T those types that are assignable to U
+    */
+  type Exclude[T, U] = T
+  type ExtendableEventInit = org.scalablytyped.std.EventInit
+  /**
+    * Extract from T those types that are assignable to U
+    */
+  type Extract[T, U] = T
+  type ForEachCallback = js.Function2[
+    /* keyId */ org.scalablytyped.std.Int8Array | org.scalablytyped.std.Int16Array | org.scalablytyped.std.Int32Array | org.scalablytyped.std.Uint8Array | org.scalablytyped.std.Uint16Array | org.scalablytyped.std.Uint32Array | org.scalablytyped.std.Uint8ClampedArray | org.scalablytyped.std.Float32Array | org.scalablytyped.std.Float64Array | org.scalablytyped.std.DataView | org.scalablytyped.std.ArrayBuffer | scala.Null, 
+    /* status */ org.scalablytyped.std.MediaKeyStatus, 
+    scala.Unit
+  ]
   type FormDataEntryValue = java.lang.String | org.scalablytyped.std.File
   type FrameRequestCallback = js.Function1[/* time */ scala.Double, scala.Unit]
   type FunctionStringCallback = js.Function1[/* data */ java.lang.String, scala.Unit]
@@ -58,10 +66,9 @@ package object std {
   type GLubyte = scala.Double
   type GLuint = scala.Double
   type GLushort = scala.Double
+  type GamepadHapticActuatorType = org.scalablytyped.std.stdStrings.vibration
   type Generator = org.scalablytyped.std.Iterator[js.Any]
   type HTMLAreasCollection = org.scalablytyped.std.HTMLCollectionBase
-  type HTMLMainElement = org.scalablytyped.std.HTMLElement
-  type HTMLSummaryElement = org.scalablytyped.std.HTMLElement
   type HeadersInit = org.scalablytyped.std.Headers | js.Array[js.Array[java.lang.String]] | org.scalablytyped.runtime.StringDictionary[java.lang.String]
   type IDBKeyPath = java.lang.String
   /* Rewritten from type alias, can be one of: 
@@ -71,18 +78,17 @@ package object std {
     - `org.scalablytyped`.std.IDBArrayKey
   */
   type IDBValidKey = org.scalablytyped.std._IDBValidKey | scala.Double | java.lang.String
+  /**
+    * Obtain the return type of a constructor function type
+    */
+  type InstanceType[T /* <: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, js.Any] */] = js.Any
   type IntersectionObserverCallback = js.Function2[
     /* entries */ js.Array[org.scalablytyped.std.IntersectionObserverEntry], 
     /* observer */ org.scalablytyped.std.IntersectionObserver, 
     scala.Unit
   ]
-  type KeyFormat = java.lang.String
-  type KeyType = java.lang.String
-  type KeyUsage = java.lang.String
   type MSCredentialType = org.scalablytyped.std.stdStrings.FIDO_2_0
-  type MSExecAtPriorityFunctionCallback = js.Function1[/* repeated */ js.Any, js.Any]
   type MSLaunchUriCallback = js.Function0[scala.Unit]
-  type MSUnsafeFunctionCallback = js.Function0[js.Any]
   type MediaElementAudioSourceNode = org.scalablytyped.std.AudioNode
   type MediaQueryListListener = js.Function1[/* mql */ org.scalablytyped.std.MediaQueryList, scala.Unit]
   type MediaStreamAudioSourceNode = org.scalablytyped.std.AudioNode
@@ -100,8 +106,11 @@ package object std {
   ]
   type NavigatorUserMediaErrorCallback = js.Function1[/* error */ org.scalablytyped.std.MediaStreamError, scala.Unit]
   type NavigatorUserMediaSuccessCallback = js.Function1[/* stream */ org.scalablytyped.std.MediaStream, scala.Unit]
+  /**
+    * Exclude null and undefined from T
+    */
+  type NonNullable[T] = T
   type NotificationPermissionCallback = js.Function1[/* permission */ org.scalablytyped.std.NotificationPermission, scala.Unit]
-  type PanningModelType = org.scalablytyped.std.stdStrings.equalpower
   type ParameterDecorator = js.Function3[
     /* target */ js.Object, 
     /* propertyKey */ java.lang.String | js.Symbol, 
@@ -114,6 +123,7 @@ package object std {
   type Partial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? T[P]}
     */ org.scalablytyped.std.stdStrings.Partial with org.scalablytyped.runtime.TopLevel[T]
+  type Path2D = org.scalablytyped.std.CanvasPathMethods
   type PaymentRequestUpdateEventInit = org.scalablytyped.std.EventInit
   type PerformanceMark = org.scalablytyped.std.PerformanceEntry
   type PerformanceMeasure = org.scalablytyped.std.PerformanceEntry
@@ -152,6 +162,16 @@ package object std {
   type Record[K /* <: java.lang.String */, T] = org.scalablytyped.runtime.StringDictionary[T]
   type ReferenceError = org.scalablytyped.std.Error
   type RequestInfo = org.scalablytyped.std.Request | java.lang.String
+  /**
+    * Make all properties in T required
+    */
+  type Required[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in keyof T ]: -? T[P]}
+    */ org.scalablytyped.std.stdStrings.Required with org.scalablytyped.runtime.TopLevel[T]
+  /**
+    * Obtain the return type of a function type
+    */
+  type ReturnType[T /* <: js.Function1[/* repeated */ js.Any, _] */] = js.Any
   type SVGPathSegClosePath = org.scalablytyped.std.SVGPathSeg
   type ScopedCredentialType = org.scalablytyped.std.stdStrings.ScopedCred
   type SyntaxError = org.scalablytyped.std.Error
@@ -165,8 +185,15 @@ package object std {
   type WebGLRenderbuffer = org.scalablytyped.std.WebGLObject
   type WebGLShader = org.scalablytyped.std.WebGLObject
   type WebGLTexture = org.scalablytyped.std.WebGLObject
-  type WebKitEntriesCallback = js.Function1[/* evt */ org.scalablytyped.std.Event, scala.Unit]
-  type WebKitErrorCallback = js.Function1[/* evt */ org.scalablytyped.std.Event, scala.Unit]
-  type WebKitFileCallback = js.Function1[/* evt */ org.scalablytyped.std.Event, scala.Unit]
+  type WebKitEntriesCallback = (js.Function1[/* entries */ js.Array[org.scalablytyped.std.WebKitEntry], scala.Unit]) | org.scalablytyped.std.anon.HandleEvent
+  type WebKitErrorCallback = (js.Function1[/* err */ org.scalablytyped.std.DOMError, scala.Unit]) | org.scalablytyped.std.anon.`0`
+  type WebKitFileCallback = (js.Function1[/* file */ org.scalablytyped.std.File, scala.Unit]) | org.scalablytyped.std.anon.`1`
+  type WritableStreamChunkCallback = js.Function2[
+    /* chunk */ js.Any, 
+    /* controller */ org.scalablytyped.std.WritableStreamDefaultController, 
+    scala.Unit
+  ]
+  type WritableStreamDefaultControllerCallback = js.Function1[/* controller */ org.scalablytyped.std.WritableStreamDefaultController, scala.Unit]
+  type WritableStreamErrorCallback = js.Function1[/* reason */ java.lang.String, scala.Unit]
   type payloadtype = scala.Double
 }

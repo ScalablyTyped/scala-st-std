@@ -60,10 +60,6 @@ trait HTMLTextAreaElement extends HTMLElement {
     */
   var selectionStart: Double = js.native
   /**
-    * Sets or retrieves the value indicating whether the control is selected.
-    */
-  var status: js.Any = js.native
-  /**
     * Retrieves the type of control.
     */
   val `type`: java.lang.String = js.native

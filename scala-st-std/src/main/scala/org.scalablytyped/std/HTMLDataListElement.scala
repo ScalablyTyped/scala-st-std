@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait HTMLDataListElement extends HTMLElement {
-  var options: HTMLCollectionOf[HTMLOptionElement] = js.native
+  val options: HTMLCollectionOf[HTMLOptionElement] = js.native
 }
 

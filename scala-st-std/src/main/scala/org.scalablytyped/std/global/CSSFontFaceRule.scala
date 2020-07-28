@@ -36,9 +36,9 @@ class CSSFontFaceRule ()
   /* CompleteClass */
   override var cssText: java.lang.String = js.native
   /* CompleteClass */
-  override val parentRule: org.scalablytyped.std.CSSRule = js.native
+  override val parentRule: org.scalablytyped.std.CSSRule | Null = js.native
   /* CompleteClass */
-  override val parentStyleSheet: org.scalablytyped.std.CSSStyleSheet = js.native
+  override val parentStyleSheet: org.scalablytyped.std.CSSStyleSheet | Null = js.native
   /* CompleteClass */
   override val style: org.scalablytyped.std.CSSStyleDeclaration = js.native
   /* CompleteClass */

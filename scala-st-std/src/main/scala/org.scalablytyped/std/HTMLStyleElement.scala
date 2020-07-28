@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait HTMLStyleElement
   extends HTMLElement
      with LinkStyle {
+  /** @deprecated */
   var disabled: scala.Boolean = js.native
   /**
     * Sets or retrieves the media type.

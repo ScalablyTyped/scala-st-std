@@ -13,6 +13,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait XMLHttpRequestEventTarget extends js.Object {
+  var onabort: (js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ Event, _]) | Null = js.native
+  var onerror: (js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ErrorEvent, _]) | Null = js.native
+  var onload: (js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ Event, _]) | Null = js.native
+  var onloadend: (js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent, _]) | Null = js.native
+  var onloadstart: (js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ Event, _]) | Null = js.native
+  var onprogress: (js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent, _]) | Null = js.native
+  var ontimeout: (js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent, _]) | Null = js.native
   def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   def addEventListener(
     `type`: java.lang.String,
@@ -118,13 +125,6 @@ trait XMLHttpRequestEventTarget extends js.Object {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
     options: scala.Boolean
   ): Unit = js.native
-  def onabort(ev: Event): js.Any = js.native
-  def onerror(ev: ErrorEvent): js.Any = js.native
-  def onload(ev: Event): js.Any = js.native
-  def onloadend(ev: ProgressEvent): js.Any = js.native
-  def onloadstart(ev: Event): js.Any = js.native
-  def onprogress(ev: ProgressEvent): js.Any = js.native
-  def ontimeout(ev: ProgressEvent): js.Any = js.native
   def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   def removeEventListener(
     `type`: java.lang.String,

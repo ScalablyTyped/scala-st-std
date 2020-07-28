@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Blob extends _BodyInit {
+trait Blob extends js.Object {
   val size: Double = js.native
   val `type`: java.lang.String = js.native
   def msClose(): Unit = js.native

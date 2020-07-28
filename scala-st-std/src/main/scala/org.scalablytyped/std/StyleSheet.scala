@@ -6,26 +6,18 @@ import scala.scalajs.js.annotation._
 
 trait StyleSheet extends js.Object {
   var disabled: scala.Boolean
-  val href: java.lang.String
+  val href: java.lang.String | Null
   val media: MediaList
   val ownerNode: Node
-  val parentStyleSheet: StyleSheet
-  val title: java.lang.String
+  val parentStyleSheet: StyleSheet | Null
+  val title: java.lang.String | Null
   val `type`: java.lang.String
 }
 
 object StyleSheet {
   @scala.inline
-  def apply(
-    disabled: scala.Boolean,
-    href: java.lang.String,
-    media: MediaList,
-    ownerNode: Node,
-    parentStyleSheet: StyleSheet,
-    title: java.lang.String,
-    `type`: java.lang.String
-  ): StyleSheet = {
-    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], media = media.asInstanceOf[js.Any], ownerNode = ownerNode.asInstanceOf[js.Any], parentStyleSheet = parentStyleSheet.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+  def apply(disabled: scala.Boolean, media: MediaList, ownerNode: Node, `type`: java.lang.String): StyleSheet = {
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], media = media.asInstanceOf[js.Any], ownerNode = ownerNode.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleSheet]
   }
@@ -43,17 +35,23 @@ object StyleSheet {
     @scala.inline
     def setDisabled(value: scala.Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
     @scala.inline
-    def setHref(value: java.lang.String): Self = this.set("href", value.asInstanceOf[js.Any])
-    @scala.inline
     def setMedia(value: MediaList): Self = this.set("media", value.asInstanceOf[js.Any])
     @scala.inline
     def setOwnerNode(value: Node): Self = this.set("ownerNode", value.asInstanceOf[js.Any])
     @scala.inline
+    def setType(value: java.lang.String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHref(value: java.lang.String): Self = this.set("href", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHrefNull: Self = this.set("href", null)
+    @scala.inline
     def setParentStyleSheet(value: StyleSheet): Self = this.set("parentStyleSheet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParentStyleSheetNull: Self = this.set("parentStyleSheet", null)
     @scala.inline
     def setTitle(value: java.lang.String): Self = this.set("title", value.asInstanceOf[js.Any])
     @scala.inline
-    def setType(value: java.lang.String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setTitleNull: Self = this.set("title", null)
   }
   
 }

@@ -8,18 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("DataTransferItemList")
 @js.native
 class DataTransferItemList ()
-  extends org.scalablytyped.std.DataTransferItemList {
-  /* CompleteClass */
-  override val length: Double = js.native
-  /* CompleteClass */
-  override def add(data: org.scalablytyped.std.File): org.scalablytyped.std.DataTransferItem | Null = js.native
-  /* CompleteClass */
-  override def clear(): Unit = js.native
-  /* CompleteClass */
-  override def item(index: Double): org.scalablytyped.std.DataTransferItem = js.native
-  /* CompleteClass */
-  override def remove(index: Double): Unit = js.native
-}
+  extends org.scalablytyped.std.DataTransferItemList
 
 @JSGlobal("DataTransferItemList")
 @js.native

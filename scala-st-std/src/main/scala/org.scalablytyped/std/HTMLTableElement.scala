@@ -9,67 +9,64 @@ trait HTMLTableElement extends HTMLElement {
   /**
     * Sets or retrieves a value that indicates the table alignment.
     */
+  /** @deprecated */
   var align: java.lang.String = js.native
-  var bgColor: js.Any = js.native
+  /** @deprecated */
+  var bgColor: java.lang.String = js.native
   /**
     * Sets or retrieves the width of the border to draw around the object.
     */
+  /** @deprecated */
   var border: java.lang.String = js.native
-  /**
-    * Sets or retrieves the border color of the object.
-    */
-  var borderColor: js.Any = js.native
   /**
     * Retrieves the caption object of a table.
     */
-  var caption: HTMLTableCaptionElement = js.native
+  var caption: HTMLTableCaptionElement | Null = js.native
   /**
     * Sets or retrieves the amount of space between the border of the cell and the content of the cell.
     */
+  /** @deprecated */
   var cellPadding: java.lang.String = js.native
   /**
     * Sets or retrieves the amount of space between cells in a table.
     */
+  /** @deprecated */
   var cellSpacing: java.lang.String = js.native
-  /**
-    * Sets or retrieves the number of columns in the table.
-    */
-  var cols: Double = js.native
   /**
     * Sets or retrieves the way the border frame around the table is displayed.
     */
+  /** @deprecated */
   var frame: java.lang.String = js.native
-  /**
-    * Sets or retrieves the height of the object.
-    */
-  var height: js.Any = js.native
   /**
     * Sets or retrieves the number of horizontal rows contained in the object.
     */
-  var rows: HTMLCollectionOf[HTMLTableRowElement] = js.native
+  val rows: HTMLCollectionOf[HTMLTableRowElement] = js.native
   /**
     * Sets or retrieves which dividing lines (inner borders) are displayed.
     */
+  /** @deprecated */
   var rules: java.lang.String = js.native
   /**
     * Sets or retrieves a description and/or structure of the object.
     */
+  /** @deprecated */
   var summary: java.lang.String = js.native
   /**
     * Retrieves a collection of all tBody objects in the table. Objects in this collection are in source order.
     */
-  var tBodies: HTMLCollectionOf[HTMLTableSectionElement] = js.native
+  val tBodies: HTMLCollectionOf[HTMLTableSectionElement] = js.native
   /**
     * Retrieves the tFoot object of the table.
     */
-  var tFoot: HTMLTableSectionElement = js.native
+  var tFoot: HTMLTableSectionElement | Null = js.native
   /**
     * Retrieves the tHead object of the table.
     */
-  var tHead: HTMLTableSectionElement = js.native
+  var tHead: HTMLTableSectionElement | Null = js.native
   /**
     * Sets or retrieves the width of the object.
     */
+  /** @deprecated */
   var width: java.lang.String = js.native
   /**
     * Creates an empty caption element in the table.

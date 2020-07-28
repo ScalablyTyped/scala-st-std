@@ -11,28 +11,29 @@ class TreeWalker ()
   extends org.scalablytyped.std.TreeWalker {
   /* CompleteClass */
   override var currentNode: org.scalablytyped.std.Node = js.native
+  /** @deprecated */
   /* CompleteClass */
   override val expandEntityReferences: scala.Boolean = js.native
   /* CompleteClass */
-  override val filter: org.scalablytyped.std.NodeFilter = js.native
+  override val filter: org.scalablytyped.std.NodeFilter | Null = js.native
   /* CompleteClass */
   override val root: org.scalablytyped.std.Node = js.native
   /* CompleteClass */
   override val whatToShow: Double = js.native
   /* CompleteClass */
-  override def firstChild(): org.scalablytyped.std.Node = js.native
+  override def firstChild(): org.scalablytyped.std.Node | Null = js.native
   /* CompleteClass */
-  override def lastChild(): org.scalablytyped.std.Node = js.native
+  override def lastChild(): org.scalablytyped.std.Node | Null = js.native
   /* CompleteClass */
-  override def nextNode(): org.scalablytyped.std.Node = js.native
+  override def nextNode(): org.scalablytyped.std.Node | Null = js.native
   /* CompleteClass */
-  override def nextSibling(): org.scalablytyped.std.Node = js.native
+  override def nextSibling(): org.scalablytyped.std.Node | Null = js.native
   /* CompleteClass */
-  override def parentNode(): org.scalablytyped.std.Node = js.native
+  override def parentNode(): org.scalablytyped.std.Node | Null = js.native
   /* CompleteClass */
-  override def previousNode(): org.scalablytyped.std.Node = js.native
+  override def previousNode(): org.scalablytyped.std.Node | Null = js.native
   /* CompleteClass */
-  override def previousSibling(): org.scalablytyped.std.Node = js.native
+  override def previousSibling(): org.scalablytyped.std.Node | Null = js.native
 }
 
 @JSGlobal("TreeWalker")

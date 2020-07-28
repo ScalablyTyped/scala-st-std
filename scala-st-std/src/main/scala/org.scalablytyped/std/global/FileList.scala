@@ -12,7 +12,7 @@ class FileList ()
   /* CompleteClass */
   override val length: Double = js.native
   /* CompleteClass */
-  override def item(index: Double): org.scalablytyped.std.File = js.native
+  override def item(index: Double): org.scalablytyped.std.File | Null = js.native
 }
 
 @JSGlobal("FileList")

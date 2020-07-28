@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait FileList extends /* index */ NumberDictionary[File] {
   val length: Double
-  def item(index: Double): File
+  def item(index: Double): File | Null
 }
 
 object FileList {
   @scala.inline
-  def apply(item: Double => File, length: Double): FileList = {
+  def apply(item: Double => File | Null, length: Double): FileList = {
     val __obj = js.Dynamic.literal(item = js.Any.fromFunction1(item), length = length.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileList]
   }
@@ -28,7 +28,7 @@ object FileList {
         x
     }
     @scala.inline
-    def setItem(value: Double => File): Self = this.set("item", js.Any.fromFunction1(value))
+    def setItem(value: Double => File | Null): Self = this.set("item", js.Any.fromFunction1(value))
     @scala.inline
     def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
   }

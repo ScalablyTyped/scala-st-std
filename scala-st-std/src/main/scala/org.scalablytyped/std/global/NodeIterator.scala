@@ -9,10 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class NodeIterator ()
   extends org.scalablytyped.std.NodeIterator {
+  /** @deprecated */
   /* CompleteClass */
   override val expandEntityReferences: scala.Boolean = js.native
   /* CompleteClass */
-  override val filter: org.scalablytyped.std.NodeFilter = js.native
+  override val filter: org.scalablytyped.std.NodeFilter | Null = js.native
   /* CompleteClass */
   override val root: org.scalablytyped.std.Node = js.native
   /* CompleteClass */
@@ -20,9 +21,9 @@ class NodeIterator ()
   /* CompleteClass */
   override def detach(): Unit = js.native
   /* CompleteClass */
-  override def nextNode(): org.scalablytyped.std.Node = js.native
+  override def nextNode(): org.scalablytyped.std.Node | Null = js.native
   /* CompleteClass */
-  override def previousNode(): org.scalablytyped.std.Node = js.native
+  override def previousNode(): org.scalablytyped.std.Node | Null = js.native
 }
 
 @JSGlobal("NodeIterator")

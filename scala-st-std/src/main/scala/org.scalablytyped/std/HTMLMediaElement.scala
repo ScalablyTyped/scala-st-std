@@ -58,7 +58,7 @@ trait HTMLMediaElement extends HTMLElement {
   /**
     * Returns an object representing the current error state of the audio or video element.
     */
-  val error: MediaError = js.native
+  val error: MediaError | Null = js.native
   /**
     * Gets or sets a flag to specify whether playback should restart after it completes.
     */
@@ -76,6 +76,7 @@ trait HTMLMediaElement extends HTMLElement {
   /**
     * Gets the MSMediaKeys object, which is used for decrypting media data, that is associated with this media element.
     */
+  /** @deprecated */
   val msKeys: MSMediaKeys = js.native
   /**
     * Gets or sets whether the DLNA PlayTo device is available.
@@ -105,6 +106,9 @@ trait HTMLMediaElement extends HTMLElement {
     * Gets the current network activity for the element.
     */
   val networkState: Double = js.native
+  var onencrypted: (js.ThisFunction1[/* this */ this.type, /* ev */ MediaEncryptedEvent, _]) | Null = js.native
+  /** @deprecated */
+  var onmsneedkey: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   /**
     * Gets a flag that specifies whether playback is paused.
     */
@@ -121,7 +125,7 @@ trait HTMLMediaElement extends HTMLElement {
     * Gets or sets the current playback position, in seconds.
     */
   var preload: java.lang.String = js.native
-  var readyState: Double = js.native
+  val readyState: Double = js.native
   /**
     * Returns a TimeRanges object that represents the ranges of the current media resource that can be seeked.
     */
@@ -134,7 +138,7 @@ trait HTMLMediaElement extends HTMLElement {
     * The address or URL of the a media resource that is to be considered.
     */
   var src: java.lang.String = js.native
-  var srcObject: MediaStream | Null = js.native
+  var srcObject: MediaStream | MediaSource | Blob | Null = js.native
   val textTracks: TextTrackList = js.native
   val videoTracks: VideoTrackList = js.native
   /**
@@ -159,30 +163,27 @@ trait HTMLMediaElement extends HTMLElement {
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_msneedkey(
-    `type`: msneedkey,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSMediaKeyNeededEvent, _]
-  ): Unit = js.native
+  def addEventListener_msneedkey(`type`: msneedkey, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_msneedkey(
     `type`: msneedkey,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSMediaKeyNeededEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_msneedkey(
     `type`: msneedkey,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSMediaKeyNeededEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
-  def addTextTrack(kind: java.lang.String): TextTrack = js.native
-  def addTextTrack(kind: java.lang.String, label: js.UndefOr[scala.Nothing], language: java.lang.String): TextTrack = js.native
-  def addTextTrack(kind: java.lang.String, label: java.lang.String): TextTrack = js.native
-  def addTextTrack(kind: java.lang.String, label: java.lang.String, language: java.lang.String): TextTrack = js.native
+  def addTextTrack(kind: TextTrackKind): TextTrack = js.native
+  def addTextTrack(kind: TextTrackKind, label: js.UndefOr[scala.Nothing], language: java.lang.String): TextTrack = js.native
+  def addTextTrack(kind: TextTrackKind, label: java.lang.String): TextTrack = js.native
+  def addTextTrack(kind: TextTrackKind, label: java.lang.String, language: java.lang.String): TextTrack = js.native
   /**
     * Returns a string that specifies whether the client can play a given media resource type.
     */
-  def canPlayType(`type`: java.lang.String): java.lang.String = js.native
+  def canPlayType(`type`: java.lang.String): CanPlayTypeResult = js.native
   /**
     * Resets the audio or video object and loads a new media resource.
     */
@@ -197,14 +198,13 @@ trait HTMLMediaElement extends HTMLElement {
     */
   def msInsertAudioEffect(activatableClassId: java.lang.String, effectRequired: scala.Boolean): Unit = js.native
   def msInsertAudioEffect(activatableClassId: java.lang.String, effectRequired: scala.Boolean, config: js.Any): Unit = js.native
+  /** @deprecated */
   def msSetMediaKeys(mediaKeys: MSMediaKeys): Unit = js.native
   /**
     * Specifies the media protection manager for a given media pipeline.
     */
   def msSetMediaProtectionManager(): Unit = js.native
   def msSetMediaProtectionManager(mediaProtectionManager: js.Any): Unit = js.native
-  def onencrypted(ev: MediaEncryptedEvent): js.Any = js.native
-  def onmsneedkey(ev: MSMediaKeyNeededEvent): js.Any = js.native
   /**
     * Pauses the current playback and sets paused to TRUE. This can be used to test whether the media is playing or paused. You can also use the pause or play events to tell whether the media is playing or not.
     */
@@ -231,20 +231,17 @@ trait HTMLMediaElement extends HTMLElement {
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_msneedkey(
-    `type`: msneedkey,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSMediaKeyNeededEvent, _]
-  ): Unit = js.native
+  def removeEventListener_msneedkey(`type`: msneedkey, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_msneedkey(
     `type`: msneedkey,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSMediaKeyNeededEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_msneedkey(
     `type`: msneedkey,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSMediaKeyNeededEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   def setMediaKeys(): js.Promise[Unit] = js.native

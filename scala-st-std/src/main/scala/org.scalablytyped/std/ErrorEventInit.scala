@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation._
 
 trait ErrorEventInit extends EventInit {
   var colno: js.UndefOr[Double] = js.undefined
-  var conlno: js.UndefOr[Double] = js.undefined
   var error: js.UndefOr[js.Any] = js.undefined
   var filename: js.UndefOr[java.lang.String] = js.undefined
   var lineno: js.UndefOr[Double] = js.undefined
@@ -34,10 +33,6 @@ object ErrorEventInit {
     def setColno(value: Double): Self = this.set("colno", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteColno: Self = this.set("colno", js.undefined)
-    @scala.inline
-    def setConlno(value: Double): Self = this.set("conlno", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteConlno: Self = this.set("conlno", js.undefined)
     @scala.inline
     def setError(value: js.Any): Self = this.set("error", value.asInstanceOf[js.Any])
     @scala.inline

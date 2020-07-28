@@ -5,15 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Pbkdf2Params extends Algorithm {
-  var hash: AlgorithmIdentifier
+  var hash: java.lang.String | Algorithm
   var iterations: Double
-  var salt: BufferSource
+  var salt: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer | Null
 }
 
 object Pbkdf2Params {
   @scala.inline
-  def apply(hash: AlgorithmIdentifier, iterations: Double, name: java.lang.String, salt: BufferSource): Pbkdf2Params = {
-    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], iterations = iterations.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], salt = salt.asInstanceOf[js.Any])
+  def apply(hash: java.lang.String | Algorithm, iterations: Double, name: java.lang.String): Pbkdf2Params = {
+    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], iterations = iterations.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pbkdf2Params]
   }
   @scala.inline
@@ -28,11 +28,15 @@ object Pbkdf2Params {
         x
     }
     @scala.inline
-    def setHash(value: AlgorithmIdentifier): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setHash(value: java.lang.String | Algorithm): Self = this.set("hash", value.asInstanceOf[js.Any])
     @scala.inline
     def setIterations(value: Double): Self = this.set("iterations", value.asInstanceOf[js.Any])
     @scala.inline
-    def setSalt(value: BufferSource): Self = this.set("salt", value.asInstanceOf[js.Any])
+    def setSalt(
+      value: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
+    ): Self = this.set("salt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSaltNull: Self = this.set("salt", null)
   }
   
 }

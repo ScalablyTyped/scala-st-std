@@ -11,13 +11,16 @@ trait IDBCursor extends js.Object {
   val PREV: java.lang.String = js.native
   val PREV_NO_DUPLICATE: java.lang.String = js.native
   val direction: IDBCursorDirection = js.native
-  var key: IDBKeyRange | IDBValidKey = js.native
+  val key: IDBKeyRange | Double | java.lang.String | Date | IDBArrayKey = js.native
   val primaryKey: js.Any = js.native
-  var source: IDBObjectStore | IDBIndex = js.native
+  val source: IDBObjectStore | IDBIndex = js.native
   def advance(count: Double): Unit = js.native
   def continue(): Unit = js.native
+  def continue(key: Date): Unit = js.native
+  def continue(key: IDBArrayKey): Unit = js.native
   def continue(key: IDBKeyRange): Unit = js.native
-  def continue(key: IDBValidKey): Unit = js.native
+  def continue(key: java.lang.String): Unit = js.native
+  def continue(key: Double): Unit = js.native
   def delete(): IDBRequest = js.native
   def update(value: js.Any): IDBRequest = js.native
 }

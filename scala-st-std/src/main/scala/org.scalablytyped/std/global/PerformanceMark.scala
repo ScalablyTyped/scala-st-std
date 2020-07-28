@@ -17,6 +17,8 @@ class PerformanceMark ()
   override val name: java.lang.String = js.native
   /* CompleteClass */
   override val startTime: Double = js.native
+  /* CompleteClass */
+  override def toJSON(): js.Any = js.native
 }
 
 @JSGlobal("PerformanceMark")

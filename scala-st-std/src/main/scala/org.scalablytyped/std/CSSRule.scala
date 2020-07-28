@@ -18,8 +18,8 @@ trait CSSRule extends js.Object {
   val UNKNOWN_RULE: Double
   val VIEWPORT_RULE: Double
   var cssText: java.lang.String
-  val parentRule: CSSRule
-  val parentStyleSheet: CSSStyleSheet
+  val parentRule: CSSRule | Null
+  val parentStyleSheet: CSSStyleSheet | Null
   val `type`: Double
 }
 
@@ -39,11 +39,9 @@ object CSSRule {
     UNKNOWN_RULE: Double,
     VIEWPORT_RULE: Double,
     cssText: java.lang.String,
-    parentRule: CSSRule,
-    parentStyleSheet: CSSStyleSheet,
     `type`: Double
   ): CSSRule = {
-    val __obj = js.Dynamic.literal(CHARSET_RULE = CHARSET_RULE.asInstanceOf[js.Any], FONT_FACE_RULE = FONT_FACE_RULE.asInstanceOf[js.Any], IMPORT_RULE = IMPORT_RULE.asInstanceOf[js.Any], KEYFRAMES_RULE = KEYFRAMES_RULE.asInstanceOf[js.Any], KEYFRAME_RULE = KEYFRAME_RULE.asInstanceOf[js.Any], MEDIA_RULE = MEDIA_RULE.asInstanceOf[js.Any], NAMESPACE_RULE = NAMESPACE_RULE.asInstanceOf[js.Any], PAGE_RULE = PAGE_RULE.asInstanceOf[js.Any], STYLE_RULE = STYLE_RULE.asInstanceOf[js.Any], SUPPORTS_RULE = SUPPORTS_RULE.asInstanceOf[js.Any], UNKNOWN_RULE = UNKNOWN_RULE.asInstanceOf[js.Any], VIEWPORT_RULE = VIEWPORT_RULE.asInstanceOf[js.Any], cssText = cssText.asInstanceOf[js.Any], parentRule = parentRule.asInstanceOf[js.Any], parentStyleSheet = parentStyleSheet.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(CHARSET_RULE = CHARSET_RULE.asInstanceOf[js.Any], FONT_FACE_RULE = FONT_FACE_RULE.asInstanceOf[js.Any], IMPORT_RULE = IMPORT_RULE.asInstanceOf[js.Any], KEYFRAMES_RULE = KEYFRAMES_RULE.asInstanceOf[js.Any], KEYFRAME_RULE = KEYFRAME_RULE.asInstanceOf[js.Any], MEDIA_RULE = MEDIA_RULE.asInstanceOf[js.Any], NAMESPACE_RULE = NAMESPACE_RULE.asInstanceOf[js.Any], PAGE_RULE = PAGE_RULE.asInstanceOf[js.Any], STYLE_RULE = STYLE_RULE.asInstanceOf[js.Any], SUPPORTS_RULE = SUPPORTS_RULE.asInstanceOf[js.Any], UNKNOWN_RULE = UNKNOWN_RULE.asInstanceOf[js.Any], VIEWPORT_RULE = VIEWPORT_RULE.asInstanceOf[js.Any], cssText = cssText.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CSSRule]
   }
@@ -85,11 +83,15 @@ object CSSRule {
     @scala.inline
     def setCssText(value: java.lang.String): Self = this.set("cssText", value.asInstanceOf[js.Any])
     @scala.inline
+    def setType(value: Double): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
     def setParentRule(value: CSSRule): Self = this.set("parentRule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParentRuleNull: Self = this.set("parentRule", null)
     @scala.inline
     def setParentStyleSheet(value: CSSStyleSheet): Self = this.set("parentStyleSheet", value.asInstanceOf[js.Any])
     @scala.inline
-    def setType(value: Double): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setParentStyleSheetNull: Self = this.set("parentStyleSheet", null)
   }
   
 }

@@ -12,8 +12,6 @@ class SVGFEImageElement ()
   /* CompleteClass */
   override val childElementCount: Double = js.native
   /* CompleteClass */
-  override val children: org.scalablytyped.std.HTMLCollection = js.native
-  /* CompleteClass */
   override val firstElementChild: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
   override val height: org.scalablytyped.std.SVGAnimatedLength = js.native
@@ -27,6 +25,8 @@ class SVGFEImageElement ()
   override val previousElementSibling: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
   override val result: org.scalablytyped.std.SVGAnimatedString = js.native
+  /* CompleteClass */
+  override val style: org.scalablytyped.std.CSSStyleDeclaration = js.native
   /* CompleteClass */
   override val width: org.scalablytyped.std.SVGAnimatedLength = js.native
   /* CompleteClass */

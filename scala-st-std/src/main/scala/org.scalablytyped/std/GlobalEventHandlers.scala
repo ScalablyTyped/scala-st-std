@@ -15,6 +15,15 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait GlobalEventHandlers extends js.Object {
+  var onpointercancel: (js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null = js.native
+  var onpointerdown: (js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null = js.native
+  var onpointerenter: (js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null = js.native
+  var onpointerleave: (js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null = js.native
+  var onpointermove: (js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null = js.native
+  var onpointerout: (js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null = js.native
+  var onpointerover: (js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null = js.native
+  var onpointerup: (js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null = js.native
+  var onwheel: (js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, _]) | Null = js.native
   def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   def addEventListener(
     `type`: java.lang.String,
@@ -148,15 +157,6 @@ trait GlobalEventHandlers extends js.Object {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, _],
     options: scala.Boolean
   ): Unit = js.native
-  def onpointercancel(ev: PointerEvent): js.Any = js.native
-  def onpointerdown(ev: PointerEvent): js.Any = js.native
-  def onpointerenter(ev: PointerEvent): js.Any = js.native
-  def onpointerleave(ev: PointerEvent): js.Any = js.native
-  def onpointermove(ev: PointerEvent): js.Any = js.native
-  def onpointerout(ev: PointerEvent): js.Any = js.native
-  def onpointerover(ev: PointerEvent): js.Any = js.native
-  def onpointerup(ev: PointerEvent): js.Any = js.native
-  def onwheel(ev: WheelEvent): js.Any = js.native
   def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   def removeEventListener(
     `type`: java.lang.String,

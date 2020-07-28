@@ -5,7 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RsaOaepParams extends Algorithm {
-  var label: js.UndefOr[BufferSource] = js.undefined
+  var label: js.UndefOr[
+    Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer | Null
+  ] = js.undefined
 }
 
 object RsaOaepParams {
@@ -26,9 +28,13 @@ object RsaOaepParams {
         x
     }
     @scala.inline
-    def setLabel(value: BufferSource): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLabel(
+      value: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
+    ): Self = this.set("label", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setLabelNull: Self = this.set("label", null)
   }
   
 }

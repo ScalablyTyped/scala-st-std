@@ -12,7 +12,7 @@ class CSSRuleList ()
   /* CompleteClass */
   override val length: Double = js.native
   /* CompleteClass */
-  override def item(index: Double): org.scalablytyped.std.CSSRule = js.native
+  override def item(index: Double): org.scalablytyped.std.CSSRule | Null = js.native
 }
 
 @JSGlobal("CSSRuleList")

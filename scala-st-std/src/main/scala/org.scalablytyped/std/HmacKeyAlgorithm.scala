@@ -5,14 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait HmacKeyAlgorithm extends KeyAlgorithm {
-  var hash: AlgorithmIdentifier
+  var hash: KeyAlgorithm
   var length: Double
 }
 
 object HmacKeyAlgorithm {
   @scala.inline
-  def apply(hash: AlgorithmIdentifier, length: Double): HmacKeyAlgorithm = {
-    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
+  def apply(hash: KeyAlgorithm, length: Double, name: java.lang.String): HmacKeyAlgorithm = {
+    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[HmacKeyAlgorithm]
   }
   @scala.inline
@@ -27,7 +27,7 @@ object HmacKeyAlgorithm {
         x
     }
     @scala.inline
-    def setHash(value: AlgorithmIdentifier): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setHash(value: KeyAlgorithm): Self = this.set("hash", value.asInstanceOf[js.Any])
     @scala.inline
     def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
   }

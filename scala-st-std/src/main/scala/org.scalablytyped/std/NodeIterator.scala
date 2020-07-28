@@ -5,13 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NodeIterator extends js.Object {
+  /** @deprecated */
   val expandEntityReferences: scala.Boolean
-  val filter: NodeFilter
+  val filter: NodeFilter | Null
   val root: Node
   val whatToShow: Double
   def detach(): Unit
-  def nextNode(): Node
-  def previousNode(): Node
+  def nextNode(): Node | Null
+  def previousNode(): Node | Null
 }
 
 object NodeIterator {
@@ -19,13 +20,12 @@ object NodeIterator {
   def apply(
     detach: () => Unit,
     expandEntityReferences: scala.Boolean,
-    filter: NodeFilter,
-    nextNode: () => Node,
-    previousNode: () => Node,
+    nextNode: () => Node | Null,
+    previousNode: () => Node | Null,
     root: Node,
     whatToShow: Double
   ): NodeIterator = {
-    val __obj = js.Dynamic.literal(detach = js.Any.fromFunction0(detach), expandEntityReferences = expandEntityReferences.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], nextNode = js.Any.fromFunction0(nextNode), previousNode = js.Any.fromFunction0(previousNode), root = root.asInstanceOf[js.Any], whatToShow = whatToShow.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(detach = js.Any.fromFunction0(detach), expandEntityReferences = expandEntityReferences.asInstanceOf[js.Any], nextNode = js.Any.fromFunction0(nextNode), previousNode = js.Any.fromFunction0(previousNode), root = root.asInstanceOf[js.Any], whatToShow = whatToShow.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeIterator]
   }
   @scala.inline
@@ -44,15 +44,17 @@ object NodeIterator {
     @scala.inline
     def setExpandEntityReferences(value: scala.Boolean): Self = this.set("expandEntityReferences", value.asInstanceOf[js.Any])
     @scala.inline
-    def setFilter(value: NodeFilter): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setNextNode(value: () => Node | Null): Self = this.set("nextNode", js.Any.fromFunction0(value))
     @scala.inline
-    def setNextNode(value: () => Node): Self = this.set("nextNode", js.Any.fromFunction0(value))
-    @scala.inline
-    def setPreviousNode(value: () => Node): Self = this.set("previousNode", js.Any.fromFunction0(value))
+    def setPreviousNode(value: () => Node | Null): Self = this.set("previousNode", js.Any.fromFunction0(value))
     @scala.inline
     def setRoot(value: Node): Self = this.set("root", value.asInstanceOf[js.Any])
     @scala.inline
     def setWhatToShow(value: Double): Self = this.set("whatToShow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFilter(value: NodeFilter): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFilterNull: Self = this.set("filter", null)
   }
   
 }

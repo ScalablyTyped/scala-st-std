@@ -2,7 +2,6 @@ package org.scalablytyped.std
 
 import org.scalablytyped.std.stdStrings.`object`
 import org.scalablytyped.std.stdStrings.`var`
-import org.scalablytyped.std.stdStrings.`x-ms-webview`
 import org.scalablytyped.std.stdStrings.a
 import org.scalablytyped.std.stdStrings.abbr
 import org.scalablytyped.std.stdStrings.acronym
@@ -144,6 +143,7 @@ import org.scalablytyped.std.stdStrings.samp
 import org.scalablytyped.std.stdStrings.script
 import org.scalablytyped.std.stdStrings.section
 import org.scalablytyped.std.stdStrings.select
+import org.scalablytyped.std.stdStrings.slot
 import org.scalablytyped.std.stdStrings.small
 import org.scalablytyped.std.stdStrings.source
 import org.scalablytyped.std.stdStrings.span
@@ -472,6 +472,8 @@ trait NodeSelector extends js.Object {
   @JSName("querySelectorAll")
   def querySelectorAll_select(selectors: select): NodeListOf[HTMLSelectElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_slot(selectors: slot): NodeListOf[HTMLSlotElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_small(selectors: small): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_source(selectors: source): NodeListOf[HTMLSourceElement] = js.native
@@ -543,8 +545,6 @@ trait NodeSelector extends js.Object {
   def querySelectorAll_wbr(selectors: wbr): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_xmp(selectors: xmp): NodeListOf[HTMLPreElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_xmswebview(selectors: `x-ms-webview`): NodeListOf[MSHTMLWebViewElement] = js.native
   @JSName("querySelector")
   def querySelector_a(selectors: a): HTMLAnchorElement | Null = js.native
   @JSName("querySelector")
@@ -830,6 +830,8 @@ trait NodeSelector extends js.Object {
   @JSName("querySelector")
   def querySelector_select(selectors: select): HTMLSelectElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_slot(selectors: slot): HTMLSlotElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_small(selectors: small): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_source(selectors: source): HTMLSourceElement | Null = js.native
@@ -901,7 +903,5 @@ trait NodeSelector extends js.Object {
   def querySelector_wbr(selectors: wbr): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_xmp(selectors: xmp): HTMLPreElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_xmswebview(selectors: `x-ms-webview`): MSHTMLWebViewElement | Null = js.native
 }
 

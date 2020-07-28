@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait ConcatParams extends Algorithm {
   var algorithmId: Uint8Array
-  var hash: js.UndefOr[AlgorithmIdentifier] = js.undefined
+  var hash: js.UndefOr[java.lang.String | Algorithm] = js.undefined
   var partyUInfo: Uint8Array
   var partyVInfo: Uint8Array
   var privateInfo: js.UndefOr[Uint8Array] = js.undefined
@@ -37,7 +37,7 @@ object ConcatParams {
     @scala.inline
     def setPartyVInfo(value: Uint8Array): Self = this.set("partyVInfo", value.asInstanceOf[js.Any])
     @scala.inline
-    def setHash(value: AlgorithmIdentifier): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setHash(value: java.lang.String | Algorithm): Self = this.set("hash", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteHash: Self = this.set("hash", js.undefined)
     @scala.inline

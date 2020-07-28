@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait FormData extends _BodyInit {
+trait FormData extends js.Object {
   @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[java.lang.String | File]] = js.native
   def append(name: java.lang.String, value: Blob): Unit = js.native

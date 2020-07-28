@@ -11,6 +11,10 @@ import scala.scalajs.js.annotation._
 trait MediaStream extends EventTarget {
   val active: scala.Boolean = js.native
   val id: java.lang.String = js.native
+  var onactive: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onaddtrack: (js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, _]) | Null = js.native
+  var oninactive: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onremovetrack: (js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, _]) | Null = js.native
   @JSName("addEventListener")
   def addEventListener_active(
     `type`: org.scalablytyped.std.stdStrings.active,
@@ -81,10 +85,6 @@ trait MediaStream extends EventTarget {
   def getTrackById(trackId: java.lang.String): MediaStreamTrack | Null = js.native
   def getTracks(): js.Array[MediaStreamTrack] = js.native
   def getVideoTracks(): js.Array[MediaStreamTrack] = js.native
-  def onactive(ev: Event): js.Any = js.native
-  def onaddtrack(ev: MediaStreamTrackEvent): js.Any = js.native
-  def oninactive(ev: Event): js.Any = js.native
-  def onremovetrack(ev: MediaStreamTrackEvent): js.Any = js.native
   @JSName("removeEventListener")
   def removeEventListener_active(
     `type`: org.scalablytyped.std.stdStrings.active,

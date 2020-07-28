@@ -8,9 +8,6 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("URLSearchParams")
 @js.native
-/**
-  * Constructor returning a URLSearchParams object.
-  */
 class URLSearchParams ()
   extends org.scalablytyped.std.URLSearchParams {
   def this(init: org.scalablytyped.std.URLSearchParams) = this()
@@ -20,10 +17,7 @@ class URLSearchParams ()
 @JSGlobal("URLSearchParams")
 @js.native
 object URLSearchParams
-  extends /**
-  * Constructor returning a URLSearchParams object.
-  */
-Instantiable0[org.scalablytyped.std.URLSearchParams]
+  extends Instantiable0[org.scalablytyped.std.URLSearchParams]
      with Instantiable1[
       (/* init */ java.lang.String) | (/* init */ org.scalablytyped.std.URLSearchParams), 
       org.scalablytyped.std.URLSearchParams

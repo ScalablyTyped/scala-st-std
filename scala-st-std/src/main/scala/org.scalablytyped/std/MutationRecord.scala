@@ -13,12 +13,12 @@ trait MutationRecord extends js.Object {
   val previousSibling: Node | Null
   val removedNodes: NodeList
   val target: Node
-  val `type`: java.lang.String
+  val `type`: MutationRecordType
 }
 
 object MutationRecord {
   @scala.inline
-  def apply(addedNodes: NodeList, removedNodes: NodeList, target: Node, `type`: java.lang.String): MutationRecord = {
+  def apply(addedNodes: NodeList, removedNodes: NodeList, target: Node, `type`: MutationRecordType): MutationRecord = {
     val __obj = js.Dynamic.literal(addedNodes = addedNodes.asInstanceOf[js.Any], removedNodes = removedNodes.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutationRecord]
@@ -41,7 +41,7 @@ object MutationRecord {
     @scala.inline
     def setTarget(value: Node): Self = this.set("target", value.asInstanceOf[js.Any])
     @scala.inline
-    def setType(value: java.lang.String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: MutationRecordType): Self = this.set("type", value.asInstanceOf[js.Any])
     @scala.inline
     def setAttributeName(value: java.lang.String): Self = this.set("attributeName", value.asInstanceOf[js.Any])
     @scala.inline

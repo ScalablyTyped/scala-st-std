@@ -16,6 +16,7 @@ trait PerformanceResourceTiming extends PerformanceEntry {
   val requestStart: Double
   val responseEnd: Double
   val responseStart: Double
+  val workerStart: Double
 }
 
 object PerformanceResourceTiming {
@@ -35,9 +36,11 @@ object PerformanceResourceTiming {
     requestStart: Double,
     responseEnd: Double,
     responseStart: Double,
-    startTime: Double
+    startTime: Double,
+    toJSON: () => js.Any,
+    workerStart: Double
   ): PerformanceResourceTiming = {
-    val __obj = js.Dynamic.literal(connectEnd = connectEnd.asInstanceOf[js.Any], connectStart = connectStart.asInstanceOf[js.Any], domainLookupEnd = domainLookupEnd.asInstanceOf[js.Any], domainLookupStart = domainLookupStart.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], entryType = entryType.asInstanceOf[js.Any], fetchStart = fetchStart.asInstanceOf[js.Any], initiatorType = initiatorType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], redirectEnd = redirectEnd.asInstanceOf[js.Any], redirectStart = redirectStart.asInstanceOf[js.Any], requestStart = requestStart.asInstanceOf[js.Any], responseEnd = responseEnd.asInstanceOf[js.Any], responseStart = responseStart.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(connectEnd = connectEnd.asInstanceOf[js.Any], connectStart = connectStart.asInstanceOf[js.Any], domainLookupEnd = domainLookupEnd.asInstanceOf[js.Any], domainLookupStart = domainLookupStart.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], entryType = entryType.asInstanceOf[js.Any], fetchStart = fetchStart.asInstanceOf[js.Any], initiatorType = initiatorType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], redirectEnd = redirectEnd.asInstanceOf[js.Any], redirectStart = redirectStart.asInstanceOf[js.Any], requestStart = requestStart.asInstanceOf[js.Any], responseEnd = responseEnd.asInstanceOf[js.Any], responseStart = responseStart.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), workerStart = workerStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[PerformanceResourceTiming]
   }
   @scala.inline
@@ -73,6 +76,8 @@ object PerformanceResourceTiming {
     def setResponseEnd(value: Double): Self = this.set("responseEnd", value.asInstanceOf[js.Any])
     @scala.inline
     def setResponseStart(value: Double): Self = this.set("responseStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWorkerStart(value: Double): Self = this.set("workerStart", value.asInstanceOf[js.Any])
   }
   
 }

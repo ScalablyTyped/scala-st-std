@@ -5,15 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ScopedCredentialDescriptor extends js.Object {
-  var id: BufferSource
+  var id: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer | Null
   var transports: js.UndefOr[js.Array[Transport]] = js.undefined
   var `type`: ScopedCredentialType
 }
 
 object ScopedCredentialDescriptor {
   @scala.inline
-  def apply(id: BufferSource, `type`: ScopedCredentialType): ScopedCredentialDescriptor = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+  def apply(`type`: ScopedCredentialType): ScopedCredentialDescriptor = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScopedCredentialDescriptor]
   }
@@ -29,9 +29,13 @@ object ScopedCredentialDescriptor {
         x
     }
     @scala.inline
-    def setId(value: BufferSource): Self = this.set("id", value.asInstanceOf[js.Any])
-    @scala.inline
     def setType(value: ScopedCredentialType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(
+      value: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
+    ): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIdNull: Self = this.set("id", null)
     @scala.inline
     def setTransportsVarargs(value: Transport*): Self = this.set("transports", js.Array(value :_*))
     @scala.inline

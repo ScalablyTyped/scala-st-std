@@ -14,7 +14,8 @@ trait Headers extends js.Object {
     * Returns an iterator allowing to go through all key/value pairs contained in this object.
     */
   def entries(): IterableIterator[js.Tuple2[java.lang.String, java.lang.String]] = js.native
-  def forEach(callback: ForEachCallback): Unit = js.native
+  def forEach(callback: js.Function): Unit = js.native
+  def forEach(callback: js.Function, thisArg: js.Any): Unit = js.native
   def get(name: java.lang.String): java.lang.String | Null = js.native
   def has(name: java.lang.String): scala.Boolean = js.native
   /**

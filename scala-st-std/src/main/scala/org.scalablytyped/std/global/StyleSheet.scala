@@ -12,15 +12,15 @@ class StyleSheet ()
   /* CompleteClass */
   override var disabled: scala.Boolean = js.native
   /* CompleteClass */
-  override val href: java.lang.String = js.native
+  override val href: java.lang.String | Null = js.native
   /* CompleteClass */
   override val media: org.scalablytyped.std.MediaList = js.native
   /* CompleteClass */
   override val ownerNode: org.scalablytyped.std.Node = js.native
   /* CompleteClass */
-  override val parentStyleSheet: org.scalablytyped.std.StyleSheet = js.native
+  override val parentStyleSheet: org.scalablytyped.std.StyleSheet | Null = js.native
   /* CompleteClass */
-  override val title: java.lang.String = js.native
+  override val title: java.lang.String | Null = js.native
   /* CompleteClass */
   override val `type`: java.lang.String = js.native
 }

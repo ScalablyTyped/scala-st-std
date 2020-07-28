@@ -8,8 +8,10 @@ import scala.scalajs.js.annotation._
 trait SVGGraphicsElement
   extends SVGElement
      with SVGTests {
-  val farthestViewportElement: SVGElement = js.native
-  val nearestViewportElement: SVGElement = js.native
+  /** @deprecated */
+  val farthestViewportElement: SVGElement | Null = js.native
+  /** @deprecated */
+  val nearestViewportElement: SVGElement | Null = js.native
   val transform: SVGAnimatedTransformList = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
@@ -22,8 +24,9 @@ trait SVGGraphicsElement
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   def getBBox(): SVGRect = js.native
-  def getCTM(): SVGMatrix = js.native
-  def getScreenCTM(): SVGMatrix = js.native
+  def getCTM(): SVGMatrix | Null = js.native
+  def getScreenCTM(): SVGMatrix | Null = js.native
+  /** @deprecated */
   def getTransformToElement(element: SVGElement): SVGMatrix = js.native
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native

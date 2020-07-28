@@ -15,11 +15,33 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait SVGElement extends Element {
-  val ownerSVGElement: SVGSVGElement = js.native
-  val style: CSSStyleDeclaration = js.native
-  val viewportElement: SVGElement = js.native
+trait SVGElement
+  extends Element
+     with ElementCSSInlineStyle {
+  var onclick: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null = js.native
+  var ondblclick: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null = js.native
+  var onfocusin: (js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]) | Null = js.native
+  var onfocusout: (js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]) | Null = js.native
+  var onload: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onmousedown: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null = js.native
+  var onmousemove: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null = js.native
+  var onmouseout: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null = js.native
+  var onmouseover: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null = js.native
+  var onmouseup: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null = js.native
+  val ownerSVGElement: SVGSVGElement | Null = js.native
+  val viewportElement: SVGElement | Null = js.native
+  /** @deprecated */
   var xmlbase: java.lang.String = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(
+    `type`: java.lang.String,
+    listener: EventListenerOrEventListenerObject,
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_click(`type`: click, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
   @JSName("addEventListener")
@@ -160,16 +182,16 @@ trait SVGElement extends Element {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
     options: scala.Boolean
   ): Unit = js.native
-  def onclick(ev: MouseEvent): js.Any = js.native
-  def ondblclick(ev: MouseEvent): js.Any = js.native
-  def onfocusin(ev: FocusEvent): js.Any = js.native
-  def onfocusout(ev: FocusEvent): js.Any = js.native
-  def onload(ev: Event): js.Any = js.native
-  def onmousedown(ev: MouseEvent): js.Any = js.native
-  def onmousemove(ev: MouseEvent): js.Any = js.native
-  def onmouseout(ev: MouseEvent): js.Any = js.native
-  def onmouseover(ev: MouseEvent): js.Any = js.native
-  def onmouseup(ev: MouseEvent): js.Any = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(
+    `type`: java.lang.String,
+    listener: EventListenerOrEventListenerObject,
+    options: EventListenerOptions
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_click(`type`: click, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
   @JSName("removeEventListener")
