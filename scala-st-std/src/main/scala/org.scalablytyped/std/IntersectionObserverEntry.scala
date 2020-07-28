@@ -4,13 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The IntersectionObserverEntry interface of the Intersection Observer API describes the intersection between the target element and its root container at a specific moment of transition. */
+/** An interface of the Intersection Observer API describes the intersection between the target element and its root container at a specific moment of transition. */
 trait IntersectionObserverEntry extends js.Object {
   val boundingClientRect: ClientRect | DOMRect
   val intersectionRatio: Double
   val intersectionRect: ClientRect | DOMRect
   val isIntersecting: scala.Boolean
-  val rootBounds: ClientRect | DOMRect
+  val rootBounds: ClientRect | DOMRect | Null
   val target: Element
   val time: Double
 }
@@ -22,11 +22,10 @@ object IntersectionObserverEntry {
     intersectionRatio: Double,
     intersectionRect: ClientRect | DOMRect,
     isIntersecting: scala.Boolean,
-    rootBounds: ClientRect | DOMRect,
     target: Element,
     time: Double
   ): IntersectionObserverEntry = {
-    val __obj = js.Dynamic.literal(boundingClientRect = boundingClientRect.asInstanceOf[js.Any], intersectionRatio = intersectionRatio.asInstanceOf[js.Any], intersectionRect = intersectionRect.asInstanceOf[js.Any], isIntersecting = isIntersecting.asInstanceOf[js.Any], rootBounds = rootBounds.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(boundingClientRect = boundingClientRect.asInstanceOf[js.Any], intersectionRatio = intersectionRatio.asInstanceOf[js.Any], intersectionRect = intersectionRect.asInstanceOf[js.Any], isIntersecting = isIntersecting.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntersectionObserverEntry]
   }
   @scala.inline
@@ -49,11 +48,13 @@ object IntersectionObserverEntry {
     @scala.inline
     def setIsIntersecting(value: scala.Boolean): Self = this.set("isIntersecting", value.asInstanceOf[js.Any])
     @scala.inline
-    def setRootBounds(value: ClientRect | DOMRect): Self = this.set("rootBounds", value.asInstanceOf[js.Any])
-    @scala.inline
     def setTarget(value: Element): Self = this.set("target", value.asInstanceOf[js.Any])
     @scala.inline
     def setTime(value: Double): Self = this.set("time", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRootBounds(value: ClientRect | DOMRect): Self = this.set("rootBounds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRootBoundsNull: Self = this.set("rootBounds", null)
   }
   
 }

@@ -6,13 +6,14 @@ import scala.scalajs.js.annotation._
 
 trait PerformanceObserverInit extends js.Object {
   var buffered: js.UndefOr[scala.Boolean] = js.undefined
-  var entryTypes: js.Array[java.lang.String]
+  var entryTypes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object PerformanceObserverInit {
   @scala.inline
-  def apply(entryTypes: js.Array[java.lang.String]): PerformanceObserverInit = {
-    val __obj = js.Dynamic.literal(entryTypes = entryTypes.asInstanceOf[js.Any])
+  def apply(): PerformanceObserverInit = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PerformanceObserverInit]
   }
   @scala.inline
@@ -27,13 +28,19 @@ object PerformanceObserverInit {
         x
     }
     @scala.inline
+    def setBuffered(value: scala.Boolean): Self = this.set("buffered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuffered: Self = this.set("buffered", js.undefined)
+    @scala.inline
     def setEntryTypesVarargs(value: java.lang.String*): Self = this.set("entryTypes", js.Array(value :_*))
     @scala.inline
     def setEntryTypes(value: js.Array[java.lang.String]): Self = this.set("entryTypes", value.asInstanceOf[js.Any])
     @scala.inline
-    def setBuffered(value: scala.Boolean): Self = this.set("buffered", value.asInstanceOf[js.Any])
+    def deleteEntryTypes: Self = this.set("entryTypes", js.undefined)
     @scala.inline
-    def deleteBuffered: Self = this.set("buffered", js.undefined)
+    def setType(value: java.lang.String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
   }
   
 }

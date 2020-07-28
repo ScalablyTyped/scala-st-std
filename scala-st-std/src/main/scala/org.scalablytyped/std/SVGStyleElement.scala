@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGStyleElement interface corresponds to the SVG <style> element. */
+/** Corresponds to the SVG <style> element. */
 @js.native
 trait SVGStyleElement extends SVGElement {
   var disabled: scala.Boolean = js.native

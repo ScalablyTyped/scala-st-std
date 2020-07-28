@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The AudioNode interface is a generic interface for representing an audio processing module. Examples include: */
+/** A generic interface for representing an audio processing module. Examples include: */
 @js.native
 trait AudioNode extends EventTarget {
   var channelCount: Double = js.native

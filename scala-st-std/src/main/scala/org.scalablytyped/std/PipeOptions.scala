@@ -8,6 +8,7 @@ trait PipeOptions extends js.Object {
   var preventAbort: js.UndefOr[scala.Boolean] = js.undefined
   var preventCancel: js.UndefOr[scala.Boolean] = js.undefined
   var preventClose: js.UndefOr[scala.Boolean] = js.undefined
+  var signal: js.UndefOr[AbortSignal] = js.undefined
 }
 
 object PipeOptions {
@@ -39,6 +40,10 @@ object PipeOptions {
     def setPreventClose(value: scala.Boolean): Self = this.set("preventClose", value.asInstanceOf[js.Any])
     @scala.inline
     def deletePreventClose: Self = this.set("preventClose", js.undefined)
+    @scala.inline
+    def setSignal(value: AbortSignal): Self = this.set("signal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignal: Self = this.set("signal", js.undefined)
   }
   
 }

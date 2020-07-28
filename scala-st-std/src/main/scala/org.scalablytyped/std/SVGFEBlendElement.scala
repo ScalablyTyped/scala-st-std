@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGFEBlendElement interface corresponds to the <feBlend> element. */
+/** Corresponds to the <feBlend> element. */
 @js.native
 trait SVGFEBlendElement
   extends SVGElement

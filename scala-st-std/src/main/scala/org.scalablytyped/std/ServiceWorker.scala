@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The ServiceWorker interface of the ServiceWorker API provides a reference to a service worker. Multiple browsing contexts (e.g. pages, workers, etc.) can be associated with the same service worker, each through a unique ServiceWorker object. */
+/** An interface of the ServiceWorker API provides a reference to a service worker. Multiple browsing contexts (e.g. pages, workers, etc.) can be associated with the same service worker, each through a unique ServiceWorker object. */
 @js.native
 trait ServiceWorker
   extends EventTarget
@@ -39,6 +39,7 @@ trait ServiceWorker
     options: scala.Boolean
   ): Unit = js.native
   def postMessage(message: js.Any): Unit = js.native
+  def postMessage(message: js.Any, options: PostMessageOptions): Unit = js.native
   def postMessage(message: js.Any, transfer: js.Array[Transferable]): Unit = js.native
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native

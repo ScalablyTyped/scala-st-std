@@ -15,6 +15,12 @@ class TextDecoder ()
   def this(label: java.lang.String) = this()
   def this(label: js.UndefOr[scala.Nothing], options: TextDecoderOptions) = this()
   def this(label: java.lang.String, options: TextDecoderOptions) = this()
+  /* CompleteClass */
+  override val encoding: java.lang.String = js.native
+  /* CompleteClass */
+  override val fatal: scala.Boolean = js.native
+  /* CompleteClass */
+  override val ignoreBOM: scala.Boolean = js.native
 }
 
 @JSGlobal("TextDecoder")

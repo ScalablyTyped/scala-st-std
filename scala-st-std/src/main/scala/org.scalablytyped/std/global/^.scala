@@ -151,7 +151,7 @@ object ^ extends js.Object {
   var onanimationend: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.AnimationEvent, js.Any]) | Null = js.native
   var onanimationiteration: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.AnimationEvent, js.Any]) | Null = js.native
   var onanimationstart: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.AnimationEvent, js.Any]) | Null = js.native
-  var onauxclick: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null = js.native
+  var onauxclick: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.MouseEvent, js.Any]) | Null = js.native
   var onbeforeprint: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null = js.native
   var onbeforeunload: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.BeforeUnloadEvent, js.Any]) | Null = js.native
   /**
@@ -192,6 +192,7 @@ object ^ extends js.Object {
   var ondevicelight: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.DeviceLightEvent, js.Any]) | Null = js.native
   var ondevicemotion: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.DeviceMotionEvent, js.Any]) | Null = js.native
   var ondeviceorientation: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.DeviceOrientationEvent, js.Any]) | Null = js.native
+  var ondeviceorientationabsolute: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.DeviceOrientationEvent, js.Any]) | Null = js.native
   /**
     * Fires on the source object continuously during a drag operation.
     * @param ev The event.

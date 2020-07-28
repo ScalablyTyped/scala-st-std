@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGSVGElement interface provides access to the properties of <svg> elements, as well as methods to manipulate them. This interface contains also various miscellaneous commonly-used utility methods, such as matrix operations and the ability to control the time of redraw on visual rendering devices. */
+/** Provides access to the properties of <svg> elements, as well as methods to manipulate them. This interface contains also various miscellaneous commonly-used utility methods, such as matrix operations and the ability to control the time of redraw on visual rendering devices. */
 @js.native
 trait SVGSVGElement
   extends SVGGraphicsElement
@@ -73,6 +73,7 @@ trait SVGSVGElement
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ SVGZoomEvent, _],
     options: scala.Boolean
   ): Unit = js.native
+  def animationsPaused(): scala.Boolean = js.native
   def checkEnclosure(element: SVGElement, rect: SVGRect): scala.Boolean = js.native
   def checkIntersection(element: SVGElement, rect: SVGRect): scala.Boolean = js.native
   def createSVGAngle(): SVGAngle = js.native
@@ -88,7 +89,6 @@ trait SVGSVGElement
   def forceRedraw(): Unit = js.native
   def getComputedStyle(elt: Element): CSSStyleDeclaration = js.native
   def getComputedStyle(elt: Element, pseudoElt: java.lang.String): CSSStyleDeclaration = js.native
-  /** @deprecated */
   def getCurrentTime(): Double = js.native
   def getElementById(elementId: java.lang.String): Element = js.native
   def getEnclosureList(rect: SVGRect, referenceElement: SVGElement): NodeListOf[
@@ -97,7 +97,6 @@ trait SVGSVGElement
   def getIntersectionList(rect: SVGRect, referenceElement: SVGElement): NodeListOf[
     SVGCircleElement | SVGEllipseElement | SVGImageElement | SVGLineElement | SVGPathElement | SVGPolygonElement | SVGPolylineElement | SVGRectElement | SVGTextElement | SVGUseElement
   ] = js.native
-  /** @deprecated */
   def pauseAnimations(): Unit = js.native
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
@@ -137,11 +136,9 @@ trait SVGSVGElement
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ SVGZoomEvent, _],
     options: scala.Boolean
   ): Unit = js.native
-  /** @deprecated */
   def setCurrentTime(seconds: Double): Unit = js.native
   /** @deprecated */
   def suspendRedraw(maxWaitMilliseconds: Double): Double = js.native
-  /** @deprecated */
   def unpauseAnimations(): Unit = js.native
   /** @deprecated */
   def unsuspendRedraw(suspendHandleID: Double): Unit = js.native

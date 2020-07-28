@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGPathElement interface corresponds to the <path> element. */
+/** Corresponds to the <path> element. */
 @js.native
 trait SVGPathElement extends SVGGraphicsElement {
   /** @deprecated */

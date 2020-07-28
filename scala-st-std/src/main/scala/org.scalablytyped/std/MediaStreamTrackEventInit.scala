@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MediaStreamTrackEventInit extends EventInit {
-  var track: js.UndefOr[MediaStreamTrack | Null] = js.undefined
+  var track: MediaStreamTrack
 }
 
 object MediaStreamTrackEventInit {
   @scala.inline
-  def apply(): MediaStreamTrackEventInit = {
-    val __obj = js.Dynamic.literal()
+  def apply(track: MediaStreamTrack): MediaStreamTrackEventInit = {
+    val __obj = js.Dynamic.literal(track = track.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaStreamTrackEventInit]
   }
   @scala.inline
@@ -27,10 +27,6 @@ object MediaStreamTrackEventInit {
     }
     @scala.inline
     def setTrack(value: MediaStreamTrack): Self = this.set("track", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteTrack: Self = this.set("track", js.undefined)
-    @scala.inline
-    def setTrackNull: Self = this.set("track", null)
   }
   
 }

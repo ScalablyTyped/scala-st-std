@@ -46,11 +46,9 @@ trait Array[T] extends /* n */ NumberDictionary[T] {
     * @param callbackfn A function that accepts up to three arguments. The every method calls the callbackfn function for each element in array1 until the callbackfn returns false, or until the end of the array.
     * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
     */
+  def every(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], _]): scala.Boolean = js.native
   def every(
-    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], scala.Boolean]
-  ): scala.Boolean = js.native
-  def every(
-    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], scala.Boolean],
+    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], _],
     thisArg: js.Any
   ): scala.Boolean = js.native
   /**
@@ -89,9 +87,9 @@ trait Array[T] extends /* n */ NumberDictionary[T] {
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], /* is S */ scala.Boolean],
     thisArg: js.Any
   ): js.Array[S] = js.native
-  def find(predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], scala.Boolean]): js.UndefOr[T] = js.native
+  def find(predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], _]): js.UndefOr[T] = js.native
   def find(
-    predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], scala.Boolean],
+    predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], _],
     thisArg: js.Any
   ): js.UndefOr[T] = js.native
   /**
@@ -131,9 +129,9 @@ trait Array[T] extends /* n */ NumberDictionary[T] {
     * @param thisArg If provided, it will be used as the this value for each invocation of
     * predicate. If it is not provided, undefined is used instead.
     */
-  def findIndex(predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], scala.Boolean]): Double = js.native
+  def findIndex(predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], _]): Double = js.native
   def findIndex(
-    predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], scala.Boolean],
+    predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], _],
     thisArg: js.Any
   ): Double = js.native
   /**
@@ -291,11 +289,9 @@ trait Array[T] extends /* n */ NumberDictionary[T] {
     * @param callbackfn A function that accepts up to three arguments. The some method calls the callbackfn function for each element in array1 until the callbackfn returns true, or until the end of the array.
     * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
     */
+  def some(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], _]): scala.Boolean = js.native
   def some(
-    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], scala.Boolean]
-  ): scala.Boolean = js.native
-  def some(
-    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], scala.Boolean],
+    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], _],
     thisArg: js.Any
   ): scala.Boolean = js.native
   /**

@@ -60,9 +60,9 @@ trait ReadonlyArray[T] extends /* n */ NumberDictionary[T] {
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], /* is S */ scala.Boolean],
     thisArg: js.Any
   ): js.Array[S] = js.native
-  def find(predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], scala.Boolean]): js.UndefOr[T] = js.native
+  def find(predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], _]): js.UndefOr[T] = js.native
   def find(
-    predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], scala.Boolean],
+    predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], _],
     thisArg: js.Any
   ): js.UndefOr[T] = js.native
   /**
@@ -102,9 +102,9 @@ trait ReadonlyArray[T] extends /* n */ NumberDictionary[T] {
     * @param thisArg If provided, it will be used as the this value for each invocation of
     * predicate. If it is not provided, undefined is used instead.
     */
-  def findIndex(predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], scala.Boolean]): Double = js.native
+  def findIndex(predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], _]): Double = js.native
   def findIndex(
-    predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], scala.Boolean],
+    predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], _],
     thisArg: js.Any
   ): Double = js.native
   /**

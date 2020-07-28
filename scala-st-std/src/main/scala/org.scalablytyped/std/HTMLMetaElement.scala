@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The HTMLMetaElement interface contains descriptive metadata about a document. It inherits all of the properties and methods described in the HTMLElement interface. */
+/** Contains descriptive metadata about a document. It inherits all of the properties and methods described in the HTMLElement interface. */
 @js.native
 trait HTMLMetaElement extends HTMLElement {
   /**

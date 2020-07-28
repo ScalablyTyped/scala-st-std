@@ -10,7 +10,7 @@ trait GlobalEventHandlersEventMap extends js.Object {
   var animationend: AnimationEvent
   var animationiteration: AnimationEvent
   var animationstart: AnimationEvent
-  var auxclick: Event
+  var auxclick: MouseEvent
   var blur: FocusEvent
   var cancel: Event
   var canplay: Event
@@ -101,7 +101,7 @@ object GlobalEventHandlersEventMap {
     animationend: AnimationEvent,
     animationiteration: AnimationEvent,
     animationstart: AnimationEvent,
-    auxclick: Event,
+    auxclick: MouseEvent,
     blur: FocusEvent,
     cancel: Event,
     canplay: Event,
@@ -208,7 +208,7 @@ object GlobalEventHandlersEventMap {
     @scala.inline
     def setAnimationstart(value: AnimationEvent): Self = this.set("animationstart", value.asInstanceOf[js.Any])
     @scala.inline
-    def setAuxclick(value: Event): Self = this.set("auxclick", value.asInstanceOf[js.Any])
+    def setAuxclick(value: MouseEvent): Self = this.set("auxclick", value.asInstanceOf[js.Any])
     @scala.inline
     def setBlur(value: FocusEvent): Self = this.set("blur", value.asInstanceOf[js.Any])
     @scala.inline

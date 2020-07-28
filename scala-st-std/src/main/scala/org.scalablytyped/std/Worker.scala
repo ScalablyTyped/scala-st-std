@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The Worker interface of the Web Workers API represents a background task that can be easily created and can send messages back to its creator. Creating a worker is as simple as calling the Worker() constructor and specifying a script to be run in the worker thread. */
+/** An interface of the Web Workers API represents a background task that can be easily created and can send messages back to its creator. Creating a worker is as simple as calling the Worker() constructor and specifying a script to be run in the worker thread. */
 @js.native
 trait Worker
   extends EventTarget
@@ -36,6 +36,7 @@ trait Worker
     options: scala.Boolean
   ): Unit = js.native
   def postMessage(message: js.Any): Unit = js.native
+  def postMessage(message: js.Any, options: PostMessageOptions): Unit = js.native
   def postMessage(message: js.Any, transfer: js.Array[Transferable]): Unit = js.native
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native

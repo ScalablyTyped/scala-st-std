@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
   - `org.scalablytyped`.std.HTMLVideoElement
   - `org.scalablytyped`.std.HTMLCanvasElement
   - `org.scalablytyped`.std.ImageBitmap
+  - `org.scalablytyped`.std.OffscreenCanvas
 */
 trait CanvasImageSource extends ImageBitmapSource
 

@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGAnimatedEnumeration interface is used for attributes whose value must be a constant from a particular enumeration and which can be animated. */
+/** Used for attributes whose value must be a constant from a particular enumeration and which can be animated. */
 trait SVGAnimatedEnumeration extends js.Object {
   val animVal: Double
   var baseVal: Double

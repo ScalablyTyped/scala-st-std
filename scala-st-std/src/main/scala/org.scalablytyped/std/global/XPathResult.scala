@@ -38,15 +38,15 @@ class XPathResult ()
   /* CompleteClass */
   override val resultType: Double = js.native
   /* CompleteClass */
-  override val singleNodeValue: org.scalablytyped.std.Node = js.native
+  override val singleNodeValue: org.scalablytyped.std.Node | Null = js.native
   /* CompleteClass */
   override val snapshotLength: Double = js.native
   /* CompleteClass */
   override val stringValue: java.lang.String = js.native
   /* CompleteClass */
-  override def iterateNext(): org.scalablytyped.std.Node = js.native
+  override def iterateNext(): org.scalablytyped.std.Node | Null = js.native
   /* CompleteClass */
-  override def snapshotItem(index: Double): org.scalablytyped.std.Node = js.native
+  override def snapshotItem(index: Double): org.scalablytyped.std.Node | Null = js.native
 }
 
 @JSGlobal("XPathResult")

@@ -2,6 +2,8 @@ package org.scalablytyped.std
 
 import org.scalablytyped.std.anon.CreateObjectURL
 import org.scalablytyped.std.anon.Instantiable
+import org.scalablytyped.std.anon.InstantiableTextDecoder
+import org.scalablytyped.std.anon.InstantiableTextEncoder
 import org.scalablytyped.std.anon.InstantiableURLSearchParams
 import org.scalablytyped.std.stdStrings.MSGestureChange
 import org.scalablytyped.std.stdStrings.MSGestureDoubleTap
@@ -22,6 +24,7 @@ import org.scalablytyped.std.stdStrings.compassneedscalibration
 import org.scalablytyped.std.stdStrings.devicelight
 import org.scalablytyped.std.stdStrings.devicemotion
 import org.scalablytyped.std.stdStrings.deviceorientation
+import org.scalablytyped.std.stdStrings.deviceorientationabsolute
 import org.scalablytyped.std.stdStrings.mousewheel
 import org.scalablytyped.std.stdStrings.orientationchange
 import org.scalablytyped.std.stdStrings.readystatechange
@@ -34,11 +37,12 @@ import org.scalablytyped.std.stdStrings.vrdisplayfocus
 import org.scalablytyped.std.stdStrings.vrdisplaypointerrestricted
 import org.scalablytyped.std.stdStrings.vrdisplaypointerunrestricted
 import org.scalablytyped.std.stdStrings.vrdisplaypresentchange
+import org.scalablytyped.runtime.NumberDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The Window interface represents a window containing a DOM document; the document property points to the DOM document loaded in that window. */
+/** A window containing a DOM document; the document property points to the DOM document loaded in that window. */
 @js.native
 trait Window
   extends EventTarget
@@ -51,8 +55,11 @@ trait Window
      with WindowBase64
      with GlobalFetch
      with WindowOrWorkerGlobalScope
-     with WindowEventHandlers {
+     with WindowEventHandlers
+     with /* index */ NumberDictionary[Window] {
   var Blob: Instantiable = js.native
+  var TextDecoder: InstantiableTextDecoder = js.native
+  var TextEncoder: InstantiableTextEncoder = js.native
   var URL: CreateObjectURL = js.native
   var URLSearchParams: InstantiableURLSearchParams = js.native
   val applicationCache: ApplicationCache = js.native
@@ -87,6 +94,7 @@ trait Window
   var ondevicelight: (js.ThisFunction1[/* this */ this.type, /* ev */ DeviceLightEvent, _]) | Null = js.native
   var ondevicemotion: (js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, _]) | Null = js.native
   var ondeviceorientation: (js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, _]) | Null = js.native
+  var ondeviceorientationabsolute: (js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, _]) | Null = js.native
   var onmousewheel: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var onmsgesturechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var onmsgesturedoubletap: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
@@ -425,6 +433,23 @@ trait Window
   @JSName("addEventListener")
   def addEventListener_deviceorientation(
     `type`: deviceorientation,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, _],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_deviceorientationabsolute(
+    `type`: deviceorientationabsolute,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, _]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_deviceorientationabsolute(
+    `type`: deviceorientationabsolute,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, _],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_deviceorientationabsolute(
+    `type`: deviceorientationabsolute,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, _],
     options: scala.Boolean
   ): Unit = js.native
@@ -986,6 +1011,23 @@ trait Window
   @JSName("removeEventListener")
   def removeEventListener_deviceorientation(
     `type`: deviceorientation,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, _],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_deviceorientationabsolute(
+    `type`: deviceorientationabsolute,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_deviceorientationabsolute(
+    `type`: deviceorientationabsolute,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, _],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_deviceorientationabsolute(
+    `type`: deviceorientationabsolute,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, _],
     options: scala.Boolean
   ): Unit = js.native

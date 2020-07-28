@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The HTMLLinkElement interface represents reference information for external resources and the relationship of those resources to a document and vice-versa. This object inherits all of the properties and methods of the HTMLElement interface. */
+/** Reference information for external resources and the relationship of those resources to a document and vice-versa. This object inherits all of the properties and methods of the HTMLElement interface. */
 @js.native
 trait HTMLLinkElement
   extends HTMLElement
@@ -25,6 +25,8 @@ trait HTMLLinkElement
     * Sets or retrieves the language code of the object.
     */
   var hreflang: java.lang.String = js.native
+  var imageSizes: java.lang.String = js.native
+  var imageSrcset: java.lang.String = js.native
   var integrity: java.lang.String = js.native
   /**
     * Sets or retrieves the media type.

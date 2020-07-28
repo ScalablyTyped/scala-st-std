@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGFESpotLightElement interface corresponds to the <feSpotLight> element. */
+/** Corresponds to the <feSpotLight> element. */
 @js.native
 trait SVGFESpotLightElement extends SVGElement {
   val limitingConeAngle: SVGAnimatedNumber = js.native

@@ -11,6 +11,8 @@ class SVGFEMergeNodeElement ()
   extends org.scalablytyped.std.SVGFEMergeNodeElement {
   /* CompleteClass */
   override val assignedSlot: org.scalablytyped.std.HTMLSlotElement | Null = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /**
     * Returns the first following sibling that
     * is an element, and null otherwise.

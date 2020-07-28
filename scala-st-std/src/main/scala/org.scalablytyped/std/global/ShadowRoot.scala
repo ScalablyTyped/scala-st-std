@@ -14,6 +14,8 @@ class ShadowRoot ()
   /* CompleteClass */
   override val fullscreenElement: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
+  /* CompleteClass */
   override val pointerLockElement: org.scalablytyped.std.Element | Null = js.native
   /**
     * Retrieves a collection of styleSheet objects representing the style sheets that correspond to each instance of a link or style object in the document.

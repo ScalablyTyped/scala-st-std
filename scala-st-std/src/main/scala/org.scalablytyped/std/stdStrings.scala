@@ -1,12 +1,13 @@
 package org.scalablytyped.std
 
+import org.scalablytyped.std.WebAssembly.ImportExportKind
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object stdStrings {
   @js.native
-  sealed trait `2d` extends js.Object
+  sealed trait `2d` extends OffscreenRenderingContextId
   
   @js.native
   sealed trait `2x` extends OverSampleType
@@ -476,6 +477,9 @@ object stdStrings {
   sealed trait aborted extends SpeechRecognitionErrorCode
   
   @js.native
+  sealed trait accelerometer extends PermissionName
+  
+  @js.native
   sealed trait accumulate
     extends CompositeOperation
        with CompositeOperationOrAuto
@@ -538,6 +542,9 @@ object stdStrings {
   sealed trait `alternate-reverse` extends PlaybackDirection
   
   @js.native
+  sealed trait `ambient-light-sensor` extends PermissionName
+  
+  @js.native
   sealed trait animationcancel extends js.Object
   
   @js.native
@@ -554,6 +561,9 @@ object stdStrings {
   
   @js.native
   sealed trait any extends OrientationLockType
+  
+  @js.native
+  sealed trait anyfunc extends js.Object
   
   @js.native
   sealed trait applet extends js.Object
@@ -641,6 +651,9 @@ object stdStrings {
   sealed trait back_forward extends NavigationType
   
   @js.native
+  sealed trait `background-sync` extends PermissionName
+  
+  @js.native
   sealed trait backward extends js.Object
   
   @js.native
@@ -703,6 +716,9 @@ object stdStrings {
   sealed trait blockquote extends js.Object
   
   @js.native
+  sealed trait bluetooth extends PermissionName
+  
+  @js.native
   sealed trait blur extends js.Object
   
   @js.native
@@ -743,6 +759,9 @@ object stdStrings {
   
   @js.native
   sealed trait cached extends js.Object
+  
+  @js.native
+  sealed trait camera extends PermissionName
   
   @js.native
   sealed trait cancel extends js.Object
@@ -816,6 +835,9 @@ object stdStrings {
   
   @js.native
   sealed trait clipPath extends js.Object
+  
+  @js.native
+  sealed trait clipboard extends PermissionName
   
   @js.native
   sealed trait close extends js.Object
@@ -952,6 +974,7 @@ object stdStrings {
   @js.native
   sealed trait denied
     extends NotificationPermission
+       with PermissionState
        with PushPermissionState
   
   @js.native
@@ -973,6 +996,9 @@ object stdStrings {
   sealed trait details extends js.Object
   
   @js.native
+  sealed trait `device-info` extends PermissionName
+  
+  @js.native
   sealed trait devicechange extends js.Object
   
   @js.native
@@ -983,6 +1009,9 @@ object stdStrings {
   
   @js.native
   sealed trait deviceorientation extends js.Object
+  
+  @js.native
+  sealed trait deviceorientationabsolute extends js.Object
   
   @js.native
   sealed trait dfn extends js.Object
@@ -1282,6 +1311,9 @@ object stdStrings {
   sealed trait fullscreenerror extends js.Object
   
   @js.native
+  sealed trait function extends ImportExportKind
+  
+  @js.native
   sealed trait g extends js.Object
   
   @js.native
@@ -1296,7 +1328,12 @@ object stdStrings {
   sealed trait gatheringstatechange extends js.Object
   
   @js.native
-  sealed trait geolocation extends MSWebViewPermissionType
+  sealed trait geolocation
+    extends MSWebViewPermissionType
+       with PermissionName
+  
+  @js.native
+  sealed trait global extends ImportExportKind
   
   @js.native
   sealed trait gotpointercapture extends js.Object
@@ -1304,7 +1341,11 @@ object stdStrings {
   @js.native
   sealed trait granted
     extends NotificationPermission
+       with PermissionState
        with PushPermissionState
+  
+  @js.native
+  sealed trait gyroscope extends PermissionName
   
   @js.native
   sealed trait h1 extends js.Object
@@ -1657,6 +1698,9 @@ object stdStrings {
        with NotificationDirection
   
   @js.native
+  sealed trait magnetometer extends PermissionName
+  
+  @js.native
   sealed trait main extends js.Object
   
   @js.native
@@ -1709,6 +1753,9 @@ object stdStrings {
        with RTCPriorityType
   
   @js.native
+  sealed trait memory extends ImportExportKind
+  
+  @js.native
   sealed trait menu extends js.Object
   
   @js.native
@@ -1727,7 +1774,13 @@ object stdStrings {
   sealed trait meter extends js.Object
   
   @js.native
+  sealed trait microphone extends PermissionName
+  
+  @js.native
   sealed trait middle extends CanvasTextBaseline
+  
+  @js.native
+  sealed trait midi extends PermissionName
   
   @js.native
   sealed trait miter extends CanvasLineJoin
@@ -1872,6 +1925,9 @@ object stdStrings {
   sealed trait notch extends BiquadFilterType
   
   @js.native
+  sealed trait notifications extends PermissionName
+  
+  @js.native
   sealed trait noupdate extends js.Object
   
   @js.native
@@ -2001,6 +2057,9 @@ object stdStrings {
   sealed trait `persistent-license` extends MediaKeySessionType
   
   @js.native
+  sealed trait `persistent-storage` extends PermissionName
+  
+  @js.native
   sealed trait pickup extends PaymentShippingType
   
   @js.native
@@ -2115,10 +2174,15 @@ object stdStrings {
   sealed trait progress extends js.Object
   
   @js.native
-  sealed trait prompt extends PushPermissionState
+  sealed trait prompt
+    extends PermissionState
+       with PushPermissionState
   
   @js.native
   sealed trait public extends KeyType
+  
+  @js.native
+  sealed trait push extends PermissionName
   
   @js.native
   sealed trait q extends js.Object
@@ -2400,6 +2464,9 @@ object stdStrings {
   sealed trait span extends js.Object
   
   @js.native
+  sealed trait speaker extends PermissionName
+  
+  @js.native
   sealed trait speakers extends ChannelInterpretation
   
   @js.native
@@ -2515,7 +2582,7 @@ object stdStrings {
   sealed trait `synthesis-unavailable` extends SpeechSynthesisErrorCode
   
   @js.native
-  sealed trait table extends js.Object
+  sealed trait table extends ImportExportKind
   
   @js.native
   sealed trait tbody extends js.Object
@@ -2770,7 +2837,7 @@ object stdStrings {
   sealed trait wbr extends js.Object
   
   @js.native
-  sealed trait webgl extends js.Object
+  sealed trait webgl extends OffscreenRenderingContextId
   
   @js.native
   sealed trait webnotifications extends MSWebViewPermissionType
@@ -3106,6 +3173,8 @@ object stdStrings {
   @scala.inline
   def aborted: aborted = "aborted".asInstanceOf[aborted]
   @scala.inline
+  def accelerometer: accelerometer = "accelerometer".asInstanceOf[accelerometer]
+  @scala.inline
   def accumulate: accumulate = "accumulate".asInstanceOf[accumulate]
   @scala.inline
   def activated: activated = "activated".asInstanceOf[activated]
@@ -3140,6 +3209,8 @@ object stdStrings {
   @scala.inline
   def `alternate-reverse`: `alternate-reverse` = "alternate-reverse".asInstanceOf[`alternate-reverse`]
   @scala.inline
+  def `ambient-light-sensor`: `ambient-light-sensor` = "ambient-light-sensor".asInstanceOf[`ambient-light-sensor`]
+  @scala.inline
   def animationcancel: animationcancel = "animationcancel".asInstanceOf[animationcancel]
   @scala.inline
   def animationend: animationend = "animationend".asInstanceOf[animationend]
@@ -3151,6 +3222,8 @@ object stdStrings {
   def answer: answer = "answer".asInstanceOf[answer]
   @scala.inline
   def any: any = "any".asInstanceOf[any]
+  @scala.inline
+  def anyfunc: anyfunc = "anyfunc".asInstanceOf[anyfunc]
   @scala.inline
   def applet: applet = "applet".asInstanceOf[applet]
   @scala.inline
@@ -3202,6 +3275,8 @@ object stdStrings {
   @scala.inline
   def back_forward: back_forward = "back_forward".asInstanceOf[back_forward]
   @scala.inline
+  def `background-sync`: `background-sync` = "background-sync".asInstanceOf[`background-sync`]
+  @scala.inline
   def backward: backward = "backward".asInstanceOf[backward]
   @scala.inline
   def backwards: backwards = "backwards".asInstanceOf[backwards]
@@ -3240,6 +3315,8 @@ object stdStrings {
   @scala.inline
   def blockquote: blockquote = "blockquote".asInstanceOf[blockquote]
   @scala.inline
+  def bluetooth: bluetooth = "bluetooth".asInstanceOf[bluetooth]
+  @scala.inline
   def blur: blur = "blur".asInstanceOf[blur]
   @scala.inline
   def body: body = "body".asInstanceOf[body]
@@ -3267,6 +3344,8 @@ object stdStrings {
   def bytes: bytes = "bytes".asInstanceOf[bytes]
   @scala.inline
   def cached: cached = "cached".asInstanceOf[cached]
+  @scala.inline
+  def camera: camera = "camera".asInstanceOf[camera]
   @scala.inline
   def cancel: cancel = "cancel".asInstanceOf[cancel]
   @scala.inline
@@ -3311,6 +3390,8 @@ object stdStrings {
   def client: client = "client".asInstanceOf[client]
   @scala.inline
   def clipPath: clipPath = "clipPath".asInstanceOf[clipPath]
+  @scala.inline
+  def clipboard: clipboard = "clipboard".asInstanceOf[clipboard]
   @scala.inline
   def close: close = "close".asInstanceOf[close]
   @scala.inline
@@ -3394,6 +3475,8 @@ object stdStrings {
   @scala.inline
   def details: details = "details".asInstanceOf[details]
   @scala.inline
+  def `device-info`: `device-info` = "device-info".asInstanceOf[`device-info`]
+  @scala.inline
   def devicechange: devicechange = "devicechange".asInstanceOf[devicechange]
   @scala.inline
   def devicelight: devicelight = "devicelight".asInstanceOf[devicelight]
@@ -3401,6 +3484,8 @@ object stdStrings {
   def devicemotion: devicemotion = "devicemotion".asInstanceOf[devicemotion]
   @scala.inline
   def deviceorientation: deviceorientation = "deviceorientation".asInstanceOf[deviceorientation]
+  @scala.inline
+  def deviceorientationabsolute: deviceorientationabsolute = "deviceorientationabsolute".asInstanceOf[deviceorientationabsolute]
   @scala.inline
   def dfn: dfn = "dfn".asInstanceOf[dfn]
   @scala.inline
@@ -3586,6 +3671,8 @@ object stdStrings {
   @scala.inline
   def fullscreenerror: fullscreenerror = "fullscreenerror".asInstanceOf[fullscreenerror]
   @scala.inline
+  def function: function = "function".asInstanceOf[function]
+  @scala.inline
   def g: g = "g".asInstanceOf[g]
   @scala.inline
   def gamepad: gamepad = "gamepad".asInstanceOf[gamepad]
@@ -3596,9 +3683,13 @@ object stdStrings {
   @scala.inline
   def geolocation: geolocation = "geolocation".asInstanceOf[geolocation]
   @scala.inline
+  def global: global = "global".asInstanceOf[global]
+  @scala.inline
   def gotpointercapture: gotpointercapture = "gotpointercapture".asInstanceOf[gotpointercapture]
   @scala.inline
   def granted: granted = "granted".asInstanceOf[granted]
+  @scala.inline
+  def gyroscope: gyroscope = "gyroscope".asInstanceOf[gyroscope]
   @scala.inline
   def h1: h1 = "h1".asInstanceOf[h1]
   @scala.inline
@@ -3818,6 +3909,8 @@ object stdStrings {
   @scala.inline
   def ltr: ltr = "ltr".asInstanceOf[ltr]
   @scala.inline
+  def magnetometer: magnetometer = "magnetometer".asInstanceOf[magnetometer]
+  @scala.inline
   def main: main = "main".asInstanceOf[main]
   @scala.inline
   def `maintain-framerate`: `maintain-framerate` = "maintain-framerate".asInstanceOf[`maintain-framerate`]
@@ -3850,6 +3943,8 @@ object stdStrings {
   @scala.inline
   def medium: medium = "medium".asInstanceOf[medium]
   @scala.inline
+  def memory: memory = "memory".asInstanceOf[memory]
+  @scala.inline
   def menu: menu = "menu".asInstanceOf[menu]
   @scala.inline
   def message: message = "message".asInstanceOf[message]
@@ -3862,7 +3957,11 @@ object stdStrings {
   @scala.inline
   def meter: meter = "meter".asInstanceOf[meter]
   @scala.inline
+  def microphone: microphone = "microphone".asInstanceOf[microphone]
+  @scala.inline
   def middle: middle = "middle".asInstanceOf[middle]
+  @scala.inline
+  def midi: midi = "midi".asInstanceOf[midi]
   @scala.inline
   def miter: miter = "miter".asInstanceOf[miter]
   @scala.inline
@@ -3948,6 +4047,8 @@ object stdStrings {
   @scala.inline
   def notch: notch = "notch".asInstanceOf[notch]
   @scala.inline
+  def notifications: notifications = "notifications".asInstanceOf[notifications]
+  @scala.inline
   def noupdate: noupdate = "noupdate".asInstanceOf[noupdate]
   @scala.inline
   def number: number = "number".asInstanceOf[number]
@@ -4032,6 +4133,8 @@ object stdStrings {
   @scala.inline
   def `persistent-license`: `persistent-license` = "persistent-license".asInstanceOf[`persistent-license`]
   @scala.inline
+  def `persistent-storage`: `persistent-storage` = "persistent-storage".asInstanceOf[`persistent-storage`]
+  @scala.inline
   def pickup: pickup = "pickup".asInstanceOf[pickup]
   @scala.inline
   def picture: picture = "picture".asInstanceOf[picture]
@@ -4107,6 +4210,8 @@ object stdStrings {
   def prompt: prompt = "prompt".asInstanceOf[prompt]
   @scala.inline
   def public: public = "public".asInstanceOf[public]
+  @scala.inline
+  def push: push = "push".asInstanceOf[push]
   @scala.inline
   def q: q = "q".asInstanceOf[q]
   @scala.inline
@@ -4277,6 +4382,8 @@ object stdStrings {
   def sourceopen: sourceopen = "sourceopen".asInstanceOf[sourceopen]
   @scala.inline
   def span: span = "span".asInstanceOf[span]
+  @scala.inline
+  def speaker: speaker = "speaker".asInstanceOf[speaker]
   @scala.inline
   def speakers: speakers = "speakers".asInstanceOf[speakers]
   @scala.inline

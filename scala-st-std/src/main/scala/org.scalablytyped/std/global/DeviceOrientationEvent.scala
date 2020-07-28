@@ -11,16 +11,16 @@ import scala.scalajs.js.annotation._
 @js.native
 class DeviceOrientationEvent protected ()
   extends org.scalablytyped.std.DeviceOrientationEvent {
-  def this(typeArg: java.lang.String) = this()
-  def this(typeArg: java.lang.String, eventInitDict: DeviceOrientationEventInit) = this()
+  def this(`type`: java.lang.String) = this()
+  def this(`type`: java.lang.String, eventInitDict: DeviceOrientationEventInit) = this()
 }
 
 @JSGlobal("DeviceOrientationEvent")
 @js.native
 object DeviceOrientationEvent
-  extends Instantiable1[/* typeArg */ java.lang.String, org.scalablytyped.std.DeviceOrientationEvent]
+  extends Instantiable1[/* type */ java.lang.String, org.scalablytyped.std.DeviceOrientationEvent]
      with Instantiable2[
-      /* typeArg */ java.lang.String, 
+      /* type */ java.lang.String, 
       /* eventInitDict */ DeviceOrientationEventInit, 
       org.scalablytyped.std.DeviceOrientationEvent
     ]

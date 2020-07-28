@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The UIEvent interface represents simple user interface events. */
+/** Simple user interface events. */
 @js.native
 trait UIEvent extends Event {
   val detail: Double = js.native

@@ -98,6 +98,5 @@ trait BaseAudioContext extends EventTarget {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
-  def resume(): js.Promise[Unit] = js.native
 }
 

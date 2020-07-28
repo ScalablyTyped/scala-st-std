@@ -6,12 +6,17 @@ import scala.scalajs.js.annotation._
 
 trait MediaTrackSettings extends js.Object {
   var aspectRatio: js.UndefOr[Double] = js.undefined
+  var autoGainControl: js.UndefOr[scala.Boolean] = js.undefined
+  var channelCount: js.UndefOr[Double] = js.undefined
   var deviceId: js.UndefOr[java.lang.String] = js.undefined
   var echoCancellation: js.UndefOr[scala.Boolean] = js.undefined
   var facingMode: js.UndefOr[java.lang.String] = js.undefined
   var frameRate: js.UndefOr[Double] = js.undefined
   var groupId: js.UndefOr[java.lang.String] = js.undefined
   var height: js.UndefOr[Double] = js.undefined
+  var latency: js.UndefOr[Double] = js.undefined
+  var noiseSuppression: js.UndefOr[scala.Boolean] = js.undefined
+  var resizeMode: js.UndefOr[java.lang.String] = js.undefined
   var sampleRate: js.UndefOr[Double] = js.undefined
   var sampleSize: js.UndefOr[Double] = js.undefined
   var volume: js.UndefOr[Double] = js.undefined
@@ -40,6 +45,14 @@ object MediaTrackSettings {
     @scala.inline
     def deleteAspectRatio: Self = this.set("aspectRatio", js.undefined)
     @scala.inline
+    def setAutoGainControl(value: scala.Boolean): Self = this.set("autoGainControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoGainControl: Self = this.set("autoGainControl", js.undefined)
+    @scala.inline
+    def setChannelCount(value: Double): Self = this.set("channelCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelCount: Self = this.set("channelCount", js.undefined)
+    @scala.inline
     def setDeviceId(value: java.lang.String): Self = this.set("deviceId", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteDeviceId: Self = this.set("deviceId", js.undefined)
@@ -63,6 +76,18 @@ object MediaTrackSettings {
     def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setLatency(value: Double): Self = this.set("latency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatency: Self = this.set("latency", js.undefined)
+    @scala.inline
+    def setNoiseSuppression(value: scala.Boolean): Self = this.set("noiseSuppression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoiseSuppression: Self = this.set("noiseSuppression", js.undefined)
+    @scala.inline
+    def setResizeMode(value: java.lang.String): Self = this.set("resizeMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResizeMode: Self = this.set("resizeMode", js.undefined)
     @scala.inline
     def setSampleRate(value: Double): Self = this.set("sampleRate", value.asInstanceOf[js.Any])
     @scala.inline

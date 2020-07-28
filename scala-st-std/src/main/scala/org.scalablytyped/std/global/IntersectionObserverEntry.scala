@@ -20,7 +20,7 @@ class IntersectionObserverEntry protected ()
   /* CompleteClass */
   override val isIntersecting: scala.Boolean = js.native
   /* CompleteClass */
-  override val rootBounds: org.scalablytyped.std.ClientRect | org.scalablytyped.std.DOMRect = js.native
+  override val rootBounds: org.scalablytyped.std.ClientRect | org.scalablytyped.std.DOMRect | Null = js.native
   /* CompleteClass */
   override val target: org.scalablytyped.std.Element = js.native
   /* CompleteClass */

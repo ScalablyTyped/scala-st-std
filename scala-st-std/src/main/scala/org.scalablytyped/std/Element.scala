@@ -187,6 +187,7 @@ trait Element
      with ParentNode
      with NonDocumentTypeChildNode
      with Slotable
+     with InnerHTML
      with Animatable {
   val attributes: NamedNodeMap = js.native
   /**
@@ -208,7 +209,6 @@ trait Element
     * change it.
     */
   var id: java.lang.String = js.native
-  var innerHTML: java.lang.String = js.native
   /**
     * Returns the local name.
     */

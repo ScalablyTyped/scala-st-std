@@ -12,5 +12,7 @@ object encodeURIComponent extends js.Object {
     * @param uriComponent A value representing an encoded URI component.
     */
   def apply(uriComponent: java.lang.String): java.lang.String = js.native
+  def apply(uriComponent: scala.Boolean): java.lang.String = js.native
+  def apply(uriComponent: Double): java.lang.String = js.native
 }
 

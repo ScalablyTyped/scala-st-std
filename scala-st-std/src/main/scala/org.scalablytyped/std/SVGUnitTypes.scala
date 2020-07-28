@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGUnitTypes interface defines a commonly used set of constants used for reflecting gradientUnits, patternContentUnits and other similar attributes. */
+/** A commonly used set of constants used for reflecting gradientUnits, patternContentUnits and other similar attributes. */
 trait SVGUnitTypes extends js.Object {
   val SVG_UNIT_TYPE_OBJECTBOUNDINGBOX: Double
   val SVG_UNIT_TYPE_UNKNOWN: Double

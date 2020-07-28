@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGTitleElement interface corresponds to the <title> element. */
+/** Corresponds to the <title> element. */
 @js.native
 trait SVGTitleElement extends SVGElement
 

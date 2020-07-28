@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceMotionEventInit extends EventInit {
-  var acceleration: js.UndefOr[DeviceAccelerationDict | Null] = js.undefined
-  var accelerationIncludingGravity: js.UndefOr[DeviceAccelerationDict | Null] = js.undefined
-  var interval: js.UndefOr[Double | Null] = js.undefined
-  var rotationRate: js.UndefOr[DeviceRotationRateDict | Null] = js.undefined
+  var acceleration: js.UndefOr[DeviceMotionEventAccelerationInit] = js.undefined
+  var accelerationIncludingGravity: js.UndefOr[DeviceMotionEventAccelerationInit] = js.undefined
+  var interval: js.UndefOr[Double] = js.undefined
+  var rotationRate: js.UndefOr[DeviceMotionEventRotationRateInit] = js.undefined
 }
 
 object DeviceMotionEventInit {
@@ -29,29 +29,21 @@ object DeviceMotionEventInit {
         x
     }
     @scala.inline
-    def setAcceleration(value: DeviceAccelerationDict): Self = this.set("acceleration", value.asInstanceOf[js.Any])
+    def setAcceleration(value: DeviceMotionEventAccelerationInit): Self = this.set("acceleration", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteAcceleration: Self = this.set("acceleration", js.undefined)
     @scala.inline
-    def setAccelerationNull: Self = this.set("acceleration", null)
-    @scala.inline
-    def setAccelerationIncludingGravity(value: DeviceAccelerationDict): Self = this.set("accelerationIncludingGravity", value.asInstanceOf[js.Any])
+    def setAccelerationIncludingGravity(value: DeviceMotionEventAccelerationInit): Self = this.set("accelerationIncludingGravity", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteAccelerationIncludingGravity: Self = this.set("accelerationIncludingGravity", js.undefined)
-    @scala.inline
-    def setAccelerationIncludingGravityNull: Self = this.set("accelerationIncludingGravity", null)
     @scala.inline
     def setInterval(value: Double): Self = this.set("interval", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteInterval: Self = this.set("interval", js.undefined)
     @scala.inline
-    def setIntervalNull: Self = this.set("interval", null)
-    @scala.inline
-    def setRotationRate(value: DeviceRotationRateDict): Self = this.set("rotationRate", value.asInstanceOf[js.Any])
+    def setRotationRate(value: DeviceMotionEventRotationRateInit): Self = this.set("rotationRate", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteRotationRate: Self = this.set("rotationRate", js.undefined)
-    @scala.inline
-    def setRotationRateNull: Self = this.set("rotationRate", null)
   }
   
 }

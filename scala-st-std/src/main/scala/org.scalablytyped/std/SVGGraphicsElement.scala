@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGGraphicsElement interface represents SVG elements whose primary purpose is to directly render graphics into a group. */
+/** SVG elements whose primary purpose is to directly render graphics into a group. */
 @js.native
 trait SVGGraphicsElement
   extends SVGElement

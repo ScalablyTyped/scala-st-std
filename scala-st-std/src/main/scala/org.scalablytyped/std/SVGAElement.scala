@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGAElement interface provides access to the properties of <a> element, as well as methods to manipulate them. */
+/** Provides access to the properties of <a> element, as well as methods to manipulate them. */
 @js.native
 trait SVGAElement
   extends SVGGraphicsElement

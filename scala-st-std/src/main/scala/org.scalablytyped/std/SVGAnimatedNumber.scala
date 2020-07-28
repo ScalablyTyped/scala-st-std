@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGAnimatedNumber interface is used for attributes of basic type <Number> which can be animated. */
+/** Used for attributes of basic type <Number> which can be animated. */
 trait SVGAnimatedNumber extends js.Object {
   val animVal: Double
   var baseVal: Double

@@ -5,21 +5,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MediaTrackConstraintSet extends js.Object {
-  var aspectRatio: js.UndefOr[Double | ConstrainDoubleRange] = js.undefined
-  var channelCount: js.UndefOr[Double | ConstrainLongRange] = js.undefined
-  var deviceId: js.UndefOr[java.lang.String | js.Array[java.lang.String] | ConstrainDOMStringParameters] = js.undefined
-  var displaySurface: js.UndefOr[java.lang.String | js.Array[java.lang.String] | ConstrainDOMStringParameters] = js.undefined
-  var echoCancellation: js.UndefOr[scala.Boolean | ConstrainBooleanParameters] = js.undefined
-  var facingMode: js.UndefOr[java.lang.String | js.Array[java.lang.String] | ConstrainDOMStringParameters] = js.undefined
-  var frameRate: js.UndefOr[Double | ConstrainDoubleRange] = js.undefined
-  var groupId: js.UndefOr[java.lang.String | js.Array[java.lang.String] | ConstrainDOMStringParameters] = js.undefined
-  var height: js.UndefOr[Double | ConstrainLongRange] = js.undefined
-  var latency: js.UndefOr[Double | ConstrainDoubleRange] = js.undefined
-  var logicalSurface: js.UndefOr[scala.Boolean | ConstrainBooleanParameters] = js.undefined
-  var sampleRate: js.UndefOr[Double | ConstrainLongRange] = js.undefined
-  var sampleSize: js.UndefOr[Double | ConstrainLongRange] = js.undefined
-  var volume: js.UndefOr[Double | ConstrainDoubleRange] = js.undefined
-  var width: js.UndefOr[Double | ConstrainLongRange] = js.undefined
+  var aspectRatio: js.UndefOr[ConstrainDouble] = js.undefined
+  var autoGainControl: js.UndefOr[ConstrainBoolean] = js.undefined
+  var channelCount: js.UndefOr[ConstrainULong] = js.undefined
+  var deviceId: js.UndefOr[ConstrainDOMString] = js.undefined
+  var echoCancellation: js.UndefOr[ConstrainBoolean] = js.undefined
+  var facingMode: js.UndefOr[ConstrainDOMString] = js.undefined
+  var frameRate: js.UndefOr[ConstrainDouble] = js.undefined
+  var groupId: js.UndefOr[ConstrainDOMString] = js.undefined
+  var height: js.UndefOr[ConstrainULong] = js.undefined
+  var latency: js.UndefOr[ConstrainDouble] = js.undefined
+  var noiseSuppression: js.UndefOr[ConstrainBoolean] = js.undefined
+  var resizeMode: js.UndefOr[ConstrainDOMString] = js.undefined
+  var sampleRate: js.UndefOr[ConstrainULong] = js.undefined
+  var sampleSize: js.UndefOr[ConstrainULong] = js.undefined
+  var volume: js.UndefOr[ConstrainDouble] = js.undefined
+  var width: js.UndefOr[ConstrainULong] = js.undefined
 }
 
 object MediaTrackConstraintSet {
@@ -40,71 +41,75 @@ object MediaTrackConstraintSet {
         x
     }
     @scala.inline
-    def setAspectRatio(value: Double | ConstrainDoubleRange): Self = this.set("aspectRatio", value.asInstanceOf[js.Any])
+    def setAspectRatio(value: ConstrainDouble): Self = this.set("aspectRatio", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteAspectRatio: Self = this.set("aspectRatio", js.undefined)
     @scala.inline
-    def setChannelCount(value: Double | ConstrainLongRange): Self = this.set("channelCount", value.asInstanceOf[js.Any])
+    def setAutoGainControl(value: ConstrainBoolean): Self = this.set("autoGainControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoGainControl: Self = this.set("autoGainControl", js.undefined)
+    @scala.inline
+    def setChannelCount(value: ConstrainULong): Self = this.set("channelCount", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteChannelCount: Self = this.set("channelCount", js.undefined)
     @scala.inline
     def setDeviceIdVarargs(value: java.lang.String*): Self = this.set("deviceId", js.Array(value :_*))
     @scala.inline
-    def setDeviceId(value: java.lang.String | js.Array[java.lang.String] | ConstrainDOMStringParameters): Self = this.set("deviceId", value.asInstanceOf[js.Any])
+    def setDeviceId(value: ConstrainDOMString): Self = this.set("deviceId", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteDeviceId: Self = this.set("deviceId", js.undefined)
     @scala.inline
-    def setDisplaySurfaceVarargs(value: java.lang.String*): Self = this.set("displaySurface", js.Array(value :_*))
-    @scala.inline
-    def setDisplaySurface(value: java.lang.String | js.Array[java.lang.String] | ConstrainDOMStringParameters): Self = this.set("displaySurface", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteDisplaySurface: Self = this.set("displaySurface", js.undefined)
-    @scala.inline
-    def setEchoCancellation(value: scala.Boolean | ConstrainBooleanParameters): Self = this.set("echoCancellation", value.asInstanceOf[js.Any])
+    def setEchoCancellation(value: ConstrainBoolean): Self = this.set("echoCancellation", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteEchoCancellation: Self = this.set("echoCancellation", js.undefined)
     @scala.inline
     def setFacingModeVarargs(value: java.lang.String*): Self = this.set("facingMode", js.Array(value :_*))
     @scala.inline
-    def setFacingMode(value: java.lang.String | js.Array[java.lang.String] | ConstrainDOMStringParameters): Self = this.set("facingMode", value.asInstanceOf[js.Any])
+    def setFacingMode(value: ConstrainDOMString): Self = this.set("facingMode", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteFacingMode: Self = this.set("facingMode", js.undefined)
     @scala.inline
-    def setFrameRate(value: Double | ConstrainDoubleRange): Self = this.set("frameRate", value.asInstanceOf[js.Any])
+    def setFrameRate(value: ConstrainDouble): Self = this.set("frameRate", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteFrameRate: Self = this.set("frameRate", js.undefined)
     @scala.inline
     def setGroupIdVarargs(value: java.lang.String*): Self = this.set("groupId", js.Array(value :_*))
     @scala.inline
-    def setGroupId(value: java.lang.String | js.Array[java.lang.String] | ConstrainDOMStringParameters): Self = this.set("groupId", value.asInstanceOf[js.Any])
+    def setGroupId(value: ConstrainDOMString): Self = this.set("groupId", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteGroupId: Self = this.set("groupId", js.undefined)
     @scala.inline
-    def setHeight(value: Double | ConstrainLongRange): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setHeight(value: ConstrainULong): Self = this.set("height", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteHeight: Self = this.set("height", js.undefined)
     @scala.inline
-    def setLatency(value: Double | ConstrainDoubleRange): Self = this.set("latency", value.asInstanceOf[js.Any])
+    def setLatency(value: ConstrainDouble): Self = this.set("latency", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteLatency: Self = this.set("latency", js.undefined)
     @scala.inline
-    def setLogicalSurface(value: scala.Boolean | ConstrainBooleanParameters): Self = this.set("logicalSurface", value.asInstanceOf[js.Any])
+    def setNoiseSuppression(value: ConstrainBoolean): Self = this.set("noiseSuppression", value.asInstanceOf[js.Any])
     @scala.inline
-    def deleteLogicalSurface: Self = this.set("logicalSurface", js.undefined)
+    def deleteNoiseSuppression: Self = this.set("noiseSuppression", js.undefined)
     @scala.inline
-    def setSampleRate(value: Double | ConstrainLongRange): Self = this.set("sampleRate", value.asInstanceOf[js.Any])
+    def setResizeModeVarargs(value: java.lang.String*): Self = this.set("resizeMode", js.Array(value :_*))
+    @scala.inline
+    def setResizeMode(value: ConstrainDOMString): Self = this.set("resizeMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResizeMode: Self = this.set("resizeMode", js.undefined)
+    @scala.inline
+    def setSampleRate(value: ConstrainULong): Self = this.set("sampleRate", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteSampleRate: Self = this.set("sampleRate", js.undefined)
     @scala.inline
-    def setSampleSize(value: Double | ConstrainLongRange): Self = this.set("sampleSize", value.asInstanceOf[js.Any])
+    def setSampleSize(value: ConstrainULong): Self = this.set("sampleSize", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteSampleSize: Self = this.set("sampleSize", js.undefined)
     @scala.inline
-    def setVolume(value: Double | ConstrainDoubleRange): Self = this.set("volume", value.asInstanceOf[js.Any])
+    def setVolume(value: ConstrainDouble): Self = this.set("volume", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteVolume: Self = this.set("volume", js.undefined)
     @scala.inline
-    def setWidth(value: Double | ConstrainLongRange): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: ConstrainULong): Self = this.set("width", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteWidth: Self = this.set("width", js.undefined)
   }

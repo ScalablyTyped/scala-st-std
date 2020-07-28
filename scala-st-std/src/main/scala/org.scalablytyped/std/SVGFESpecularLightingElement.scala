@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGFESpecularLightingElement interface corresponds to the <feSpecularLighting> element. */
+/** Corresponds to the <feSpecularLighting> element. */
 @js.native
 trait SVGFESpecularLightingElement
   extends SVGElement

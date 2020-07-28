@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGFEMergeElement interface corresponds to the <feMerge> element. */
+/** Corresponds to the <feMerge> element. */
 @js.native
 trait SVGFEMergeElement
   extends SVGElement

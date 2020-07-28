@@ -10,6 +10,7 @@ trait MediaDeviceInfo extends js.Object {
   val groupId: java.lang.String
   val kind: MediaDeviceKind
   val label: java.lang.String
+  def toJSON(): js.Any
 }
 
 object MediaDeviceInfo {
@@ -18,9 +19,10 @@ object MediaDeviceInfo {
     deviceId: java.lang.String,
     groupId: java.lang.String,
     kind: MediaDeviceKind,
-    label: java.lang.String
+    label: java.lang.String,
+    toJSON: () => js.Any
   ): MediaDeviceInfo = {
-    val __obj = js.Dynamic.literal(deviceId = deviceId.asInstanceOf[js.Any], groupId = groupId.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(deviceId = deviceId.asInstanceOf[js.Any], groupId = groupId.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
     __obj.asInstanceOf[MediaDeviceInfo]
   }
   @scala.inline
@@ -42,6 +44,8 @@ object MediaDeviceInfo {
     def setKind(value: MediaDeviceKind): Self = this.set("kind", value.asInstanceOf[js.Any])
     @scala.inline
     def setLabel(value: java.lang.String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setToJSON(value: () => js.Any): Self = this.set("toJSON", js.Any.fromFunction0(value))
   }
   
 }

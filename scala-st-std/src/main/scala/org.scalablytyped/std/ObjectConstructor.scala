@@ -130,7 +130,7 @@ trait ObjectConstructor
     */
   def isSealed(o: js.Any): scala.Boolean = js.native
   /**
-    * Returns the names of the enumerable properties and methods of an object.
+    * Returns the names of the enumerable string properties and methods of an object.
     * @param o Object that contains the properties and methods. This can be an object that you created or an existing Document Object Model (DOM) object.
     */
   def keys(o: js.Object): js.Array[java.lang.String] = js.native

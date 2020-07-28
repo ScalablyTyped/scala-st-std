@@ -26,21 +26,21 @@ package object std {
     - java.lang.String
   */
   type BodyInit = org.scalablytyped.std._BodyInit | org.scalablytyped.std.ReadableStream[org.scalablytyped.std.Uint8Array] | java.lang.String
-  /** The CDATASection interface represents a CDATA section that can be used within XML to include extended portions of unescaped text. The symbols < and & don’t need escaping as they normally do when inside a CDATA section. */
+  /** A CDATA section that can be used within XML to include extended portions of unescaped text. The symbols < and & don’t need escaping as they normally do when inside a CDATA section. */
   type CDATASection = org.scalablytyped.std.Text
-  /** The CSSSupportsRule interface describes an object representing a single CSS @supports at-rule. It implements the CSSConditionRule interface, and therefore the CSSRule and CSSGroupingRule interfaces with a type value of 12 (CSSRule.SUPPORTS_RULE). */
+  /** An object representing a single CSS @supports at-rule. It implements the CSSConditionRule interface, and therefore the CSSRule and CSSGroupingRule interfaces with a type value of 12 (CSSRule.SUPPORTS_RULE). */
   type CSSSupportsRule = org.scalablytyped.std.CSSConditionRule
   /** The ChannelMergerNode interface, often used in conjunction with its opposite, ChannelSplitterNode, reunites different mono inputs into a single output. Each input is used to fill a channel of the output. This is useful for accessing each channels separately, e.g. for performing channel mixing where gain must be separately controlled on each channel. */
   type ChannelMergerNode = org.scalablytyped.std.AudioNode
   /** The ChannelSplitterNode interface, often used in conjunction with its opposite, ChannelMergerNode, separates the different channels of an audio source into a set of mono outputs. This is useful for accessing each channel separately, e.g. for performing channel mixing where gain must be separately controlled on each channel. */
   type ChannelSplitterNode = org.scalablytyped.std.AudioNode
   type ClassDecorator = js.Function1[/* target */ js.Function, js.Function | scala.Unit]
-  /** The Comment interface represents textual notations within markup; although it is generally not visually shown, such comments are available to be read in the source view. Comments are represented in HTML and XML as content between '<!--' and '-->'. In XML, the character sequence '--' cannot be used within a comment. */
+  /** Textual notations within markup; although it is generally not visually shown, such comments are available to be read in the source view. */
   type Comment = org.scalablytyped.std.CharacterData
   type ConstrainBoolean = scala.Boolean | org.scalablytyped.std.ConstrainBooleanParameters
   type ConstrainDOMString = java.lang.String | js.Array[java.lang.String] | org.scalablytyped.std.ConstrainDOMStringParameters
   type ConstrainDouble = scala.Double | org.scalablytyped.std.ConstrainDoubleRange
-  type ConstrainLong = scala.Double | org.scalablytyped.std.ConstrainLongRange
+  type ConstrainULong = scala.Double | org.scalablytyped.std.ConstrainULongRange
   /**
     * Obtain the parameters of a constructor function type in a tuple
     */
@@ -52,6 +52,14 @@ package object std {
   type DecodeErrorCallback = js.Function1[/* error */ org.scalablytyped.std.DOMException, scala.Unit]
   type DecodeSuccessCallback = js.Function1[/* decodedData */ org.scalablytyped.std.AudioBuffer, scala.Unit]
   type DocumentTimeline = org.scalablytyped.std.AnimationTimeline
+  /** @deprecated Directly use HTMLElementTagNameMap or SVGElementTagNameMap as appropriate, instead. */
+  type ElementTagNameMap = org.scalablytyped.std.HTMLElementTagNameMap with (org.scalablytyped.std.Pick[
+    org.scalablytyped.std.SVGElementTagNameMap, 
+    org.scalablytyped.std.Exclude[
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any, 
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any
+    ]
+  ])
   type EvalError = org.scalablytyped.std.Error
   type EventHandlerNonNull = js.Function1[/* event */ org.scalablytyped.std.Event, js.Any]
   type EventListener = js.Function1[/* evt */ org.scalablytyped.std.Event, scala.Unit]
@@ -137,6 +145,11 @@ package object std {
     */
   type NonNullable[T] = T
   type NotificationPermissionCallback = js.Function1[/* permission */ org.scalablytyped.std.NotificationPermission, scala.Unit]
+  type OffscreenRenderingContext = org.scalablytyped.std.OffscreenCanvasRenderingContext2D | org.scalablytyped.std.WebGLRenderingContext
+  /**
+    * Construct a type with the properties of T except for those in type K.
+    */
+  type Omit[T, K /* <: /* keyof any */ java.lang.String */] = org.scalablytyped.std.Pick[T, org.scalablytyped.std.Exclude[/* keyof T */ java.lang.String, K]]
   /**
     * Removes the 'this' parameter from a function type.
     */
@@ -267,19 +280,19 @@ package object std {
   type URIError = org.scalablytyped.std.Error
   type VibratePattern = scala.Double | js.Array[scala.Double]
   type VoidFunction = js.Function0[scala.Unit]
-  /** The WebGLBuffer interface is part of the WebGL API and represents an opaque buffer object storing data such as vertices or colors. */
+  /** Part of the WebGL API and represents an opaque buffer object storing data such as vertices or colors. */
   type WebGLBuffer = org.scalablytyped.std.WebGLObject
-  /** The WebGLFramebuffer interface is part of the WebGL API and represents a collection of buffers that serve as a rendering destination. */
+  /** Part of the WebGL API and represents a collection of buffers that serve as a rendering destination. */
   type WebGLFramebuffer = org.scalablytyped.std.WebGLObject
   /** The WebGLProgram is part of the WebGL API and is a combination of two compiled WebGLShaders consisting of a vertex shader and a fragment shader (both written in GLSL). */
   type WebGLProgram = org.scalablytyped.std.WebGLObject
-  /** The WebGLRenderbuffer interface is part of the WebGL API and represents a buffer that can contain an image, or can be source or target of an rendering operation. */
+  /** Part of the WebGL API and represents a buffer that can contain an image, or can be source or target of an rendering operation. */
   type WebGLRenderbuffer = org.scalablytyped.std.WebGLObject
-  /** The WebGLRenderingContext interface provides an interface to the OpenGL ES 2.0 graphics rendering context for the drawing surface of an HTML <canvas> element. */
+  /** Provides an interface to the OpenGL ES 2.0 graphics rendering context for the drawing surface of an HTML <canvas> element. */
   type WebGLRenderingContext = org.scalablytyped.std.WebGLRenderingContextBase
   /** The WebGLShader is part of the WebGL API and can either be a vertex or a fragment shader. A WebGLProgram requires both types of shaders. */
   type WebGLShader = org.scalablytyped.std.WebGLObject
-  /** The WebGLTexture interface is part of the WebGL API and represents an opaque texture object providing storage and state for texturing operations. */
+  /** Part of the WebGL API and represents an opaque texture object providing storage and state for texturing operations. */
   type WebGLTexture = org.scalablytyped.std.WebGLObject
   type WebGLVertexArrayObjectOES = org.scalablytyped.std.WebGLObject
   type WebKitCSSMatrix = org.scalablytyped.std.DOMMatrix
@@ -295,5 +308,8 @@ package object std {
     scala.Unit | js.Thenable[scala.Unit]
   ]
   type WritableStreamErrorCallback = js.Function1[/* reason */ js.Any, scala.Unit | js.Thenable[scala.Unit]]
+  /** The XPathEvaluator interface allows to compile and evaluate XPath expressions. */
+  type XPathEvaluator = org.scalablytyped.std.XPathEvaluatorBase
+  type XPathNSResolver = (js.Function1[/* prefix */ java.lang.String | scala.Null, java.lang.String | scala.Null]) | org.scalablytyped.std.anon.LookupNamespaceURI
   type webkitURL = org.scalablytyped.std.URL
 }

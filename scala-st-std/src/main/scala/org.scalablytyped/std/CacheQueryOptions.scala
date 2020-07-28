@@ -5,7 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CacheQueryOptions extends js.Object {
-  var cacheName: js.UndefOr[java.lang.String] = js.undefined
   var ignoreMethod: js.UndefOr[scala.Boolean] = js.undefined
   var ignoreSearch: js.UndefOr[scala.Boolean] = js.undefined
   var ignoreVary: js.UndefOr[scala.Boolean] = js.undefined
@@ -28,10 +27,6 @@ object CacheQueryOptions {
         x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
         x
     }
-    @scala.inline
-    def setCacheName(value: java.lang.String): Self = this.set("cacheName", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteCacheName: Self = this.set("cacheName", js.undefined)
     @scala.inline
     def setIgnoreMethod(value: scala.Boolean): Self = this.set("ignoreMethod", value.asInstanceOf[js.Any])
     @scala.inline

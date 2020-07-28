@@ -4,10 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGPolylineElement interface provides access to the properties of <polyline> elements, as well as methods to manipulate them. */
+/** Provides access to the properties of <polyline> elements, as well as methods to manipulate them. */
 @js.native
 trait SVGPolylineElement
-  extends SVGGraphicsElement
+  extends SVGGeometryElement
      with SVGAnimatedPoints {
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
