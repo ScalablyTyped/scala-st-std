@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("isFinite")
 @js.native
 object isFinite extends js.Object {
-  /** 
+  /**
     * Determines whether a supplied number is finite.
     * @param number Any numeric value.
     */

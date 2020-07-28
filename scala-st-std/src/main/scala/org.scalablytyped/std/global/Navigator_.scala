@@ -2,7 +2,10 @@ package org.scalablytyped.std.global
 
 import org.scalablytyped.std.ConfirmSiteSpecificExceptionsInformation
 import org.scalablytyped.std.ExceptionInformation
+import org.scalablytyped.std.MediaStreamConstraints
 import org.scalablytyped.std.Navigator
+import org.scalablytyped.std.NavigatorUserMediaErrorCallback
+import org.scalablytyped.std.NavigatorUserMediaSuccessCallback
 import org.scalablytyped.std.StoreExceptionsInformation
 import org.scalablytyped.std.StoreSiteSpecificExceptionsInformation
 import org.scalablytyped.runtime.Instantiable0
@@ -14,29 +17,37 @@ import scala.scalajs.js.annotation._
 @js.native
 class Navigator_ () extends Navigator {
   /* CompleteClass */
-  override var appName: java.lang.String = js.native
+  override val appName: java.lang.String = js.native
   /* CompleteClass */
-  override var appVersion: java.lang.String = js.native
+  override val appVersion: java.lang.String = js.native
   /* CompleteClass */
-  override var geolocation: org.scalablytyped.std.Geolocation = js.native
+  override val geolocation: org.scalablytyped.std.Geolocation = js.native
   /* CompleteClass */
-  override var onLine: scala.Boolean = js.native
+  override val mediaDevices: org.scalablytyped.std.MediaDevices = js.native
   /* CompleteClass */
-  override var platform: java.lang.String = js.native
+  override val onLine: scala.Boolean = js.native
   /* CompleteClass */
-  override var product: java.lang.String = js.native
+  override val platform: java.lang.String = js.native
   /* CompleteClass */
-  override var productSub: java.lang.String = js.native
+  override val product: java.lang.String = js.native
   /* CompleteClass */
-  override var userAgent: java.lang.String = js.native
+  override val productSub: java.lang.String = js.native
   /* CompleteClass */
-  override var vendor: java.lang.String = js.native
+  override val userAgent: java.lang.String = js.native
   /* CompleteClass */
-  override var vendorSub: java.lang.String = js.native
+  override val vendor: java.lang.String = js.native
+  /* CompleteClass */
+  override val vendorSub: java.lang.String = js.native
   /* CompleteClass */
   override def confirmSiteSpecificTrackingException(args: ConfirmSiteSpecificExceptionsInformation): scala.Boolean = js.native
   /* CompleteClass */
   override def confirmWebWideTrackingException(args: ExceptionInformation): scala.Boolean = js.native
+  /* CompleteClass */
+  override def getUserMedia(
+    constraints: MediaStreamConstraints,
+    successCallback: NavigatorUserMediaSuccessCallback,
+    errorCallback: NavigatorUserMediaErrorCallback
+  ): Unit = js.native
   /* CompleteClass */
   override def removeSiteSpecificTrackingException(args: ExceptionInformation): Unit = js.native
   /* CompleteClass */

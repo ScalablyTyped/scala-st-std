@@ -10,7 +10,7 @@ trait SVGViewElement
      with SVGExternalResourcesRequired
      with SVGFitToViewBox
      with SVGZoomAndPan {
-  var viewTarget: SVGStringList = js.native
+  val viewTarget: SVGStringList = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */

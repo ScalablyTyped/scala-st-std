@@ -5,27 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Coordinates extends js.Object {
-  var accuracy: Double
-  var altitude: Double
-  var altitudeAccuracy: Double
-  var heading: Double
-  var latitude: Double
-  var longitude: Double
-  var speed: Double
+  val accuracy: Double
+  val altitude: Double | Null
+  val altitudeAccuracy: Double | Null
+  val heading: Double | Null
+  val latitude: Double
+  val longitude: Double
+  val speed: Double | Null
 }
 
 object Coordinates {
   @scala.inline
-  def apply(
-    accuracy: Double,
-    altitude: Double,
-    altitudeAccuracy: Double,
-    heading: Double,
-    latitude: Double,
-    longitude: Double,
-    speed: Double
-  ): Coordinates = {
-    val __obj = js.Dynamic.literal(accuracy = accuracy.asInstanceOf[js.Any], altitude = altitude.asInstanceOf[js.Any], altitudeAccuracy = altitudeAccuracy.asInstanceOf[js.Any], heading = heading.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any])
+  def apply(accuracy: Double, latitude: Double, longitude: Double): Coordinates = {
+    val __obj = js.Dynamic.literal(accuracy = accuracy.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
     __obj.asInstanceOf[Coordinates]
   }
   @scala.inline
@@ -42,17 +34,25 @@ object Coordinates {
     @scala.inline
     def setAccuracy(value: Double): Self = this.set("accuracy", value.asInstanceOf[js.Any])
     @scala.inline
-    def setAltitude(value: Double): Self = this.set("altitude", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setAltitudeAccuracy(value: Double): Self = this.set("altitudeAccuracy", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setHeading(value: Double): Self = this.set("heading", value.asInstanceOf[js.Any])
-    @scala.inline
     def setLatitude(value: Double): Self = this.set("latitude", value.asInstanceOf[js.Any])
     @scala.inline
     def setLongitude(value: Double): Self = this.set("longitude", value.asInstanceOf[js.Any])
     @scala.inline
+    def setAltitude(value: Double): Self = this.set("altitude", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAltitudeNull: Self = this.set("altitude", null)
+    @scala.inline
+    def setAltitudeAccuracy(value: Double): Self = this.set("altitudeAccuracy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAltitudeAccuracyNull: Self = this.set("altitudeAccuracy", null)
+    @scala.inline
+    def setHeading(value: Double): Self = this.set("heading", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHeadingNull: Self = this.set("heading", null)
+    @scala.inline
     def setSpeed(value: Double): Self = this.set("speed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSpeedNull: Self = this.set("speed", null)
   }
   
 }

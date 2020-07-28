@@ -18,11 +18,11 @@ trait RegExp extends js.Object {
     *
     * If no flags are set, the value is the empty string.
     */
-  var flags: java.lang.String = js.native
+  val flags: java.lang.String = js.native
   /** Returns a Boolean value indicating the state of the global flag (g) used with a regular expression. Default is false. Read-only. */
-  var global: scala.Boolean = js.native
+  val global: scala.Boolean = js.native
   /** Returns a Boolean value indicating the state of the ignoreCase flag (i) used with a regular expression. Default is false. Read-only. */
-  var ignoreCase: scala.Boolean = js.native
+  val ignoreCase: scala.Boolean = js.native
   var lastIndex: Double = js.native
   /**
     * Matches a string with this regular expression, and returns an array containing the results of
@@ -30,9 +30,9 @@ trait RegExp extends js.Object {
     * @param string A string to search within.
     */
   @JSName(js.Symbol.`match`)
-  var `match`: js.Function1[/* string */ java.lang.String, RegExpMatchArray] = js.native
+  var `match`: js.Function1[/* string */ java.lang.String, RegExpMatchArray | Null] = js.native
   /** Returns a Boolean value indicating the state of the multiline flag (m) used with a regular expression. Default is false. Read-only. */
-  var multiline: scala.Boolean = js.native
+  val multiline: scala.Boolean = js.native
   /**
     * Replaces text in a string, using this regular expression.
     * @param string A String object or string literal whose contents matching against
@@ -61,7 +61,7 @@ trait RegExp extends js.Object {
   @JSName(js.Symbol.search)
   var search: js.Function1[/* string */ java.lang.String, Double] = js.native
   /** Returns a copy of the text of the regular expression pattern. Read-only. The regExp argument is a Regular expression object. It can be a variable name or a literal. */
-  var source: java.lang.String = js.native
+  val source: java.lang.String = js.native
   /**
     * Returns an array of substrings that were delimited by strings in the original input that
     * match against this regular expression.
@@ -80,24 +80,24 @@ trait RegExp extends js.Object {
     /* limit */ js.UndefOr[Double], 
     js.Array[java.lang.String]
   ] = js.native
-  /** 
-    * Returns a Boolean value indicating the state of the sticky flag (y) used with a regular 
-    * expression. Default is false. Read-only. 
+  /**
+    * Returns a Boolean value indicating the state of the sticky flag (y) used with a regular
+    * expression. Default is false. Read-only.
     */
-  var sticky: scala.Boolean = js.native
-  /** 
-    * Returns a Boolean value indicating the state of the Unicode flag (u) used with a regular 
-    * expression. Default is false. Read-only. 
+  val sticky: scala.Boolean = js.native
+  /**
+    * Returns a Boolean value indicating the state of the Unicode flag (u) used with a regular
+    * expression. Default is false. Read-only.
     */
-  var unicode: scala.Boolean = js.native
+  val unicode: scala.Boolean = js.native
   // Non-standard extensions
-  def compile(): RegExp = js.native
-  /** 
+  def compile(): this.type = js.native
+  /**
     * Executes a search on a string using a regular expression pattern, and returns an array containing the results of that search.
     * @param string The String object or string literal on which to perform the search.
     */
-  def exec(string: java.lang.String): RegExpExecArray = js.native
-  /** 
+  def exec(string: java.lang.String): RegExpExecArray | Null = js.native
+  /**
     * Returns a Boolean value that indicates whether or not a pattern exists in a searched string.
     * @param string String on which to perform the search.
     */

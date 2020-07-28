@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SVGAnimatedLength extends js.Object {
-  var animVal: SVGLength
-  var baseVal: SVGLength
+  val animVal: SVGLength
+  val baseVal: SVGLength
 }
 
 object SVGAnimatedLength {

@@ -14,50 +14,82 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ApplicationCache extends EventTarget {
-  var CHECKING: Double = js.native
-  var DOWNLOADING: Double = js.native
-  var IDLE: Double = js.native
-  var OBSOLETE: Double = js.native
-  var UNCACHED: Double = js.native
-  var UPDATEREADY: Double = js.native
-  var status: Double = js.native
+  val CHECKING: Double = js.native
+  val DOWNLOADING: Double = js.native
+  val IDLE: Double = js.native
+  val OBSOLETE: Double = js.native
+  val UNCACHED: Double = js.native
+  val UPDATEREADY: Double = js.native
+  val status: Double = js.native
   def abort(): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_cached(`type`: cached, listener: js.Function1[/* ev */ Event, _]): Unit = js.native
+  def addEventListener_cached(`type`: cached, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_cached(`type`: cached, listener: js.Function1[/* ev */ Event, _], useCapture: scala.Boolean): Unit = js.native
+  def addEventListener_cached(
+    `type`: cached,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_checking(`type`: checking, listener: js.Function1[/* ev */ Event, _]): Unit = js.native
+  def addEventListener_checking(`type`: checking, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_checking(`type`: checking, listener: js.Function1[/* ev */ Event, _], useCapture: scala.Boolean): Unit = js.native
+  def addEventListener_checking(
+    `type`: checking,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_downloading(`type`: downloading, listener: js.Function1[/* ev */ Event, _]): Unit = js.native
+  def addEventListener_downloading(`type`: downloading, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_downloading(`type`: downloading, listener: js.Function1[/* ev */ Event, _], useCapture: scala.Boolean): Unit = js.native
+  def addEventListener_downloading(
+    `type`: downloading,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_error(`type`: error, listener: js.Function1[/* ev */ ErrorEvent, _]): Unit = js.native
+  def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_error(`type`: error, listener: js.Function1[/* ev */ ErrorEvent, _], useCapture: scala.Boolean): Unit = js.native
+  def addEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_noupdate(`type`: noupdate, listener: js.Function1[/* ev */ Event, _]): Unit = js.native
+  def addEventListener_noupdate(`type`: noupdate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_noupdate(`type`: noupdate, listener: js.Function1[/* ev */ Event, _], useCapture: scala.Boolean): Unit = js.native
+  def addEventListener_noupdate(
+    `type`: noupdate,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_obsolete(`type`: obsolete, listener: js.Function1[/* ev */ Event, _]): Unit = js.native
+  def addEventListener_obsolete(`type`: obsolete, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_obsolete(`type`: obsolete, listener: js.Function1[/* ev */ Event, _], useCapture: scala.Boolean): Unit = js.native
+  def addEventListener_obsolete(
+    `type`: obsolete,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_progress(`type`: progress, listener: js.Function1[/* ev */ ProgressEvent, _]): Unit = js.native
+  def addEventListener_progress(`type`: progress, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_progress(`type`: progress, listener: js.Function1[/* ev */ ProgressEvent, _], useCapture: scala.Boolean): Unit = js.native
+  def addEventListener_progress(
+    `type`: progress,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_updateready(`type`: updateready, listener: js.Function1[/* ev */ Event, _]): Unit = js.native
+  def addEventListener_updateready(`type`: updateready, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_updateready(`type`: updateready, listener: js.Function1[/* ev */ Event, _], useCapture: scala.Boolean): Unit = js.native
+  def addEventListener_updateready(
+    `type`: updateready,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   def oncached(ev: Event): js.Any = js.native
   def onchecking(ev: Event): js.Any = js.native
   def ondownloading(ev: Event): js.Any = js.native
-  def onerror(ev: Event): js.Any = js.native
+  def onerror(ev: ErrorEvent): js.Any = js.native
   def onnoupdate(ev: Event): js.Any = js.native
   def onobsolete(ev: Event): js.Any = js.native
   def onprogress(ev: ProgressEvent): js.Any = js.native

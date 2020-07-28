@@ -1,5 +1,6 @@
 package org.scalablytyped.std
 
+import org.scalablytyped.std.stdStrings.encrypted
 import org.scalablytyped.std.stdStrings.msneedkey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -7,19 +8,19 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait HTMLMediaElement extends HTMLElement {
-  var HAVE_CURRENT_DATA: Double = js.native
-  var HAVE_ENOUGH_DATA: Double = js.native
-  var HAVE_FUTURE_DATA: Double = js.native
-  var HAVE_METADATA: Double = js.native
-  var HAVE_NOTHING: Double = js.native
-  var NETWORK_EMPTY: Double = js.native
-  var NETWORK_IDLE: Double = js.native
-  var NETWORK_LOADING: Double = js.native
-  var NETWORK_NO_SOURCE: Double = js.native
+  val HAVE_CURRENT_DATA: Double = js.native
+  val HAVE_ENOUGH_DATA: Double = js.native
+  val HAVE_FUTURE_DATA: Double = js.native
+  val HAVE_METADATA: Double = js.native
+  val HAVE_NOTHING: Double = js.native
+  val NETWORK_EMPTY: Double = js.native
+  val NETWORK_IDLE: Double = js.native
+  val NETWORK_LOADING: Double = js.native
+  val NETWORK_NO_SOURCE: Double = js.native
   /**
     * Returns an AudioTrackList object with the audio tracks for a given video element.
     */
-  var audioTracks: AudioTrackList = js.native
+  val audioTracks: AudioTrackList = js.native
   /**
     * Gets or sets a value that indicates whether to start playing the media automatically.
     */
@@ -27,15 +28,16 @@ trait HTMLMediaElement extends HTMLElement {
   /**
     * Gets a collection of buffered time ranges.
     */
-  var buffered: TimeRanges = js.native
+  val buffered: TimeRanges = js.native
   /**
     * Gets or sets a flag that indicates whether the client provides a set of controls for the media (in case the developer does not include controls for the player).
     */
   var controls: scala.Boolean = js.native
+  var crossOrigin: java.lang.String = js.native
   /**
     * Gets the address or URL of the current media resource that is selected by IHTMLMediaElement.
     */
-  var currentSrc: java.lang.String = js.native
+  val currentSrc: java.lang.String = js.native
   /**
     * Gets or sets the current playback position, in seconds.
     */
@@ -48,19 +50,20 @@ trait HTMLMediaElement extends HTMLElement {
   /**
     * Returns the duration in seconds of the current media resource. A NaN value is returned if duration is not available, or Infinity if the media resource is streaming.
     */
-  var duration: Double = js.native
+  val duration: Double = js.native
   /**
     * Gets information about whether the playback has ended or not.
     */
-  var ended: scala.Boolean = js.native
+  val ended: scala.Boolean = js.native
   /**
     * Returns an object representing the current error state of the audio or video element.
     */
-  var error: MediaError = js.native
+  val error: MediaError = js.native
   /**
     * Gets or sets a flag to specify whether playback should restart after it completes.
     */
   var loop: scala.Boolean = js.native
+  val mediaKeys: MediaKeys | Null = js.native
   /**
     * Specifies the purpose of the audio or video media, such as background audio or alerts.
     */
@@ -69,11 +72,11 @@ trait HTMLMediaElement extends HTMLElement {
     * Specifies the output device id that the audio will be sent to.
     */
   var msAudioDeviceType: java.lang.String = js.native
-  var msGraphicsTrustStatus: MSGraphicsTrust = js.native
+  val msGraphicsTrustStatus: MSGraphicsTrust = js.native
   /**
     * Gets the MSMediaKeys object, which is used for decrypting media data, that is associated with this media element.
     */
-  var msKeys: MSMediaKeys = js.native
+  val msKeys: MSMediaKeys = js.native
   /**
     * Gets or sets whether the DLNA PlayTo device is available.
     */
@@ -89,7 +92,7 @@ trait HTMLMediaElement extends HTMLElement {
   /**
     * Gets the source associated with the media element for use by the PlayToManager.
     */
-  var msPlayToSource: js.Any = js.native
+  val msPlayToSource: js.Any = js.native
   /**
     * Specifies whether or not to enable low-latency playback on the media element.
     */
@@ -101,11 +104,11 @@ trait HTMLMediaElement extends HTMLElement {
   /**
     * Gets the current network activity for the element.
     */
-  var networkState: Double = js.native
+  val networkState: Double = js.native
   /**
     * Gets a flag that specifies whether playback is paused.
     */
-  var paused: scala.Boolean = js.native
+  val paused: scala.Boolean = js.native
   /**
     * Gets or sets the current rate of speed for the media resource to play. This speed is expressed as a multiple of the normal speed of the media resource.
     */
@@ -113,7 +116,7 @@ trait HTMLMediaElement extends HTMLElement {
   /**
     * Gets TimeRanges for the current media resource that has been played.
     */
-  var played: TimeRanges = js.native
+  val played: TimeRanges = js.native
   /**
     * Gets or sets the current playback position, in seconds.
     */
@@ -122,27 +125,42 @@ trait HTMLMediaElement extends HTMLElement {
   /**
     * Returns a TimeRanges object that represents the ranges of the current media resource that can be seeked.
     */
-  var seekable: TimeRanges = js.native
+  val seekable: TimeRanges = js.native
   /**
     * Gets a flag that indicates whether the the client is currently moving to a new playback position in the media resource.
     */
-  var seeking: scala.Boolean = js.native
+  val seeking: scala.Boolean = js.native
   /**
     * The address or URL of the a media resource that is to be considered.
     */
   var src: java.lang.String = js.native
-  var textTracks: TextTrackList = js.native
-  var videoTracks: VideoTrackList = js.native
+  var srcObject: MediaStream | Null = js.native
+  val textTracks: TextTrackList = js.native
+  val videoTracks: VideoTrackList = js.native
   /**
     * Gets or sets the volume level for audio portions of the media element.
     */
   var volume: Double = js.native
   @JSName("addEventListener")
-  def addEventListener_msneedkey(`type`: msneedkey, listener: js.Function1[/* ev */ MSMediaKeyNeededEvent, _]): Unit = js.native
+  def addEventListener_encrypted(
+    `type`: encrypted,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaEncryptedEvent, _]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_encrypted(
+    `type`: encrypted,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaEncryptedEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_msneedkey(
     `type`: msneedkey,
-    listener: js.Function1[/* ev */ MSMediaKeyNeededEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSMediaKeyNeededEvent, _]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_msneedkey(
+    `type`: msneedkey,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSMediaKeyNeededEvent, _],
     useCapture: scala.Boolean
   ): Unit = js.native
   def addTextTrack(kind: java.lang.String): TextTrack = js.native
@@ -173,6 +191,7 @@ trait HTMLMediaElement extends HTMLElement {
     */
   def msSetMediaProtectionManager(): Unit = js.native
   def msSetMediaProtectionManager(mediaProtectionManager: js.Any): Unit = js.native
+  def onencrypted(ev: MediaEncryptedEvent): js.Any = js.native
   def onmsneedkey(ev: MSMediaKeyNeededEvent): js.Any = js.native
   /**
     * Pauses the current playback and sets paused to TRUE. This can be used to test whether the media is playing or paused. You can also use the pause or play events to tell whether the media is playing or not.
@@ -182,5 +201,7 @@ trait HTMLMediaElement extends HTMLElement {
     * Loads and starts playback of a media resource.
     */
   def play(): Unit = js.native
+  def setMediaKeys(): js.Thenable[Unit] = js.native
+  def setMediaKeys(mediaKeys: MediaKeys): js.Thenable[Unit] = js.native
 }
 

@@ -19,11 +19,11 @@ trait HTMLFrameElement
   /**
     * Retrieves the document object of the page or frame.
     */
-  var contentDocument: Document = js.native
+  val contentDocument: Document = js.native
   /**
     * Retrieves the object of the specified.
     */
-  var contentWindow: Window = js.native
+  val contentWindow: Window = js.native
   /**
     * Sets or retrieves whether to display a border for the frame.
     */
@@ -60,10 +60,6 @@ trait HTMLFrameElement
     * Sets or retrieves whether the frame can be scrolled.
     */
   var scrolling: java.lang.String = js.native
-  /**
-    * Sets the value indicating whether the source file of a frame or iframe has specific security restrictions applied.
-    */
-  var security: js.Any = js.native
   /**
     * Sets or retrieves a URL to be loaded by the object.
     */

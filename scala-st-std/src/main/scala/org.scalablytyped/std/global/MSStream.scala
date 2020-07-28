@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class MSStream ()
   extends org.scalablytyped.std.MSStream {
   /* CompleteClass */
-  override var `type`: java.lang.String = js.native
+  override val `type`: java.lang.String = js.native
   /* CompleteClass */
   override def msClose(): Unit = js.native
   /* CompleteClass */

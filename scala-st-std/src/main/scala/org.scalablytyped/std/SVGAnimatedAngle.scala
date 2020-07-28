@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SVGAnimatedAngle extends js.Object {
-  var animVal: SVGAngle
-  var baseVal: SVGAngle
+  val animVal: SVGAngle
+  val baseVal: SVGAngle
 }
 
 object SVGAnimatedAngle {

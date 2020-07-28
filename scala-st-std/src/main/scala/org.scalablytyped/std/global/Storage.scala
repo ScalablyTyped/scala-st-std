@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 class Storage ()
   extends org.scalablytyped.std.Storage {
   /* CompleteClass */
-  override var length: Double = js.native
+  override val length: Double = js.native
   /* CompleteClass */
   override def clear(): Unit = js.native
   /* CompleteClass */
-  override def getItem(key: java.lang.String): js.Any = js.native
+  override def getItem(key: java.lang.String): java.lang.String = js.native
   /* CompleteClass */
   override def key(index: Double): java.lang.String = js.native
   /* CompleteClass */

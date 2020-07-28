@@ -13,13 +13,13 @@ trait SVGUseElement
      with SVGLangSpace
      with SVGExternalResourcesRequired
      with SVGURIReference {
-  var animatedInstanceRoot: SVGElementInstance = js.native
-  var height: SVGAnimatedLength = js.native
-  var instanceRoot: SVGElementInstance = js.native
-  var style: CSSStyleDeclaration = js.native
-  var width: SVGAnimatedLength = js.native
-  var x: SVGAnimatedLength = js.native
-  var y: SVGAnimatedLength = js.native
+  val animatedInstanceRoot: SVGElementInstance = js.native
+  val height: SVGAnimatedLength = js.native
+  val instanceRoot: SVGElementInstance = js.native
+  val style: CSSStyleDeclaration = js.native
+  val width: SVGAnimatedLength = js.native
+  val x: SVGAnimatedLength = js.native
+  val y: SVGAnimatedLength = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */

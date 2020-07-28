@@ -21,11 +21,11 @@ trait Function extends js.Object {
     */
   @JSName(js.Symbol.hasInstance)
   var hasInstance: js.Function1[/* value */ js.Any, scala.Boolean] = js.native
-  var length: Double = js.native
+  val length: Double = js.native
   /**
     * Returns the name of the function. Function names are read-only and can not be changed.
     */
-  var name: java.lang.String = js.native
+  val name: java.lang.String = js.native
   /**
     * Calls the function, substituting the specified object for the this value of the function, and the specified array for the arguments of the function.
     * @param thisArg The object to be used as the this object.
@@ -36,7 +36,7 @@ trait Function extends js.Object {
   @JSName("apply")
   def apply(thisArg: js.Any, argArray: js.Any): js.Any = js.native
   /**
-    * For a given function, creates a bound function that has the same body as the original function. 
+    * For a given function, creates a bound function that has the same body as the original function.
     * The this object of the bound function is associated with the specified object, and has the specified initial parameters.
     * @param thisArg An object to which the this keyword can refer inside the new function.
     * @param argArray A list of arguments to be passed to the new function.

@@ -15,75 +15,75 @@ class KeyboardEvent protected ()
   def this(typeArg: java.lang.String) = this()
   def this(typeArg: java.lang.String, eventInitDict: KeyboardEventInit) = this()
   /* CompleteClass */
-  override var AT_TARGET: Double = js.native
+  override val AT_TARGET: Double = js.native
   /* CompleteClass */
-  override var BUBBLING_PHASE: Double = js.native
+  override val BUBBLING_PHASE: Double = js.native
   /* CompleteClass */
-  override var CAPTURING_PHASE: Double = js.native
+  override val CAPTURING_PHASE: Double = js.native
   /* CompleteClass */
-  override var DOM_KEY_LOCATION_JOYSTICK: Double = js.native
+  override val DOM_KEY_LOCATION_JOYSTICK: Double = js.native
   /* CompleteClass */
-  override var DOM_KEY_LOCATION_LEFT: Double = js.native
+  override val DOM_KEY_LOCATION_LEFT: Double = js.native
   /* CompleteClass */
-  override var DOM_KEY_LOCATION_MOBILE: Double = js.native
+  override val DOM_KEY_LOCATION_MOBILE: Double = js.native
   /* CompleteClass */
-  override var DOM_KEY_LOCATION_NUMPAD: Double = js.native
+  override val DOM_KEY_LOCATION_NUMPAD: Double = js.native
   /* CompleteClass */
-  override var DOM_KEY_LOCATION_RIGHT: Double = js.native
+  override val DOM_KEY_LOCATION_RIGHT: Double = js.native
   /* CompleteClass */
-  override var DOM_KEY_LOCATION_STANDARD: Double = js.native
+  override val DOM_KEY_LOCATION_STANDARD: Double = js.native
   /* CompleteClass */
-  override var altKey: scala.Boolean = js.native
+  override val altKey: scala.Boolean = js.native
   /* CompleteClass */
-  override var bubbles: scala.Boolean = js.native
+  override val bubbles: scala.Boolean = js.native
   /* CompleteClass */
   override var cancelBubble: scala.Boolean = js.native
   /* CompleteClass */
-  override var cancelable: scala.Boolean = js.native
+  override val cancelable: scala.Boolean = js.native
   /* CompleteClass */
-  override var char: java.lang.String = js.native
+  override val char: java.lang.String | Null = js.native
   /* CompleteClass */
-  override var charCode: Double = js.native
+  override val charCode: Double = js.native
   /* CompleteClass */
-  override var ctrlKey: scala.Boolean = js.native
+  override val ctrlKey: scala.Boolean = js.native
   /* CompleteClass */
-  override var currentTarget: org.scalablytyped.std.EventTarget = js.native
+  override val currentTarget: org.scalablytyped.std.EventTarget = js.native
   /* CompleteClass */
-  override var defaultPrevented: scala.Boolean = js.native
+  override val defaultPrevented: scala.Boolean = js.native
   /* CompleteClass */
-  override var detail: Double = js.native
+  override val detail: Double = js.native
   /* CompleteClass */
-  override var eventPhase: Double = js.native
+  override val eventPhase: Double = js.native
   /* CompleteClass */
-  override var isTrusted: scala.Boolean = js.native
+  override val isTrusted: scala.Boolean = js.native
   /* CompleteClass */
-  override var key: java.lang.String = js.native
+  override val key: java.lang.String = js.native
   /* CompleteClass */
-  override var keyCode: Double = js.native
+  override val keyCode: Double = js.native
   /* CompleteClass */
-  override var locale: java.lang.String = js.native
+  override val locale: java.lang.String = js.native
   /* CompleteClass */
-  override var location: Double = js.native
+  override val location: Double = js.native
   /* CompleteClass */
-  override var metaKey: scala.Boolean = js.native
+  override val metaKey: scala.Boolean = js.native
   /* CompleteClass */
-  override var repeat: scala.Boolean = js.native
+  override val repeat: scala.Boolean = js.native
   /* CompleteClass */
   override var returnValue: scala.Boolean = js.native
   /* CompleteClass */
-  override var shiftKey: scala.Boolean = js.native
+  override val shiftKey: scala.Boolean = js.native
   /* CompleteClass */
-  override var srcElement: org.scalablytyped.std.Element = js.native
+  override val srcElement: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
-  override var target: org.scalablytyped.std.EventTarget = js.native
+  override val target: org.scalablytyped.std.EventTarget = js.native
   /* CompleteClass */
-  override var timeStamp: Double = js.native
+  override val timeStamp: Double = js.native
   /* CompleteClass */
-  override var `type`: java.lang.String = js.native
+  override val `type`: java.lang.String = js.native
   /* CompleteClass */
-  override var view: Window = js.native
+  override val view: Window = js.native
   /* CompleteClass */
-  override var which: Double = js.native
+  override val which: Double = js.native
   /* CompleteClass */
   override def getModifierState(keyArg: java.lang.String): scala.Boolean = js.native
   /* CompleteClass */
@@ -125,11 +125,11 @@ object KeyboardEvent
       /* eventInitDict */ KeyboardEventInit, 
       org.scalablytyped.std.KeyboardEvent
     ] {
-  var DOM_KEY_LOCATION_JOYSTICK: Double = js.native
-  var DOM_KEY_LOCATION_LEFT: Double = js.native
-  var DOM_KEY_LOCATION_MOBILE: Double = js.native
-  var DOM_KEY_LOCATION_NUMPAD: Double = js.native
-  var DOM_KEY_LOCATION_RIGHT: Double = js.native
-  var DOM_KEY_LOCATION_STANDARD: Double = js.native
+  val DOM_KEY_LOCATION_JOYSTICK: Double = js.native
+  val DOM_KEY_LOCATION_LEFT: Double = js.native
+  val DOM_KEY_LOCATION_MOBILE: Double = js.native
+  val DOM_KEY_LOCATION_NUMPAD: Double = js.native
+  val DOM_KEY_LOCATION_RIGHT: Double = js.native
+  val DOM_KEY_LOCATION_STANDARD: Double = js.native
 }
 

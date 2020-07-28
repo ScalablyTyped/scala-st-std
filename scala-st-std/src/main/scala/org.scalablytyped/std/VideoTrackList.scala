@@ -12,21 +12,33 @@ import scala.scalajs.js.annotation._
 trait VideoTrackList
   extends EventTarget
      with /* index */ NumberDictionary[VideoTrack] {
-  var length: Double = js.native
-  var selectedIndex: Double = js.native
+  val length: Double = js.native
+  val selectedIndex: Double = js.native
   @JSName("addEventListener")
-  def addEventListener_addtrack(`type`: addtrack, listener: js.Function1[/* ev */ TrackEvent, _]): Unit = js.native
+  def addEventListener_addtrack(`type`: addtrack, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_addtrack(`type`: addtrack, listener: js.Function1[/* ev */ TrackEvent, _], useCapture: scala.Boolean): Unit = js.native
+  def addEventListener_addtrack(
+    `type`: addtrack,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_change(`type`: change, listener: js.Function1[/* ev */ Event, _]): Unit = js.native
+  def addEventListener_change(`type`: change, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_change(`type`: change, listener: js.Function1[/* ev */ Event, _], useCapture: scala.Boolean): Unit = js.native
+  def addEventListener_change(
+    `type`: change,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_removetrack(`type`: removetrack, listener: js.Function1[/* ev */ TrackEvent, _]): Unit = js.native
+  def addEventListener_removetrack(`type`: removetrack, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_removetrack(`type`: removetrack, listener: js.Function1[/* ev */ TrackEvent, _], useCapture: scala.Boolean): Unit = js.native
-  def getTrackById(id: java.lang.String): VideoTrack = js.native
+  def addEventListener_removetrack(
+    `type`: removetrack,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  def getTrackById(id: java.lang.String): VideoTrack | Null = js.native
   def item(index: Double): VideoTrack = js.native
   def onaddtrack(ev: TrackEvent): js.Any = js.native
   def onchange(ev: Event): js.Any = js.native

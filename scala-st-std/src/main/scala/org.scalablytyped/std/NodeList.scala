@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait NodeList extends /* index */ NumberDictionary[Node] {
   @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[Node]] = js.native
-  var length: Double = js.native
+  val length: Double = js.native
   def item(index: Double): Node = js.native
 }
 

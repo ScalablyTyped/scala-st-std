@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PerformanceNavigation extends js.Object {
-  var TYPE_BACK_FORWARD: Double
-  var TYPE_NAVIGATE: Double
-  var TYPE_RELOAD: Double
-  var TYPE_RESERVED: Double
-  var redirectCount: Double
-  var `type`: Double
+  val TYPE_BACK_FORWARD: Double
+  val TYPE_NAVIGATE: Double
+  val TYPE_RELOAD: Double
+  val TYPE_RESERVED: Double
+  val redirectCount: Double
+  val `type`: Double
   def toJSON(): js.Any
 }
 

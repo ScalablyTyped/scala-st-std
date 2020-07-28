@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 class GamepadButton ()
   extends org.scalablytyped.std.GamepadButton {
   /* CompleteClass */
-  override var pressed: scala.Boolean = js.native
+  override val pressed: scala.Boolean = js.native
   /* CompleteClass */
-  override var value: Double = js.native
+  override val value: Double = js.native
 }
 
 @JSGlobal("GamepadButton")

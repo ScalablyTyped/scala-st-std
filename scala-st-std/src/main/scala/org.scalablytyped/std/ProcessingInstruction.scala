@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ProcessingInstruction extends CharacterData {
-  var target: java.lang.String = js.native
+  val target: java.lang.String = js.native
 }
 

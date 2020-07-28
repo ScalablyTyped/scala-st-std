@@ -5,23 +5,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait XPathResult extends js.Object {
-  var ANY_TYPE: Double
-  var ANY_UNORDERED_NODE_TYPE: Double
-  var BOOLEAN_TYPE: Double
-  var FIRST_ORDERED_NODE_TYPE: Double
-  var NUMBER_TYPE: Double
-  var ORDERED_NODE_ITERATOR_TYPE: Double
-  var ORDERED_NODE_SNAPSHOT_TYPE: Double
-  var STRING_TYPE: Double
-  var UNORDERED_NODE_ITERATOR_TYPE: Double
-  var UNORDERED_NODE_SNAPSHOT_TYPE: Double
-  var booleanValue: scala.Boolean
-  var invalidIteratorState: scala.Boolean
-  var numberValue: Double
-  var resultType: Double
-  var singleNodeValue: Node
-  var snapshotLength: Double
-  var stringValue: java.lang.String
+  val ANY_TYPE: Double
+  val ANY_UNORDERED_NODE_TYPE: Double
+  val BOOLEAN_TYPE: Double
+  val FIRST_ORDERED_NODE_TYPE: Double
+  val NUMBER_TYPE: Double
+  val ORDERED_NODE_ITERATOR_TYPE: Double
+  val ORDERED_NODE_SNAPSHOT_TYPE: Double
+  val STRING_TYPE: Double
+  val UNORDERED_NODE_ITERATOR_TYPE: Double
+  val UNORDERED_NODE_SNAPSHOT_TYPE: Double
+  val booleanValue: scala.Boolean
+  val invalidIteratorState: scala.Boolean
+  val numberValue: Double
+  val resultType: Double
+  val singleNodeValue: Node
+  val snapshotLength: Double
+  val stringValue: java.lang.String
   def iterateNext(): Node
   def snapshotItem(index: Double): Node
 }

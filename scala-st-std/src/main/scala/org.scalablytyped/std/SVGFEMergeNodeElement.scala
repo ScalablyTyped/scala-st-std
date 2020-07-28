@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SVGFEMergeNodeElement extends SVGElement {
-  var in1: SVGAnimatedString = js.native
+  val in1: SVGAnimatedString = js.native
 }
 

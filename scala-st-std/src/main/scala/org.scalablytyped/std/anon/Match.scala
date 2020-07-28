@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Match extends js.Object {
   @JSName(js.Symbol.`match`)
-  var `match`: js.Function1[/* string */ String, RegExpMatchArray] = js.native
+  var `match`: js.Function1[/* string */ String, RegExpMatchArray | Null] = js.native
 }
 

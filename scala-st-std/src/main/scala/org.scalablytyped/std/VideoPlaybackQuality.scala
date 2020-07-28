@@ -5,11 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait VideoPlaybackQuality extends js.Object {
-  var corruptedVideoFrames: Double
-  var creationTime: Double
-  var droppedVideoFrames: Double
-  var totalFrameDelay: Double
-  var totalVideoFrames: Double
+  val corruptedVideoFrames: Double
+  val creationTime: Double
+  val droppedVideoFrames: Double
+  val totalFrameDelay: Double
+  val totalVideoFrames: Double
 }
 
 object VideoPlaybackQuality {

@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GamepadButton extends js.Object {
-  var pressed: scala.Boolean
-  var value: Double
+  val pressed: scala.Boolean
+  val value: Double
 }
 
 object GamepadButton {

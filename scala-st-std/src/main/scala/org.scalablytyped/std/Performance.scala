@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Performance extends js.Object {
-  var navigation: PerformanceNavigation = js.native
-  var timing: PerformanceTiming = js.native
+  val navigation: PerformanceNavigation = js.native
+  val timing: PerformanceTiming = js.native
   def clearMarks(): Unit = js.native
   def clearMarks(markName: java.lang.String): Unit = js.native
   def clearMeasures(): Unit = js.native

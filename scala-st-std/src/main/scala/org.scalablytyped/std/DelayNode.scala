@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DelayNode extends AudioNode {
-  var delayTime: AudioParam = js.native
+  val delayTime: AudioParam = js.native
 }
 

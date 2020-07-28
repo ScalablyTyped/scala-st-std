@@ -8,11 +8,15 @@ import scala.scalajs.js.annotation._
 trait MSStreamReader
   extends EventTarget
      with MSBaseReader {
-  var error: DOMError = js.native
+  val error: DOMError = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(
+    `type`: java.lang.String,
+    listener: js.UndefOr[EventListenerOrEventListenerObject],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
-  /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, useCapture: scala.Boolean): Unit = js.native
   def readAsArrayBuffer(stream: MSStream): Unit = js.native
   def readAsArrayBuffer(stream: MSStream, size: Double): Unit = js.native
   def readAsBinaryString(stream: MSStream): Unit = js.native

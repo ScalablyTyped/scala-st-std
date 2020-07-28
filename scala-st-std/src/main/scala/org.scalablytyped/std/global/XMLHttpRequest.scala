@@ -14,11 +14,11 @@ class XMLHttpRequest ()
 @js.native
 object XMLHttpRequest
   extends Instantiable0[org.scalablytyped.std.XMLHttpRequest] {
-  var DONE: Double = js.native
-  var HEADERS_RECEIVED: Double = js.native
-  var LOADING: Double = js.native
-  var OPENED: Double = js.native
-  var UNSENT: Double = js.native
+  val DONE: Double = js.native
+  val HEADERS_RECEIVED: Double = js.native
+  val LOADING: Double = js.native
+  val OPENED: Double = js.native
+  val UNSENT: Double = js.native
   def create(): org.scalablytyped.std.XMLHttpRequest = js.native
 }
 

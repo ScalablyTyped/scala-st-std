@@ -13,8 +13,8 @@ trait SVGClipPathElement
      with SVGLangSpace
      with SVGExternalResourcesRequired
      with SVGUnitTypes {
-  var clipPathUnits: SVGAnimatedEnumeration = js.native
-  var style: CSSStyleDeclaration = js.native
+  val clipPathUnits: SVGAnimatedEnumeration = js.native
+  val style: CSSStyleDeclaration = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */

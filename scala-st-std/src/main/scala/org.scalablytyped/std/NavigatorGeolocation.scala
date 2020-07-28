@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NavigatorGeolocation extends js.Object {
-  var geolocation: Geolocation
+  val geolocation: Geolocation
 }
 
 object NavigatorGeolocation {

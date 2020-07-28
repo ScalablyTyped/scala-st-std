@@ -8,21 +8,21 @@ import scala.scalajs.js.annotation._
 - `org.scalablytyped`.std.SVGStylable because var conflicts: className. Inlined style
 - `org.scalablytyped`.std.SVGFilterPrimitiveStandardAttributes because var conflicts: className. Inlined height, result, width, x, y */ @js.native
 trait SVGFEDisplacementMapElement extends SVGElement {
-  var SVG_CHANNEL_A: Double = js.native
-  var SVG_CHANNEL_B: Double = js.native
-  var SVG_CHANNEL_G: Double = js.native
-  var SVG_CHANNEL_R: Double = js.native
-  var SVG_CHANNEL_UNKNOWN: Double = js.native
-  var height: SVGAnimatedLength = js.native
-  var in1: SVGAnimatedString = js.native
-  var in2: SVGAnimatedString = js.native
-  var result: SVGAnimatedString = js.native
-  var scale: SVGAnimatedNumber = js.native
-  var style: CSSStyleDeclaration = js.native
-  var width: SVGAnimatedLength = js.native
-  var x: SVGAnimatedLength = js.native
-  var xChannelSelector: SVGAnimatedEnumeration = js.native
-  var y: SVGAnimatedLength = js.native
-  var yChannelSelector: SVGAnimatedEnumeration = js.native
+  val SVG_CHANNEL_A: Double = js.native
+  val SVG_CHANNEL_B: Double = js.native
+  val SVG_CHANNEL_G: Double = js.native
+  val SVG_CHANNEL_R: Double = js.native
+  val SVG_CHANNEL_UNKNOWN: Double = js.native
+  val height: SVGAnimatedLength = js.native
+  val in1: SVGAnimatedString = js.native
+  val in2: SVGAnimatedString = js.native
+  val result: SVGAnimatedString = js.native
+  val scale: SVGAnimatedNumber = js.native
+  val style: CSSStyleDeclaration = js.native
+  val width: SVGAnimatedLength = js.native
+  val x: SVGAnimatedLength = js.native
+  val xChannelSelector: SVGAnimatedEnumeration = js.native
+  val y: SVGAnimatedLength = js.native
+  val yChannelSelector: SVGAnimatedEnumeration = js.native
 }
 

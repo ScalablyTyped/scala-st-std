@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class MediaList ()
   extends org.scalablytyped.std.MediaList {
   /* CompleteClass */
-  override var length: Double = js.native
+  override val length: Double = js.native
   /* CompleteClass */
   override var mediaText: java.lang.String = js.native
   /* CompleteClass */

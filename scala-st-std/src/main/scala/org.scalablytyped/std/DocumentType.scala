@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 trait DocumentType
   extends Node
      with ChildNode {
-  var entities: NamedNodeMap = js.native
-  var internalSubset: java.lang.String = js.native
-  var name: java.lang.String = js.native
-  var notations: NamedNodeMap = js.native
-  var publicId: java.lang.String = js.native
-  var systemId: java.lang.String = js.native
+  val entities: NamedNodeMap = js.native
+  val internalSubset: java.lang.String | Null = js.native
+  val name: java.lang.String = js.native
+  val notations: NamedNodeMap = js.native
+  val publicId: java.lang.String | Null = js.native
+  val systemId: java.lang.String | Null = js.native
 }
 

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WindowLocalStorage extends js.Object {
-  var localStorage: Storage
+  val localStorage: Storage
 }
 
 object WindowLocalStorage {

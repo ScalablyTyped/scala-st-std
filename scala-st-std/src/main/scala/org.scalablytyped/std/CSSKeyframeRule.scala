@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait CSSKeyframeRule extends CSSRule {
   var keyText: java.lang.String
-  var style: CSSStyleDeclaration
+  val style: CSSStyleDeclaration
 }
 
 object CSSKeyframeRule {

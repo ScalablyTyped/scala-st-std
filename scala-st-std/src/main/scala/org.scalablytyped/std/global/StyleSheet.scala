@@ -12,17 +12,17 @@ class StyleSheet ()
   /* CompleteClass */
   override var disabled: scala.Boolean = js.native
   /* CompleteClass */
-  override var href: java.lang.String = js.native
+  override val href: java.lang.String = js.native
   /* CompleteClass */
-  override var media: org.scalablytyped.std.MediaList = js.native
+  override val media: org.scalablytyped.std.MediaList = js.native
   /* CompleteClass */
-  override var ownerNode: org.scalablytyped.std.Node = js.native
+  override val ownerNode: org.scalablytyped.std.Node = js.native
   /* CompleteClass */
-  override var parentStyleSheet: org.scalablytyped.std.StyleSheet = js.native
+  override val parentStyleSheet: org.scalablytyped.std.StyleSheet = js.native
   /* CompleteClass */
-  override var title: java.lang.String = js.native
+  override val title: java.lang.String = js.native
   /* CompleteClass */
-  override var `type`: java.lang.String = js.native
+  override val `type`: java.lang.String = js.native
 }
 
 @JSGlobal("StyleSheet")

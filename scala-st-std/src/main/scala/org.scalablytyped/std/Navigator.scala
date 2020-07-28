@@ -13,24 +13,19 @@ trait Navigator
      with NavigatorStorageUtils
      with NavigatorGeolocation
      with MSNavigatorDoNotTrack
-     with MSFileSaver {
-  var appCodeName: java.lang.String = js.native
-  var appMinorVersion: java.lang.String = js.native
-  var browserLanguage: java.lang.String = js.native
-  var connectionSpeed: Double = js.native
-  var cookieEnabled: scala.Boolean = js.native
-  var cpuClass: java.lang.String = js.native
-  var language: java.lang.String = js.native
-  var maxTouchPoints: Double = js.native
-  var mimeTypes: MSMimeTypesCollection = js.native
-  var msManipulationViewsEnabled: scala.Boolean = js.native
-  var msMaxTouchPoints: Double = js.native
-  var msPointerEnabled: scala.Boolean = js.native
-  var plugins: MSPluginsCollection = js.native
-  var pointerEnabled: scala.Boolean = js.native
-  var systemLanguage: java.lang.String = js.native
-  var userLanguage: java.lang.String = js.native
-  var webdriver: scala.Boolean = js.native
+     with MSFileSaver
+     with NavigatorUserMedia {
+  val appCodeName: java.lang.String = js.native
+  val cookieEnabled: scala.Boolean = js.native
+  val language: java.lang.String = js.native
+  val maxTouchPoints: Double = js.native
+  val mimeTypes: MimeTypeArray = js.native
+  val msManipulationViewsEnabled: scala.Boolean = js.native
+  val msMaxTouchPoints: Double = js.native
+  val msPointerEnabled: scala.Boolean = js.native
+  val plugins: PluginArray = js.native
+  val pointerEnabled: scala.Boolean = js.native
+  val webdriver: scala.Boolean = js.native
   def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, useCapture: scala.Boolean): Unit = js.native
   def getGamepads(): js.Array[Gamepad] = js.native
@@ -47,6 +42,7 @@ trait Navigator
     successCallback: MSLaunchUriCallback,
     noHandlerCallback: MSLaunchUriCallback
   ): Unit = js.native
+  def requestMediaKeySystemAccess(keySystem: java.lang.String, supportedConfigurations: js.Array[MediaKeySystemConfiguration]): js.Thenable[MediaKeySystemAccess] = js.native
   def vibrate(pattern: js.Array[Double]): scala.Boolean = js.native
   def vibrate(pattern: Double): scala.Boolean = js.native
 }

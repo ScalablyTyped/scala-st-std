@@ -5,14 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MSMediaKeyError extends js.Object {
-  var MS_MEDIA_KEYERR_CLIENT: Double
-  var MS_MEDIA_KEYERR_DOMAIN: Double
-  var MS_MEDIA_KEYERR_HARDWARECHANGE: Double
-  var MS_MEDIA_KEYERR_OUTPUT: Double
-  var MS_MEDIA_KEYERR_SERVICE: Double
-  var MS_MEDIA_KEYERR_UNKNOWN: Double
-  var code: Double
-  var systemCode: Double
+  val MS_MEDIA_KEYERR_CLIENT: Double
+  val MS_MEDIA_KEYERR_DOMAIN: Double
+  val MS_MEDIA_KEYERR_HARDWARECHANGE: Double
+  val MS_MEDIA_KEYERR_OUTPUT: Double
+  val MS_MEDIA_KEYERR_SERVICE: Double
+  val MS_MEDIA_KEYERR_UNKNOWN: Double
+  val code: Double
+  val systemCode: Double
 }
 
 object MSMediaKeyError {

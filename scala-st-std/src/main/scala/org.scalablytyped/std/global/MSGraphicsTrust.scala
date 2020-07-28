@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 class MSGraphicsTrust ()
   extends org.scalablytyped.std.MSGraphicsTrust {
   /* CompleteClass */
-  override var constrictionActive: scala.Boolean = js.native
+  override val constrictionActive: scala.Boolean = js.native
   /* CompleteClass */
-  override var status: java.lang.String = js.native
+  override val status: java.lang.String = js.native
 }
 
 @JSGlobal("MSGraphicsTrust")

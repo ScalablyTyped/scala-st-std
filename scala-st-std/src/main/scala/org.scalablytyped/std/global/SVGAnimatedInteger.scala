@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class SVGAnimatedInteger ()
   extends org.scalablytyped.std.SVGAnimatedInteger {
   /* CompleteClass */
-  override var animVal: Double = js.native
+  override val animVal: Double = js.native
   /* CompleteClass */
   override var baseVal: Double = js.native
 }

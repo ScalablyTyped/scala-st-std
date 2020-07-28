@@ -14,14 +14,14 @@ trait SVGPatternElement
      with SVGFitToViewBox
      with SVGURIReference
      with SVGUnitTypes {
-  var height: SVGAnimatedLength = js.native
-  var patternContentUnits: SVGAnimatedEnumeration = js.native
-  var patternTransform: SVGAnimatedTransformList = js.native
-  var patternUnits: SVGAnimatedEnumeration = js.native
-  var style: CSSStyleDeclaration = js.native
-  var width: SVGAnimatedLength = js.native
-  var x: SVGAnimatedLength = js.native
-  var y: SVGAnimatedLength = js.native
+  val height: SVGAnimatedLength = js.native
+  val patternContentUnits: SVGAnimatedEnumeration = js.native
+  val patternTransform: SVGAnimatedTransformList = js.native
+  val patternUnits: SVGAnimatedEnumeration = js.native
+  val style: CSSStyleDeclaration = js.native
+  val width: SVGAnimatedLength = js.native
+  val x: SVGAnimatedLength = js.native
+  val y: SVGAnimatedLength = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */

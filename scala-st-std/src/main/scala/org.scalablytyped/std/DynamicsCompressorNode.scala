@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DynamicsCompressorNode extends AudioNode {
-  var attack: AudioParam = js.native
-  var knee: AudioParam = js.native
-  var ratio: AudioParam = js.native
-  var reduction: AudioParam = js.native
-  var release: AudioParam = js.native
-  var threshold: AudioParam = js.native
+  val attack: AudioParam = js.native
+  val knee: AudioParam = js.native
+  val ratio: AudioParam = js.native
+  val reduction: AudioParam = js.native
+  val release: AudioParam = js.native
+  val threshold: AudioParam = js.native
 }
 

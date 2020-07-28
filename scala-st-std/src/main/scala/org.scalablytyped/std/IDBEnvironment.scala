@@ -5,14 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IDBEnvironment extends js.Object {
-  var indexedDB: IDBFactory
-  var msIndexedDB: IDBFactory
+  val indexedDB: IDBFactory
 }
 
 object IDBEnvironment {
   @scala.inline
-  def apply(indexedDB: IDBFactory, msIndexedDB: IDBFactory): IDBEnvironment = {
-    val __obj = js.Dynamic.literal(indexedDB = indexedDB.asInstanceOf[js.Any], msIndexedDB = msIndexedDB.asInstanceOf[js.Any])
+  def apply(indexedDB: IDBFactory): IDBEnvironment = {
+    val __obj = js.Dynamic.literal(indexedDB = indexedDB.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDBEnvironment]
   }
   @scala.inline
@@ -28,8 +27,6 @@ object IDBEnvironment {
     }
     @scala.inline
     def setIndexedDB(value: IDBFactory): Self = this.set("indexedDB", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setMsIndexedDB(value: IDBFactory): Self = this.set("msIndexedDB", value.asInstanceOf[js.Any])
   }
   
 }

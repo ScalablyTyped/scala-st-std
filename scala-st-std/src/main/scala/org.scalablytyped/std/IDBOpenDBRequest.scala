@@ -9,15 +9,22 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IDBOpenDBRequest extends IDBRequest {
   @JSName("addEventListener")
-  def addEventListener_blocked(`type`: blocked, listener: js.Function1[/* ev */ Event, _]): Unit = js.native
+  def addEventListener_blocked(`type`: blocked, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_blocked(`type`: blocked, listener: js.Function1[/* ev */ Event, _], useCapture: scala.Boolean): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_upgradeneeded(`type`: upgradeneeded, listener: js.Function1[/* ev */ IDBVersionChangeEvent, _]): Unit = js.native
+  def addEventListener_blocked(
+    `type`: blocked,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_upgradeneeded(
     `type`: upgradeneeded,
-    listener: js.Function1[/* ev */ IDBVersionChangeEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, _]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_upgradeneeded(
+    `type`: upgradeneeded,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, _],
     useCapture: scala.Boolean
   ): Unit = js.native
   def onblocked(ev: Event): js.Any = js.native

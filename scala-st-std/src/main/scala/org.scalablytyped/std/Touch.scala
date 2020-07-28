@@ -5,14 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Touch extends js.Object {
-  var clientX: Double
-  var clientY: Double
-  var identifier: Double
-  var pageX: Double
-  var pageY: Double
-  var screenX: Double
-  var screenY: Double
-  var target: EventTarget
+  val clientX: Double
+  val clientY: Double
+  val identifier: Double
+  val pageX: Double
+  val pageY: Double
+  val screenX: Double
+  val screenY: Double
+  val target: EventTarget
 }
 
 object Touch {

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WindowConsole extends js.Object {
-  var console: Console
+  val console: Console
 }
 
 object WindowConsole {

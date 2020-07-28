@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EXTTextureFilterAnisotropic extends js.Object {
-  var MAX_TEXTURE_MAX_ANISOTROPY_EXT: Double
-  var TEXTURE_MAX_ANISOTROPY_EXT: Double
+  val MAX_TEXTURE_MAX_ANISOTROPY_EXT: Double
+  val TEXTURE_MAX_ANISOTROPY_EXT: Double
 }
 
 object EXTTextureFilterAnisotropic {

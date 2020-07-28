@@ -1,0 +1,40 @@
+package org.scalablytyped.std
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ConstrainLongRange extends LongRange {
+  var exact: js.UndefOr[Double] = js.undefined
+  var ideal: js.UndefOr[Double] = js.undefined
+}
+
+object ConstrainLongRange {
+  @scala.inline
+  def apply(): ConstrainLongRange = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[ConstrainLongRange]
+  }
+  @scala.inline
+  implicit class ConstrainLongRangeOps[Self <: ConstrainLongRange] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExact(value: Double): Self = this.set("exact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExact: Self = this.set("exact", js.undefined)
+    @scala.inline
+    def setIdeal(value: Double): Self = this.set("ideal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdeal: Self = this.set("ideal", js.undefined)
+  }
+  
+}
+

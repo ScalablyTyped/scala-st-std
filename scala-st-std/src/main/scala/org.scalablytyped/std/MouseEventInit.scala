@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MouseEventInit extends SharedKeyboardAndMouseEventInit {
+trait MouseEventInit extends EventModifierInit {
   var button: js.UndefOr[Double] = js.undefined
   var buttons: js.UndefOr[Double] = js.undefined
   var clientX: js.UndefOr[Double] = js.undefined

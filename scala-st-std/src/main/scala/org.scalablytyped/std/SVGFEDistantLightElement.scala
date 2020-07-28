@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SVGFEDistantLightElement extends SVGElement {
-  var azimuth: SVGAnimatedNumber = js.native
-  var elevation: SVGAnimatedNumber = js.native
+  val azimuth: SVGAnimatedNumber = js.native
+  val elevation: SVGAnimatedNumber = js.native
 }
 

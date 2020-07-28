@@ -5,8 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait CanvasRenderingContext2D extends js.Object {
-  var canvas: HTMLCanvasElement = js.native
+trait CanvasRenderingContext2D
+  extends Object
+     with CanvasPathMethods {
+  val canvas: HTMLCanvasElement = js.native
   var fillStyle: java.lang.String | CanvasGradient | CanvasPattern = js.native
   var font: java.lang.String = js.native
   var globalAlpha: Double = js.native
@@ -16,8 +18,10 @@ trait CanvasRenderingContext2D extends js.Object {
   var lineJoin: java.lang.String = js.native
   var lineWidth: Double = js.native
   var miterLimit: Double = js.native
+  var mozImageSmoothingEnabled: scala.Boolean = js.native
   var msFillRule: java.lang.String = js.native
   var msImageSmoothingEnabled: scala.Boolean = js.native
+  var oImageSmoothingEnabled: scala.Boolean = js.native
   var shadowBlur: Double = js.native
   var shadowColor: java.lang.String = js.native
   var shadowOffsetX: Double = js.native
@@ -25,22 +29,11 @@ trait CanvasRenderingContext2D extends js.Object {
   var strokeStyle: java.lang.String | CanvasGradient | CanvasPattern = js.native
   var textAlign: java.lang.String = js.native
   var textBaseline: java.lang.String = js.native
-  def arc(x: Double, y: Double, radius: Double, startAngle: Double, endAngle: Double): Unit = js.native
-  def arc(
-    x: Double,
-    y: Double,
-    radius: Double,
-    startAngle: Double,
-    endAngle: Double,
-    anticlockwise: scala.Boolean
-  ): Unit = js.native
-  def arcTo(x1: Double, y1: Double, x2: Double, y2: Double, radius: Double): Unit = js.native
+  var webkitImageSmoothingEnabled: scala.Boolean = js.native
   def beginPath(): Unit = js.native
-  def bezierCurveTo(cp1x: Double, cp1y: Double, cp2x: Double, cp2y: Double, x: Double, y: Double): Unit = js.native
   def clearRect(x: Double, y: Double, w: Double, h: Double): Unit = js.native
   def clip(): Unit = js.native
   def clip(fillRule: java.lang.String): Unit = js.native
-  def closePath(): Unit = js.native
   def createImageData(imageDataOrSw: ImageData): ImageData = js.native
   def createImageData(imageDataOrSw: ImageData, sh: Double): ImageData = js.native
   def createImageData(imageDataOrSw: Double): ImageData = js.native
@@ -70,9 +63,7 @@ trait CanvasRenderingContext2D extends js.Object {
   def getLineDash(): js.Array[Double] = js.native
   def isPointInPath(x: Double, y: Double): scala.Boolean = js.native
   def isPointInPath(x: Double, y: Double, fillRule: java.lang.String): scala.Boolean = js.native
-  def lineTo(x: Double, y: Double): Unit = js.native
   def measureText(text: java.lang.String): TextMetrics = js.native
-  def moveTo(x: Double, y: Double): Unit = js.native
   def putImageData(imagedata: ImageData, dx: Double, dy: Double): Unit = js.native
   def putImageData(
     imagedata: ImageData,
@@ -174,8 +165,6 @@ trait CanvasRenderingContext2D extends js.Object {
     dirtyWidth: Double,
     dirtyHeight: Double
   ): Unit = js.native
-  def quadraticCurveTo(cpx: Double, cpy: Double, x: Double, y: Double): Unit = js.native
-  def rect(x: Double, y: Double, w: Double, h: Double): Unit = js.native
   def restore(): Unit = js.native
   def rotate(angle: Double): Unit = js.native
   def save(): Unit = js.native

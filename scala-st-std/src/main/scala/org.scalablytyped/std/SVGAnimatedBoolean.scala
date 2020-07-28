@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SVGAnimatedBoolean extends js.Object {
-  var animVal: scala.Boolean
+  val animVal: scala.Boolean
   var baseVal: scala.Boolean
 }
 

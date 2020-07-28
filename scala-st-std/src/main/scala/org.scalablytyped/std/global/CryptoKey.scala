@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation._
 class CryptoKey ()
   extends org.scalablytyped.std.CryptoKey {
   /* CompleteClass */
-  override var algorithm: KeyAlgorithm = js.native
+  override val algorithm: KeyAlgorithm = js.native
   /* CompleteClass */
-  override var extractable: scala.Boolean = js.native
+  override val extractable: scala.Boolean = js.native
   /* CompleteClass */
-  override var `type`: java.lang.String = js.native
+  override val `type`: java.lang.String = js.native
   /* CompleteClass */
-  override var usages: js.Array[java.lang.String] = js.native
+  override val usages: js.Array[java.lang.String] = js.native
 }
 
 @JSGlobal("CryptoKey")

@@ -5,15 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceRotationRate extends js.Object {
-  var alpha: Double
-  var beta: Double
-  var gamma: Double
+  val alpha: Double | Null
+  val beta: Double | Null
+  val gamma: Double | Null
 }
 
 object DeviceRotationRate {
   @scala.inline
-  def apply(alpha: Double, beta: Double, gamma: Double): DeviceRotationRate = {
-    val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], beta = beta.asInstanceOf[js.Any], gamma = gamma.asInstanceOf[js.Any])
+  def apply(): DeviceRotationRate = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceRotationRate]
   }
   @scala.inline
@@ -30,9 +30,15 @@ object DeviceRotationRate {
     @scala.inline
     def setAlpha(value: Double): Self = this.set("alpha", value.asInstanceOf[js.Any])
     @scala.inline
+    def setAlphaNull: Self = this.set("alpha", null)
+    @scala.inline
     def setBeta(value: Double): Self = this.set("beta", value.asInstanceOf[js.Any])
     @scala.inline
+    def setBetaNull: Self = this.set("beta", null)
+    @scala.inline
     def setGamma(value: Double): Self = this.set("gamma", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGammaNull: Self = this.set("gamma", null)
   }
   
 }

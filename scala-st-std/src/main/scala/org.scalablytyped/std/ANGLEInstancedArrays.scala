@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ANGLEInstancedArrays extends js.Object {
-  var VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE: Double
+  val VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE: Double
   def drawArraysInstancedANGLE(mode: Double, first: Double, count: Double, primcount: Double): Unit
   def drawElementsInstancedANGLE(mode: Double, count: Double, `type`: Double, offset: Double, primcount: Double): Unit
   def vertexAttribDivisorANGLE(index: Double, divisor: Double): Unit

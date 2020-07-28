@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation._
 class MediaQueryList ()
   extends org.scalablytyped.std.MediaQueryList {
   /* CompleteClass */
-  override var matches: scala.Boolean = js.native
+  override val matches: scala.Boolean = js.native
   /* CompleteClass */
-  override var media: java.lang.String = js.native
+  override val media: java.lang.String = js.native
   /* CompleteClass */
   override def addListener(listener: MediaQueryListListener): Unit = js.native
   /* CompleteClass */

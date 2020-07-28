@@ -10,25 +10,25 @@ import scala.scalajs.js.annotation._
 class Range ()
   extends org.scalablytyped.std.Range {
   /* CompleteClass */
-  override var END_TO_END: Double = js.native
+  override val END_TO_END: Double = js.native
   /* CompleteClass */
-  override var END_TO_START: Double = js.native
+  override val END_TO_START: Double = js.native
   /* CompleteClass */
-  override var START_TO_END: Double = js.native
+  override val START_TO_END: Double = js.native
   /* CompleteClass */
-  override var START_TO_START: Double = js.native
+  override val START_TO_START: Double = js.native
   /* CompleteClass */
-  override var collapsed: scala.Boolean = js.native
+  override val collapsed: scala.Boolean = js.native
   /* CompleteClass */
-  override var commonAncestorContainer: org.scalablytyped.std.Node = js.native
+  override val commonAncestorContainer: org.scalablytyped.std.Node = js.native
   /* CompleteClass */
-  override var endContainer: org.scalablytyped.std.Node = js.native
+  override val endContainer: org.scalablytyped.std.Node = js.native
   /* CompleteClass */
-  override var endOffset: Double = js.native
+  override val endOffset: Double = js.native
   /* CompleteClass */
-  override var startContainer: org.scalablytyped.std.Node = js.native
+  override val startContainer: org.scalablytyped.std.Node = js.native
   /* CompleteClass */
-  override var startOffset: Double = js.native
+  override val startOffset: Double = js.native
   /* CompleteClass */
   override def cloneContents(): org.scalablytyped.std.DocumentFragment = js.native
   /* CompleteClass */
@@ -77,9 +77,9 @@ class Range ()
 @js.native
 object Range
   extends Instantiable0[org.scalablytyped.std.Range] {
-  var END_TO_END: Double = js.native
-  var END_TO_START: Double = js.native
-  var START_TO_END: Double = js.native
-  var START_TO_START: Double = js.native
+  val END_TO_END: Double = js.native
+  val END_TO_START: Double = js.native
+  val START_TO_END: Double = js.native
+  val START_TO_START: Double = js.native
 }
 

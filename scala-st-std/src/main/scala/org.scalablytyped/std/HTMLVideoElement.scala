@@ -14,8 +14,8 @@ trait HTMLVideoElement extends HTMLMediaElement {
     */
   var height: Double = js.native
   var msHorizontalMirror: scala.Boolean = js.native
-  var msIsLayoutOptimalForPlayback: scala.Boolean = js.native
-  var msIsStereo3D: scala.Boolean = js.native
+  val msIsLayoutOptimalForPlayback: scala.Boolean = js.native
+  val msIsStereo3D: scala.Boolean = js.native
   var msStereo3DPackingMode: java.lang.String = js.native
   var msStereo3DRenderMode: java.lang.String = js.native
   var msZoom: scala.Boolean = js.native
@@ -26,35 +26,45 @@ trait HTMLVideoElement extends HTMLMediaElement {
   /**
     * Gets the intrinsic height of a video in CSS pixels, or zero if the dimensions are not known.
     */
-  var videoHeight: Double = js.native
+  val videoHeight: Double = js.native
   /**
     * Gets the intrinsic width of a video in CSS pixels, or zero if the dimensions are not known.
     */
-  var videoWidth: Double = js.native
-  var webkitDisplayingFullscreen: scala.Boolean = js.native
-  var webkitSupportsFullscreen: scala.Boolean = js.native
+  val videoWidth: Double = js.native
+  val webkitDisplayingFullscreen: scala.Boolean = js.native
+  val webkitSupportsFullscreen: scala.Boolean = js.native
   /**
     * Gets or sets the width of the video element.
     */
   var width: Double = js.native
   @JSName("addEventListener")
-  def addEventListener_MSVideoFormatChanged(`type`: MSVideoFormatChanged, listener: js.Function1[/* ev */ Event, _]): Unit = js.native
+  def addEventListener_MSVideoFormatChanged(`type`: MSVideoFormatChanged, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSVideoFormatChanged(`type`: MSVideoFormatChanged, listener: js.Function1[/* ev */ Event, _], useCapture: scala.Boolean): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSVideoFrameStepCompleted(`type`: MSVideoFrameStepCompleted, listener: js.Function1[/* ev */ Event, _]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSVideoFrameStepCompleted(
-    `type`: MSVideoFrameStepCompleted,
-    listener: js.Function1[/* ev */ Event, _],
+  def addEventListener_MSVideoFormatChanged(
+    `type`: MSVideoFormatChanged,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     useCapture: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSVideoOptimalLayoutChanged(`type`: MSVideoOptimalLayoutChanged, listener: js.Function1[/* ev */ Event, _]): Unit = js.native
+  def addEventListener_MSVideoFrameStepCompleted(
+    `type`: MSVideoFrameStepCompleted,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_MSVideoFrameStepCompleted(
+    `type`: MSVideoFrameStepCompleted,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSVideoOptimalLayoutChanged(
     `type`: MSVideoOptimalLayoutChanged,
-    listener: js.Function1[/* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_MSVideoOptimalLayoutChanged(
+    `type`: MSVideoOptimalLayoutChanged,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     useCapture: scala.Boolean
   ): Unit = js.native
   def getVideoPlaybackQuality(): VideoPlaybackQuality = js.native

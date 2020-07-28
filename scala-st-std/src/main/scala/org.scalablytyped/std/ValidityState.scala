@@ -5,16 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ValidityState extends js.Object {
-  var badInput: scala.Boolean
-  var customError: scala.Boolean
-  var patternMismatch: scala.Boolean
-  var rangeOverflow: scala.Boolean
-  var rangeUnderflow: scala.Boolean
-  var stepMismatch: scala.Boolean
-  var tooLong: scala.Boolean
-  var typeMismatch: scala.Boolean
-  var valid: scala.Boolean
-  var valueMissing: scala.Boolean
+  val badInput: scala.Boolean
+  val customError: scala.Boolean
+  val patternMismatch: scala.Boolean
+  val rangeOverflow: scala.Boolean
+  val rangeUnderflow: scala.Boolean
+  val stepMismatch: scala.Boolean
+  val tooLong: scala.Boolean
+  val typeMismatch: scala.Boolean
+  val valid: scala.Boolean
+  val valueMissing: scala.Boolean
 }
 
 object ValidityState {

@@ -13,8 +13,8 @@ trait SVGAElement
      with SVGLangSpace
      with SVGExternalResourcesRequired
      with SVGURIReference {
-  var style: CSSStyleDeclaration = js.native
-  var target: SVGAnimatedString = js.native
+  val style: CSSStyleDeclaration = js.native
+  val target: SVGAnimatedString = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */

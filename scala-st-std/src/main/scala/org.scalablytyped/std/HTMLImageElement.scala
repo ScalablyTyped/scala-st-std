@@ -21,9 +21,9 @@ trait HTMLImageElement extends HTMLElement {
   /**
     * Retrieves whether the object is fully loaded.
     */
-  var complete: scala.Boolean = js.native
+  val complete: scala.Boolean = js.native
   var crossOrigin: java.lang.String = js.native
-  var currentSrc: java.lang.String = js.native
+  val currentSrc: java.lang.String = js.native
   /**
     * Sets or retrieves the height of the object.
     */
@@ -40,6 +40,7 @@ trait HTMLImageElement extends HTMLElement {
     * Sets or retrieves a Uniform Resource Identifier (URI) to a long description of the object.
     */
   var longDesc: java.lang.String = js.native
+  var lowsrc: java.lang.String = js.native
   /**
     * Gets or sets whether the DLNA PlayTo device is available.
     */
@@ -52,7 +53,7 @@ trait HTMLImageElement extends HTMLElement {
   /**
     * Gets the source associated with the media element for use by the PlayToManager.
     */
-  var msPlayToSource: js.Any = js.native
+  val msPlayToSource: js.Any = js.native
   /**
     * Sets or retrieves the name of the object.
     */
@@ -60,11 +61,12 @@ trait HTMLImageElement extends HTMLElement {
   /**
     * The original height of the image resource before sizing.
     */
-  var naturalHeight: Double = js.native
+  val naturalHeight: Double = js.native
   /**
     * The original width of the image resource before sizing.
     */
-  var naturalWidth: Double = js.native
+  val naturalWidth: Double = js.native
+  var sizes: java.lang.String = js.native
   /**
     * The address or URL of the a media resource that is to be considered.
     */
@@ -82,8 +84,8 @@ trait HTMLImageElement extends HTMLElement {
     * Sets or retrieves the width of the object.
     */
   var width: Double = js.native
-  var x: Double = js.native
-  var y: Double = js.native
+  val x: Double = js.native
+  val y: Double = js.native
   def msGetAsCastingSource(): js.Any = js.native
 }
 

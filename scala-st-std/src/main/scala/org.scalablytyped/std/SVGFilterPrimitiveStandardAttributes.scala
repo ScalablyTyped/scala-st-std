@@ -5,11 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SVGFilterPrimitiveStandardAttributes extends SVGStylable {
-  var height: SVGAnimatedLength
-  var result: SVGAnimatedString
-  var width: SVGAnimatedLength
-  var x: SVGAnimatedLength
-  var y: SVGAnimatedLength
+  val height: SVGAnimatedLength
+  val result: SVGAnimatedString
+  val width: SVGAnimatedLength
+  val x: SVGAnimatedLength
+  val y: SVGAnimatedLength
 }
 
 object SVGFilterPrimitiveStandardAttributes {

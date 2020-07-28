@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SVGLocatable extends js.Object {
-  var farthestViewportElement: SVGElement
-  var nearestViewportElement: SVGElement
+  val farthestViewportElement: SVGElement
+  val nearestViewportElement: SVGElement
   def getBBox(): SVGRect
   def getCTM(): SVGMatrix
   def getScreenCTM(): SVGMatrix

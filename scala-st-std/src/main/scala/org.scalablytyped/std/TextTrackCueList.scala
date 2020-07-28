@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TextTrackCueList extends /* index */ NumberDictionary[TextTrackCue] {
-  var length: Double
+  val length: Double
   def getCueById(id: java.lang.String): TextTrackCue
   def item(index: Double): TextTrackCue
 }

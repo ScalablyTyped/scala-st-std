@@ -15,111 +15,111 @@ class MSPointerEvent protected ()
   def this(typeArg: java.lang.String) = this()
   def this(typeArg: java.lang.String, eventInitDict: PointerEventInit) = this()
   /* CompleteClass */
-  override var AT_TARGET: Double = js.native
+  override val AT_TARGET: Double = js.native
   /* CompleteClass */
-  override var BUBBLING_PHASE: Double = js.native
+  override val BUBBLING_PHASE: Double = js.native
   /* CompleteClass */
-  override var CAPTURING_PHASE: Double = js.native
+  override val CAPTURING_PHASE: Double = js.native
   /* CompleteClass */
-  override var altKey: scala.Boolean = js.native
+  override val altKey: scala.Boolean = js.native
   /* CompleteClass */
-  override var bubbles: scala.Boolean = js.native
+  override val bubbles: scala.Boolean = js.native
   /* CompleteClass */
-  override var button: Double = js.native
+  override val button: Double = js.native
   /* CompleteClass */
-  override var buttons: Double = js.native
+  override val buttons: Double = js.native
   /* CompleteClass */
   override var cancelBubble: scala.Boolean = js.native
   /* CompleteClass */
-  override var cancelable: scala.Boolean = js.native
+  override val cancelable: scala.Boolean = js.native
   /* CompleteClass */
-  override var clientX: Double = js.native
+  override val clientX: Double = js.native
   /* CompleteClass */
-  override var clientY: Double = js.native
+  override val clientY: Double = js.native
   /* CompleteClass */
-  override var ctrlKey: scala.Boolean = js.native
+  override val ctrlKey: scala.Boolean = js.native
   /* CompleteClass */
-  override var currentPoint: js.Any = js.native
+  override val currentPoint: js.Any = js.native
   /* CompleteClass */
-  override var currentTarget: org.scalablytyped.std.EventTarget = js.native
+  override val currentTarget: org.scalablytyped.std.EventTarget = js.native
   /* CompleteClass */
-  override var defaultPrevented: scala.Boolean = js.native
+  override val defaultPrevented: scala.Boolean = js.native
   /* CompleteClass */
-  override var detail: Double = js.native
+  override val detail: Double = js.native
   /* CompleteClass */
-  override var eventPhase: Double = js.native
+  override val eventPhase: Double = js.native
   /* CompleteClass */
-  override var fromElement: org.scalablytyped.std.Element = js.native
+  override val fromElement: org.scalablytyped.std.Element = js.native
   /* CompleteClass */
-  override var height: Double = js.native
+  override val height: Double = js.native
   /* CompleteClass */
-  override var hwTimestamp: Double = js.native
+  override val hwTimestamp: Double = js.native
   /* CompleteClass */
-  override var intermediatePoints: js.Any = js.native
+  override val intermediatePoints: js.Any = js.native
   /* CompleteClass */
-  override var isPrimary: scala.Boolean = js.native
+  override val isPrimary: scala.Boolean = js.native
   /* CompleteClass */
-  override var isTrusted: scala.Boolean = js.native
+  override val isTrusted: scala.Boolean = js.native
   /* CompleteClass */
-  override var layerX: Double = js.native
+  override val layerX: Double = js.native
   /* CompleteClass */
-  override var layerY: Double = js.native
+  override val layerY: Double = js.native
   /* CompleteClass */
-  override var metaKey: scala.Boolean = js.native
+  override val metaKey: scala.Boolean = js.native
   /* CompleteClass */
-  override var movementX: Double = js.native
+  override val movementX: Double = js.native
   /* CompleteClass */
-  override var movementY: Double = js.native
+  override val movementY: Double = js.native
   /* CompleteClass */
-  override var offsetX: Double = js.native
+  override val offsetX: Double = js.native
   /* CompleteClass */
-  override var offsetY: Double = js.native
+  override val offsetY: Double = js.native
   /* CompleteClass */
-  override var pageX: Double = js.native
+  override val pageX: Double = js.native
   /* CompleteClass */
-  override var pageY: Double = js.native
+  override val pageY: Double = js.native
   /* CompleteClass */
-  override var pointerId: Double = js.native
+  override val pointerId: Double = js.native
   /* CompleteClass */
-  override var pointerType: js.Any = js.native
+  override val pointerType: js.Any = js.native
   /* CompleteClass */
-  override var pressure: Double = js.native
+  override val pressure: Double = js.native
   /* CompleteClass */
-  override var relatedTarget: org.scalablytyped.std.EventTarget = js.native
+  override val relatedTarget: org.scalablytyped.std.EventTarget = js.native
   /* CompleteClass */
   override var returnValue: scala.Boolean = js.native
   /* CompleteClass */
-  override var rotation: Double = js.native
+  override val rotation: Double = js.native
   /* CompleteClass */
-  override var screenX: Double = js.native
+  override val screenX: Double = js.native
   /* CompleteClass */
-  override var screenY: Double = js.native
+  override val screenY: Double = js.native
   /* CompleteClass */
-  override var shiftKey: scala.Boolean = js.native
+  override val shiftKey: scala.Boolean = js.native
   /* CompleteClass */
-  override var srcElement: org.scalablytyped.std.Element = js.native
+  override val srcElement: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
-  override var target: org.scalablytyped.std.EventTarget = js.native
+  override val target: org.scalablytyped.std.EventTarget = js.native
   /* CompleteClass */
-  override var tiltX: Double = js.native
+  override val tiltX: Double = js.native
   /* CompleteClass */
-  override var tiltY: Double = js.native
+  override val tiltY: Double = js.native
   /* CompleteClass */
-  override var timeStamp: Double = js.native
+  override val timeStamp: Double = js.native
   /* CompleteClass */
-  override var toElement: org.scalablytyped.std.Element = js.native
+  override val toElement: org.scalablytyped.std.Element = js.native
   /* CompleteClass */
-  override var `type`: java.lang.String = js.native
+  override val `type`: java.lang.String = js.native
   /* CompleteClass */
-  override var view: Window = js.native
+  override val view: Window = js.native
   /* CompleteClass */
-  override var which: Double = js.native
+  override val which: Double = js.native
   /* CompleteClass */
-  override var width: Double = js.native
+  override val width: Double = js.native
   /* CompleteClass */
-  override var x: Double = js.native
+  override val x: Double = js.native
   /* CompleteClass */
-  override var y: Double = js.native
+  override val y: Double = js.native
   /* CompleteClass */
   override def getCurrentPoint(element: org.scalablytyped.std.Element): Unit = js.native
   /* CompleteClass */

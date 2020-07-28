@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PermissionRequest extends DeferredPermissionRequest {
-  var state: java.lang.String
+  val state: java.lang.String
   def defer(): Unit
 }
 

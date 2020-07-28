@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Selection extends js.Object {
-  var anchorNode: Node
-  var anchorOffset: Double
-  var focusNode: Node
-  var focusOffset: Double
-  var isCollapsed: scala.Boolean
-  var rangeCount: Double
-  var `type`: java.lang.String
+  val anchorNode: Node
+  val anchorOffset: Double
+  val focusNode: Node
+  val focusOffset: Double
+  val isCollapsed: scala.Boolean
+  val rangeCount: Double
+  val `type`: java.lang.String
   def addRange(range: Range): Unit
   def collapse(parentNode: Node, offset: Double): Unit
   def collapseToEnd(): Unit

@@ -12,7 +12,7 @@ trait SVGSwitchElement
      with SVGTests
      with SVGLangSpace
      with SVGExternalResourcesRequired {
-  var style: CSSStyleDeclaration = js.native
+  val style: CSSStyleDeclaration = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */

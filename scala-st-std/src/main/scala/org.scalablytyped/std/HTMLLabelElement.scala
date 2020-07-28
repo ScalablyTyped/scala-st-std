@@ -9,7 +9,7 @@ trait HTMLLabelElement extends HTMLElement {
   /**
     * Retrieves a reference to the form that the object is embedded in.
     */
-  var form: HTMLFormElement = js.native
+  val form: HTMLFormElement = js.native
   /**
     * Sets or retrieves the object to which the given label object is assigned.
     */

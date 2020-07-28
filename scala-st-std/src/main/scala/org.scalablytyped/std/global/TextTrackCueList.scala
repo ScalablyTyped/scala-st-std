@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class TextTrackCueList ()
   extends org.scalablytyped.std.TextTrackCueList {
   /* CompleteClass */
-  override var length: Double = js.native
+  override val length: Double = js.native
   /* CompleteClass */
   override def getCueById(id: java.lang.String): org.scalablytyped.std.TextTrackCue = js.native
   /* CompleteClass */

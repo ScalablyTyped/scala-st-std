@@ -14,11 +14,11 @@ trait HTMLOptionElement extends HTMLElement {
   /**
     * Retrieves a reference to the form that the object is embedded in.
     */
-  var form: HTMLFormElement = js.native
+  val form: HTMLFormElement = js.native
   /**
     * Sets or retrieves the ordinal position of an option in a list box.
     */
-  var index: Double = js.native
+  val index: Double = js.native
   /**
     * Sets or retrieves a value that you can use to implement your own label functionality for the object.
     */

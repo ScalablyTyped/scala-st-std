@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeferredPermissionRequest extends js.Object {
-  var id: Double
-  var `type`: java.lang.String
-  var uri: java.lang.String
+  val id: Double
+  val `type`: java.lang.String
+  val uri: java.lang.String
   def allow(): Unit
   def deny(): Unit
 }

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class MSRangeCollection ()
   extends org.scalablytyped.std.MSRangeCollection {
   /* CompleteClass */
-  override var length: Double = js.native
+  override val length: Double = js.native
   /* CompleteClass */
   override def item(index: Double): org.scalablytyped.std.Range = js.native
 }

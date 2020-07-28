@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class StyleMedia_ () extends StyleMedia {
   /* CompleteClass */
-  override var `type`: java.lang.String = js.native
+  override val `type`: java.lang.String = js.native
   /* CompleteClass */
   override def matchMedium(mediaquery: java.lang.String): scala.Boolean = js.native
 }

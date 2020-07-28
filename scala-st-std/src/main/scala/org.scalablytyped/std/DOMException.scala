@@ -5,36 +5,36 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DOMException extends js.Object {
-  var ABORT_ERR: Double
-  var DATA_CLONE_ERR: Double
-  var DOMSTRING_SIZE_ERR: Double
-  var HIERARCHY_REQUEST_ERR: Double
-  var INDEX_SIZE_ERR: Double
-  var INUSE_ATTRIBUTE_ERR: Double
-  var INVALID_ACCESS_ERR: Double
-  var INVALID_CHARACTER_ERR: Double
-  var INVALID_MODIFICATION_ERR: Double
-  var INVALID_NODE_TYPE_ERR: Double
-  var INVALID_STATE_ERR: Double
-  var NAMESPACE_ERR: Double
-  var NETWORK_ERR: Double
-  var NOT_FOUND_ERR: Double
-  var NOT_SUPPORTED_ERR: Double
-  var NO_DATA_ALLOWED_ERR: Double
-  var NO_MODIFICATION_ALLOWED_ERR: Double
-  var PARSE_ERR: Double
-  var QUOTA_EXCEEDED_ERR: Double
-  var SECURITY_ERR: Double
-  var SERIALIZE_ERR: Double
-  var SYNTAX_ERR: Double
-  var TIMEOUT_ERR: Double
-  var TYPE_MISMATCH_ERR: Double
-  var URL_MISMATCH_ERR: Double
-  var VALIDATION_ERR: Double
-  var WRONG_DOCUMENT_ERR: Double
-  var code: Double
-  var message: java.lang.String
-  var name: java.lang.String
+  val ABORT_ERR: Double
+  val DATA_CLONE_ERR: Double
+  val DOMSTRING_SIZE_ERR: Double
+  val HIERARCHY_REQUEST_ERR: Double
+  val INDEX_SIZE_ERR: Double
+  val INUSE_ATTRIBUTE_ERR: Double
+  val INVALID_ACCESS_ERR: Double
+  val INVALID_CHARACTER_ERR: Double
+  val INVALID_MODIFICATION_ERR: Double
+  val INVALID_NODE_TYPE_ERR: Double
+  val INVALID_STATE_ERR: Double
+  val NAMESPACE_ERR: Double
+  val NETWORK_ERR: Double
+  val NOT_FOUND_ERR: Double
+  val NOT_SUPPORTED_ERR: Double
+  val NO_DATA_ALLOWED_ERR: Double
+  val NO_MODIFICATION_ALLOWED_ERR: Double
+  val PARSE_ERR: Double
+  val QUOTA_EXCEEDED_ERR: Double
+  val SECURITY_ERR: Double
+  val SERIALIZE_ERR: Double
+  val SYNTAX_ERR: Double
+  val TIMEOUT_ERR: Double
+  val TYPE_MISMATCH_ERR: Double
+  val URL_MISMATCH_ERR: Double
+  val VALIDATION_ERR: Double
+  val WRONG_DOCUMENT_ERR: Double
+  val code: Double
+  val message: java.lang.String
+  val name: java.lang.String
 }
 
 object DOMException {

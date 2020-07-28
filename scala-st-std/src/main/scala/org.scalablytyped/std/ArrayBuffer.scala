@@ -5,19 +5,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * Represents a raw buffer of binary data, which is used to store data for the
+  * different typed arrays. ArrayBuffers cannot be read from or written to directly,
+  * but can be passed to a typed array or DataView Object to interpret the raw
+  * buffer as needed.
+  */
+/**
   * Represents a raw buffer of binary data, which is used to store data for the 
   * different typed arrays. ArrayBuffers cannot be read from or written to directly, 
   * but can be passed to a typed array or DataView Object to interpret the raw 
   * buffer as needed. 
   */
 @js.native
-trait ArrayBuffer extends js.Object {
+trait ArrayBuffer extends BufferSource {
   /**
     * Read-only. The length of the ArrayBuffer (in bytes).
     */
-  var byteLength: Double = js.native
+  val byteLength: Double = js.native
   @JSName(js.Symbol.toStringTag)
-  var toStringTag: org.scalablytyped.std.stdStrings.ArrayBuffer = js.native
+  val toStringTag: org.scalablytyped.std.stdStrings.ArrayBuffer = js.native
   /**
     * Returns a section of an ArrayBuffer.
     */

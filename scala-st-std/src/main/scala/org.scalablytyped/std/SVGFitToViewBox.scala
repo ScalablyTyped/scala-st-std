@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SVGFitToViewBox extends js.Object {
-  var preserveAspectRatio: SVGAnimatedPreserveAspectRatio
-  var viewBox: SVGAnimatedRect
+  val preserveAspectRatio: SVGAnimatedPreserveAspectRatio
+  val viewBox: SVGAnimatedRect
 }
 
 object SVGFitToViewBox {

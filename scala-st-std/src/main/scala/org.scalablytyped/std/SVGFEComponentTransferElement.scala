@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 - `org.scalablytyped`.std.SVGStylable because var conflicts: className. Inlined style
 - `org.scalablytyped`.std.SVGFilterPrimitiveStandardAttributes because var conflicts: className. Inlined height, result, width, x, y */ @js.native
 trait SVGFEComponentTransferElement extends SVGElement {
-  var height: SVGAnimatedLength = js.native
-  var in1: SVGAnimatedString = js.native
-  var result: SVGAnimatedString = js.native
-  var style: CSSStyleDeclaration = js.native
-  var width: SVGAnimatedLength = js.native
-  var x: SVGAnimatedLength = js.native
-  var y: SVGAnimatedLength = js.native
+  val height: SVGAnimatedLength = js.native
+  val in1: SVGAnimatedString = js.native
+  val result: SVGAnimatedString = js.native
+  val style: CSSStyleDeclaration = js.native
+  val width: SVGAnimatedLength = js.native
+  val x: SVGAnimatedLength = js.native
+  val y: SVGAnimatedLength = js.native
 }
 

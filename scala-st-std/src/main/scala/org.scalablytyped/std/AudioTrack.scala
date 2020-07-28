@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait AudioTrack extends js.Object {
   var enabled: scala.Boolean
-  var id: java.lang.String
+  val id: java.lang.String
   var kind: java.lang.String
-  var label: java.lang.String
+  val label: java.lang.String
   var language: java.lang.String
-  var sourceBuffer: SourceBuffer
+  val sourceBuffer: SourceBuffer
 }
 
 object AudioTrack {

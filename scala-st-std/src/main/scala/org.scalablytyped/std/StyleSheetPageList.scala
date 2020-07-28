@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait StyleSheetPageList extends /* index */ NumberDictionary[CSSPageRule] {
-  var length: Double
+  val length: Double
   def item(index: Double): CSSPageRule
 }
 

@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DataTransferItemList extends /* index */ NumberDictionary[DataTransferItem] {
-  var length: Double
-  def add(data: File): DataTransferItem
+  val length: Double
+  def add(data: File): DataTransferItem | Null
   def clear(): Unit
   def item(index: Double): DataTransferItem
   def remove(index: Double): Unit
@@ -16,7 +16,7 @@ trait DataTransferItemList extends /* index */ NumberDictionary[DataTransferItem
 object DataTransferItemList {
   @scala.inline
   def apply(
-    add: File => DataTransferItem,
+    add: File => DataTransferItem | Null,
     clear: () => Unit,
     item: Double => DataTransferItem,
     length: Double,
@@ -37,7 +37,7 @@ object DataTransferItemList {
         x
     }
     @scala.inline
-    def setAdd(value: File => DataTransferItem): Self = this.set("add", js.Any.fromFunction1(value))
+    def setAdd(value: File => DataTransferItem | Null): Self = this.set("add", js.Any.fromFunction1(value))
     @scala.inline
     def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
     @scala.inline

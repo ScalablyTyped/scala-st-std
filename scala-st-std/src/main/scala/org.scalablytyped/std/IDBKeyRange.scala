@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IDBKeyRange extends js.Object {
-  var lower: js.Any
-  var lowerOpen: scala.Boolean
-  var upper: js.Any
-  var upperOpen: scala.Boolean
+  val lower: js.Any
+  val lowerOpen: scala.Boolean
+  val upper: js.Any
+  val upperOpen: scala.Boolean
 }
 
 object IDBKeyRange {

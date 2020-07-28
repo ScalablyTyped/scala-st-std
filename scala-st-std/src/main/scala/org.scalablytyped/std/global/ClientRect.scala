@@ -12,7 +12,7 @@ class ClientRect ()
   /* CompleteClass */
   override var bottom: Double = js.native
   /* CompleteClass */
-  override var height: Double = js.native
+  override val height: Double = js.native
   /* CompleteClass */
   override var left: Double = js.native
   /* CompleteClass */
@@ -20,7 +20,7 @@ class ClientRect ()
   /* CompleteClass */
   override var top: Double = js.native
   /* CompleteClass */
-  override var width: Double = js.native
+  override val width: Double = js.native
 }
 
 @JSGlobal("ClientRect")

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class ANGLEInstancedArrays ()
   extends org.scalablytyped.std.ANGLEInstancedArrays {
   /* CompleteClass */
-  override var VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE: Double = js.native
+  override val VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE: Double = js.native
   /* CompleteClass */
   override def drawArraysInstancedANGLE(mode: Double, first: Double, count: Double, primcount: Double): Unit = js.native
   /* CompleteClass */
@@ -23,6 +23,6 @@ class ANGLEInstancedArrays ()
 @js.native
 object ANGLEInstancedArrays
   extends Instantiable0[org.scalablytyped.std.ANGLEInstancedArrays] {
-  var VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE: Double = js.native
+  val VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE: Double = js.native
 }
 

@@ -9,5 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SetConstructor
   extends Instantiable0[Set[js.Any | js.Object]]
-     with Instantiable1[/* iterable */ Iterable[js.Object], Set[js.Object]]
+     with Instantiable1[
+      (/* values */ js.Array[js.Object]) | (/* iterable */ Iterable[js.Object]), 
+      Set[js.Object]
+    ]
 

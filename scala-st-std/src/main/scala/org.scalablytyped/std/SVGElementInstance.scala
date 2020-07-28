@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SVGElementInstance extends EventTarget {
-  var childNodes: SVGElementInstanceList = js.native
-  var correspondingElement: SVGElement = js.native
-  var correspondingUseElement: SVGUseElement = js.native
-  var firstChild: SVGElementInstance = js.native
-  var lastChild: SVGElementInstance = js.native
-  var nextSibling: SVGElementInstance = js.native
-  var parentNode: SVGElementInstance = js.native
-  var previousSibling: SVGElementInstance = js.native
+  val childNodes: SVGElementInstanceList = js.native
+  val correspondingElement: SVGElement = js.native
+  val correspondingUseElement: SVGUseElement = js.native
+  val firstChild: SVGElementInstance = js.native
+  val lastChild: SVGElementInstance = js.native
+  val nextSibling: SVGElementInstance = js.native
+  val parentNode: SVGElementInstance = js.native
+  val previousSibling: SVGElementInstance = js.native
 }
 

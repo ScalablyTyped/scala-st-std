@@ -11,12 +11,12 @@ trait SVGTextContentElement
      with SVGTests
      with SVGLangSpace
      with SVGExternalResourcesRequired {
-  var LENGTHADJUST_SPACING: Double = js.native
-  var LENGTHADJUST_SPACINGANDGLYPHS: Double = js.native
-  var LENGTHADJUST_UNKNOWN: Double = js.native
-  var lengthAdjust: SVGAnimatedEnumeration = js.native
-  var style: CSSStyleDeclaration = js.native
-  var textLength: SVGAnimatedLength = js.native
+  val LENGTHADJUST_SPACING: Double = js.native
+  val LENGTHADJUST_SPACINGANDGLYPHS: Double = js.native
+  val LENGTHADJUST_UNKNOWN: Double = js.native
+  val lengthAdjust: SVGAnimatedEnumeration = js.native
+  val style: CSSStyleDeclaration = js.native
+  val textLength: SVGAnimatedLength = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */

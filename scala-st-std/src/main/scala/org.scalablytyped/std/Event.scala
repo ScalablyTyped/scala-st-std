@@ -5,21 +5,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Event extends js.Object {
-  var AT_TARGET: Double
-  var BUBBLING_PHASE: Double
-  var CAPTURING_PHASE: Double
-  var bubbles: scala.Boolean
+  val AT_TARGET: Double
+  val BUBBLING_PHASE: Double
+  val CAPTURING_PHASE: Double
+  val bubbles: scala.Boolean
   var cancelBubble: scala.Boolean
-  var cancelable: scala.Boolean
-  var currentTarget: EventTarget
-  var defaultPrevented: scala.Boolean
-  var eventPhase: Double
-  var isTrusted: scala.Boolean
+  val cancelable: scala.Boolean
+  val currentTarget: EventTarget
+  val defaultPrevented: scala.Boolean
+  val eventPhase: Double
+  val isTrusted: scala.Boolean
   var returnValue: scala.Boolean
-  var srcElement: Element
-  var target: EventTarget
-  var timeStamp: Double
-  var `type`: java.lang.String
+  val srcElement: Element | Null
+  val target: EventTarget
+  val timeStamp: Double
+  val `type`: java.lang.String
   def initEvent(eventTypeArg: java.lang.String, canBubbleArg: scala.Boolean, cancelableArg: scala.Boolean): Unit
   def preventDefault(): Unit
   def stopImmediatePropagation(): Unit
@@ -42,14 +42,13 @@ object Event {
     isTrusted: scala.Boolean,
     preventDefault: () => Unit,
     returnValue: scala.Boolean,
-    srcElement: Element,
     stopImmediatePropagation: () => Unit,
     stopPropagation: () => Unit,
     target: EventTarget,
     timeStamp: Double,
     `type`: java.lang.String
   ): Event = {
-    val __obj = js.Dynamic.literal(AT_TARGET = AT_TARGET.asInstanceOf[js.Any], BUBBLING_PHASE = BUBBLING_PHASE.asInstanceOf[js.Any], CAPTURING_PHASE = CAPTURING_PHASE.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelBubble = cancelBubble.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], initEvent = js.Any.fromFunction3(initEvent), isTrusted = isTrusted.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), returnValue = returnValue.asInstanceOf[js.Any], srcElement = srcElement.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(AT_TARGET = AT_TARGET.asInstanceOf[js.Any], BUBBLING_PHASE = BUBBLING_PHASE.asInstanceOf[js.Any], CAPTURING_PHASE = CAPTURING_PHASE.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelBubble = cancelBubble.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], initEvent = js.Any.fromFunction3(initEvent), isTrusted = isTrusted.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), returnValue = returnValue.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event]
   }
@@ -91,8 +90,6 @@ object Event {
     @scala.inline
     def setReturnValue(value: scala.Boolean): Self = this.set("returnValue", value.asInstanceOf[js.Any])
     @scala.inline
-    def setSrcElement(value: Element): Self = this.set("srcElement", value.asInstanceOf[js.Any])
-    @scala.inline
     def setStopImmediatePropagation(value: () => Unit): Self = this.set("stopImmediatePropagation", js.Any.fromFunction0(value))
     @scala.inline
     def setStopPropagation(value: () => Unit): Self = this.set("stopPropagation", js.Any.fromFunction0(value))
@@ -102,6 +99,10 @@ object Event {
     def setTimeStamp(value: Double): Self = this.set("timeStamp", value.asInstanceOf[js.Any])
     @scala.inline
     def setType(value: java.lang.String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSrcElement(value: Element): Self = this.set("srcElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSrcElementNull: Self = this.set("srcElement", null)
   }
   
 }

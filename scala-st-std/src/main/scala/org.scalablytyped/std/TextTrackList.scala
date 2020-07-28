@@ -10,12 +10,16 @@ import scala.scalajs.js.annotation._
 trait TextTrackList
   extends EventTarget
      with /* index */ NumberDictionary[TextTrack] {
-  var length: Double = js.native
+  val length: Double = js.native
+  var onaddtrack: (js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _]) | Null = js.native
   @JSName("addEventListener")
-  def addEventListener_addtrack(`type`: addtrack, listener: js.Function1[/* ev */ TrackEvent, _]): Unit = js.native
+  def addEventListener_addtrack(`type`: addtrack, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_addtrack(`type`: addtrack, listener: js.Function1[/* ev */ TrackEvent, _], useCapture: scala.Boolean): Unit = js.native
+  def addEventListener_addtrack(
+    `type`: addtrack,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   def item(index: Double): TextTrack = js.native
-  def onaddtrack(ev: TrackEvent): js.Any = js.native
 }
 

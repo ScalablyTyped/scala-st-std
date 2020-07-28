@@ -10,25 +10,25 @@ import scala.scalajs.js.annotation._
 class ValidityState ()
   extends org.scalablytyped.std.ValidityState {
   /* CompleteClass */
-  override var badInput: scala.Boolean = js.native
+  override val badInput: scala.Boolean = js.native
   /* CompleteClass */
-  override var customError: scala.Boolean = js.native
+  override val customError: scala.Boolean = js.native
   /* CompleteClass */
-  override var patternMismatch: scala.Boolean = js.native
+  override val patternMismatch: scala.Boolean = js.native
   /* CompleteClass */
-  override var rangeOverflow: scala.Boolean = js.native
+  override val rangeOverflow: scala.Boolean = js.native
   /* CompleteClass */
-  override var rangeUnderflow: scala.Boolean = js.native
+  override val rangeUnderflow: scala.Boolean = js.native
   /* CompleteClass */
-  override var stepMismatch: scala.Boolean = js.native
+  override val stepMismatch: scala.Boolean = js.native
   /* CompleteClass */
-  override var tooLong: scala.Boolean = js.native
+  override val tooLong: scala.Boolean = js.native
   /* CompleteClass */
-  override var typeMismatch: scala.Boolean = js.native
+  override val typeMismatch: scala.Boolean = js.native
   /* CompleteClass */
-  override var valid: scala.Boolean = js.native
+  override val valid: scala.Boolean = js.native
   /* CompleteClass */
-  override var valueMissing: scala.Boolean = js.native
+  override val valueMissing: scala.Boolean = js.native
 }
 
 @JSGlobal("ValidityState")

@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 trait DataTransfer extends js.Object {
   var dropEffect: java.lang.String = js.native
   var effectAllowed: java.lang.String = js.native
-  var files: FileList = js.native
-  var items: DataTransferItemList = js.native
-  var types: DOMStringList = js.native
+  val files: FileList = js.native
+  val items: DataTransferItemList = js.native
+  val types: DOMStringList = js.native
   def clearData(): scala.Boolean = js.native
   def clearData(format: java.lang.String): scala.Boolean = js.native
   def getData(format: java.lang.String): java.lang.String = js.native

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ArrayLike[T] extends /* n */ NumberDictionary[T] {
-  var length: Double
+  val length: Double
 }
 
 object ArrayLike {

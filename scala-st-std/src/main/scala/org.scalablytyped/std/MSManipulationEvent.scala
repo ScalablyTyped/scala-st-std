@@ -5,18 +5,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MSManipulationEvent extends UIEvent {
-  var MS_MANIPULATION_STATE_ACTIVE: Double
-  var MS_MANIPULATION_STATE_CANCELLED: Double
-  var MS_MANIPULATION_STATE_COMMITTED: Double
-  var MS_MANIPULATION_STATE_DRAGGING: Double
-  var MS_MANIPULATION_STATE_INERTIA: Double
-  var MS_MANIPULATION_STATE_PRESELECT: Double
-  var MS_MANIPULATION_STATE_SELECTING: Double
-  var MS_MANIPULATION_STATE_STOPPED: Double
-  var currentState: Double
-  var inertiaDestinationX: Double
-  var inertiaDestinationY: Double
-  var lastState: Double
+  val MS_MANIPULATION_STATE_ACTIVE: Double
+  val MS_MANIPULATION_STATE_CANCELLED: Double
+  val MS_MANIPULATION_STATE_COMMITTED: Double
+  val MS_MANIPULATION_STATE_DRAGGING: Double
+  val MS_MANIPULATION_STATE_INERTIA: Double
+  val MS_MANIPULATION_STATE_PRESELECT: Double
+  val MS_MANIPULATION_STATE_SELECTING: Double
+  val MS_MANIPULATION_STATE_STOPPED: Double
+  val currentState: Double
+  val inertiaDestinationX: Double
+  val inertiaDestinationY: Double
+  val lastState: Double
   def initMSManipulationEvent(
     typeArg: java.lang.String,
     canBubbleArg: scala.Boolean,
@@ -59,7 +59,6 @@ object MSManipulationEvent {
     lastState: Double,
     preventDefault: () => Unit,
     returnValue: scala.Boolean,
-    srcElement: Element,
     stopImmediatePropagation: () => Unit,
     stopPropagation: () => Unit,
     target: EventTarget,
@@ -67,7 +66,7 @@ object MSManipulationEvent {
     `type`: java.lang.String,
     view: Window
   ): MSManipulationEvent = {
-    val __obj = js.Dynamic.literal(AT_TARGET = AT_TARGET.asInstanceOf[js.Any], BUBBLING_PHASE = BUBBLING_PHASE.asInstanceOf[js.Any], CAPTURING_PHASE = CAPTURING_PHASE.asInstanceOf[js.Any], MS_MANIPULATION_STATE_ACTIVE = MS_MANIPULATION_STATE_ACTIVE.asInstanceOf[js.Any], MS_MANIPULATION_STATE_CANCELLED = MS_MANIPULATION_STATE_CANCELLED.asInstanceOf[js.Any], MS_MANIPULATION_STATE_COMMITTED = MS_MANIPULATION_STATE_COMMITTED.asInstanceOf[js.Any], MS_MANIPULATION_STATE_DRAGGING = MS_MANIPULATION_STATE_DRAGGING.asInstanceOf[js.Any], MS_MANIPULATION_STATE_INERTIA = MS_MANIPULATION_STATE_INERTIA.asInstanceOf[js.Any], MS_MANIPULATION_STATE_PRESELECT = MS_MANIPULATION_STATE_PRESELECT.asInstanceOf[js.Any], MS_MANIPULATION_STATE_SELECTING = MS_MANIPULATION_STATE_SELECTING.asInstanceOf[js.Any], MS_MANIPULATION_STATE_STOPPED = MS_MANIPULATION_STATE_STOPPED.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelBubble = cancelBubble.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], currentState = currentState.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], inertiaDestinationX = inertiaDestinationX.asInstanceOf[js.Any], inertiaDestinationY = inertiaDestinationY.asInstanceOf[js.Any], initEvent = js.Any.fromFunction3(initEvent), initMSManipulationEvent = js.Any.fromFunction7(initMSManipulationEvent), initUIEvent = js.Any.fromFunction5(initUIEvent), isTrusted = isTrusted.asInstanceOf[js.Any], lastState = lastState.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), returnValue = returnValue.asInstanceOf[js.Any], srcElement = srcElement.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(AT_TARGET = AT_TARGET.asInstanceOf[js.Any], BUBBLING_PHASE = BUBBLING_PHASE.asInstanceOf[js.Any], CAPTURING_PHASE = CAPTURING_PHASE.asInstanceOf[js.Any], MS_MANIPULATION_STATE_ACTIVE = MS_MANIPULATION_STATE_ACTIVE.asInstanceOf[js.Any], MS_MANIPULATION_STATE_CANCELLED = MS_MANIPULATION_STATE_CANCELLED.asInstanceOf[js.Any], MS_MANIPULATION_STATE_COMMITTED = MS_MANIPULATION_STATE_COMMITTED.asInstanceOf[js.Any], MS_MANIPULATION_STATE_DRAGGING = MS_MANIPULATION_STATE_DRAGGING.asInstanceOf[js.Any], MS_MANIPULATION_STATE_INERTIA = MS_MANIPULATION_STATE_INERTIA.asInstanceOf[js.Any], MS_MANIPULATION_STATE_PRESELECT = MS_MANIPULATION_STATE_PRESELECT.asInstanceOf[js.Any], MS_MANIPULATION_STATE_SELECTING = MS_MANIPULATION_STATE_SELECTING.asInstanceOf[js.Any], MS_MANIPULATION_STATE_STOPPED = MS_MANIPULATION_STATE_STOPPED.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelBubble = cancelBubble.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], currentState = currentState.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], inertiaDestinationX = inertiaDestinationX.asInstanceOf[js.Any], inertiaDestinationY = inertiaDestinationY.asInstanceOf[js.Any], initEvent = js.Any.fromFunction3(initEvent), initMSManipulationEvent = js.Any.fromFunction7(initMSManipulationEvent), initUIEvent = js.Any.fromFunction5(initUIEvent), isTrusted = isTrusted.asInstanceOf[js.Any], lastState = lastState.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), returnValue = returnValue.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MSManipulationEvent]
   }

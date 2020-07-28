@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CSSRuleList extends /* index */ NumberDictionary[CSSRule] {
-  var length: Double
+  val length: Double
   def item(index: Double): CSSRule
 }
 

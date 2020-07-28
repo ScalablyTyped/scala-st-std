@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SVGURIReference extends js.Object {
-  var href: SVGAnimatedString
+  val href: SVGAnimatedString
 }
 
 object SVGURIReference {

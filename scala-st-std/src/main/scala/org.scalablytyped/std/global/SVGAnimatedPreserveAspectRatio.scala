@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 class SVGAnimatedPreserveAspectRatio ()
   extends org.scalablytyped.std.SVGAnimatedPreserveAspectRatio {
   /* CompleteClass */
-  override var animVal: org.scalablytyped.std.SVGPreserveAspectRatio = js.native
+  override val animVal: org.scalablytyped.std.SVGPreserveAspectRatio = js.native
   /* CompleteClass */
-  override var baseVal: org.scalablytyped.std.SVGPreserveAspectRatio = js.native
+  override val baseVal: org.scalablytyped.std.SVGPreserveAspectRatio = js.native
 }
 
 @JSGlobal("SVGAnimatedPreserveAspectRatio")

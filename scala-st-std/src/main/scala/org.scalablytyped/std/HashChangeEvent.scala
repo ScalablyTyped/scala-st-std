@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait HashChangeEvent extends Event {
-  var newURL: java.lang.String
-  var oldURL: java.lang.String
+  val newURL: java.lang.String | Null
+  val oldURL: java.lang.String | Null
 }
 
 object HashChangeEvent {
@@ -23,18 +23,15 @@ object HashChangeEvent {
     eventPhase: Double,
     initEvent: (java.lang.String, scala.Boolean, scala.Boolean) => Unit,
     isTrusted: scala.Boolean,
-    newURL: java.lang.String,
-    oldURL: java.lang.String,
     preventDefault: () => Unit,
     returnValue: scala.Boolean,
-    srcElement: Element,
     stopImmediatePropagation: () => Unit,
     stopPropagation: () => Unit,
     target: EventTarget,
     timeStamp: Double,
     `type`: java.lang.String
   ): HashChangeEvent = {
-    val __obj = js.Dynamic.literal(AT_TARGET = AT_TARGET.asInstanceOf[js.Any], BUBBLING_PHASE = BUBBLING_PHASE.asInstanceOf[js.Any], CAPTURING_PHASE = CAPTURING_PHASE.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelBubble = cancelBubble.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], initEvent = js.Any.fromFunction3(initEvent), isTrusted = isTrusted.asInstanceOf[js.Any], newURL = newURL.asInstanceOf[js.Any], oldURL = oldURL.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), returnValue = returnValue.asInstanceOf[js.Any], srcElement = srcElement.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(AT_TARGET = AT_TARGET.asInstanceOf[js.Any], BUBBLING_PHASE = BUBBLING_PHASE.asInstanceOf[js.Any], CAPTURING_PHASE = CAPTURING_PHASE.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelBubble = cancelBubble.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], initEvent = js.Any.fromFunction3(initEvent), isTrusted = isTrusted.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), returnValue = returnValue.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HashChangeEvent]
   }
@@ -52,7 +49,11 @@ object HashChangeEvent {
     @scala.inline
     def setNewURL(value: java.lang.String): Self = this.set("newURL", value.asInstanceOf[js.Any])
     @scala.inline
+    def setNewURLNull: Self = this.set("newURL", null)
+    @scala.inline
     def setOldURL(value: java.lang.String): Self = this.set("oldURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOldURLNull: Self = this.set("oldURL", null)
   }
   
 }

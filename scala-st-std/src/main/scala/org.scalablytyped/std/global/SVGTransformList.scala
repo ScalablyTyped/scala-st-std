@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class SVGTransformList ()
   extends org.scalablytyped.std.SVGTransformList {
   /* CompleteClass */
-  override var numberOfItems: Double = js.native
+  override val numberOfItems: Double = js.native
   /* CompleteClass */
   override def appendItem(newItem: org.scalablytyped.std.SVGTransform): org.scalablytyped.std.SVGTransform = js.native
   /* CompleteClass */

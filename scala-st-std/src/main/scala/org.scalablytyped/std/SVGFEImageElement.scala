@@ -12,13 +12,13 @@ trait SVGFEImageElement
      with SVGLangSpace
      with SVGURIReference
      with SVGExternalResourcesRequired {
-  var height: SVGAnimatedLength = js.native
-  var preserveAspectRatio: SVGAnimatedPreserveAspectRatio = js.native
-  var result: SVGAnimatedString = js.native
-  var style: CSSStyleDeclaration = js.native
-  var width: SVGAnimatedLength = js.native
-  var x: SVGAnimatedLength = js.native
-  var y: SVGAnimatedLength = js.native
+  val height: SVGAnimatedLength = js.native
+  val preserveAspectRatio: SVGAnimatedPreserveAspectRatio = js.native
+  val result: SVGAnimatedString = js.native
+  val style: CSSStyleDeclaration = js.native
+  val width: SVGAnimatedLength = js.native
+  val x: SVGAnimatedLength = js.native
+  val y: SVGAnimatedLength = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */

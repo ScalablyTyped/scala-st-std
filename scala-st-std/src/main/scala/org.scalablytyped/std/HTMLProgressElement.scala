@@ -9,7 +9,7 @@ trait HTMLProgressElement extends HTMLElement {
   /**
     * Retrieves a reference to the form that the object is embedded in.
     */
-  var form: HTMLFormElement = js.native
+  val form: HTMLFormElement = js.native
   /**
     * Defines the maximum, or "done" value for a progress element.
     */
@@ -17,7 +17,7 @@ trait HTMLProgressElement extends HTMLElement {
   /**
     * Returns the quotient of value/max when the value attribute is set (determinate progress bar), or -1 when the value attribute is missing (indeterminate progress bar).
     */
-  var position: Double = js.native
+  val position: Double = js.native
   /**
     * Sets or gets the current value of a progress element. The value must be a non-negative number between 0 and the max value.
     */

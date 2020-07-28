@@ -7,14 +7,18 @@ import scala.scalajs.js.annotation._
 
 trait DOMStringList
   extends /* index */ NumberDictionary[java.lang.String] {
-  var length: Double
+  val length: Double
   def contains(str: java.lang.String): scala.Boolean
-  def item(index: Double): java.lang.String
+  def item(index: Double): java.lang.String | Null
 }
 
 object DOMStringList {
   @scala.inline
-  def apply(contains: java.lang.String => scala.Boolean, item: Double => java.lang.String, length: Double): DOMStringList = {
+  def apply(
+    contains: java.lang.String => scala.Boolean,
+    item: Double => java.lang.String | Null,
+    length: Double
+  ): DOMStringList = {
     val __obj = js.Dynamic.literal(contains = js.Any.fromFunction1(contains), item = js.Any.fromFunction1(item), length = length.asInstanceOf[js.Any])
     __obj.asInstanceOf[DOMStringList]
   }
@@ -32,7 +36,7 @@ object DOMStringList {
     @scala.inline
     def setContains(value: java.lang.String => scala.Boolean): Self = this.set("contains", js.Any.fromFunction1(value))
     @scala.inline
-    def setItem(value: Double => java.lang.String): Self = this.set("item", js.Any.fromFunction1(value))
+    def setItem(value: Double => java.lang.String | Null): Self = this.set("item", js.Any.fromFunction1(value))
     @scala.inline
     def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
   }

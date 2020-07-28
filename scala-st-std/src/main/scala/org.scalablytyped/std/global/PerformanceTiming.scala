@@ -10,47 +10,47 @@ import scala.scalajs.js.annotation._
 class PerformanceTiming ()
   extends org.scalablytyped.std.PerformanceTiming {
   /* CompleteClass */
-  override var connectEnd: Double = js.native
+  override val connectEnd: Double = js.native
   /* CompleteClass */
-  override var connectStart: Double = js.native
+  override val connectStart: Double = js.native
   /* CompleteClass */
-  override var domComplete: Double = js.native
+  override val domComplete: Double = js.native
   /* CompleteClass */
-  override var domContentLoadedEventEnd: Double = js.native
+  override val domContentLoadedEventEnd: Double = js.native
   /* CompleteClass */
-  override var domContentLoadedEventStart: Double = js.native
+  override val domContentLoadedEventStart: Double = js.native
   /* CompleteClass */
-  override var domInteractive: Double = js.native
+  override val domInteractive: Double = js.native
   /* CompleteClass */
-  override var domLoading: Double = js.native
+  override val domLoading: Double = js.native
   /* CompleteClass */
-  override var domainLookupEnd: Double = js.native
+  override val domainLookupEnd: Double = js.native
   /* CompleteClass */
-  override var domainLookupStart: Double = js.native
+  override val domainLookupStart: Double = js.native
   /* CompleteClass */
-  override var fetchStart: Double = js.native
+  override val fetchStart: Double = js.native
   /* CompleteClass */
-  override var loadEventEnd: Double = js.native
+  override val loadEventEnd: Double = js.native
   /* CompleteClass */
-  override var loadEventStart: Double = js.native
+  override val loadEventStart: Double = js.native
   /* CompleteClass */
-  override var msFirstPaint: Double = js.native
+  override val msFirstPaint: Double = js.native
   /* CompleteClass */
-  override var navigationStart: Double = js.native
+  override val navigationStart: Double = js.native
   /* CompleteClass */
-  override var redirectEnd: Double = js.native
+  override val redirectEnd: Double = js.native
   /* CompleteClass */
-  override var redirectStart: Double = js.native
+  override val redirectStart: Double = js.native
   /* CompleteClass */
-  override var requestStart: Double = js.native
+  override val requestStart: Double = js.native
   /* CompleteClass */
-  override var responseEnd: Double = js.native
+  override val responseEnd: Double = js.native
   /* CompleteClass */
-  override var responseStart: Double = js.native
+  override val responseStart: Double = js.native
   /* CompleteClass */
-  override var unloadEventEnd: Double = js.native
+  override val unloadEventEnd: Double = js.native
   /* CompleteClass */
-  override var unloadEventStart: Double = js.native
+  override val unloadEventStart: Double = js.native
   /* CompleteClass */
   override def toJSON(): js.Any = js.native
 }

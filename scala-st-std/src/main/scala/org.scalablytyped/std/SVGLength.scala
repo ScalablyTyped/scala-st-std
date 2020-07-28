@@ -5,18 +5,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SVGLength extends js.Object {
-  var SVG_LENGTHTYPE_CM: Double
-  var SVG_LENGTHTYPE_EMS: Double
-  var SVG_LENGTHTYPE_EXS: Double
-  var SVG_LENGTHTYPE_IN: Double
-  var SVG_LENGTHTYPE_MM: Double
-  var SVG_LENGTHTYPE_NUMBER: Double
-  var SVG_LENGTHTYPE_PC: Double
-  var SVG_LENGTHTYPE_PERCENTAGE: Double
-  var SVG_LENGTHTYPE_PT: Double
-  var SVG_LENGTHTYPE_PX: Double
-  var SVG_LENGTHTYPE_UNKNOWN: Double
-  var unitType: Double
+  val SVG_LENGTHTYPE_CM: Double
+  val SVG_LENGTHTYPE_EMS: Double
+  val SVG_LENGTHTYPE_EXS: Double
+  val SVG_LENGTHTYPE_IN: Double
+  val SVG_LENGTHTYPE_MM: Double
+  val SVG_LENGTHTYPE_NUMBER: Double
+  val SVG_LENGTHTYPE_PC: Double
+  val SVG_LENGTHTYPE_PERCENTAGE: Double
+  val SVG_LENGTHTYPE_PT: Double
+  val SVG_LENGTHTYPE_PX: Double
+  val SVG_LENGTHTYPE_UNKNOWN: Double
+  val unitType: Double
   var value: Double
   var valueAsString: java.lang.String
   var valueInSpecifiedUnits: Double

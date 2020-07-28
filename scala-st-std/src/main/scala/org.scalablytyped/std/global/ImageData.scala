@@ -15,9 +15,9 @@ class ImageData protected ()
   /* CompleteClass */
   override var data: org.scalablytyped.std.Uint8ClampedArray = js.native
   /* CompleteClass */
-  override var height: Double = js.native
+  override val height: Double = js.native
   /* CompleteClass */
-  override var width: Double = js.native
+  override val width: Double = js.native
 }
 
 @JSGlobal("ImageData")

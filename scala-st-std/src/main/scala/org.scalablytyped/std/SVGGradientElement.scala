@@ -11,14 +11,14 @@ trait SVGGradientElement
      with SVGExternalResourcesRequired
      with SVGURIReference
      with SVGUnitTypes {
-  var SVG_SPREADMETHOD_PAD: Double = js.native
-  var SVG_SPREADMETHOD_REFLECT: Double = js.native
-  var SVG_SPREADMETHOD_REPEAT: Double = js.native
-  var SVG_SPREADMETHOD_UNKNOWN: Double = js.native
-  var gradientTransform: SVGAnimatedTransformList = js.native
-  var gradientUnits: SVGAnimatedEnumeration = js.native
-  var spreadMethod: SVGAnimatedEnumeration = js.native
-  var style: CSSStyleDeclaration = js.native
+  val SVG_SPREADMETHOD_PAD: Double = js.native
+  val SVG_SPREADMETHOD_REFLECT: Double = js.native
+  val SVG_SPREADMETHOD_REPEAT: Double = js.native
+  val SVG_SPREADMETHOD_UNKNOWN: Double = js.native
+  val gradientTransform: SVGAnimatedTransformList = js.native
+  val gradientUnits: SVGAnimatedEnumeration = js.native
+  val spreadMethod: SVGAnimatedEnumeration = js.native
+  val style: CSSStyleDeclaration = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */

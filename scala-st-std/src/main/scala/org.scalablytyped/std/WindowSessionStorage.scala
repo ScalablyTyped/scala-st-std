@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WindowSessionStorage extends js.Object {
-  var sessionStorage: Storage
+  val sessionStorage: Storage
 }
 
 object WindowSessionStorage {

@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait MSHTMLWebViewElement extends HTMLElement {
-  var canGoBack: scala.Boolean = js.native
-  var canGoForward: scala.Boolean = js.native
-  var containsFullScreenElement: scala.Boolean = js.native
-  var documentTitle: java.lang.String = js.native
+  val canGoBack: scala.Boolean = js.native
+  val canGoForward: scala.Boolean = js.native
+  val containsFullScreenElement: scala.Boolean = js.native
+  val documentTitle: java.lang.String = js.native
   var height: Double = js.native
-  var settings: MSWebViewSettings = js.native
+  val settings: MSWebViewSettings = js.native
   var src: java.lang.String = js.native
   var width: Double = js.native
   def addWebAllowedObject(name: java.lang.String, applicationObject: js.Any): Unit = js.native

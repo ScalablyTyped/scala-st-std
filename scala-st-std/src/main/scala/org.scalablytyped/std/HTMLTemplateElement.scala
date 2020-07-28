@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait HTMLTemplateElement extends HTMLElement {
-  var content: DocumentFragment = js.native
+  val content: DocumentFragment = js.native
 }
 

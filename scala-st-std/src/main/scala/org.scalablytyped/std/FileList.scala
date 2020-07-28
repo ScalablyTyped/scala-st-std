@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FileList extends /* index */ NumberDictionary[File] {
-  var length: Double
+  val length: Double
   def item(index: Double): File
 }
 

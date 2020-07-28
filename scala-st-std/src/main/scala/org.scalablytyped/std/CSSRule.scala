@@ -5,22 +5,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CSSRule extends js.Object {
-  var CHARSET_RULE: Double
-  var FONT_FACE_RULE: Double
-  var IMPORT_RULE: Double
-  var KEYFRAMES_RULE: Double
-  var KEYFRAME_RULE: Double
-  var MEDIA_RULE: Double
-  var NAMESPACE_RULE: Double
-  var PAGE_RULE: Double
-  var STYLE_RULE: Double
-  var SUPPORTS_RULE: Double
-  var UNKNOWN_RULE: Double
-  var VIEWPORT_RULE: Double
+  val CHARSET_RULE: Double
+  val FONT_FACE_RULE: Double
+  val IMPORT_RULE: Double
+  val KEYFRAMES_RULE: Double
+  val KEYFRAME_RULE: Double
+  val MEDIA_RULE: Double
+  val NAMESPACE_RULE: Double
+  val PAGE_RULE: Double
+  val STYLE_RULE: Double
+  val SUPPORTS_RULE: Double
+  val UNKNOWN_RULE: Double
+  val VIEWPORT_RULE: Double
   var cssText: java.lang.String
-  var parentRule: CSSRule
-  var parentStyleSheet: CSSStyleSheet
-  var `type`: Double
+  val parentRule: CSSRule
+  val parentStyleSheet: CSSStyleSheet
+  val `type`: Double
 }
 
 object CSSRule {

@@ -10,39 +10,39 @@ import scala.scalajs.js.annotation._
 class XPathResult ()
   extends org.scalablytyped.std.XPathResult {
   /* CompleteClass */
-  override var ANY_TYPE: Double = js.native
+  override val ANY_TYPE: Double = js.native
   /* CompleteClass */
-  override var ANY_UNORDERED_NODE_TYPE: Double = js.native
+  override val ANY_UNORDERED_NODE_TYPE: Double = js.native
   /* CompleteClass */
-  override var BOOLEAN_TYPE: Double = js.native
+  override val BOOLEAN_TYPE: Double = js.native
   /* CompleteClass */
-  override var FIRST_ORDERED_NODE_TYPE: Double = js.native
+  override val FIRST_ORDERED_NODE_TYPE: Double = js.native
   /* CompleteClass */
-  override var NUMBER_TYPE: Double = js.native
+  override val NUMBER_TYPE: Double = js.native
   /* CompleteClass */
-  override var ORDERED_NODE_ITERATOR_TYPE: Double = js.native
+  override val ORDERED_NODE_ITERATOR_TYPE: Double = js.native
   /* CompleteClass */
-  override var ORDERED_NODE_SNAPSHOT_TYPE: Double = js.native
+  override val ORDERED_NODE_SNAPSHOT_TYPE: Double = js.native
   /* CompleteClass */
-  override var STRING_TYPE: Double = js.native
+  override val STRING_TYPE: Double = js.native
   /* CompleteClass */
-  override var UNORDERED_NODE_ITERATOR_TYPE: Double = js.native
+  override val UNORDERED_NODE_ITERATOR_TYPE: Double = js.native
   /* CompleteClass */
-  override var UNORDERED_NODE_SNAPSHOT_TYPE: Double = js.native
+  override val UNORDERED_NODE_SNAPSHOT_TYPE: Double = js.native
   /* CompleteClass */
-  override var booleanValue: scala.Boolean = js.native
+  override val booleanValue: scala.Boolean = js.native
   /* CompleteClass */
-  override var invalidIteratorState: scala.Boolean = js.native
+  override val invalidIteratorState: scala.Boolean = js.native
   /* CompleteClass */
-  override var numberValue: Double = js.native
+  override val numberValue: Double = js.native
   /* CompleteClass */
-  override var resultType: Double = js.native
+  override val resultType: Double = js.native
   /* CompleteClass */
-  override var singleNodeValue: org.scalablytyped.std.Node = js.native
+  override val singleNodeValue: org.scalablytyped.std.Node = js.native
   /* CompleteClass */
-  override var snapshotLength: Double = js.native
+  override val snapshotLength: Double = js.native
   /* CompleteClass */
-  override var stringValue: java.lang.String = js.native
+  override val stringValue: java.lang.String = js.native
   /* CompleteClass */
   override def iterateNext(): org.scalablytyped.std.Node = js.native
   /* CompleteClass */
@@ -53,15 +53,15 @@ class XPathResult ()
 @js.native
 object XPathResult
   extends Instantiable0[org.scalablytyped.std.XPathResult] {
-  var ANY_TYPE: Double = js.native
-  var ANY_UNORDERED_NODE_TYPE: Double = js.native
-  var BOOLEAN_TYPE: Double = js.native
-  var FIRST_ORDERED_NODE_TYPE: Double = js.native
-  var NUMBER_TYPE: Double = js.native
-  var ORDERED_NODE_ITERATOR_TYPE: Double = js.native
-  var ORDERED_NODE_SNAPSHOT_TYPE: Double = js.native
-  var STRING_TYPE: Double = js.native
-  var UNORDERED_NODE_ITERATOR_TYPE: Double = js.native
-  var UNORDERED_NODE_SNAPSHOT_TYPE: Double = js.native
+  val ANY_TYPE: Double = js.native
+  val ANY_UNORDERED_NODE_TYPE: Double = js.native
+  val BOOLEAN_TYPE: Double = js.native
+  val FIRST_ORDERED_NODE_TYPE: Double = js.native
+  val NUMBER_TYPE: Double = js.native
+  val ORDERED_NODE_ITERATOR_TYPE: Double = js.native
+  val ORDERED_NODE_SNAPSHOT_TYPE: Double = js.native
+  val STRING_TYPE: Double = js.native
+  val UNORDERED_NODE_ITERATOR_TYPE: Double = js.native
+  val UNORDERED_NODE_SNAPSHOT_TYPE: Double = js.native
 }
 

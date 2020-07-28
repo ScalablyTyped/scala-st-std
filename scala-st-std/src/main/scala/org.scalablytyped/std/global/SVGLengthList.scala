@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class SVGLengthList ()
   extends org.scalablytyped.std.SVGLengthList {
   /* CompleteClass */
-  override var numberOfItems: Double = js.native
+  override val numberOfItems: Double = js.native
   /* CompleteClass */
   override def appendItem(newItem: org.scalablytyped.std.SVGLength): org.scalablytyped.std.SVGLength = js.native
   /* CompleteClass */

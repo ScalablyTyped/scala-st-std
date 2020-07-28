@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SVGExternalResourcesRequired extends js.Object {
-  var externalResourcesRequired: SVGAnimatedBoolean
+  val externalResourcesRequired: SVGAnimatedBoolean
 }
 
 object SVGExternalResourcesRequired {

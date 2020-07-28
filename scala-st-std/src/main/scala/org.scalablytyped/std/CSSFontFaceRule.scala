@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CSSFontFaceRule extends CSSRule {
-  var style: CSSStyleDeclaration
+  val style: CSSStyleDeclaration
 }
 
 object CSSFontFaceRule {

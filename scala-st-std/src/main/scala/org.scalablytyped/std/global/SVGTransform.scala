@@ -10,25 +10,25 @@ import scala.scalajs.js.annotation._
 class SVGTransform ()
   extends org.scalablytyped.std.SVGTransform {
   /* CompleteClass */
-  override var SVG_TRANSFORM_MATRIX: Double = js.native
+  override val SVG_TRANSFORM_MATRIX: Double = js.native
   /* CompleteClass */
-  override var SVG_TRANSFORM_ROTATE: Double = js.native
+  override val SVG_TRANSFORM_ROTATE: Double = js.native
   /* CompleteClass */
-  override var SVG_TRANSFORM_SCALE: Double = js.native
+  override val SVG_TRANSFORM_SCALE: Double = js.native
   /* CompleteClass */
-  override var SVG_TRANSFORM_SKEWX: Double = js.native
+  override val SVG_TRANSFORM_SKEWX: Double = js.native
   /* CompleteClass */
-  override var SVG_TRANSFORM_SKEWY: Double = js.native
+  override val SVG_TRANSFORM_SKEWY: Double = js.native
   /* CompleteClass */
-  override var SVG_TRANSFORM_TRANSLATE: Double = js.native
+  override val SVG_TRANSFORM_TRANSLATE: Double = js.native
   /* CompleteClass */
-  override var SVG_TRANSFORM_UNKNOWN: Double = js.native
+  override val SVG_TRANSFORM_UNKNOWN: Double = js.native
   /* CompleteClass */
-  override var angle: Double = js.native
+  override val angle: Double = js.native
   /* CompleteClass */
-  override var matrix: org.scalablytyped.std.SVGMatrix = js.native
+  override val matrix: org.scalablytyped.std.SVGMatrix = js.native
   /* CompleteClass */
-  override var `type`: Double = js.native
+  override val `type`: Double = js.native
   /* CompleteClass */
   override def setMatrix(matrix: org.scalablytyped.std.SVGMatrix): Unit = js.native
   /* CompleteClass */
@@ -47,12 +47,12 @@ class SVGTransform ()
 @js.native
 object SVGTransform
   extends Instantiable0[org.scalablytyped.std.SVGTransform] {
-  var SVG_TRANSFORM_MATRIX: Double = js.native
-  var SVG_TRANSFORM_ROTATE: Double = js.native
-  var SVG_TRANSFORM_SCALE: Double = js.native
-  var SVG_TRANSFORM_SKEWX: Double = js.native
-  var SVG_TRANSFORM_SKEWY: Double = js.native
-  var SVG_TRANSFORM_TRANSLATE: Double = js.native
-  var SVG_TRANSFORM_UNKNOWN: Double = js.native
+  val SVG_TRANSFORM_MATRIX: Double = js.native
+  val SVG_TRANSFORM_ROTATE: Double = js.native
+  val SVG_TRANSFORM_SCALE: Double = js.native
+  val SVG_TRANSFORM_SKEWX: Double = js.native
+  val SVG_TRANSFORM_SKEWY: Double = js.native
+  val SVG_TRANSFORM_TRANSLATE: Double = js.native
+  val SVG_TRANSFORM_UNKNOWN: Double = js.native
 }
 

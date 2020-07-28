@@ -12,15 +12,15 @@ trait SVGFilterElement
      with SVGLangSpace
      with SVGURIReference
      with SVGExternalResourcesRequired {
-  var filterResX: SVGAnimatedInteger = js.native
-  var filterResY: SVGAnimatedInteger = js.native
-  var filterUnits: SVGAnimatedEnumeration = js.native
-  var height: SVGAnimatedLength = js.native
-  var primitiveUnits: SVGAnimatedEnumeration = js.native
-  var style: CSSStyleDeclaration = js.native
-  var width: SVGAnimatedLength = js.native
-  var x: SVGAnimatedLength = js.native
-  var y: SVGAnimatedLength = js.native
+  val filterResX: SVGAnimatedInteger = js.native
+  val filterResY: SVGAnimatedInteger = js.native
+  val filterUnits: SVGAnimatedEnumeration = js.native
+  val height: SVGAnimatedLength = js.native
+  val primitiveUnits: SVGAnimatedEnumeration = js.native
+  val style: CSSStyleDeclaration = js.native
+  val width: SVGAnimatedLength = js.native
+  val x: SVGAnimatedLength = js.native
+  val y: SVGAnimatedLength = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */

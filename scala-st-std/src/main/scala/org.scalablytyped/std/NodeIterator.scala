@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NodeIterator extends js.Object {
-  var expandEntityReferences: scala.Boolean
-  var filter: NodeFilter
-  var root: Node
-  var whatToShow: Double
+  val expandEntityReferences: scala.Boolean
+  val filter: NodeFilter
+  val root: Node
+  val whatToShow: Double
   def detach(): Unit
   def nextNode(): Node
   def previousNode(): Node

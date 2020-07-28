@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 /// IE DOM APIs
 /////////////////////////////
 trait Algorithm extends js.Object {
-  var name: js.UndefOr[java.lang.String] = js.undefined
+  var name: java.lang.String
 }
 
 object Algorithm {
   @scala.inline
-  def apply(): Algorithm = {
-    val __obj = js.Dynamic.literal()
+  def apply(name: java.lang.String): Algorithm = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Algorithm]
   }
   @scala.inline
@@ -30,8 +30,6 @@ object Algorithm {
     }
     @scala.inline
     def setName(value: java.lang.String): Self = this.set("name", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
   }
   
 }

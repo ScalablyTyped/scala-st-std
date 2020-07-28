@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait CSSStyleSheet extends StyleSheet {
-  var cssRules: CSSRuleList = js.native
+  val cssRules: CSSRuleList = js.native
   var cssText: java.lang.String = js.native
-  var id: java.lang.String = js.native
-  var imports: StyleSheetList = js.native
-  var isAlternate: scala.Boolean = js.native
-  var isPrefAlternate: scala.Boolean = js.native
-  var ownerRule: CSSRule = js.native
-  var owningElement: Element = js.native
-  var pages: StyleSheetPageList = js.native
-  var readOnly: scala.Boolean = js.native
-  var rules: CSSRuleList = js.native
+  val id: java.lang.String = js.native
+  val imports: StyleSheetList = js.native
+  val isAlternate: scala.Boolean = js.native
+  val isPrefAlternate: scala.Boolean = js.native
+  val ownerRule: CSSRule = js.native
+  val owningElement: Element = js.native
+  val pages: StyleSheetPageList = js.native
+  val readOnly: scala.Boolean = js.native
+  val rules: CSSRuleList = js.native
   def addImport(bstrURL: java.lang.String): Double = js.native
   def addImport(bstrURL: java.lang.String, lIndex: Double): Double = js.native
   def addPageRule(bstrSelector: java.lang.String, bstrStyle: java.lang.String): Double = js.native

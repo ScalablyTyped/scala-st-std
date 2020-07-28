@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class SVGPathSegList ()
   extends org.scalablytyped.std.SVGPathSegList {
   /* CompleteClass */
-  override var numberOfItems: Double = js.native
+  override val numberOfItems: Double = js.native
   /* CompleteClass */
   override def appendItem(newItem: org.scalablytyped.std.SVGPathSeg): org.scalablytyped.std.SVGPathSeg = js.native
   /* CompleteClass */

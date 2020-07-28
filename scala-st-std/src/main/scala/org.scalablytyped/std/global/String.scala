@@ -13,8 +13,8 @@ class String ()
   def this(value: js.Any) = this()
 }
 
-/** 
-  * Allows manipulation and formatting of text strings and determination and location of substrings within strings. 
+/**
+  * Allows manipulation and formatting of text strings and determination and location of substrings within strings.
   */
 @JSGlobal("String")
 @js.native

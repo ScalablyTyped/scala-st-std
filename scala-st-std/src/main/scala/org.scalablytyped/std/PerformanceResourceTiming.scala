@@ -5,17 +5,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PerformanceResourceTiming extends PerformanceEntry {
-  var connectEnd: Double
-  var connectStart: Double
-  var domainLookupEnd: Double
-  var domainLookupStart: Double
-  var fetchStart: Double
-  var initiatorType: java.lang.String
-  var redirectEnd: Double
-  var redirectStart: Double
-  var requestStart: Double
-  var responseEnd: Double
-  var responseStart: Double
+  val connectEnd: Double
+  val connectStart: Double
+  val domainLookupEnd: Double
+  val domainLookupStart: Double
+  val fetchStart: Double
+  val initiatorType: java.lang.String
+  val redirectEnd: Double
+  val redirectStart: Double
+  val requestStart: Double
+  val responseEnd: Double
+  val responseStart: Double
 }
 
 object PerformanceResourceTiming {

@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 class Position ()
   extends org.scalablytyped.std.Position {
   /* CompleteClass */
-  override var coords: org.scalablytyped.std.Coordinates = js.native
+  override val coords: org.scalablytyped.std.Coordinates = js.native
   /* CompleteClass */
-  override var timestamp: Double = js.native
+  override val timestamp: Double = js.native
 }
 
 @JSGlobal("Position")

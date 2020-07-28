@@ -5,28 +5,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MSGestureEvent extends UIEvent {
-  var MSGESTURE_FLAG_BEGIN: Double
-  var MSGESTURE_FLAG_CANCEL: Double
-  var MSGESTURE_FLAG_END: Double
-  var MSGESTURE_FLAG_INERTIA: Double
-  var MSGESTURE_FLAG_NONE: Double
-  var clientX: Double
-  var clientY: Double
-  var expansion: Double
-  var gestureObject: js.Any
-  var hwTimestamp: Double
-  var offsetX: Double
-  var offsetY: Double
-  var rotation: Double
-  var scale: Double
-  var screenX: Double
-  var screenY: Double
-  var translationX: Double
-  var translationY: Double
-  var velocityAngular: Double
-  var velocityExpansion: Double
-  var velocityX: Double
-  var velocityY: Double
+  val MSGESTURE_FLAG_BEGIN: Double
+  val MSGESTURE_FLAG_CANCEL: Double
+  val MSGESTURE_FLAG_END: Double
+  val MSGESTURE_FLAG_INERTIA: Double
+  val MSGESTURE_FLAG_NONE: Double
+  val clientX: Double
+  val clientY: Double
+  val expansion: Double
+  val gestureObject: js.Any
+  val hwTimestamp: Double
+  val offsetX: Double
+  val offsetY: Double
+  val rotation: Double
+  val scale: Double
+  val screenX: Double
+  val screenY: Double
+  val translationX: Double
+  val translationY: Double
+  val velocityAngular: Double
+  val velocityExpansion: Double
+  val velocityX: Double
+  val velocityY: Double
   def initGestureEvent(
     typeArg: java.lang.String,
     canBubbleArg: scala.Boolean,
@@ -87,7 +87,6 @@ object MSGestureEvent {
     scale: Double,
     screenX: Double,
     screenY: Double,
-    srcElement: Element,
     stopImmediatePropagation: () => Unit,
     stopPropagation: () => Unit,
     target: EventTarget,
@@ -101,7 +100,7 @@ object MSGestureEvent {
     velocityY: Double,
     view: Window
   ): MSGestureEvent = {
-    val __obj = js.Dynamic.literal(AT_TARGET = AT_TARGET.asInstanceOf[js.Any], BUBBLING_PHASE = BUBBLING_PHASE.asInstanceOf[js.Any], CAPTURING_PHASE = CAPTURING_PHASE.asInstanceOf[js.Any], MSGESTURE_FLAG_BEGIN = MSGESTURE_FLAG_BEGIN.asInstanceOf[js.Any], MSGESTURE_FLAG_CANCEL = MSGESTURE_FLAG_CANCEL.asInstanceOf[js.Any], MSGESTURE_FLAG_END = MSGESTURE_FLAG_END.asInstanceOf[js.Any], MSGESTURE_FLAG_INERTIA = MSGESTURE_FLAG_INERTIA.asInstanceOf[js.Any], MSGESTURE_FLAG_NONE = MSGESTURE_FLAG_NONE.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelBubble = cancelBubble.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], expansion = expansion.asInstanceOf[js.Any], gestureObject = gestureObject.asInstanceOf[js.Any], hwTimestamp = hwTimestamp.asInstanceOf[js.Any], initEvent = js.Any.fromFunction3(initEvent), initGestureEvent = js.Any.fromFunction21(initGestureEvent), initUIEvent = js.Any.fromFunction5(initUIEvent), isTrusted = isTrusted.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), returnValue = returnValue.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], srcElement = srcElement.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], translationX = translationX.asInstanceOf[js.Any], translationY = translationY.asInstanceOf[js.Any], velocityAngular = velocityAngular.asInstanceOf[js.Any], velocityExpansion = velocityExpansion.asInstanceOf[js.Any], velocityX = velocityX.asInstanceOf[js.Any], velocityY = velocityY.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(AT_TARGET = AT_TARGET.asInstanceOf[js.Any], BUBBLING_PHASE = BUBBLING_PHASE.asInstanceOf[js.Any], CAPTURING_PHASE = CAPTURING_PHASE.asInstanceOf[js.Any], MSGESTURE_FLAG_BEGIN = MSGESTURE_FLAG_BEGIN.asInstanceOf[js.Any], MSGESTURE_FLAG_CANCEL = MSGESTURE_FLAG_CANCEL.asInstanceOf[js.Any], MSGESTURE_FLAG_END = MSGESTURE_FLAG_END.asInstanceOf[js.Any], MSGESTURE_FLAG_INERTIA = MSGESTURE_FLAG_INERTIA.asInstanceOf[js.Any], MSGESTURE_FLAG_NONE = MSGESTURE_FLAG_NONE.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelBubble = cancelBubble.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], expansion = expansion.asInstanceOf[js.Any], gestureObject = gestureObject.asInstanceOf[js.Any], hwTimestamp = hwTimestamp.asInstanceOf[js.Any], initEvent = js.Any.fromFunction3(initEvent), initGestureEvent = js.Any.fromFunction21(initGestureEvent), initUIEvent = js.Any.fromFunction5(initUIEvent), isTrusted = isTrusted.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), returnValue = returnValue.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], translationX = translationX.asInstanceOf[js.Any], translationY = translationY.asInstanceOf[js.Any], velocityAngular = velocityAngular.asInstanceOf[js.Any], velocityExpansion = velocityExpansion.asInstanceOf[js.Any], velocityX = velocityX.asInstanceOf[js.Any], velocityY = velocityY.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MSGestureEvent]
   }

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object postMessage extends js.Object {
   def apply(message: js.Any, targetOrigin: java.lang.String): Unit = js.native
-  def apply(message: js.Any, targetOrigin: java.lang.String, ports: js.Any): Unit = js.native
+  def apply(message: js.Any, targetOrigin: java.lang.String, transfer: js.Array[_]): Unit = js.native
 }
 

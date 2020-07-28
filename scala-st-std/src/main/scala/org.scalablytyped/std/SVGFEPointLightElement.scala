@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SVGFEPointLightElement extends SVGElement {
-  var x: SVGAnimatedNumber = js.native
-  var y: SVGAnimatedNumber = js.native
-  var z: SVGAnimatedNumber = js.native
+  val x: SVGAnimatedNumber = js.native
+  val y: SVGAnimatedNumber = js.native
+  val z: SVGAnimatedNumber = js.native
 }
 

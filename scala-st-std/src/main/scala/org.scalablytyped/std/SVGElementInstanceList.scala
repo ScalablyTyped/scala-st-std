@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SVGElementInstanceList extends js.Object {
-  var length: Double
+  val length: Double
   def item(index: Double): SVGElementInstance
 }
 

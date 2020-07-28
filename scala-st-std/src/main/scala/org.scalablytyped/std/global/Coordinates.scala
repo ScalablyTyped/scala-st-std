@@ -10,19 +10,19 @@ import scala.scalajs.js.annotation._
 class Coordinates ()
   extends org.scalablytyped.std.Coordinates {
   /* CompleteClass */
-  override var accuracy: Double = js.native
+  override val accuracy: Double = js.native
   /* CompleteClass */
-  override var altitude: Double = js.native
+  override val altitude: Double | Null = js.native
   /* CompleteClass */
-  override var altitudeAccuracy: Double = js.native
+  override val altitudeAccuracy: Double | Null = js.native
   /* CompleteClass */
-  override var heading: Double = js.native
+  override val heading: Double | Null = js.native
   /* CompleteClass */
-  override var latitude: Double = js.native
+  override val latitude: Double = js.native
   /* CompleteClass */
-  override var longitude: Double = js.native
+  override val longitude: Double = js.native
   /* CompleteClass */
-  override var speed: Double = js.native
+  override val speed: Double | Null = js.native
 }
 
 @JSGlobal("Coordinates")

@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WebGLActiveInfo extends js.Object {
-  var name: java.lang.String
-  var size: Double
-  var `type`: Double
+  val name: java.lang.String
+  val size: Double
+  val `type`: Double
 }
 
 object WebGLActiveInfo {

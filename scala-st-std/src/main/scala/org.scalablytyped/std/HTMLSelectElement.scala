@@ -17,7 +17,7 @@ trait HTMLSelectElement
   /**
     * Retrieves a reference to the form that the object is embedded in. 
     */
-  var form: HTMLFormElement = js.native
+  val form: HTMLFormElement = js.native
   /**
     * Sets or retrieves the number of objects in a collection.
     */
@@ -30,7 +30,7 @@ trait HTMLSelectElement
     * Sets or retrieves the name of the object.
     */
   var name: java.lang.String = js.native
-  var options: HTMLCollection = js.native
+  val options: HTMLOptionsCollection = js.native
   /**
     * When present, marks an element that can't be submitted without a value.
     */
@@ -39,7 +39,7 @@ trait HTMLSelectElement
     * Sets or retrieves the index of the selected option in a select object.
     */
   var selectedIndex: Double = js.native
-  var selectedOptions: HTMLCollection = js.native
+  var selectedOptions: HTMLCollectionOf[HTMLOptionElement] = js.native
   /**
     * Sets or retrieves the number of rows in the list box. 
     */
@@ -47,15 +47,15 @@ trait HTMLSelectElement
   /**
     * Retrieves the type of select control based on the value of the MULTIPLE attribute.
     */
-  var `type`: java.lang.String = js.native
+  val `type`: java.lang.String = js.native
   /**
     * Returns the error message that would be displayed if the user submits the form, or an empty string if no error message. It also triggers the standard error message, such as "this is a required field". The result is that the user sees validation messages without actually submitting.
     */
-  var validationMessage: java.lang.String = js.native
+  val validationMessage: java.lang.String = js.native
   /**
     * Returns a  ValidityState object that represents the validity states of an element.
     */
-  var validity: ValidityState = js.native
+  val validity: ValidityState = js.native
   /**
     * Sets or retrieves the value which is returned to the server when the form control is submitted.
     */
@@ -63,7 +63,7 @@ trait HTMLSelectElement
   /**
     * Returns whether an element will successfully validate based on forms validation rules and constraints.
     */
-  var willValidate: scala.Boolean = js.native
+  val willValidate: scala.Boolean = js.native
   /**
     * Adds an element to the areas, controlRange, or options collection.
     * @param element Variant of type Number that specifies the index position in the collection where the element is placed. If no value is given, the method places the element at the end of the collection.

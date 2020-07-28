@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LinkStyle extends js.Object {
-  var sheet: StyleSheet
+  val sheet: StyleSheet
 }
 
 object LinkStyle {

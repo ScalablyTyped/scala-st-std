@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation._
 
 trait IteratorResult[T] extends js.Object {
   var done: scala.Boolean
-  var value: js.UndefOr[T] = js.undefined
+  var value: T
 }
 
 object IteratorResult {
   @scala.inline
-  def apply[T](done: scala.Boolean): IteratorResult[T] = {
-    val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any])
+  def apply[T](done: scala.Boolean, value: T): IteratorResult[T] = {
+    val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IteratorResult[T]]
   }
   @scala.inline
@@ -30,8 +30,6 @@ object IteratorResult {
     def setDone(value: scala.Boolean): Self = this.set("done", value.asInstanceOf[js.Any])
     @scala.inline
     def setValue(value: T): Self = this.set("value", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
   }
   
 }

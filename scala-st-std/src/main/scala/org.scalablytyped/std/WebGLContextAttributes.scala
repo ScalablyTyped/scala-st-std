@@ -8,6 +8,7 @@ trait WebGLContextAttributes extends js.Object {
   var alpha: js.UndefOr[scala.Boolean] = js.undefined
   var antialias: js.UndefOr[scala.Boolean] = js.undefined
   var depth: js.UndefOr[scala.Boolean] = js.undefined
+  var failIfMajorPerformanceCaveat: js.UndefOr[scala.Boolean] = js.undefined
   var premultipliedAlpha: js.UndefOr[scala.Boolean] = js.undefined
   var preserveDrawingBuffer: js.UndefOr[scala.Boolean] = js.undefined
   var stencil: js.UndefOr[scala.Boolean] = js.undefined
@@ -42,6 +43,10 @@ object WebGLContextAttributes {
     def setDepth(value: scala.Boolean): Self = this.set("depth", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteDepth: Self = this.set("depth", js.undefined)
+    @scala.inline
+    def setFailIfMajorPerformanceCaveat(value: scala.Boolean): Self = this.set("failIfMajorPerformanceCaveat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailIfMajorPerformanceCaveat: Self = this.set("failIfMajorPerformanceCaveat", js.undefined)
     @scala.inline
     def setPremultipliedAlpha(value: scala.Boolean): Self = this.set("premultipliedAlpha", value.asInstanceOf[js.Any])
     @scala.inline

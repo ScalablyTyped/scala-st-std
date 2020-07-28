@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 class DeviceAcceleration ()
   extends org.scalablytyped.std.DeviceAcceleration {
   /* CompleteClass */
-  override var x: Double = js.native
+  override val x: Double | Null = js.native
   /* CompleteClass */
-  override var y: Double = js.native
+  override val y: Double | Null = js.native
   /* CompleteClass */
-  override var z: Double = js.native
+  override val z: Double | Null = js.native
 }
 
 @JSGlobal("DeviceAcceleration")

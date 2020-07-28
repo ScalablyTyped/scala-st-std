@@ -5,16 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SVGTransform extends js.Object {
-  var SVG_TRANSFORM_MATRIX: Double
-  var SVG_TRANSFORM_ROTATE: Double
-  var SVG_TRANSFORM_SCALE: Double
-  var SVG_TRANSFORM_SKEWX: Double
-  var SVG_TRANSFORM_SKEWY: Double
-  var SVG_TRANSFORM_TRANSLATE: Double
-  var SVG_TRANSFORM_UNKNOWN: Double
-  var angle: Double
-  var matrix: SVGMatrix
-  var `type`: Double
+  val SVG_TRANSFORM_MATRIX: Double
+  val SVG_TRANSFORM_ROTATE: Double
+  val SVG_TRANSFORM_SCALE: Double
+  val SVG_TRANSFORM_SKEWX: Double
+  val SVG_TRANSFORM_SKEWY: Double
+  val SVG_TRANSFORM_TRANSLATE: Double
+  val SVG_TRANSFORM_UNKNOWN: Double
+  val angle: Double
+  val matrix: SVGMatrix
+  val `type`: Double
   def setMatrix(matrix: SVGMatrix): Unit
   def setRotate(angle: Double, cx: Double, cy: Double): Unit
   def setScale(sx: Double, sy: Double): Unit

@@ -10,17 +10,17 @@ import scala.scalajs.js.annotation._
 class PerformanceNavigation ()
   extends org.scalablytyped.std.PerformanceNavigation {
   /* CompleteClass */
-  override var TYPE_BACK_FORWARD: Double = js.native
+  override val TYPE_BACK_FORWARD: Double = js.native
   /* CompleteClass */
-  override var TYPE_NAVIGATE: Double = js.native
+  override val TYPE_NAVIGATE: Double = js.native
   /* CompleteClass */
-  override var TYPE_RELOAD: Double = js.native
+  override val TYPE_RELOAD: Double = js.native
   /* CompleteClass */
-  override var TYPE_RESERVED: Double = js.native
+  override val TYPE_RESERVED: Double = js.native
   /* CompleteClass */
-  override var redirectCount: Double = js.native
+  override val redirectCount: Double = js.native
   /* CompleteClass */
-  override var `type`: Double = js.native
+  override val `type`: Double = js.native
   /* CompleteClass */
   override def toJSON(): js.Any = js.native
 }
@@ -29,9 +29,9 @@ class PerformanceNavigation ()
 @js.native
 object PerformanceNavigation
   extends Instantiable0[org.scalablytyped.std.PerformanceNavigation] {
-  var TYPE_BACK_FORWARD: Double = js.native
-  var TYPE_NAVIGATE: Double = js.native
-  var TYPE_RELOAD: Double = js.native
-  var TYPE_RESERVED: Double = js.native
+  val TYPE_BACK_FORWARD: Double = js.native
+  val TYPE_NAVIGATE: Double = js.native
+  val TYPE_RELOAD: Double = js.native
+  val TYPE_RESERVED: Double = js.native
 }
 

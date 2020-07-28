@@ -5,15 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SVGZoomAndPan extends js.Object {
-  var SVG_ZOOMANDPAN_DISABLE: Double
-  var SVG_ZOOMANDPAN_MAGNIFY: Double
-  var SVG_ZOOMANDPAN_UNKNOWN: Double
+  val zoomAndPan: Double
 }
 
 object SVGZoomAndPan {
   @scala.inline
-  def apply(SVG_ZOOMANDPAN_DISABLE: Double, SVG_ZOOMANDPAN_MAGNIFY: Double, SVG_ZOOMANDPAN_UNKNOWN: Double): SVGZoomAndPan = {
-    val __obj = js.Dynamic.literal(SVG_ZOOMANDPAN_DISABLE = SVG_ZOOMANDPAN_DISABLE.asInstanceOf[js.Any], SVG_ZOOMANDPAN_MAGNIFY = SVG_ZOOMANDPAN_MAGNIFY.asInstanceOf[js.Any], SVG_ZOOMANDPAN_UNKNOWN = SVG_ZOOMANDPAN_UNKNOWN.asInstanceOf[js.Any])
+  def apply(zoomAndPan: Double): SVGZoomAndPan = {
+    val __obj = js.Dynamic.literal(zoomAndPan = zoomAndPan.asInstanceOf[js.Any])
     __obj.asInstanceOf[SVGZoomAndPan]
   }
   @scala.inline
@@ -28,11 +26,7 @@ object SVGZoomAndPan {
         x
     }
     @scala.inline
-    def setSVG_ZOOMANDPAN_DISABLE(value: Double): Self = this.set("SVG_ZOOMANDPAN_DISABLE", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setSVG_ZOOMANDPAN_MAGNIFY(value: Double): Self = this.set("SVG_ZOOMANDPAN_MAGNIFY", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setSVG_ZOOMANDPAN_UNKNOWN(value: Double): Self = this.set("SVG_ZOOMANDPAN_UNKNOWN", value.asInstanceOf[js.Any])
+    def setZoomAndPan(value: Double): Self = this.set("zoomAndPan", value.asInstanceOf[js.Any])
   }
   
 }

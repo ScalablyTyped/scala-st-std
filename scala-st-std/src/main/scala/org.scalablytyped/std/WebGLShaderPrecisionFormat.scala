@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WebGLShaderPrecisionFormat extends js.Object {
-  var precision: Double
-  var rangeMax: Double
-  var rangeMin: Double
+  val precision: Double
+  val rangeMax: Double
+  val rangeMin: Double
 }
 
 object WebGLShaderPrecisionFormat {

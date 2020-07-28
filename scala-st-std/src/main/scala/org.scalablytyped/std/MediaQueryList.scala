@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MediaQueryList extends js.Object {
-  var matches: scala.Boolean
-  var media: java.lang.String
+  val matches: scala.Boolean
+  val media: java.lang.String
   def addListener(listener: MediaQueryListListener): Unit
   def removeListener(listener: MediaQueryListListener): Unit
 }

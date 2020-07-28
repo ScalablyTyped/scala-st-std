@@ -109,6 +109,8 @@ import org.scalablytyped.std.stdStrings.header
 import org.scalablytyped.std.stdStrings.hgroup
 import org.scalablytyped.std.stdStrings.hr
 import org.scalablytyped.std.stdStrings.html
+import org.scalablytyped.std.stdStrings.httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml
+import org.scalablytyped.std.stdStrings.httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg
 import org.scalablytyped.std.stdStrings.i
 import org.scalablytyped.std.stdStrings.iframe
 import org.scalablytyped.std.stdStrings.image
@@ -134,6 +136,7 @@ import org.scalablytyped.std.stdStrings.mask
 import org.scalablytyped.std.stdStrings.menu
 import org.scalablytyped.std.stdStrings.meta
 import org.scalablytyped.std.stdStrings.metadata
+import org.scalablytyped.std.stdStrings.meter
 import org.scalablytyped.std.stdStrings.nav
 import org.scalablytyped.std.stdStrings.nextid
 import org.scalablytyped.std.stdStrings.nobr
@@ -177,6 +180,7 @@ import org.scalablytyped.std.stdStrings.symbol_
 import org.scalablytyped.std.stdStrings.table
 import org.scalablytyped.std.stdStrings.tbody
 import org.scalablytyped.std.stdStrings.td
+import org.scalablytyped.std.stdStrings.template
 import org.scalablytyped.std.stdStrings.text
 import org.scalablytyped.std.stdStrings.textarea
 import org.scalablytyped.std.stdStrings.textpath_
@@ -212,219 +216,295 @@ trait Element
      with ElementTraversal
      with NodeSelector
      with ChildNode {
-  var classList: DOMTokenList = js.native
+  val classList: DOMTokenList = js.native
   var className: java.lang.String = js.native
-  var clientHeight: Double = js.native
-  var clientLeft: Double = js.native
-  var clientTop: Double = js.native
-  var clientWidth: Double = js.native
+  val clientHeight: Double = js.native
+  val clientLeft: Double = js.native
+  val clientTop: Double = js.native
+  val clientWidth: Double = js.native
   var id: java.lang.String = js.native
   var innerHTML: java.lang.String = js.native
   var msContentZoomFactor: Double = js.native
-  var msRegionOverflow: java.lang.String = js.native
-  var scrollHeight: Double = js.native
+  val msRegionOverflow: java.lang.String = js.native
+  val prefix: java.lang.String | Null = js.native
+  val scrollHeight: Double = js.native
   var scrollLeft: Double = js.native
   var scrollTop: Double = js.native
-  var scrollWidth: Double = js.native
-  var tagName: java.lang.String = js.native
+  val scrollWidth: Double = js.native
+  val tagName: java.lang.String = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, useCapture: scala.Boolean): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSGestureChange(`type`: MSGestureChange, listener: js.Function1[/* ev */ MSGestureEvent, _]): Unit = js.native
+  def addEventListener_MSGestureChange(
+    `type`: MSGestureChange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _]
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSGestureChange(
     `type`: MSGestureChange,
-    listener: js.Function1[/* ev */ MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
     useCapture: scala.Boolean
   ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSGestureDoubleTap(`type`: MSGestureDoubleTap, listener: js.Function1[/* ev */ MSGestureEvent, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSGestureDoubleTap(
     `type`: MSGestureDoubleTap,
-    listener: js.Function1[/* ev */ MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_MSGestureDoubleTap(
+    `type`: MSGestureDoubleTap,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
     useCapture: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSGestureEnd(`type`: MSGestureEnd, listener: js.Function1[/* ev */ MSGestureEvent, _]): Unit = js.native
+  def addEventListener_MSGestureEnd(`type`: MSGestureEnd, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSGestureEnd(
     `type`: MSGestureEnd,
-    listener: js.Function1[/* ev */ MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
     useCapture: scala.Boolean
   ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSGestureHold(`type`: MSGestureHold, listener: js.Function1[/* ev */ MSGestureEvent, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSGestureHold(
     `type`: MSGestureHold,
-    listener: js.Function1[/* ev */ MSGestureEvent, _],
-    useCapture: scala.Boolean
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSGestureStart(`type`: MSGestureStart, listener: js.Function1[/* ev */ MSGestureEvent, _]): Unit = js.native
+  def addEventListener_MSGestureHold(
+    `type`: MSGestureHold,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSGestureStart(
     `type`: MSGestureStart,
-    listener: js.Function1[/* ev */ MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_MSGestureStart(
+    `type`: MSGestureStart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
     useCapture: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSGestureTap(`type`: MSGestureTap, listener: js.Function1[/* ev */ MSGestureEvent, _]): Unit = js.native
+  def addEventListener_MSGestureTap(`type`: MSGestureTap, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSGestureTap(
     `type`: MSGestureTap,
-    listener: js.Function1[/* ev */ MSGestureEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
     useCapture: scala.Boolean
   ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSGotPointerCapture(`type`: MSGotPointerCapture, listener: js.Function1[/* ev */ MSPointerEvent, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSGotPointerCapture(
     `type`: MSGotPointerCapture,
-    listener: js.Function1[/* ev */ MSPointerEvent, _],
-    useCapture: scala.Boolean
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSInertiaStart(`type`: MSInertiaStart, listener: js.Function1[/* ev */ MSGestureEvent, _]): Unit = js.native
+  def addEventListener_MSGotPointerCapture(
+    `type`: MSGotPointerCapture,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSInertiaStart(
     `type`: MSInertiaStart,
-    listener: js.Function1[/* ev */ MSGestureEvent, _],
-    useCapture: scala.Boolean
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSLostPointerCapture(`type`: MSLostPointerCapture, listener: js.Function1[/* ev */ MSPointerEvent, _]): Unit = js.native
+  def addEventListener_MSInertiaStart(
+    `type`: MSInertiaStart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSLostPointerCapture(
     `type`: MSLostPointerCapture,
-    listener: js.Function1[/* ev */ MSPointerEvent, _],
-    useCapture: scala.Boolean
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSPointerCancel(`type`: MSPointerCancel, listener: js.Function1[/* ev */ MSPointerEvent, _]): Unit = js.native
+  def addEventListener_MSLostPointerCapture(
+    `type`: MSLostPointerCapture,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSPointerCancel(
     `type`: MSPointerCancel,
-    listener: js.Function1[/* ev */ MSPointerEvent, _],
-    useCapture: scala.Boolean
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSPointerDown(`type`: MSPointerDown, listener: js.Function1[/* ev */ MSPointerEvent, _]): Unit = js.native
+  def addEventListener_MSPointerCancel(
+    `type`: MSPointerCancel,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSPointerDown(
     `type`: MSPointerDown,
-    listener: js.Function1[/* ev */ MSPointerEvent, _],
-    useCapture: scala.Boolean
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSPointerEnter(`type`: MSPointerEnter, listener: js.Function1[/* ev */ MSPointerEvent, _]): Unit = js.native
+  def addEventListener_MSPointerDown(
+    `type`: MSPointerDown,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSPointerEnter(
     `type`: MSPointerEnter,
-    listener: js.Function1[/* ev */ MSPointerEvent, _],
-    useCapture: scala.Boolean
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSPointerLeave(`type`: MSPointerLeave, listener: js.Function1[/* ev */ MSPointerEvent, _]): Unit = js.native
+  def addEventListener_MSPointerEnter(
+    `type`: MSPointerEnter,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSPointerLeave(
     `type`: MSPointerLeave,
-    listener: js.Function1[/* ev */ MSPointerEvent, _],
-    useCapture: scala.Boolean
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSPointerMove(`type`: MSPointerMove, listener: js.Function1[/* ev */ MSPointerEvent, _]): Unit = js.native
+  def addEventListener_MSPointerLeave(
+    `type`: MSPointerLeave,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSPointerMove(
     `type`: MSPointerMove,
-    listener: js.Function1[/* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_MSPointerMove(
+    `type`: MSPointerMove,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
     useCapture: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSPointerOut(`type`: MSPointerOut, listener: js.Function1[/* ev */ MSPointerEvent, _]): Unit = js.native
+  def addEventListener_MSPointerOut(`type`: MSPointerOut, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSPointerOut(
     `type`: MSPointerOut,
-    listener: js.Function1[/* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
     useCapture: scala.Boolean
   ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSPointerOver(`type`: MSPointerOver, listener: js.Function1[/* ev */ MSPointerEvent, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSPointerOver(
     `type`: MSPointerOver,
-    listener: js.Function1[/* ev */ MSPointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_MSPointerOver(
+    `type`: MSPointerOver,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
     useCapture: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSPointerUp(`type`: MSPointerUp, listener: js.Function1[/* ev */ MSPointerEvent, _]): Unit = js.native
+  def addEventListener_MSPointerUp(`type`: MSPointerUp, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSPointerUp(`type`: MSPointerUp, listener: js.Function1[/* ev */ MSPointerEvent, _], useCapture: scala.Boolean): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_ariarequest(`type`: ariarequest, listener: js.Function1[/* ev */ AriaRequestEvent, _]): Unit = js.native
+  def addEventListener_MSPointerUp(
+    `type`: MSPointerUp,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ariarequest(
     `type`: ariarequest,
-    listener: js.Function1[/* ev */ AriaRequestEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ AriaRequestEvent, _]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_ariarequest(
+    `type`: ariarequest,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ AriaRequestEvent, _],
     useCapture: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_command(`type`: command, listener: js.Function1[/* ev */ CommandEvent, _]): Unit = js.native
+  def addEventListener_command(`type`: command, listener: js.ThisFunction1[/* this */ this.type, /* ev */ CommandEvent, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_command(`type`: command, listener: js.Function1[/* ev */ CommandEvent, _], useCapture: scala.Boolean): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_gotpointercapture(`type`: gotpointercapture, listener: js.Function1[/* ev */ PointerEvent, _]): Unit = js.native
+  def addEventListener_command(
+    `type`: command,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ CommandEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_gotpointercapture(
     `type`: gotpointercapture,
-    listener: js.Function1[/* ev */ PointerEvent, _],
-    useCapture: scala.Boolean
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_lostpointercapture(`type`: lostpointercapture, listener: js.Function1[/* ev */ PointerEvent, _]): Unit = js.native
+  def addEventListener_gotpointercapture(
+    `type`: gotpointercapture,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_lostpointercapture(
     `type`: lostpointercapture,
-    listener: js.Function1[/* ev */ PointerEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_lostpointercapture(
+    `type`: lostpointercapture,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _],
     useCapture: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_touchcancel(`type`: touchcancel, listener: js.Function1[/* ev */ TouchEvent, _]): Unit = js.native
+  def addEventListener_touchcancel(`type`: touchcancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_touchcancel(`type`: touchcancel, listener: js.Function1[/* ev */ TouchEvent, _], useCapture: scala.Boolean): Unit = js.native
+  def addEventListener_touchcancel(
+    `type`: touchcancel,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_touchend(`type`: touchend, listener: js.Function1[/* ev */ TouchEvent, _]): Unit = js.native
+  def addEventListener_touchend(`type`: touchend, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_touchend(`type`: touchend, listener: js.Function1[/* ev */ TouchEvent, _], useCapture: scala.Boolean): Unit = js.native
+  def addEventListener_touchend(
+    `type`: touchend,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_touchmove(`type`: touchmove, listener: js.Function1[/* ev */ TouchEvent, _]): Unit = js.native
+  def addEventListener_touchmove(`type`: touchmove, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_touchmove(`type`: touchmove, listener: js.Function1[/* ev */ TouchEvent, _], useCapture: scala.Boolean): Unit = js.native
+  def addEventListener_touchmove(
+    `type`: touchmove,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_touchstart(`type`: touchstart, listener: js.Function1[/* ev */ TouchEvent, _]): Unit = js.native
+  def addEventListener_touchstart(`type`: touchstart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_touchstart(`type`: touchstart, listener: js.Function1[/* ev */ TouchEvent, _], useCapture: scala.Boolean): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_webkitfullscreenchange(`type`: webkitfullscreenchange, listener: js.Function1[/* ev */ Event, _]): Unit = js.native
+  def addEventListener_touchstart(
+    `type`: touchstart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_webkitfullscreenchange(
     `type`: webkitfullscreenchange,
-    listener: js.Function1[/* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_webkitfullscreenchange(
+    `type`: webkitfullscreenchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     useCapture: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_webkitfullscreenerror(`type`: webkitfullscreenerror, listener: js.Function1[/* ev */ Event, _]): Unit = js.native
+  def addEventListener_webkitfullscreenerror(`type`: webkitfullscreenerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_webkitfullscreenerror(
     `type`: webkitfullscreenerror,
-    listener: js.Function1[/* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     useCapture: scala.Boolean
   ): Unit = js.native
-  def getAttribute(): java.lang.String = js.native
-  def getAttribute(name: java.lang.String): java.lang.String = js.native
+  def closest(selector: java.lang.String): Element | Null = js.native
+  def getAttribute(name: java.lang.String): java.lang.String | Null = js.native
   def getAttributeNS(namespaceURI: java.lang.String, localName: java.lang.String): java.lang.String = js.native
   def getAttributeNode(name: java.lang.String): Attr = js.native
   def getAttributeNodeNS(namespaceURI: java.lang.String, localName: java.lang.String): Attr = js.native
@@ -432,15 +512,19 @@ trait Element
   def getClientRects(): ClientRectList = js.native
   def getElementsByClassName(classNames: java.lang.String): NodeListOf[Element] = js.native
   def getElementsByTagName(name: java.lang.String): NodeListOf[Element] = js.native
-  def getElementsByTagNameNS(namespaceURI: java.lang.String, localName: java.lang.String): NodeListOf[Element] = js.native
+  def getElementsByTagNameNS(namespaceURI: java.lang.String, localName: java.lang.String): HTMLCollectionOf[Element] = js.native
+  @JSName("getElementsByTagNameNS")
+  def getElementsByTagNameNS_httpwwww3org1999xhtml(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml, localName: java.lang.String): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagNameNS")
+  def getElementsByTagNameNS_httpwwww3org2000svg(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, localName: java.lang.String): HTMLCollectionOf[SVGElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_a(name: a): NodeListOf[HTMLAnchorElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_abbr(name: abbr): NodeListOf[HTMLPhraseElement] = js.native
+  def getElementsByTagName_abbr(name: abbr): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_acronym(name: acronym): NodeListOf[HTMLPhraseElement] = js.native
+  def getElementsByTagName_acronym(name: acronym): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_address(name: address): NodeListOf[HTMLBlockElement] = js.native
+  def getElementsByTagName_address(name: address): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_applet(name: applet): NodeListOf[HTMLAppletElement] = js.native
   @JSName("getElementsByTagName")
@@ -452,17 +536,17 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_audio(name: audio): NodeListOf[HTMLAudioElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_b(name: b): NodeListOf[HTMLPhraseElement] = js.native
+  def getElementsByTagName_b(name: b): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_base(name: base): NodeListOf[HTMLBaseElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_basefont(name: basefont): NodeListOf[HTMLBaseFontElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_bdo(name: bdo): NodeListOf[HTMLPhraseElement] = js.native
+  def getElementsByTagName_bdo(name: bdo): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_big(name: big): NodeListOf[HTMLPhraseElement] = js.native
+  def getElementsByTagName_big(name: big): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_blockquote(name: blockquote): NodeListOf[HTMLBlockElement] = js.native
+  def getElementsByTagName_blockquote(name: blockquote): NodeListOf[HTMLQuoteElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_body(name: body): NodeListOf[HTMLBodyElement] = js.native
   @JSName("getElementsByTagName")
@@ -474,15 +558,15 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_caption(name: caption): NodeListOf[HTMLTableCaptionElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_center(name: center): NodeListOf[HTMLBlockElement] = js.native
+  def getElementsByTagName_center(name: center): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_circle(name: circle): NodeListOf[SVGCircleElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_cite(name: cite): NodeListOf[HTMLPhraseElement] = js.native
+  def getElementsByTagName_cite(name: cite): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_clippath(name: clippath_): NodeListOf[SVGClipPathElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_code(name: code): NodeListOf[HTMLPhraseElement] = js.native
+  def getElementsByTagName_code(name: code): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_col(name: col): NodeListOf[HTMLTableColElement] = js.native
   @JSName("getElementsByTagName")
@@ -490,7 +574,7 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_datalist(name: datalist): NodeListOf[HTMLDataListElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_dd(name: dd): NodeListOf[HTMLDDElement] = js.native
+  def getElementsByTagName_dd(name: dd): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_defs(name: defs): NodeListOf[SVGDefsElement] = js.native
   @JSName("getElementsByTagName")
@@ -498,7 +582,7 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_desc(name: desc): NodeListOf[SVGDescElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_dfn(name: dfn): NodeListOf[HTMLPhraseElement] = js.native
+  def getElementsByTagName_dfn(name: dfn): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_dir(name: dir): NodeListOf[HTMLDirectoryElement] = js.native
   @JSName("getElementsByTagName")
@@ -506,11 +590,11 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_dl(name: dl): NodeListOf[HTMLDListElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_dt(name: dt): NodeListOf[HTMLDTElement] = js.native
+  def getElementsByTagName_dt(name: dt): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_ellipse(name: ellipse): NodeListOf[SVGEllipseElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_em(name: em): NodeListOf[HTMLPhraseElement] = js.native
+  def getElementsByTagName_em(name: em): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_embed(name: embed): NodeListOf[HTMLEmbedElement] = js.native
   @JSName("getElementsByTagName")
@@ -606,7 +690,7 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_html(name: html): NodeListOf[HTMLHtmlElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_i(name: i): NodeListOf[HTMLPhraseElement] = js.native
+  def getElementsByTagName_i(name: i): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_iframe(name: iframe): NodeListOf[HTMLIFrameElement] = js.native
   @JSName("getElementsByTagName")
@@ -618,11 +702,11 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_ins(name: ins): NodeListOf[HTMLModElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_isindex(name: isindex): NodeListOf[HTMLIsIndexElement] = js.native
+  def getElementsByTagName_isindex(name: isindex): NodeListOf[HTMLUnknownElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_kbd(name: kbd): NodeListOf[HTMLPhraseElement] = js.native
+  def getElementsByTagName_kbd(name: kbd): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_keygen(name: keygen): NodeListOf[HTMLBlockElement] = js.native
+  def getElementsByTagName_keygen(name: keygen): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_label(name: label): NodeListOf[HTMLLabelElement] = js.native
   @JSName("getElementsByTagName")
@@ -636,7 +720,7 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_link(name: link): NodeListOf[HTMLLinkElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_listing(name: listing): NodeListOf[HTMLBlockElement] = js.native
+  def getElementsByTagName_listing(name: listing): NodeListOf[HTMLPreElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_map(name: map_): NodeListOf[HTMLMapElement] = js.native
   @JSName("getElementsByTagName")
@@ -654,11 +738,13 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_metadata(name: metadata): NodeListOf[SVGMetadataElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_meter(name: meter): NodeListOf[HTMLMeterElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_nav(name: nav): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_nextid(name: nextid): NodeListOf[HTMLNextIdElement] = js.native
+  def getElementsByTagName_nextid(name: nextid): NodeListOf[HTMLUnknownElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_nobr(name: nobr): NodeListOf[HTMLPhraseElement] = js.native
+  def getElementsByTagName_nobr(name: nobr): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_noframes(name: noframes): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
@@ -680,9 +766,9 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_pattern(name: pattern): NodeListOf[SVGPatternElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_picture(tagname: picture): NodeListOf[HTMLPictureElement] = js.native
+  def getElementsByTagName_picture(name: picture): NodeListOf[HTMLPictureElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_plaintext(name: plaintext): NodeListOf[HTMLBlockElement] = js.native
+  def getElementsByTagName_plaintext(name: plaintext): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_polygon(name: polygon): NodeListOf[SVGPolygonElement] = js.native
   @JSName("getElementsByTagName")
@@ -698,13 +784,13 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_rect(name: rect): NodeListOf[SVGRectElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_rt(name: rt): NodeListOf[HTMLPhraseElement] = js.native
+  def getElementsByTagName_rt(name: rt): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_ruby(name: ruby): NodeListOf[HTMLPhraseElement] = js.native
+  def getElementsByTagName_ruby(name: ruby): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_s(name: s): NodeListOf[HTMLPhraseElement] = js.native
+  def getElementsByTagName_s(name: s): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_samp(name: samp): NodeListOf[HTMLPhraseElement] = js.native
+  def getElementsByTagName_samp(name: samp): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_script(name: script): NodeListOf[HTMLScriptElement] = js.native
   @JSName("getElementsByTagName")
@@ -712,7 +798,7 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_select(name: select): NodeListOf[HTMLSelectElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_small(name: small): NodeListOf[HTMLPhraseElement] = js.native
+  def getElementsByTagName_small(name: small): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_source(name: source): NodeListOf[HTMLSourceElement] = js.native
   @JSName("getElementsByTagName")
@@ -720,15 +806,15 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_stop(name: stop): NodeListOf[SVGStopElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_strike(name: strike): NodeListOf[HTMLPhraseElement] = js.native
+  def getElementsByTagName_strike(name: strike): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_strong(name: strong): NodeListOf[HTMLPhraseElement] = js.native
+  def getElementsByTagName_strong(name: strong): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_style(name: style): NodeListOf[HTMLStyleElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_sub(name: sub): NodeListOf[HTMLPhraseElement] = js.native
+  def getElementsByTagName_sub(name: sub): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_sup(name: sup): NodeListOf[HTMLPhraseElement] = js.native
+  def getElementsByTagName_sup(name: sup): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_svg(name: svg): NodeListOf[SVGSVGElement] = js.native
   @JSName("getElementsByTagName")
@@ -741,6 +827,8 @@ trait Element
   def getElementsByTagName_tbody(name: tbody): NodeListOf[HTMLTableSectionElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_td(name: td): NodeListOf[HTMLTableDataCellElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_template(name: template): NodeListOf[HTMLTemplateElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_text(name: text): NodeListOf[SVGTextElement] = js.native
   @JSName("getElementsByTagName")
@@ -762,15 +850,15 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_tspan(name: tspan): NodeListOf[SVGTSpanElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_tt(name: tt): NodeListOf[HTMLPhraseElement] = js.native
+  def getElementsByTagName_tt(name: tt): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_u(name: u): NodeListOf[HTMLPhraseElement] = js.native
+  def getElementsByTagName_u(name: u): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_ul(name: ul): NodeListOf[HTMLUListElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_use(name: use): NodeListOf[SVGUseElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_var(name: `var`): NodeListOf[HTMLPhraseElement] = js.native
+  def getElementsByTagName_var(name: `var`): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_video(name: video): NodeListOf[HTMLVideoElement] = js.native
   @JSName("getElementsByTagName")
@@ -778,7 +866,7 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_wbr(name: wbr): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_xmp(name: xmp): NodeListOf[HTMLBlockElement] = js.native
+  def getElementsByTagName_xmp(name: xmp): NodeListOf[HTMLPreElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_xmswebview(name: `x-ms-webview`): NodeListOf[MSHTMLWebViewElement] = js.native
   def hasAttribute(name: java.lang.String): scala.Boolean = js.native

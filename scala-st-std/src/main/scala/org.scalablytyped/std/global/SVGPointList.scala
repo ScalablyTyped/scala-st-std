@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class SVGPointList ()
   extends org.scalablytyped.std.SVGPointList {
   /* CompleteClass */
-  override var numberOfItems: Double = js.native
+  override val numberOfItems: Double = js.native
   /* CompleteClass */
   override def appendItem(newItem: org.scalablytyped.std.SVGPoint): org.scalablytyped.std.SVGPoint = js.native
   /* CompleteClass */

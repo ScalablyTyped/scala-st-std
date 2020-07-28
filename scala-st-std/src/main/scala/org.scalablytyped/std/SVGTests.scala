@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SVGTests extends js.Object {
-  var requiredExtensions: SVGStringList
-  var requiredFeatures: SVGStringList
-  var systemLanguage: SVGStringList
+  val requiredExtensions: SVGStringList
+  val requiredFeatures: SVGStringList
+  val systemLanguage: SVGStringList
   def hasExtension(extension: java.lang.String): scala.Boolean
 }
 

@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Blob extends js.Object {
-  var size: Double = js.native
-  var `type`: java.lang.String = js.native
+  val size: Double = js.native
+  val `type`: java.lang.String = js.native
   def msClose(): Unit = js.native
   def msDetachStream(): js.Any = js.native
   def slice(): Blob = js.native

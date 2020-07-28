@@ -7,11 +7,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait WeakMap[K, V] extends js.Object {
   @JSName(js.Symbol.toStringTag)
-  var toStringTag: org.scalablytyped.std.stdStrings.WeakMap = js.native
+  val toStringTag: org.scalablytyped.std.stdStrings.WeakMap = js.native
+  def clear(): Unit = js.native
   def delete(key: K): scala.Boolean = js.native
-  def get(key: K): V = js.native
+  def get(key: K): js.UndefOr[V] = js.native
   def has(key: K): scala.Boolean = js.native
-  def set(key: K): WeakMap[K, V] = js.native
-  def set(key: K, value: V): WeakMap[K, V] = js.native
+  def set(key: K): this.type = js.native
+  def set(key: K, value: V): this.type = js.native
 }
 

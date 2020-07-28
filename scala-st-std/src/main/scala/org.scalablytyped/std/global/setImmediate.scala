@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("setImmediate")
 @js.native
 object setImmediate extends js.Object {
-  def apply(expression: js.Any, args: js.Any*): Double = js.native
+  def apply(handler: js.Any, args: js.Any*): Double = js.native
+  def apply(handler: js.Function1[/* repeated */ js.Any, Unit]): Double = js.native
 }
 

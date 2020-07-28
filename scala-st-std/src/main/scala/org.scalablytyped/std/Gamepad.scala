@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Gamepad extends js.Object {
-  var axes: js.Array[Double]
-  var buttons: js.Array[GamepadButton]
-  var connected: scala.Boolean
-  var id: java.lang.String
-  var index: Double
-  var mapping: java.lang.String
-  var timestamp: Double
+  val axes: js.Array[Double]
+  val buttons: js.Array[GamepadButton]
+  val connected: scala.Boolean
+  val id: java.lang.String
+  val index: Double
+  val mapping: java.lang.String
+  val timestamp: Double
 }
 
 object Gamepad {

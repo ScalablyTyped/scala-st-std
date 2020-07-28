@@ -10,22 +10,22 @@ import scala.scalajs.js.annotation._
 class WEBGLCompressedTextureS3tc ()
   extends org.scalablytyped.std.WEBGLCompressedTextureS3tc {
   /* CompleteClass */
-  override var COMPRESSED_RGBA_S3TC_DXT1_EXT: Double = js.native
+  override val COMPRESSED_RGBA_S3TC_DXT1_EXT: Double = js.native
   /* CompleteClass */
-  override var COMPRESSED_RGBA_S3TC_DXT3_EXT: Double = js.native
+  override val COMPRESSED_RGBA_S3TC_DXT3_EXT: Double = js.native
   /* CompleteClass */
-  override var COMPRESSED_RGBA_S3TC_DXT5_EXT: Double = js.native
+  override val COMPRESSED_RGBA_S3TC_DXT5_EXT: Double = js.native
   /* CompleteClass */
-  override var COMPRESSED_RGB_S3TC_DXT1_EXT: Double = js.native
+  override val COMPRESSED_RGB_S3TC_DXT1_EXT: Double = js.native
 }
 
 @JSGlobal("WEBGL_compressed_texture_s3tc")
 @js.native
 object WEBGLCompressedTextureS3tc
   extends Instantiable0[org.scalablytyped.std.WEBGLCompressedTextureS3tc] {
-  var COMPRESSED_RGBA_S3TC_DXT1_EXT: Double = js.native
-  var COMPRESSED_RGBA_S3TC_DXT3_EXT: Double = js.native
-  var COMPRESSED_RGBA_S3TC_DXT5_EXT: Double = js.native
-  var COMPRESSED_RGB_S3TC_DXT1_EXT: Double = js.native
+  val COMPRESSED_RGBA_S3TC_DXT1_EXT: Double = js.native
+  val COMPRESSED_RGBA_S3TC_DXT3_EXT: Double = js.native
+  val COMPRESSED_RGBA_S3TC_DXT5_EXT: Double = js.native
+  val COMPRESSED_RGB_S3TC_DXT1_EXT: Double = js.native
 }
 

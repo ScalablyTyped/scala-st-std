@@ -14,6 +14,7 @@ trait HTMLAreaElement extends HTMLElement {
     * Sets or retrieves the coordinates of the object.
     */
   var coords: java.lang.String = js.native
+  var download: java.lang.String = js.native
   /**
     * Sets or retrieves the subsection of the href property that follows the number sign (#).
     */

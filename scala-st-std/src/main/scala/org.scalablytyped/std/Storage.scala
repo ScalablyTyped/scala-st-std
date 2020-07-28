@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 trait Storage
   extends /* index */ NumberDictionary[java.lang.String]
      with /* key */ StringDictionary[js.Any] {
-  var length: Double
+  val length: Double
   def clear(): Unit
-  def getItem(key: java.lang.String): js.Any
+  def getItem(key: java.lang.String): java.lang.String
   def key(index: Double): java.lang.String
   def removeItem(key: java.lang.String): Unit
   def setItem(key: java.lang.String, data: java.lang.String): Unit
@@ -21,7 +21,7 @@ object Storage {
   @scala.inline
   def apply(
     clear: () => Unit,
-    getItem: java.lang.String => js.Any,
+    getItem: java.lang.String => java.lang.String,
     key: Double => java.lang.String,
     length: Double,
     removeItem: java.lang.String => Unit,
@@ -44,7 +44,7 @@ object Storage {
     @scala.inline
     def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
     @scala.inline
-    def setGetItem(value: java.lang.String => js.Any): Self = this.set("getItem", js.Any.fromFunction1(value))
+    def setGetItem(value: java.lang.String => java.lang.String): Self = this.set("getItem", js.Any.fromFunction1(value))
     @scala.inline
     def setKey(value: Double => java.lang.String): Self = this.set("key", js.Any.fromFunction1(value))
     @scala.inline

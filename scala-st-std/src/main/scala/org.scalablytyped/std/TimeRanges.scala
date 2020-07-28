@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TimeRanges extends js.Object {
-  var length: Double
+  val length: Double
   def end(index: Double): Double
   def start(index: Double): Double
 }

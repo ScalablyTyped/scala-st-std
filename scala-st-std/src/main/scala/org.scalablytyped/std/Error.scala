@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 trait Error extends js.Object {
   var message: java.lang.String
   var name: java.lang.String
+  var stack: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object Error {
@@ -30,6 +31,10 @@ object Error {
     def setMessage(value: java.lang.String): Self = this.set("message", value.asInstanceOf[js.Any])
     @scala.inline
     def setName(value: java.lang.String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStack(value: java.lang.String): Self = this.set("stack", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStack: Self = this.set("stack", js.undefined)
   }
   
 }

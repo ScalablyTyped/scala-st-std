@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait SourceBufferList
   extends EventTarget
      with /* index */ NumberDictionary[SourceBuffer] {
-  var length: Double = js.native
+  val length: Double = js.native
   def item(index: Double): SourceBuffer = js.native
 }
 

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WEBGLDepthTexture extends js.Object {
-  var UNSIGNED_INT_24_8_WEBGL: Double
+  val UNSIGNED_INT_24_8_WEBGL: Double
 }
 
 object WEBGLDepthTexture {

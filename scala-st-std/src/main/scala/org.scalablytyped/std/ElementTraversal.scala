@@ -5,11 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ElementTraversal extends js.Object {
-  var childElementCount: Double
-  var firstElementChild: Element
-  var lastElementChild: Element
-  var nextElementSibling: Element
-  var previousElementSibling: Element
+  val childElementCount: Double
+  val firstElementChild: Element
+  val lastElementChild: Element
+  val nextElementSibling: Element
+  val previousElementSibling: Element
 }
 
 object ElementTraversal {

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DragEvent extends MouseEvent {
-  var dataTransfer: DataTransfer = js.native
+  val dataTransfer: DataTransfer = js.native
   def initDragEvent(
     typeArg: java.lang.String,
     canBubbleArg: scala.Boolean,

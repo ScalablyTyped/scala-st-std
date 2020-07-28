@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait StyleSheet extends js.Object {
   var disabled: scala.Boolean
-  var href: java.lang.String
-  var media: MediaList
-  var ownerNode: Node
-  var parentStyleSheet: StyleSheet
-  var title: java.lang.String
-  var `type`: java.lang.String
+  val href: java.lang.String
+  val media: MediaList
+  val ownerNode: Node
+  val parentStyleSheet: StyleSheet
+  val title: java.lang.String
+  val `type`: java.lang.String
 }
 
 object StyleSheet {

@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CSSNamespaceRule extends CSSRule {
-  var namespaceURI: java.lang.String
-  var prefix: java.lang.String
+  val namespaceURI: java.lang.String
+  val prefix: java.lang.String
 }
 
 object CSSNamespaceRule {

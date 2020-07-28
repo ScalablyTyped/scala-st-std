@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MimeTypeArray extends /* index */ NumberDictionary[Plugin] {
-  var length: Double
+  val length: Double
   def item(index: Double): Plugin
   def namedItem(`type`: java.lang.String): Plugin
 }

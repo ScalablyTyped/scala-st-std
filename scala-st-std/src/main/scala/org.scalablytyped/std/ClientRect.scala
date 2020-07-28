@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait ClientRect extends js.Object {
   var bottom: Double
-  var height: Double
+  val height: Double
   var left: Double
   var right: Double
   var top: Double
-  var width: Double
+  val width: Double
 }
 
 object ClientRect {

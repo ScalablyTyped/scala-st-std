@@ -24,45 +24,69 @@ trait SVGSVGElement
   var contentScriptType: java.lang.String = js.native
   var contentStyleType: java.lang.String = js.native
   var currentScale: Double = js.native
-  var currentTranslate: SVGPoint = js.native
-  var height: SVGAnimatedLength = js.native
-  var pixelUnitToMillimeterX: Double = js.native
-  var pixelUnitToMillimeterY: Double = js.native
-  var screenPixelToMillimeterX: Double = js.native
-  var screenPixelToMillimeterY: Double = js.native
-  var style: CSSStyleDeclaration = js.native
-  var viewport: SVGRect = js.native
-  var width: SVGAnimatedLength = js.native
-  var x: SVGAnimatedLength = js.native
-  var y: SVGAnimatedLength = js.native
+  val currentTranslate: SVGPoint = js.native
+  val height: SVGAnimatedLength = js.native
+  val pixelUnitToMillimeterX: Double = js.native
+  val pixelUnitToMillimeterY: Double = js.native
+  val screenPixelToMillimeterX: Double = js.native
+  val screenPixelToMillimeterY: Double = js.native
+  val style: CSSStyleDeclaration = js.native
+  val viewport: SVGRect = js.native
+  val width: SVGAnimatedLength = js.native
+  val x: SVGAnimatedLength = js.native
+  val y: SVGAnimatedLength = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, useCapture: scala.Boolean): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_SVGAbort(`type`: SVGAbort, listener: js.Function1[/* ev */ Event, _]): Unit = js.native
+  def addEventListener_SVGAbort(`type`: SVGAbort, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_SVGAbort(`type`: SVGAbort, listener: js.Function1[/* ev */ Event, _], useCapture: scala.Boolean): Unit = js.native
+  def addEventListener_SVGAbort(
+    `type`: SVGAbort,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_SVGError(`type`: SVGError, listener: js.Function1[/* ev */ Event, _]): Unit = js.native
+  def addEventListener_SVGError(`type`: SVGError, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_SVGError(`type`: SVGError, listener: js.Function1[/* ev */ Event, _], useCapture: scala.Boolean): Unit = js.native
+  def addEventListener_SVGError(
+    `type`: SVGError,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_SVGUnload(`type`: SVGUnload, listener: js.Function1[/* ev */ Event, _]): Unit = js.native
+  def addEventListener_SVGUnload(`type`: SVGUnload, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_SVGUnload(`type`: SVGUnload, listener: js.Function1[/* ev */ Event, _], useCapture: scala.Boolean): Unit = js.native
+  def addEventListener_SVGUnload(
+    `type`: SVGUnload,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_SVGZoom(`type`: SVGZoom, listener: js.Function1[/* ev */ SVGZoomEvent, _]): Unit = js.native
+  def addEventListener_SVGZoom(`type`: SVGZoom, listener: js.ThisFunction1[/* this */ this.type, /* ev */ SVGZoomEvent, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_SVGZoom(`type`: SVGZoom, listener: js.Function1[/* ev */ SVGZoomEvent, _], useCapture: scala.Boolean): Unit = js.native
+  def addEventListener_SVGZoom(
+    `type`: SVGZoom,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SVGZoomEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_resize(`type`: resize, listener: js.Function1[/* ev */ UIEvent, _]): Unit = js.native
+  def addEventListener_resize(`type`: resize, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_resize(`type`: resize, listener: js.Function1[/* ev */ UIEvent, _], useCapture: scala.Boolean): Unit = js.native
+  def addEventListener_resize(
+    `type`: resize,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_scroll(`type`: scroll, listener: js.Function1[/* ev */ UIEvent, _]): Unit = js.native
+  def addEventListener_scroll(`type`: scroll, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_scroll(`type`: scroll, listener: js.Function1[/* ev */ UIEvent, _], useCapture: scala.Boolean): Unit = js.native
+  def addEventListener_scroll(
+    `type`: scroll,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   def checkEnclosure(element: SVGElement, rect: SVGRect): scala.Boolean = js.native
   def checkIntersection(element: SVGElement, rect: SVGRect): scala.Boolean = js.native
   def createSVGAngle(): SVGAngle = js.native
@@ -79,8 +103,12 @@ trait SVGSVGElement
   def getComputedStyle(elt: Element, pseudoElt: java.lang.String): CSSStyleDeclaration = js.native
   def getCurrentTime(): Double = js.native
   def getElementById(elementId: java.lang.String): Element = js.native
-  def getEnclosureList(rect: SVGRect, referenceElement: SVGElement): NodeList = js.native
-  def getIntersectionList(rect: SVGRect, referenceElement: SVGElement): NodeList = js.native
+  def getEnclosureList(rect: SVGRect, referenceElement: SVGElement): NodeListOf[
+    SVGCircleElement | SVGEllipseElement | SVGImageElement | SVGLineElement | SVGPathElement | SVGPolygonElement | SVGPolylineElement | SVGRectElement | SVGTextElement | SVGUseElement
+  ] = js.native
+  def getIntersectionList(rect: SVGRect, referenceElement: SVGElement): NodeListOf[
+    SVGCircleElement | SVGEllipseElement | SVGImageElement | SVGLineElement | SVGPathElement | SVGPolygonElement | SVGPolylineElement | SVGRectElement | SVGTextElement | SVGUseElement
+  ] = js.native
   def onabort(ev: Event): js.Any = js.native
   def onerror(ev: Event): js.Any = js.native
   def onresize(ev: UIEvent): js.Any = js.native

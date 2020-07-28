@@ -4,9 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ArrayBufferView extends js.Object {
+trait ArrayBufferView extends BufferSource {
   /**
-    * The ArrayBuffer instance referenced by the array. 
+    * The ArrayBuffer instance referenced by the array.
     */
   var buffer: ArrayBuffer
   /**

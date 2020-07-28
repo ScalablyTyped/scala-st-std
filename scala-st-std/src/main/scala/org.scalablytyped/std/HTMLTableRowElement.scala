@@ -16,7 +16,7 @@ trait HTMLTableRowElement
   /**
     * Retrieves a collection of all cells in the table row.
     */
-  var cells: HTMLCollection = js.native
+  var cells: HTMLCollectionOf[HTMLTableDataCellElement | HTMLTableHeaderCellElement] = js.native
   /**
     * Sets or retrieves the height of the object.
     */
@@ -24,11 +24,11 @@ trait HTMLTableRowElement
   /**
     * Retrieves the position of the object in the rows collection for the table.
     */
-  var rowIndex: Double = js.native
+  val rowIndex: Double = js.native
   /**
     * Retrieves the position of the object in the collection.
     */
-  var sectionRowIndex: Double = js.native
+  val sectionRowIndex: Double = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -43,7 +43,7 @@ trait HTMLTableRowElement
     * Creates a new cell in the table row, and adds the cell to the cells collection.
     * @param index Number that specifies where to insert the cell in the tr. The default value is -1, which appends the new cell to the end of the cells collection.
     */
-  def insertCell(): HTMLTableCellElement = js.native
-  def insertCell(index: Double): HTMLTableCellElement = js.native
+  def insertCell(): HTMLTableDataCellElement = js.native
+  def insertCell(index: Double): HTMLTableDataCellElement = js.native
 }
 

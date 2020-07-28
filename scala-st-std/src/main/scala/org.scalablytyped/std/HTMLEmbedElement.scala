@@ -27,7 +27,7 @@ trait HTMLEmbedElement
   /**
     * Gets the source associated with the media element for use by the PlayToManager.
     */
-  var msPlayToSource: js.Any = js.native
+  val msPlayToSource: js.Any = js.native
   /**
     * Sets or retrieves the name of the object.
     */
@@ -35,12 +35,12 @@ trait HTMLEmbedElement
   /**
     * Retrieves the palette used for the embedded document.
     */
-  var palette: java.lang.String = js.native
+  val palette: java.lang.String = js.native
   /**
     * Retrieves the URL of the plug-in used to view an embedded document.
     */
-  var pluginspage: java.lang.String = js.native
-  var readyState: java.lang.String = js.native
+  val pluginspage: java.lang.String = js.native
+  val readyState: java.lang.String = js.native
   /**
     * Sets or retrieves a URL to be loaded by the object.
     */

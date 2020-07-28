@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class SVGAnimatedString ()
   extends org.scalablytyped.std.SVGAnimatedString {
   /* CompleteClass */
-  override var animVal: java.lang.String = js.native
+  override val animVal: java.lang.String = js.native
   /* CompleteClass */
   override var baseVal: java.lang.String = js.native
 }

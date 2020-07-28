@@ -12,11 +12,11 @@ trait SVGEllipseElement
      with SVGTests
      with SVGLangSpace
      with SVGExternalResourcesRequired {
-  var cx: SVGAnimatedLength = js.native
-  var cy: SVGAnimatedLength = js.native
-  var rx: SVGAnimatedLength = js.native
-  var ry: SVGAnimatedLength = js.native
-  var style: CSSStyleDeclaration = js.native
+  val cx: SVGAnimatedLength = js.native
+  val cy: SVGAnimatedLength = js.native
+  val rx: SVGAnimatedLength = js.native
+  val ry: SVGAnimatedLength = js.native
+  val style: CSSStyleDeclaration = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */

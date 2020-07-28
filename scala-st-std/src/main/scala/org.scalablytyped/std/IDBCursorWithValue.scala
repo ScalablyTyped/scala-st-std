@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IDBCursorWithValue extends IDBCursor {
-  var value: js.Any = js.native
+  val value: js.Any = js.native
 }
 

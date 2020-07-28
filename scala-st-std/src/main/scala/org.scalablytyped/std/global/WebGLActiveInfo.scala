@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 class WebGLActiveInfo ()
   extends org.scalablytyped.std.WebGLActiveInfo {
   /* CompleteClass */
-  override var name: java.lang.String = js.native
+  override val name: java.lang.String = js.native
   /* CompleteClass */
-  override var size: Double = js.native
+  override val size: Double = js.native
   /* CompleteClass */
-  override var `type`: Double = js.native
+  override val `type`: Double = js.native
 }
 
 @JSGlobal("WebGLActiveInfo")

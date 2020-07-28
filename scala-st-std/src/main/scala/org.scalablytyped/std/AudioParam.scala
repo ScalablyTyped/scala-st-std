@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AudioParam extends js.Object {
-  var defaultValue: Double
+  val defaultValue: Double
   var value: Double
   def cancelScheduledValues(startTime: Double): Unit
   def exponentialRampToValueAtTime(value: Double, endTime: Double): Unit

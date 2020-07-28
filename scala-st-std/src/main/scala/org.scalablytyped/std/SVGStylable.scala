@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait SVGStylable extends js.Object {
   var className: js.Any
-  var style: CSSStyleDeclaration
+  val style: CSSStyleDeclaration
 }
 
 object SVGStylable {

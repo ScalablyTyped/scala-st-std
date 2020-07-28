@@ -10,29 +10,29 @@ import scala.scalajs.js.annotation._
 class SVGLength ()
   extends org.scalablytyped.std.SVGLength {
   /* CompleteClass */
-  override var SVG_LENGTHTYPE_CM: Double = js.native
+  override val SVG_LENGTHTYPE_CM: Double = js.native
   /* CompleteClass */
-  override var SVG_LENGTHTYPE_EMS: Double = js.native
+  override val SVG_LENGTHTYPE_EMS: Double = js.native
   /* CompleteClass */
-  override var SVG_LENGTHTYPE_EXS: Double = js.native
+  override val SVG_LENGTHTYPE_EXS: Double = js.native
   /* CompleteClass */
-  override var SVG_LENGTHTYPE_IN: Double = js.native
+  override val SVG_LENGTHTYPE_IN: Double = js.native
   /* CompleteClass */
-  override var SVG_LENGTHTYPE_MM: Double = js.native
+  override val SVG_LENGTHTYPE_MM: Double = js.native
   /* CompleteClass */
-  override var SVG_LENGTHTYPE_NUMBER: Double = js.native
+  override val SVG_LENGTHTYPE_NUMBER: Double = js.native
   /* CompleteClass */
-  override var SVG_LENGTHTYPE_PC: Double = js.native
+  override val SVG_LENGTHTYPE_PC: Double = js.native
   /* CompleteClass */
-  override var SVG_LENGTHTYPE_PERCENTAGE: Double = js.native
+  override val SVG_LENGTHTYPE_PERCENTAGE: Double = js.native
   /* CompleteClass */
-  override var SVG_LENGTHTYPE_PT: Double = js.native
+  override val SVG_LENGTHTYPE_PT: Double = js.native
   /* CompleteClass */
-  override var SVG_LENGTHTYPE_PX: Double = js.native
+  override val SVG_LENGTHTYPE_PX: Double = js.native
   /* CompleteClass */
-  override var SVG_LENGTHTYPE_UNKNOWN: Double = js.native
+  override val SVG_LENGTHTYPE_UNKNOWN: Double = js.native
   /* CompleteClass */
-  override var unitType: Double = js.native
+  override val unitType: Double = js.native
   /* CompleteClass */
   override var value: Double = js.native
   /* CompleteClass */
@@ -49,16 +49,16 @@ class SVGLength ()
 @js.native
 object SVGLength
   extends Instantiable0[org.scalablytyped.std.SVGLength] {
-  var SVG_LENGTHTYPE_CM: Double = js.native
-  var SVG_LENGTHTYPE_EMS: Double = js.native
-  var SVG_LENGTHTYPE_EXS: Double = js.native
-  var SVG_LENGTHTYPE_IN: Double = js.native
-  var SVG_LENGTHTYPE_MM: Double = js.native
-  var SVG_LENGTHTYPE_NUMBER: Double = js.native
-  var SVG_LENGTHTYPE_PC: Double = js.native
-  var SVG_LENGTHTYPE_PERCENTAGE: Double = js.native
-  var SVG_LENGTHTYPE_PT: Double = js.native
-  var SVG_LENGTHTYPE_PX: Double = js.native
-  var SVG_LENGTHTYPE_UNKNOWN: Double = js.native
+  val SVG_LENGTHTYPE_CM: Double = js.native
+  val SVG_LENGTHTYPE_EMS: Double = js.native
+  val SVG_LENGTHTYPE_EXS: Double = js.native
+  val SVG_LENGTHTYPE_IN: Double = js.native
+  val SVG_LENGTHTYPE_MM: Double = js.native
+  val SVG_LENGTHTYPE_NUMBER: Double = js.native
+  val SVG_LENGTHTYPE_PC: Double = js.native
+  val SVG_LENGTHTYPE_PERCENTAGE: Double = js.native
+  val SVG_LENGTHTYPE_PT: Double = js.native
+  val SVG_LENGTHTYPE_PX: Double = js.native
+  val SVG_LENGTHTYPE_UNKNOWN: Double = js.native
 }
 

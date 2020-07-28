@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 class DeviceRotationRate ()
   extends org.scalablytyped.std.DeviceRotationRate {
   /* CompleteClass */
-  override var alpha: Double = js.native
+  override val alpha: Double | Null = js.native
   /* CompleteClass */
-  override var beta: Double = js.native
+  override val beta: Double | Null = js.native
   /* CompleteClass */
-  override var gamma: Double = js.native
+  override val gamma: Double | Null = js.native
 }
 
 @JSGlobal("DeviceRotationRate")

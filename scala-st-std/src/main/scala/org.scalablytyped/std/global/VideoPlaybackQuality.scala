@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation._
 class VideoPlaybackQuality ()
   extends org.scalablytyped.std.VideoPlaybackQuality {
   /* CompleteClass */
-  override var corruptedVideoFrames: Double = js.native
+  override val corruptedVideoFrames: Double = js.native
   /* CompleteClass */
-  override var creationTime: Double = js.native
+  override val creationTime: Double = js.native
   /* CompleteClass */
-  override var droppedVideoFrames: Double = js.native
+  override val droppedVideoFrames: Double = js.native
   /* CompleteClass */
-  override var totalFrameDelay: Double = js.native
+  override val totalFrameDelay: Double = js.native
   /* CompleteClass */
-  override var totalVideoFrames: Double = js.native
+  override val totalVideoFrames: Double = js.native
 }
 
 @JSGlobal("VideoPlaybackQuality")

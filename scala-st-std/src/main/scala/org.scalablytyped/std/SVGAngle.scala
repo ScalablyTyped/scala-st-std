@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SVGAngle extends js.Object {
-  var SVG_ANGLETYPE_DEG: Double
-  var SVG_ANGLETYPE_GRAD: Double
-  var SVG_ANGLETYPE_RAD: Double
-  var SVG_ANGLETYPE_UNKNOWN: Double
-  var SVG_ANGLETYPE_UNSPECIFIED: Double
-  var unitType: Double
+  val SVG_ANGLETYPE_DEG: Double
+  val SVG_ANGLETYPE_GRAD: Double
+  val SVG_ANGLETYPE_RAD: Double
+  val SVG_ANGLETYPE_UNKNOWN: Double
+  val SVG_ANGLETYPE_UNSPECIFIED: Double
+  val unitType: Double
   var value: Double
   var valueAsString: java.lang.String
   var valueInSpecifiedUnits: Double

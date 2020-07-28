@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class SVGElementInstanceList ()
   extends org.scalablytyped.std.SVGElementInstanceList {
   /* CompleteClass */
-  override var length: Double = js.native
+  override val length: Double = js.native
   /* CompleteClass */
   override def item(index: Double): org.scalablytyped.std.SVGElementInstance = js.native
 }

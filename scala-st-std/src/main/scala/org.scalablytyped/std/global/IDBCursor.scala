@@ -14,9 +14,9 @@ class IDBCursor ()
 @js.native
 object IDBCursor
   extends Instantiable0[org.scalablytyped.std.IDBCursor] {
-  var NEXT: java.lang.String = js.native
-  var NEXT_NO_DUPLICATE: java.lang.String = js.native
-  var PREV: java.lang.String = js.native
-  var PREV_NO_DUPLICATE: java.lang.String = js.native
+  val NEXT: java.lang.String = js.native
+  val NEXT_NO_DUPLICATE: java.lang.String = js.native
+  val PREV: java.lang.String = js.native
+  val PREV_NO_DUPLICATE: java.lang.String = js.native
 }
 

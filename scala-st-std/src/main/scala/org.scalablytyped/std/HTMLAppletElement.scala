@@ -9,7 +9,7 @@ trait HTMLAppletElement extends HTMLElement {
   /**
     * Retrieves a string of the URL where the object tag can be found. This is often the href of the document that the object is in, or the value set by a base element.
     */
-  var BaseHref: java.lang.String = js.native
+  val BaseHref: java.lang.String = js.native
   var align: java.lang.String = js.native
   /**
     * Sets or retrieves a text alternative to the graphic.
@@ -36,7 +36,7 @@ trait HTMLAppletElement extends HTMLElement {
   /**
     * Address of a pointer to the document this page or frame contains. If there is no document, then null will be returned.
     */
-  var contentDocument: Document = js.native
+  val contentDocument: Document = js.native
   /**
     * Sets or retrieves the URL that references the data of the object.
     */
@@ -45,7 +45,7 @@ trait HTMLAppletElement extends HTMLElement {
     * Sets or retrieves a character string that can be used to implement your own declare functionality for the object.
     */
   var declare: scala.Boolean = js.native
-  var form: HTMLFormElement = js.native
+  val form: HTMLFormElement = js.native
   /**
     * Sets or retrieves the height of the object.
     */
@@ -55,7 +55,7 @@ trait HTMLAppletElement extends HTMLElement {
     * Sets or retrieves the shape of the object.
     */
   var name: java.lang.String = js.native
-  var `object`: java.lang.String = js.native
+  var `object`: java.lang.String | Null = js.native
   /**
     * Sets or retrieves a message to be displayed while an object is loading.
     */

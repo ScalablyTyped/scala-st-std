@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 trait PromiseConstructor
   extends /**
   * Creates a new Promise.
-  * @param executor A callback used to initialize the promise. This callback is passed two arguments: 
-  * a resolve callback used resolve the promise with a value or the result of another promise, 
+  * @param executor A callback used to initialize the promise. This callback is passed two arguments:
+  * a resolve callback used resolve the promise with a value or the result of another promise,
   * and a reject callback used to reject the promise with a provided reason or error.
   */
 Instantiable1[
@@ -22,13 +22,50 @@ Instantiable1[
       js.Promise[js.Object]
     ] {
   @JSName(js.Symbol.species)
-  var species: js.Function = js.native
+  val species: js.Function = js.native
+  /**
+    * Creates a Promise that is resolved with an array of results when all of the provided Promises 
+    * resolve, or rejected when any Promise is rejected.
+    * @param values An array of Promises.
+    * @returns A new Promise.
+    */
   def all[TAll](values: Iterable[TAll | js.Thenable[TAll]]): js.Promise[js.Array[TAll]] = js.native
+  /**
+    * Creates a Promise that is resolved with an array of results when all of the provided Promises
+    * resolve, or rejected when any Promise is rejected.
+    * @param values An array of Promises.
+    * @returns A new Promise.
+    */
+  def all[T](values: js.Array[T | js.Thenable[T]]): js.Promise[js.Array[T]] = js.native
+  /**
+    * Creates a Promise that is resolved with an array of results when all of the provided Promises
+    * resolve, or rejected when any Promise is rejected.
+    * @param values An array of Promises.
+    * @returns A new Promise.
+    */
   def all[T1, T2](values: js.Tuple2[T1 | js.Thenable[T1], T2 | js.Thenable[T2]]): js.Promise[js.Tuple2[T1, T2]] = js.native
+  /**
+    * Creates a Promise that is resolved with an array of results when all of the provided Promises
+    * resolve, or rejected when any Promise is rejected.
+    * @param values An array of Promises.
+    * @returns A new Promise.
+    */
   def all[T1, T2, T3](values: js.Tuple3[T1 | js.Thenable[T1], T2 | js.Thenable[T2], T3 | js.Thenable[T3]]): js.Promise[js.Tuple3[T1, T2, T3]] = js.native
+  /**
+    * Creates a Promise that is resolved with an array of results when all of the provided Promises
+    * resolve, or rejected when any Promise is rejected.
+    * @param values An array of Promises.
+    * @returns A new Promise.
+    */
   def all[T1, T2, T3, T4](
     values: js.Tuple4[T1 | js.Thenable[T1], T2 | js.Thenable[T2], T3 | js.Thenable[T3], T4 | js.Thenable[T4]]
   ): js.Promise[js.Tuple4[T1, T2, T3, T4]] = js.native
+  /**
+    * Creates a Promise that is resolved with an array of results when all of the provided Promises
+    * resolve, or rejected when any Promise is rejected.
+    * @param values An array of Promises.
+    * @returns A new Promise.
+    */
   def all[T1, T2, T3, T4, T5](
     values: js.Tuple5[
       T1 | js.Thenable[T1], 
@@ -38,6 +75,12 @@ Instantiable1[
       T5 | js.Thenable[T5]
     ]
   ): js.Promise[js.Tuple5[T1, T2, T3, T4, T5]] = js.native
+  /**
+    * Creates a Promise that is resolved with an array of results when all of the provided Promises
+    * resolve, or rejected when any Promise is rejected.
+    * @param values An array of Promises.
+    * @returns A new Promise.
+    */
   def all[T1, T2, T3, T4, T5, T6](
     values: js.Tuple6[
       T1 | js.Thenable[T1], 
@@ -48,6 +91,12 @@ Instantiable1[
       T6 | js.Thenable[T6]
     ]
   ): js.Promise[js.Tuple6[T1, T2, T3, T4, T5, T6]] = js.native
+  /**
+    * Creates a Promise that is resolved with an array of results when all of the provided Promises
+    * resolve, or rejected when any Promise is rejected.
+    * @param values An array of Promises.
+    * @returns A new Promise.
+    */
   def all[T1, T2, T3, T4, T5, T6, T7](
     values: js.Tuple7[
       T1 | js.Thenable[T1], 
@@ -59,6 +108,12 @@ Instantiable1[
       T7 | js.Thenable[T7]
     ]
   ): js.Promise[js.Tuple7[T1, T2, T3, T4, T5, T6, T7]] = js.native
+  /**
+    * Creates a Promise that is resolved with an array of results when all of the provided Promises
+    * resolve, or rejected when any Promise is rejected.
+    * @param values An array of Promises.
+    * @returns A new Promise.
+    */
   def all[T1, T2, T3, T4, T5, T6, T7, T8](
     values: js.Tuple8[
       T1 | js.Thenable[T1], 
@@ -71,6 +126,12 @@ Instantiable1[
       T8 | js.Thenable[T8]
     ]
   ): js.Promise[js.Tuple8[T1, T2, T3, T4, T5, T6, T7, T8]] = js.native
+  /**
+    * Creates a Promise that is resolved with an array of results when all of the provided Promises
+    * resolve, or rejected when any Promise is rejected.
+    * @param values An array of Promises.
+    * @returns A new Promise.
+    */
   def all[T1, T2, T3, T4, T5, T6, T7, T8, T9](
     values: js.Tuple9[
       T1 | js.Thenable[T1], 
@@ -85,7 +146,7 @@ Instantiable1[
     ]
   ): js.Promise[js.Tuple9[T1, T2, T3, T4, T5, T6, T7, T8, T9]] = js.native
   /**
-    * Creates a Promise that is resolved with an array of results when all of the provided Promises 
+    * Creates a Promise that is resolved with an array of results when all of the provided Promises
     * resolve, or rejected when any Promise is rejected.
     * @param values An array of Promises.
     * @returns A new Promise.
@@ -116,7 +177,7 @@ Instantiable1[
     * @param reason The reason the promise was rejected.
     * @returns A new rejected Promise.
     */
-  def reject(reason: js.Any): js.Promise[Unit] = js.native
+  def reject(reason: js.Any): js.Promise[scala.Nothing] = js.native
   /**
     * Creates a new rejected promise for the provided reason.
     * @param reason The reason the promise was rejected.

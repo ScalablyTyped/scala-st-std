@@ -20,7 +20,7 @@ trait StringConstructor
   def fromCodePoint(codePoints: Double*): java.lang.String = js.native
   /**
     * String.raw is intended for use as a tag function of a Tagged Template String. When called
-    * as such the first argument will be a well formed template call site object and the rest 
+    * as such the first argument will be a well formed template call site object and the rest
     * parameter will contain the substitution values.
     * @param template A well-formed template string call site representation.
     * @param substitutions A set of substitution values.

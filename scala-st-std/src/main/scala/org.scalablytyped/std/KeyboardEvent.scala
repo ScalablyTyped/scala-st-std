@@ -5,24 +5,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait KeyboardEvent extends UIEvent {
-  var DOM_KEY_LOCATION_JOYSTICK: Double
-  var DOM_KEY_LOCATION_LEFT: Double
-  var DOM_KEY_LOCATION_MOBILE: Double
-  var DOM_KEY_LOCATION_NUMPAD: Double
-  var DOM_KEY_LOCATION_RIGHT: Double
-  var DOM_KEY_LOCATION_STANDARD: Double
-  var altKey: scala.Boolean
-  var char: java.lang.String
-  var charCode: Double
-  var ctrlKey: scala.Boolean
-  var key: java.lang.String
-  var keyCode: Double
-  var locale: java.lang.String
-  var location: Double
-  var metaKey: scala.Boolean
-  var repeat: scala.Boolean
-  var shiftKey: scala.Boolean
-  var which: Double
+  val DOM_KEY_LOCATION_JOYSTICK: Double
+  val DOM_KEY_LOCATION_LEFT: Double
+  val DOM_KEY_LOCATION_MOBILE: Double
+  val DOM_KEY_LOCATION_NUMPAD: Double
+  val DOM_KEY_LOCATION_RIGHT: Double
+  val DOM_KEY_LOCATION_STANDARD: Double
+  val altKey: scala.Boolean
+  val char: java.lang.String | Null
+  val charCode: Double
+  val ctrlKey: scala.Boolean
+  val key: java.lang.String
+  val keyCode: Double
+  val locale: java.lang.String
+  val location: Double
+  val metaKey: scala.Boolean
+  val repeat: scala.Boolean
+  val shiftKey: scala.Boolean
+  val which: Double
   def getModifierState(keyArg: java.lang.String): scala.Boolean
   def initKeyboardEvent(
     typeArg: java.lang.String,
@@ -53,7 +53,6 @@ object KeyboardEvent {
     bubbles: scala.Boolean,
     cancelBubble: scala.Boolean,
     cancelable: scala.Boolean,
-    char: java.lang.String,
     charCode: Double,
     ctrlKey: scala.Boolean,
     currentTarget: EventTarget,
@@ -74,7 +73,6 @@ object KeyboardEvent {
     repeat: scala.Boolean,
     returnValue: scala.Boolean,
     shiftKey: scala.Boolean,
-    srcElement: Element,
     stopImmediatePropagation: () => Unit,
     stopPropagation: () => Unit,
     target: EventTarget,
@@ -83,7 +81,7 @@ object KeyboardEvent {
     view: Window,
     which: Double
   ): KeyboardEvent = {
-    val __obj = js.Dynamic.literal(AT_TARGET = AT_TARGET.asInstanceOf[js.Any], BUBBLING_PHASE = BUBBLING_PHASE.asInstanceOf[js.Any], CAPTURING_PHASE = CAPTURING_PHASE.asInstanceOf[js.Any], DOM_KEY_LOCATION_JOYSTICK = DOM_KEY_LOCATION_JOYSTICK.asInstanceOf[js.Any], DOM_KEY_LOCATION_LEFT = DOM_KEY_LOCATION_LEFT.asInstanceOf[js.Any], DOM_KEY_LOCATION_MOBILE = DOM_KEY_LOCATION_MOBILE.asInstanceOf[js.Any], DOM_KEY_LOCATION_NUMPAD = DOM_KEY_LOCATION_NUMPAD.asInstanceOf[js.Any], DOM_KEY_LOCATION_RIGHT = DOM_KEY_LOCATION_RIGHT.asInstanceOf[js.Any], DOM_KEY_LOCATION_STANDARD = DOM_KEY_LOCATION_STANDARD.asInstanceOf[js.Any], altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelBubble = cancelBubble.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], getModifierState = js.Any.fromFunction1(getModifierState), initEvent = js.Any.fromFunction3(initEvent), initKeyboardEvent = js.Any.fromFunction9(initKeyboardEvent), initUIEvent = js.Any.fromFunction5(initUIEvent), isTrusted = isTrusted.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), repeat = repeat.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], srcElement = srcElement.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(AT_TARGET = AT_TARGET.asInstanceOf[js.Any], BUBBLING_PHASE = BUBBLING_PHASE.asInstanceOf[js.Any], CAPTURING_PHASE = CAPTURING_PHASE.asInstanceOf[js.Any], DOM_KEY_LOCATION_JOYSTICK = DOM_KEY_LOCATION_JOYSTICK.asInstanceOf[js.Any], DOM_KEY_LOCATION_LEFT = DOM_KEY_LOCATION_LEFT.asInstanceOf[js.Any], DOM_KEY_LOCATION_MOBILE = DOM_KEY_LOCATION_MOBILE.asInstanceOf[js.Any], DOM_KEY_LOCATION_NUMPAD = DOM_KEY_LOCATION_NUMPAD.asInstanceOf[js.Any], DOM_KEY_LOCATION_RIGHT = DOM_KEY_LOCATION_RIGHT.asInstanceOf[js.Any], DOM_KEY_LOCATION_STANDARD = DOM_KEY_LOCATION_STANDARD.asInstanceOf[js.Any], altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelBubble = cancelBubble.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], getModifierState = js.Any.fromFunction1(getModifierState), initEvent = js.Any.fromFunction3(initEvent), initKeyboardEvent = js.Any.fromFunction9(initKeyboardEvent), initUIEvent = js.Any.fromFunction5(initUIEvent), isTrusted = isTrusted.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), repeat = repeat.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyboardEvent]
   }
@@ -113,8 +111,6 @@ object KeyboardEvent {
     @scala.inline
     def setAltKey(value: scala.Boolean): Self = this.set("altKey", value.asInstanceOf[js.Any])
     @scala.inline
-    def setChar(value: java.lang.String): Self = this.set("char", value.asInstanceOf[js.Any])
-    @scala.inline
     def setCharCode(value: Double): Self = this.set("charCode", value.asInstanceOf[js.Any])
     @scala.inline
     def setCtrlKey(value: scala.Boolean): Self = this.set("ctrlKey", value.asInstanceOf[js.Any])
@@ -140,6 +136,10 @@ object KeyboardEvent {
     def setShiftKey(value: scala.Boolean): Self = this.set("shiftKey", value.asInstanceOf[js.Any])
     @scala.inline
     def setWhich(value: Double): Self = this.set("which", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setChar(value: java.lang.String): Self = this.set("char", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCharNull: Self = this.set("char", null)
   }
   
 }

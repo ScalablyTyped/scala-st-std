@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CSSStyleRule extends CSSRule {
-  var readOnly: scala.Boolean
+  val readOnly: scala.Boolean
   var selectorText: java.lang.String
-  var style: CSSStyleDeclaration
+  val style: CSSStyleDeclaration
 }
 
 object CSSStyleRule {

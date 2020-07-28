@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DOMError extends js.Object {
-  var name: java.lang.String
+  val name: java.lang.String
 }
 
 object DOMError {

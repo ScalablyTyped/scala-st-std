@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SVGUnitTypes extends js.Object {
-  var SVG_UNIT_TYPE_OBJECTBOUNDINGBOX: Double
-  var SVG_UNIT_TYPE_UNKNOWN: Double
-  var SVG_UNIT_TYPE_USERSPACEONUSE: Double
+  val SVG_UNIT_TYPE_OBJECTBOUNDINGBOX: Double
+  val SVG_UNIT_TYPE_UNKNOWN: Double
+  val SVG_UNIT_TYPE_USERSPACEONUSE: Double
 }
 
 object SVGUnitTypes {

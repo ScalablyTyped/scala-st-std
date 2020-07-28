@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 class SVGAnimatedRect ()
   extends org.scalablytyped.std.SVGAnimatedRect {
   /* CompleteClass */
-  override var animVal: org.scalablytyped.std.SVGRect = js.native
+  override val animVal: org.scalablytyped.std.SVGRect = js.native
   /* CompleteClass */
-  override var baseVal: org.scalablytyped.std.SVGRect = js.native
+  override val baseVal: org.scalablytyped.std.SVGRect = js.native
 }
 
 @JSGlobal("SVGAnimatedRect")

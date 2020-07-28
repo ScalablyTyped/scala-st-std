@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SVGAnimatedEnumeration extends js.Object {
-  var animVal: Double
+  val animVal: Double
   var baseVal: Double
 }
 

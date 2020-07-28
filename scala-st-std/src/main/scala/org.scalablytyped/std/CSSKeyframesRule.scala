@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CSSKeyframesRule extends CSSRule {
-  var cssRules: CSSRuleList
+  val cssRules: CSSRuleList
   var name: java.lang.String
   def appendRule(rule: java.lang.String): Unit
   def deleteRule(rule: java.lang.String): Unit

@@ -10,23 +10,23 @@ import scala.scalajs.js.annotation._
 class MutationRecord ()
   extends org.scalablytyped.std.MutationRecord {
   /* CompleteClass */
-  override var addedNodes: org.scalablytyped.std.NodeList = js.native
+  override val addedNodes: org.scalablytyped.std.NodeList = js.native
   /* CompleteClass */
-  override var attributeName: java.lang.String = js.native
+  override val attributeName: java.lang.String | Null = js.native
   /* CompleteClass */
-  override var attributeNamespace: java.lang.String = js.native
+  override val attributeNamespace: java.lang.String | Null = js.native
   /* CompleteClass */
-  override var nextSibling: org.scalablytyped.std.Node = js.native
+  override val nextSibling: org.scalablytyped.std.Node | Null = js.native
   /* CompleteClass */
-  override var oldValue: java.lang.String = js.native
+  override val oldValue: java.lang.String | Null = js.native
   /* CompleteClass */
-  override var previousSibling: org.scalablytyped.std.Node = js.native
+  override val previousSibling: org.scalablytyped.std.Node | Null = js.native
   /* CompleteClass */
-  override var removedNodes: org.scalablytyped.std.NodeList = js.native
+  override val removedNodes: org.scalablytyped.std.NodeList = js.native
   /* CompleteClass */
-  override var target: org.scalablytyped.std.Node = js.native
+  override val target: org.scalablytyped.std.Node = js.native
   /* CompleteClass */
-  override var `type`: java.lang.String = js.native
+  override val `type`: java.lang.String = js.native
 }
 
 @JSGlobal("MutationRecord")

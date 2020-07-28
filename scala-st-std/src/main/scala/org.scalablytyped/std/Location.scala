@@ -10,7 +10,7 @@ trait Location extends js.Object {
   var host: java.lang.String = js.native
   var hostname: java.lang.String = js.native
   var href: java.lang.String = js.native
-  var origin: java.lang.String = js.native
+  val origin: java.lang.String = js.native
   var pathname: java.lang.String = js.native
   var port: java.lang.String = js.native
   var protocol: java.lang.String = js.native

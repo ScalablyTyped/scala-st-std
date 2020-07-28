@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 class MessageChannel ()
   extends org.scalablytyped.std.MessageChannel {
   /* CompleteClass */
-  override var port1: org.scalablytyped.std.MessagePort = js.native
+  override val port1: org.scalablytyped.std.MessagePort = js.native
   /* CompleteClass */
-  override var port2: org.scalablytyped.std.MessagePort = js.native
+  override val port2: org.scalablytyped.std.MessagePort = js.native
 }
 
 @JSGlobal("MessageChannel")

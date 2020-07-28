@@ -21,9 +21,9 @@ trait Uint8ClampedArrayConstructor
       Uint8ClampedArray
     ] {
   /**
-    * The size in bytes of each element in the array. 
+    * The size in bytes of each element in the array.
     */
-  var BYTES_PER_ELEMENT: Double = js.native
+  val BYTES_PER_ELEMENT: Double = js.native
   /**
     * Creates an array from an array-like or iterable object.
     * @param arrayLike An array-like or iterable object to convert to an array.

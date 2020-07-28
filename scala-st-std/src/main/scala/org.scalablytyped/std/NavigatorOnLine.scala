@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NavigatorOnLine extends js.Object {
-  var onLine: scala.Boolean
+  val onLine: scala.Boolean
 }
 
 object NavigatorOnLine {

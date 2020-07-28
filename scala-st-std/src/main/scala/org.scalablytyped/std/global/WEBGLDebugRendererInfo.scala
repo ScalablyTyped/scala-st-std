@@ -10,16 +10,16 @@ import scala.scalajs.js.annotation._
 class WEBGLDebugRendererInfo ()
   extends org.scalablytyped.std.WEBGLDebugRendererInfo {
   /* CompleteClass */
-  override var UNMASKED_RENDERER_WEBGL: Double = js.native
+  override val UNMASKED_RENDERER_WEBGL: Double = js.native
   /* CompleteClass */
-  override var UNMASKED_VENDOR_WEBGL: Double = js.native
+  override val UNMASKED_VENDOR_WEBGL: Double = js.native
 }
 
 @JSGlobal("WEBGL_debug_renderer_info")
 @js.native
 object WEBGLDebugRendererInfo
   extends Instantiable0[org.scalablytyped.std.WEBGLDebugRendererInfo] {
-  var UNMASKED_RENDERER_WEBGL: Double = js.native
-  var UNMASKED_VENDOR_WEBGL: Double = js.native
+  val UNMASKED_RENDERER_WEBGL: Double = js.native
+  val UNMASKED_VENDOR_WEBGL: Double = js.native
 }
 

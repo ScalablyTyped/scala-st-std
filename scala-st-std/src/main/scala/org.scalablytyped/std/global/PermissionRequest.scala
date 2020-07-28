@@ -10,13 +10,13 @@ import scala.scalajs.js.annotation._
 class PermissionRequest ()
   extends org.scalablytyped.std.PermissionRequest {
   /* CompleteClass */
-  override var id: Double = js.native
+  override val id: Double = js.native
   /* CompleteClass */
-  override var state: java.lang.String = js.native
+  override val state: java.lang.String = js.native
   /* CompleteClass */
-  override var `type`: java.lang.String = js.native
+  override val `type`: java.lang.String = js.native
   /* CompleteClass */
-  override var uri: java.lang.String = js.native
+  override val uri: java.lang.String = js.native
   /* CompleteClass */
   override def allow(): Unit = js.native
   /* CompleteClass */

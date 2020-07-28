@@ -21,17 +21,29 @@ trait HTMLMarqueeElement extends HTMLElement {
   var vspace: Double = js.native
   var width: java.lang.String = js.native
   @JSName("addEventListener")
-  def addEventListener_bounce(`type`: bounce, listener: js.Function1[/* ev */ Event, _]): Unit = js.native
+  def addEventListener_bounce(`type`: bounce, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_bounce(`type`: bounce, listener: js.Function1[/* ev */ Event, _], useCapture: scala.Boolean): Unit = js.native
+  def addEventListener_bounce(
+    `type`: bounce,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_finish(`type`: finish, listener: js.Function1[/* ev */ Event, _]): Unit = js.native
+  def addEventListener_finish(`type`: finish, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_finish(`type`: finish, listener: js.Function1[/* ev */ Event, _], useCapture: scala.Boolean): Unit = js.native
+  def addEventListener_finish(
+    `type`: finish,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_start(`type`: start, listener: js.Function1[/* ev */ Event, _]): Unit = js.native
+  def addEventListener_start(`type`: start, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_start(`type`: start, listener: js.Function1[/* ev */ Event, _], useCapture: scala.Boolean): Unit = js.native
+  def addEventListener_start(
+    `type`: start,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   def onbounce(ev: Event): js.Any = js.native
   def onfinish(ev: Event): js.Any = js.native
   def onstart(ev: Event): js.Any = js.native

@@ -5,27 +5,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PerformanceTiming extends js.Object {
-  var connectEnd: Double
-  var connectStart: Double
-  var domComplete: Double
-  var domContentLoadedEventEnd: Double
-  var domContentLoadedEventStart: Double
-  var domInteractive: Double
-  var domLoading: Double
-  var domainLookupEnd: Double
-  var domainLookupStart: Double
-  var fetchStart: Double
-  var loadEventEnd: Double
-  var loadEventStart: Double
-  var msFirstPaint: Double
-  var navigationStart: Double
-  var redirectEnd: Double
-  var redirectStart: Double
-  var requestStart: Double
-  var responseEnd: Double
-  var responseStart: Double
-  var unloadEventEnd: Double
-  var unloadEventStart: Double
+  val connectEnd: Double
+  val connectStart: Double
+  val domComplete: Double
+  val domContentLoadedEventEnd: Double
+  val domContentLoadedEventStart: Double
+  val domInteractive: Double
+  val domLoading: Double
+  val domainLookupEnd: Double
+  val domainLookupStart: Double
+  val fetchStart: Double
+  val loadEventEnd: Double
+  val loadEventStart: Double
+  val msFirstPaint: Double
+  val navigationStart: Double
+  val redirectEnd: Double
+  val redirectStart: Double
+  val requestStart: Double
+  val responseEnd: Double
+  val responseStart: Double
+  val unloadEventEnd: Double
+  val unloadEventStart: Double
   def toJSON(): js.Any
 }
 

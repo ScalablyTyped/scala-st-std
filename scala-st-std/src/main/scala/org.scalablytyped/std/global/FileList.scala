@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class FileList ()
   extends org.scalablytyped.std.FileList {
   /* CompleteClass */
-  override var length: Double = js.native
+  override val length: Double = js.native
   /* CompleteClass */
   override def item(index: Double): org.scalablytyped.std.File = js.native
 }

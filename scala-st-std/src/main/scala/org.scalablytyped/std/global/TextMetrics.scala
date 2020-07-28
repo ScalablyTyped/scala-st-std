@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class TextMetrics ()
   extends org.scalablytyped.std.TextMetrics {
   /* CompleteClass */
-  override var width: Double = js.native
+  override val width: Double = js.native
 }
 
 @JSGlobal("TextMetrics")

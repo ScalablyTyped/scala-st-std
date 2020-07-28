@@ -10,13 +10,13 @@ import scala.scalajs.js.annotation._
 class IDBKeyRange ()
   extends org.scalablytyped.std.IDBKeyRange {
   /* CompleteClass */
-  override var lower: js.Any = js.native
+  override val lower: js.Any = js.native
   /* CompleteClass */
-  override var lowerOpen: scala.Boolean = js.native
+  override val lowerOpen: scala.Boolean = js.native
   /* CompleteClass */
-  override var upper: js.Any = js.native
+  override val upper: js.Any = js.native
   /* CompleteClass */
-  override var upperOpen: scala.Boolean = js.native
+  override val upperOpen: scala.Boolean = js.native
 }
 
 @JSGlobal("IDBKeyRange")
@@ -27,10 +27,10 @@ object IDBKeyRange
   def bound(lower: js.Any, upper: js.Any, lowerOpen: js.UndefOr[scala.Nothing], upperOpen: scala.Boolean): org.scalablytyped.std.IDBKeyRange = js.native
   def bound(lower: js.Any, upper: js.Any, lowerOpen: scala.Boolean): org.scalablytyped.std.IDBKeyRange = js.native
   def bound(lower: js.Any, upper: js.Any, lowerOpen: scala.Boolean, upperOpen: scala.Boolean): org.scalablytyped.std.IDBKeyRange = js.native
-  def lowerBound(bound: js.Any): org.scalablytyped.std.IDBKeyRange = js.native
-  def lowerBound(bound: js.Any, open: scala.Boolean): org.scalablytyped.std.IDBKeyRange = js.native
+  def lowerBound(lower: js.Any): org.scalablytyped.std.IDBKeyRange = js.native
+  def lowerBound(lower: js.Any, open: scala.Boolean): org.scalablytyped.std.IDBKeyRange = js.native
   def only(value: js.Any): org.scalablytyped.std.IDBKeyRange = js.native
-  def upperBound(bound: js.Any): org.scalablytyped.std.IDBKeyRange = js.native
-  def upperBound(bound: js.Any, open: scala.Boolean): org.scalablytyped.std.IDBKeyRange = js.native
+  def upperBound(upper: js.Any): org.scalablytyped.std.IDBKeyRange = js.native
+  def upperBound(upper: js.Any, open: scala.Boolean): org.scalablytyped.std.IDBKeyRange = js.native
 }
 

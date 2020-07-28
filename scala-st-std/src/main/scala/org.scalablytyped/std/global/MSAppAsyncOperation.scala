@@ -14,8 +14,8 @@ class MSAppAsyncOperation ()
 @js.native
 object MSAppAsyncOperation
   extends Instantiable0[org.scalablytyped.std.MSAppAsyncOperation] {
-  var COMPLETED: Double = js.native
-  var ERROR: Double = js.native
-  var STARTED: Double = js.native
+  val COMPLETED: Double = js.native
+  val ERROR: Double = js.native
+  val STARTED: Double = js.native
 }
 

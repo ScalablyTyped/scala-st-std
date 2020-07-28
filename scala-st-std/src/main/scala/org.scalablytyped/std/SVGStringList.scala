@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SVGStringList extends js.Object {
-  var numberOfItems: Double
+  val numberOfItems: Double
   def appendItem(newItem: java.lang.String): java.lang.String
   def clear(): Unit
   def getItem(index: Double): java.lang.String

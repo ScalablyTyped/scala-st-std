@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class SVGAnimatedBoolean ()
   extends org.scalablytyped.std.SVGAnimatedBoolean {
   /* CompleteClass */
-  override var animVal: scala.Boolean = js.native
+  override val animVal: scala.Boolean = js.native
   /* CompleteClass */
   override var baseVal: scala.Boolean = js.native
 }

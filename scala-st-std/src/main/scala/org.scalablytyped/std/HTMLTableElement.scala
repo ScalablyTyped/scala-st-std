@@ -46,7 +46,7 @@ trait HTMLTableElement extends HTMLElement {
   /**
     * Sets or retrieves the number of horizontal rows contained in the object.
     */
-  var rows: HTMLCollection = js.native
+  var rows: HTMLCollectionOf[HTMLTableRowElement] = js.native
   /**
     * Sets or retrieves which dividing lines (inner borders) are displayed.
     */
@@ -58,7 +58,7 @@ trait HTMLTableElement extends HTMLElement {
   /**
     * Retrieves a collection of all tBody objects in the table. Objects in this collection are in source order.
     */
-  var tBodies: HTMLCollection = js.native
+  var tBodies: HTMLCollectionOf[HTMLTableSectionElement] = js.native
   /**
     * Retrieves the tFoot object of the table.
     */

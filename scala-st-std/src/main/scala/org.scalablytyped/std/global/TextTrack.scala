@@ -14,12 +14,12 @@ class TextTrack ()
 @js.native
 object TextTrack
   extends Instantiable0[org.scalablytyped.std.TextTrack] {
-  var DISABLED: Double = js.native
-  var ERROR: Double = js.native
-  var HIDDEN: Double = js.native
-  var LOADED: Double = js.native
-  var LOADING: Double = js.native
-  var NONE: Double = js.native
-  var SHOWING: Double = js.native
+  val DISABLED: Double = js.native
+  val ERROR: Double = js.native
+  val HIDDEN: Double = js.native
+  val LOADED: Double = js.native
+  val LOADING: Double = js.native
+  val NONE: Double = js.native
+  val SHOWING: Double = js.native
 }
 

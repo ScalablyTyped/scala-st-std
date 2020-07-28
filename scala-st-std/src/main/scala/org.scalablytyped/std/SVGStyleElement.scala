@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait SVGStyleElement
   extends SVGElement
      with SVGLangSpace {
+  var disabled: scala.Boolean = js.native
   var media: java.lang.String = js.native
   var title: java.lang.String = js.native
   var `type`: java.lang.String = js.native

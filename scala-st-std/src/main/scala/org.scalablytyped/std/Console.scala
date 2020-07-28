@@ -20,6 +20,8 @@ trait Console extends js.Object {
   def dirxml(value: js.Any): Unit = js.native
   def error(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
   def error(message: js.Any, optionalParams: js.Any*): Unit = js.native
+  def exception(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
+  def exception(message: java.lang.String, optionalParams: js.Any*): Unit = js.native
   def group(): Unit = js.native
   def group(groupTitle: java.lang.String): Unit = js.native
   def groupCollapsed(): Unit = js.native
@@ -34,6 +36,7 @@ trait Console extends js.Object {
   def profile(reportName: java.lang.String): Unit = js.native
   def profileEnd(): Unit = js.native
   def select(element: Element): Unit = js.native
+  def table(data: js.Any*): Unit = js.native
   def time(): Unit = js.native
   def time(timerName: java.lang.String): Unit = js.native
   def timeEnd(): Unit = js.native

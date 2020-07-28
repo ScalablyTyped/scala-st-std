@@ -13,11 +13,11 @@ class ApplicationCache_ () extends ApplicationCache
 @JSGlobal("ApplicationCache")
 @js.native
 object ApplicationCache_ extends Instantiable0[ApplicationCache] {
-  var CHECKING: Double = js.native
-  var DOWNLOADING: Double = js.native
-  var IDLE: Double = js.native
-  var OBSOLETE: Double = js.native
-  var UNCACHED: Double = js.native
-  var UPDATEREADY: Double = js.native
+  val CHECKING: Double = js.native
+  val DOWNLOADING: Double = js.native
+  val IDLE: Double = js.native
+  val OBSOLETE: Double = js.native
+  val UNCACHED: Double = js.native
+  val UPDATEREADY: Double = js.native
 }
 

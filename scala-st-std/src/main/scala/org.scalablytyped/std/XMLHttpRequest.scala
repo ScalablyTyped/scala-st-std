@@ -9,38 +9,44 @@ import scala.scalajs.js.annotation._
 trait XMLHttpRequest
   extends EventTarget
      with XMLHttpRequestEventTarget {
-  var DONE: Double = js.native
-  var HEADERS_RECEIVED: Double = js.native
-  var LOADING: Double = js.native
-  var OPENED: Double = js.native
-  var UNSENT: Double = js.native
-  var msCaching: java.lang.String = js.native
-  var readyState: Double = js.native
-  var response: js.Any = js.native
-  var responseBody: js.Any = js.native
-  var responseText: java.lang.String = js.native
+  val DONE: Double = js.native
+  val HEADERS_RECEIVED: Double = js.native
+  val LOADING: Double = js.native
+  val OPENED: Double = js.native
+  val UNSENT: Double = js.native
+  var msCaching: js.UndefOr[java.lang.String] = js.native
+  val readyState: Double = js.native
+  val response: js.Any = js.native
+  val responseText: java.lang.String = js.native
   var responseType: java.lang.String = js.native
-  var responseXML: js.Any = js.native
-  var status: Double = js.native
-  var statusText: java.lang.String = js.native
+  val responseXML: js.Any = js.native
+  val status: Double = js.native
+  val statusText: java.lang.String = js.native
   var timeout: Double = js.native
-  var upload: XMLHttpRequestUpload = js.native
+  val upload: XMLHttpRequestUpload = js.native
   var withCredentials: scala.Boolean = js.native
   def abort(): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(
+    `type`: java.lang.String,
+    listener: js.UndefOr[EventListenerOrEventListenerObject],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, useCapture: scala.Boolean): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_readystatechange(`type`: readystatechange, listener: js.Function1[/* ev */ ProgressEvent, _]): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.Function1[/* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_readystatechange(
+    `type`: readystatechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
     useCapture: scala.Boolean
   ): Unit = js.native
   def getAllResponseHeaders(): java.lang.String = js.native
-  def getResponseHeader(header: java.lang.String): java.lang.String = js.native
+  def getResponseHeader(header: java.lang.String): java.lang.String | Null = js.native
   def msCachingEnabled(): scala.Boolean = js.native
   def onreadystatechange(ev: ProgressEvent): js.Any = js.native
   def open(method: java.lang.String, url: java.lang.String): Unit = js.native

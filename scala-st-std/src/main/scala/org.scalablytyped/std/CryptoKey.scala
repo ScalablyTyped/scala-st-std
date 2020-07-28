@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CryptoKey extends js.Object {
-  var algorithm: KeyAlgorithm
-  var extractable: scala.Boolean
-  var `type`: java.lang.String
-  var usages: js.Array[java.lang.String]
+  val algorithm: KeyAlgorithm
+  val extractable: scala.Boolean
+  val `type`: java.lang.String
+  val usages: js.Array[java.lang.String]
 }
 
 object CryptoKey {

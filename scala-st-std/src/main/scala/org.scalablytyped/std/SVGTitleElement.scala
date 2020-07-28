@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait SVGTitleElement
   extends SVGElement
      with SVGLangSpace {
-  var style: CSSStyleDeclaration = js.native
+  val style: CSSStyleDeclaration = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */

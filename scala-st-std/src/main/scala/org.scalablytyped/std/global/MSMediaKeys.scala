@@ -18,5 +18,7 @@ object MSMediaKeys
   extends Instantiable1[/* keySystem */ java.lang.String, org.scalablytyped.std.MSMediaKeys] {
   def isTypeSupported(keySystem: java.lang.String): scala.Boolean = js.native
   def isTypeSupported(keySystem: java.lang.String, `type`: java.lang.String): scala.Boolean = js.native
+  def isTypeSupportedWithFeatures(keySystem: java.lang.String): java.lang.String = js.native
+  def isTypeSupportedWithFeatures(keySystem: java.lang.String, `type`: java.lang.String): java.lang.String = js.native
 }
 

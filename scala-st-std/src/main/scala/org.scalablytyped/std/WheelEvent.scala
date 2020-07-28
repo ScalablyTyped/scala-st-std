@@ -5,13 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WheelEvent extends MouseEvent {
-  var DOM_DELTA_LINE: Double
-  var DOM_DELTA_PAGE: Double
-  var DOM_DELTA_PIXEL: Double
-  var deltaMode: Double
-  var deltaX: Double
-  var deltaY: Double
-  var deltaZ: Double
+  val DOM_DELTA_LINE: Double
+  val DOM_DELTA_PAGE: Double
+  val DOM_DELTA_PIXEL: Double
+  val deltaMode: Double
+  val deltaX: Double
+  val deltaY: Double
+  val deltaZ: Double
+  val wheelDelta: Double
+  val wheelDeltaX: Double
+  val wheelDeltaY: Double
   def getCurrentPoint(element: Element): Unit
   def initWheelEvent(
     typeArg: java.lang.String,
@@ -82,7 +85,6 @@ object WheelEvent {
     screenX: Double,
     screenY: Double,
     shiftKey: scala.Boolean,
-    srcElement: Element,
     stopImmediatePropagation: () => Unit,
     stopPropagation: () => Unit,
     target: EventTarget,
@@ -90,11 +92,14 @@ object WheelEvent {
     toElement: Element,
     `type`: java.lang.String,
     view: Window,
+    wheelDelta: Double,
+    wheelDeltaX: Double,
+    wheelDeltaY: Double,
     which: Double,
     x: Double,
     y: Double
   ): WheelEvent = {
-    val __obj = js.Dynamic.literal(AT_TARGET = AT_TARGET.asInstanceOf[js.Any], BUBBLING_PHASE = BUBBLING_PHASE.asInstanceOf[js.Any], CAPTURING_PHASE = CAPTURING_PHASE.asInstanceOf[js.Any], DOM_DELTA_LINE = DOM_DELTA_LINE.asInstanceOf[js.Any], DOM_DELTA_PAGE = DOM_DELTA_PAGE.asInstanceOf[js.Any], DOM_DELTA_PIXEL = DOM_DELTA_PIXEL.asInstanceOf[js.Any], altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelBubble = cancelBubble.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], deltaMode = deltaMode.asInstanceOf[js.Any], deltaX = deltaX.asInstanceOf[js.Any], deltaY = deltaY.asInstanceOf[js.Any], deltaZ = deltaZ.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], fromElement = fromElement.asInstanceOf[js.Any], getCurrentPoint = js.Any.fromFunction1(getCurrentPoint), getModifierState = js.Any.fromFunction1(getModifierState), initEvent = js.Any.fromFunction3(initEvent), initMouseEvent = js.Any.fromFunction15(initMouseEvent), initUIEvent = js.Any.fromFunction5(initUIEvent), initWheelEvent = js.Any.fromFunction16(initWheelEvent), isTrusted = isTrusted.asInstanceOf[js.Any], layerX = layerX.asInstanceOf[js.Any], layerY = layerY.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], movementX = movementX.asInstanceOf[js.Any], movementY = movementY.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), relatedTarget = relatedTarget.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], srcElement = srcElement.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(AT_TARGET = AT_TARGET.asInstanceOf[js.Any], BUBBLING_PHASE = BUBBLING_PHASE.asInstanceOf[js.Any], CAPTURING_PHASE = CAPTURING_PHASE.asInstanceOf[js.Any], DOM_DELTA_LINE = DOM_DELTA_LINE.asInstanceOf[js.Any], DOM_DELTA_PAGE = DOM_DELTA_PAGE.asInstanceOf[js.Any], DOM_DELTA_PIXEL = DOM_DELTA_PIXEL.asInstanceOf[js.Any], altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelBubble = cancelBubble.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], deltaMode = deltaMode.asInstanceOf[js.Any], deltaX = deltaX.asInstanceOf[js.Any], deltaY = deltaY.asInstanceOf[js.Any], deltaZ = deltaZ.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], fromElement = fromElement.asInstanceOf[js.Any], getCurrentPoint = js.Any.fromFunction1(getCurrentPoint), getModifierState = js.Any.fromFunction1(getModifierState), initEvent = js.Any.fromFunction3(initEvent), initMouseEvent = js.Any.fromFunction15(initMouseEvent), initUIEvent = js.Any.fromFunction5(initUIEvent), initWheelEvent = js.Any.fromFunction16(initWheelEvent), isTrusted = isTrusted.asInstanceOf[js.Any], layerX = layerX.asInstanceOf[js.Any], layerY = layerY.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], movementX = movementX.asInstanceOf[js.Any], movementY = movementY.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), relatedTarget = relatedTarget.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], wheelDelta = wheelDelta.asInstanceOf[js.Any], wheelDeltaX = wheelDeltaX.asInstanceOf[js.Any], wheelDeltaY = wheelDeltaY.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WheelEvent]
   }
@@ -129,6 +134,12 @@ object WheelEvent {
     def setInitWheelEvent(
       value: (java.lang.String, scala.Boolean, scala.Boolean, Window, Double, Double, Double, Double, Double, Double, EventTarget, java.lang.String, Double, Double, Double, Double) => Unit
     ): Self = this.set("initWheelEvent", js.Any.fromFunction16(value))
+    @scala.inline
+    def setWheelDelta(value: Double): Self = this.set("wheelDelta", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWheelDeltaX(value: Double): Self = this.set("wheelDeltaX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWheelDeltaY(value: Double): Self = this.set("wheelDeltaY", value.asInstanceOf[js.Any])
   }
   
 }

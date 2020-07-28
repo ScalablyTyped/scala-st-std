@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait History extends js.Object {
-  var length: Double = js.native
-  var state: js.Any = js.native
+  val length: Double = js.native
+  val state: js.Any = js.native
   def back(): Unit = js.native
   def back(distance: js.Any): Unit = js.native
   def forward(): Unit = js.native

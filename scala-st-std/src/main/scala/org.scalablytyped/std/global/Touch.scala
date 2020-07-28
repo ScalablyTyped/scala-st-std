@@ -10,21 +10,21 @@ import scala.scalajs.js.annotation._
 class Touch ()
   extends org.scalablytyped.std.Touch {
   /* CompleteClass */
-  override var clientX: Double = js.native
+  override val clientX: Double = js.native
   /* CompleteClass */
-  override var clientY: Double = js.native
+  override val clientY: Double = js.native
   /* CompleteClass */
-  override var identifier: Double = js.native
+  override val identifier: Double = js.native
   /* CompleteClass */
-  override var pageX: Double = js.native
+  override val pageX: Double = js.native
   /* CompleteClass */
-  override var pageY: Double = js.native
+  override val pageY: Double = js.native
   /* CompleteClass */
-  override var screenX: Double = js.native
+  override val screenX: Double = js.native
   /* CompleteClass */
-  override var screenY: Double = js.native
+  override val screenY: Double = js.native
   /* CompleteClass */
-  override var target: org.scalablytyped.std.EventTarget = js.native
+  override val target: org.scalablytyped.std.EventTarget = js.native
 }
 
 @JSGlobal("Touch")

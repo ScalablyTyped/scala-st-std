@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SVGRadialGradientElement extends SVGGradientElement {
-  var cx: SVGAnimatedLength = js.native
-  var cy: SVGAnimatedLength = js.native
-  var fx: SVGAnimatedLength = js.native
-  var fy: SVGAnimatedLength = js.native
-  var r: SVGAnimatedLength = js.native
+  val cx: SVGAnimatedLength = js.native
+  val cy: SVGAnimatedLength = js.native
+  val fx: SVGAnimatedLength = js.native
+  val fy: SVGAnimatedLength = js.native
+  val r: SVGAnimatedLength = js.native
 }
 

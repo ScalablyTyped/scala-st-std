@@ -5,11 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PositionError extends js.Object {
-  var PERMISSION_DENIED: Double
-  var POSITION_UNAVAILABLE: Double
-  var TIMEOUT: Double
-  var code: Double
-  var message: java.lang.String
+  val PERMISSION_DENIED: Double
+  val POSITION_UNAVAILABLE: Double
+  val TIMEOUT: Double
+  val code: Double
+  val message: java.lang.String
 }
 
 object PositionError {

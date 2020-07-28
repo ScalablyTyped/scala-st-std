@@ -10,13 +10,13 @@ import scala.scalajs.js.annotation._
 class MimeType ()
   extends org.scalablytyped.std.MimeType {
   /* CompleteClass */
-  override var description: java.lang.String = js.native
+  override val description: java.lang.String = js.native
   /* CompleteClass */
-  override var enabledPlugin: org.scalablytyped.std.Plugin = js.native
+  override val enabledPlugin: org.scalablytyped.std.Plugin = js.native
   /* CompleteClass */
-  override var suffixes: java.lang.String = js.native
+  override val suffixes: java.lang.String = js.native
   /* CompleteClass */
-  override var `type`: java.lang.String = js.native
+  override val `type`: java.lang.String = js.native
 }
 
 @JSGlobal("MimeType")

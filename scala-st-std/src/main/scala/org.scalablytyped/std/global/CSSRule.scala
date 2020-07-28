@@ -10,54 +10,54 @@ import scala.scalajs.js.annotation._
 class CSSRule ()
   extends org.scalablytyped.std.CSSRule {
   /* CompleteClass */
-  override var CHARSET_RULE: Double = js.native
+  override val CHARSET_RULE: Double = js.native
   /* CompleteClass */
-  override var FONT_FACE_RULE: Double = js.native
+  override val FONT_FACE_RULE: Double = js.native
   /* CompleteClass */
-  override var IMPORT_RULE: Double = js.native
+  override val IMPORT_RULE: Double = js.native
   /* CompleteClass */
-  override var KEYFRAMES_RULE: Double = js.native
+  override val KEYFRAMES_RULE: Double = js.native
   /* CompleteClass */
-  override var KEYFRAME_RULE: Double = js.native
+  override val KEYFRAME_RULE: Double = js.native
   /* CompleteClass */
-  override var MEDIA_RULE: Double = js.native
+  override val MEDIA_RULE: Double = js.native
   /* CompleteClass */
-  override var NAMESPACE_RULE: Double = js.native
+  override val NAMESPACE_RULE: Double = js.native
   /* CompleteClass */
-  override var PAGE_RULE: Double = js.native
+  override val PAGE_RULE: Double = js.native
   /* CompleteClass */
-  override var STYLE_RULE: Double = js.native
+  override val STYLE_RULE: Double = js.native
   /* CompleteClass */
-  override var SUPPORTS_RULE: Double = js.native
+  override val SUPPORTS_RULE: Double = js.native
   /* CompleteClass */
-  override var UNKNOWN_RULE: Double = js.native
+  override val UNKNOWN_RULE: Double = js.native
   /* CompleteClass */
-  override var VIEWPORT_RULE: Double = js.native
+  override val VIEWPORT_RULE: Double = js.native
   /* CompleteClass */
   override var cssText: java.lang.String = js.native
   /* CompleteClass */
-  override var parentRule: org.scalablytyped.std.CSSRule = js.native
+  override val parentRule: org.scalablytyped.std.CSSRule = js.native
   /* CompleteClass */
-  override var parentStyleSheet: org.scalablytyped.std.CSSStyleSheet = js.native
+  override val parentStyleSheet: org.scalablytyped.std.CSSStyleSheet = js.native
   /* CompleteClass */
-  override var `type`: Double = js.native
+  override val `type`: Double = js.native
 }
 
 @JSGlobal("CSSRule")
 @js.native
 object CSSRule
   extends Instantiable0[org.scalablytyped.std.CSSRule] {
-  var CHARSET_RULE: Double = js.native
-  var FONT_FACE_RULE: Double = js.native
-  var IMPORT_RULE: Double = js.native
-  var KEYFRAMES_RULE: Double = js.native
-  var KEYFRAME_RULE: Double = js.native
-  var MEDIA_RULE: Double = js.native
-  var NAMESPACE_RULE: Double = js.native
-  var PAGE_RULE: Double = js.native
-  var STYLE_RULE: Double = js.native
-  var SUPPORTS_RULE: Double = js.native
-  var UNKNOWN_RULE: Double = js.native
-  var VIEWPORT_RULE: Double = js.native
+  val CHARSET_RULE: Double = js.native
+  val FONT_FACE_RULE: Double = js.native
+  val IMPORT_RULE: Double = js.native
+  val KEYFRAMES_RULE: Double = js.native
+  val KEYFRAME_RULE: Double = js.native
+  val MEDIA_RULE: Double = js.native
+  val NAMESPACE_RULE: Double = js.native
+  val PAGE_RULE: Double = js.native
+  val STYLE_RULE: Double = js.native
+  val SUPPORTS_RULE: Double = js.native
+  val UNKNOWN_RULE: Double = js.native
+  val VIEWPORT_RULE: Double = js.native
 }
 

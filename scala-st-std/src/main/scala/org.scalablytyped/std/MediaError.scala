@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MediaError extends js.Object {
-  var MEDIA_ERR_ABORTED: Double
-  var MEDIA_ERR_DECODE: Double
-  var MEDIA_ERR_NETWORK: Double
-  var MEDIA_ERR_SRC_NOT_SUPPORTED: Double
-  var MS_MEDIA_ERR_ENCRYPTED: Double
-  var code: Double
-  var msExtendedCode: Double
+  val MEDIA_ERR_ABORTED: Double
+  val MEDIA_ERR_DECODE: Double
+  val MEDIA_ERR_NETWORK: Double
+  val MEDIA_ERR_SRC_NOT_SUPPORTED: Double
+  val MS_MEDIA_ERR_ENCRYPTED: Double
+  val code: Double
+  val msExtendedCode: Double
 }
 
 object MediaError {

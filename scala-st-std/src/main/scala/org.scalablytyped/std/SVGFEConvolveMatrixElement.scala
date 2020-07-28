@@ -8,27 +8,27 @@ import scala.scalajs.js.annotation._
 - `org.scalablytyped`.std.SVGStylable because var conflicts: className. Inlined style
 - `org.scalablytyped`.std.SVGFilterPrimitiveStandardAttributes because var conflicts: className. Inlined height, result, width, x, y */ @js.native
 trait SVGFEConvolveMatrixElement extends SVGElement {
-  var SVG_EDGEMODE_DUPLICATE: Double = js.native
-  var SVG_EDGEMODE_NONE: Double = js.native
-  var SVG_EDGEMODE_UNKNOWN: Double = js.native
-  var SVG_EDGEMODE_WRAP: Double = js.native
-  var bias: SVGAnimatedNumber = js.native
-  var divisor: SVGAnimatedNumber = js.native
-  var edgeMode: SVGAnimatedEnumeration = js.native
-  var height: SVGAnimatedLength = js.native
-  var in1: SVGAnimatedString = js.native
-  var kernelMatrix: SVGAnimatedNumberList = js.native
-  var kernelUnitLengthX: SVGAnimatedNumber = js.native
-  var kernelUnitLengthY: SVGAnimatedNumber = js.native
-  var orderX: SVGAnimatedInteger = js.native
-  var orderY: SVGAnimatedInteger = js.native
-  var preserveAlpha: SVGAnimatedBoolean = js.native
-  var result: SVGAnimatedString = js.native
-  var style: CSSStyleDeclaration = js.native
-  var targetX: SVGAnimatedInteger = js.native
-  var targetY: SVGAnimatedInteger = js.native
-  var width: SVGAnimatedLength = js.native
-  var x: SVGAnimatedLength = js.native
-  var y: SVGAnimatedLength = js.native
+  val SVG_EDGEMODE_DUPLICATE: Double = js.native
+  val SVG_EDGEMODE_NONE: Double = js.native
+  val SVG_EDGEMODE_UNKNOWN: Double = js.native
+  val SVG_EDGEMODE_WRAP: Double = js.native
+  val bias: SVGAnimatedNumber = js.native
+  val divisor: SVGAnimatedNumber = js.native
+  val edgeMode: SVGAnimatedEnumeration = js.native
+  val height: SVGAnimatedLength = js.native
+  val in1: SVGAnimatedString = js.native
+  val kernelMatrix: SVGAnimatedNumberList = js.native
+  val kernelUnitLengthX: SVGAnimatedNumber = js.native
+  val kernelUnitLengthY: SVGAnimatedNumber = js.native
+  val orderX: SVGAnimatedInteger = js.native
+  val orderY: SVGAnimatedInteger = js.native
+  val preserveAlpha: SVGAnimatedBoolean = js.native
+  val result: SVGAnimatedString = js.native
+  val style: CSSStyleDeclaration = js.native
+  val targetX: SVGAnimatedInteger = js.native
+  val targetY: SVGAnimatedInteger = js.native
+  val width: SVGAnimatedLength = js.native
+  val x: SVGAnimatedLength = js.native
+  val y: SVGAnimatedLength = js.native
 }
 

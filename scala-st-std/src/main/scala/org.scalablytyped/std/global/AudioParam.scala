@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class AudioParam ()
   extends org.scalablytyped.std.AudioParam {
   /* CompleteClass */
-  override var defaultValue: Double = js.native
+  override val defaultValue: Double = js.native
   /* CompleteClass */
   override var value: Double = js.native
   /* CompleteClass */

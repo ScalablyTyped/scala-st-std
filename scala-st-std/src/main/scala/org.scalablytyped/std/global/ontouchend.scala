@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ontouchend")
 @js.native
 object ontouchend
-  extends TopLevel[js.Any]
+  extends TopLevel[js.Function1[/* ev */ org.scalablytyped.std.TouchEvent, js.Any]]
 

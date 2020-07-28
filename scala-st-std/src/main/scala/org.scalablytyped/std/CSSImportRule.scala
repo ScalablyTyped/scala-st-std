@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CSSImportRule extends CSSRule {
-  var href: java.lang.String
-  var media: MediaList
-  var styleSheet: CSSStyleSheet
+  val href: java.lang.String
+  val media: MediaList
+  val styleSheet: CSSStyleSheet
 }
 
 object CSSImportRule {

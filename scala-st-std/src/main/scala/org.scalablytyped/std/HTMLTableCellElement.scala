@@ -24,7 +24,7 @@ trait HTMLTableCellElement
   /**
     * Retrieves the position of the object in the cells collection of a row.
     */
-  var cellIndex: Double = js.native
+  val cellIndex: Double = js.native
   /**
     * Sets or retrieves the number columns in the table that the object should span.
     */

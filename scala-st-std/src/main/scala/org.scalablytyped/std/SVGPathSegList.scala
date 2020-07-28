@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SVGPathSegList extends js.Object {
-  var numberOfItems: Double
+  val numberOfItems: Double
   def appendItem(newItem: SVGPathSeg): SVGPathSeg
   def clear(): Unit
   def getItem(index: Double): SVGPathSeg

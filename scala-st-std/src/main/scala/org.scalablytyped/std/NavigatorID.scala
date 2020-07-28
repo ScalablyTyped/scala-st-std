@@ -5,14 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NavigatorID extends js.Object {
-  var appName: java.lang.String
-  var appVersion: java.lang.String
-  var platform: java.lang.String
-  var product: java.lang.String
-  var productSub: java.lang.String
-  var userAgent: java.lang.String
-  var vendor: java.lang.String
-  var vendorSub: java.lang.String
+  val appName: java.lang.String
+  val appVersion: java.lang.String
+  val platform: java.lang.String
+  val product: java.lang.String
+  val productSub: java.lang.String
+  val userAgent: java.lang.String
+  val vendor: java.lang.String
+  val vendorSub: java.lang.String
 }
 
 object NavigatorID {

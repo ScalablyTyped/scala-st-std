@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SVGNumberList extends js.Object {
-  var numberOfItems: Double
+  val numberOfItems: Double
   def appendItem(newItem: SVGNumber): SVGNumber
   def clear(): Unit
   def getItem(index: Double): SVGNumber

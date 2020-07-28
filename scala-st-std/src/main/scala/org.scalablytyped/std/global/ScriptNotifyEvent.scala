@@ -10,39 +10,39 @@ import scala.scalajs.js.annotation._
 class ScriptNotifyEvent ()
   extends org.scalablytyped.std.ScriptNotifyEvent {
   /* CompleteClass */
-  override var AT_TARGET: Double = js.native
+  override val AT_TARGET: Double = js.native
   /* CompleteClass */
-  override var BUBBLING_PHASE: Double = js.native
+  override val BUBBLING_PHASE: Double = js.native
   /* CompleteClass */
-  override var CAPTURING_PHASE: Double = js.native
+  override val CAPTURING_PHASE: Double = js.native
   /* CompleteClass */
-  override var bubbles: scala.Boolean = js.native
+  override val bubbles: scala.Boolean = js.native
   /* CompleteClass */
-  override var callingUri: java.lang.String = js.native
+  override val callingUri: java.lang.String = js.native
   /* CompleteClass */
   override var cancelBubble: scala.Boolean = js.native
   /* CompleteClass */
-  override var cancelable: scala.Boolean = js.native
+  override val cancelable: scala.Boolean = js.native
   /* CompleteClass */
-  override var currentTarget: org.scalablytyped.std.EventTarget = js.native
+  override val currentTarget: org.scalablytyped.std.EventTarget = js.native
   /* CompleteClass */
-  override var defaultPrevented: scala.Boolean = js.native
+  override val defaultPrevented: scala.Boolean = js.native
   /* CompleteClass */
-  override var eventPhase: Double = js.native
+  override val eventPhase: Double = js.native
   /* CompleteClass */
-  override var isTrusted: scala.Boolean = js.native
+  override val isTrusted: scala.Boolean = js.native
   /* CompleteClass */
   override var returnValue: scala.Boolean = js.native
   /* CompleteClass */
-  override var srcElement: org.scalablytyped.std.Element = js.native
+  override val srcElement: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
-  override var target: org.scalablytyped.std.EventTarget = js.native
+  override val target: org.scalablytyped.std.EventTarget = js.native
   /* CompleteClass */
-  override var timeStamp: Double = js.native
+  override val timeStamp: Double = js.native
   /* CompleteClass */
-  override var `type`: java.lang.String = js.native
+  override val `type`: java.lang.String = js.native
   /* CompleteClass */
-  override var value: java.lang.String = js.native
+  override val value: java.lang.String = js.native
   /* CompleteClass */
   override def initEvent(eventTypeArg: java.lang.String, canBubbleArg: scala.Boolean, cancelableArg: scala.Boolean): Unit = js.native
   /* CompleteClass */

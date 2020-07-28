@@ -22,11 +22,12 @@ trait HTMLTextAreaElement extends HTMLElement {
   /**
     * Retrieves a reference to the form that the object is embedded in.
     */
-  var form: HTMLFormElement = js.native
+  val form: HTMLFormElement = js.native
   /**
     * Sets or retrieves the maximum number of characters that the user can enter in a text control.
     */
   var maxLength: Double = js.native
+  var minLength: Double = js.native
   /**
     * Sets or retrieves the name of the object.
     */
@@ -62,15 +63,15 @@ trait HTMLTextAreaElement extends HTMLElement {
   /**
     * Retrieves the type of control.
     */
-  var `type`: java.lang.String = js.native
+  val `type`: java.lang.String = js.native
   /**
     * Returns the error message that would be displayed if the user submits the form, or an empty string if no error message. It also triggers the standard error message, such as "this is a required field". The result is that the user sees validation messages without actually submitting.
     */
-  var validationMessage: java.lang.String = js.native
+  val validationMessage: java.lang.String = js.native
   /**
     * Returns a  ValidityState object that represents the validity states of an element.
     */
-  var validity: ValidityState = js.native
+  val validity: ValidityState = js.native
   /**
     * Retrieves or sets the text in the entry field of the textArea element.
     */
@@ -78,7 +79,7 @@ trait HTMLTextAreaElement extends HTMLElement {
   /**
     * Returns whether an element will successfully validate based on forms validation rules and constraints.
     */
-  var willValidate: scala.Boolean = js.native
+  val willValidate: scala.Boolean = js.native
   /**
     * Sets or retrieves how to handle wordwrapping in the object.
     */
@@ -87,10 +88,6 @@ trait HTMLTextAreaElement extends HTMLElement {
     * Returns whether a form will validate when it is submitted, without having to submit it.
     */
   def checkValidity(): scala.Boolean = js.native
-  /**
-    * Creates a TextRange object for the element.
-    */
-  def createTextRange(): TextRange = js.native
   /**
     * Highlights the input area of a form element.
     */

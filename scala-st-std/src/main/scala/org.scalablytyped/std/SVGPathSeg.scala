@@ -5,28 +5,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SVGPathSeg extends js.Object {
-  var PATHSEG_ARC_ABS: Double
-  var PATHSEG_ARC_REL: Double
-  var PATHSEG_CLOSEPATH: Double
-  var PATHSEG_CURVETO_CUBIC_ABS: Double
-  var PATHSEG_CURVETO_CUBIC_REL: Double
-  var PATHSEG_CURVETO_CUBIC_SMOOTH_ABS: Double
-  var PATHSEG_CURVETO_CUBIC_SMOOTH_REL: Double
-  var PATHSEG_CURVETO_QUADRATIC_ABS: Double
-  var PATHSEG_CURVETO_QUADRATIC_REL: Double
-  var PATHSEG_CURVETO_QUADRATIC_SMOOTH_ABS: Double
-  var PATHSEG_CURVETO_QUADRATIC_SMOOTH_REL: Double
-  var PATHSEG_LINETO_ABS: Double
-  var PATHSEG_LINETO_HORIZONTAL_ABS: Double
-  var PATHSEG_LINETO_HORIZONTAL_REL: Double
-  var PATHSEG_LINETO_REL: Double
-  var PATHSEG_LINETO_VERTICAL_ABS: Double
-  var PATHSEG_LINETO_VERTICAL_REL: Double
-  var PATHSEG_MOVETO_ABS: Double
-  var PATHSEG_MOVETO_REL: Double
-  var PATHSEG_UNKNOWN: Double
-  var pathSegType: Double
-  var pathSegTypeAsLetter: java.lang.String
+  val PATHSEG_ARC_ABS: Double
+  val PATHSEG_ARC_REL: Double
+  val PATHSEG_CLOSEPATH: Double
+  val PATHSEG_CURVETO_CUBIC_ABS: Double
+  val PATHSEG_CURVETO_CUBIC_REL: Double
+  val PATHSEG_CURVETO_CUBIC_SMOOTH_ABS: Double
+  val PATHSEG_CURVETO_CUBIC_SMOOTH_REL: Double
+  val PATHSEG_CURVETO_QUADRATIC_ABS: Double
+  val PATHSEG_CURVETO_QUADRATIC_REL: Double
+  val PATHSEG_CURVETO_QUADRATIC_SMOOTH_ABS: Double
+  val PATHSEG_CURVETO_QUADRATIC_SMOOTH_REL: Double
+  val PATHSEG_LINETO_ABS: Double
+  val PATHSEG_LINETO_HORIZONTAL_ABS: Double
+  val PATHSEG_LINETO_HORIZONTAL_REL: Double
+  val PATHSEG_LINETO_REL: Double
+  val PATHSEG_LINETO_VERTICAL_ABS: Double
+  val PATHSEG_LINETO_VERTICAL_REL: Double
+  val PATHSEG_MOVETO_ABS: Double
+  val PATHSEG_MOVETO_REL: Double
+  val PATHSEG_UNKNOWN: Double
+  val pathSegType: Double
+  val pathSegTypeAsLetter: java.lang.String
 }
 
 object SVGPathSeg {

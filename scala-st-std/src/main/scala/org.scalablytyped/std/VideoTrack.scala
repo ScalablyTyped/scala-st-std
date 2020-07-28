@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait VideoTrack extends js.Object {
-  var id: java.lang.String
+  val id: java.lang.String
   var kind: java.lang.String
-  var label: java.lang.String
+  val label: java.lang.String
   var language: java.lang.String
   var selected: scala.Boolean
-  var sourceBuffer: SourceBuffer
+  val sourceBuffer: SourceBuffer
 }
 
 object VideoTrack {

@@ -12,48 +12,48 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Float32Array extends /* index */ NumberDictionary[Double] {
   /**
-    * The size in bytes of each element in the array. 
+    * The size in bytes of each element in the array.
     */
-  var BYTES_PER_ELEMENT: Double = js.native
+  val BYTES_PER_ELEMENT: Double = js.native
   /**
-    * The ArrayBuffer instance referenced by the array. 
+    * The ArrayBuffer instance referenced by the array.
     */
-  var buffer: ArrayBuffer = js.native
+  val buffer: ArrayBuffer = js.native
   /**
     * The length in bytes of the array.
     */
-  var byteLength: Double = js.native
+  val byteLength: Double = js.native
   /**
     * The offset in bytes of the array.
     */
-  var byteOffset: Double = js.native
+  val byteOffset: Double = js.native
   @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[Double]] = js.native
   /**
     * The length of the array.
     */
-  var length: Double = js.native
+  val length: Double = js.native
   @JSName(js.Symbol.toStringTag)
-  var toStringTag: org.scalablytyped.std.stdStrings.Float32Array = js.native
-  /** 
+  val toStringTag: org.scalablytyped.std.stdStrings.Float32Array = js.native
+  /**
     * Returns the this object after copying a section of the array identified by start and end
     * to the same array starting at position target
-    * @param target If target is negative, it is treated as length+target where length is the 
-    * length of the array. 
-    * @param start If start is negative, it is treated as length+start. If end is negative, it 
+    * @param target If target is negative, it is treated as length+target where length is the
+    * length of the array.
+    * @param start If start is negative, it is treated as length+start. If end is negative, it
     * is treated as length+end.
-    * @param end If not specified, length of the this object is used as its default value. 
+    * @param end If not specified, length of the this object is used as its default value.
     */
-  def copyWithin(target: Double, start: Double): Float32Array = js.native
-  def copyWithin(target: Double, start: Double, end: Double): Float32Array = js.native
+  def copyWithin(target: Double, start: Double): this.type = js.native
+  def copyWithin(target: Double, start: Double, end: Double): this.type = js.native
   /** 
     * Returns an array of key, value pairs for every entry in the array
     */
   def entries(): IterableIterator[js.Tuple2[Double, Double]] = js.native
   /**
     * Determines whether all the members of an array satisfy the specified test.
-    * @param callbackfn A function that accepts up to three arguments. The every method calls 
-    * the callbackfn function for each element in array1 until the callbackfn returns false, 
+    * @param callbackfn A function that accepts up to three arguments. The every method calls
+    * the callbackfn function for each element in array1 until the callbackfn returns false,
     * or until the end of the array.
     * @param thisArg An object to which the this keyword can refer in the callbackfn function.
     * If thisArg is omitted, undefined is used as the this value.
@@ -68,61 +68,59 @@ trait Float32Array extends /* index */ NumberDictionary[Double] {
   /**
     * Returns the this object after filling the section identified by start and end with value
     * @param value value to fill array section with
-    * @param start index to start filling the array at. If start is negative, it is treated as 
-    * length+start where length is the length of the array. 
-    * @param end index to stop filling the array at. If end is negative, it is treated as 
+    * @param start index to start filling the array at. If start is negative, it is treated as
+    * length+start where length is the length of the array.
+    * @param end index to stop filling the array at. If end is negative, it is treated as
     * length+end.
     */
-  def fill(value: Double): Float32Array = js.native
-  def fill(value: Double, start: js.UndefOr[scala.Nothing], end: Double): Float32Array = js.native
-  def fill(value: Double, start: Double): Float32Array = js.native
-  def fill(value: Double, start: Double, end: Double): Float32Array = js.native
+  def fill(value: Double): this.type = js.native
+  def fill(value: Double, start: js.UndefOr[scala.Nothing], end: Double): this.type = js.native
+  def fill(value: Double, start: Double): this.type = js.native
+  def fill(value: Double, start: Double, end: Double): this.type = js.native
   /**
-    * Returns the elements of an array that meet the condition specified in a callback function. 
-    * @param callbackfn A function that accepts up to three arguments. The filter method calls 
-    * the callbackfn function one time for each element in the array. 
-    * @param thisArg An object to which the this keyword can refer in the callbackfn function. 
+    * Returns the elements of an array that meet the condition specified in a callback function.
+    * @param callbackfn A function that accepts up to three arguments. The filter method calls
+    * the callbackfn function one time for each element in the array.
+    * @param thisArg An object to which the this keyword can refer in the callbackfn function.
     * If thisArg is omitted, undefined is used as the this value.
     */
+  def filter(callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, _]): Float32Array = js.native
   def filter(
-    callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, scala.Boolean]
-  ): Float32Array = js.native
-  def filter(
-    callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, scala.Boolean],
+    callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, _],
     thisArg: js.Any
   ): Float32Array = js.native
-  /** 
-    * Returns the value of the first element in the array where predicate is true, and undefined 
+  /**
+    * Returns the value of the first element in the array where predicate is true, and undefined
     * otherwise.
-    * @param predicate find calls predicate once for each element of the array, in ascending 
-    * order, until it finds one where predicate returns true. If such an element is found, find 
+    * @param predicate find calls predicate once for each element of the array, in ascending
+    * order, until it finds one where predicate returns true. If such an element is found, find
     * immediately returns that element value. Otherwise, find returns undefined.
-    * @param thisArg If provided, it will be used as the this value for each invocation of 
+    * @param thisArg If provided, it will be used as the this value for each invocation of
     * predicate. If it is not provided, undefined is used instead.
     */
   def find(
     predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ js.Array[Double], scala.Boolean]
-  ): Double = js.native
+  ): js.UndefOr[Double] = js.native
   def find(
     predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ js.Array[Double], scala.Boolean],
     thisArg: js.Any
-  ): Double = js.native
-  /** 
-    * Returns the index of the first element in the array where predicate is true, and undefined 
+  ): js.UndefOr[Double] = js.native
+  /**
+    * Returns the index of the first element in the array where predicate is true, and undefined
     * otherwise.
-    * @param predicate find calls predicate once for each element of the array, in ascending 
-    * order, until it finds one where predicate returns true. If such an element is found, find 
-    * immediately returns that element value. Otherwise, find returns undefined.
-    * @param thisArg If provided, it will be used as the this value for each invocation of 
+    * @param predicate find calls predicate once for each element of the array, in ascending
+    * order, until it finds one where predicate returns true. If such an element is found,
+    * findIndex immediately returns that element index. Otherwise, findIndex returns -1.
+    * @param thisArg If provided, it will be used as the this value for each invocation of
     * predicate. If it is not provided, undefined is used instead.
     */
   def findIndex(predicate: js.Function1[/* value */ Double, scala.Boolean]): Double = js.native
   def findIndex(predicate: js.Function1[/* value */ Double, scala.Boolean], thisArg: js.Any): Double = js.native
   /**
     * Performs the specified action for each element in an array.
-    * @param callbackfn  A function that accepts up to three arguments. forEach calls the 
-    * callbackfn function one time for each element in the array. 
-    * @param thisArg  An object to which the this keyword can refer in the callbackfn function. 
+    * @param callbackfn  A function that accepts up to three arguments. forEach calls the
+    * callbackfn function one time for each element in the array.
+    * @param thisArg  An object to which the this keyword can refer in the callbackfn function.
     * If thisArg is omitted, undefined is used as the this value.
     */
   def forEach(callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Unit]): Unit = js.native
@@ -140,7 +138,7 @@ trait Float32Array extends /* index */ NumberDictionary[Double] {
   def indexOf(searchElement: Double, fromIndex: Double): Double = js.native
   /**
     * Adds all the elements of an array separated by the specified separator string.
-    * @param separator A string used to separate one element of an array from the next in the 
+    * @param separator A string used to separate one element of an array from the next in the
     * resulting String. If omitted, the array elements are separated with a comma.
     */
   def join(): java.lang.String = js.native
@@ -152,17 +150,17 @@ trait Float32Array extends /* index */ NumberDictionary[Double] {
   /**
     * Returns the index of the last occurrence of a value in an array.
     * @param searchElement The value to locate in the array.
-    * @param fromIndex The array index at which to begin the search. If fromIndex is omitted, the 
+    * @param fromIndex The array index at which to begin the search. If fromIndex is omitted, the
     * search starts at index 0.
     */
   def lastIndexOf(searchElement: Double): Double = js.native
   def lastIndexOf(searchElement: Double, fromIndex: Double): Double = js.native
   /**
-    * Calls a defined callback function on each element of an array, and returns an array that 
+    * Calls a defined callback function on each element of an array, and returns an array that
     * contains the results.
-    * @param callbackfn A function that accepts up to three arguments. The map method calls the 
-    * callbackfn function one time for each element in the array. 
-    * @param thisArg An object to which the this keyword can refer in the callbackfn function. 
+    * @param callbackfn A function that accepts up to three arguments. The map method calls the
+    * callbackfn function one time for each element in the array.
+    * @param thisArg An object to which the this keyword can refer in the callbackfn function.
     * If thisArg is omitted, undefined is used as the this value.
     */
   def map(callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Double]): Float32Array = js.native
@@ -171,12 +169,12 @@ trait Float32Array extends /* index */ NumberDictionary[Double] {
     thisArg: js.Any
   ): Float32Array = js.native
   /**
-    * Calls the specified callback function for all the elements in an array. The return value of 
-    * the callback function is the accumulated result, and is provided as an argument in the next 
+    * Calls the specified callback function for all the elements in an array. The return value of
+    * the callback function is the accumulated result, and is provided as an argument in the next
     * call to the callback function.
-    * @param callbackfn A function that accepts up to four arguments. The reduce method calls the 
+    * @param callbackfn A function that accepts up to four arguments. The reduce method calls the
     * callbackfn function one time for each element in the array.
-    * @param initialValue If initialValue is specified, it is used as the initial value to start 
+    * @param initialValue If initialValue is specified, it is used as the initial value to start
     * the accumulation. The first call to the callbackfn function provides this value as an argument
     * instead of an array value.
     */
@@ -200,13 +198,13 @@ trait Float32Array extends /* index */ NumberDictionary[Double] {
     initialValue: Double
   ): Double = js.native
   /**
-    * Calls the specified callback function for all the elements in an array. The return value of 
-    * the callback function is the accumulated result, and is provided as an argument in the next 
+    * Calls the specified callback function for all the elements in an array. The return value of
+    * the callback function is the accumulated result, and is provided as an argument in the next
     * call to the callback function.
-    * @param callbackfn A function that accepts up to four arguments. The reduce method calls the 
+    * @param callbackfn A function that accepts up to four arguments. The reduce method calls the
     * callbackfn function one time for each element in the array.
-    * @param initialValue If initialValue is specified, it is used as the initial value to start 
-    * the accumulation. The first call to the callbackfn function provides this value as an argument 
+    * @param initialValue If initialValue is specified, it is used as the initial value to start
+    * the accumulation. The first call to the callbackfn function provides this value as an argument
     * instead of an array value.
     */
   def reduce[U](
@@ -219,14 +217,14 @@ trait Float32Array extends /* index */ NumberDictionary[Double] {
     ],
     initialValue: U
   ): U = js.native
-  /** 
-    * Calls the specified callback function for all the elements in an array, in descending order. 
-    * The return value of the callback function is the accumulated result, and is provided as an 
+  /**
+    * Calls the specified callback function for all the elements in an array, in descending order.
+    * The return value of the callback function is the accumulated result, and is provided as an
     * argument in the next call to the callback function.
-    * @param callbackfn A function that accepts up to four arguments. The reduceRight method calls 
-    * the callbackfn function one time for each element in the array. 
-    * @param initialValue If initialValue is specified, it is used as the initial value to start 
-    * the accumulation. The first call to the callbackfn function provides this value as an 
+    * @param callbackfn A function that accepts up to four arguments. The reduceRight method calls
+    * the callbackfn function one time for each element in the array.
+    * @param initialValue If initialValue is specified, it is used as the initial value to start
+    * the accumulation. The first call to the callbackfn function provides this value as an
     * argument instead of an array value.
     */
   def reduceRight(
@@ -248,13 +246,13 @@ trait Float32Array extends /* index */ NumberDictionary[Double] {
     ],
     initialValue: Double
   ): Double = js.native
-  /** 
-    * Calls the specified callback function for all the elements in an array, in descending order. 
-    * The return value of the callback function is the accumulated result, and is provided as an 
+  /**
+    * Calls the specified callback function for all the elements in an array, in descending order.
+    * The return value of the callback function is the accumulated result, and is provided as an
     * argument in the next call to the callback function.
     * @param callbackfn A function that accepts up to four arguments. The reduceRight method calls
-    * the callbackfn function one time for each element in the array. 
-    * @param initialValue If initialValue is specified, it is used as the initial value to start 
+    * the callbackfn function one time for each element in the array.
+    * @param initialValue If initialValue is specified, it is used as the initial value to start
     * the accumulation. The first call to the callbackfn function provides this value as an argument
     * instead of an array value.
     */
@@ -269,7 +267,7 @@ trait Float32Array extends /* index */ NumberDictionary[Double] {
     initialValue: U
   ): U = js.native
   /**
-    * Reverses the elements in an Array. 
+    * Reverses the elements in an Array.
     */
   def reverse(): Float32Array = js.native
   /**
@@ -285,7 +283,7 @@ trait Float32Array extends /* index */ NumberDictionary[Double] {
     * @param value The value to set.
     */
   def set(index: Double, value: Double): Unit = js.native
-  /** 
+  /**
     * Returns a section of an array.
     * @param start The beginning of the specified portion of the array.
     * @param end The end of the specified portion of the array.
@@ -296,10 +294,10 @@ trait Float32Array extends /* index */ NumberDictionary[Double] {
   def slice(start: Double, end: Double): Float32Array = js.native
   /**
     * Determines whether the specified callback function returns true for any element of an array.
-    * @param callbackfn A function that accepts up to three arguments. The some method calls the 
-    * callbackfn function for each element in array1 until the callbackfn returns true, or until 
+    * @param callbackfn A function that accepts up to three arguments. The some method calls the
+    * callbackfn function for each element in array1 until the callbackfn returns true, or until
     * the end of the array.
-    * @param thisArg An object to which the this keyword can refer in the callbackfn function. 
+    * @param thisArg An object to which the this keyword can refer in the callbackfn function.
     * If thisArg is omitted, undefined is used as the this value.
     */
   def some(
@@ -311,14 +309,14 @@ trait Float32Array extends /* index */ NumberDictionary[Double] {
   ): scala.Boolean = js.native
   /**
     * Sorts an array.
-    * @param compareFn The name of the function used to determine the order of the elements. If 
+    * @param compareFn The name of the function used to determine the order of the elements. If
     * omitted, the elements are sorted in ascending, ASCII character order.
     */
-  def sort(): Float32Array = js.native
-  def sort(compareFn: js.Function2[/* a */ Double, /* b */ Double, Double]): Float32Array = js.native
+  def sort(): this.type = js.native
+  def sort(compareFn: js.Function2[/* a */ Double, /* b */ Double, Double]): this.type = js.native
   /**
     * Gets a new Float32Array view of the ArrayBuffer store for this array, referencing the elements
-    * at begin, inclusive, up to end, exclusive. 
+    * at begin, inclusive, up to end, exclusive.
     * @param begin The index of the beginning of the array.
     * @param end The index of the end of the array.
     */

@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 class TouchList ()
   extends org.scalablytyped.std.TouchList {
   /* CompleteClass */
-  override var length: Double = js.native
+  override val length: Double = js.native
   /* CompleteClass */
-  override def item(index: Double): org.scalablytyped.std.Touch = js.native
+  override def item(index: Double): org.scalablytyped.std.Touch | Null = js.native
 }
 
 @JSGlobal("TouchList")

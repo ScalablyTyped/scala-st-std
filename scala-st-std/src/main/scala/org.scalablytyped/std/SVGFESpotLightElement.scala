@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SVGFESpotLightElement extends SVGElement {
-  var limitingConeAngle: SVGAnimatedNumber = js.native
-  var pointsAtX: SVGAnimatedNumber = js.native
-  var pointsAtY: SVGAnimatedNumber = js.native
-  var pointsAtZ: SVGAnimatedNumber = js.native
-  var specularExponent: SVGAnimatedNumber = js.native
-  var x: SVGAnimatedNumber = js.native
-  var y: SVGAnimatedNumber = js.native
-  var z: SVGAnimatedNumber = js.native
+  val limitingConeAngle: SVGAnimatedNumber = js.native
+  val pointsAtX: SVGAnimatedNumber = js.native
+  val pointsAtY: SVGAnimatedNumber = js.native
+  val pointsAtZ: SVGAnimatedNumber = js.native
+  val specularExponent: SVGAnimatedNumber = js.native
+  val x: SVGAnimatedNumber = js.native
+  val y: SVGAnimatedNumber = js.native
+  val z: SVGAnimatedNumber = js.native
 }
 

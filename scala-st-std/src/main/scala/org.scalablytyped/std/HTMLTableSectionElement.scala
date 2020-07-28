@@ -15,7 +15,7 @@ trait HTMLTableSectionElement
   /**
     * Sets or retrieves the number of horizontal rows contained in the object.
     */
-  var rows: HTMLCollection = js.native
+  var rows: HTMLCollectionOf[HTMLTableRowElement] = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */

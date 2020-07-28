@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SVGTransformList extends js.Object {
-  var numberOfItems: Double
+  val numberOfItems: Double
   def appendItem(newItem: SVGTransform): SVGTransform
   def clear(): Unit
   def consolidate(): SVGTransform

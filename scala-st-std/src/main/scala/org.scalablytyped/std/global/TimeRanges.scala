@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class TimeRanges ()
   extends org.scalablytyped.std.TimeRanges {
   /* CompleteClass */
-  override var length: Double = js.native
+  override val length: Double = js.native
   /* CompleteClass */
   override def end(index: Double): Double = js.native
   /* CompleteClass */

@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MSApp extends js.Object {
-  var CURRENT: java.lang.String
-  var HIGH: java.lang.String
-  var IDLE: java.lang.String
-  var NORMAL: java.lang.String
+  val CURRENT: java.lang.String
+  val HIGH: java.lang.String
+  val IDLE: java.lang.String
+  val NORMAL: java.lang.String
   def clearTemporaryWebDataAsync(): MSAppAsyncOperation
   def createBlobFromRandomAccessStream(`type`: java.lang.String, seeker: js.Any): Blob
   def createDataPackage(`object`: js.Any): js.Any
@@ -18,7 +18,7 @@ trait MSApp extends js.Object {
   def execAsyncAtPriority(asynchronousCallback: MSExecAtPriorityFunctionCallback, priority: java.lang.String, args: js.Any*): Unit
   def execAtPriority(synchronousCallback: MSExecAtPriorityFunctionCallback, priority: java.lang.String, args: js.Any*): js.Any
   def getCurrentPriority(): java.lang.String
-  def getHtmlPrintDocumentSourceAsync(htmlDoc: js.Any): js.Any
+  def getHtmlPrintDocumentSourceAsync(htmlDoc: js.Any): js.Thenable[_]
   def getViewId(view: js.Any): js.Any
   def isTaskScheduledAtPriorityOrHigher(priority: java.lang.String): scala.Boolean
   def pageHandlesAllApplicationActivations(enabled: scala.Boolean): Unit
@@ -42,7 +42,7 @@ object MSApp {
     execAsyncAtPriority: (MSExecAtPriorityFunctionCallback, java.lang.String, /* repeated */ js.Any) => Unit,
     execAtPriority: (MSExecAtPriorityFunctionCallback, java.lang.String, /* repeated */ js.Any) => js.Any,
     getCurrentPriority: () => java.lang.String,
-    getHtmlPrintDocumentSourceAsync: js.Any => js.Any,
+    getHtmlPrintDocumentSourceAsync: js.Any => js.Thenable[_],
     getViewId: js.Any => js.Any,
     isTaskScheduledAtPriorityOrHigher: java.lang.String => scala.Boolean,
     pageHandlesAllApplicationActivations: scala.Boolean => Unit,
@@ -90,7 +90,7 @@ object MSApp {
     @scala.inline
     def setGetCurrentPriority(value: () => java.lang.String): Self = this.set("getCurrentPriority", js.Any.fromFunction0(value))
     @scala.inline
-    def setGetHtmlPrintDocumentSourceAsync(value: js.Any => js.Any): Self = this.set("getHtmlPrintDocumentSourceAsync", js.Any.fromFunction1(value))
+    def setGetHtmlPrintDocumentSourceAsync(value: js.Any => js.Thenable[_]): Self = this.set("getHtmlPrintDocumentSourceAsync", js.Any.fromFunction1(value))
     @scala.inline
     def setGetViewId(value: js.Any => js.Any): Self = this.set("getViewId", js.Any.fromFunction1(value))
     @scala.inline

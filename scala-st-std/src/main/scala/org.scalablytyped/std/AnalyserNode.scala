@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AnalyserNode extends AudioNode {
   var fftSize: Double = js.native
-  var frequencyBinCount: Double = js.native
+  val frequencyBinCount: Double = js.native
   var maxDecibels: Double = js.native
   var minDecibels: Double = js.native
   var smoothingTimeConstant: Double = js.native

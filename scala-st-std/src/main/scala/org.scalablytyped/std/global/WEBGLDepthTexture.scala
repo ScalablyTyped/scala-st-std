@@ -10,13 +10,13 @@ import scala.scalajs.js.annotation._
 class WEBGLDepthTexture ()
   extends org.scalablytyped.std.WEBGLDepthTexture {
   /* CompleteClass */
-  override var UNSIGNED_INT_24_8_WEBGL: Double = js.native
+  override val UNSIGNED_INT_24_8_WEBGL: Double = js.native
 }
 
 @JSGlobal("WEBGL_depth_texture")
 @js.native
 object WEBGLDepthTexture
   extends Instantiable0[org.scalablytyped.std.WEBGLDepthTexture] {
-  var UNSIGNED_INT_24_8_WEBGL: Double = js.native
+  val UNSIGNED_INT_24_8_WEBGL: Double = js.native
 }
 

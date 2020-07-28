@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TouchList extends /* index */ NumberDictionary[Touch] {
-  var length: Double
-  def item(index: Double): Touch
+  val length: Double
+  def item(index: Double): Touch | Null
 }
 
 object TouchList {
   @scala.inline
-  def apply(item: Double => Touch, length: Double): TouchList = {
+  def apply(item: Double => Touch | Null, length: Double): TouchList = {
     val __obj = js.Dynamic.literal(item = js.Any.fromFunction1(item), length = length.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchList]
   }
@@ -28,7 +28,7 @@ object TouchList {
         x
     }
     @scala.inline
-    def setItem(value: Double => Touch): Self = this.set("item", js.Any.fromFunction1(value))
+    def setItem(value: Double => Touch | Null): Self = this.set("item", js.Any.fromFunction1(value))
     @scala.inline
     def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
   }

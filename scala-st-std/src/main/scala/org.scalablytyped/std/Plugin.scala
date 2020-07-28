@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Plugin extends /* index */ NumberDictionary[MimeType] {
-  var description: java.lang.String
-  var filename: java.lang.String
-  var length: Double
-  var name: java.lang.String
-  var version: java.lang.String
+  val description: java.lang.String
+  val filename: java.lang.String
+  val length: Double
+  val name: java.lang.String
+  val version: java.lang.String
   def item(index: Double): MimeType
   def namedItem(`type`: java.lang.String): MimeType
 }

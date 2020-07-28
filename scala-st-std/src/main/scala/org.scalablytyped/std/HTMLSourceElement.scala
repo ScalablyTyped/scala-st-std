@@ -11,10 +11,12 @@ trait HTMLSourceElement extends HTMLElement {
     */
   var media: java.lang.String = js.native
   var msKeySystem: java.lang.String = js.native
+  var sizes: java.lang.String = js.native
   /**
     * The address or URL of the a media resource that is to be considered.
     */
   var src: java.lang.String = js.native
+  var srcset: java.lang.String = js.native
   /**
     * Gets or sets the MIME type of a media resource.
     */

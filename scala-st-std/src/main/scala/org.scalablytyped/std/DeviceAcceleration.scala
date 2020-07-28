@@ -5,15 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceAcceleration extends js.Object {
-  var x: Double
-  var y: Double
-  var z: Double
+  val x: Double | Null
+  val y: Double | Null
+  val z: Double | Null
 }
 
 object DeviceAcceleration {
   @scala.inline
-  def apply(x: Double, y: Double, z: Double): DeviceAcceleration = {
-    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
+  def apply(): DeviceAcceleration = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceAcceleration]
   }
   @scala.inline
@@ -30,9 +30,15 @@ object DeviceAcceleration {
     @scala.inline
     def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
     @scala.inline
+    def setXNull: Self = this.set("x", null)
+    @scala.inline
     def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
     @scala.inline
+    def setYNull: Self = this.set("y", null)
+    @scala.inline
     def setZ(value: Double): Self = this.set("z", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setZNull: Self = this.set("z", null)
   }
   
 }

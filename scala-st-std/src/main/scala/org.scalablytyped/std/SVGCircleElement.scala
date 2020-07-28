@@ -12,10 +12,10 @@ trait SVGCircleElement
      with SVGTests
      with SVGLangSpace
      with SVGExternalResourcesRequired {
-  var cx: SVGAnimatedLength = js.native
-  var cy: SVGAnimatedLength = js.native
-  var r: SVGAnimatedLength = js.native
-  var style: CSSStyleDeclaration = js.native
+  val cx: SVGAnimatedLength = js.native
+  val cy: SVGAnimatedLength = js.native
+  val r: SVGAnimatedLength = js.native
+  val style: CSSStyleDeclaration = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */

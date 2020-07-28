@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class RegExp protected ()
   extends org.scalablytyped.std.RegExp {
+  def this(pattern: org.scalablytyped.std.RegExp) = this()
   def this(pattern: java.lang.String) = this()
+  def this(pattern: org.scalablytyped.std.RegExp, flags: java.lang.String) = this()
   def this(pattern: java.lang.String, flags: java.lang.String) = this()
 }
 

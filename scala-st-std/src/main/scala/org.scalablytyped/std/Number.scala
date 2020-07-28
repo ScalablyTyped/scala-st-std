@@ -13,7 +13,7 @@ trait Number extends js.Object {
     */
   def toExponential(): java.lang.String = js.native
   def toExponential(fractionDigits: Double): java.lang.String = js.native
-  /** 
+  /**
     * Returns a string representing a number in fixed-point notation.
     * @param fractionDigits Number of digits after the decimal point. Must be in the range 0 - 20, inclusive.
     */

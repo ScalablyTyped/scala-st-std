@@ -31,6 +31,8 @@ trait DocumentEvent extends js.Object {
   @JSName("createEvent")
   def createEvent_CustomEvent(eventInterface: org.scalablytyped.std.stdStrings.CustomEvent): CustomEvent = js.native
   @JSName("createEvent")
+  def createEvent_DeviceLightEvent(eventInterface: org.scalablytyped.std.stdStrings.DeviceLightEvent): DeviceLightEvent = js.native
+  @JSName("createEvent")
   def createEvent_DeviceMotionEvent(eventInterface: org.scalablytyped.std.stdStrings.DeviceMotionEvent): DeviceMotionEvent = js.native
   @JSName("createEvent")
   def createEvent_DeviceOrientationEvent(eventInterface: org.scalablytyped.std.stdStrings.DeviceOrientationEvent): DeviceOrientationEvent = js.native
@@ -53,6 +55,8 @@ trait DocumentEvent extends js.Object {
   @JSName("createEvent")
   def createEvent_KeyboardEvent(eventInterface: org.scalablytyped.std.stdStrings.KeyboardEvent): KeyboardEvent = js.native
   @JSName("createEvent")
+  def createEvent_ListeningStateChangedEvent(eventInterface: org.scalablytyped.std.stdStrings.ListeningStateChangedEvent): ListeningStateChangedEvent = js.native
+  @JSName("createEvent")
   def createEvent_LongRunningScriptDetectedEvent(eventInterface: org.scalablytyped.std.stdStrings.LongRunningScriptDetectedEvent): LongRunningScriptDetectedEvent = js.native
   @JSName("createEvent")
   def createEvent_MSGestureEvent(eventInterface: org.scalablytyped.std.stdStrings.MSGestureEvent): MSGestureEvent = js.native
@@ -67,13 +71,19 @@ trait DocumentEvent extends js.Object {
   @JSName("createEvent")
   def createEvent_MSSiteModeEvent(eventInterface: org.scalablytyped.std.stdStrings.MSSiteModeEvent): MSSiteModeEvent = js.native
   @JSName("createEvent")
+  def createEvent_MediaEncryptedEvent(eventInterface: org.scalablytyped.std.stdStrings.MediaEncryptedEvent): MediaEncryptedEvent = js.native
+  @JSName("createEvent")
+  def createEvent_MediaKeyMessageEvent(eventInterface: org.scalablytyped.std.stdStrings.MediaKeyMessageEvent): MediaKeyMessageEvent = js.native
+  @JSName("createEvent")
+  def createEvent_MediaStreamErrorEvent(eventInterface: org.scalablytyped.std.stdStrings.MediaStreamErrorEvent): MediaStreamErrorEvent = js.native
+  @JSName("createEvent")
+  def createEvent_MediaStreamTrackEvent(eventInterface: org.scalablytyped.std.stdStrings.MediaStreamTrackEvent): MediaStreamTrackEvent = js.native
+  @JSName("createEvent")
   def createEvent_MessageEvent(eventInterface: org.scalablytyped.std.stdStrings.MessageEvent): MessageEvent = js.native
   @JSName("createEvent")
   def createEvent_MouseEvent(eventInterface: org.scalablytyped.std.stdStrings.MouseEvent): MouseEvent = js.native
   @JSName("createEvent")
   def createEvent_MouseEvents(eventInterface: MouseEvents): MouseEvent = js.native
-  @JSName("createEvent")
-  def createEvent_MouseWheelEvent(eventInterface: org.scalablytyped.std.stdStrings.MouseWheelEvent): MouseWheelEvent = js.native
   @JSName("createEvent")
   def createEvent_MutationEvent(eventInterface: org.scalablytyped.std.stdStrings.MutationEvent): MutationEvent = js.native
   @JSName("createEvent")
@@ -87,6 +97,8 @@ trait DocumentEvent extends js.Object {
   @JSName("createEvent")
   def createEvent_OfflineAudioCompletionEvent(eventInterface: org.scalablytyped.std.stdStrings.OfflineAudioCompletionEvent): OfflineAudioCompletionEvent = js.native
   @JSName("createEvent")
+  def createEvent_OverflowEvent(eventInterface: org.scalablytyped.std.stdStrings.OverflowEvent): OverflowEvent = js.native
+  @JSName("createEvent")
   def createEvent_PageTransitionEvent(eventInterface: org.scalablytyped.std.stdStrings.PageTransitionEvent): PageTransitionEvent = js.native
   @JSName("createEvent")
   def createEvent_PermissionRequestedEvent(eventInterface: org.scalablytyped.std.stdStrings.PermissionRequestedEvent): PermissionRequestedEvent = js.native
@@ -96,6 +108,18 @@ trait DocumentEvent extends js.Object {
   def createEvent_PopStateEvent(eventInterface: org.scalablytyped.std.stdStrings.PopStateEvent): PopStateEvent = js.native
   @JSName("createEvent")
   def createEvent_ProgressEvent(eventInterface: org.scalablytyped.std.stdStrings.ProgressEvent): ProgressEvent = js.native
+  @JSName("createEvent")
+  def createEvent_RTCDTMFToneChangeEvent(eventInterface: org.scalablytyped.std.stdStrings.RTCDTMFToneChangeEvent): RTCDTMFToneChangeEvent = js.native
+  @JSName("createEvent")
+  def createEvent_RTCDtlsTransportStateChangedEvent(eventInterface: org.scalablytyped.std.stdStrings.RTCDtlsTransportStateChangedEvent): RTCDtlsTransportStateChangedEvent = js.native
+  @JSName("createEvent")
+  def createEvent_RTCIceCandidatePairChangedEvent(eventInterface: org.scalablytyped.std.stdStrings.RTCIceCandidatePairChangedEvent): RTCIceCandidatePairChangedEvent = js.native
+  @JSName("createEvent")
+  def createEvent_RTCIceGathererEvent(eventInterface: org.scalablytyped.std.stdStrings.RTCIceGathererEvent): RTCIceGathererEvent = js.native
+  @JSName("createEvent")
+  def createEvent_RTCIceTransportStateChangedEvent(eventInterface: org.scalablytyped.std.stdStrings.RTCIceTransportStateChangedEvent): RTCIceTransportStateChangedEvent = js.native
+  @JSName("createEvent")
+  def createEvent_RTCSsrcConflictEvent(eventInterface: org.scalablytyped.std.stdStrings.RTCSsrcConflictEvent): RTCSsrcConflictEvent = js.native
   @JSName("createEvent")
   def createEvent_SVGZoomEvent(eventInterface: org.scalablytyped.std.stdStrings.SVGZoomEvent): SVGZoomEvent = js.native
   @JSName("createEvent")

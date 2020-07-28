@@ -9,7 +9,7 @@ trait CharacterData
   extends Node
      with ChildNode {
   var data: java.lang.String = js.native
-  var length: Double = js.native
+  val length: Double = js.native
   def appendData(arg: java.lang.String): Unit = js.native
   def deleteData(offset: Double, count: Double): Unit = js.native
   def insertData(offset: Double, arg: java.lang.String): Unit = js.native

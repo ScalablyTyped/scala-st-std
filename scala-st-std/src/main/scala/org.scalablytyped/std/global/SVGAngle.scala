@@ -10,17 +10,17 @@ import scala.scalajs.js.annotation._
 class SVGAngle ()
   extends org.scalablytyped.std.SVGAngle {
   /* CompleteClass */
-  override var SVG_ANGLETYPE_DEG: Double = js.native
+  override val SVG_ANGLETYPE_DEG: Double = js.native
   /* CompleteClass */
-  override var SVG_ANGLETYPE_GRAD: Double = js.native
+  override val SVG_ANGLETYPE_GRAD: Double = js.native
   /* CompleteClass */
-  override var SVG_ANGLETYPE_RAD: Double = js.native
+  override val SVG_ANGLETYPE_RAD: Double = js.native
   /* CompleteClass */
-  override var SVG_ANGLETYPE_UNKNOWN: Double = js.native
+  override val SVG_ANGLETYPE_UNKNOWN: Double = js.native
   /* CompleteClass */
-  override var SVG_ANGLETYPE_UNSPECIFIED: Double = js.native
+  override val SVG_ANGLETYPE_UNSPECIFIED: Double = js.native
   /* CompleteClass */
-  override var unitType: Double = js.native
+  override val unitType: Double = js.native
   /* CompleteClass */
   override var value: Double = js.native
   /* CompleteClass */
@@ -37,10 +37,10 @@ class SVGAngle ()
 @js.native
 object SVGAngle
   extends Instantiable0[org.scalablytyped.std.SVGAngle] {
-  var SVG_ANGLETYPE_DEG: Double = js.native
-  var SVG_ANGLETYPE_GRAD: Double = js.native
-  var SVG_ANGLETYPE_RAD: Double = js.native
-  var SVG_ANGLETYPE_UNKNOWN: Double = js.native
-  var SVG_ANGLETYPE_UNSPECIFIED: Double = js.native
+  val SVG_ANGLETYPE_DEG: Double = js.native
+  val SVG_ANGLETYPE_GRAD: Double = js.native
+  val SVG_ANGLETYPE_RAD: Double = js.native
+  val SVG_ANGLETYPE_UNKNOWN: Double = js.native
+  val SVG_ANGLETYPE_UNSPECIFIED: Double = js.native
 }
 

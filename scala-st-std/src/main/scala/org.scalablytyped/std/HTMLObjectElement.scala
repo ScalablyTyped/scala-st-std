@@ -11,7 +11,7 @@ trait HTMLObjectElement
   /**
     * Retrieves a string of the URL where the object tag can be found. This is often the href of the document that the object is in, or the value set by a base element.
     */
-  var BaseHref: java.lang.String = js.native
+  val BaseHref: java.lang.String = js.native
   var align: java.lang.String = js.native
   /**
     * Sets or retrieves a text alternative to the graphic.
@@ -41,7 +41,7 @@ trait HTMLObjectElement
   /**
     * Retrieves the document object of the page or frame.
     */
-  var contentDocument: Document = js.native
+  val contentDocument: Document = js.native
   /**
     * Sets or retrieves the URL that references the data of the object.
     */
@@ -50,7 +50,7 @@ trait HTMLObjectElement
   /**
     * Retrieves a reference to the form that the object is embedded in.
     */
-  var form: HTMLFormElement = js.native
+  val form: HTMLFormElement = js.native
   /**
     * Sets or retrieves the height of the object.
     */
@@ -71,7 +71,7 @@ trait HTMLObjectElement
   /**
     * Gets the source associated with the media element for use by the PlayToManager.
     */
-  var msPlayToSource: js.Any = js.native
+  val msPlayToSource: js.Any = js.native
   /**
     * Sets or retrieves the name of the object.
     */
@@ -79,8 +79,8 @@ trait HTMLObjectElement
   /**
     * Retrieves the contained object.
     */
-  var `object`: js.Any = js.native
-  var readyState: Double = js.native
+  val `object`: js.Any = js.native
+  val readyState: Double = js.native
   /**
     * Sets or retrieves a message to be displayed while an object is loading.
     */
@@ -96,11 +96,11 @@ trait HTMLObjectElement
   /**
     * Returns the error message that would be displayed if the user submits the form, or an empty string if no error message. It also triggers the standard error message, such as "this is a required field". The result is that the user sees validation messages without actually submitting.
     */
-  var validationMessage: java.lang.String = js.native
+  val validationMessage: java.lang.String = js.native
   /**
     * Returns a  ValidityState object that represents the validity states of an element.
     */
-  var validity: ValidityState = js.native
+  val validity: ValidityState = js.native
   var vspace: Double = js.native
   /**
     * Sets or retrieves the width of the object.
@@ -109,7 +109,7 @@ trait HTMLObjectElement
   /**
     * Returns whether an element will successfully validate based on forms validation rules and constraints.
     */
-  var willValidate: scala.Boolean = js.native
+  val willValidate: scala.Boolean = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */

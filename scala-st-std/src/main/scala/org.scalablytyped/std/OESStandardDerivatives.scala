@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OESStandardDerivatives extends js.Object {
-  var FRAGMENT_SHADER_DERIVATIVE_HINT_OES: Double
+  val FRAGMENT_SHADER_DERIVATIVE_HINT_OES: Double
 }
 
 object OESStandardDerivatives {

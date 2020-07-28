@@ -20,11 +20,11 @@ trait HTMLIFrameElement
   /**
     * Retrieves the document object of the page or frame.
     */
-  var contentDocument: Document = js.native
+  val contentDocument: Document = js.native
   /**
     * Retrieves the object of the specified.
     */
-  var contentWindow: Window = js.native
+  val contentWindow: Window = js.native
   /**
     * Sets or retrieves whether to display a border for the frame.
     */
@@ -61,15 +61,11 @@ trait HTMLIFrameElement
     * Sets or retrieves whether the user can resize the frame.
     */
   var noResize: scala.Boolean = js.native
-  var sandbox: DOMSettableTokenList = js.native
+  val sandbox: DOMSettableTokenList = js.native
   /**
     * Sets or retrieves whether the frame can be scrolled.
     */
   var scrolling: java.lang.String = js.native
-  /**
-    * Sets the value indicating whether the source file of a frame or iframe has specific security restrictions applied.
-    */
-  var security: js.Any = js.native
   /**
     * Sets or retrieves a URL to be loaded by the object.
     */

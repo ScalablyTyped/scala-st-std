@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class DOMError ()
   extends org.scalablytyped.std.DOMError {
   /* CompleteClass */
-  override var name: java.lang.String = js.native
+  override val name: java.lang.String = js.native
 }
 
 @JSGlobal("DOMError")

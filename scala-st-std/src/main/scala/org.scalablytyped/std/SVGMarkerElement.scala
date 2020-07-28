@@ -11,20 +11,20 @@ trait SVGMarkerElement
      with SVGLangSpace
      with SVGExternalResourcesRequired
      with SVGFitToViewBox {
-  var SVG_MARKERUNITS_STROKEWIDTH: Double = js.native
-  var SVG_MARKERUNITS_UNKNOWN: Double = js.native
-  var SVG_MARKERUNITS_USERSPACEONUSE: Double = js.native
-  var SVG_MARKER_ORIENT_ANGLE: Double = js.native
-  var SVG_MARKER_ORIENT_AUTO: Double = js.native
-  var SVG_MARKER_ORIENT_UNKNOWN: Double = js.native
-  var markerHeight: SVGAnimatedLength = js.native
-  var markerUnits: SVGAnimatedEnumeration = js.native
-  var markerWidth: SVGAnimatedLength = js.native
-  var orientAngle: SVGAnimatedAngle = js.native
-  var orientType: SVGAnimatedEnumeration = js.native
-  var refX: SVGAnimatedLength = js.native
-  var refY: SVGAnimatedLength = js.native
-  var style: CSSStyleDeclaration = js.native
+  val SVG_MARKERUNITS_STROKEWIDTH: Double = js.native
+  val SVG_MARKERUNITS_UNKNOWN: Double = js.native
+  val SVG_MARKERUNITS_USERSPACEONUSE: Double = js.native
+  val SVG_MARKER_ORIENT_ANGLE: Double = js.native
+  val SVG_MARKER_ORIENT_AUTO: Double = js.native
+  val SVG_MARKER_ORIENT_UNKNOWN: Double = js.native
+  val markerHeight: SVGAnimatedLength = js.native
+  val markerUnits: SVGAnimatedEnumeration = js.native
+  val markerWidth: SVGAnimatedLength = js.native
+  val orientAngle: SVGAnimatedAngle = js.native
+  val orientType: SVGAnimatedEnumeration = js.native
+  val refX: SVGAnimatedLength = js.native
+  val refY: SVGAnimatedLength = js.native
+  val style: CSSStyleDeclaration = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */

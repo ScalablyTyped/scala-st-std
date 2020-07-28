@@ -12,13 +12,13 @@ trait SVGRectElement
      with SVGTests
      with SVGLangSpace
      with SVGExternalResourcesRequired {
-  var height: SVGAnimatedLength = js.native
-  var rx: SVGAnimatedLength = js.native
-  var ry: SVGAnimatedLength = js.native
-  var style: CSSStyleDeclaration = js.native
-  var width: SVGAnimatedLength = js.native
-  var x: SVGAnimatedLength = js.native
-  var y: SVGAnimatedLength = js.native
+  val height: SVGAnimatedLength = js.native
+  val rx: SVGAnimatedLength = js.native
+  val ry: SVGAnimatedLength = js.native
+  val style: CSSStyleDeclaration = js.native
+  val width: SVGAnimatedLength = js.native
+  val x: SVGAnimatedLength = js.native
+  val y: SVGAnimatedLength = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */

@@ -11,63 +11,63 @@ import scala.scalajs.js.annotation._
 class MSManipulationEvent ()
   extends org.scalablytyped.std.MSManipulationEvent {
   /* CompleteClass */
-  override var AT_TARGET: Double = js.native
+  override val AT_TARGET: Double = js.native
   /* CompleteClass */
-  override var BUBBLING_PHASE: Double = js.native
+  override val BUBBLING_PHASE: Double = js.native
   /* CompleteClass */
-  override var CAPTURING_PHASE: Double = js.native
+  override val CAPTURING_PHASE: Double = js.native
   /* CompleteClass */
-  override var MS_MANIPULATION_STATE_ACTIVE: Double = js.native
+  override val MS_MANIPULATION_STATE_ACTIVE: Double = js.native
   /* CompleteClass */
-  override var MS_MANIPULATION_STATE_CANCELLED: Double = js.native
+  override val MS_MANIPULATION_STATE_CANCELLED: Double = js.native
   /* CompleteClass */
-  override var MS_MANIPULATION_STATE_COMMITTED: Double = js.native
+  override val MS_MANIPULATION_STATE_COMMITTED: Double = js.native
   /* CompleteClass */
-  override var MS_MANIPULATION_STATE_DRAGGING: Double = js.native
+  override val MS_MANIPULATION_STATE_DRAGGING: Double = js.native
   /* CompleteClass */
-  override var MS_MANIPULATION_STATE_INERTIA: Double = js.native
+  override val MS_MANIPULATION_STATE_INERTIA: Double = js.native
   /* CompleteClass */
-  override var MS_MANIPULATION_STATE_PRESELECT: Double = js.native
+  override val MS_MANIPULATION_STATE_PRESELECT: Double = js.native
   /* CompleteClass */
-  override var MS_MANIPULATION_STATE_SELECTING: Double = js.native
+  override val MS_MANIPULATION_STATE_SELECTING: Double = js.native
   /* CompleteClass */
-  override var MS_MANIPULATION_STATE_STOPPED: Double = js.native
+  override val MS_MANIPULATION_STATE_STOPPED: Double = js.native
   /* CompleteClass */
-  override var bubbles: scala.Boolean = js.native
+  override val bubbles: scala.Boolean = js.native
   /* CompleteClass */
   override var cancelBubble: scala.Boolean = js.native
   /* CompleteClass */
-  override var cancelable: scala.Boolean = js.native
+  override val cancelable: scala.Boolean = js.native
   /* CompleteClass */
-  override var currentState: Double = js.native
+  override val currentState: Double = js.native
   /* CompleteClass */
-  override var currentTarget: org.scalablytyped.std.EventTarget = js.native
+  override val currentTarget: org.scalablytyped.std.EventTarget = js.native
   /* CompleteClass */
-  override var defaultPrevented: scala.Boolean = js.native
+  override val defaultPrevented: scala.Boolean = js.native
   /* CompleteClass */
-  override var detail: Double = js.native
+  override val detail: Double = js.native
   /* CompleteClass */
-  override var eventPhase: Double = js.native
+  override val eventPhase: Double = js.native
   /* CompleteClass */
-  override var inertiaDestinationX: Double = js.native
+  override val inertiaDestinationX: Double = js.native
   /* CompleteClass */
-  override var inertiaDestinationY: Double = js.native
+  override val inertiaDestinationY: Double = js.native
   /* CompleteClass */
-  override var isTrusted: scala.Boolean = js.native
+  override val isTrusted: scala.Boolean = js.native
   /* CompleteClass */
-  override var lastState: Double = js.native
+  override val lastState: Double = js.native
   /* CompleteClass */
   override var returnValue: scala.Boolean = js.native
   /* CompleteClass */
-  override var srcElement: org.scalablytyped.std.Element = js.native
+  override val srcElement: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
-  override var target: org.scalablytyped.std.EventTarget = js.native
+  override val target: org.scalablytyped.std.EventTarget = js.native
   /* CompleteClass */
-  override var timeStamp: Double = js.native
+  override val timeStamp: Double = js.native
   /* CompleteClass */
-  override var `type`: java.lang.String = js.native
+  override val `type`: java.lang.String = js.native
   /* CompleteClass */
-  override var view: Window = js.native
+  override val view: Window = js.native
   /* CompleteClass */
   override def initEvent(eventTypeArg: java.lang.String, canBubbleArg: scala.Boolean, cancelableArg: scala.Boolean): Unit = js.native
   /* CompleteClass */
@@ -100,13 +100,13 @@ class MSManipulationEvent ()
 @js.native
 object MSManipulationEvent
   extends Instantiable0[org.scalablytyped.std.MSManipulationEvent] {
-  var MS_MANIPULATION_STATE_ACTIVE: Double = js.native
-  var MS_MANIPULATION_STATE_CANCELLED: Double = js.native
-  var MS_MANIPULATION_STATE_COMMITTED: Double = js.native
-  var MS_MANIPULATION_STATE_DRAGGING: Double = js.native
-  var MS_MANIPULATION_STATE_INERTIA: Double = js.native
-  var MS_MANIPULATION_STATE_PRESELECT: Double = js.native
-  var MS_MANIPULATION_STATE_SELECTING: Double = js.native
-  var MS_MANIPULATION_STATE_STOPPED: Double = js.native
+  val MS_MANIPULATION_STATE_ACTIVE: Double = js.native
+  val MS_MANIPULATION_STATE_CANCELLED: Double = js.native
+  val MS_MANIPULATION_STATE_COMMITTED: Double = js.native
+  val MS_MANIPULATION_STATE_DRAGGING: Double = js.native
+  val MS_MANIPULATION_STATE_INERTIA: Double = js.native
+  val MS_MANIPULATION_STATE_PRESELECT: Double = js.native
+  val MS_MANIPULATION_STATE_SELECTING: Double = js.native
+  val MS_MANIPULATION_STATE_STOPPED: Double = js.native
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait MediaList
   extends /* index */ NumberDictionary[java.lang.String] {
-  var length: Double
+  val length: Double
   var mediaText: java.lang.String
   def appendMedium(newMedium: java.lang.String): Unit
   def deleteMedium(oldMedium: java.lang.String): Unit

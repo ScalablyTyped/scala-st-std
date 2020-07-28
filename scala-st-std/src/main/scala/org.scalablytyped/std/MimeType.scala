@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MimeType extends js.Object {
-  var description: java.lang.String
-  var enabledPlugin: Plugin
-  var suffixes: java.lang.String
-  var `type`: java.lang.String
+  val description: java.lang.String
+  val enabledPlugin: Plugin
+  val suffixes: java.lang.String
+  val `type`: java.lang.String
 }
 
 object MimeType {

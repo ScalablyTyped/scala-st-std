@@ -21,6 +21,7 @@ trait HTMLLinkElement
     * Sets or retrieves the language code of the object.
     */
   var hreflang: java.lang.String = js.native
+  var `import`: js.UndefOr[Document] = js.native
   /**
     * Sets or retrieves the media type.
     */

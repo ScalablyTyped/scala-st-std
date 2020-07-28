@@ -14,23 +14,23 @@ class Node ()
 @js.native
 object Node
   extends Instantiable0[org.scalablytyped.std.Node] {
-  var ATTRIBUTE_NODE: Double = js.native
-  var CDATA_SECTION_NODE: Double = js.native
-  var COMMENT_NODE: Double = js.native
-  var DOCUMENT_FRAGMENT_NODE: Double = js.native
-  var DOCUMENT_NODE: Double = js.native
-  var DOCUMENT_POSITION_CONTAINED_BY: Double = js.native
-  var DOCUMENT_POSITION_CONTAINS: Double = js.native
-  var DOCUMENT_POSITION_DISCONNECTED: Double = js.native
-  var DOCUMENT_POSITION_FOLLOWING: Double = js.native
-  var DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC: Double = js.native
-  var DOCUMENT_POSITION_PRECEDING: Double = js.native
-  var DOCUMENT_TYPE_NODE: Double = js.native
-  var ELEMENT_NODE: Double = js.native
-  var ENTITY_NODE: Double = js.native
-  var ENTITY_REFERENCE_NODE: Double = js.native
-  var NOTATION_NODE: Double = js.native
-  var PROCESSING_INSTRUCTION_NODE: Double = js.native
-  var TEXT_NODE: Double = js.native
+  val ATTRIBUTE_NODE: Double = js.native
+  val CDATA_SECTION_NODE: Double = js.native
+  val COMMENT_NODE: Double = js.native
+  val DOCUMENT_FRAGMENT_NODE: Double = js.native
+  val DOCUMENT_NODE: Double = js.native
+  val DOCUMENT_POSITION_CONTAINED_BY: Double = js.native
+  val DOCUMENT_POSITION_CONTAINS: Double = js.native
+  val DOCUMENT_POSITION_DISCONNECTED: Double = js.native
+  val DOCUMENT_POSITION_FOLLOWING: Double = js.native
+  val DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC: Double = js.native
+  val DOCUMENT_POSITION_PRECEDING: Double = js.native
+  val DOCUMENT_TYPE_NODE: Double = js.native
+  val ELEMENT_NODE: Double = js.native
+  val ENTITY_NODE: Double = js.native
+  val ENTITY_REFERENCE_NODE: Double = js.native
+  val NOTATION_NODE: Double = js.native
+  val PROCESSING_INSTRUCTION_NODE: Double = js.native
+  val TEXT_NODE: Double = js.native
 }
 

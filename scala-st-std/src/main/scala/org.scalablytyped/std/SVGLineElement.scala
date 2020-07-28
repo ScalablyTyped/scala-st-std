@@ -12,11 +12,11 @@ trait SVGLineElement
      with SVGTests
      with SVGLangSpace
      with SVGExternalResourcesRequired {
-  var style: CSSStyleDeclaration = js.native
-  var x1: SVGAnimatedLength = js.native
-  var x2: SVGAnimatedLength = js.native
-  var y1: SVGAnimatedLength = js.native
-  var y2: SVGAnimatedLength = js.native
+  val style: CSSStyleDeclaration = js.native
+  val x1: SVGAnimatedLength = js.native
+  val x2: SVGAnimatedLength = js.native
+  val y1: SVGAnimatedLength = js.native
+  val y2: SVGAnimatedLength = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */

@@ -8,18 +8,18 @@ import scala.scalajs.js.annotation._
 - `org.scalablytyped`.std.SVGStylable because var conflicts: className. Inlined style
 - `org.scalablytyped`.std.SVGFilterPrimitiveStandardAttributes because var conflicts: className. Inlined height, result, width, x, y */ @js.native
 trait SVGFEMorphologyElement extends SVGElement {
-  var SVG_MORPHOLOGY_OPERATOR_DILATE: Double = js.native
-  var SVG_MORPHOLOGY_OPERATOR_ERODE: Double = js.native
-  var SVG_MORPHOLOGY_OPERATOR_UNKNOWN: Double = js.native
-  var height: SVGAnimatedLength = js.native
-  var in1: SVGAnimatedString = js.native
-  var operator: SVGAnimatedEnumeration = js.native
-  var radiusX: SVGAnimatedNumber = js.native
-  var radiusY: SVGAnimatedNumber = js.native
-  var result: SVGAnimatedString = js.native
-  var style: CSSStyleDeclaration = js.native
-  var width: SVGAnimatedLength = js.native
-  var x: SVGAnimatedLength = js.native
-  var y: SVGAnimatedLength = js.native
+  val SVG_MORPHOLOGY_OPERATOR_DILATE: Double = js.native
+  val SVG_MORPHOLOGY_OPERATOR_ERODE: Double = js.native
+  val SVG_MORPHOLOGY_OPERATOR_UNKNOWN: Double = js.native
+  val height: SVGAnimatedLength = js.native
+  val in1: SVGAnimatedString = js.native
+  val operator: SVGAnimatedEnumeration = js.native
+  val radiusX: SVGAnimatedNumber = js.native
+  val radiusY: SVGAnimatedNumber = js.native
+  val result: SVGAnimatedString = js.native
+  val style: CSSStyleDeclaration = js.native
+  val width: SVGAnimatedLength = js.native
+  val x: SVGAnimatedLength = js.native
+  val y: SVGAnimatedLength = js.native
 }
 

@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 class SVGAnimatedTransformList ()
   extends org.scalablytyped.std.SVGAnimatedTransformList {
   /* CompleteClass */
-  override var animVal: org.scalablytyped.std.SVGTransformList = js.native
+  override val animVal: org.scalablytyped.std.SVGTransformList = js.native
   /* CompleteClass */
-  override var baseVal: org.scalablytyped.std.SVGTransformList = js.native
+  override val baseVal: org.scalablytyped.std.SVGTransformList = js.native
 }
 
 @JSGlobal("SVGAnimatedTransformList")

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AudioDestinationNode extends AudioNode {
-  var maxChannelCount: Double = js.native
+  val maxChannelCount: Double = js.native
 }
 

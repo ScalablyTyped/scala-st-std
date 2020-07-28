@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MSRangeCollection extends /* index */ NumberDictionary[Range] {
-  var length: Double
+  val length: Double
   def item(index: Double): Range
 }
 

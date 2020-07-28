@@ -24,7 +24,7 @@ trait HTMLFormElement
   /**
     * Retrieves a collection, in source order, of all controls in a given form.
     */
-  var elements: HTMLCollection = js.native
+  val elements: HTMLCollection = js.native
   /**
     * Sets or retrieves the MIME encoding for the form.
     */
@@ -36,7 +36,7 @@ trait HTMLFormElement
   /**
     * Sets or retrieves the number of objects in a collection.
     */
-  var length: Double = js.native
+  val length: Double = js.native
   /**
     * Sets or retrieves how to send the form data to the server.
     */

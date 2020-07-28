@@ -10,19 +10,19 @@ import scala.scalajs.js.annotation._
 class Selection ()
   extends org.scalablytyped.std.Selection {
   /* CompleteClass */
-  override var anchorNode: org.scalablytyped.std.Node = js.native
+  override val anchorNode: org.scalablytyped.std.Node = js.native
   /* CompleteClass */
-  override var anchorOffset: Double = js.native
+  override val anchorOffset: Double = js.native
   /* CompleteClass */
-  override var focusNode: org.scalablytyped.std.Node = js.native
+  override val focusNode: org.scalablytyped.std.Node = js.native
   /* CompleteClass */
-  override var focusOffset: Double = js.native
+  override val focusOffset: Double = js.native
   /* CompleteClass */
-  override var isCollapsed: scala.Boolean = js.native
+  override val isCollapsed: scala.Boolean = js.native
   /* CompleteClass */
-  override var rangeCount: Double = js.native
+  override val rangeCount: Double = js.native
   /* CompleteClass */
-  override var `type`: java.lang.String = js.native
+  override val `type`: java.lang.String = js.native
   /* CompleteClass */
   override def addRange(range: org.scalablytyped.std.Range): Unit = js.native
   /* CompleteClass */

@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Map[K, V] ()
   extends org.scalablytyped.std.Map[K, V] {
+  def this(entries: js.Array[js.Tuple2[K, V]]) = this()
   def this(iterable: Iterable[js.Tuple2[K, V]]) = this()
 }
 

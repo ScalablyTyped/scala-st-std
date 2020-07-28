@@ -5,16 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Range extends js.Object {
-  var END_TO_END: Double
-  var END_TO_START: Double
-  var START_TO_END: Double
-  var START_TO_START: Double
-  var collapsed: scala.Boolean
-  var commonAncestorContainer: Node
-  var endContainer: Node
-  var endOffset: Double
-  var startContainer: Node
-  var startOffset: Double
+  val END_TO_END: Double
+  val END_TO_START: Double
+  val START_TO_END: Double
+  val START_TO_START: Double
+  val collapsed: scala.Boolean
+  val commonAncestorContainer: Node
+  val endContainer: Node
+  val endOffset: Double
+  val startContainer: Node
+  val startOffset: Double
   def cloneContents(): DocumentFragment
   def cloneRange(): Range
   def collapse(toStart: scala.Boolean): Unit

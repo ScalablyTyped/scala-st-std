@@ -10,16 +10,16 @@ import scala.scalajs.js.annotation._
 class EXTTextureFilterAnisotropic ()
   extends org.scalablytyped.std.EXTTextureFilterAnisotropic {
   /* CompleteClass */
-  override var MAX_TEXTURE_MAX_ANISOTROPY_EXT: Double = js.native
+  override val MAX_TEXTURE_MAX_ANISOTROPY_EXT: Double = js.native
   /* CompleteClass */
-  override var TEXTURE_MAX_ANISOTROPY_EXT: Double = js.native
+  override val TEXTURE_MAX_ANISOTROPY_EXT: Double = js.native
 }
 
 @JSGlobal("EXT_texture_filter_anisotropic")
 @js.native
 object EXTTextureFilterAnisotropic
   extends Instantiable0[org.scalablytyped.std.EXTTextureFilterAnisotropic] {
-  var MAX_TEXTURE_MAX_ANISOTROPY_EXT: Double = js.native
-  var TEXTURE_MAX_ANISOTROPY_EXT: Double = js.native
+  val MAX_TEXTURE_MAX_ANISOTROPY_EXT: Double = js.native
+  val TEXTURE_MAX_ANISOTROPY_EXT: Double = js.native
 }
 

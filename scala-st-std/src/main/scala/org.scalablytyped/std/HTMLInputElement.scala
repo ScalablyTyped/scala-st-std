@@ -37,7 +37,7 @@ trait HTMLInputElement extends HTMLElement {
   /**
     * Retrieves whether the object is fully loaded.
     */
-  var complete: scala.Boolean = js.native
+  val complete: scala.Boolean = js.native
   /**
     * Sets or retrieves the state of the check box or radio button.
     */
@@ -50,11 +50,11 @@ trait HTMLInputElement extends HTMLElement {
   /**
     * Returns a FileList object on a file type input object.
     */
-  var files: FileList = js.native
+  val files: FileList | Null = js.native
   /**
     * Retrieves a reference to the form that the object is embedded in. 
     */
-  var form: HTMLFormElement = js.native
+  val form: HTMLFormElement = js.native
   /**
     * Overrides the action attribute (where the data on a form is sent) on the parent form element.
     */
@@ -87,7 +87,7 @@ trait HTMLInputElement extends HTMLElement {
   /**
     * Specifies the ID of a pre-defined datalist of options for an input element.
     */
-  var list: HTMLElement = js.native
+  val list: HTMLElement = js.native
   /**
     * Defines the maximum acceptable value for an input element with type="number".When used with the min and step attributes, lets you control the range and increment (such as only even numbers) that the user can enter into an input field.
     */
@@ -100,6 +100,7 @@ trait HTMLInputElement extends HTMLElement {
     * Defines the minimum acceptable value for an input element with type="number". When used with the max and step attributes, lets you control the range and increment (such as even numbers only) that the user can enter into an input field.
     */
   var min: java.lang.String = js.native
+  var minLength: Double = js.native
   /**
     * Sets or retrieves the Boolean value indicating whether multiple items can be selected from a list.
     */
@@ -121,6 +122,7 @@ trait HTMLInputElement extends HTMLElement {
     * When present, marks an element that can't be submitted without a value.
     */
   var required: scala.Boolean = js.native
+  var selectionDirection: java.lang.String = js.native
   /**
     * Gets or sets the end position or offset of a text selection.
     */
@@ -150,11 +152,11 @@ trait HTMLInputElement extends HTMLElement {
   /**
     * Returns the error message that would be displayed if the user submits the form, or an empty string if no error message. It also triggers the standard error message, such as "this is a required field". The result is that the user sees validation messages without actually submitting.
     */
-  var validationMessage: java.lang.String = js.native
+  val validationMessage: java.lang.String = js.native
   /**
     * Returns a  ValidityState object that represents the validity states of an element.
     */
-  var validity: ValidityState = js.native
+  val validity: ValidityState = js.native
   /**
     * Returns the value of the data at the cursor's current position.
     */
@@ -168,6 +170,7 @@ trait HTMLInputElement extends HTMLElement {
     * Sets or retrieves the vertical margin for the object.
     */
   var vspace: Double = js.native
+  var webkitdirectory: scala.Boolean = js.native
   /**
     * Sets or retrieves the width of the object.
     */
@@ -175,15 +178,11 @@ trait HTMLInputElement extends HTMLElement {
   /**
     * Returns whether an element will successfully validate based on forms validation rules and constraints.
     */
-  var willValidate: scala.Boolean = js.native
+  val willValidate: scala.Boolean = js.native
   /**
     * Returns whether a form will validate when it is submitted, without having to submit it.
     */
   def checkValidity(): scala.Boolean = js.native
-  /**
-    * Creates a TextRange object for the element.
-    */
-  def createTextRange(): TextRange = js.native
   /**
     * Makes the selection equal to the current object.
     */
@@ -198,7 +197,14 @@ trait HTMLInputElement extends HTMLElement {
     * @param start The offset into the text field for the start of the selection.
     * @param end The offset into the text field for the end of the selection.
     */
+  def setSelectionRange(): Unit = js.native
+  def setSelectionRange(start: js.UndefOr[scala.Nothing], end: js.UndefOr[scala.Nothing], direction: java.lang.String): Unit = js.native
+  def setSelectionRange(start: js.UndefOr[scala.Nothing], end: Double): Unit = js.native
+  def setSelectionRange(start: js.UndefOr[scala.Nothing], end: Double, direction: java.lang.String): Unit = js.native
+  def setSelectionRange(start: Double): Unit = js.native
+  def setSelectionRange(start: Double, end: js.UndefOr[scala.Nothing], direction: java.lang.String): Unit = js.native
   def setSelectionRange(start: Double, end: Double): Unit = js.native
+  def setSelectionRange(start: Double, end: Double, direction: java.lang.String): Unit = js.native
   /**
     * Decrements a range input control's value by the value given by the Step attribute. If the optional parameter is used, it will decrement the input control's step value multiplied by the parameter's value.
     * @param n Value to decrement the value by.

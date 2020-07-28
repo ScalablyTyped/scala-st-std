@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MSStream extends js.Object {
-  var `type`: java.lang.String
+  val `type`: java.lang.String
   def msClose(): Unit
   def msDetachStream(): js.Any
 }
