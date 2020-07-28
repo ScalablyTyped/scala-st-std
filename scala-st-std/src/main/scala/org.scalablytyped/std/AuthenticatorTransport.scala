@@ -7,10 +7,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.usb_
-  - `org.scalablytyped`.std.stdStrings.nfc_
   - `org.scalablytyped`.std.stdStrings.ble
   - `org.scalablytyped`.std.stdStrings.internal
+  - `org.scalablytyped`.std.stdStrings.nfc_
+  - `org.scalablytyped`.std.stdStrings.usb_
 */
 trait AuthenticatorTransport extends js.Object
 

@@ -28,11 +28,7 @@ class SVGPatternElement ()
   /* CompleteClass */
   override val previousElementSibling: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
-  override val requiredExtensions: org.scalablytyped.std.SVGStringList = js.native
-  /* CompleteClass */
   override val style: org.scalablytyped.std.CSSStyleDeclaration = js.native
-  /* CompleteClass */
-  override val systemLanguage: org.scalablytyped.std.SVGStringList = js.native
   /* CompleteClass */
   override val viewBox: org.scalablytyped.std.SVGAnimatedRect = js.native
 }

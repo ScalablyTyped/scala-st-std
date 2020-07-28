@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.blob
   - `org.scalablytyped`.std.stdStrings.arraybuffer
+  - `org.scalablytyped`.std.stdStrings.blob
 */
 trait BinaryType extends js.Object
 

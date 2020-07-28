@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 trait RTCRtpSendParameters extends RTCRtpParameters {
   var degradationPreference: js.UndefOr[RTCDegradationPreference] = js.undefined
   var encodings: js.Array[RTCRtpEncodingParameters]
+  var priority: js.UndefOr[RTCPriorityType] = js.undefined
   var transactionId: java.lang.String
 }
 
@@ -43,6 +44,10 @@ object RTCRtpSendParameters {
     def setDegradationPreference(value: RTCDegradationPreference): Self = this.set("degradationPreference", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteDegradationPreference: Self = this.set("degradationPreference", js.undefined)
+    @scala.inline
+    def setPriority(value: RTCPriorityType): Self = this.set("priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriority: Self = this.set("priority", js.undefined)
   }
   
 }

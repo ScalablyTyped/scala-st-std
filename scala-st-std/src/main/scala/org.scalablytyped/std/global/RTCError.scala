@@ -1,6 +1,7 @@
 package org.scalablytyped.std.global
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.std.RTCErrorDetailType
+import org.scalablytyped.std.RTCErrorInit
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
@@ -9,36 +10,86 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("RTCError")
 @js.native
-class RTCError ()
+class RTCError protected ()
   extends org.scalablytyped.std.RTCError {
-  def this(errorDetail: java.lang.String) = this()
-  def this(errorDetail: js.UndefOr[scala.Nothing], message: java.lang.String) = this()
-  def this(errorDetail: java.lang.String, message: java.lang.String) = this()
+  def this(init: RTCErrorInit) = this()
+  def this(init: RTCErrorInit, message: java.lang.String) = this()
   /* CompleteClass */
-  override var errorDetail: java.lang.String = js.native
+  override val ABORT_ERR: Double = js.native
   /* CompleteClass */
-  override var httpRequestStatusCode: Double = js.native
+  override val DATA_CLONE_ERR: Double = js.native
   /* CompleteClass */
-  override var message: java.lang.String = js.native
+  override val DOMSTRING_SIZE_ERR: Double = js.native
   /* CompleteClass */
-  override var name: java.lang.String = js.native
+  override val HIERARCHY_REQUEST_ERR: Double = js.native
   /* CompleteClass */
-  override var receivedAlert: Double | Null = js.native
+  override val INDEX_SIZE_ERR: Double = js.native
   /* CompleteClass */
-  override var sctpCauseCode: Double = js.native
+  override val INUSE_ATTRIBUTE_ERR: Double = js.native
   /* CompleteClass */
-  override var sdpLineNumber: Double = js.native
+  override val INVALID_ACCESS_ERR: Double = js.native
   /* CompleteClass */
-  override var sentAlert: Double | Null = js.native
+  override val INVALID_CHARACTER_ERR: Double = js.native
+  /* CompleteClass */
+  override val INVALID_MODIFICATION_ERR: Double = js.native
+  /* CompleteClass */
+  override val INVALID_NODE_TYPE_ERR: Double = js.native
+  /* CompleteClass */
+  override val INVALID_STATE_ERR: Double = js.native
+  /* CompleteClass */
+  override val NAMESPACE_ERR: Double = js.native
+  /* CompleteClass */
+  override val NETWORK_ERR: Double = js.native
+  /* CompleteClass */
+  override val NOT_FOUND_ERR: Double = js.native
+  /* CompleteClass */
+  override val NOT_SUPPORTED_ERR: Double = js.native
+  /* CompleteClass */
+  override val NO_DATA_ALLOWED_ERR: Double = js.native
+  /* CompleteClass */
+  override val NO_MODIFICATION_ALLOWED_ERR: Double = js.native
+  /* CompleteClass */
+  override val QUOTA_EXCEEDED_ERR: Double = js.native
+  /* CompleteClass */
+  override val SECURITY_ERR: Double = js.native
+  /* CompleteClass */
+  override val SYNTAX_ERR: Double = js.native
+  /* CompleteClass */
+  override val TIMEOUT_ERR: Double = js.native
+  /* CompleteClass */
+  override val TYPE_MISMATCH_ERR: Double = js.native
+  /* CompleteClass */
+  override val URL_MISMATCH_ERR: Double = js.native
+  /* CompleteClass */
+  override val VALIDATION_ERR: Double = js.native
+  /* CompleteClass */
+  override val WRONG_DOCUMENT_ERR: Double = js.native
+  /* CompleteClass */
+  override val code: Double = js.native
+  /* CompleteClass */
+  override val errorDetail: RTCErrorDetailType = js.native
+  /* CompleteClass */
+  override val httpRequestStatusCode: Double | Null = js.native
+  /* CompleteClass */
+  override val message: java.lang.String = js.native
+  /* CompleteClass */
+  override val name: java.lang.String = js.native
+  /* CompleteClass */
+  override val receivedAlert: Double | Null = js.native
+  /* CompleteClass */
+  override val sctpCauseCode: Double | Null = js.native
+  /* CompleteClass */
+  override val sdpLineNumber: Double | Null = js.native
+  /* CompleteClass */
+  override val sentAlert: Double | Null = js.native
 }
 
 @JSGlobal("RTCError")
 @js.native
 object RTCError
-  extends Instantiable0[org.scalablytyped.std.RTCError]
-     with Instantiable1[/* errorDetail */ java.lang.String, org.scalablytyped.std.RTCError]
+  extends Instantiable1[/* init */ RTCErrorInit, org.scalablytyped.std.RTCError]
      with Instantiable2[
-      js.UndefOr[/* errorDetail */ java.lang.String], 
+      /* init */ RTCErrorInit, 
       /* message */ java.lang.String, 
       org.scalablytyped.std.RTCError
     ]

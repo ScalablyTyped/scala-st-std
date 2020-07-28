@@ -11,10 +11,6 @@ trait HTMLSelectElement
   extends HTMLElement
      with /* name */ NumberDictionary[HTMLOptionElement | HTMLOptGroupElement] {
   var autocomplete: java.lang.String = js.native
-  /**
-    * Provides a way to direct a user to a specific field when a document loads. This can provide both direction and convenience for a user, reducing the need to click or tab to a field when a page opens. This attribute is true when present on an element, and false when missing.
-    */
-  var autofocus: scala.Boolean = js.native
   var disabled: scala.Boolean = js.native
   /**
     * Retrieves a reference to the form that the object is embedded in.

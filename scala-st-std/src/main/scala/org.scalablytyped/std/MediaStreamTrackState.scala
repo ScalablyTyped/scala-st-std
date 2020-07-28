@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.live
   - `org.scalablytyped`.std.stdStrings.ended
+  - `org.scalablytyped`.std.stdStrings.live
 */
 trait MediaStreamTrackState extends js.Object
 

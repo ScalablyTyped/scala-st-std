@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.frozen
-  - `org.scalablytyped`.std.stdStrings.waiting
-  - `org.scalablytyped`.std.stdStrings.inprogress
-  - `org.scalablytyped`.std.stdStrings.failed
-  - `org.scalablytyped`.std.stdStrings.succeeded
   - `org.scalablytyped`.std.stdStrings.cancelled
+  - `org.scalablytyped`.std.stdStrings.failed
+  - `org.scalablytyped`.std.stdStrings.frozen
+  - `org.scalablytyped`.std.stdStrings.inprogress
+  - `org.scalablytyped`.std.stdStrings.succeeded
+  - `org.scalablytyped`.std.stdStrings.waiting
 */
 trait RTCStatsIceCandidatePairState extends js.Object
 

@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.transparent
   - `org.scalablytyped`.std.stdStrings.native
+  - `org.scalablytyped`.std.stdStrings.transparent
 */
 trait EndingType extends js.Object
 

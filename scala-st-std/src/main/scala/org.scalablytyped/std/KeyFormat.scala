@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
+  - `org.scalablytyped`.std.stdStrings.jwk
+  - `org.scalablytyped`.std.stdStrings.pkcs8
   - `org.scalablytyped`.std.stdStrings.raw
   - `org.scalablytyped`.std.stdStrings.spki
-  - `org.scalablytyped`.std.stdStrings.pkcs8
-  - `org.scalablytyped`.std.stdStrings.jwk
 */
 trait KeyFormat extends js.Object
 

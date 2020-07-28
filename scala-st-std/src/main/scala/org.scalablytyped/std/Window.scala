@@ -43,14 +43,11 @@ trait Window
   extends EventTarget
      with AnimationFrameProvider
      with GlobalEventHandlers
-     with IDBEnvironment
-     with WindowBase64
      with WindowConsole
      with WindowEventHandlers
      with WindowLocalStorage
      with WindowOrWorkerGlobalScope
      with WindowSessionStorage
-     with WindowTimers
      with /* index */ NumberDictionary[Window] {
   val applicationCache: ApplicationCache = js.native
   val clientInformation: Navigator = js.native
@@ -67,8 +64,6 @@ trait Window
   val frameElement: Element = js.native
   val frames: Window = js.native
   val history: History = js.native
-  /* InferMemberOverrides */
-  override val indexedDB: IDBFactory = js.native
   val innerHeight: Double = js.native
   val innerWidth: Double = js.native
   val isSecureContext: scala.Boolean = js.native
@@ -625,11 +620,7 @@ trait Window
   ): Unit = js.native
   def alert(): Unit = js.native
   def alert(message: js.Any): Unit = js.native
-  /* InferMemberOverrides */
-  override def atob(data: java.lang.String): java.lang.String = js.native
   def blur(): Unit = js.native
-  /* InferMemberOverrides */
-  override def btoa(data: java.lang.String): java.lang.String = js.native
   /** @deprecated */
   def captureEvents(): Unit = js.native
   def close(): Unit = js.native

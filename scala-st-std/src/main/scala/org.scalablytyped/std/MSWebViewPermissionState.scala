@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.unknown
-  - `org.scalablytyped`.std.stdStrings.defer
   - `org.scalablytyped`.std.stdStrings.allow
+  - `org.scalablytyped`.std.stdStrings.defer
   - `org.scalablytyped`.std.stdStrings.deny
+  - `org.scalablytyped`.std.stdStrings.unknown
 */
 trait MSWebViewPermissionState extends js.Object
 

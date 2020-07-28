@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.stable
-  - `org.scalablytyped`.std.stdStrings.`have-local-offer`
-  - `org.scalablytyped`.std.stdStrings.`have-remote-offer`
-  - `org.scalablytyped`.std.stdStrings.`have-local-pranswer`
-  - `org.scalablytyped`.std.stdStrings.`have-remote-pranswer`
   - `org.scalablytyped`.std.stdStrings.closed
+  - `org.scalablytyped`.std.stdStrings.`have-local-offer`
+  - `org.scalablytyped`.std.stdStrings.`have-local-pranswer`
+  - `org.scalablytyped`.std.stdStrings.`have-remote-offer`
+  - `org.scalablytyped`.std.stdStrings.`have-remote-pranswer`
+  - `org.scalablytyped`.std.stdStrings.stable
 */
 trait RTCSignalingState extends js.Object
 

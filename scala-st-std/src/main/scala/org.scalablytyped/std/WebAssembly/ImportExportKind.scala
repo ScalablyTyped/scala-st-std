@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - `org.scalablytyped`.std.stdStrings.function
-  - `org.scalablytyped`.std.stdStrings.table
-  - `org.scalablytyped`.std.stdStrings.memory
   - `org.scalablytyped`.std.stdStrings.global
+  - `org.scalablytyped`.std.stdStrings.memory
+  - `org.scalablytyped`.std.stdStrings.table
 */
 trait ImportExportKind extends js.Object
 

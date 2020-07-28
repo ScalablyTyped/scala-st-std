@@ -23,8 +23,6 @@ class RTCIceCandidate ()
   /* CompleteClass */
   override val foundation: java.lang.String | Null = js.native
   /* CompleteClass */
-  override val ip: java.lang.String | Null = js.native
-  /* CompleteClass */
   override val port: Double | Null = js.native
   /* CompleteClass */
   override val priority: Double | Null = js.native

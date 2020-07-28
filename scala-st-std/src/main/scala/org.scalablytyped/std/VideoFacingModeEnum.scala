@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.user
   - `org.scalablytyped`.std.stdStrings.environment
   - `org.scalablytyped`.std.stdStrings.left
   - `org.scalablytyped`.std.stdStrings.right
+  - `org.scalablytyped`.std.stdStrings.user
 */
 trait VideoFacingModeEnum extends js.Object
 

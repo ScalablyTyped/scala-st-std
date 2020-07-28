@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - `org.scalablytyped`.std.stdStrings.auto
-  - `org.scalablytyped`.std.stdStrings.show
   - `org.scalablytyped`.std.stdStrings.hide
+  - `org.scalablytyped`.std.stdStrings.show
 */
 trait FullscreenNavigationUI extends js.Object
 

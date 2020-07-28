@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.inactive
   - `org.scalablytyped`.std.stdStrings.active
   - `org.scalablytyped`.std.stdStrings.disambiguation
+  - `org.scalablytyped`.std.stdStrings.inactive
 */
 trait ListeningState extends js.Object
 

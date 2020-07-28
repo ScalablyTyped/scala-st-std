@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.monitor
-  - `org.scalablytyped`.std.stdStrings.window
   - `org.scalablytyped`.std.stdStrings.application
   - `org.scalablytyped`.std.stdStrings.browser
+  - `org.scalablytyped`.std.stdStrings.monitor
+  - `org.scalablytyped`.std.stdStrings.window
 */
 trait DisplayCaptureSurfaceType extends js.Object
 

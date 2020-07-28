@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.navigate
-  - `org.scalablytyped`.std.stdStrings.reload
   - `org.scalablytyped`.std.stdStrings.back_forward
+  - `org.scalablytyped`.std.stdStrings.navigate
   - `org.scalablytyped`.std.stdStrings.prerender
+  - `org.scalablytyped`.std.stdStrings.reload
 */
 trait NavigationType extends js.Object
 

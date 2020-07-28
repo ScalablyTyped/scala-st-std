@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.top
-  - `org.scalablytyped`.std.stdStrings.hanging
-  - `org.scalablytyped`.std.stdStrings.middle
   - `org.scalablytyped`.std.stdStrings.alphabetic
-  - `org.scalablytyped`.std.stdStrings.ideographic
   - `org.scalablytyped`.std.stdStrings.bottom
+  - `org.scalablytyped`.std.stdStrings.hanging
+  - `org.scalablytyped`.std.stdStrings.ideographic
+  - `org.scalablytyped`.std.stdStrings.middle
+  - `org.scalablytyped`.std.stdStrings.top
 */
 trait CanvasTextBaseline extends js.Object
 

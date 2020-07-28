@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - `org.scalablytyped`.std.stdStrings.balanced
-  - `org.scalablytyped`.std.stdStrings.`max-compat`
   - `org.scalablytyped`.std.stdStrings.`max-bundle`
+  - `org.scalablytyped`.std.stdStrings.`max-compat`
 */
 trait RTCBundlePolicy extends js.Object
 

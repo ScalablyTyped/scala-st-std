@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - `org.scalablytyped`.std.stdStrings.host
-  - `org.scalablytyped`.std.stdStrings.serverreflexive
   - `org.scalablytyped`.std.stdStrings.peerreflexive
   - `org.scalablytyped`.std.stdStrings.relayed
+  - `org.scalablytyped`.std.stdStrings.serverreflexive
 */
 trait RTCStatsIceCandidateType extends js.Object
 

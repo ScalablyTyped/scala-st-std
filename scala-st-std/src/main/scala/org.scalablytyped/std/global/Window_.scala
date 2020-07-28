@@ -14,15 +14,9 @@ class Window_ () extends Window {
   /* CompleteClass */
   override val console: Console = js.native
   /* CompleteClass */
-  override val indexedDB: org.scalablytyped.std.IDBFactory = js.native
-  /* CompleteClass */
   override val localStorage: org.scalablytyped.std.Storage = js.native
   /* CompleteClass */
   override val sessionStorage: org.scalablytyped.std.Storage = js.native
-  /* CompleteClass */
-  override def atob(encodedString: java.lang.String): java.lang.String = js.native
-  /* CompleteClass */
-  override def btoa(rawString: java.lang.String): java.lang.String = js.native
   /* CompleteClass */
   override def cancelAnimationFrame(handle: Double): Unit = js.native
   /* CompleteClass */

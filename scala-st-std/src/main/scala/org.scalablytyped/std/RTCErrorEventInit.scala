@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RTCErrorEventInit extends EventInit {
-  var error: js.UndefOr[RTCError | Null] = js.undefined
+  var error: RTCError
 }
 
 object RTCErrorEventInit {
   @scala.inline
-  def apply(): RTCErrorEventInit = {
-    val __obj = js.Dynamic.literal()
+  def apply(error: RTCError): RTCErrorEventInit = {
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCErrorEventInit]
   }
   @scala.inline
@@ -27,10 +27,6 @@ object RTCErrorEventInit {
     }
     @scala.inline
     def setError(value: RTCError): Self = this.set("error", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
-    @scala.inline
-    def setErrorNull: Self = this.set("error", null)
   }
   
 }

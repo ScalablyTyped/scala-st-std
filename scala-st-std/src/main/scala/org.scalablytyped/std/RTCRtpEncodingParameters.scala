@@ -10,7 +10,6 @@ trait RTCRtpEncodingParameters extends RTCRtpCodingParameters {
   var dtx: js.UndefOr[RTCDtxStatus] = js.undefined
   var maxBitrate: js.UndefOr[Double] = js.undefined
   var maxFramerate: js.UndefOr[Double] = js.undefined
-  var priority: js.UndefOr[RTCPriorityType] = js.undefined
   var ptime: js.UndefOr[Double] = js.undefined
   var scaleResolutionDownBy: js.UndefOr[Double] = js.undefined
 }
@@ -52,10 +51,6 @@ object RTCRtpEncodingParameters {
     def setMaxFramerate(value: Double): Self = this.set("maxFramerate", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteMaxFramerate: Self = this.set("maxFramerate", js.undefined)
-    @scala.inline
-    def setPriority(value: RTCPriorityType): Self = this.set("priority", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
     @scala.inline
     def setPtime(value: Double): Self = this.set("ptime", value.asInstanceOf[js.Any])
     @scala.inline

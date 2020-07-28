@@ -285,11 +285,6 @@ object ^ extends js.Object {
     * @param ev The event.
     */
   var onloadedmetadata: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null = js.native
-  var onloadend: (js.ThisFunction1[
-    /* this */ Window, 
-    /* ev */ org.scalablytyped.std.ProgressEvent[org.scalablytyped.std.EventTarget], 
-    js.Any
-  ]) | Null = js.native
   /**
     * Occurs when Internet Explorer begins looking for media data.
     * @param ev The event.
@@ -386,7 +381,7 @@ object ^ extends js.Object {
     */
   var onratechange: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null = js.native
   var onreadystatechange: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.ProgressEvent[Window], js.Any]) | Null = js.native
-  var onrejectionhandled: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null = js.native
+  var onrejectionhandled: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.PromiseRejectionEvent, js.Any]) | Null = js.native
   /**
     * Fires when the user resets a form.
     * @param ev The event.
@@ -438,10 +433,18 @@ object ^ extends js.Object {
     */
   var ontimeupdate: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null = js.native
   var ontoggle: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null = js.native
-  var ontouchcancel: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.TouchEvent, js.Any]) | Null = js.native
-  var ontouchend: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.TouchEvent, js.Any]) | Null = js.native
-  var ontouchmove: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.TouchEvent, js.Any]) | Null = js.native
-  var ontouchstart: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.TouchEvent, js.Any]) | Null = js.native
+  var ontouchcancel: js.UndefOr[
+    (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.TouchEvent, js.Any]) | Null
+  ] = js.native
+  var ontouchend: js.UndefOr[
+    (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.TouchEvent, js.Any]) | Null
+  ] = js.native
+  var ontouchmove: js.UndefOr[
+    (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.TouchEvent, js.Any]) | Null
+  ] = js.native
+  var ontouchstart: js.UndefOr[
+    (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.TouchEvent, js.Any]) | Null
+  ] = js.native
   var ontransitioncancel: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.TransitionEvent, js.Any]) | Null = js.native
   var ontransitionend: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.TransitionEvent, js.Any]) | Null = js.native
   var ontransitionrun: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.TransitionEvent, js.Any]) | Null = js.native

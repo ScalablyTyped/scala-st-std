@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.max
   - `org.scalablytyped`.std.stdStrings.`clamped-max`
   - `org.scalablytyped`.std.stdStrings.explicit
+  - `org.scalablytyped`.std.stdStrings.max
 */
 trait ChannelCountMode extends js.Object
 

@@ -5,11 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.subtitles
   - `org.scalablytyped`.std.stdStrings.captions
-  - `org.scalablytyped`.std.stdStrings.descriptions
   - `org.scalablytyped`.std.stdStrings.chapters
+  - `org.scalablytyped`.std.stdStrings.descriptions
   - `org.scalablytyped`.std.stdStrings.metadata
+  - `org.scalablytyped`.std.stdStrings.subtitles
 */
 trait TextTrackKind extends js.Object
 

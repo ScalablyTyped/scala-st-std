@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - `org.scalablytyped`.std.stdStrings.default
-  - `org.scalablytyped`.std.stdStrings.`low-power`
   - `org.scalablytyped`.std.stdStrings.`high-performance`
+  - `org.scalablytyped`.std.stdStrings.`low-power`
 */
 trait WebGLPowerPreference extends js.Object
 

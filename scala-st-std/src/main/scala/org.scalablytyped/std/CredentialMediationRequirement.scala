@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.silent
   - `org.scalablytyped`.std.stdStrings.optional
   - `org.scalablytyped`.std.stdStrings.required_
+  - `org.scalablytyped`.std.stdStrings.silent
 */
 trait CredentialMediationRequirement extends js.Object
 

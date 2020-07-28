@@ -1,14 +1,16 @@
 package org.scalablytyped.std.global
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.std.StaticRangeInit
+import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSGlobal("StaticRange")
 @js.native
-class StaticRange ()
+class StaticRange protected ()
   extends org.scalablytyped.std.AbstractRange {
+  def this(init: StaticRangeInit) = this()
   /**
     * Returns true if range is collapsed, and false otherwise.
     */
@@ -39,5 +41,5 @@ class StaticRange ()
 @JSGlobal("StaticRange")
 @js.native
 object StaticRange
-  extends Instantiable0[org.scalablytyped.std.StaticRange]
+  extends Instantiable1[/* init */ StaticRangeInit, org.scalablytyped.std.StaticRange]
 

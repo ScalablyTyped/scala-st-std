@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
   - `org.scalablytyped`.std.stdStrings.`data-channel-failure`
   - `org.scalablytyped`.std.stdStrings.`dtls-failure`
   - `org.scalablytyped`.std.stdStrings.`fingerprint-failure`
+  - `org.scalablytyped`.std.stdStrings.`hardware-encoder-error`
+  - `org.scalablytyped`.std.stdStrings.`hardware-encoder-not-available`
   - `org.scalablytyped`.std.stdStrings.`idp-bad-script-failure`
   - `org.scalablytyped`.std.stdStrings.`idp-execution-failure`
   - `org.scalablytyped`.std.stdStrings.`idp-load-failure`
@@ -18,8 +20,6 @@ import scala.scalajs.js.annotation._
   - `org.scalablytyped`.std.stdStrings.`idp-token-invalid`
   - `org.scalablytyped`.std.stdStrings.`sctp-failure`
   - `org.scalablytyped`.std.stdStrings.`sdp-syntax-error`
-  - `org.scalablytyped`.std.stdStrings.`hardware-encoder-not-available`
-  - `org.scalablytyped`.std.stdStrings.`hardware-encoder-error`
 */
 trait RTCErrorDetailType extends js.Object
 

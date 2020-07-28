@@ -19,8 +19,11 @@ class TextEncoderStream ()
     */
   /* CompleteClass */
   override val readable: org.scalablytyped.std.ReadableStream[_] = js.native
+  /* CompleteClass */
+  @JSName("readable")
+  override val readable_TextEncoderStream: org.scalablytyped.std.ReadableStream[org.scalablytyped.std.Uint8Array] = js.native
   /**
-    * Returns a writable stream which accepts BufferSource chunks and runs them through encoding's decoder before making them available to readable.
+    * Returns a writable stream which accepts [AllowShared] BufferSource chunks and runs them through encoding's decoder before making them available to readable.
     * 
     * Typically this will be used via the pipeThrough() method on a ReadableStream source.
     * 
@@ -35,6 +38,9 @@ class TextEncoderStream ()
     */
   /* CompleteClass */
   override val writable: org.scalablytyped.std.WritableStream[_] = js.native
+  /* CompleteClass */
+  @JSName("writable")
+  override val writable_TextEncoderStream: org.scalablytyped.std.WritableStream[java.lang.String] = js.native
 }
 
 @JSGlobal("TextEncoderStream")

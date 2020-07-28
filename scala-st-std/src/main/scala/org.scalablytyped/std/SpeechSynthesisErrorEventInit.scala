@@ -4,18 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IDBEnvironment extends js.Object {
-  val indexedDB: IDBFactory
+trait SpeechSynthesisErrorEventInit extends SpeechSynthesisEventInit {
+  var error: SpeechSynthesisErrorCode
 }
 
-object IDBEnvironment {
+object SpeechSynthesisErrorEventInit {
   @scala.inline
-  def apply(indexedDB: IDBFactory): IDBEnvironment = {
-    val __obj = js.Dynamic.literal(indexedDB = indexedDB.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IDBEnvironment]
+  def apply(error: SpeechSynthesisErrorCode, utterance: SpeechSynthesisUtterance): SpeechSynthesisErrorEventInit = {
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], utterance = utterance.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SpeechSynthesisErrorEventInit]
   }
   @scala.inline
-  implicit class IDBEnvironmentOps[Self <: IDBEnvironment] (val x: Self) extends AnyVal {
+  implicit class SpeechSynthesisErrorEventInitOps[Self <: SpeechSynthesisErrorEventInit] (val x: Self) extends AnyVal {
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
     @scala.inline
@@ -26,7 +26,7 @@ object IDBEnvironment {
         x
     }
     @scala.inline
-    def setIndexedDB(value: IDBFactory): Self = this.set("indexedDB", value.asInstanceOf[js.Any])
+    def setError(value: SpeechSynthesisErrorCode): Self = this.set("error", value.asInstanceOf[js.Any])
   }
   
 }

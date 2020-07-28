@@ -5,22 +5,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.geolocation
-  - `org.scalablytyped`.std.stdStrings.notifications
-  - `org.scalablytyped`.std.stdStrings.push
-  - `org.scalablytyped`.std.stdStrings.midi
-  - `org.scalablytyped`.std.stdStrings.camera
-  - `org.scalablytyped`.std.stdStrings.microphone
-  - `org.scalablytyped`.std.stdStrings.speaker
-  - `org.scalablytyped`.std.stdStrings.`device-info`
+  - `org.scalablytyped`.std.stdStrings.accelerometer
+  - `org.scalablytyped`.std.stdStrings.`ambient-light-sensor`
   - `org.scalablytyped`.std.stdStrings.`background-sync`
   - `org.scalablytyped`.std.stdStrings.bluetooth
-  - `org.scalablytyped`.std.stdStrings.`persistent-storage`
-  - `org.scalablytyped`.std.stdStrings.`ambient-light-sensor`
-  - `org.scalablytyped`.std.stdStrings.accelerometer
+  - `org.scalablytyped`.std.stdStrings.camera
+  - `org.scalablytyped`.std.stdStrings.clipboard
+  - `org.scalablytyped`.std.stdStrings.`device-info`
+  - `org.scalablytyped`.std.stdStrings.geolocation
   - `org.scalablytyped`.std.stdStrings.gyroscope
   - `org.scalablytyped`.std.stdStrings.magnetometer
-  - `org.scalablytyped`.std.stdStrings.clipboard
+  - `org.scalablytyped`.std.stdStrings.microphone
+  - `org.scalablytyped`.std.stdStrings.midi
+  - `org.scalablytyped`.std.stdStrings.notifications
+  - `org.scalablytyped`.std.stdStrings.`persistent-storage`
+  - `org.scalablytyped`.std.stdStrings.push
+  - `org.scalablytyped`.std.stdStrings.speaker
 */
 trait PermissionName extends js.Object
 

@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - `org.scalablytyped`.std.stdStrings.host
-  - `org.scalablytyped`.std.stdStrings.srflx
   - `org.scalablytyped`.std.stdStrings.prflx
   - `org.scalablytyped`.std.stdStrings.relay
+  - `org.scalablytyped`.std.stdStrings.srflx
 */
 trait RTCIceCandidateType extends js.Object
 

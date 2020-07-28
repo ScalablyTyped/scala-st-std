@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.`new`
-  - `org.scalablytyped`.std.stdStrings.gathering
   - `org.scalablytyped`.std.stdStrings.complete
+  - `org.scalablytyped`.std.stdStrings.gathering
+  - `org.scalablytyped`.std.stdStrings.`new`
 */
 trait RTCIceGatheringState extends js.Object
 

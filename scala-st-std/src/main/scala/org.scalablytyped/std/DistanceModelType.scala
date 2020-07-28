@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.linear
-  - `org.scalablytyped`.std.stdStrings.inverse
   - `org.scalablytyped`.std.stdStrings.exponential
+  - `org.scalablytyped`.std.stdStrings.inverse
+  - `org.scalablytyped`.std.stdStrings.linear
 */
 trait DistanceModelType extends js.Object
 

@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.start
   - `org.scalablytyped`.std.stdStrings.center
   - `org.scalablytyped`.std.stdStrings.end
+  - `org.scalablytyped`.std.stdStrings.start
 */
 trait LineAlignSetting extends js.Object
 

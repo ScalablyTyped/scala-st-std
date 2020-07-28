@@ -8,7 +8,7 @@ trait SpeechRecognitionEventMap extends js.Object {
   var audioend: Event
   var audiostart: Event
   var end: Event
-  var error: SpeechRecognitionError
+  var error: Event
   var nomatch: SpeechRecognitionEvent
   var result: SpeechRecognitionEvent
   var soundend: Event
@@ -24,7 +24,7 @@ object SpeechRecognitionEventMap {
     audioend: Event,
     audiostart: Event,
     end: Event,
-    error: SpeechRecognitionError,
+    error: Event,
     nomatch: SpeechRecognitionEvent,
     result: SpeechRecognitionEvent,
     soundend: Event,
@@ -54,7 +54,7 @@ object SpeechRecognitionEventMap {
     @scala.inline
     def setEnd(value: Event): Self = this.set("end", value.asInstanceOf[js.Any])
     @scala.inline
-    def setError(value: SpeechRecognitionError): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setError(value: Event): Self = this.set("error", value.asInstanceOf[js.Any])
     @scala.inline
     def setNomatch(value: SpeechRecognitionEvent): Self = this.set("nomatch", value.asInstanceOf[js.Any])
     @scala.inline

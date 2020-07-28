@@ -10,8 +10,8 @@ trait RTCRtpSynchronizationSource extends RTCRtpContributingSource {
 
 object RTCRtpSynchronizationSource {
   @scala.inline
-  def apply(source: Double, timestamp: Double): RTCRtpSynchronizationSource = {
-    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+  def apply(rtpTimestamp: Double, source: Double, timestamp: Double): RTCRtpSynchronizationSource = {
+    val __obj = js.Dynamic.literal(rtpTimestamp = rtpTimestamp.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpSynchronizationSource]
   }
   @scala.inline

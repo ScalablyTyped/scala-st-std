@@ -1,6 +1,7 @@
 package org.scalablytyped.std.global
 
 import org.scalablytyped.std.DeviceMotionEventInit
+import org.scalablytyped.std.PermissionState
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
@@ -23,5 +24,7 @@ object DeviceMotionEvent
       /* type */ java.lang.String, 
       /* eventInitDict */ DeviceMotionEventInit, 
       org.scalablytyped.std.DeviceMotionEvent
-    ]
+    ] {
+  def requestPermission(): js.Promise[PermissionState] = js.native
+}
 

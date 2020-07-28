@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.speakers
   - `org.scalablytyped`.std.stdStrings.discrete
+  - `org.scalablytyped`.std.stdStrings.speakers
 */
 trait ChannelInterpretation extends js.Object
 

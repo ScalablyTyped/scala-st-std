@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.password
   - `org.scalablytyped`.std.stdStrings.oauth
+  - `org.scalablytyped`.std.stdStrings.password
 */
 trait RTCIceCredentialType extends js.Object
 

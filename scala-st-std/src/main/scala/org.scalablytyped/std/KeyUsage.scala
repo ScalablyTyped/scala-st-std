@@ -5,14 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.encrypt
   - `org.scalablytyped`.std.stdStrings.decrypt
-  - `org.scalablytyped`.std.stdStrings.sign
-  - `org.scalablytyped`.std.stdStrings.verify
-  - `org.scalablytyped`.std.stdStrings.deriveKey
   - `org.scalablytyped`.std.stdStrings.deriveBits
-  - `org.scalablytyped`.std.stdStrings.wrapKey
+  - `org.scalablytyped`.std.stdStrings.deriveKey
+  - `org.scalablytyped`.std.stdStrings.encrypt
+  - `org.scalablytyped`.std.stdStrings.sign
   - `org.scalablytyped`.std.stdStrings.unwrapKey
+  - `org.scalablytyped`.std.stdStrings.verify
+  - `org.scalablytyped`.std.stdStrings.wrapKey
 */
 trait KeyUsage extends js.Object
 

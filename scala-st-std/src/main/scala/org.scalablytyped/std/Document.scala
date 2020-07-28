@@ -350,7 +350,7 @@ trait Document
     * Fires when the state of the object has changed.
     * @param ev The event
     */
-  var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _]) | Null = js.native
+  var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var onvisibilitychange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   /**
     * Returns document's origin.
@@ -451,20 +451,17 @@ trait Document
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_readystatechange(
-    `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _]
-  ): Unit = js.native
+  def addEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -1225,8 +1222,6 @@ trait Document
   @JSName("createEvent")
   def createEvent_ServiceWorkerMessageEvent(eventInterface: org.scalablytyped.std.stdStrings.ServiceWorkerMessageEvent): ServiceWorkerMessageEvent = js.native
   @JSName("createEvent")
-  def createEvent_SpeechRecognitionError(eventInterface: org.scalablytyped.std.stdStrings.SpeechRecognitionError): SpeechRecognitionError = js.native
-  @JSName("createEvent")
   def createEvent_SpeechRecognitionEvent(eventInterface: org.scalablytyped.std.stdStrings.SpeechRecognitionEvent): SpeechRecognitionEvent = js.native
   @JSName("createEvent")
   def createEvent_SpeechSynthesisErrorEvent(eventInterface: org.scalablytyped.std.stdStrings.SpeechSynthesisErrorEvent): SpeechSynthesisErrorEvent = js.native
@@ -1841,20 +1836,17 @@ trait Document
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_readystatechange(
-    `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _]
-  ): Unit = js.native
+  def removeEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")

@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
+  - `org.scalablytyped`.std.stdStrings.high
   - `org.scalablytyped`.std.stdStrings.low
   - `org.scalablytyped`.std.stdStrings.medium
-  - `org.scalablytyped`.std.stdStrings.high
 */
 trait ImageSmoothingQuality extends js.Object
 

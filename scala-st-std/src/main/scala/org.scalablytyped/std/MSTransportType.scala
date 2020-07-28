@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.Embedded
-  - `org.scalablytyped`.std.stdStrings.USB
-  - `org.scalablytyped`.std.stdStrings.NFC
   - `org.scalablytyped`.std.stdStrings.BT
+  - `org.scalablytyped`.std.stdStrings.Embedded
+  - `org.scalablytyped`.std.stdStrings.NFC
+  - `org.scalablytyped`.std.stdStrings.USB
 */
 trait MSTransportType extends js.Object
 

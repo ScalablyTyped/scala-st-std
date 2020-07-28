@@ -17,7 +17,7 @@ trait WindowEventHandlersEventMap extends js.Object {
   var pagehide: PageTransitionEvent
   var pageshow: PageTransitionEvent
   var popstate: PopStateEvent
-  var rejectionhandled: Event
+  var rejectionhandled: PromiseRejectionEvent
   var storage: StorageEvent
   var unhandledrejection: PromiseRejectionEvent
   var unload: Event
@@ -38,7 +38,7 @@ object WindowEventHandlersEventMap {
     pagehide: PageTransitionEvent,
     pageshow: PageTransitionEvent,
     popstate: PopStateEvent,
-    rejectionhandled: Event,
+    rejectionhandled: PromiseRejectionEvent,
     storage: StorageEvent,
     unhandledrejection: PromiseRejectionEvent,
     unload: Event
@@ -82,7 +82,7 @@ object WindowEventHandlersEventMap {
     @scala.inline
     def setPopstate(value: PopStateEvent): Self = this.set("popstate", value.asInstanceOf[js.Any])
     @scala.inline
-    def setRejectionhandled(value: Event): Self = this.set("rejectionhandled", value.asInstanceOf[js.Any])
+    def setRejectionhandled(value: PromiseRejectionEvent): Self = this.set("rejectionhandled", value.asInstanceOf[js.Any])
     @scala.inline
     def setStorage(value: StorageEvent): Self = this.set("storage", value.asInstanceOf[js.Any])
     @scala.inline

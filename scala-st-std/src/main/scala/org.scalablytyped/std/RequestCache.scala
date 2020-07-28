@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - `org.scalablytyped`.std.stdStrings.default
-  - `org.scalablytyped`.std.stdStrings.`no-store`
-  - `org.scalablytyped`.std.stdStrings.reload
-  - `org.scalablytyped`.std.stdStrings.`no-cache`
   - `org.scalablytyped`.std.stdStrings.`force-cache`
+  - `org.scalablytyped`.std.stdStrings.`no-cache`
+  - `org.scalablytyped`.std.stdStrings.`no-store`
   - `org.scalablytyped`.std.stdStrings.`only-if-cached`
+  - `org.scalablytyped`.std.stdStrings.reload
 */
 trait RequestCache extends js.Object
 

@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.loading
-  - `org.scalablytyped`.std.stdStrings.interactive
   - `org.scalablytyped`.std.stdStrings.complete
+  - `org.scalablytyped`.std.stdStrings.interactive
+  - `org.scalablytyped`.std.stdStrings.loading
 */
 trait DocumentReadyState extends js.Object
 

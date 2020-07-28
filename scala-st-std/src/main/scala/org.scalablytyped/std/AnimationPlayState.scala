@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.idle
-  - `org.scalablytyped`.std.stdStrings.running
-  - `org.scalablytyped`.std.stdStrings.paused
   - `org.scalablytyped`.std.stdStrings.finished
+  - `org.scalablytyped`.std.stdStrings.idle
+  - `org.scalablytyped`.std.stdStrings.paused
+  - `org.scalablytyped`.std.stdStrings.running
 */
 trait AnimationPlayState extends js.Object
 

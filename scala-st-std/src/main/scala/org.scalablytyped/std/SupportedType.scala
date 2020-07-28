@@ -5,11 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
+  - `org.scalablytyped`.std.stdStrings.applicationSlashxhtmlPlussignxml
+  - `org.scalablytyped`.std.stdStrings.applicationSlashxml
+  - `org.scalablytyped`.std.stdStrings.imageSlashsvgPlussignxml
   - `org.scalablytyped`.std.stdStrings.textSlashhtml
   - `org.scalablytyped`.std.stdStrings.textSlashxml
-  - `org.scalablytyped`.std.stdStrings.applicationSlashxml
-  - `org.scalablytyped`.std.stdStrings.applicationSlashxhtmlPlussignxml
-  - `org.scalablytyped`.std.stdStrings.imageSlashsvgPlussignxml
 */
 trait SupportedType extends js.Object
 

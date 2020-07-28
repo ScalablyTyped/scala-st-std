@@ -9,7 +9,6 @@ trait RTCIceCandidate extends js.Object {
   val candidate: java.lang.String
   val component: RTCIceComponent | Null
   val foundation: java.lang.String | Null
-  val ip: java.lang.String | Null
   val port: Double | Null
   val priority: Double | Null
   val protocol: RTCIceProtocol | Null
@@ -52,10 +51,6 @@ object RTCIceCandidate {
     def setFoundation(value: java.lang.String): Self = this.set("foundation", value.asInstanceOf[js.Any])
     @scala.inline
     def setFoundationNull: Self = this.set("foundation", null)
-    @scala.inline
-    def setIp(value: java.lang.String): Self = this.set("ip", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setIpNull: Self = this.set("ip", null)
     @scala.inline
     def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
     @scala.inline

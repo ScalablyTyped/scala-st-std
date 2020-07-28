@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.relay
   - `org.scalablytyped`.std.stdStrings.all
+  - `org.scalablytyped`.std.stdStrings.relay
 */
 trait RTCIceTransportPolicy extends js.Object
 

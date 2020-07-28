@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.i32
-  - `org.scalablytyped`.std.stdStrings.i64
   - `org.scalablytyped`.std.stdStrings.f32
   - `org.scalablytyped`.std.stdStrings.f64
+  - `org.scalablytyped`.std.stdStrings.i32
+  - `org.scalablytyped`.std.stdStrings.i64
 */
 trait ValueType extends js.Object
 

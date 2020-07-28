@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.follow
   - `org.scalablytyped`.std.stdStrings.error
+  - `org.scalablytyped`.std.stdStrings.follow
   - `org.scalablytyped`.std.stdStrings.manual
 */
 trait RequestRedirect extends js.Object

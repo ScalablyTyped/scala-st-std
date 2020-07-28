@@ -16,11 +16,8 @@ trait HTMLBodyElement
   var background: java.lang.String = js.native
   /** @deprecated */
   var bgColor: java.lang.String = js.native
-  var bgProperties: java.lang.String = js.native
   /** @deprecated */
   var link: java.lang.String = js.native
-  /** @deprecated */
-  var noWrap: scala.Boolean = js.native
   /** @deprecated */
   var onorientationchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   /** @deprecated */

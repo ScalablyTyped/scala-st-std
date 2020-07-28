@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.none
   - `org.scalablytyped`.std.stdStrings.`2x`
   - `org.scalablytyped`.std.stdStrings.`4x`
+  - `org.scalablytyped`.std.stdStrings.none
 */
 trait OverSampleType extends js.Object
 

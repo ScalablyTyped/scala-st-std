@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
+  - `org.scalablytyped`.std.stdStrings.inherit
   - `org.scalablytyped`.std.stdStrings.ltr
   - `org.scalablytyped`.std.stdStrings.rtl
-  - `org.scalablytyped`.std.stdStrings.inherit
 */
 trait CanvasDirection extends js.Object
 

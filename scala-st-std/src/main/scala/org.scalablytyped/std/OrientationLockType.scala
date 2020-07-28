@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - `org.scalablytyped`.std.stdStrings.any
-  - `org.scalablytyped`.std.stdStrings.natural
   - `org.scalablytyped`.std.stdStrings.landscape
+  - `org.scalablytyped`.std.stdStrings.`landscape-primary`
+  - `org.scalablytyped`.std.stdStrings.`landscape-secondary`
+  - `org.scalablytyped`.std.stdStrings.natural
   - `org.scalablytyped`.std.stdStrings.portrait
   - `org.scalablytyped`.std.stdStrings.`portrait-primary`
   - `org.scalablytyped`.std.stdStrings.`portrait-secondary`
-  - `org.scalablytyped`.std.stdStrings.`landscape-primary`
-  - `org.scalablytyped`.std.stdStrings.`landscape-secondary`
 */
 trait OrientationLockType extends js.Object
 

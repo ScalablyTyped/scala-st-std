@@ -1,6 +1,7 @@
 package org.scalablytyped.std.global
 
 import org.scalablytyped.std.DeviceOrientationEventInit
+import org.scalablytyped.std.PermissionState
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
@@ -23,5 +24,7 @@ object DeviceOrientationEvent
       /* type */ java.lang.String, 
       /* eventInitDict */ DeviceOrientationEventInit, 
       org.scalablytyped.std.DeviceOrientationEvent
-    ]
+    ] {
+  def requestPermission(): js.Promise[PermissionState] = js.native
+}
 

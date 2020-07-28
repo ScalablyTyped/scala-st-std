@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.round
   - `org.scalablytyped`.std.stdStrings.bevel
   - `org.scalablytyped`.std.stdStrings.miter
+  - `org.scalablytyped`.std.stdStrings.round
 */
 trait CanvasLineJoin extends js.Object
 

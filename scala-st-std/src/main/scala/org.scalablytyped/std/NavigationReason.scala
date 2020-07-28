@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.up
   - `org.scalablytyped`.std.stdStrings.down
   - `org.scalablytyped`.std.stdStrings.left
   - `org.scalablytyped`.std.stdStrings.right
+  - `org.scalablytyped`.std.stdStrings.up
 */
 trait NavigationReason extends js.Object
 

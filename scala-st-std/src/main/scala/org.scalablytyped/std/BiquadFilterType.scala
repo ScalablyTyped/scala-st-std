@@ -5,14 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.lowpass
-  - `org.scalablytyped`.std.stdStrings.highpass
-  - `org.scalablytyped`.std.stdStrings.bandpass
-  - `org.scalablytyped`.std.stdStrings.lowshelf
-  - `org.scalablytyped`.std.stdStrings.highshelf
-  - `org.scalablytyped`.std.stdStrings.peaking
-  - `org.scalablytyped`.std.stdStrings.notch
   - `org.scalablytyped`.std.stdStrings.allpass
+  - `org.scalablytyped`.std.stdStrings.bandpass
+  - `org.scalablytyped`.std.stdStrings.highpass
+  - `org.scalablytyped`.std.stdStrings.highshelf
+  - `org.scalablytyped`.std.stdStrings.lowpass
+  - `org.scalablytyped`.std.stdStrings.lowshelf
+  - `org.scalablytyped`.std.stdStrings.notch
+  - `org.scalablytyped`.std.stdStrings.peaking
 */
 trait BiquadFilterType extends js.Object
 

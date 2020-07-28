@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.suspended
-  - `org.scalablytyped`.std.stdStrings.running
   - `org.scalablytyped`.std.stdStrings.closed
+  - `org.scalablytyped`.std.stdStrings.running
+  - `org.scalablytyped`.std.stdStrings.suspended
 */
 trait AudioContextState extends js.Object
 

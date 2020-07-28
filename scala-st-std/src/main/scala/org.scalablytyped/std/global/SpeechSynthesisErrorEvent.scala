@@ -1,17 +1,24 @@
 package org.scalablytyped.std.global
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.std.SpeechSynthesisErrorEventInit
+import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSGlobal("SpeechSynthesisErrorEvent")
 @js.native
-class SpeechSynthesisErrorEvent ()
-  extends org.scalablytyped.std.SpeechSynthesisErrorEvent
+class SpeechSynthesisErrorEvent protected ()
+  extends org.scalablytyped.std.SpeechSynthesisErrorEvent {
+  def this(`type`: java.lang.String, eventInitDict: SpeechSynthesisErrorEventInit) = this()
+}
 
 @JSGlobal("SpeechSynthesisErrorEvent")
 @js.native
 object SpeechSynthesisErrorEvent
-  extends Instantiable0[org.scalablytyped.std.SpeechSynthesisErrorEvent]
+  extends Instantiable2[
+      /* type */ java.lang.String, 
+      /* eventInitDict */ SpeechSynthesisErrorEventInit, 
+      org.scalablytyped.std.SpeechSynthesisErrorEvent
+    ]
 

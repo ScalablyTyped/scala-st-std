@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait MediaKeySessionEventMap extends js.Object {
   var keystatuseschange: Event
-  var message: MessageEvent
+  var message: MediaKeyMessageEvent
 }
 
 object MediaKeySessionEventMap {
   @scala.inline
-  def apply(keystatuseschange: Event, message: MessageEvent): MediaKeySessionEventMap = {
+  def apply(keystatuseschange: Event, message: MediaKeyMessageEvent): MediaKeySessionEventMap = {
     val __obj = js.Dynamic.literal(keystatuseschange = keystatuseschange.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaKeySessionEventMap]
   }
@@ -29,7 +29,7 @@ object MediaKeySessionEventMap {
     @scala.inline
     def setKeystatuseschange(value: Event): Self = this.set("keystatuseschange", value.asInstanceOf[js.Any])
     @scala.inline
-    def setMessage(value: MessageEvent): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setMessage(value: MediaKeyMessageEvent): Self = this.set("message", value.asInstanceOf[js.Any])
   }
   
 }

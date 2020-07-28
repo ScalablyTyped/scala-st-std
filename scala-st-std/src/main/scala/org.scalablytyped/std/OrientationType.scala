@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.`portrait-primary`
-  - `org.scalablytyped`.std.stdStrings.`portrait-secondary`
   - `org.scalablytyped`.std.stdStrings.`landscape-primary`
   - `org.scalablytyped`.std.stdStrings.`landscape-secondary`
+  - `org.scalablytyped`.std.stdStrings.`portrait-primary`
+  - `org.scalablytyped`.std.stdStrings.`portrait-secondary`
 */
 trait OrientationType extends js.Object
 

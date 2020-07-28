@@ -140,8 +140,6 @@ trait DocumentEvent extends js.Object {
   @JSName("createEvent")
   def createEvent_ServiceWorkerMessageEvent(eventInterface: org.scalablytyped.std.stdStrings.ServiceWorkerMessageEvent): ServiceWorkerMessageEvent = js.native
   @JSName("createEvent")
-  def createEvent_SpeechRecognitionError(eventInterface: org.scalablytyped.std.stdStrings.SpeechRecognitionError): SpeechRecognitionError = js.native
-  @JSName("createEvent")
   def createEvent_SpeechRecognitionEvent(eventInterface: org.scalablytyped.std.stdStrings.SpeechRecognitionEvent): SpeechRecognitionEvent = js.native
   @JSName("createEvent")
   def createEvent_SpeechSynthesisErrorEvent(eventInterface: org.scalablytyped.std.stdStrings.SpeechSynthesisErrorEvent): SpeechSynthesisErrorEvent = js.native

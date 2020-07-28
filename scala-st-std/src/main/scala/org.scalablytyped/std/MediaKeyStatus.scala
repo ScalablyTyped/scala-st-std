@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.usable
   - `org.scalablytyped`.std.stdStrings.expired
-  - `org.scalablytyped`.std.stdStrings.released
-  - `org.scalablytyped`.std.stdStrings.`output-restricted`
-  - `org.scalablytyped`.std.stdStrings.`output-downscaled`
-  - `org.scalablytyped`.std.stdStrings.`status-pending`
   - `org.scalablytyped`.std.stdStrings.`internal-error`
+  - `org.scalablytyped`.std.stdStrings.`output-downscaled`
+  - `org.scalablytyped`.std.stdStrings.`output-restricted`
+  - `org.scalablytyped`.std.stdStrings.released
+  - `org.scalablytyped`.std.stdStrings.`status-pending`
+  - `org.scalablytyped`.std.stdStrings.usable
 */
 trait MediaKeyStatus extends js.Object
 

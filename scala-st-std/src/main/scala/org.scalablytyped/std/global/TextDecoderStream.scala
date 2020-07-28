@@ -1,5 +1,6 @@
 package org.scalablytyped.std.global
 
+import org.scalablytyped.std.BufferSource
 import org.scalablytyped.std.TextDecoderOptions
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
@@ -35,8 +36,11 @@ class TextDecoderStream ()
     */
   /* CompleteClass */
   override val readable: org.scalablytyped.std.ReadableStream[_] = js.native
+  /* CompleteClass */
+  @JSName("readable")
+  override val readable_TextDecoderStream: org.scalablytyped.std.ReadableStream[java.lang.String] = js.native
   /**
-    * Returns a writable stream which accepts BufferSource chunks and runs them through encoding's decoder before making them available to readable.
+    * Returns a writable stream which accepts [AllowShared] BufferSource chunks and runs them through encoding's decoder before making them available to readable.
     * 
     * Typically this will be used via the pipeThrough() method on a ReadableStream source.
     * 
@@ -51,6 +55,9 @@ class TextDecoderStream ()
     */
   /* CompleteClass */
   override val writable: org.scalablytyped.std.WritableStream[_] = js.native
+  /* CompleteClass */
+  @JSName("writable")
+  override val writable_TextDecoderStream: org.scalablytyped.std.WritableStream[BufferSource] = js.native
 }
 
 @JSGlobal("TextDecoderStream")

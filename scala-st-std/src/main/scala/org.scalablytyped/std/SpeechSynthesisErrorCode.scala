@@ -5,17 +5,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.canceled
-  - `org.scalablytyped`.std.stdStrings.interrupted
   - `org.scalablytyped`.std.stdStrings.`audio-busy`
   - `org.scalablytyped`.std.stdStrings.`audio-hardware`
-  - `org.scalablytyped`.std.stdStrings.network
-  - `org.scalablytyped`.std.stdStrings.`synthesis-unavailable`
-  - `org.scalablytyped`.std.stdStrings.`synthesis-failed`
-  - `org.scalablytyped`.std.stdStrings.`language-unavailable`
-  - `org.scalablytyped`.std.stdStrings.`voice-unavailable`
-  - `org.scalablytyped`.std.stdStrings.`text-too-long`
+  - `org.scalablytyped`.std.stdStrings.canceled
+  - `org.scalablytyped`.std.stdStrings.interrupted
   - `org.scalablytyped`.std.stdStrings.`invalid-argument`
+  - `org.scalablytyped`.std.stdStrings.`language-unavailable`
+  - `org.scalablytyped`.std.stdStrings.network
+  - `org.scalablytyped`.std.stdStrings.`not-allowed`
+  - `org.scalablytyped`.std.stdStrings.`synthesis-failed`
+  - `org.scalablytyped`.std.stdStrings.`synthesis-unavailable`
+  - `org.scalablytyped`.std.stdStrings.`text-too-long`
+  - `org.scalablytyped`.std.stdStrings.`voice-unavailable`
 */
 trait SpeechSynthesisErrorCode extends js.Object
 
@@ -34,6 +35,8 @@ object SpeechSynthesisErrorCode {
   def `language-unavailable`: org.scalablytyped.std.stdStrings.`language-unavailable` = "language-unavailable".asInstanceOf[org.scalablytyped.std.stdStrings.`language-unavailable`]
   @scala.inline
   def network: org.scalablytyped.std.stdStrings.network = "network".asInstanceOf[org.scalablytyped.std.stdStrings.network]
+  @scala.inline
+  def `not-allowed`: org.scalablytyped.std.stdStrings.`not-allowed` = "not-allowed".asInstanceOf[org.scalablytyped.std.stdStrings.`not-allowed`]
   @scala.inline
   def `synthesis-failed`: org.scalablytyped.std.stdStrings.`synthesis-failed` = "synthesis-failed".asInstanceOf[org.scalablytyped.std.stdStrings.`synthesis-failed`]
   @scala.inline

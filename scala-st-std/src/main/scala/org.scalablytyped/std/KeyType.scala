@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.public
   - `org.scalablytyped`.std.stdStrings.`private`
+  - `org.scalablytyped`.std.stdStrings.public
   - `org.scalablytyped`.std.stdStrings.secret
 */
 trait KeyType extends js.Object

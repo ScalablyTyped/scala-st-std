@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
+  - `org.scalablytyped`.std.stdStrings.balanced
   - `org.scalablytyped`.std.stdStrings.`maintain-framerate`
   - `org.scalablytyped`.std.stdStrings.`maintain-resolution`
-  - `org.scalablytyped`.std.stdStrings.balanced
 */
 trait RTCDegradationPreference extends js.Object
 

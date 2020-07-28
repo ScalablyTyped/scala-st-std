@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.pending
   - `org.scalablytyped`.std.stdStrings.done
+  - `org.scalablytyped`.std.stdStrings.pending
 */
 trait IDBRequestReadyState extends js.Object
 

@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - `org.scalablytyped`.std.stdStrings.geolocation
-  - `org.scalablytyped`.std.stdStrings.unlimitedIndexedDBQuota
   - `org.scalablytyped`.std.stdStrings.media
   - `org.scalablytyped`.std.stdStrings.pointerlock
+  - `org.scalablytyped`.std.stdStrings.unlimitedIndexedDBQuota
   - `org.scalablytyped`.std.stdStrings.webnotifications
 */
 trait MSWebViewPermissionType extends js.Object

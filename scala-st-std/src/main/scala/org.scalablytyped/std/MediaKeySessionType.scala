@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.temporary
   - `org.scalablytyped`.std.stdStrings.`persistent-license`
+  - `org.scalablytyped`.std.stdStrings.temporary
 */
 trait MediaKeySessionType extends js.Object
 

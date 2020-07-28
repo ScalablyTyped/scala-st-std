@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ontouchstart
   extends TopLevel[
-      (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.TouchEvent, js.Any]) | Null
+      js.UndefOr[
+        (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.TouchEvent, js.Any]) | Null
+      ]
     ]
 

@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 trait SVGPatternElement
   extends SVGElement
      with SVGFitToViewBox
-     with SVGTests
      with SVGURIReference {
   val height: SVGAnimatedLength = js.native
   val patternContentUnits: SVGAnimatedEnumeration = js.native

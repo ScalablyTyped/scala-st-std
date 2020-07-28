@@ -5,15 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.inboundrtp
-  - `org.scalablytyped`.std.stdStrings.outboundrtp
-  - `org.scalablytyped`.std.stdStrings.session
+  - `org.scalablytyped`.std.stdStrings.candidatepair
   - `org.scalablytyped`.std.stdStrings.datachannel
+  - `org.scalablytyped`.std.stdStrings.inboundrtp
+  - `org.scalablytyped`.std.stdStrings.localcandidate
+  - `org.scalablytyped`.std.stdStrings.outboundrtp
+  - `org.scalablytyped`.std.stdStrings.remotecandidate
+  - `org.scalablytyped`.std.stdStrings.session
   - `org.scalablytyped`.std.stdStrings.track
   - `org.scalablytyped`.std.stdStrings.transport
-  - `org.scalablytyped`.std.stdStrings.candidatepair
-  - `org.scalablytyped`.std.stdStrings.localcandidate
-  - `org.scalablytyped`.std.stdStrings.remotecandidate
 */
 trait RTCStatsType extends js.Object
 
