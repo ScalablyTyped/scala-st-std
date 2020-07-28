@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RTCDtlsTransportStateChangedEvent extends Event {
-  val state: java.lang.String
+  val state: RTCDtlsTransportState
 }
 
 object RTCDtlsTransportStateChangedEvent {
@@ -26,7 +26,7 @@ object RTCDtlsTransportStateChangedEvent {
     preventDefault: () => Unit,
     returnValue: scala.Boolean,
     scoped: scala.Boolean,
-    state: java.lang.String,
+    state: RTCDtlsTransportState,
     stopImmediatePropagation: () => Unit,
     stopPropagation: () => Unit,
     target: EventTarget,
@@ -49,7 +49,7 @@ object RTCDtlsTransportStateChangedEvent {
         x
     }
     @scala.inline
-    def setState(value: java.lang.String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: RTCDtlsTransportState): Self = this.set("state", value.asInstanceOf[js.Any])
   }
   
 }

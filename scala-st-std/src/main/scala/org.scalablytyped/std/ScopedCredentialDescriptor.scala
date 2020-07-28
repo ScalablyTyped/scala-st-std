@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait ScopedCredentialDescriptor extends js.Object {
   var id: js.UndefOr[js.Any] = js.undefined
-  var transports: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  var `type`: js.UndefOr[java.lang.String] = js.undefined
+  var transports: js.UndefOr[js.Array[Transport]] = js.undefined
+  var `type`: js.UndefOr[ScopedCredentialType] = js.undefined
 }
 
 object ScopedCredentialDescriptor {
@@ -32,13 +32,13 @@ object ScopedCredentialDescriptor {
     @scala.inline
     def deleteId: Self = this.set("id", js.undefined)
     @scala.inline
-    def setTransportsVarargs(value: java.lang.String*): Self = this.set("transports", js.Array(value :_*))
+    def setTransportsVarargs(value: Transport*): Self = this.set("transports", js.Array(value :_*))
     @scala.inline
-    def setTransports(value: js.Array[java.lang.String]): Self = this.set("transports", value.asInstanceOf[js.Any])
+    def setTransports(value: js.Array[Transport]): Self = this.set("transports", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteTransports: Self = this.set("transports", js.undefined)
     @scala.inline
-    def setType(value: java.lang.String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: ScopedCredentialType): Self = this.set("type", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteType: Self = this.set("type", js.undefined)
   }

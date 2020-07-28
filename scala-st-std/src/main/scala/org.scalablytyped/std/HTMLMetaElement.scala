@@ -27,7 +27,7 @@ trait HTMLMetaElement extends HTMLElement {
     */
   var scheme: java.lang.String = js.native
   /**
-    * Sets or retrieves the URL property that will be loaded after the specified time has elapsed. 
+    * Sets or retrieves the URL property that will be loaded after the specified time has elapsed.
     */
   var url: java.lang.String = js.native
 }

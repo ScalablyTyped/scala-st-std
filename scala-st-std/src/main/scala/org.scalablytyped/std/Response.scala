@@ -13,7 +13,7 @@ trait Response
   val ok: scala.Boolean = js.native
   val status: Double = js.native
   val statusText: java.lang.String = js.native
-  val `type`: java.lang.String = js.native
+  val `type`: ResponseType = js.native
   val url: java.lang.String = js.native
 }
 

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MSConnectivity extends js.Object {
-  var iceType: js.UndefOr[java.lang.String] = js.undefined
+  var iceType: js.UndefOr[MSIceType] = js.undefined
   var iceWarningFlags: js.UndefOr[MSIceWarningFlags] = js.undefined
   var relayAddress: js.UndefOr[MSRelayAddress] = js.undefined
 }
@@ -28,7 +28,7 @@ object MSConnectivity {
         x
     }
     @scala.inline
-    def setIceType(value: java.lang.String): Self = this.set("iceType", value.asInstanceOf[js.Any])
+    def setIceType(value: MSIceType): Self = this.set("iceType", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteIceType: Self = this.set("iceType", js.undefined)
     @scala.inline

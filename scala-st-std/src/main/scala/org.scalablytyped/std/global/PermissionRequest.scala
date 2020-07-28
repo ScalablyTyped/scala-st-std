@@ -1,5 +1,7 @@
 package org.scalablytyped.std.global
 
+import org.scalablytyped.std.MSWebViewPermissionState
+import org.scalablytyped.std.MSWebViewPermissionType
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,9 +14,9 @@ class PermissionRequest ()
   /* CompleteClass */
   override val id: Double = js.native
   /* CompleteClass */
-  override val state: java.lang.String = js.native
+  override val state: MSWebViewPermissionState = js.native
   /* CompleteClass */
-  override val `type`: java.lang.String = js.native
+  override val `type`: MSWebViewPermissionType = js.native
   /* CompleteClass */
   override val uri: java.lang.String = js.native
   /* CompleteClass */

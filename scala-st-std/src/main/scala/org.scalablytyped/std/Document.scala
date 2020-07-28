@@ -18,26 +18,17 @@ import org.scalablytyped.std.stdStrings.MSPointerOut
 import org.scalablytyped.std.stdStrings.MSPointerOver
 import org.scalablytyped.std.stdStrings.MSPointerUp
 import org.scalablytyped.std.stdStrings.`object`
-import org.scalablytyped.std.stdStrings.`var`
 import org.scalablytyped.std.stdStrings.`x-ms-webview`
 import org.scalablytyped.std.stdStrings.a
-import org.scalablytyped.std.stdStrings.abbr
 import org.scalablytyped.std.stdStrings.abort
-import org.scalablytyped.std.stdStrings.acronym
 import org.scalablytyped.std.stdStrings.activate
-import org.scalablytyped.std.stdStrings.address
 import org.scalablytyped.std.stdStrings.applet
 import org.scalablytyped.std.stdStrings.area
-import org.scalablytyped.std.stdStrings.article
-import org.scalablytyped.std.stdStrings.aside
 import org.scalablytyped.std.stdStrings.audio
-import org.scalablytyped.std.stdStrings.b
 import org.scalablytyped.std.stdStrings.base
 import org.scalablytyped.std.stdStrings.basefont
-import org.scalablytyped.std.stdStrings.bdo
 import org.scalablytyped.std.stdStrings.beforeactivate
 import org.scalablytyped.std.stdStrings.beforedeactivate
-import org.scalablytyped.std.stdStrings.big
 import org.scalablytyped.std.stdStrings.blockquote
 import org.scalablytyped.std.stdStrings.blur
 import org.scalablytyped.std.stdStrings.body
@@ -47,14 +38,10 @@ import org.scalablytyped.std.stdStrings.canplay
 import org.scalablytyped.std.stdStrings.canplaythrough
 import org.scalablytyped.std.stdStrings.canvas
 import org.scalablytyped.std.stdStrings.caption
-import org.scalablytyped.std.stdStrings.center
 import org.scalablytyped.std.stdStrings.change
 import org.scalablytyped.std.stdStrings.circle
-import org.scalablytyped.std.stdStrings.cite
 import org.scalablytyped.std.stdStrings.click
 import org.scalablytyped.std.stdStrings.clipPath
-import org.scalablytyped.std.stdStrings.clippath_
-import org.scalablytyped.std.stdStrings.code
 import org.scalablytyped.std.stdStrings.col
 import org.scalablytyped.std.stdStrings.colgroup
 import org.scalablytyped.std.stdStrings.componentTransferFunction
@@ -62,12 +49,10 @@ import org.scalablytyped.std.stdStrings.contextmenu
 import org.scalablytyped.std.stdStrings.data
 import org.scalablytyped.std.stdStrings.datalist
 import org.scalablytyped.std.stdStrings.dblclick
-import org.scalablytyped.std.stdStrings.dd
 import org.scalablytyped.std.stdStrings.deactivate
 import org.scalablytyped.std.stdStrings.defs
 import org.scalablytyped.std.stdStrings.del
 import org.scalablytyped.std.stdStrings.desc
-import org.scalablytyped.std.stdStrings.dfn
 import org.scalablytyped.std.stdStrings.dir
 import org.scalablytyped.std.stdStrings.div
 import org.scalablytyped.std.stdStrings.dl
@@ -78,10 +63,8 @@ import org.scalablytyped.std.stdStrings.dragleave
 import org.scalablytyped.std.stdStrings.dragover
 import org.scalablytyped.std.stdStrings.dragstart
 import org.scalablytyped.std.stdStrings.drop
-import org.scalablytyped.std.stdStrings.dt
 import org.scalablytyped.std.stdStrings.durationchange
 import org.scalablytyped.std.stdStrings.ellipse
-import org.scalablytyped.std.stdStrings.em
 import org.scalablytyped.std.stdStrings.embed
 import org.scalablytyped.std.stdStrings.emptied
 import org.scalablytyped.std.stdStrings.ended
@@ -110,39 +93,11 @@ import org.scalablytyped.std.stdStrings.feSpecularLighting
 import org.scalablytyped.std.stdStrings.feSpotLight
 import org.scalablytyped.std.stdStrings.feTile
 import org.scalablytyped.std.stdStrings.feTurbulence
-import org.scalablytyped.std.stdStrings.feblend_
-import org.scalablytyped.std.stdStrings.fecolormatrix_
-import org.scalablytyped.std.stdStrings.fecomponenttransfer_
-import org.scalablytyped.std.stdStrings.fecomposite_
-import org.scalablytyped.std.stdStrings.feconvolvematrix_
-import org.scalablytyped.std.stdStrings.fediffuselighting_
-import org.scalablytyped.std.stdStrings.fedisplacementmap_
-import org.scalablytyped.std.stdStrings.fedistantlight_
-import org.scalablytyped.std.stdStrings.feflood_
-import org.scalablytyped.std.stdStrings.fefunca_
-import org.scalablytyped.std.stdStrings.fefuncb_
-import org.scalablytyped.std.stdStrings.fefuncg_
-import org.scalablytyped.std.stdStrings.fefuncr_
-import org.scalablytyped.std.stdStrings.fegaussianblur_
-import org.scalablytyped.std.stdStrings.feimage_
-import org.scalablytyped.std.stdStrings.femerge_
-import org.scalablytyped.std.stdStrings.femergenode_
-import org.scalablytyped.std.stdStrings.femorphology_
-import org.scalablytyped.std.stdStrings.feoffset_
-import org.scalablytyped.std.stdStrings.fepointlight_
-import org.scalablytyped.std.stdStrings.fespecularlighting_
-import org.scalablytyped.std.stdStrings.fespotlight_
-import org.scalablytyped.std.stdStrings.fetile_
-import org.scalablytyped.std.stdStrings.feturbulence_
 import org.scalablytyped.std.stdStrings.fieldset
-import org.scalablytyped.std.stdStrings.figcaption
-import org.scalablytyped.std.stdStrings.figure
 import org.scalablytyped.std.stdStrings.filter
 import org.scalablytyped.std.stdStrings.focus
 import org.scalablytyped.std.stdStrings.font
-import org.scalablytyped.std.stdStrings.footer
 import org.scalablytyped.std.stdStrings.foreignObject
-import org.scalablytyped.std.stdStrings.foreignobject_
 import org.scalablytyped.std.stdStrings.form
 import org.scalablytyped.std.stdStrings.frame
 import org.scalablytyped.std.stdStrings.frameset
@@ -156,13 +111,10 @@ import org.scalablytyped.std.stdStrings.h3
 import org.scalablytyped.std.stdStrings.h4
 import org.scalablytyped.std.stdStrings.h5
 import org.scalablytyped.std.stdStrings.h6
-import org.scalablytyped.std.stdStrings.header
-import org.scalablytyped.std.stdStrings.hgroup
 import org.scalablytyped.std.stdStrings.hr
 import org.scalablytyped.std.stdStrings.html
 import org.scalablytyped.std.stdStrings.httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml
 import org.scalablytyped.std.stdStrings.httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg
-import org.scalablytyped.std.stdStrings.i
 import org.scalablytyped.std.stdStrings.iframe
 import org.scalablytyped.std.stdStrings.image
 import org.scalablytyped.std.stdStrings.img
@@ -170,9 +122,7 @@ import org.scalablytyped.std.stdStrings.input
 import org.scalablytyped.std.stdStrings.ins
 import org.scalablytyped.std.stdStrings.invalid
 import org.scalablytyped.std.stdStrings.isindex
-import org.scalablytyped.std.stdStrings.kbd
 import org.scalablytyped.std.stdStrings.keydown
-import org.scalablytyped.std.stdStrings.keygen
 import org.scalablytyped.std.stdStrings.keypress
 import org.scalablytyped.std.stdStrings.keyup
 import org.scalablytyped.std.stdStrings.label
@@ -180,7 +130,6 @@ import org.scalablytyped.std.stdStrings.legend
 import org.scalablytyped.std.stdStrings.li
 import org.scalablytyped.std.stdStrings.line
 import org.scalablytyped.std.stdStrings.linearGradient
-import org.scalablytyped.std.stdStrings.lineargradient_
 import org.scalablytyped.std.stdStrings.link
 import org.scalablytyped.std.stdStrings.listing
 import org.scalablytyped.std.stdStrings.load
@@ -188,7 +137,6 @@ import org.scalablytyped.std.stdStrings.loadeddata
 import org.scalablytyped.std.stdStrings.loadedmetadata
 import org.scalablytyped.std.stdStrings.loadstart
 import org.scalablytyped.std.stdStrings.map_
-import org.scalablytyped.std.stdStrings.mark
 import org.scalablytyped.std.stdStrings.marker
 import org.scalablytyped.std.stdStrings.marquee
 import org.scalablytyped.std.stdStrings.mask
@@ -204,11 +152,7 @@ import org.scalablytyped.std.stdStrings.mouseup
 import org.scalablytyped.std.stdStrings.mousewheel
 import org.scalablytyped.std.stdStrings.mssitemodejumplistitemremoved
 import org.scalablytyped.std.stdStrings.msthumbnailclick
-import org.scalablytyped.std.stdStrings.nav
 import org.scalablytyped.std.stdStrings.nextid
-import org.scalablytyped.std.stdStrings.nobr
-import org.scalablytyped.std.stdStrings.noframes
-import org.scalablytyped.std.stdStrings.noscript
 import org.scalablytyped.std.stdStrings.ol
 import org.scalablytyped.std.stdStrings.optgroup
 import org.scalablytyped.std.stdStrings.option
@@ -219,7 +163,6 @@ import org.scalablytyped.std.stdStrings.path
 import org.scalablytyped.std.stdStrings.pattern
 import org.scalablytyped.std.stdStrings.pause
 import org.scalablytyped.std.stdStrings.picture
-import org.scalablytyped.std.stdStrings.plaintext
 import org.scalablytyped.std.stdStrings.play
 import org.scalablytyped.std.stdStrings.playing
 import org.scalablytyped.std.stdStrings.pointerlockchange
@@ -230,34 +173,23 @@ import org.scalablytyped.std.stdStrings.pre
 import org.scalablytyped.std.stdStrings.progress
 import org.scalablytyped.std.stdStrings.q
 import org.scalablytyped.std.stdStrings.radialGradient
-import org.scalablytyped.std.stdStrings.radialgradient_
 import org.scalablytyped.std.stdStrings.ratechange
 import org.scalablytyped.std.stdStrings.readystatechange
 import org.scalablytyped.std.stdStrings.rect
 import org.scalablytyped.std.stdStrings.reset
-import org.scalablytyped.std.stdStrings.rt
-import org.scalablytyped.std.stdStrings.ruby
-import org.scalablytyped.std.stdStrings.s
-import org.scalablytyped.std.stdStrings.samp
 import org.scalablytyped.std.stdStrings.script
 import org.scalablytyped.std.stdStrings.scroll
-import org.scalablytyped.std.stdStrings.section
 import org.scalablytyped.std.stdStrings.seeked
 import org.scalablytyped.std.stdStrings.seeking
 import org.scalablytyped.std.stdStrings.select
 import org.scalablytyped.std.stdStrings.selectionchange
 import org.scalablytyped.std.stdStrings.selectstart
-import org.scalablytyped.std.stdStrings.small
 import org.scalablytyped.std.stdStrings.source
 import org.scalablytyped.std.stdStrings.span
 import org.scalablytyped.std.stdStrings.stalled
 import org.scalablytyped.std.stdStrings.stop
-import org.scalablytyped.std.stdStrings.strike
-import org.scalablytyped.std.stdStrings.strong
 import org.scalablytyped.std.stdStrings.style
-import org.scalablytyped.std.stdStrings.sub
 import org.scalablytyped.std.stdStrings.submit
-import org.scalablytyped.std.stdStrings.sup
 import org.scalablytyped.std.stdStrings.suspend
 import org.scalablytyped.std.stdStrings.svg
 import org.scalablytyped.std.stdStrings.switch
@@ -271,7 +203,6 @@ import org.scalablytyped.std.stdStrings.textContent
 import org.scalablytyped.std.stdStrings.textPath
 import org.scalablytyped.std.stdStrings.textPositioning
 import org.scalablytyped.std.stdStrings.textarea
-import org.scalablytyped.std.stdStrings.textpath_
 import org.scalablytyped.std.stdStrings.tfoot
 import org.scalablytyped.std.stdStrings.th
 import org.scalablytyped.std.stdStrings.thead
@@ -285,15 +216,12 @@ import org.scalablytyped.std.stdStrings.touchstart
 import org.scalablytyped.std.stdStrings.tr
 import org.scalablytyped.std.stdStrings.track
 import org.scalablytyped.std.stdStrings.tspan
-import org.scalablytyped.std.stdStrings.tt
-import org.scalablytyped.std.stdStrings.u
 import org.scalablytyped.std.stdStrings.ul
 import org.scalablytyped.std.stdStrings.use
 import org.scalablytyped.std.stdStrings.video
 import org.scalablytyped.std.stdStrings.view
 import org.scalablytyped.std.stdStrings.volumechange
 import org.scalablytyped.std.stdStrings.waiting
-import org.scalablytyped.std.stdStrings.wbr
 import org.scalablytyped.std.stdStrings.webkitfullscreenchange
 import org.scalablytyped.std.stdStrings.webkitfullscreenerror
 import org.scalablytyped.std.stdStrings.xmp
@@ -310,7 +238,7 @@ trait Document
      with ParentNode
      with DocumentOrShadowRoot {
   /**
-    * Sets or gets the URL for the current document. 
+    * Sets or gets the URL for the current document.
     */
   val URL: java.lang.String = js.native
   /**
@@ -339,7 +267,7 @@ trait Document
     */
   var applets: HTMLCollectionOf[HTMLAppletElement] = js.native
   /**
-    * Deprecated. Sets or retrieves a value that indicates the background color behind the object. 
+    * Deprecated. Sets or retrieves a value that indicates the background color behind the object.
     */
   var bgColor: java.lang.String = js.native
   /**
@@ -363,19 +291,19 @@ trait Document
     */
   var designMode: java.lang.String = js.native
   /**
-    * Sets or retrieves a value that indicates the reading order of the object. 
+    * Sets or retrieves a value that indicates the reading order of the object.
     */
   var dir: java.lang.String = js.native
   /**
-    * Gets an object representing the document type declaration associated with the current document. 
+    * Gets an object representing the document type declaration associated with the current document.
     */
   val doctype: DocumentType = js.native
   /**
-    * Gets a reference to the root node of the document. 
+    * Gets a reference to the root node of the document.
     */
   var documentElement: HTMLElement = js.native
   /**
-    * Sets or gets the security domain of the document. 
+    * Sets or gets the security domain of the document.
     */
   var domain: java.lang.String = js.native
   /**
@@ -399,7 +327,7 @@ trait Document
     */
   var images: HTMLCollectionOf[HTMLImageElement] = js.native
   /**
-    * Gets the implementation object of the current document. 
+    * Gets the implementation object of the current document.
     */
   val implementation: DOMImplementation = js.native
   /**
@@ -407,11 +335,11 @@ trait Document
     */
   val inputEncoding: java.lang.String | Null = js.native
   /**
-    * Gets the date that the page was last modified, if the page supplies one. 
+    * Gets the date that the page was last modified, if the page supplies one.
     */
   val lastModified: java.lang.String = js.native
   /**
-    * Sets or gets the color of the document links. 
+    * Sets or gets the color of the document links.
     */
   var linkColor: java.lang.String = js.native
   /**
@@ -419,7 +347,7 @@ trait Document
     */
   var links: HTMLCollectionOf[HTMLAnchorElement | HTMLAreaElement] = js.native
   /**
-    * Contains information about the current URL. 
+    * Contains information about the current URL.
     */
   val location: Location = js.native
   var msCSSOMElementFloatMetrics: scala.Boolean = js.native
@@ -451,8 +379,8 @@ trait Document
     * Contains the title of the document.
     */
   var title: java.lang.String = js.native
-  val visibilityState: java.lang.String = js.native
-  /** 
+  val visibilityState: VisibilityState = js.native
+  /**
     * Sets or gets the color of the links that the user has visited.
     */
   var vlinkColor: java.lang.String = js.native
@@ -1219,7 +1147,7 @@ trait Document
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     useCapture: scala.Boolean
   ): Unit = js.native
-  def adoptNode(source: Node): Node = js.native
+  def adoptNode[T /* <: Node */](source: T): T = js.native
   def captureEvents(): Unit = js.native
   def caretRangeFromPoint(x: Double, y: Double): Range = js.native
   def clear(): Unit = js.native
@@ -1497,7 +1425,7 @@ trait Document
   def createExpression(expression: java.lang.String, resolver: XPathNSResolver): XPathExpression = js.native
   def createNSResolver(nodeResolver: Node): XPathNSResolver = js.native
   /**
-    * Creates a NodeIterator object that you can use to traverse filtered lists of nodes or elements in a document. 
+    * Creates a NodeIterator object that you can use to traverse filtered lists of nodes or elements in a document.
     * @param root The root element or node to start traversing on.
     * @param whatToShow The type of nodes or elements to appear in the node list
     * @param filter A custom NodeFilter function to use. For more information, see filter. Use null for no filter.
@@ -1528,11 +1456,11 @@ trait Document
   def createNodeIterator(root: Node, whatToShow: Double, filter: NodeFilter, entityReferenceExpansion: scala.Boolean): NodeIterator = js.native
   def createProcessingInstruction(target: java.lang.String, data: java.lang.String): ProcessingInstruction = js.native
   /**
-    *  Returns an empty range object that has both of its boundary points positioned at the beginning of the document. 
+    *  Returns an empty range object that has both of its boundary points positioned at the beginning of the document.
     */
   def createRange(): Range = js.native
   /**
-    * Creates a text string from the specified value. 
+    * Creates a text string from the specified value.
     * @param data String that specifies the nodeValue property of the text node.
     */
   def createTextNode(data: java.lang.String): Text = js.native
@@ -1625,378 +1553,21 @@ trait Document
     */
   def getElementsByName(elementName: java.lang.String): NodeListOf[HTMLElement] = js.native
   def getElementsByTagName(tagname: java.lang.String): NodeListOf[Element] = js.native
+  /**
+    * Retrieves a collection of objects based on the specified element name.
+    * @param name Specifies the name of an element.
+    */
+  def getElementsByTagName[K /* <: /* keyof std.ElementListTagNameMap */ java.lang.String */](tagname: K): /* import warning: importer.ImportType#apply Failed type conversion: std.ElementListTagNameMap[K] */ js.Any = js.native
   def getElementsByTagNameNS(namespaceURI: java.lang.String, localName: java.lang.String): HTMLCollectionOf[Element] = js.native
   @JSName("getElementsByTagNameNS")
   def getElementsByTagNameNS_httpwwww3org1999xhtml(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml, localName: java.lang.String): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagNameNS")
   def getElementsByTagNameNS_httpwwww3org2000svg(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, localName: java.lang.String): HTMLCollectionOf[SVGElement] = js.native
   /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_a(tagname: a): NodeListOf[HTMLAnchorElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_abbr(tagname: abbr): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_acronym(tagname: acronym): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_address(tagname: address): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_applet(tagname: applet): NodeListOf[HTMLAppletElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_area(tagname: area): NodeListOf[HTMLAreaElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_article(tagname: article): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_aside(tagname: aside): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_audio(tagname: audio): NodeListOf[HTMLAudioElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_b(tagname: b): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_base(tagname: base): NodeListOf[HTMLBaseElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_basefont(tagname: basefont): NodeListOf[HTMLBaseFontElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_bdo(tagname: bdo): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_big(tagname: big): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_blockquote(tagname: blockquote): NodeListOf[HTMLQuoteElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_body(tagname: body): NodeListOf[HTMLBodyElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_br(tagname: br): NodeListOf[HTMLBRElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_button(tagname: button): NodeListOf[HTMLButtonElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_canvas(tagname: canvas): NodeListOf[HTMLCanvasElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_caption(tagname: caption): NodeListOf[HTMLTableCaptionElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_center(tagname: center): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_circle(tagname: circle): NodeListOf[SVGCircleElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_cite(tagname: cite): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_clippath(tagname: clippath_): NodeListOf[SVGClipPathElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_code(tagname: code): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_col(tagname: col): NodeListOf[HTMLTableColElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_colgroup(tagname: colgroup): NodeListOf[HTMLTableColElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_data(tagname: data): NodeListOf[HTMLDataElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_datalist(tagname: datalist): NodeListOf[HTMLDataListElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_dd(tagname: dd): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_defs(tagname: defs): NodeListOf[SVGDefsElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_del(tagname: del): NodeListOf[HTMLModElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_desc(tagname: desc): NodeListOf[SVGDescElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_dfn(tagname: dfn): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_dir(tagname: dir): NodeListOf[HTMLDirectoryElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_div(tagname: div): NodeListOf[HTMLDivElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_dl(tagname: dl): NodeListOf[HTMLDListElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_dt(tagname: dt): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_ellipse(tagname: ellipse): NodeListOf[SVGEllipseElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_em(tagname: em): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_embed(tagname: embed): NodeListOf[HTMLEmbedElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feblend(tagname: feblend_): NodeListOf[SVGFEBlendElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_fecolormatrix(tagname: fecolormatrix_): NodeListOf[SVGFEColorMatrixElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_fecomponenttransfer(tagname: fecomponenttransfer_): NodeListOf[SVGFEComponentTransferElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_fecomposite(tagname: fecomposite_): NodeListOf[SVGFECompositeElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feconvolvematrix(tagname: feconvolvematrix_): NodeListOf[SVGFEConvolveMatrixElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_fediffuselighting(tagname: fediffuselighting_): NodeListOf[SVGFEDiffuseLightingElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_fedisplacementmap(tagname: fedisplacementmap_): NodeListOf[SVGFEDisplacementMapElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_fedistantlight(tagname: fedistantlight_): NodeListOf[SVGFEDistantLightElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feflood(tagname: feflood_): NodeListOf[SVGFEFloodElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_fefunca(tagname: fefunca_): NodeListOf[SVGFEFuncAElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_fefuncb(tagname: fefuncb_): NodeListOf[SVGFEFuncBElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_fefuncg(tagname: fefuncg_): NodeListOf[SVGFEFuncGElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_fefuncr(tagname: fefuncr_): NodeListOf[SVGFEFuncRElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_fegaussianblur(tagname: fegaussianblur_): NodeListOf[SVGFEGaussianBlurElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feimage(tagname: feimage_): NodeListOf[SVGFEImageElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_femerge(tagname: femerge_): NodeListOf[SVGFEMergeElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_femergenode(tagname: femergenode_): NodeListOf[SVGFEMergeNodeElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_femorphology(tagname: femorphology_): NodeListOf[SVGFEMorphologyElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feoffset(tagname: feoffset_): NodeListOf[SVGFEOffsetElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_fepointlight(tagname: fepointlight_): NodeListOf[SVGFEPointLightElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_fespecularlighting(tagname: fespecularlighting_): NodeListOf[SVGFESpecularLightingElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_fespotlight(tagname: fespotlight_): NodeListOf[SVGFESpotLightElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_fetile(tagname: fetile_): NodeListOf[SVGFETileElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_feturbulence(tagname: feturbulence_): NodeListOf[SVGFETurbulenceElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_fieldset(tagname: fieldset): NodeListOf[HTMLFieldSetElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_figcaption(tagname: figcaption): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_figure(tagname: figure): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_filter(tagname: filter): NodeListOf[SVGFilterElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_font(tagname: font): NodeListOf[HTMLFontElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_footer(tagname: footer): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_foreignobject(tagname: foreignobject_): NodeListOf[SVGForeignObjectElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_form(tagname: form): NodeListOf[HTMLFormElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_frame(tagname: frame): NodeListOf[HTMLFrameElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_frameset(tagname: frameset): NodeListOf[HTMLFrameSetElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_g(tagname: g): NodeListOf[SVGGElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_h1(tagname: h1): NodeListOf[HTMLHeadingElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_h2(tagname: h2): NodeListOf[HTMLHeadingElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_h3(tagname: h3): NodeListOf[HTMLHeadingElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_h4(tagname: h4): NodeListOf[HTMLHeadingElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_h5(tagname: h5): NodeListOf[HTMLHeadingElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_h6(tagname: h6): NodeListOf[HTMLHeadingElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_head(tagname: org.scalablytyped.std.stdStrings.head): NodeListOf[HTMLHeadElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_header(tagname: header): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_hgroup(tagname: hgroup): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_hr(tagname: hr): NodeListOf[HTMLHRElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_html(tagname: html): NodeListOf[HTMLHtmlElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_i(tagname: i): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_iframe(tagname: iframe): NodeListOf[HTMLIFrameElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_image(tagname: image): NodeListOf[SVGImageElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_img(tagname: img): NodeListOf[HTMLImageElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_input(tagname: input): NodeListOf[HTMLInputElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_ins(tagname: ins): NodeListOf[HTMLModElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_isindex(tagname: isindex): NodeListOf[HTMLUnknownElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_kbd(tagname: kbd): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_keygen(tagname: keygen): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_label(tagname: label): NodeListOf[HTMLLabelElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_legend(tagname: legend): NodeListOf[HTMLLegendElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_li(tagname: li): NodeListOf[HTMLLIElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_line(tagname: line): NodeListOf[SVGLineElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_lineargradient(tagname: lineargradient_): NodeListOf[SVGLinearGradientElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_link(tagname: link): NodeListOf[HTMLLinkElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_listing(tagname: listing): NodeListOf[HTMLPreElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_map(tagname: map_): NodeListOf[HTMLMapElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_mark(tagname: mark): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_marker(tagname: marker): NodeListOf[SVGMarkerElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_marquee(tagname: marquee): NodeListOf[HTMLMarqueeElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_mask(tagname: mask): NodeListOf[SVGMaskElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_menu(tagname: menu): NodeListOf[HTMLMenuElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_meta(tagname: meta): NodeListOf[HTMLMetaElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_metadata(tagname: metadata): NodeListOf[SVGMetadataElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_meter(tagname: meter): NodeListOf[HTMLMeterElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_nav(tagname: nav): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_nextid(tagname: nextid): NodeListOf[HTMLUnknownElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_nobr(tagname: nobr): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_noframes(tagname: noframes): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_noscript(tagname: noscript): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_object(tagname: `object`): NodeListOf[HTMLObjectElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_ol(tagname: ol): NodeListOf[HTMLOListElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_optgroup(tagname: optgroup): NodeListOf[HTMLOptGroupElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_option(tagname: option): NodeListOf[HTMLOptionElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_output(tagname: output): NodeListOf[HTMLOutputElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_p(tagname: p): NodeListOf[HTMLParagraphElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_param(tagname: param): NodeListOf[HTMLParamElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_path(tagname: path): NodeListOf[SVGPathElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_pattern(tagname: pattern): NodeListOf[SVGPatternElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_picture(tagname: picture): NodeListOf[HTMLPictureElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_plaintext(tagname: plaintext): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_polygon(tagname: polygon): NodeListOf[SVGPolygonElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_polyline(tagname: polyline): NodeListOf[SVGPolylineElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_pre(tagname: pre): NodeListOf[HTMLPreElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_progress(tagname: progress): NodeListOf[HTMLProgressElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_q(tagname: q): NodeListOf[HTMLQuoteElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_radialgradient(tagname: radialgradient_): NodeListOf[SVGRadialGradientElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_rect(tagname: rect): NodeListOf[SVGRectElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_rt(tagname: rt): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_ruby(tagname: ruby): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_s(tagname: s): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_samp(tagname: samp): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_script(tagname: script): NodeListOf[HTMLScriptElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_section(tagname: section): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_select(tagname: select): NodeListOf[HTMLSelectElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_small(tagname: small): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_source(tagname: source): NodeListOf[HTMLSourceElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_span(tagname: span): NodeListOf[HTMLSpanElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_stop(tagname: stop): NodeListOf[SVGStopElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_strike(tagname: strike): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_strong(tagname: strong): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_style(tagname: style): NodeListOf[HTMLStyleElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_sub(tagname: sub): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_sup(tagname: sup): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_svg(tagname: svg): NodeListOf[SVGSVGElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_switch(tagname: switch): NodeListOf[SVGSwitchElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_symbol(tagname: symbol_): NodeListOf[SVGSymbolElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_table(tagname: table): NodeListOf[HTMLTableElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_tbody(tagname: tbody): NodeListOf[HTMLTableSectionElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_td(tagname: td): NodeListOf[HTMLTableDataCellElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_template(tagname: template): NodeListOf[HTMLTemplateElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_text(tagname: text): NodeListOf[SVGTextElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_textarea(tagname: textarea): NodeListOf[HTMLTextAreaElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_textpath(tagname: textpath_): NodeListOf[SVGTextPathElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_tfoot(tagname: tfoot): NodeListOf[HTMLTableSectionElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_th(tagname: th): NodeListOf[HTMLTableHeaderCellElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_thead(tagname: thead): NodeListOf[HTMLTableSectionElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_time(tagname: time): NodeListOf[HTMLTimeElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_title(tagname: title): NodeListOf[HTMLTitleElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_tr(tagname: tr): NodeListOf[HTMLTableRowElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_track(tagname: track): NodeListOf[HTMLTrackElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_tspan(tagname: tspan): NodeListOf[SVGTSpanElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_tt(tagname: tt): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_u(tagname: u): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_ul(tagname: ul): NodeListOf[HTMLUListElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_use(tagname: use): NodeListOf[SVGUseElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_var(tagname: `var`): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_video(tagname: video): NodeListOf[HTMLVideoElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_view(tagname: view): NodeListOf[SVGViewElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_wbr(tagname: wbr): NodeListOf[HTMLElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_xmp(tagname: xmp): NodeListOf[HTMLPreElement] = js.native
-  @JSName("getElementsByTagName")
-  def getElementsByTagName_xmswebview(tagname: `x-ms-webview`): NodeListOf[MSHTMLWebViewElement] = js.native
-  /**
     * Gets a value indicating whether the object currently has focus.
     */
   def hasFocus(): scala.Boolean = js.native
-  def importNode(importedNode: Node, deep: scala.Boolean): Node = js.native
+  def importNode[T /* <: Node */](importedNode: T, deep: scala.Boolean): T = js.native
   def msElementsFromPoint(x: Double, y: Double): NodeListOf[Element] = js.native
   def msElementsFromRect(left: Double, top: Double, width: Double, height: Double): NodeListOf[Element] = js.native
   /**
@@ -2019,19 +1590,19 @@ trait Document
     * @param ev The event.
     */
   def onbeforedeactivate(ev: UIEvent): js.Any = js.native
-  /** 
-    * Fires when the object loses the input focus. 
+  /**
+    * Fires when the object loses the input focus.
     * @param ev The focus event.
     */
   def onblur(ev: FocusEvent): js.Any = js.native
   /**
-    * Occurs when playback is possible, but would require further buffering. 
+    * Occurs when playback is possible, but would require further buffering.
     * @param ev The event.
     */
   def oncanplay(ev: Event): js.Any = js.native
   def oncanplaythrough(ev: Event): js.Any = js.native
   /**
-    * Fires when the contents of the object or selection have changed. 
+    * Fires when the contents of the object or selection have changed.
     * @param ev The event.
     */
   def onchange(ev: Event): js.Any = js.native
@@ -2041,7 +1612,7 @@ trait Document
     */
   def onclick(ev: MouseEvent): js.Any = js.native
   /**
-    * Fires when the user clicks the right mouse button in the client area, opening the context menu. 
+    * Fires when the user clicks the right mouse button in the client area, opening the context menu.
     * @param ev The mouse event.
     */
   def oncontextmenu(ev: PointerEvent): js.Any = js.native
@@ -2065,12 +1636,12 @@ trait Document
     * @param ev The event.
     */
   def ondragend(ev: DragEvent): js.Any = js.native
-  /** 
+  /**
     * Fires on the target element when the user drags the object to a valid drop target.
     * @param ev The drag event.
     */
   def ondragenter(ev: DragEvent): js.Any = js.native
-  /** 
+  /**
     * Fires on the target object when the user moves the mouse out of a valid drop target during a drag operation.
     * @param ev The drag event.
     */
@@ -2081,23 +1652,23 @@ trait Document
     */
   def ondragover(ev: DragEvent): js.Any = js.native
   /**
-    * Fires on the source object when the user starts to drag a text selection or selected object. 
+    * Fires on the source object when the user starts to drag a text selection or selected object.
     * @param ev The event.
     */
   def ondragstart(ev: DragEvent): js.Any = js.native
   def ondrop(ev: DragEvent): js.Any = js.native
   /**
-    * Occurs when the duration attribute is updated. 
+    * Occurs when the duration attribute is updated.
     * @param ev The event.
     */
   def ondurationchange(ev: Event): js.Any = js.native
   /**
-    * Occurs when the media element is reset to its initial state. 
+    * Occurs when the media element is reset to its initial state.
     * @param ev The event.
     */
   def onemptied(ev: Event): js.Any = js.native
   /**
-    * Occurs when the end of playback is reached. 
+    * Occurs when the end of playback is reached.
     * @param ev The event
     */
   def onended(ev: MediaStreamErrorEvent): js.Any = js.native
@@ -2107,7 +1678,7 @@ trait Document
     */
   def onerror(ev: ErrorEvent): js.Any = js.native
   /**
-    * Fires when the object receives focus. 
+    * Fires when the object receives focus.
     * @param ev The event.
     */
   def onfocus(ev: FocusEvent): js.Any = js.native
@@ -2131,12 +1702,12 @@ trait Document
     */
   def onkeyup(ev: KeyboardEvent): js.Any = js.native
   /**
-    * Fires immediately after the browser loads the object. 
+    * Fires immediately after the browser loads the object.
     * @param ev The event.
     */
   def onload(ev: Event): js.Any = js.native
   /**
-    * Occurs when media data is loaded at the current playback position. 
+    * Occurs when media data is loaded at the current playback position.
     * @param ev The event.
     */
   def onloadeddata(ev: Event): js.Any = js.native
@@ -2146,22 +1717,22 @@ trait Document
     */
   def onloadedmetadata(ev: Event): js.Any = js.native
   /**
-    * Occurs when Internet Explorer begins looking for media data. 
+    * Occurs when Internet Explorer begins looking for media data.
     * @param ev The event.
     */
   def onloadstart(ev: Event): js.Any = js.native
   /**
-    * Fires when the user clicks the object with either mouse button. 
+    * Fires when the user clicks the object with either mouse button.
     * @param ev The mouse event.
     */
   def onmousedown(ev: MouseEvent): js.Any = js.native
   /**
-    * Fires when the user moves the mouse over the object. 
+    * Fires when the user moves the mouse over the object.
     * @param ev The mouse event.
     */
   def onmousemove(ev: MouseEvent): js.Any = js.native
   /**
-    * Fires when the user moves the mouse pointer outside the boundaries of the object. 
+    * Fires when the user moves the mouse pointer outside the boundaries of the object.
     * @param ev The mouse event.
     */
   def onmouseout(ev: MouseEvent): js.Any = js.native
@@ -2171,12 +1742,12 @@ trait Document
     */
   def onmouseover(ev: MouseEvent): js.Any = js.native
   /**
-    * Fires when the user releases a mouse button while the mouse is over the object. 
+    * Fires when the user releases a mouse button while the mouse is over the object.
     * @param ev The mouse event.
     */
   def onmouseup(ev: MouseEvent): js.Any = js.native
   /**
-    * Fires when the wheel button is rotated. 
+    * Fires when the wheel button is rotated.
     * @param ev The mouse event
     */
   def onmousewheel(ev: WheelEvent): js.Any = js.native
@@ -2198,7 +1769,7 @@ trait Document
   def onmspointerover(ev: MSPointerEvent): js.Any = js.native
   def onmspointerup(ev: MSPointerEvent): js.Any = js.native
   /**
-    * Occurs when an item is removed from a Jump List of a webpage running in Site Mode. 
+    * Occurs when an item is removed from a Jump List of a webpage running in Site Mode.
     * @param ev The event.
     */
   def onmssitemodejumplistitemremoved(ev: MSSiteModeEvent): js.Any = js.native
@@ -2213,24 +1784,24 @@ trait Document
     */
   def onpause(ev: Event): js.Any = js.native
   /**
-    * Occurs when the play method is requested. 
+    * Occurs when the play method is requested.
     * @param ev The event.
     */
   def onplay(ev: Event): js.Any = js.native
   /**
-    * Occurs when the audio or video has started playing. 
+    * Occurs when the audio or video has started playing.
     * @param ev The event.
     */
   def onplaying(ev: Event): js.Any = js.native
   def onpointerlockchange(ev: Event): js.Any = js.native
   def onpointerlockerror(ev: Event): js.Any = js.native
   /**
-    * Occurs to indicate progress while downloading media data. 
+    * Occurs to indicate progress while downloading media data.
     * @param ev The event.
     */
   def onprogress(ev: ProgressEvent): js.Any = js.native
   /**
-    * Occurs when the playback rate is increased or decreased. 
+    * Occurs when the playback rate is increased or decreased.
     * @param ev The event.
     */
   def onratechange(ev: Event): js.Any = js.native
@@ -2240,22 +1811,22 @@ trait Document
     */
   def onreadystatechange(ev: Event): js.Any = js.native
   /**
-    * Fires when the user resets a form. 
+    * Fires when the user resets a form.
     * @param ev The event.
     */
   def onreset(ev: Event): js.Any = js.native
   /**
-    * Fires when the user repositions the scroll box in the scroll bar on the object. 
+    * Fires when the user repositions the scroll box in the scroll bar on the object.
     * @param ev The event.
     */
   def onscroll(ev: UIEvent): js.Any = js.native
   /**
-    * Occurs when the seek operation ends. 
+    * Occurs when the seek operation ends.
     * @param ev The event.
     */
   def onseeked(ev: Event): js.Any = js.native
   /**
-    * Occurs when the current playback position is moved. 
+    * Occurs when the current playback position is moved.
     * @param ev The event.
     */
   def onseeking(ev: Event): js.Any = js.native
@@ -2271,7 +1842,7 @@ trait Document
   def onselectionchange(ev: Event): js.Any = js.native
   def onselectstart(ev: Event): js.Any = js.native
   /**
-    * Occurs when the download has stopped. 
+    * Occurs when the download has stopped.
     * @param ev The event.
     */
   def onstalled(ev: Event): js.Any = js.native
@@ -2282,7 +1853,7 @@ trait Document
   def onstop(ev: Event): js.Any = js.native
   def onsubmit(ev: Event): js.Any = js.native
   /**
-    * Occurs if the load operation has been intentionally halted. 
+    * Occurs if the load operation has been intentionally halted.
     * @param ev The event.
     */
   def onsuspend(ev: Event): js.Any = js.native
@@ -2301,7 +1872,7 @@ trait Document
     */
   def onvolumechange(ev: Event): js.Any = js.native
   /**
-    * Occurs when playback stops because the next frame of a video resource is not available. 
+    * Occurs when playback stops because the next frame of a video resource is not available.
     * @param ev The event.
     */
   def onwaiting(ev: Event): js.Any = js.native
@@ -2365,7 +1936,7 @@ trait Document
   ): Document = js.native
   def open(url: java.lang.String, name: java.lang.String, features: java.lang.String): Document = js.native
   def open(url: java.lang.String, name: java.lang.String, features: java.lang.String, replace: scala.Boolean): Document = js.native
-  /** 
+  /**
     * Returns a Boolean value that indicates whether a specified command can be successfully executed using execCommand, given the current state of the document.
     * @param commandId Specifies a command identifier.
     */
@@ -2387,7 +1958,7 @@ trait Document
   def queryCommandSupported(commandId: java.lang.String): scala.Boolean = js.native
   /**
     * Retrieves the string associated with a command.
-    * @param commandId String that contains the identifier of a command. This can be any command identifier given in the list of Command Identifiers. 
+    * @param commandId String that contains the identifier of a command. This can be any command identifier given in the list of Command Identifiers.
     */
   def queryCommandText(commandId: java.lang.String): java.lang.String = js.native
   /**
@@ -2403,12 +1974,12 @@ trait Document
   def webkitCancelFullScreen(): Unit = js.native
   def webkitExitFullscreen(): Unit = js.native
   /**
-    * Writes one or more HTML expressions to a document in the specified window. 
+    * Writes one or more HTML expressions to a document in the specified window.
     * @param content Specifies the text and HTML tags to write.
     */
   def write(content: java.lang.String*): Unit = js.native
   /**
-    * Writes one or more HTML expressions, followed by a carriage return, to a document in the specified window. 
+    * Writes one or more HTML expressions, followed by a carriage return, to a document in the specified window.
     * @param content The text and HTML tags to write.
     */
   def writeln(content: java.lang.String*): Unit = js.native

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait RTCIceCandidateAttributes extends RTCStats {
   var addressSourceUrl: js.UndefOr[java.lang.String] = js.undefined
-  var candidateType: js.UndefOr[java.lang.String] = js.undefined
+  var candidateType: js.UndefOr[RTCStatsIceCandidateType] = js.undefined
   var ipAddress: js.UndefOr[java.lang.String] = js.undefined
   var portNumber: js.UndefOr[Double] = js.undefined
   var priority: js.UndefOr[Double] = js.undefined
@@ -35,7 +35,7 @@ object RTCIceCandidateAttributes {
     @scala.inline
     def deleteAddressSourceUrl: Self = this.set("addressSourceUrl", js.undefined)
     @scala.inline
-    def setCandidateType(value: java.lang.String): Self = this.set("candidateType", value.asInstanceOf[js.Any])
+    def setCandidateType(value: RTCStatsIceCandidateType): Self = this.set("candidateType", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteCandidateType: Self = this.set("candidateType", js.undefined)
     @scala.inline

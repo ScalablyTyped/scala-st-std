@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait PushSubscription extends js.Object {
   val endpoint: USVString
   val options: PushSubscriptionOptions
-  def getKey(name: java.lang.String): ArrayBuffer | Null
+  def getKey(name: PushEncryptionKeyName): ArrayBuffer | Null
   def toJSON(): js.Any
   def unsubscribe(): js.Promise[scala.Boolean]
 }
@@ -16,7 +16,7 @@ object PushSubscription {
   @scala.inline
   def apply(
     endpoint: USVString,
-    getKey: java.lang.String => ArrayBuffer | Null,
+    getKey: PushEncryptionKeyName => ArrayBuffer | Null,
     options: PushSubscriptionOptions,
     toJSON: () => js.Any,
     unsubscribe: () => js.Promise[scala.Boolean]
@@ -38,7 +38,7 @@ object PushSubscription {
     @scala.inline
     def setEndpoint(value: USVString): Self = this.set("endpoint", value.asInstanceOf[js.Any])
     @scala.inline
-    def setGetKey(value: java.lang.String => ArrayBuffer | Null): Self = this.set("getKey", js.Any.fromFunction1(value))
+    def setGetKey(value: PushEncryptionKeyName => ArrayBuffer | Null): Self = this.set("getKey", js.Any.fromFunction1(value))
     @scala.inline
     def setOptions(value: PushSubscriptionOptions): Self = this.set("options", value.asInstanceOf[js.Any])
     @scala.inline

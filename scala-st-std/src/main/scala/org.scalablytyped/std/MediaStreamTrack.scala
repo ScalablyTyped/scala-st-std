@@ -16,7 +16,7 @@ trait MediaStreamTrack extends EventTarget {
   val label: java.lang.String = js.native
   val muted: scala.Boolean = js.native
   val readonly: scala.Boolean = js.native
-  val readyState: java.lang.String = js.native
+  val readyState: MediaStreamTrackState = js.native
   val remote: scala.Boolean = js.native
   @JSName("addEventListener")
   def addEventListener_ended(`type`: ended, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _]): Unit = js.native

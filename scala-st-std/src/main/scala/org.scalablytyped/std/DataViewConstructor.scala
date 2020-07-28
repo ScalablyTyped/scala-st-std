@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DataViewConstructor
-  extends Instantiable1[/* buffer */ ArrayBuffer, DataView]
-     with Instantiable2[/* buffer */ ArrayBuffer, /* byteOffset */ Double, DataView]
+  extends Instantiable1[/* buffer */ ArrayBufferLike, DataView]
+     with Instantiable2[/* buffer */ ArrayBufferLike, /* byteOffset */ Double, DataView]
      with Instantiable3[
-      /* buffer */ ArrayBuffer, 
+      /* buffer */ ArrayBufferLike, 
       js.UndefOr[/* byteOffset */ Double], 
       /* byteLength */ Double, 
       DataView

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait MediaKeyMessageEvent extends Event {
   val message: ArrayBuffer
-  val messageType: java.lang.String
+  val messageType: MediaKeyMessageType
 }
 
 object MediaKeyMessageEvent {
@@ -25,7 +25,7 @@ object MediaKeyMessageEvent {
     initEvent: (java.lang.String, scala.Boolean, scala.Boolean) => Unit,
     isTrusted: scala.Boolean,
     message: ArrayBuffer,
-    messageType: java.lang.String,
+    messageType: MediaKeyMessageType,
     preventDefault: () => Unit,
     returnValue: scala.Boolean,
     scoped: scala.Boolean,
@@ -53,7 +53,7 @@ object MediaKeyMessageEvent {
     @scala.inline
     def setMessage(value: ArrayBuffer): Self = this.set("message", value.asInstanceOf[js.Any])
     @scala.inline
-    def setMessageType(value: java.lang.String): Self = this.set("messageType", value.asInstanceOf[js.Any])
+    def setMessageType(value: MediaKeyMessageType): Self = this.set("messageType", value.asInstanceOf[js.Any])
   }
   
 }

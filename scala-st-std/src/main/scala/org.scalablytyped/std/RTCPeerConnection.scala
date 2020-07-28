@@ -14,11 +14,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RTCPeerConnection extends EventTarget {
   val canTrickleIceCandidates: scala.Boolean | Null = js.native
-  val iceConnectionState: java.lang.String = js.native
-  val iceGatheringState: java.lang.String = js.native
+  val iceConnectionState: RTCIceConnectionState = js.native
+  val iceGatheringState: RTCIceGatheringState = js.native
   val localDescription: RTCSessionDescription | Null = js.native
   val remoteDescription: RTCSessionDescription | Null = js.native
-  val signalingState: java.lang.String = js.native
+  val signalingState: RTCSignalingState = js.native
   @JSName("addEventListener")
   def addEventListener_addstream(`type`: addstream, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamEvent, _]): Unit = js.native
   @JSName("addEventListener")

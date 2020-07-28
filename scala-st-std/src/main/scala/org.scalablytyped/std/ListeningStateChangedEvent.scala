@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait ListeningStateChangedEvent extends Event {
   val label: java.lang.String
-  val state: java.lang.String
+  val state: ListeningState
 }
 
 object ListeningStateChangedEvent {
@@ -28,7 +28,7 @@ object ListeningStateChangedEvent {
     preventDefault: () => Unit,
     returnValue: scala.Boolean,
     scoped: scala.Boolean,
-    state: java.lang.String,
+    state: ListeningState,
     stopImmediatePropagation: () => Unit,
     stopPropagation: () => Unit,
     target: EventTarget,
@@ -53,7 +53,7 @@ object ListeningStateChangedEvent {
     @scala.inline
     def setLabel(value: java.lang.String): Self = this.set("label", value.asInstanceOf[js.Any])
     @scala.inline
-    def setState(value: java.lang.String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: ListeningState): Self = this.set("state", value.asInstanceOf[js.Any])
   }
   
 }

@@ -22,10 +22,10 @@ trait Console extends js.Object {
   def error(message: js.Any, optionalParams: js.Any*): Unit = js.native
   def exception(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
   def exception(message: java.lang.String, optionalParams: js.Any*): Unit = js.native
-  def group(): Unit = js.native
-  def group(groupTitle: java.lang.String): Unit = js.native
-  def groupCollapsed(): Unit = js.native
-  def groupCollapsed(groupTitle: java.lang.String): Unit = js.native
+  def group(groupTitle: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
+  def group(groupTitle: java.lang.String, optionalParams: js.Any*): Unit = js.native
+  def groupCollapsed(groupTitle: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
+  def groupCollapsed(groupTitle: java.lang.String, optionalParams: js.Any*): Unit = js.native
   def groupEnd(): Unit = js.native
   def info(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
   def info(message: js.Any, optionalParams: js.Any*): Unit = js.native

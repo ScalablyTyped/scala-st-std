@@ -1,5 +1,6 @@
 package org.scalablytyped.std.global
 
+import org.scalablytyped.std.MediaDeviceKind
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +15,7 @@ class MediaDeviceInfo ()
   /* CompleteClass */
   override val groupId: java.lang.String = js.native
   /* CompleteClass */
-  override val kind: java.lang.String = js.native
+  override val kind: MediaDeviceKind = js.native
   /* CompleteClass */
   override val label: java.lang.String = js.native
 }

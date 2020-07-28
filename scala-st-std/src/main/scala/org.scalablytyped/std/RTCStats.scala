@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 trait RTCStats extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
-  var msType: js.UndefOr[java.lang.String] = js.undefined
+  var msType: js.UndefOr[MSStatsType] = js.undefined
   var timestamp: js.UndefOr[Double] = js.undefined
-  var `type`: js.UndefOr[java.lang.String] = js.undefined
+  var `type`: js.UndefOr[RTCStatsType] = js.undefined
 }
 
 object RTCStats {
@@ -33,7 +33,7 @@ object RTCStats {
     @scala.inline
     def deleteId: Self = this.set("id", js.undefined)
     @scala.inline
-    def setMsType(value: java.lang.String): Self = this.set("msType", value.asInstanceOf[js.Any])
+    def setMsType(value: MSStatsType): Self = this.set("msType", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteMsType: Self = this.set("msType", js.undefined)
     @scala.inline
@@ -41,7 +41,7 @@ object RTCStats {
     @scala.inline
     def deleteTimestamp: Self = this.set("timestamp", js.undefined)
     @scala.inline
-    def setType(value: java.lang.String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: RTCStatsType): Self = this.set("type", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteType: Self = this.set("type", js.undefined)
   }

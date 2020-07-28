@@ -12,7 +12,7 @@ trait RTCDtlsTransport
      with RTCTransport {
   var ondtlsstatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ RTCDtlsTransportStateChangedEvent, _]) | Null = js.native
   var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  val state: java.lang.String = js.native
+  val state: RTCDtlsTransportState = js.native
   val transport: RTCIceTransport = js.native
   @JSName("addEventListener")
   def addEventListener_dtlsstatechange(

@@ -9,9 +9,9 @@ trait PannerNode extends AudioNode {
   var coneInnerAngle: Double = js.native
   var coneOuterAngle: Double = js.native
   var coneOuterGain: Double = js.native
-  var distanceModel: java.lang.String = js.native
+  var distanceModel: DistanceModelType = js.native
   var maxDistance: Double = js.native
-  var panningModel: java.lang.String = js.native
+  var panningModel: PanningModelType = js.native
   var refDistance: Double = js.native
   var rolloffFactor: Double = js.native
   def setOrientation(x: Double, y: Double, z: Double): Unit = js.native

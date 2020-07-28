@@ -17,10 +17,10 @@ trait HTMLScriptElement extends HTMLElement {
     */
   var defer: scala.Boolean = js.native
   /**
-    * Sets or retrieves the event for which the script is written. 
+    * Sets or retrieves the event for which the script is written.
     */
   var event: java.lang.String = js.native
-  /** 
+  /**
     * Sets or retrieves the object that is bound to the event script.
     */
   var htmlFor: java.lang.String = js.native
@@ -30,7 +30,7 @@ trait HTMLScriptElement extends HTMLElement {
     */
   var src: java.lang.String = js.native
   /**
-    * Retrieves or sets the text of the object as a string. 
+    * Retrieves or sets the text of the object as a string.
     */
   var text: java.lang.String = js.native
   /**

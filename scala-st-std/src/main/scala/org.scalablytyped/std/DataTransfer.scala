@@ -15,5 +15,6 @@ trait DataTransfer extends js.Object {
   def clearData(format: java.lang.String): scala.Boolean = js.native
   def getData(format: java.lang.String): java.lang.String = js.native
   def setData(format: java.lang.String, data: java.lang.String): scala.Boolean = js.native
+  def setDragImage(image: Element, x: Double, y: Double): Unit = js.native
 }
 

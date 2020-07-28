@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RTCConfiguration extends js.Object {
-  var bundlePolicy: js.UndefOr[java.lang.String] = js.undefined
+  var bundlePolicy: js.UndefOr[RTCBundlePolicy] = js.undefined
   var iceServers: js.UndefOr[js.Array[RTCIceServer]] = js.undefined
-  var iceTransportPolicy: js.UndefOr[java.lang.String] = js.undefined
+  var iceTransportPolicy: js.UndefOr[RTCIceTransportPolicy] = js.undefined
   var peerIdentity: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -29,7 +29,7 @@ object RTCConfiguration {
         x
     }
     @scala.inline
-    def setBundlePolicy(value: java.lang.String): Self = this.set("bundlePolicy", value.asInstanceOf[js.Any])
+    def setBundlePolicy(value: RTCBundlePolicy): Self = this.set("bundlePolicy", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteBundlePolicy: Self = this.set("bundlePolicy", js.undefined)
     @scala.inline
@@ -39,7 +39,7 @@ object RTCConfiguration {
     @scala.inline
     def deleteIceServers: Self = this.set("iceServers", js.undefined)
     @scala.inline
-    def setIceTransportPolicy(value: java.lang.String): Self = this.set("iceTransportPolicy", value.asInstanceOf[js.Any])
+    def setIceTransportPolicy(value: RTCIceTransportPolicy): Self = this.set("iceTransportPolicy", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteIceTransportPolicy: Self = this.set("iceTransportPolicy", js.undefined)
     @scala.inline

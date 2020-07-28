@@ -4,19 +4,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Proxy[T] extends js.Object {
+trait Proxy[T /* <: js.Object */] extends js.Object {
   var proxy: T
   def revoke(): Unit
 }
 
 object Proxy {
   @scala.inline
-  def apply[T](proxy: T, revoke: () => Unit): Proxy[T] = {
+  def apply[/* <: js.Object */ T](proxy: T, revoke: () => Unit): Proxy[T] = {
     val __obj = js.Dynamic.literal(proxy = proxy.asInstanceOf[js.Any], revoke = js.Any.fromFunction0(revoke))
     __obj.asInstanceOf[Proxy[T]]
   }
   @scala.inline
-  implicit class ProxyOps[Self <: Proxy[_], T] (val x: Self with Proxy[T]) extends AnyVal {
+  implicit class ProxyOps[Self <: Proxy[_], /* <: js.Object */ T] (val x: Self with Proxy[T]) extends AnyVal {
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
     @scala.inline

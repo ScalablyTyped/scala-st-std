@@ -38,5 +38,9 @@ object Response
       js.UndefOr[/* body */ js.Any], 
       /* init */ ResponseInit, 
       org.scalablytyped.std.Response
-    ]
+    ] {
+  def error(): org.scalablytyped.std.Response = js.native
+  def redirect(url: java.lang.String): org.scalablytyped.std.Response = js.native
+  def redirect(url: java.lang.String, status: Double): org.scalablytyped.std.Response = js.native
+}
 

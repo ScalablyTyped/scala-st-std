@@ -10,7 +10,7 @@ trait IDBCursor extends js.Object {
   val NEXT_NO_DUPLICATE: java.lang.String = js.native
   val PREV: java.lang.String = js.native
   val PREV_NO_DUPLICATE: java.lang.String = js.native
-  val direction: java.lang.String = js.native
+  val direction: IDBCursorDirection = js.native
   var key: IDBKeyRange | IDBValidKey = js.native
   val primaryKey: js.Any = js.native
   var source: IDBObjectStore | IDBIndex = js.native

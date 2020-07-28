@@ -8,7 +8,7 @@ trait MSFIDOCredentialAssertion extends MSAssertion {
   val algorithm: java.lang.String | Algorithm
   val attestation: js.Any
   val publicKey: java.lang.String
-  val transportHints: js.Array[java.lang.String]
+  val transportHints: js.Array[MSTransportType]
 }
 
 object MSFIDOCredentialAssertion {
@@ -18,8 +18,8 @@ object MSFIDOCredentialAssertion {
     attestation: js.Any,
     id: java.lang.String,
     publicKey: java.lang.String,
-    transportHints: js.Array[java.lang.String],
-    `type`: java.lang.String
+    transportHints: js.Array[MSTransportType],
+    `type`: MSCredentialType
   ): MSFIDOCredentialAssertion = {
     val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any], attestation = attestation.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any], transportHints = transportHints.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -43,9 +43,9 @@ object MSFIDOCredentialAssertion {
     @scala.inline
     def setPublicKey(value: java.lang.String): Self = this.set("publicKey", value.asInstanceOf[js.Any])
     @scala.inline
-    def setTransportHintsVarargs(value: java.lang.String*): Self = this.set("transportHints", js.Array(value :_*))
+    def setTransportHintsVarargs(value: MSTransportType*): Self = this.set("transportHints", js.Array(value :_*))
     @scala.inline
-    def setTransportHints(value: js.Array[java.lang.String]): Self = this.set("transportHints", value.asInstanceOf[js.Any])
+    def setTransportHints(value: js.Array[MSTransportType]): Self = this.set("transportHints", value.asInstanceOf[js.Any])
   }
   
 }

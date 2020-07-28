@@ -1,5 +1,6 @@
 package org.scalablytyped.std.global
 
+import org.scalablytyped.std.ExpandGranularity
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -44,7 +45,7 @@ class Range ()
   /* CompleteClass */
   override def detach(): Unit = js.native
   /* CompleteClass */
-  override def expand(Unit: java.lang.String): scala.Boolean = js.native
+  override def expand(Unit: ExpandGranularity): scala.Boolean = js.native
   /* CompleteClass */
   override def extractContents(): org.scalablytyped.std.DocumentFragment = js.native
   /* CompleteClass */

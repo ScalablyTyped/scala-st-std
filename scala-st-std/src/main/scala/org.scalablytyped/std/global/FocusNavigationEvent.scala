@@ -1,6 +1,7 @@
 package org.scalablytyped.std.global
 
 import org.scalablytyped.std.FocusNavigationEventInit
+import org.scalablytyped.std.NavigationReason
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
@@ -34,7 +35,7 @@ class FocusNavigationEvent protected ()
   /* CompleteClass */
   override val isTrusted: scala.Boolean = js.native
   /* CompleteClass */
-  override val navigationReason: java.lang.String = js.native
+  override val navigationReason: NavigationReason = js.native
   /* CompleteClass */
   override val originHeight: Double = js.native
   /* CompleteClass */

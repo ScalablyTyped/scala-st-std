@@ -24,7 +24,7 @@ trait PerformanceNavigationTiming extends PerformanceEntry {
   val requestStart: Double
   val responseEnd: Double
   val responseStart: Double
-  val `type`: java.lang.String
+  val `type`: NavigationType
   val unloadEventEnd: Double
   val unloadEventStart: Double
 }
@@ -55,7 +55,7 @@ object PerformanceNavigationTiming {
     responseEnd: Double,
     responseStart: Double,
     startTime: Double,
-    `type`: java.lang.String,
+    `type`: NavigationType,
     unloadEventEnd: Double,
     unloadEventStart: Double
   ): PerformanceNavigationTiming = {
@@ -113,7 +113,7 @@ object PerformanceNavigationTiming {
     @scala.inline
     def setResponseStart(value: Double): Self = this.set("responseStart", value.asInstanceOf[js.Any])
     @scala.inline
-    def setType(value: java.lang.String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: NavigationType): Self = this.set("type", value.asInstanceOf[js.Any])
     @scala.inline
     def setUnloadEventEnd(value: Double): Self = this.set("unloadEventEnd", value.asInstanceOf[js.Any])
     @scala.inline

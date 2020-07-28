@@ -18,7 +18,7 @@ trait ObjectConstructor
     * @param target The target object to copy to.
     * @param sources One or more source objects from which to copy properties
     */
-  def assign(target: js.Any, sources: js.Any*): js.Any = js.native
+  def assign(target: js.Object, sources: js.Any*): js.Any = js.native
   /**
     * Copy the values of all of the enumerable own properties from one or more source objects to a
     * target object. Returns the target object.

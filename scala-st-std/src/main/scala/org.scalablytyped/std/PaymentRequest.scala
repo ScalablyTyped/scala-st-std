@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait PaymentRequest extends EventTarget {
   val shippingAddress: PaymentAddress | Null = js.native
   val shippingOption: java.lang.String | Null = js.native
-  val shippingType: java.lang.String | Null = js.native
+  val shippingType: PaymentShippingType | Null = js.native
   def abort(): js.Promise[Unit] = js.native
   @JSName("addEventListener")
   def addEventListener_shippingaddresschange(`type`: shippingaddresschange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native

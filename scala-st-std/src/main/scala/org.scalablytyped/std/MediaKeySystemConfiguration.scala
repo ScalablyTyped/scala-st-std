@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 trait MediaKeySystemConfiguration extends js.Object {
   var audioCapabilities: js.UndefOr[js.Array[MediaKeySystemMediaCapability]] = js.undefined
-  var distinctiveIdentifier: js.UndefOr[java.lang.String] = js.undefined
+  var distinctiveIdentifier: js.UndefOr[MediaKeysRequirement] = js.undefined
   var initDataTypes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  var persistentState: js.UndefOr[java.lang.String] = js.undefined
+  var persistentState: js.UndefOr[MediaKeysRequirement] = js.undefined
   var videoCapabilities: js.UndefOr[js.Array[MediaKeySystemMediaCapability]] = js.undefined
 }
 
@@ -36,7 +36,7 @@ object MediaKeySystemConfiguration {
     @scala.inline
     def deleteAudioCapabilities: Self = this.set("audioCapabilities", js.undefined)
     @scala.inline
-    def setDistinctiveIdentifier(value: java.lang.String): Self = this.set("distinctiveIdentifier", value.asInstanceOf[js.Any])
+    def setDistinctiveIdentifier(value: MediaKeysRequirement): Self = this.set("distinctiveIdentifier", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteDistinctiveIdentifier: Self = this.set("distinctiveIdentifier", js.undefined)
     @scala.inline
@@ -46,7 +46,7 @@ object MediaKeySystemConfiguration {
     @scala.inline
     def deleteInitDataTypes: Self = this.set("initDataTypes", js.undefined)
     @scala.inline
-    def setPersistentState(value: java.lang.String): Self = this.set("persistentState", value.asInstanceOf[js.Any])
+    def setPersistentState(value: MediaKeysRequirement): Self = this.set("persistentState", value.asInstanceOf[js.Any])
     @scala.inline
     def deletePersistentState: Self = this.set("persistentState", js.undefined)
     @scala.inline

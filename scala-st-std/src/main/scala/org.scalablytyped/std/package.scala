@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 package object std {
   type AAGUID = java.lang.String
   type AlgorithmIdentifier = java.lang.String | org.scalablytyped.std.Algorithm
+  type ArrayBufferLike = org.scalablytyped.std.ArrayBuffer
   type BodyInit = js.Any
   type ByteString = java.lang.String
   type CDATASection = org.scalablytyped.std.Text
@@ -22,6 +23,9 @@ package object std {
   type DOMStringMap = org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]
   type DecodeErrorCallback = js.Function1[/* error */ org.scalablytyped.std.DOMException, scala.Unit]
   type DecodeSuccessCallback = js.Function1[/* decodedData */ org.scalablytyped.std.AudioBuffer, scala.Unit]
+  type ElementListTagNameMap = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ key in 'abbr' | 'acronym' | 'address' | 'article' | 'aside' | 'b' | 'bdo' | 'big' | 'center' | 'circle' | 'cite' | 'clippath' | 'code' | 'dd' | 'defs' | 'desc' | 'dfn' | 'dt' | 'ellipse' | 'em' | 'feblend' | 'fecolormatrix' | 'fecomponenttransfer' | 'fecomposite' | 'feconvolvematrix' | 'fediffuselighting' | 'fedisplacementmap' | 'fedistantlight' | 'feflood' | 'fefunca' | 'fefuncb' | 'fefuncg' | 'fefuncr' | 'fegaussianblur' | 'feimage' | 'femerge' | 'femergenode' | 'femorphology' | 'feoffset' | 'fepointlight' | 'fespecularlighting' | 'fespotlight' | 'fetile' | 'feturbulence' | 'figcaption' | 'figure' | 'filter' | 'footer' | 'foreignobject' | 'g' | 'header' | 'hgroup' | 'i' | 'image' | 'kbd' | 'keygen' | 'line' | 'lineargradient' | 'mark' | 'marker' | 'mask' | 'metadata' | 'nav' | 'nobr' | 'noframes' | 'noscript' | 'path' | 'pattern' | 'plaintext' | 'polygon' | 'polyline' | 'radialgradient' | 'rect' | 'rt' | 'ruby' | 's' | 'samp' | 'section' | 'small' | 'stop' | 'strike' | 'strong' | 'sub' | 'sup' | 'svg' | 'switch' | 'symbol' | 'text' | 'textpath' | 'tspan' | 'tt' | 'u' | 'use' | 'var' | 'view' | 'wbr' ]: std.NodeListOf<std.ElementTagNameMap[key]>}
+    */ org.scalablytyped.std.stdStrings.ElementListTagNameMap with org.scalablytyped.runtime.TopLevel[org.scalablytyped.std.ElementTagNameMap]
   type ErrorEventHandler = js.Function5[
     /* message */ java.lang.String, 
     /* filename */ js.UndefOr[java.lang.String], 
@@ -33,7 +37,8 @@ package object std {
   type EvalError = org.scalablytyped.std.Error
   type EventListener = js.Function1[/* evt */ org.scalablytyped.std.Event, scala.Unit]
   type EventListenerOrEventListenerObject = org.scalablytyped.std.EventListener | org.scalablytyped.std.EventListenerObject
-  type ForEachCallback = js.Function2[/* keyId */ js.Any, /* status */ java.lang.String, scala.Unit]
+  type ForEachCallback = js.Function2[/* keyId */ js.Any, /* status */ org.scalablytyped.std.MediaKeyStatus, scala.Unit]
+  type FormDataEntryValue = java.lang.String | org.scalablytyped.std.File
   type FrameRequestCallback = js.Function1[/* time */ scala.Double, scala.Unit]
   type FunctionStringCallback = js.Function1[/* data */ java.lang.String, scala.Unit]
   type GLbitfield = scala.Double
@@ -69,6 +74,7 @@ package object std {
   type KeyFormat = java.lang.String
   type KeyType = java.lang.String
   type KeyUsage = java.lang.String
+  type MSCredentialType = org.scalablytyped.std.stdStrings.FIDO_2_0
   type MSExecAtPriorityFunctionCallback = js.Function1[/* repeated */ js.Any, js.Any]
   type MSLaunchUriCallback = js.Function0[scala.Unit]
   type MSUnsafeFunctionCallback = js.Function0[js.Any]
@@ -89,7 +95,8 @@ package object std {
   ]
   type NavigatorUserMediaErrorCallback = js.Function1[/* error */ org.scalablytyped.std.MediaStreamError, scala.Unit]
   type NavigatorUserMediaSuccessCallback = js.Function1[/* stream */ org.scalablytyped.std.MediaStream, scala.Unit]
-  type NotificationPermissionCallback = js.Function1[/* permission */ java.lang.String, scala.Unit]
+  type NotificationPermissionCallback = js.Function1[/* permission */ org.scalablytyped.std.NotificationPermission, scala.Unit]
+  type PanningModelType = org.scalablytyped.std.stdStrings.equalpower
   type ParameterDecorator = js.Function3[
     /* target */ js.Object, 
     /* propertyKey */ java.lang.String | js.Symbol, 
@@ -141,6 +148,7 @@ package object std {
   type ReferenceError = org.scalablytyped.std.Error
   type RequestInfo = org.scalablytyped.std.Request | java.lang.String
   type SVGPathSegClosePath = org.scalablytyped.std.SVGPathSeg
+  type ScopedCredentialType = org.scalablytyped.std.stdStrings.ScopedCred
   type SyntaxError = org.scalablytyped.std.Error
   type TypeError = org.scalablytyped.std.Error
   type URIError = org.scalablytyped.std.Error

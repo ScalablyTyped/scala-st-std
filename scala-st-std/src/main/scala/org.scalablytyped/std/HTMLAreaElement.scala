@@ -24,7 +24,7 @@ trait HTMLAreaElement extends HTMLElement {
     */
   var host: java.lang.String = js.native
   /**
-    * Sets or retrieves the host name part of the location or URL. 
+    * Sets or retrieves the host name part of the location or URL.
     */
   var hostname: java.lang.String = js.native
   /**

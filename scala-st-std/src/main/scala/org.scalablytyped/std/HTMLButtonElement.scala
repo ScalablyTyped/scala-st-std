@@ -35,7 +35,7 @@ trait HTMLButtonElement extends HTMLElement {
     * Overrides the target attribute on a form element.
     */
   var formTarget: java.lang.String = js.native
-  /** 
+  /**
     * Sets or retrieves the name of the object.
     */
   var name: java.lang.String = js.native
@@ -52,7 +52,7 @@ trait HTMLButtonElement extends HTMLElement {
     * Returns a  ValidityState object that represents the validity states of an element.
     */
   val validity: ValidityState = js.native
-  /** 
+  /**
     * Sets or retrieves the default or selected value of the control.
     */
   var value: java.lang.String = js.native

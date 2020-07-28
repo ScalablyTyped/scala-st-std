@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait MediaKeyMessageEventInit extends EventInit {
   var message: js.UndefOr[ArrayBuffer] = js.undefined
-  var messageType: js.UndefOr[java.lang.String] = js.undefined
+  var messageType: js.UndefOr[MediaKeyMessageType] = js.undefined
 }
 
 object MediaKeyMessageEventInit {
@@ -31,7 +31,7 @@ object MediaKeyMessageEventInit {
     @scala.inline
     def deleteMessage: Self = this.set("message", js.undefined)
     @scala.inline
-    def setMessageType(value: java.lang.String): Self = this.set("messageType", value.asInstanceOf[js.Any])
+    def setMessageType(value: MediaKeyMessageType): Self = this.set("messageType", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteMessageType: Self = this.set("messageType", js.undefined)
   }

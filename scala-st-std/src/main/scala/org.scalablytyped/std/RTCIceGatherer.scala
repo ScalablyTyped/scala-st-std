@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait RTCIceGatherer extends RTCStatsProvider {
-  val component: java.lang.String = js.native
+  val component: RTCIceComponent = js.native
   var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var onlocalcandidate: (js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceGathererEvent, _]) | Null = js.native
   @JSName("addEventListener")

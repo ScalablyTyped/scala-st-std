@@ -15,7 +15,7 @@ trait HTMLSelectElement
   var autofocus: scala.Boolean = js.native
   var disabled: scala.Boolean = js.native
   /**
-    * Retrieves a reference to the form that the object is embedded in. 
+    * Retrieves a reference to the form that the object is embedded in.
     */
   val form: HTMLFormElement = js.native
   /**
@@ -41,7 +41,7 @@ trait HTMLSelectElement
   var selectedIndex: Double = js.native
   var selectedOptions: HTMLCollectionOf[HTMLOptionElement] = js.native
   /**
-    * Sets or retrieves the number of rows in the list box. 
+    * Sets or retrieves the number of rows in the list box.
     */
   var size: Double = js.native
   /**
@@ -67,7 +67,7 @@ trait HTMLSelectElement
   /**
     * Adds an element to the areas, controlRange, or options collection.
     * @param element Variant of type Number that specifies the index position in the collection where the element is placed. If no value is given, the method places the element at the end of the collection.
-    * @param before Variant of type Object that specifies an element to insert before, or null to append the object to the collection. 
+    * @param before Variant of type Object that specifies an element to insert before, or null to append the object to the collection.
     */
   def add(element: HTMLElement): Unit = js.native
   def add(element: HTMLElement, before: HTMLElement): Unit = js.native

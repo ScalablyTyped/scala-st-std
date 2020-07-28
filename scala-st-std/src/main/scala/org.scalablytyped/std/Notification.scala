@@ -11,10 +11,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Notification extends EventTarget {
   val body: java.lang.String = js.native
-  val dir: java.lang.String = js.native
+  val dir: NotificationDirection = js.native
   val icon: java.lang.String = js.native
   val lang: java.lang.String = js.native
-  val permission: java.lang.String = js.native
+  val permission: NotificationPermission = js.native
   val tag: java.lang.String = js.native
   val title: java.lang.String = js.native
   @JSName("addEventListener")

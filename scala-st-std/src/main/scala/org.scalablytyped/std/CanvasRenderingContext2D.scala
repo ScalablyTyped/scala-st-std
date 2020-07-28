@@ -20,7 +20,7 @@ trait CanvasRenderingContext2D
   var lineWidth: Double = js.native
   var miterLimit: Double = js.native
   var mozImageSmoothingEnabled: scala.Boolean = js.native
-  var msFillRule: java.lang.String = js.native
+  var msFillRule: CanvasFillRule = js.native
   var oImageSmoothingEnabled: scala.Boolean = js.native
   var shadowBlur: Double = js.native
   var shadowColor: java.lang.String = js.native
@@ -33,7 +33,7 @@ trait CanvasRenderingContext2D
   def beginPath(): Unit = js.native
   def clearRect(x: Double, y: Double, w: Double, h: Double): Unit = js.native
   def clip(): Unit = js.native
-  def clip(fillRule: java.lang.String): Unit = js.native
+  def clip(fillRule: CanvasFillRule): Unit = js.native
   def createImageData(imageDataOrSw: ImageData): ImageData = js.native
   def createImageData(imageDataOrSw: ImageData, sh: Double): ImageData = js.native
   def createImageData(imageDataOrSw: Double): ImageData = js.native
@@ -97,14 +97,14 @@ trait CanvasRenderingContext2D
     dstH: Double
   ): Unit = js.native
   def fill(): Unit = js.native
-  def fill(fillRule: java.lang.String): Unit = js.native
+  def fill(fillRule: CanvasFillRule): Unit = js.native
   def fillRect(x: Double, y: Double, w: Double, h: Double): Unit = js.native
   def fillText(text: java.lang.String, x: Double, y: Double): Unit = js.native
   def fillText(text: java.lang.String, x: Double, y: Double, maxWidth: Double): Unit = js.native
   def getImageData(sx: Double, sy: Double, sw: Double, sh: Double): ImageData = js.native
   def getLineDash(): js.Array[Double] = js.native
   def isPointInPath(x: Double, y: Double): scala.Boolean = js.native
-  def isPointInPath(x: Double, y: Double, fillRule: java.lang.String): scala.Boolean = js.native
+  def isPointInPath(x: Double, y: Double, fillRule: CanvasFillRule): scala.Boolean = js.native
   def measureText(text: java.lang.String): TextMetrics = js.native
   def putImageData(imagedata: ImageData, dx: Double, dy: Double): Unit = js.native
   def putImageData(

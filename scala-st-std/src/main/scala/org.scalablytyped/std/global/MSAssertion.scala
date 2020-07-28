@@ -1,5 +1,6 @@
 package org.scalablytyped.std.global
 
+import org.scalablytyped.std.MSCredentialType
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +13,7 @@ class MSAssertion ()
   /* CompleteClass */
   override val id: java.lang.String = js.native
   /* CompleteClass */
-  override val `type`: java.lang.String = js.native
+  override val `type`: MSCredentialType = js.native
 }
 
 @JSGlobal("MSAssertion")

@@ -1,5 +1,6 @@
 package org.scalablytyped.std.global
 
+import org.scalablytyped.std.NavigationType
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -56,7 +57,7 @@ class PerformanceNavigationTiming ()
   /* CompleteClass */
   override val startTime: Double = js.native
   /* CompleteClass */
-  override val `type`: java.lang.String = js.native
+  override val `type`: NavigationType = js.native
   /* CompleteClass */
   override val unloadEventEnd: Double = js.native
   /* CompleteClass */

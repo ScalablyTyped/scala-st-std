@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ConstrainVideoFacingModeParameters extends js.Object {
-  var exact: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
-  var ideal: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
+  var exact: js.UndefOr[VideoFacingModeEnum | js.Array[VideoFacingModeEnum]] = js.undefined
+  var ideal: js.UndefOr[VideoFacingModeEnum | js.Array[VideoFacingModeEnum]] = js.undefined
 }
 
 object ConstrainVideoFacingModeParameters {
@@ -27,15 +27,15 @@ object ConstrainVideoFacingModeParameters {
         x
     }
     @scala.inline
-    def setExactVarargs(value: java.lang.String*): Self = this.set("exact", js.Array(value :_*))
+    def setExactVarargs(value: VideoFacingModeEnum*): Self = this.set("exact", js.Array(value :_*))
     @scala.inline
-    def setExact(value: java.lang.String | js.Array[java.lang.String]): Self = this.set("exact", value.asInstanceOf[js.Any])
+    def setExact(value: VideoFacingModeEnum | js.Array[VideoFacingModeEnum]): Self = this.set("exact", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteExact: Self = this.set("exact", js.undefined)
     @scala.inline
-    def setIdealVarargs(value: java.lang.String*): Self = this.set("ideal", js.Array(value :_*))
+    def setIdealVarargs(value: VideoFacingModeEnum*): Self = this.set("ideal", js.Array(value :_*))
     @scala.inline
-    def setIdeal(value: java.lang.String | js.Array[java.lang.String]): Self = this.set("ideal", value.asInstanceOf[js.Any])
+    def setIdeal(value: VideoFacingModeEnum | js.Array[VideoFacingModeEnum]): Self = this.set("ideal", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteIdeal: Self = this.set("ideal", js.undefined)
   }

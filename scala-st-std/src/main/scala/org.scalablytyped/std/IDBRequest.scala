@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IDBRequest extends EventTarget {
-  val error: DOMError = js.native
-  val readyState: java.lang.String = js.native
+  val error: DOMException = js.native
+  val readyState: IDBRequestReadyState = js.native
   val result: js.Any = js.native
   var source: IDBObjectStore | IDBIndex | IDBCursor = js.native
   val transaction: IDBTransaction = js.native

@@ -1,6 +1,7 @@
 package org.scalablytyped.std.global
 
 import org.scalablytyped.std.MediaKeyMessageEventInit
+import org.scalablytyped.std.MediaKeyMessageType
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
@@ -36,7 +37,7 @@ class MediaKeyMessageEvent protected ()
   /* CompleteClass */
   override val message: org.scalablytyped.std.ArrayBuffer = js.native
   /* CompleteClass */
-  override val messageType: java.lang.String = js.native
+  override val messageType: MediaKeyMessageType = js.native
   /* CompleteClass */
   override var returnValue: scala.Boolean = js.native
   /* CompleteClass */

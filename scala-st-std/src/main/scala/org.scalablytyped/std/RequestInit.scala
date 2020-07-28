@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation._
 
 trait RequestInit extends js.Object {
   var body: js.UndefOr[js.Any] = js.undefined
-  var cache: js.UndefOr[java.lang.String] = js.undefined
-  var credentials: js.UndefOr[java.lang.String] = js.undefined
+  var cache: js.UndefOr[RequestCache] = js.undefined
+  var credentials: js.UndefOr[RequestCredentials] = js.undefined
   var headers: js.UndefOr[js.Any] = js.undefined
   var integrity: js.UndefOr[java.lang.String] = js.undefined
   var keepalive: js.UndefOr[scala.Boolean] = js.undefined
   var method: js.UndefOr[java.lang.String] = js.undefined
-  var mode: js.UndefOr[java.lang.String] = js.undefined
-  var redirect: js.UndefOr[java.lang.String] = js.undefined
+  var mode: js.UndefOr[RequestMode] = js.undefined
+  var redirect: js.UndefOr[RequestRedirect] = js.undefined
   var referrer: js.UndefOr[java.lang.String] = js.undefined
-  var referrerPolicy: js.UndefOr[java.lang.String] = js.undefined
+  var referrerPolicy: js.UndefOr[ReferrerPolicy] = js.undefined
   var window: js.UndefOr[js.Any] = js.undefined
 }
 
@@ -41,11 +41,11 @@ object RequestInit {
     @scala.inline
     def deleteBody: Self = this.set("body", js.undefined)
     @scala.inline
-    def setCache(value: java.lang.String): Self = this.set("cache", value.asInstanceOf[js.Any])
+    def setCache(value: RequestCache): Self = this.set("cache", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteCache: Self = this.set("cache", js.undefined)
     @scala.inline
-    def setCredentials(value: java.lang.String): Self = this.set("credentials", value.asInstanceOf[js.Any])
+    def setCredentials(value: RequestCredentials): Self = this.set("credentials", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteCredentials: Self = this.set("credentials", js.undefined)
     @scala.inline
@@ -65,11 +65,11 @@ object RequestInit {
     @scala.inline
     def deleteMethod: Self = this.set("method", js.undefined)
     @scala.inline
-    def setMode(value: java.lang.String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setMode(value: RequestMode): Self = this.set("mode", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteMode: Self = this.set("mode", js.undefined)
     @scala.inline
-    def setRedirect(value: java.lang.String): Self = this.set("redirect", value.asInstanceOf[js.Any])
+    def setRedirect(value: RequestRedirect): Self = this.set("redirect", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteRedirect: Self = this.set("redirect", js.undefined)
     @scala.inline
@@ -77,7 +77,7 @@ object RequestInit {
     @scala.inline
     def deleteReferrer: Self = this.set("referrer", js.undefined)
     @scala.inline
-    def setReferrerPolicy(value: java.lang.String): Self = this.set("referrerPolicy", value.asInstanceOf[js.Any])
+    def setReferrerPolicy(value: ReferrerPolicy): Self = this.set("referrerPolicy", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteReferrerPolicy: Self = this.set("referrerPolicy", js.undefined)
     @scala.inline

@@ -1,6 +1,7 @@
 package org.scalablytyped.std.global
 
 import org.scalablytyped.std.NotificationOptions
+import org.scalablytyped.std.NotificationPermission
 import org.scalablytyped.std.NotificationPermissionCallback
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
@@ -25,7 +26,7 @@ object Notification
       /* options */ NotificationOptions, 
       org.scalablytyped.std.Notification
     ] {
-  def requestPermission(): js.Promise[java.lang.String] = js.native
-  def requestPermission(callback: NotificationPermissionCallback): js.Promise[java.lang.String] = js.native
+  def requestPermission(): js.Promise[NotificationPermission] = js.native
+  def requestPermission(callback: NotificationPermissionCallback): js.Promise[NotificationPermission] = js.native
 }
 

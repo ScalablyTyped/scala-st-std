@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ProxyHandler[T] extends js.Object {
+trait ProxyHandler[T /* <: js.Object */] extends js.Object {
   @JSName("apply")
   var apply: js.UndefOr[
     js.Function3[/* target */ T, /* thisArg */ js.Any, /* argArray */ js.UndefOr[js.Any], _]
@@ -23,7 +23,9 @@ trait ProxyHandler[T] extends js.Object {
   var deleteProperty: js.UndefOr[js.Function2[/* target */ T, /* p */ PropertyKey, scala.Boolean]] = js.undefined
   var enumerate: js.UndefOr[js.Function1[/* target */ T, js.Array[PropertyKey]]] = js.undefined
   var get: js.UndefOr[js.Function3[/* target */ T, /* p */ PropertyKey, /* receiver */ js.Any, _]] = js.undefined
-  var getOwnPropertyDescriptor: js.UndefOr[js.Function2[/* target */ T, /* p */ PropertyKey, PropertyDescriptor]] = js.undefined
+  var getOwnPropertyDescriptor: js.UndefOr[
+    js.Function2[/* target */ T, /* p */ PropertyKey, js.UndefOr[PropertyDescriptor]]
+  ] = js.undefined
   var getPrototypeOf: js.UndefOr[js.Function1[/* target */ T, js.Object | Null]] = js.undefined
   var has: js.UndefOr[js.Function2[/* target */ T, /* p */ PropertyKey, scala.Boolean]] = js.undefined
   var isExtensible: js.UndefOr[js.Function1[/* target */ T, scala.Boolean]] = js.undefined
@@ -43,12 +45,12 @@ trait ProxyHandler[T] extends js.Object {
 
 object ProxyHandler {
   @scala.inline
-  def apply[T](): ProxyHandler[T] = {
+  def apply[/* <: js.Object */ T](): ProxyHandler[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProxyHandler[T]]
   }
   @scala.inline
-  implicit class ProxyHandlerOps[Self <: ProxyHandler[_], T] (val x: Self with ProxyHandler[T]) extends AnyVal {
+  implicit class ProxyHandlerOps[Self <: ProxyHandler[_], /* <: js.Object */ T] (val x: Self with ProxyHandler[T]) extends AnyVal {
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
     @scala.inline
@@ -83,7 +85,7 @@ object ProxyHandler {
     @scala.inline
     def deleteGet: Self = this.set("get", js.undefined)
     @scala.inline
-    def setGetOwnPropertyDescriptor(value: (/* target */ T, /* p */ PropertyKey) => PropertyDescriptor): Self = this.set("getOwnPropertyDescriptor", js.Any.fromFunction2(value))
+    def setGetOwnPropertyDescriptor(value: (/* target */ T, /* p */ PropertyKey) => js.UndefOr[PropertyDescriptor]): Self = this.set("getOwnPropertyDescriptor", js.Any.fromFunction2(value))
     @scala.inline
     def deleteGetOwnPropertyDescriptor: Self = this.set("getOwnPropertyDescriptor", js.undefined)
     @scala.inline

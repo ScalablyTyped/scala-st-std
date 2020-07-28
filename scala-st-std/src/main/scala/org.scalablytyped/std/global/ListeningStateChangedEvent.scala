@@ -1,5 +1,6 @@
 package org.scalablytyped.std.global
 
+import org.scalablytyped.std.ListeningState
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -38,7 +39,7 @@ class ListeningStateChangedEvent ()
   /* CompleteClass */
   override val srcElement: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
-  override val state: java.lang.String = js.native
+  override val state: ListeningState = js.native
   /* CompleteClass */
   override val target: org.scalablytyped.std.EventTarget = js.native
   /* CompleteClass */

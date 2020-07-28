@@ -24,7 +24,7 @@ trait MSHTMLWebViewElement extends HTMLElement {
   def goForward(): Unit = js.native
   def invokeScriptAsync(scriptName: java.lang.String, args: js.Any*): MSWebViewAsyncOperation = js.native
   def navigate(uri: java.lang.String): Unit = js.native
-  def navigateFocus(navigationReason: java.lang.String, origin: FocusNavigationOrigin): Unit = js.native
+  def navigateFocus(navigationReason: NavigationReason, origin: FocusNavigationOrigin): Unit = js.native
   def navigateToLocalStreamUri(source: java.lang.String, streamResolver: js.Any): Unit = js.native
   def navigateToString(contents: java.lang.String): Unit = js.native
   def navigateWithHttpRequestMessage(requestMessage: js.Any): Unit = js.native

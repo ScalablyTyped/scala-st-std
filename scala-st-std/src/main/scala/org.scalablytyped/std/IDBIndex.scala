@@ -19,14 +19,14 @@ trait IDBIndex extends js.Object {
   def getKey(key: IDBKeyRange): IDBRequest = js.native
   def getKey(key: IDBValidKey): IDBRequest = js.native
   def openCursor(): IDBRequest = js.native
-  def openCursor(range: js.UndefOr[IDBValidKey], direction: java.lang.String): IDBRequest = js.native
+  def openCursor(range: js.UndefOr[IDBValidKey], direction: IDBCursorDirection): IDBRequest = js.native
   def openCursor(range: IDBKeyRange): IDBRequest = js.native
-  def openCursor(range: IDBKeyRange, direction: java.lang.String): IDBRequest = js.native
+  def openCursor(range: IDBKeyRange, direction: IDBCursorDirection): IDBRequest = js.native
   def openCursor(range: IDBValidKey): IDBRequest = js.native
   def openKeyCursor(): IDBRequest = js.native
-  def openKeyCursor(range: js.UndefOr[IDBValidKey], direction: java.lang.String): IDBRequest = js.native
+  def openKeyCursor(range: js.UndefOr[IDBValidKey], direction: IDBCursorDirection): IDBRequest = js.native
   def openKeyCursor(range: IDBKeyRange): IDBRequest = js.native
-  def openKeyCursor(range: IDBKeyRange, direction: java.lang.String): IDBRequest = js.native
+  def openKeyCursor(range: IDBKeyRange, direction: IDBCursorDirection): IDBRequest = js.native
   def openKeyCursor(range: IDBValidKey): IDBRequest = js.native
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait NotificationOptions extends js.Object {
   var body: js.UndefOr[java.lang.String] = js.undefined
-  var dir: js.UndefOr[java.lang.String] = js.undefined
+  var dir: js.UndefOr[NotificationDirection] = js.undefined
   var icon: js.UndefOr[java.lang.String] = js.undefined
   var lang: js.UndefOr[java.lang.String] = js.undefined
   var tag: js.UndefOr[java.lang.String] = js.undefined
@@ -34,7 +34,7 @@ object NotificationOptions {
     @scala.inline
     def deleteBody: Self = this.set("body", js.undefined)
     @scala.inline
-    def setDir(value: java.lang.String): Self = this.set("dir", value.asInstanceOf[js.Any])
+    def setDir(value: NotificationDirection): Self = this.set("dir", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteDir: Self = this.set("dir", js.undefined)
     @scala.inline

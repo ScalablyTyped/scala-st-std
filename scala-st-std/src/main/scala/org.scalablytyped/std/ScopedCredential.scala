@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait ScopedCredential extends js.Object {
   val id: ArrayBuffer
-  val `type`: java.lang.String
+  val `type`: ScopedCredentialType
 }
 
 object ScopedCredential {
   @scala.inline
-  def apply(id: ArrayBuffer, `type`: java.lang.String): ScopedCredential = {
+  def apply(id: ArrayBuffer, `type`: ScopedCredentialType): ScopedCredential = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScopedCredential]
@@ -30,7 +30,7 @@ object ScopedCredential {
     @scala.inline
     def setId(value: ArrayBuffer): Self = this.set("id", value.asInstanceOf[js.Any])
     @scala.inline
-    def setType(value: java.lang.String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: ScopedCredentialType): Self = this.set("type", value.asInstanceOf[js.Any])
   }
   
 }

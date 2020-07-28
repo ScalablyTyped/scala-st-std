@@ -12,8 +12,8 @@ trait IDBTransaction extends EventTarget {
   val READ_WRITE: java.lang.String = js.native
   val VERSION_CHANGE: java.lang.String = js.native
   val db: IDBDatabase = js.native
-  val error: DOMError = js.native
-  val mode: java.lang.String = js.native
+  val error: DOMException = js.native
+  val mode: IDBTransactionMode = js.native
   def abort(): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native

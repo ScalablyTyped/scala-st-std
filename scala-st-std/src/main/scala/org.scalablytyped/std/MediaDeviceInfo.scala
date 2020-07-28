@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait MediaDeviceInfo extends js.Object {
   val deviceId: java.lang.String
   val groupId: java.lang.String
-  val kind: java.lang.String
+  val kind: MediaDeviceKind
   val label: java.lang.String
 }
 
@@ -16,7 +16,7 @@ object MediaDeviceInfo {
   def apply(
     deviceId: java.lang.String,
     groupId: java.lang.String,
-    kind: java.lang.String,
+    kind: MediaDeviceKind,
     label: java.lang.String
   ): MediaDeviceInfo = {
     val __obj = js.Dynamic.literal(deviceId = deviceId.asInstanceOf[js.Any], groupId = groupId.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
@@ -38,7 +38,7 @@ object MediaDeviceInfo {
     @scala.inline
     def setGroupId(value: java.lang.String): Self = this.set("groupId", value.asInstanceOf[js.Any])
     @scala.inline
-    def setKind(value: java.lang.String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setKind(value: MediaDeviceKind): Self = this.set("kind", value.asInstanceOf[js.Any])
     @scala.inline
     def setLabel(value: java.lang.String): Self = this.set("label", value.asInstanceOf[js.Any])
   }

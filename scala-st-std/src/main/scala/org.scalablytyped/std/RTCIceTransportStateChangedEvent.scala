@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RTCIceTransportStateChangedEvent extends Event {
-  val state: java.lang.String
+  val state: RTCIceTransportState
 }
 
 object RTCIceTransportStateChangedEvent {
@@ -26,7 +26,7 @@ object RTCIceTransportStateChangedEvent {
     preventDefault: () => Unit,
     returnValue: scala.Boolean,
     scoped: scala.Boolean,
-    state: java.lang.String,
+    state: RTCIceTransportState,
     stopImmediatePropagation: () => Unit,
     stopPropagation: () => Unit,
     target: EventTarget,
@@ -49,7 +49,7 @@ object RTCIceTransportStateChangedEvent {
         x
     }
     @scala.inline
-    def setState(value: java.lang.String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: RTCIceTransportState): Self = this.set("state", value.asInstanceOf[js.Any])
   }
   
 }

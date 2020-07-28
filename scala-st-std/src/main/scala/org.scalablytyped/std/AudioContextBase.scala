@@ -11,7 +11,7 @@ trait AudioContextBase extends EventTarget {
   val destination: AudioDestinationNode = js.native
   val listener: AudioListener = js.native
   val sampleRate: Double = js.native
-  val state: java.lang.String = js.native
+  val state: AudioContextState = js.native
   @JSName("addEventListener")
   def addEventListener_statechange(`type`: statechange, listener: js.ThisFunction1[/* this */ AudioContext, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")

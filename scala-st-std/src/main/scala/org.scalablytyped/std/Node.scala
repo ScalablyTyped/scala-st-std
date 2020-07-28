@@ -47,8 +47,8 @@ trait Node extends EventTarget {
   def contains(child: Node): scala.Boolean = js.native
   def hasAttributes(): scala.Boolean = js.native
   def hasChildNodes(): scala.Boolean = js.native
-  def insertBefore(newChild: Node): Node = js.native
-  def insertBefore(newChild: Node, refChild: Node): Node = js.native
+  def insertBefore[T /* <: Node */](newChild: T): T = js.native
+  def insertBefore[T /* <: Node */](newChild: T, refChild: Node): T = js.native
   def isDefaultNamespace(): scala.Boolean = js.native
   def isDefaultNamespace(namespaceURI: java.lang.String): scala.Boolean = js.native
   def isEqualNode(arg: Node): scala.Boolean = js.native
@@ -58,7 +58,7 @@ trait Node extends EventTarget {
   def lookupPrefix(): java.lang.String | Null = js.native
   def lookupPrefix(namespaceURI: java.lang.String): java.lang.String | Null = js.native
   def normalize(): Unit = js.native
-  def removeChild(oldChild: Node): Node = js.native
-  def replaceChild(newChild: Node, oldChild: Node): Node = js.native
+  def removeChild[T /* <: Node */](oldChild: T): T = js.native
+  def replaceChild[T /* <: Node */](newChild: Node, oldChild: T): T = js.native
 }
 

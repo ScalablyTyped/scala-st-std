@@ -10,11 +10,11 @@ trait RTCIceCandidateDictionary extends RTCIceGatherCandidate {
   var msMTurnSessionId: js.UndefOr[java.lang.String] = js.undefined
   var port: js.UndefOr[Double] = js.undefined
   var priority: js.UndefOr[Double] = js.undefined
-  var protocol: js.UndefOr[java.lang.String] = js.undefined
+  var protocol: js.UndefOr[RTCIceProtocol] = js.undefined
   var relatedAddress: js.UndefOr[java.lang.String] = js.undefined
   var relatedPort: js.UndefOr[Double] = js.undefined
-  var tcpType: js.UndefOr[java.lang.String] = js.undefined
-  var `type`: js.UndefOr[java.lang.String] = js.undefined
+  var tcpType: js.UndefOr[RTCIceTcpCandidateType] = js.undefined
+  var `type`: js.UndefOr[RTCIceCandidateType] = js.undefined
 }
 
 object RTCIceCandidateDictionary {
@@ -55,7 +55,7 @@ object RTCIceCandidateDictionary {
     @scala.inline
     def deletePriority: Self = this.set("priority", js.undefined)
     @scala.inline
-    def setProtocol(value: java.lang.String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    def setProtocol(value: RTCIceProtocol): Self = this.set("protocol", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteProtocol: Self = this.set("protocol", js.undefined)
     @scala.inline
@@ -67,11 +67,11 @@ object RTCIceCandidateDictionary {
     @scala.inline
     def deleteRelatedPort: Self = this.set("relatedPort", js.undefined)
     @scala.inline
-    def setTcpType(value: java.lang.String): Self = this.set("tcpType", value.asInstanceOf[js.Any])
+    def setTcpType(value: RTCIceTcpCandidateType): Self = this.set("tcpType", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteTcpType: Self = this.set("tcpType", js.undefined)
     @scala.inline
-    def setType(value: java.lang.String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: RTCIceCandidateType): Self = this.set("type", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteType: Self = this.set("type", js.undefined)
   }

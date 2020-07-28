@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait RTCSessionDescriptionInit extends js.Object {
   var sdp: js.UndefOr[java.lang.String] = js.undefined
-  var `type`: js.UndefOr[java.lang.String] = js.undefined
+  var `type`: js.UndefOr[RTCSdpType] = js.undefined
 }
 
 object RTCSessionDescriptionInit {
@@ -31,7 +31,7 @@ object RTCSessionDescriptionInit {
     @scala.inline
     def deleteSdp: Self = this.set("sdp", js.undefined)
     @scala.inline
-    def setType(value: java.lang.String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: RTCSdpType): Self = this.set("type", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteType: Self = this.set("type", js.undefined)
   }

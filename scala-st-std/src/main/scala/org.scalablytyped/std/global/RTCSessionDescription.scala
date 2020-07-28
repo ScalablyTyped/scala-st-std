@@ -1,5 +1,6 @@
 package org.scalablytyped.std.global
 
+import org.scalablytyped.std.RTCSdpType
 import org.scalablytyped.std.RTCSessionDescriptionInit
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
@@ -15,7 +16,7 @@ class RTCSessionDescription ()
   /* CompleteClass */
   override var sdp: java.lang.String | Null = js.native
   /* CompleteClass */
-  override var `type`: java.lang.String | Null = js.native
+  override var `type`: RTCSdpType | Null = js.native
   /* CompleteClass */
   override def toJSON(): js.Any = js.native
 }

@@ -10,6 +10,12 @@ import scala.scalajs.js.annotation._
   * but can be passed to a typed array or DataView Object to interpret the raw
   * buffer as needed.
   */
+/**
+  * Represents a raw buffer of binary data, which is used to store data for the
+  * different typed arrays. ArrayBuffers cannot be read from or written to directly,
+  * but can be passed to a typed array or DataView Object to interpret the raw
+  * buffer as needed.
+  */
 @js.native
 trait ArrayBuffer extends BufferSource {
   /**

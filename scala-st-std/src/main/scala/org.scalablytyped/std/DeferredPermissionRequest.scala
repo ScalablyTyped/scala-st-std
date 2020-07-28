@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait DeferredPermissionRequest extends js.Object {
   val id: Double
-  val `type`: java.lang.String
+  val `type`: MSWebViewPermissionType
   val uri: java.lang.String
   def allow(): Unit
   def deny(): Unit
@@ -14,7 +14,13 @@ trait DeferredPermissionRequest extends js.Object {
 
 object DeferredPermissionRequest {
   @scala.inline
-  def apply(allow: () => Unit, deny: () => Unit, id: Double, `type`: java.lang.String, uri: java.lang.String): DeferredPermissionRequest = {
+  def apply(
+    allow: () => Unit,
+    deny: () => Unit,
+    id: Double,
+    `type`: MSWebViewPermissionType,
+    uri: java.lang.String
+  ): DeferredPermissionRequest = {
     val __obj = js.Dynamic.literal(allow = js.Any.fromFunction0(allow), deny = js.Any.fromFunction0(deny), id = id.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeferredPermissionRequest]
@@ -37,7 +43,7 @@ object DeferredPermissionRequest {
     @scala.inline
     def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
     @scala.inline
-    def setType(value: java.lang.String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: MSWebViewPermissionType): Self = this.set("type", value.asInstanceOf[js.Any])
     @scala.inline
     def setUri(value: java.lang.String): Self = this.set("uri", value.asInstanceOf[js.Any])
   }

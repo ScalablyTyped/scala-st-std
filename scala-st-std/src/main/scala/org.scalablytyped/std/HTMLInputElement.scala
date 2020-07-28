@@ -52,7 +52,7 @@ trait HTMLInputElement extends HTMLElement {
     */
   val files: FileList | Null = js.native
   /**
-    * Retrieves a reference to the form that the object is embedded in. 
+    * Retrieves a reference to the form that the object is embedded in.
     */
   val form: HTMLFormElement = js.native
   /**

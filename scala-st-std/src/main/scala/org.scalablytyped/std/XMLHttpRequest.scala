@@ -18,7 +18,7 @@ trait XMLHttpRequest
   val readyState: Double = js.native
   val response: js.Any = js.native
   val responseText: java.lang.String = js.native
-  var responseType: java.lang.String = js.native
+  var responseType: XMLHttpRequestResponseType = js.native
   val responseURL: java.lang.String = js.native
   val responseXML: Document | Null = js.native
   val status: Double = js.native
@@ -31,7 +31,7 @@ trait XMLHttpRequest
   override def addEventListener(
     `type`: java.lang.String,
     listener: js.UndefOr[EventListenerOrEventListenerObject],
-    useCapture: scala.Boolean
+    options: scala.Boolean
   ): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native

@@ -44,8 +44,8 @@ trait IDBDatabase extends EventTarget {
   def onerror(ev: Event): js.Any = js.native
   def onversionchange(ev: IDBVersionChangeEvent): js.Any = js.native
   def transaction(storeNames: java.lang.String): IDBTransaction = js.native
-  def transaction(storeNames: java.lang.String, mode: java.lang.String): IDBTransaction = js.native
+  def transaction(storeNames: java.lang.String, mode: IDBTransactionMode): IDBTransaction = js.native
   def transaction(storeNames: js.Array[java.lang.String]): IDBTransaction = js.native
-  def transaction(storeNames: js.Array[java.lang.String], mode: java.lang.String): IDBTransaction = js.native
+  def transaction(storeNames: js.Array[java.lang.String], mode: IDBTransactionMode): IDBTransaction = js.native
 }
 

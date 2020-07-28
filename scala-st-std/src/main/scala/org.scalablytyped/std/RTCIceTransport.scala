@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait RTCIceTransport extends RTCStatsProvider {
-  val component: java.lang.String = js.native
+  val component: RTCIceComponent = js.native
   val iceGatherer: RTCIceGatherer | Null = js.native
   var oncandidatepairchange: (js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceCandidatePairChangedEvent, _]) | Null = js.native
   var onicestatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceTransportStateChangedEvent, _]) | Null = js.native
-  val role: java.lang.String = js.native
-  val state: java.lang.String = js.native
+  val role: RTCIceRole = js.native
+  val state: RTCIceTransportState = js.native
   @JSName("addEventListener")
   def addEventListener_candidatepairchange(
     `type`: candidatepairchange,
@@ -44,7 +44,7 @@ trait RTCIceTransport extends RTCStatsProvider {
   def getRemoteParameters(): RTCIceParameters | Null = js.native
   def setRemoteCandidates(remoteCandidates: js.Array[RTCIceCandidateDictionary]): Unit = js.native
   def start(gatherer: RTCIceGatherer, remoteParameters: RTCIceParameters): Unit = js.native
-  def start(gatherer: RTCIceGatherer, remoteParameters: RTCIceParameters, role: java.lang.String): Unit = js.native
+  def start(gatherer: RTCIceGatherer, remoteParameters: RTCIceParameters, role: RTCIceRole): Unit = js.native
   def stop(): Unit = js.native
 }
 

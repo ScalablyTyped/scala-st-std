@@ -8,10 +8,10 @@ trait MSTransportDiagnosticsStats extends RTCStats {
   var allocationTimeInMs: js.UndefOr[Double] = js.undefined
   var baseAddress: js.UndefOr[java.lang.String] = js.undefined
   var baseInterface: js.UndefOr[MSNetworkInterfaceType] = js.undefined
-  var iceRole: js.UndefOr[java.lang.String] = js.undefined
+  var iceRole: js.UndefOr[RTCIceRole] = js.undefined
   var iceWarningFlags: js.UndefOr[MSIceWarningFlags] = js.undefined
   var interfaces: js.UndefOr[MSNetworkInterfaceType] = js.undefined
-  var localAddrType: js.UndefOr[java.lang.String] = js.undefined
+  var localAddrType: js.UndefOr[MSIceAddrType] = js.undefined
   var localAddress: js.UndefOr[java.lang.String] = js.undefined
   var localInterface: js.UndefOr[MSNetworkInterfaceType] = js.undefined
   var localMR: js.UndefOr[java.lang.String] = js.undefined
@@ -25,8 +25,8 @@ trait MSTransportDiagnosticsStats extends RTCStats {
   var numConsentRespSent: js.UndefOr[Double] = js.undefined
   var portRangeMax: js.UndefOr[Double] = js.undefined
   var portRangeMin: js.UndefOr[Double] = js.undefined
-  var protocol: js.UndefOr[java.lang.String] = js.undefined
-  var remoteAddrType: js.UndefOr[java.lang.String] = js.undefined
+  var protocol: js.UndefOr[RTCIceProtocol] = js.undefined
+  var remoteAddrType: js.UndefOr[MSIceAddrType] = js.undefined
   var remoteAddress: js.UndefOr[java.lang.String] = js.undefined
   var remoteMR: js.UndefOr[java.lang.String] = js.undefined
   var remoteMRTCPPort: js.UndefOr[Double] = js.undefined
@@ -65,7 +65,7 @@ object MSTransportDiagnosticsStats {
     @scala.inline
     def deleteBaseInterface: Self = this.set("baseInterface", js.undefined)
     @scala.inline
-    def setIceRole(value: java.lang.String): Self = this.set("iceRole", value.asInstanceOf[js.Any])
+    def setIceRole(value: RTCIceRole): Self = this.set("iceRole", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteIceRole: Self = this.set("iceRole", js.undefined)
     @scala.inline
@@ -77,7 +77,7 @@ object MSTransportDiagnosticsStats {
     @scala.inline
     def deleteInterfaces: Self = this.set("interfaces", js.undefined)
     @scala.inline
-    def setLocalAddrType(value: java.lang.String): Self = this.set("localAddrType", value.asInstanceOf[js.Any])
+    def setLocalAddrType(value: MSIceAddrType): Self = this.set("localAddrType", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteLocalAddrType: Self = this.set("localAddrType", js.undefined)
     @scala.inline
@@ -133,11 +133,11 @@ object MSTransportDiagnosticsStats {
     @scala.inline
     def deletePortRangeMin: Self = this.set("portRangeMin", js.undefined)
     @scala.inline
-    def setProtocol(value: java.lang.String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    def setProtocol(value: RTCIceProtocol): Self = this.set("protocol", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteProtocol: Self = this.set("protocol", js.undefined)
     @scala.inline
-    def setRemoteAddrType(value: java.lang.String): Self = this.set("remoteAddrType", value.asInstanceOf[js.Any])
+    def setRemoteAddrType(value: MSIceAddrType): Self = this.set("remoteAddrType", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteRemoteAddrType: Self = this.set("remoteAddrType", js.undefined)
     @scala.inline

@@ -8,7 +8,7 @@ trait ArrayBufferView extends BufferSource {
   /**
     * The ArrayBuffer instance referenced by the array.
     */
-  var buffer: ArrayBuffer
+  var buffer: ArrayBufferLike
   /**
     * The length in bytes of the array.
     */
@@ -21,7 +21,7 @@ trait ArrayBufferView extends BufferSource {
 
 object ArrayBufferView {
   @scala.inline
-  def apply(buffer: ArrayBuffer, byteLength: Double, byteOffset: Double): ArrayBufferView = {
+  def apply(buffer: ArrayBufferLike, byteLength: Double, byteOffset: Double): ArrayBufferView = {
     val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], byteLength = byteLength.asInstanceOf[js.Any], byteOffset = byteOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrayBufferView]
   }
@@ -37,7 +37,7 @@ object ArrayBufferView {
         x
     }
     @scala.inline
-    def setBuffer(value: ArrayBuffer): Self = this.set("buffer", value.asInstanceOf[js.Any])
+    def setBuffer(value: ArrayBufferLike): Self = this.set("buffer", value.asInstanceOf[js.Any])
     @scala.inline
     def setByteLength(value: Double): Self = this.set("byteLength", value.asInstanceOf[js.Any])
     @scala.inline

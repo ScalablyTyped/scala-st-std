@@ -11,7 +11,7 @@ trait MSDescription extends RTCStats {
   var networkconnectivity: js.UndefOr[MSNetworkConnectivityInfo] = js.undefined
   var reflexiveLocalIPAddr: js.UndefOr[MSIPAddressInfo] = js.undefined
   var remoteAddr: js.UndefOr[MSIPAddressInfo] = js.undefined
-  var transport: js.UndefOr[java.lang.String] = js.undefined
+  var transport: js.UndefOr[RTCIceProtocol] = js.undefined
 }
 
 object MSDescription {
@@ -56,7 +56,7 @@ object MSDescription {
     @scala.inline
     def deleteRemoteAddr: Self = this.set("remoteAddr", js.undefined)
     @scala.inline
-    def setTransport(value: java.lang.String): Self = this.set("transport", value.asInstanceOf[js.Any])
+    def setTransport(value: RTCIceProtocol): Self = this.set("transport", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteTransport: Self = this.set("transport", js.undefined)
   }

@@ -9,6 +9,12 @@ object stdStrings {
   sealed trait `2d` extends js.Object
   
   @js.native
+  sealed trait `2x` extends OverSampleType
+  
+  @js.native
+  sealed trait `4x` extends OverSampleType
+  
+  @js.native
   sealed trait AnimationEvent extends js.Object
   
   @js.native
@@ -16,6 +22,9 @@ object stdStrings {
   
   @js.native
   sealed trait AudioProcessingEvent extends js.Object
+  
+  @js.native
+  sealed trait BT extends MSTransportType
   
   @js.native
   sealed trait BeforeUnloadEvent extends js.Object
@@ -48,6 +57,12 @@ object stdStrings {
   sealed trait DragEvent extends js.Object
   
   @js.native
+  sealed trait ElementListTagNameMap extends js.Object
+  
+  @js.native
+  sealed trait Embedded extends MSTransportType
+  
+  @js.native
   sealed trait ErrorEvent extends js.Object
   
   @js.native
@@ -55,6 +70,9 @@ object stdStrings {
   
   @js.native
   sealed trait Events extends js.Object
+  
+  @js.native
+  sealed trait FIDO_2_0 extends js.Object
   
   @js.native
   sealed trait Float32Array extends js.Object
@@ -234,7 +252,7 @@ object stdStrings {
   sealed trait MutationEvents extends js.Object
   
   @js.native
-  sealed trait NFC extends js.Object
+  sealed trait NFC extends MSTransportType
   
   @js.native
   sealed trait NFD extends js.Object
@@ -303,10 +321,16 @@ object stdStrings {
   sealed trait RTCIceTransportStateChangedEvent extends js.Object
   
   @js.native
+  sealed trait RTCP extends RTCIceComponent
+  
+  @js.native
   sealed trait RTCPeerConnectionIceEvent extends js.Object
   
   @js.native
   sealed trait RTCSsrcConflictEvent extends js.Object
+  
+  @js.native
+  sealed trait RTP extends RTCIceComponent
   
   @js.native
   sealed trait Readonly extends js.Object
@@ -328,6 +352,9 @@ object stdStrings {
   
   @js.native
   sealed trait SVGZoomEvents extends js.Object
+  
+  @js.native
+  sealed trait ScopedCred extends js.Object
   
   @js.native
   sealed trait ScriptNotifyEvent extends js.Object
@@ -369,6 +396,9 @@ object stdStrings {
   sealed trait UInt8Array extends js.Object
   
   @js.native
+  sealed trait USB extends MSTransportType
+  
+  @js.native
   sealed trait Uint16Array extends js.Object
   
   @js.native
@@ -393,6 +423,14 @@ object stdStrings {
   sealed trait WheelEvent extends js.Object
   
   @js.native
+  sealed trait _empty
+    extends PaymentComplete
+       with ReferrerPolicy
+       with RequestDestination
+       with RequestType
+       with XMLHttpRequestResponseType
+  
+  @js.native
   sealed trait a extends js.Object
   
   @js.native
@@ -408,7 +446,15 @@ object stdStrings {
   sealed trait activate extends js.Object
   
   @js.native
-  sealed trait active extends js.Object
+  sealed trait activated extends ServiceWorkerState
+  
+  @js.native
+  sealed trait activating extends ServiceWorkerState
+  
+  @js.native
+  sealed trait active
+    extends ListeningState
+       with RTCIceTcpCandidateType
   
   @js.native
   sealed trait address extends js.Object
@@ -420,7 +466,27 @@ object stdStrings {
   sealed trait addtrack extends js.Object
   
   @js.native
+  sealed trait afterbegin extends InsertPosition
+  
+  @js.native
+  sealed trait afterend extends InsertPosition
+  
+  @js.native
   sealed trait afterprint extends js.Object
+  
+  @js.native
+  sealed trait all
+    extends RTCIceGatherPolicy
+       with RTCIceTransportPolicy
+  
+  @js.native
+  sealed trait allow extends MSWebViewPermissionState
+  
+  @js.native
+  sealed trait allpass extends BiquadFilterType
+  
+  @js.native
+  sealed trait answer extends RTCSdpType
   
   @js.native
   sealed trait applet extends js.Object
@@ -432,24 +498,49 @@ object stdStrings {
   sealed trait ariarequest extends js.Object
   
   @js.native
+  sealed trait arraybuffer_ extends XMLHttpRequestResponseType
+  
+  @js.native
   sealed trait article extends js.Object
   
   @js.native
   sealed trait aside extends js.Object
   
   @js.native
-  sealed trait audio extends js.Object
+  sealed trait audio extends RequestType
+  
+  @js.native
+  sealed trait audioinput extends MediaDeviceKind
+  
+  @js.native
+  sealed trait audiooutput extends MediaDeviceKind
   
   @js.native
   sealed trait audioprocess extends js.Object
   
   @js.native
+  sealed trait auth extends PushEncryptionKeyName
+  
+  @js.native
   sealed trait auto
-    extends ScrollBehavior
+    extends NotificationDirection
+       with RTCDtlsRole
+       with ScrollBehavior
        with ScrollRestoration
   
   @js.native
   sealed trait b extends js.Object
+  
+  @js.native
+  sealed trait back_forward extends NavigationType
+  
+  @js.native
+  sealed trait balanced
+    extends RTCBundlePolicy
+       with RTCDegradationPreference
+  
+  @js.native
+  sealed trait bandpass extends BiquadFilterType
   
   @js.native
   sealed trait base extends js.Object
@@ -458,10 +549,16 @@ object stdStrings {
   sealed trait basefont extends js.Object
   
   @js.native
+  sealed trait basic extends ResponseType
+  
+  @js.native
   sealed trait bdo extends js.Object
   
   @js.native
   sealed trait beforeactivate extends js.Object
+  
+  @js.native
+  sealed trait beforebegin extends InsertPosition
   
   @js.native
   sealed trait beforecopy extends js.Object
@@ -471,6 +568,9 @@ object stdStrings {
   
   @js.native
   sealed trait beforedeactivate extends js.Object
+  
+  @js.native
+  sealed trait beforeend extends InsertPosition
   
   @js.native
   sealed trait beforepaste extends js.Object
@@ -483,6 +583,12 @@ object stdStrings {
   
   @js.native
   sealed trait big extends js.Object
+  
+  @js.native
+  sealed trait ble extends Transport
+  
+  @js.native
+  sealed trait blob extends XMLHttpRequestResponseType
   
   @js.native
   sealed trait blocked extends js.Object
@@ -512,6 +618,12 @@ object stdStrings {
   sealed trait cached extends js.Object
   
   @js.native
+  sealed trait cancelled extends RTCStatsIceCandidatePairState
+  
+  @js.native
+  sealed trait candidatepair extends RTCStatsType
+  
+  @js.native
   sealed trait candidatepairchange extends js.Object
   
   @js.native
@@ -533,7 +645,12 @@ object stdStrings {
   sealed trait change extends js.Object
   
   @js.native
-  sealed trait checking extends js.Object
+  sealed trait character extends ExpandGranularity
+  
+  @js.native
+  sealed trait checking
+    extends RTCIceConnectionState
+       with RTCIceTransportState
   
   @js.native
   sealed trait circle extends js.Object
@@ -542,7 +659,13 @@ object stdStrings {
   sealed trait cite extends js.Object
   
   @js.native
+  sealed trait `clamped-max` extends ChannelCountMode
+  
+  @js.native
   sealed trait click extends js.Object
+  
+  @js.native
+  sealed trait client extends RTCDtlsRole
   
   @js.native
   sealed trait clipPath extends js.Object
@@ -554,7 +677,12 @@ object stdStrings {
   sealed trait close extends js.Object
   
   @js.native
-  sealed trait closed extends js.Object
+  sealed trait closed
+    extends AudioContextState
+       with RTCDtlsTransportState
+       with RTCIceConnectionState
+       with RTCIceTransportState
+       with RTCSignalingState
   
   @js.native
   sealed trait code extends js.Object
@@ -572,28 +700,61 @@ object stdStrings {
   sealed trait compassneedscalibration extends js.Object
   
   @js.native
-  sealed trait complete extends js.Object
+  sealed trait complete
+    extends RTCIceGathererState
+       with RTCIceGatheringState
+  
+  @js.native
+  sealed trait completed
+    extends RTCIceConnectionState
+       with RTCIceTransportState
   
   @js.native
   sealed trait componentTransferFunction extends js.Object
   
   @js.native
+  sealed trait connected
+    extends RTCDtlsTransportState
+       with RTCIceConnectionState
+       with RTCIceTransportState
+  
+  @js.native
+  sealed trait connecting extends RTCDtlsTransportState
+  
+  @js.native
   sealed trait contextmenu extends js.Object
+  
+  @js.native
+  sealed trait controlled extends RTCIceRole
   
   @js.native
   sealed trait controllerchange extends js.Object
   
   @js.native
+  sealed trait controlling extends RTCIceRole
+  
+  @js.native
   sealed trait copy extends js.Object
   
   @js.native
+  sealed trait cors
+    extends RequestMode
+       with ResponseType
+  
+  @js.native
   sealed trait cuechange extends js.Object
+  
+  @js.native
+  sealed trait custom extends OscillatorType
   
   @js.native
   sealed trait cut extends js.Object
   
   @js.native
   sealed trait data extends js.Object
+  
+  @js.native
+  sealed trait datachannel extends RTCStatsType
   
   @js.native
   sealed trait datalist extends js.Object
@@ -608,7 +769,13 @@ object stdStrings {
   sealed trait deactivate extends js.Object
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait default
+    extends NotificationPermission
+       with RequestCache
+       with ResponseType
+  
+  @js.native
+  sealed trait defer extends MSWebViewPermissionState
   
   @js.native
   sealed trait defs extends js.Object
@@ -617,7 +784,21 @@ object stdStrings {
   sealed trait del extends js.Object
   
   @js.native
+  sealed trait delivery extends PaymentShippingType
+  
+  @js.native
+  sealed trait denied
+    extends NotificationPermission
+       with PushPermissionState
+  
+  @js.native
+  sealed trait deny extends MSWebViewPermissionState
+  
+  @js.native
   sealed trait desc extends js.Object
+  
+  @js.native
+  sealed trait description extends MSStatsType
   
   @js.native
   sealed trait devicechange extends js.Object
@@ -638,10 +819,35 @@ object stdStrings {
   sealed trait dir extends js.Object
   
   @js.native
+  sealed trait direct extends MSIceType
+  
+  @js.native
+  sealed trait disambiguation extends ListeningState
+  
+  @js.native
+  sealed trait disconnected
+    extends RTCIceConnectionState
+       with RTCIceTransportState
+  
+  @js.native
+  sealed trait discrete extends ChannelInterpretation
+  
+  @js.native
   sealed trait div extends js.Object
   
   @js.native
   sealed trait dl extends js.Object
+  
+  @js.native
+  sealed trait document
+    extends RequestDestination
+       with XMLHttpRequestResponseType
+  
+  @js.native
+  sealed trait done extends IDBRequestReadyState
+  
+  @js.native
+  sealed trait down extends NavigationReason
   
   @js.native
   sealed trait downloading extends js.Object
@@ -695,19 +901,48 @@ object stdStrings {
   sealed trait end extends ScrollLogicalPosition
   
   @js.native
-  sealed trait ended extends js.Object
+  sealed trait ended extends MediaStreamTrackState
   
   @js.native
   sealed trait enter extends js.Object
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait environment extends VideoFacingModeEnum
+  
+  @js.native
+  sealed trait equalpower extends js.Object
+  
+  @js.native
+  sealed trait error
+    extends RequestRedirect
+       with ResponseType
+  
+  @js.native
+  sealed trait evenodd extends CanvasFillRule
   
   @js.native
   sealed trait exit extends js.Object
   
   @js.native
   sealed trait `experimental-webgl` extends js.Object
+  
+  @js.native
+  sealed trait expired extends MediaKeyStatus
+  
+  @js.native
+  sealed trait explicit extends ChannelCountMode
+  
+  @js.native
+  sealed trait exponential extends DistanceModelType
+  
+  @js.native
+  sealed trait fail extends PaymentComplete
+  
+  @js.native
+  sealed trait failed
+    extends MSIceType
+       with RTCIceConnectionState
+       with RTCStatsIceCandidatePairState
   
   @js.native
   sealed trait feBlend extends js.Object
@@ -881,10 +1116,16 @@ object stdStrings {
   sealed trait focusout extends js.Object
   
   @js.native
-  sealed trait font extends js.Object
+  sealed trait follow extends RequestRedirect
+  
+  @js.native
+  sealed trait font extends RequestType
   
   @js.native
   sealed trait footer extends js.Object
+  
+  @js.native
+  sealed trait `force-cache` extends RequestCache
   
   @js.native
   sealed trait foreignObject extends js.Object
@@ -902,6 +1143,9 @@ object stdStrings {
   sealed trait frameset extends js.Object
   
   @js.native
+  sealed trait frozen extends RTCStatsIceCandidatePairState
+  
+  @js.native
   sealed trait fullscreenchange extends js.Object
   
   @js.native
@@ -911,10 +1155,26 @@ object stdStrings {
   sealed trait g extends js.Object
   
   @js.native
+  sealed trait gamepad extends GamepadInputEmulationType
+  
+  @js.native
+  sealed trait gathering
+    extends RTCIceGathererState
+       with RTCIceGatheringState
+  
+  @js.native
+  sealed trait geolocation extends MSWebViewPermissionType
+  
+  @js.native
   sealed trait gotpointercapture extends js.Object
   
   @js.native
   sealed trait gradient extends js.Object
+  
+  @js.native
+  sealed trait granted
+    extends NotificationPermission
+       with PushPermissionState
   
   @js.native
   sealed trait h1 extends js.Object
@@ -938,6 +1198,18 @@ object stdStrings {
   sealed trait hashchange extends js.Object
   
   @js.native
+  sealed trait `have-local-offer` extends RTCSignalingState
+  
+  @js.native
+  sealed trait `have-local-pranswer` extends RTCSignalingState
+  
+  @js.native
+  sealed trait `have-remote-offer` extends RTCSignalingState
+  
+  @js.native
+  sealed trait `have-remote-pranswer` extends RTCSignalingState
+  
+  @js.native
   sealed trait head extends js.Object
   
   @js.native
@@ -947,7 +1219,21 @@ object stdStrings {
   sealed trait hgroup extends js.Object
   
   @js.native
+  sealed trait hidden extends VisibilityState
+  
+  @js.native
   sealed trait high extends js.Object
+  
+  @js.native
+  sealed trait highpass extends BiquadFilterType
+  
+  @js.native
+  sealed trait highshelf extends BiquadFilterType
+  
+  @js.native
+  sealed trait host
+    extends RTCIceCandidateType
+       with RTCStatsIceCandidateType
   
   @js.native
   sealed trait hr extends js.Object
@@ -980,13 +1266,31 @@ object stdStrings {
   sealed trait iframe extends js.Object
   
   @js.native
-  sealed trait image extends js.Object
+  sealed trait image extends RequestType
   
   @js.native
   sealed trait img extends js.Object
   
   @js.native
-  sealed trait inactive extends js.Object
+  sealed trait inactive extends ListeningState
+  
+  @js.native
+  sealed trait `inbound-network` extends MSStatsType
+  
+  @js.native
+  sealed trait `inbound-payload` extends MSStatsType
+  
+  @js.native
+  sealed trait inboundrtp extends RTCStatsType
+  
+  @js.native
+  sealed trait include extends RequestCredentials
+  
+  @js.native
+  sealed trait `individualization-request` extends MediaKeyMessageType
+  
+  @js.native
+  sealed trait inprogress extends RTCStatsIceCandidatePairState
   
   @js.native
   sealed trait input extends js.Object
@@ -995,19 +1299,37 @@ object stdStrings {
   sealed trait ins extends js.Object
   
   @js.native
+  sealed trait installed extends ServiceWorkerState
+  
+  @js.native
+  sealed trait installing extends ServiceWorkerState
+  
+  @js.native
   sealed trait instant extends ScrollBehavior
+  
+  @js.native
+  sealed trait `internal-error` extends MediaKeyStatus
   
   @js.native
   sealed trait invalid extends js.Object
   
   @js.native
+  sealed trait inverse extends DistanceModelType
+  
+  @js.native
   sealed trait isindex extends js.Object
+  
+  @js.native
+  sealed trait json_ extends XMLHttpRequestResponseType
   
   @js.native
   sealed trait jwk extends js.Object
   
   @js.native
   sealed trait kbd extends js.Object
+  
+  @js.native
+  sealed trait keyboard extends GamepadInputEmulationType
   
   @js.native
   sealed trait keydown extends js.Object
@@ -1025,13 +1347,30 @@ object stdStrings {
   sealed trait label extends js.Object
   
   @js.native
+  sealed trait left
+    extends NavigationReason
+       with VideoFacingModeEnum
+  
+  @js.native
   sealed trait legend extends js.Object
   
   @js.native
   sealed trait li extends js.Object
   
   @js.native
+  sealed trait `license-release` extends MediaKeyMessageType
+  
+  @js.native
+  sealed trait `license-renewal` extends MediaKeyMessageType
+  
+  @js.native
+  sealed trait `license-request` extends MediaKeyMessageType
+  
+  @js.native
   sealed trait line extends js.Object
+  
+  @js.native
+  sealed trait linear extends DistanceModelType
   
   @js.native
   sealed trait linearGradient extends js.Object
@@ -1044,6 +1383,9 @@ object stdStrings {
   
   @js.native
   sealed trait listing extends js.Object
+  
+  @js.native
+  sealed trait live extends MediaStreamTrackState
   
   @js.native
   sealed trait load extends js.Object
@@ -1061,7 +1403,10 @@ object stdStrings {
   sealed trait loadstart extends js.Object
   
   @js.native
-  sealed trait localcandidate extends js.Object
+  sealed trait localcandidate extends RTCStatsType
+  
+  @js.native
+  sealed trait localclientevent extends MSStatsType
   
   @js.native
   sealed trait lostpointercapture extends js.Object
@@ -1070,7 +1415,24 @@ object stdStrings {
   sealed trait low extends js.Object
   
   @js.native
-  sealed trait manual extends ScrollRestoration
+  sealed trait lowpass extends BiquadFilterType
+  
+  @js.native
+  sealed trait lowshelf extends BiquadFilterType
+  
+  @js.native
+  sealed trait ltr extends NotificationDirection
+  
+  @js.native
+  sealed trait `maintain-framerate` extends RTCDegradationPreference
+  
+  @js.native
+  sealed trait `maintain-resolution` extends RTCDegradationPreference
+  
+  @js.native
+  sealed trait manual
+    extends RequestRedirect
+       with ScrollRestoration
   
   @js.native
   sealed trait map_ extends js.Object
@@ -1086,6 +1448,18 @@ object stdStrings {
   
   @js.native
   sealed trait mask extends js.Object
+  
+  @js.native
+  sealed trait max extends ChannelCountMode
+  
+  @js.native
+  sealed trait `max-bundle` extends RTCBundlePolicy
+  
+  @js.native
+  sealed trait `max-compat` extends RTCBundlePolicy
+  
+  @js.native
+  sealed trait media extends MSWebViewPermissionType
   
   @js.native
   sealed trait medium extends js.Object
@@ -1104,6 +1478,9 @@ object stdStrings {
   
   @js.native
   sealed trait meter extends js.Object
+  
+  @js.native
+  sealed trait mouse extends GamepadInputEmulationType
   
   @js.native
   sealed trait mousedown extends js.Object
@@ -1145,13 +1522,50 @@ object stdStrings {
   sealed trait nav extends js.Object
   
   @js.native
+  sealed trait navigate
+    extends NavigationType
+       with RequestMode
+  
+  @js.native
   sealed trait nearest extends ScrollLogicalPosition
   
   @js.native
   sealed trait negotiationneeded extends js.Object
   
   @js.native
+  sealed trait `new`
+    extends RTCDtlsTransportState
+       with RTCIceConnectionState
+       with RTCIceGathererState
+       with RTCIceGatheringState
+       with RTCIceTransportState
+  
+  @js.native
+  sealed trait next extends IDBCursorDirection
+  
+  @js.native
   sealed trait nextid extends js.Object
+  
+  @js.native
+  sealed trait nextunique extends IDBCursorDirection
+  
+  @js.native
+  sealed trait nfc_ extends Transport
+  
+  @js.native
+  sealed trait `no-cache` extends RequestCache
+  
+  @js.native
+  sealed trait `no-cors` extends RequestMode
+  
+  @js.native
+  sealed trait `no-referrer` extends ReferrerPolicy
+  
+  @js.native
+  sealed trait `no-referrer-when-downgrade` extends ReferrerPolicy
+  
+  @js.native
+  sealed trait `no-store` extends RequestCache
   
   @js.native
   sealed trait nobr extends js.Object
@@ -1160,10 +1574,24 @@ object stdStrings {
   sealed trait noframes extends js.Object
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait nohost extends RTCIceGatherPolicy
+  
+  @js.native
+  sealed trait none
+    extends OverSampleType
+       with RTCIceTransportPolicy
+  
+  @js.native
+  sealed trait nonzero extends CanvasFillRule
   
   @js.native
   sealed trait noscript extends js.Object
+  
+  @js.native
+  sealed trait `not-allowed` extends MediaKeysRequirement
+  
+  @js.native
+  sealed trait notch extends BiquadFilterType
   
   @js.native
   sealed trait noupdate extends js.Object
@@ -1178,13 +1606,25 @@ object stdStrings {
   sealed trait obsolete extends js.Object
   
   @js.native
+  sealed trait offer extends RTCSdpType
+  
+  @js.native
   sealed trait offline extends js.Object
   
   @js.native
   sealed trait ol extends js.Object
   
   @js.native
+  sealed trait omit extends RequestCredentials
+  
+  @js.native
   sealed trait online extends js.Object
+  
+  @js.native
+  sealed trait opaque extends ResponseType
+  
+  @js.native
+  sealed trait opaqueredirect extends ResponseType
   
   @js.native
   sealed trait open extends js.Object
@@ -1196,16 +1636,46 @@ object stdStrings {
   sealed trait option extends js.Object
   
   @js.native
+  sealed trait optional extends MediaKeysRequirement
+  
+  @js.native
   sealed trait orientationchange extends js.Object
   
   @js.native
+  sealed trait `origin-only` extends ReferrerPolicy
+  
+  @js.native
+  sealed trait `origin-when-cross-origin` extends ReferrerPolicy
+  
+  @js.native
+  sealed trait os extends MSIceAddrType
+  
+  @js.native
+  sealed trait `outbound-network` extends MSStatsType
+  
+  @js.native
+  sealed trait `outbound-payload` extends MSStatsType
+  
+  @js.native
+  sealed trait outboundrtp extends RTCStatsType
+  
+  @js.native
   sealed trait output extends js.Object
+  
+  @js.native
+  sealed trait `output-downscaled` extends MediaKeyStatus
+  
+  @js.native
+  sealed trait `output-not-allowed` extends MediaKeyStatus
   
   @js.native
   sealed trait overconstrained extends js.Object
   
   @js.native
   sealed trait p extends js.Object
+  
+  @js.native
+  sealed trait p256dh extends PushEncryptionKeyName
   
   @js.native
   sealed trait pagehide extends js.Object
@@ -1215,6 +1685,9 @@ object stdStrings {
   
   @js.native
   sealed trait param extends js.Object
+  
+  @js.native
+  sealed trait passive extends RTCIceTcpCandidateType
   
   @js.native
   sealed trait paste extends js.Object
@@ -1227,6 +1700,27 @@ object stdStrings {
   
   @js.native
   sealed trait pause extends js.Object
+  
+  @js.native
+  sealed trait peaking extends BiquadFilterType
+  
+  @js.native
+  sealed trait `peer-derived` extends MSIceAddrType
+  
+  @js.native
+  sealed trait peerreflexive extends RTCStatsIceCandidateType
+  
+  @js.native
+  sealed trait pending extends IDBRequestReadyState
+  
+  @js.native
+  sealed trait `persistent-license` extends MediaKeySessionType
+  
+  @js.native
+  sealed trait `persistent-release-message` extends MediaKeySessionType
+  
+  @js.native
+  sealed trait pickup extends PaymentShippingType
   
   @js.native
   sealed trait picture extends js.Object
@@ -1259,6 +1753,9 @@ object stdStrings {
   sealed trait pointerleave extends js.Object
   
   @js.native
+  sealed trait pointerlock extends MSWebViewPermissionType
+  
+  @js.native
   sealed trait pointerlockchange extends js.Object
   
   @js.native
@@ -1286,13 +1783,33 @@ object stdStrings {
   sealed trait popstate extends js.Object
   
   @js.native
+  sealed trait pranswer extends RTCSdpType
+  
+  @js.native
   sealed trait pre extends js.Object
   
   @js.native
   sealed trait premultiply extends js.Object
   
   @js.native
+  sealed trait prerender
+    extends NavigationType
+       with VisibilityState
+  
+  @js.native
+  sealed trait prev extends IDBCursorDirection
+  
+  @js.native
+  sealed trait prevunique extends IDBCursorDirection
+  
+  @js.native
+  sealed trait prflx extends RTCIceCandidateType
+  
+  @js.native
   sealed trait progress extends js.Object
+  
+  @js.native
+  sealed trait prompt extends PushPermissionState
   
   @js.native
   sealed trait q extends js.Object
@@ -1310,16 +1827,46 @@ object stdStrings {
   sealed trait raw extends js.Object
   
   @js.native
+  sealed trait readonly_ extends IDBTransactionMode
+  
+  @js.native
+  sealed trait readwrite extends IDBTransactionMode
+  
+  @js.native
   sealed trait readystatechange extends js.Object
   
   @js.native
   sealed trait rect extends js.Object
   
   @js.native
+  sealed trait redundant extends ServiceWorkerState
+  
+  @js.native
+  sealed trait relay
+    extends MSIceType
+       with RTCIceCandidateType
+       with RTCIceGatherPolicy
+       with RTCIceTransportPolicy
+  
+  @js.native
+  sealed trait relayed extends RTCStatsIceCandidateType
+  
+  @js.native
+  sealed trait reload
+    extends NavigationType
+       with RequestCache
+  
+  @js.native
+  sealed trait remotecandidate extends RTCStatsType
+  
+  @js.native
   sealed trait removestream extends js.Object
   
   @js.native
   sealed trait removetrack extends js.Object
+  
+  @js.native
+  sealed trait required extends MediaKeysRequirement
   
   @js.native
   sealed trait reset extends js.Object
@@ -1331,19 +1878,38 @@ object stdStrings {
   sealed trait resume extends js.Object
   
   @js.native
+  sealed trait right
+    extends NavigationReason
+       with VideoFacingModeEnum
+  
+  @js.native
   sealed trait rt extends js.Object
+  
+  @js.native
+  sealed trait rtl extends NotificationDirection
   
   @js.native
   sealed trait ruby extends js.Object
   
   @js.native
+  sealed trait running extends AudioContextState
+  
+  @js.native
   sealed trait s extends js.Object
+  
+  @js.native
+  sealed trait `same-origin`
+    extends RequestCredentials
+       with RequestMode
   
   @js.native
   sealed trait samp extends js.Object
   
   @js.native
-  sealed trait script extends js.Object
+  sealed trait sawtooth extends OscillatorType
+  
+  @js.native
+  sealed trait script extends RequestType
   
   @js.native
   sealed trait scroll extends js.Object
@@ -1358,6 +1924,9 @@ object stdStrings {
   sealed trait seeking extends js.Object
   
   @js.native
+  sealed trait segments extends AppendMode
+  
+  @js.native
   sealed trait select extends js.Object
   
   @js.native
@@ -1365,6 +1934,27 @@ object stdStrings {
   
   @js.native
   sealed trait selectstart extends js.Object
+  
+  @js.native
+  sealed trait sentence extends ExpandGranularity
+  
+  @js.native
+  sealed trait sequence extends AppendMode
+  
+  @js.native
+  sealed trait server extends RTCDtlsRole
+  
+  @js.native
+  sealed trait serverreflexive extends RTCStatsIceCandidateType
+  
+  @js.native
+  sealed trait session extends RTCStatsType
+  
+  @js.native
+  sealed trait sharedworker extends RequestDestination
+  
+  @js.native
+  sealed trait shipping extends PaymentShippingType
   
   @js.native
   sealed trait shippingaddresschange extends js.Object
@@ -1379,10 +1969,16 @@ object stdStrings {
   sealed trait signalingstatechange extends js.Object
   
   @js.native
+  sealed trait sine extends OscillatorType
+  
+  @js.native
   sealed trait small extends js.Object
   
   @js.native
   sealed trait smooth extends ScrollBehavior
+  
+  @js.native
+  sealed trait so extends RTCIceTcpCandidateType
   
   @js.native
   sealed trait source extends js.Object
@@ -1391,10 +1987,22 @@ object stdStrings {
   sealed trait span extends js.Object
   
   @js.native
+  sealed trait speakers extends ChannelInterpretation
+  
+  @js.native
   sealed trait spki extends js.Object
   
   @js.native
+  sealed trait square extends OscillatorType
+  
+  @js.native
+  sealed trait srflx extends RTCIceCandidateType
+  
+  @js.native
   sealed trait ssrcconflict extends js.Object
+  
+  @js.native
+  sealed trait stable extends RTCSignalingState
   
   @js.native
   sealed trait stalled extends js.Object
@@ -1404,6 +2012,9 @@ object stdStrings {
   
   @js.native
   sealed trait statechange extends js.Object
+  
+  @js.native
+  sealed trait `status-pending` extends MediaKeyStatus
   
   @js.native
   sealed trait stop extends js.Object
@@ -1421,7 +2032,10 @@ object stdStrings {
   sealed trait strong extends js.Object
   
   @js.native
-  sealed trait style extends js.Object
+  sealed trait stun extends MSIceAddrType
+  
+  @js.native
+  sealed trait style extends RequestType
   
   @js.native
   sealed trait sub extends js.Object
@@ -1430,13 +2044,22 @@ object stdStrings {
   sealed trait submit extends js.Object
   
   @js.native
-  sealed trait success extends js.Object
+  sealed trait subresource extends RequestDestination
+  
+  @js.native
+  sealed trait succeeded extends RTCStatsIceCandidatePairState
+  
+  @js.native
+  sealed trait success extends PaymentComplete
   
   @js.native
   sealed trait sup extends js.Object
   
   @js.native
   sealed trait suspend extends js.Object
+  
+  @js.native
+  sealed trait suspended extends AudioContextState
   
   @js.native
   sealed trait svg extends js.Object
@@ -1454,13 +2077,19 @@ object stdStrings {
   sealed trait tbody extends js.Object
   
   @js.native
+  sealed trait tcp extends RTCIceProtocol
+  
+  @js.native
   sealed trait td extends js.Object
   
   @js.native
   sealed trait template extends js.Object
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait temporary extends MediaKeySessionType
+  
+  @js.native
+  sealed trait text extends XMLHttpRequestResponseType
   
   @js.native
   sealed trait textContent extends js.Object
@@ -1473,6 +2102,9 @@ object stdStrings {
   
   @js.native
   sealed trait textarea extends js.Object
+  
+  @js.native
+  sealed trait textedit extends ExpandGranularity
   
   @js.native
   sealed trait textpath_ extends js.Object
@@ -1517,7 +2149,18 @@ object stdStrings {
   sealed trait tr extends js.Object
   
   @js.native
-  sealed trait track extends js.Object
+  sealed trait track
+    extends RTCStatsType
+       with RequestType
+  
+  @js.native
+  sealed trait transport extends RTCStatsType
+  
+  @js.native
+  sealed trait transportdiagnostics extends MSStatsType
+  
+  @js.native
+  sealed trait triangle extends OscillatorType
   
   @js.native
   sealed trait tspan extends js.Object
@@ -1526,16 +2169,39 @@ object stdStrings {
   sealed trait tt extends js.Object
   
   @js.native
+  sealed trait turn extends MSIceAddrType
+  
+  @js.native
   sealed trait u extends js.Object
+  
+  @js.native
+  sealed trait udp extends RTCIceProtocol
   
   @js.native
   sealed trait ul extends js.Object
   
   @js.native
+  sealed trait unknown
+    extends MSWebViewPermissionState
+       with RequestDestination
+  
+  @js.native
+  sealed trait unlimitedIndexedDBQuota extends MSWebViewPermissionType
+  
+  @js.native
   sealed trait unload extends js.Object
   
   @js.native
+  sealed trait unloaded extends VisibilityState
+  
+  @js.native
   sealed trait unmute extends js.Object
+  
+  @js.native
+  sealed trait `unsafe-url` extends ReferrerPolicy
+  
+  @js.native
+  sealed trait up extends NavigationReason
   
   @js.native
   sealed trait updatefound extends js.Object
@@ -1547,19 +2213,34 @@ object stdStrings {
   sealed trait upgradeneeded extends js.Object
   
   @js.native
+  sealed trait usable extends MediaKeyStatus
+  
+  @js.native
+  sealed trait usb_ extends Transport
+  
+  @js.native
   sealed trait use extends js.Object
+  
+  @js.native
+  sealed trait user extends VideoFacingModeEnum
   
   @js.native
   sealed trait `var` extends js.Object
   
   @js.native
-  sealed trait versionchange extends js.Object
+  sealed trait versionchange extends IDBTransactionMode
   
   @js.native
-  sealed trait video extends js.Object
+  sealed trait video extends RequestType
+  
+  @js.native
+  sealed trait videoinput extends MediaDeviceKind
   
   @js.native
   sealed trait view extends js.Object
+  
+  @js.native
+  sealed trait visible extends VisibilityState
   
   @js.native
   sealed trait voiceschanged extends js.Object
@@ -1568,7 +2249,7 @@ object stdStrings {
   sealed trait volumechange extends js.Object
   
   @js.native
-  sealed trait waiting extends js.Object
+  sealed trait waiting extends RTCStatsIceCandidatePairState
   
   @js.native
   sealed trait wbr extends js.Object
@@ -1583,7 +2264,16 @@ object stdStrings {
   sealed trait webkitfullscreenerror extends js.Object
   
   @js.native
+  sealed trait webnotifications extends MSWebViewPermissionType
+  
+  @js.native
   sealed trait wheel extends js.Object
+  
+  @js.native
+  sealed trait word extends ExpandGranularity
+  
+  @js.native
+  sealed trait worker extends RequestDestination
   
   @js.native
   sealed trait `x-ms-webview` extends js.Object
@@ -1594,11 +2284,17 @@ object stdStrings {
   @scala.inline
   def `2d`: `2d` = "2d".asInstanceOf[`2d`]
   @scala.inline
+  def `2x`: `2x` = "2x".asInstanceOf[`2x`]
+  @scala.inline
+  def `4x`: `4x` = "4x".asInstanceOf[`4x`]
+  @scala.inline
   def AnimationEvent: AnimationEvent = "AnimationEvent".asInstanceOf[AnimationEvent]
   @scala.inline
   def ArrayBuffer: ArrayBuffer = "ArrayBuffer".asInstanceOf[ArrayBuffer]
   @scala.inline
   def AudioProcessingEvent: AudioProcessingEvent = "AudioProcessingEvent".asInstanceOf[AudioProcessingEvent]
+  @scala.inline
+  def BT: BT = "BT".asInstanceOf[BT]
   @scala.inline
   def BeforeUnloadEvent: BeforeUnloadEvent = "BeforeUnloadEvent".asInstanceOf[BeforeUnloadEvent]
   @scala.inline
@@ -1620,11 +2316,17 @@ object stdStrings {
   @scala.inline
   def DragEvent: DragEvent = "DragEvent".asInstanceOf[DragEvent]
   @scala.inline
+  def ElementListTagNameMap: ElementListTagNameMap = "ElementListTagNameMap".asInstanceOf[ElementListTagNameMap]
+  @scala.inline
+  def Embedded: Embedded = "Embedded".asInstanceOf[Embedded]
+  @scala.inline
   def ErrorEvent: ErrorEvent = "ErrorEvent".asInstanceOf[ErrorEvent]
   @scala.inline
   def Event: Event = "Event".asInstanceOf[Event]
   @scala.inline
   def Events: Events = "Events".asInstanceOf[Events]
+  @scala.inline
+  def FIDO_2_0: FIDO_2_0 = "FIDO_2_0".asInstanceOf[FIDO_2_0]
   @scala.inline
   def Float32Array: Float32Array = "Float32Array".asInstanceOf[Float32Array]
   @scala.inline
@@ -1790,9 +2492,13 @@ object stdStrings {
   @scala.inline
   def RTCIceTransportStateChangedEvent: RTCIceTransportStateChangedEvent = "RTCIceTransportStateChangedEvent".asInstanceOf[RTCIceTransportStateChangedEvent]
   @scala.inline
+  def RTCP: RTCP = "RTCP".asInstanceOf[RTCP]
+  @scala.inline
   def RTCPeerConnectionIceEvent: RTCPeerConnectionIceEvent = "RTCPeerConnectionIceEvent".asInstanceOf[RTCPeerConnectionIceEvent]
   @scala.inline
   def RTCSsrcConflictEvent: RTCSsrcConflictEvent = "RTCSsrcConflictEvent".asInstanceOf[RTCSsrcConflictEvent]
+  @scala.inline
+  def RTP: RTP = "RTP".asInstanceOf[RTP]
   @scala.inline
   def Readonly: Readonly = "Readonly".asInstanceOf[Readonly]
   @scala.inline
@@ -1807,6 +2513,8 @@ object stdStrings {
   def SVGZoomEvent: SVGZoomEvent = "SVGZoomEvent".asInstanceOf[SVGZoomEvent]
   @scala.inline
   def SVGZoomEvents: SVGZoomEvents = "SVGZoomEvents".asInstanceOf[SVGZoomEvents]
+  @scala.inline
+  def ScopedCred: ScopedCred = "ScopedCred".asInstanceOf[ScopedCred]
   @scala.inline
   def ScriptNotifyEvent: ScriptNotifyEvent = "ScriptNotifyEvent".asInstanceOf[ScriptNotifyEvent]
   @scala.inline
@@ -1834,6 +2542,8 @@ object stdStrings {
   @scala.inline
   def UInt8Array: UInt8Array = "UInt8Array".asInstanceOf[UInt8Array]
   @scala.inline
+  def USB: USB = "USB".asInstanceOf[USB]
+  @scala.inline
   def Uint16Array: Uint16Array = "Uint16Array".asInstanceOf[Uint16Array]
   @scala.inline
   def Uint32Array: Uint32Array = "Uint32Array".asInstanceOf[Uint32Array]
@@ -1850,6 +2560,8 @@ object stdStrings {
   @scala.inline
   def WheelEvent: WheelEvent = "WheelEvent".asInstanceOf[WheelEvent]
   @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
+  @scala.inline
   def a: a = "a".asInstanceOf[a]
   @scala.inline
   def abbr: abbr = "abbr".asInstanceOf[abbr]
@@ -1860,6 +2572,10 @@ object stdStrings {
   @scala.inline
   def activate: activate = "activate".asInstanceOf[activate]
   @scala.inline
+  def activated: activated = "activated".asInstanceOf[activated]
+  @scala.inline
+  def activating: activating = "activating".asInstanceOf[activating]
+  @scala.inline
   def active: active = "active".asInstanceOf[active]
   @scala.inline
   def address: address = "address".asInstanceOf[address]
@@ -1868,7 +2584,19 @@ object stdStrings {
   @scala.inline
   def addtrack: addtrack = "addtrack".asInstanceOf[addtrack]
   @scala.inline
+  def afterbegin: afterbegin = "afterbegin".asInstanceOf[afterbegin]
+  @scala.inline
+  def afterend: afterend = "afterend".asInstanceOf[afterend]
+  @scala.inline
   def afterprint: afterprint = "afterprint".asInstanceOf[afterprint]
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  @scala.inline
+  def allow: allow = "allow".asInstanceOf[allow]
+  @scala.inline
+  def allpass: allpass = "allpass".asInstanceOf[allpass]
+  @scala.inline
+  def answer: answer = "answer".asInstanceOf[answer]
   @scala.inline
   def applet: applet = "applet".asInstanceOf[applet]
   @scala.inline
@@ -1876,31 +2604,51 @@ object stdStrings {
   @scala.inline
   def ariarequest: ariarequest = "ariarequest".asInstanceOf[ariarequest]
   @scala.inline
+  def arraybuffer_ : arraybuffer_ = "arraybuffer".asInstanceOf[arraybuffer_]
+  @scala.inline
   def article: article = "article".asInstanceOf[article]
   @scala.inline
   def aside: aside = "aside".asInstanceOf[aside]
   @scala.inline
   def audio: audio = "audio".asInstanceOf[audio]
   @scala.inline
+  def audioinput: audioinput = "audioinput".asInstanceOf[audioinput]
+  @scala.inline
+  def audiooutput: audiooutput = "audiooutput".asInstanceOf[audiooutput]
+  @scala.inline
   def audioprocess: audioprocess = "audioprocess".asInstanceOf[audioprocess]
+  @scala.inline
+  def auth: auth = "auth".asInstanceOf[auth]
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
   def b: b = "b".asInstanceOf[b]
   @scala.inline
+  def back_forward: back_forward = "back_forward".asInstanceOf[back_forward]
+  @scala.inline
+  def balanced: balanced = "balanced".asInstanceOf[balanced]
+  @scala.inline
+  def bandpass: bandpass = "bandpass".asInstanceOf[bandpass]
+  @scala.inline
   def base: base = "base".asInstanceOf[base]
   @scala.inline
   def basefont: basefont = "basefont".asInstanceOf[basefont]
   @scala.inline
+  def basic: basic = "basic".asInstanceOf[basic]
+  @scala.inline
   def bdo: bdo = "bdo".asInstanceOf[bdo]
   @scala.inline
   def beforeactivate: beforeactivate = "beforeactivate".asInstanceOf[beforeactivate]
+  @scala.inline
+  def beforebegin: beforebegin = "beforebegin".asInstanceOf[beforebegin]
   @scala.inline
   def beforecopy: beforecopy = "beforecopy".asInstanceOf[beforecopy]
   @scala.inline
   def beforecut: beforecut = "beforecut".asInstanceOf[beforecut]
   @scala.inline
   def beforedeactivate: beforedeactivate = "beforedeactivate".asInstanceOf[beforedeactivate]
+  @scala.inline
+  def beforeend: beforeend = "beforeend".asInstanceOf[beforeend]
   @scala.inline
   def beforepaste: beforepaste = "beforepaste".asInstanceOf[beforepaste]
   @scala.inline
@@ -1909,6 +2657,10 @@ object stdStrings {
   def beforeunload: beforeunload = "beforeunload".asInstanceOf[beforeunload]
   @scala.inline
   def big: big = "big".asInstanceOf[big]
+  @scala.inline
+  def ble: ble = "ble".asInstanceOf[ble]
+  @scala.inline
+  def blob: blob = "blob".asInstanceOf[blob]
   @scala.inline
   def blocked: blocked = "blocked".asInstanceOf[blocked]
   @scala.inline
@@ -1928,6 +2680,10 @@ object stdStrings {
   @scala.inline
   def cached: cached = "cached".asInstanceOf[cached]
   @scala.inline
+  def cancelled: cancelled = "cancelled".asInstanceOf[cancelled]
+  @scala.inline
+  def candidatepair: candidatepair = "candidatepair".asInstanceOf[candidatepair]
+  @scala.inline
   def candidatepairchange: candidatepairchange = "candidatepairchange".asInstanceOf[candidatepairchange]
   @scala.inline
   def canplay: canplay = "canplay".asInstanceOf[canplay]
@@ -1942,13 +2698,19 @@ object stdStrings {
   @scala.inline
   def change: change = "change".asInstanceOf[change]
   @scala.inline
+  def character: character = "character".asInstanceOf[character]
+  @scala.inline
   def checking: checking = "checking".asInstanceOf[checking]
   @scala.inline
   def circle: circle = "circle".asInstanceOf[circle]
   @scala.inline
   def cite: cite = "cite".asInstanceOf[cite]
   @scala.inline
+  def `clamped-max`: `clamped-max` = "clamped-max".asInstanceOf[`clamped-max`]
+  @scala.inline
   def click: click = "click".asInstanceOf[click]
+  @scala.inline
+  def client: client = "client".asInstanceOf[client]
   @scala.inline
   def clipPath: clipPath = "clipPath".asInstanceOf[clipPath]
   @scala.inline
@@ -1970,19 +2732,35 @@ object stdStrings {
   @scala.inline
   def complete: complete = "complete".asInstanceOf[complete]
   @scala.inline
+  def completed: completed = "completed".asInstanceOf[completed]
+  @scala.inline
   def componentTransferFunction: componentTransferFunction = "componentTransferFunction".asInstanceOf[componentTransferFunction]
+  @scala.inline
+  def connected: connected = "connected".asInstanceOf[connected]
+  @scala.inline
+  def connecting: connecting = "connecting".asInstanceOf[connecting]
   @scala.inline
   def contextmenu: contextmenu = "contextmenu".asInstanceOf[contextmenu]
   @scala.inline
+  def controlled: controlled = "controlled".asInstanceOf[controlled]
+  @scala.inline
   def controllerchange: controllerchange = "controllerchange".asInstanceOf[controllerchange]
+  @scala.inline
+  def controlling: controlling = "controlling".asInstanceOf[controlling]
   @scala.inline
   def copy: copy = "copy".asInstanceOf[copy]
   @scala.inline
+  def cors: cors = "cors".asInstanceOf[cors]
+  @scala.inline
   def cuechange: cuechange = "cuechange".asInstanceOf[cuechange]
+  @scala.inline
+  def custom: custom = "custom".asInstanceOf[custom]
   @scala.inline
   def cut: cut = "cut".asInstanceOf[cut]
   @scala.inline
   def data: data = "data".asInstanceOf[data]
+  @scala.inline
+  def datachannel: datachannel = "datachannel".asInstanceOf[datachannel]
   @scala.inline
   def datalist: datalist = "datalist".asInstanceOf[datalist]
   @scala.inline
@@ -1994,11 +2772,21 @@ object stdStrings {
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   @scala.inline
+  def defer: defer = "defer".asInstanceOf[defer]
+  @scala.inline
   def defs: defs = "defs".asInstanceOf[defs]
   @scala.inline
   def del: del = "del".asInstanceOf[del]
   @scala.inline
+  def delivery: delivery = "delivery".asInstanceOf[delivery]
+  @scala.inline
+  def denied: denied = "denied".asInstanceOf[denied]
+  @scala.inline
+  def deny: deny = "deny".asInstanceOf[deny]
+  @scala.inline
   def desc: desc = "desc".asInstanceOf[desc]
+  @scala.inline
+  def description: description = "description".asInstanceOf[description]
   @scala.inline
   def devicechange: devicechange = "devicechange".asInstanceOf[devicechange]
   @scala.inline
@@ -2012,9 +2800,23 @@ object stdStrings {
   @scala.inline
   def dir: dir = "dir".asInstanceOf[dir]
   @scala.inline
+  def direct: direct = "direct".asInstanceOf[direct]
+  @scala.inline
+  def disambiguation: disambiguation = "disambiguation".asInstanceOf[disambiguation]
+  @scala.inline
+  def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
+  @scala.inline
+  def discrete: discrete = "discrete".asInstanceOf[discrete]
+  @scala.inline
   def div: div = "div".asInstanceOf[div]
   @scala.inline
   def dl: dl = "dl".asInstanceOf[dl]
+  @scala.inline
+  def document: document = "document".asInstanceOf[document]
+  @scala.inline
+  def done: done = "done".asInstanceOf[done]
+  @scala.inline
+  def down: down = "down".asInstanceOf[down]
   @scala.inline
   def downloading: downloading = "downloading".asInstanceOf[downloading]
   @scala.inline
@@ -2054,11 +2856,27 @@ object stdStrings {
   @scala.inline
   def enter: enter = "enter".asInstanceOf[enter]
   @scala.inline
+  def environment: environment = "environment".asInstanceOf[environment]
+  @scala.inline
+  def equalpower: equalpower = "equalpower".asInstanceOf[equalpower]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
+  def evenodd: evenodd = "evenodd".asInstanceOf[evenodd]
   @scala.inline
   def exit: exit = "exit".asInstanceOf[exit]
   @scala.inline
   def `experimental-webgl`: `experimental-webgl` = "experimental-webgl".asInstanceOf[`experimental-webgl`]
+  @scala.inline
+  def expired: expired = "expired".asInstanceOf[expired]
+  @scala.inline
+  def explicit: explicit = "explicit".asInstanceOf[explicit]
+  @scala.inline
+  def exponential: exponential = "exponential".asInstanceOf[exponential]
+  @scala.inline
+  def fail: fail = "fail".asInstanceOf[fail]
+  @scala.inline
+  def failed: failed = "failed".asInstanceOf[failed]
   @scala.inline
   def feBlend: feBlend = "feBlend".asInstanceOf[feBlend]
   @scala.inline
@@ -2174,9 +2992,13 @@ object stdStrings {
   @scala.inline
   def focusout: focusout = "focusout".asInstanceOf[focusout]
   @scala.inline
+  def follow: follow = "follow".asInstanceOf[follow]
+  @scala.inline
   def font: font = "font".asInstanceOf[font]
   @scala.inline
   def footer: footer = "footer".asInstanceOf[footer]
+  @scala.inline
+  def `force-cache`: `force-cache` = "force-cache".asInstanceOf[`force-cache`]
   @scala.inline
   def foreignObject: foreignObject = "foreignObject".asInstanceOf[foreignObject]
   @scala.inline
@@ -2188,15 +3010,25 @@ object stdStrings {
   @scala.inline
   def frameset: frameset = "frameset".asInstanceOf[frameset]
   @scala.inline
+  def frozen: frozen = "frozen".asInstanceOf[frozen]
+  @scala.inline
   def fullscreenchange: fullscreenchange = "fullscreenchange".asInstanceOf[fullscreenchange]
   @scala.inline
   def fullscreenerror: fullscreenerror = "fullscreenerror".asInstanceOf[fullscreenerror]
   @scala.inline
   def g: g = "g".asInstanceOf[g]
   @scala.inline
+  def gamepad: gamepad = "gamepad".asInstanceOf[gamepad]
+  @scala.inline
+  def gathering: gathering = "gathering".asInstanceOf[gathering]
+  @scala.inline
+  def geolocation: geolocation = "geolocation".asInstanceOf[geolocation]
+  @scala.inline
   def gotpointercapture: gotpointercapture = "gotpointercapture".asInstanceOf[gotpointercapture]
   @scala.inline
   def gradient: gradient = "gradient".asInstanceOf[gradient]
+  @scala.inline
+  def granted: granted = "granted".asInstanceOf[granted]
   @scala.inline
   def h1: h1 = "h1".asInstanceOf[h1]
   @scala.inline
@@ -2212,13 +3044,29 @@ object stdStrings {
   @scala.inline
   def hashchange: hashchange = "hashchange".asInstanceOf[hashchange]
   @scala.inline
+  def `have-local-offer`: `have-local-offer` = "have-local-offer".asInstanceOf[`have-local-offer`]
+  @scala.inline
+  def `have-local-pranswer`: `have-local-pranswer` = "have-local-pranswer".asInstanceOf[`have-local-pranswer`]
+  @scala.inline
+  def `have-remote-offer`: `have-remote-offer` = "have-remote-offer".asInstanceOf[`have-remote-offer`]
+  @scala.inline
+  def `have-remote-pranswer`: `have-remote-pranswer` = "have-remote-pranswer".asInstanceOf[`have-remote-pranswer`]
+  @scala.inline
   def head: head = "head".asInstanceOf[head]
   @scala.inline
   def header: header = "header".asInstanceOf[header]
   @scala.inline
   def hgroup: hgroup = "hgroup".asInstanceOf[hgroup]
   @scala.inline
+  def hidden: hidden = "hidden".asInstanceOf[hidden]
+  @scala.inline
   def high: high = "high".asInstanceOf[high]
+  @scala.inline
+  def highpass: highpass = "highpass".asInstanceOf[highpass]
+  @scala.inline
+  def highshelf: highshelf = "highshelf".asInstanceOf[highshelf]
+  @scala.inline
+  def host: host = "host".asInstanceOf[host]
   @scala.inline
   def hr: hr = "hr".asInstanceOf[hr]
   @scala.inline
@@ -2246,19 +3094,43 @@ object stdStrings {
   @scala.inline
   def inactive: inactive = "inactive".asInstanceOf[inactive]
   @scala.inline
+  def `inbound-network`: `inbound-network` = "inbound-network".asInstanceOf[`inbound-network`]
+  @scala.inline
+  def `inbound-payload`: `inbound-payload` = "inbound-payload".asInstanceOf[`inbound-payload`]
+  @scala.inline
+  def inboundrtp: inboundrtp = "inboundrtp".asInstanceOf[inboundrtp]
+  @scala.inline
+  def include: include = "include".asInstanceOf[include]
+  @scala.inline
+  def `individualization-request`: `individualization-request` = "individualization-request".asInstanceOf[`individualization-request`]
+  @scala.inline
+  def inprogress: inprogress = "inprogress".asInstanceOf[inprogress]
+  @scala.inline
   def input: input = "input".asInstanceOf[input]
   @scala.inline
   def ins: ins = "ins".asInstanceOf[ins]
   @scala.inline
+  def installed: installed = "installed".asInstanceOf[installed]
+  @scala.inline
+  def installing: installing = "installing".asInstanceOf[installing]
+  @scala.inline
   def instant: instant = "instant".asInstanceOf[instant]
+  @scala.inline
+  def `internal-error`: `internal-error` = "internal-error".asInstanceOf[`internal-error`]
   @scala.inline
   def invalid: invalid = "invalid".asInstanceOf[invalid]
   @scala.inline
+  def inverse: inverse = "inverse".asInstanceOf[inverse]
+  @scala.inline
   def isindex: isindex = "isindex".asInstanceOf[isindex]
+  @scala.inline
+  def json_ : json_ = "json".asInstanceOf[json_]
   @scala.inline
   def jwk: jwk = "jwk".asInstanceOf[jwk]
   @scala.inline
   def kbd: kbd = "kbd".asInstanceOf[kbd]
+  @scala.inline
+  def keyboard: keyboard = "keyboard".asInstanceOf[keyboard]
   @scala.inline
   def keydown: keydown = "keydown".asInstanceOf[keydown]
   @scala.inline
@@ -2270,11 +3142,21 @@ object stdStrings {
   @scala.inline
   def label: label = "label".asInstanceOf[label]
   @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def legend: legend = "legend".asInstanceOf[legend]
   @scala.inline
   def li: li = "li".asInstanceOf[li]
   @scala.inline
+  def `license-release`: `license-release` = "license-release".asInstanceOf[`license-release`]
+  @scala.inline
+  def `license-renewal`: `license-renewal` = "license-renewal".asInstanceOf[`license-renewal`]
+  @scala.inline
+  def `license-request`: `license-request` = "license-request".asInstanceOf[`license-request`]
+  @scala.inline
   def line: line = "line".asInstanceOf[line]
+  @scala.inline
+  def linear: linear = "linear".asInstanceOf[linear]
   @scala.inline
   def linearGradient: linearGradient = "linearGradient".asInstanceOf[linearGradient]
   @scala.inline
@@ -2283,6 +3165,8 @@ object stdStrings {
   def link: link = "link".asInstanceOf[link]
   @scala.inline
   def listing: listing = "listing".asInstanceOf[listing]
+  @scala.inline
+  def live: live = "live".asInstanceOf[live]
   @scala.inline
   def load: load = "load".asInstanceOf[load]
   @scala.inline
@@ -2296,9 +3180,21 @@ object stdStrings {
   @scala.inline
   def localcandidate: localcandidate = "localcandidate".asInstanceOf[localcandidate]
   @scala.inline
+  def localclientevent: localclientevent = "localclientevent".asInstanceOf[localclientevent]
+  @scala.inline
   def lostpointercapture: lostpointercapture = "lostpointercapture".asInstanceOf[lostpointercapture]
   @scala.inline
   def low: low = "low".asInstanceOf[low]
+  @scala.inline
+  def lowpass: lowpass = "lowpass".asInstanceOf[lowpass]
+  @scala.inline
+  def lowshelf: lowshelf = "lowshelf".asInstanceOf[lowshelf]
+  @scala.inline
+  def ltr: ltr = "ltr".asInstanceOf[ltr]
+  @scala.inline
+  def `maintain-framerate`: `maintain-framerate` = "maintain-framerate".asInstanceOf[`maintain-framerate`]
+  @scala.inline
+  def `maintain-resolution`: `maintain-resolution` = "maintain-resolution".asInstanceOf[`maintain-resolution`]
   @scala.inline
   def manual: manual = "manual".asInstanceOf[manual]
   @scala.inline
@@ -2312,6 +3208,14 @@ object stdStrings {
   @scala.inline
   def mask: mask = "mask".asInstanceOf[mask]
   @scala.inline
+  def max: max = "max".asInstanceOf[max]
+  @scala.inline
+  def `max-bundle`: `max-bundle` = "max-bundle".asInstanceOf[`max-bundle`]
+  @scala.inline
+  def `max-compat`: `max-compat` = "max-compat".asInstanceOf[`max-compat`]
+  @scala.inline
+  def media: media = "media".asInstanceOf[media]
+  @scala.inline
   def medium: medium = "medium".asInstanceOf[medium]
   @scala.inline
   def menu: menu = "menu".asInstanceOf[menu]
@@ -2323,6 +3227,8 @@ object stdStrings {
   def metadata: metadata = "metadata".asInstanceOf[metadata]
   @scala.inline
   def meter: meter = "meter".asInstanceOf[meter]
+  @scala.inline
+  def mouse: mouse = "mouse".asInstanceOf[mouse]
   @scala.inline
   def mousedown: mousedown = "mousedown".asInstanceOf[mousedown]
   @scala.inline
@@ -2350,19 +3256,47 @@ object stdStrings {
   @scala.inline
   def nav: nav = "nav".asInstanceOf[nav]
   @scala.inline
+  def navigate: navigate = "navigate".asInstanceOf[navigate]
+  @scala.inline
   def nearest: nearest = "nearest".asInstanceOf[nearest]
   @scala.inline
   def negotiationneeded: negotiationneeded = "negotiationneeded".asInstanceOf[negotiationneeded]
   @scala.inline
+  def `new`: `new` = "new".asInstanceOf[`new`]
+  @scala.inline
+  def next: next = "next".asInstanceOf[next]
+  @scala.inline
   def nextid: nextid = "nextid".asInstanceOf[nextid]
+  @scala.inline
+  def nextunique: nextunique = "nextunique".asInstanceOf[nextunique]
+  @scala.inline
+  def nfc_ : nfc_ = "nfc".asInstanceOf[nfc_]
+  @scala.inline
+  def `no-cache`: `no-cache` = "no-cache".asInstanceOf[`no-cache`]
+  @scala.inline
+  def `no-cors`: `no-cors` = "no-cors".asInstanceOf[`no-cors`]
+  @scala.inline
+  def `no-referrer`: `no-referrer` = "no-referrer".asInstanceOf[`no-referrer`]
+  @scala.inline
+  def `no-referrer-when-downgrade`: `no-referrer-when-downgrade` = "no-referrer-when-downgrade".asInstanceOf[`no-referrer-when-downgrade`]
+  @scala.inline
+  def `no-store`: `no-store` = "no-store".asInstanceOf[`no-store`]
   @scala.inline
   def nobr: nobr = "nobr".asInstanceOf[nobr]
   @scala.inline
   def noframes: noframes = "noframes".asInstanceOf[noframes]
   @scala.inline
+  def nohost: nohost = "nohost".asInstanceOf[nohost]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
+  def nonzero: nonzero = "nonzero".asInstanceOf[nonzero]
+  @scala.inline
   def noscript: noscript = "noscript".asInstanceOf[noscript]
+  @scala.inline
+  def `not-allowed`: `not-allowed` = "not-allowed".asInstanceOf[`not-allowed`]
+  @scala.inline
+  def notch: notch = "notch".asInstanceOf[notch]
   @scala.inline
   def noupdate: noupdate = "noupdate".asInstanceOf[noupdate]
   @scala.inline
@@ -2372,11 +3306,19 @@ object stdStrings {
   @scala.inline
   def obsolete: obsolete = "obsolete".asInstanceOf[obsolete]
   @scala.inline
+  def offer: offer = "offer".asInstanceOf[offer]
+  @scala.inline
   def offline: offline = "offline".asInstanceOf[offline]
   @scala.inline
   def ol: ol = "ol".asInstanceOf[ol]
   @scala.inline
+  def omit: omit = "omit".asInstanceOf[omit]
+  @scala.inline
   def online: online = "online".asInstanceOf[online]
+  @scala.inline
+  def opaque: opaque = "opaque".asInstanceOf[opaque]
+  @scala.inline
+  def opaqueredirect: opaqueredirect = "opaqueredirect".asInstanceOf[opaqueredirect]
   @scala.inline
   def open: open = "open".asInstanceOf[open]
   @scala.inline
@@ -2384,19 +3326,41 @@ object stdStrings {
   @scala.inline
   def option: option = "option".asInstanceOf[option]
   @scala.inline
+  def optional: optional = "optional".asInstanceOf[optional]
+  @scala.inline
   def orientationchange: orientationchange = "orientationchange".asInstanceOf[orientationchange]
   @scala.inline
+  def `origin-only`: `origin-only` = "origin-only".asInstanceOf[`origin-only`]
+  @scala.inline
+  def `origin-when-cross-origin`: `origin-when-cross-origin` = "origin-when-cross-origin".asInstanceOf[`origin-when-cross-origin`]
+  @scala.inline
+  def os: os = "os".asInstanceOf[os]
+  @scala.inline
+  def `outbound-network`: `outbound-network` = "outbound-network".asInstanceOf[`outbound-network`]
+  @scala.inline
+  def `outbound-payload`: `outbound-payload` = "outbound-payload".asInstanceOf[`outbound-payload`]
+  @scala.inline
+  def outboundrtp: outboundrtp = "outboundrtp".asInstanceOf[outboundrtp]
+  @scala.inline
   def output: output = "output".asInstanceOf[output]
+  @scala.inline
+  def `output-downscaled`: `output-downscaled` = "output-downscaled".asInstanceOf[`output-downscaled`]
+  @scala.inline
+  def `output-not-allowed`: `output-not-allowed` = "output-not-allowed".asInstanceOf[`output-not-allowed`]
   @scala.inline
   def overconstrained: overconstrained = "overconstrained".asInstanceOf[overconstrained]
   @scala.inline
   def p: p = "p".asInstanceOf[p]
+  @scala.inline
+  def p256dh: p256dh = "p256dh".asInstanceOf[p256dh]
   @scala.inline
   def pagehide: pagehide = "pagehide".asInstanceOf[pagehide]
   @scala.inline
   def pageshow: pageshow = "pageshow".asInstanceOf[pageshow]
   @scala.inline
   def param: param = "param".asInstanceOf[param]
+  @scala.inline
+  def passive: passive = "passive".asInstanceOf[passive]
   @scala.inline
   def paste: paste = "paste".asInstanceOf[paste]
   @scala.inline
@@ -2405,6 +3369,20 @@ object stdStrings {
   def pattern: pattern = "pattern".asInstanceOf[pattern]
   @scala.inline
   def pause: pause = "pause".asInstanceOf[pause]
+  @scala.inline
+  def peaking: peaking = "peaking".asInstanceOf[peaking]
+  @scala.inline
+  def `peer-derived`: `peer-derived` = "peer-derived".asInstanceOf[`peer-derived`]
+  @scala.inline
+  def peerreflexive: peerreflexive = "peerreflexive".asInstanceOf[peerreflexive]
+  @scala.inline
+  def pending: pending = "pending".asInstanceOf[pending]
+  @scala.inline
+  def `persistent-license`: `persistent-license` = "persistent-license".asInstanceOf[`persistent-license`]
+  @scala.inline
+  def `persistent-release-message`: `persistent-release-message` = "persistent-release-message".asInstanceOf[`persistent-release-message`]
+  @scala.inline
+  def pickup: pickup = "pickup".asInstanceOf[pickup]
   @scala.inline
   def picture: picture = "picture".asInstanceOf[picture]
   @scala.inline
@@ -2426,6 +3404,8 @@ object stdStrings {
   @scala.inline
   def pointerleave: pointerleave = "pointerleave".asInstanceOf[pointerleave]
   @scala.inline
+  def pointerlock: pointerlock = "pointerlock".asInstanceOf[pointerlock]
+  @scala.inline
   def pointerlockchange: pointerlockchange = "pointerlockchange".asInstanceOf[pointerlockchange]
   @scala.inline
   def pointerlockerror: pointerlockerror = "pointerlockerror".asInstanceOf[pointerlockerror]
@@ -2444,11 +3424,23 @@ object stdStrings {
   @scala.inline
   def popstate: popstate = "popstate".asInstanceOf[popstate]
   @scala.inline
+  def pranswer: pranswer = "pranswer".asInstanceOf[pranswer]
+  @scala.inline
   def pre: pre = "pre".asInstanceOf[pre]
   @scala.inline
   def premultiply: premultiply = "premultiply".asInstanceOf[premultiply]
   @scala.inline
+  def prerender: prerender = "prerender".asInstanceOf[prerender]
+  @scala.inline
+  def prev: prev = "prev".asInstanceOf[prev]
+  @scala.inline
+  def prevunique: prevunique = "prevunique".asInstanceOf[prevunique]
+  @scala.inline
+  def prflx: prflx = "prflx".asInstanceOf[prflx]
+  @scala.inline
   def progress: progress = "progress".asInstanceOf[progress]
+  @scala.inline
+  def prompt: prompt = "prompt".asInstanceOf[prompt]
   @scala.inline
   def q: q = "q".asInstanceOf[q]
   @scala.inline
@@ -2460,13 +3452,29 @@ object stdStrings {
   @scala.inline
   def raw: raw = "raw".asInstanceOf[raw]
   @scala.inline
+  def readonly_ : readonly_ = "readonly".asInstanceOf[readonly_]
+  @scala.inline
+  def readwrite: readwrite = "readwrite".asInstanceOf[readwrite]
+  @scala.inline
   def readystatechange: readystatechange = "readystatechange".asInstanceOf[readystatechange]
   @scala.inline
   def rect: rect = "rect".asInstanceOf[rect]
   @scala.inline
+  def redundant: redundant = "redundant".asInstanceOf[redundant]
+  @scala.inline
+  def relay: relay = "relay".asInstanceOf[relay]
+  @scala.inline
+  def relayed: relayed = "relayed".asInstanceOf[relayed]
+  @scala.inline
+  def reload: reload = "reload".asInstanceOf[reload]
+  @scala.inline
+  def remotecandidate: remotecandidate = "remotecandidate".asInstanceOf[remotecandidate]
+  @scala.inline
   def removestream: removestream = "removestream".asInstanceOf[removestream]
   @scala.inline
   def removetrack: removetrack = "removetrack".asInstanceOf[removetrack]
+  @scala.inline
+  def required: required = "required".asInstanceOf[required]
   @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
   @scala.inline
@@ -2474,13 +3482,23 @@ object stdStrings {
   @scala.inline
   def resume: resume = "resume".asInstanceOf[resume]
   @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def rt: rt = "rt".asInstanceOf[rt]
+  @scala.inline
+  def rtl: rtl = "rtl".asInstanceOf[rtl]
   @scala.inline
   def ruby: ruby = "ruby".asInstanceOf[ruby]
   @scala.inline
+  def running: running = "running".asInstanceOf[running]
+  @scala.inline
   def s: s = "s".asInstanceOf[s]
   @scala.inline
+  def `same-origin`: `same-origin` = "same-origin".asInstanceOf[`same-origin`]
+  @scala.inline
   def samp: samp = "samp".asInstanceOf[samp]
+  @scala.inline
+  def sawtooth: sawtooth = "sawtooth".asInstanceOf[sawtooth]
   @scala.inline
   def script: script = "script".asInstanceOf[script]
   @scala.inline
@@ -2492,11 +3510,27 @@ object stdStrings {
   @scala.inline
   def seeking: seeking = "seeking".asInstanceOf[seeking]
   @scala.inline
+  def segments: segments = "segments".asInstanceOf[segments]
+  @scala.inline
   def select: select = "select".asInstanceOf[select]
   @scala.inline
   def selectionchange: selectionchange = "selectionchange".asInstanceOf[selectionchange]
   @scala.inline
   def selectstart: selectstart = "selectstart".asInstanceOf[selectstart]
+  @scala.inline
+  def sentence: sentence = "sentence".asInstanceOf[sentence]
+  @scala.inline
+  def sequence: sequence = "sequence".asInstanceOf[sequence]
+  @scala.inline
+  def server: server = "server".asInstanceOf[server]
+  @scala.inline
+  def serverreflexive: serverreflexive = "serverreflexive".asInstanceOf[serverreflexive]
+  @scala.inline
+  def session: session = "session".asInstanceOf[session]
+  @scala.inline
+  def sharedworker: sharedworker = "sharedworker".asInstanceOf[sharedworker]
+  @scala.inline
+  def shipping: shipping = "shipping".asInstanceOf[shipping]
   @scala.inline
   def shippingaddresschange: shippingaddresschange = "shippingaddresschange".asInstanceOf[shippingaddresschange]
   @scala.inline
@@ -2506,23 +3540,37 @@ object stdStrings {
   @scala.inline
   def signalingstatechange: signalingstatechange = "signalingstatechange".asInstanceOf[signalingstatechange]
   @scala.inline
+  def sine: sine = "sine".asInstanceOf[sine]
+  @scala.inline
   def small: small = "small".asInstanceOf[small]
   @scala.inline
   def smooth: smooth = "smooth".asInstanceOf[smooth]
+  @scala.inline
+  def so: so = "so".asInstanceOf[so]
   @scala.inline
   def source: source = "source".asInstanceOf[source]
   @scala.inline
   def span: span = "span".asInstanceOf[span]
   @scala.inline
+  def speakers: speakers = "speakers".asInstanceOf[speakers]
+  @scala.inline
   def spki: spki = "spki".asInstanceOf[spki]
   @scala.inline
+  def square: square = "square".asInstanceOf[square]
+  @scala.inline
+  def srflx: srflx = "srflx".asInstanceOf[srflx]
+  @scala.inline
   def ssrcconflict: ssrcconflict = "ssrcconflict".asInstanceOf[ssrcconflict]
+  @scala.inline
+  def stable: stable = "stable".asInstanceOf[stable]
   @scala.inline
   def stalled: stalled = "stalled".asInstanceOf[stalled]
   @scala.inline
   def start: start = "start".asInstanceOf[start]
   @scala.inline
   def statechange: statechange = "statechange".asInstanceOf[statechange]
+  @scala.inline
+  def `status-pending`: `status-pending` = "status-pending".asInstanceOf[`status-pending`]
   @scala.inline
   def stop: stop = "stop".asInstanceOf[stop]
   @scala.inline
@@ -2534,17 +3582,25 @@ object stdStrings {
   @scala.inline
   def strong: strong = "strong".asInstanceOf[strong]
   @scala.inline
+  def stun: stun = "stun".asInstanceOf[stun]
+  @scala.inline
   def style: style = "style".asInstanceOf[style]
   @scala.inline
   def sub: sub = "sub".asInstanceOf[sub]
   @scala.inline
   def submit: submit = "submit".asInstanceOf[submit]
   @scala.inline
+  def subresource: subresource = "subresource".asInstanceOf[subresource]
+  @scala.inline
+  def succeeded: succeeded = "succeeded".asInstanceOf[succeeded]
+  @scala.inline
   def success: success = "success".asInstanceOf[success]
   @scala.inline
   def sup: sup = "sup".asInstanceOf[sup]
   @scala.inline
   def suspend: suspend = "suspend".asInstanceOf[suspend]
+  @scala.inline
+  def suspended: suspended = "suspended".asInstanceOf[suspended]
   @scala.inline
   def svg: svg = "svg".asInstanceOf[svg]
   @scala.inline
@@ -2556,9 +3612,13 @@ object stdStrings {
   @scala.inline
   def tbody: tbody = "tbody".asInstanceOf[tbody]
   @scala.inline
+  def tcp: tcp = "tcp".asInstanceOf[tcp]
+  @scala.inline
   def td: td = "td".asInstanceOf[td]
   @scala.inline
   def template: template = "template".asInstanceOf[template]
+  @scala.inline
+  def temporary: temporary = "temporary".asInstanceOf[temporary]
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   @scala.inline
@@ -2569,6 +3629,8 @@ object stdStrings {
   def textPositioning: textPositioning = "textPositioning".asInstanceOf[textPositioning]
   @scala.inline
   def textarea: textarea = "textarea".asInstanceOf[textarea]
+  @scala.inline
+  def textedit: textedit = "textedit".asInstanceOf[textedit]
   @scala.inline
   def textpath_ : textpath_ = "textpath".asInstanceOf[textpath_]
   @scala.inline
@@ -2600,17 +3662,37 @@ object stdStrings {
   @scala.inline
   def track: track = "track".asInstanceOf[track]
   @scala.inline
+  def transport: transport = "transport".asInstanceOf[transport]
+  @scala.inline
+  def transportdiagnostics: transportdiagnostics = "transportdiagnostics".asInstanceOf[transportdiagnostics]
+  @scala.inline
+  def triangle: triangle = "triangle".asInstanceOf[triangle]
+  @scala.inline
   def tspan: tspan = "tspan".asInstanceOf[tspan]
   @scala.inline
   def tt: tt = "tt".asInstanceOf[tt]
   @scala.inline
+  def turn: turn = "turn".asInstanceOf[turn]
+  @scala.inline
   def u: u = "u".asInstanceOf[u]
+  @scala.inline
+  def udp: udp = "udp".asInstanceOf[udp]
   @scala.inline
   def ul: ul = "ul".asInstanceOf[ul]
   @scala.inline
+  def unknown: unknown = "unknown".asInstanceOf[unknown]
+  @scala.inline
+  def unlimitedIndexedDBQuota: unlimitedIndexedDBQuota = "unlimitedIndexedDBQuota".asInstanceOf[unlimitedIndexedDBQuota]
+  @scala.inline
   def unload: unload = "unload".asInstanceOf[unload]
   @scala.inline
+  def unloaded: unloaded = "unloaded".asInstanceOf[unloaded]
+  @scala.inline
   def unmute: unmute = "unmute".asInstanceOf[unmute]
+  @scala.inline
+  def `unsafe-url`: `unsafe-url` = "unsafe-url".asInstanceOf[`unsafe-url`]
+  @scala.inline
+  def up: up = "up".asInstanceOf[up]
   @scala.inline
   def updatefound: updatefound = "updatefound".asInstanceOf[updatefound]
   @scala.inline
@@ -2618,7 +3700,13 @@ object stdStrings {
   @scala.inline
   def upgradeneeded: upgradeneeded = "upgradeneeded".asInstanceOf[upgradeneeded]
   @scala.inline
+  def usable: usable = "usable".asInstanceOf[usable]
+  @scala.inline
+  def usb_ : usb_ = "usb".asInstanceOf[usb_]
+  @scala.inline
   def use: use = "use".asInstanceOf[use]
+  @scala.inline
+  def user: user = "user".asInstanceOf[user]
   @scala.inline
   def `var`: `var` = "var".asInstanceOf[`var`]
   @scala.inline
@@ -2626,7 +3714,11 @@ object stdStrings {
   @scala.inline
   def video: video = "video".asInstanceOf[video]
   @scala.inline
+  def videoinput: videoinput = "videoinput".asInstanceOf[videoinput]
+  @scala.inline
   def view: view = "view".asInstanceOf[view]
+  @scala.inline
+  def visible: visible = "visible".asInstanceOf[visible]
   @scala.inline
   def voiceschanged: voiceschanged = "voiceschanged".asInstanceOf[voiceschanged]
   @scala.inline
@@ -2642,7 +3734,13 @@ object stdStrings {
   @scala.inline
   def webkitfullscreenerror: webkitfullscreenerror = "webkitfullscreenerror".asInstanceOf[webkitfullscreenerror]
   @scala.inline
+  def webnotifications: webnotifications = "webnotifications".asInstanceOf[webnotifications]
+  @scala.inline
   def wheel: wheel = "wheel".asInstanceOf[wheel]
+  @scala.inline
+  def word: word = "word".asInstanceOf[word]
+  @scala.inline
+  def worker: worker = "worker".asInstanceOf[worker]
   @scala.inline
   def `x-ms-webview`: `x-ms-webview` = "x-ms-webview".asInstanceOf[`x-ms-webview`]
   @scala.inline

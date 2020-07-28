@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AudioNode extends EventTarget {
   var channelCount: Double = js.native
-  var channelCountMode: java.lang.String = js.native
-  var channelInterpretation: java.lang.String = js.native
+  var channelCountMode: ChannelCountMode = js.native
+  var channelInterpretation: ChannelInterpretation = js.native
   val context: AudioContext = js.native
   val numberOfInputs: Double = js.native
   val numberOfOutputs: Double = js.native

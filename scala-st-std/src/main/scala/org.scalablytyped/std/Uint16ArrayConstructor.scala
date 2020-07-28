@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Uint16ArrayConstructor
   extends Instantiable1[
-      (/* buffer */ ArrayBuffer) | (/* array */ ArrayLike[Double]) | (/* length */ Double) | (/* elements */ Iterable[Double]), 
+      (/* buffer */ ArrayBufferLike) | (/* array */ ArrayLike[Double]) | (/* length */ Double) | (/* elements */ Iterable[Double]), 
       Uint16Array
     ]
-     with Instantiable2[/* buffer */ ArrayBuffer, /* byteOffset */ Double, Uint16Array]
+     with Instantiable2[/* buffer */ ArrayBufferLike, /* byteOffset */ Double, Uint16Array]
      with Instantiable3[
-      /* buffer */ ArrayBuffer, 
+      /* buffer */ ArrayBufferLike, 
       js.UndefOr[/* byteOffset */ Double], 
       /* length */ Double, 
       Uint16Array
@@ -24,21 +24,19 @@ trait Uint16ArrayConstructor
     * The size in bytes of each element in the array.
     */
   val BYTES_PER_ELEMENT: Double = js.native
-  def from(arrayLike: ArrayLike[Double]): Uint16Array = js.native
   /**
     * Creates an array from an array-like or iterable object.
     * @param arrayLike An array-like or iterable object to convert to an array.
     * @param mapfn A mapping function to call on every element of the array.
     * @param thisArg Value of 'this' used to invoke the mapfn.
     */
+  def from(arrayLike: ArrayLike[Double]): Uint16Array = js.native
+  def from(arrayLike: ArrayLike[Double], mapfn: js.UndefOr[scala.Nothing], thisArg: js.Any): Uint16Array = js.native
+  def from(arrayLike: ArrayLike[Double], mapfn: js.Function2[/* v */ Double, /* k */ Double, Double]): Uint16Array = js.native
   def from(
     arrayLike: ArrayLike[Double],
-    mapfn: js.ThisFunction2[/* this */ js.UndefOr[scala.Nothing], /* v */ Double, /* k */ Double, Double]
-  ): Uint16Array = js.native
-  def from(
-    arrayLike: ArrayLike[Double],
-    mapfn: js.ThisFunction2[/* this */ js.UndefOr[scala.Nothing], /* v */ Double, /* k */ Double, Double],
-    thisArg: js.UndefOr[scala.Nothing]
+    mapfn: js.Function2[/* v */ Double, /* k */ Double, Double],
+    thisArg: js.Any
   ): Uint16Array = js.native
   def from(arrayLike: Iterable[Double]): Uint16Array = js.native
   /**
@@ -49,17 +47,12 @@ trait Uint16ArrayConstructor
     */
   def from(
     arrayLike: Iterable[Double],
-    mapfn: js.ThisFunction2[/* this */ js.UndefOr[scala.Nothing], /* v */ Double, /* k */ Double, Double]
+    mapfn: js.ThisFunction2[/* this */ Unit, /* v */ Double, /* k */ Double, Double]
   ): Uint16Array = js.native
   def from(
     arrayLike: Iterable[Double],
-    mapfn: js.ThisFunction2[/* this */ js.UndefOr[scala.Nothing], /* v */ Double, /* k */ Double, Double],
+    mapfn: js.ThisFunction2[/* this */ Unit, /* v */ Double, /* k */ Double, Double],
     thisArg: js.UndefOr[scala.Nothing]
-  ): Uint16Array = js.native
-  def from[Z](
-    arrayLike: ArrayLike[Double],
-    mapfn: js.ThisFunction2[/* this */ Z, /* v */ Double, /* k */ Double, Double],
-    thisArg: Z
   ): Uint16Array = js.native
   def from[Z](
     arrayLike: Iterable[Double],

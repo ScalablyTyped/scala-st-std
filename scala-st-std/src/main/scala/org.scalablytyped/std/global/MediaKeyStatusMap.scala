@@ -1,6 +1,7 @@
 package org.scalablytyped.std.global
 
 import org.scalablytyped.std.ForEachCallback
+import org.scalablytyped.std.MediaKeyStatus
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +16,7 @@ class MediaKeyStatusMap ()
   /* CompleteClass */
   override def forEach(callback: ForEachCallback): Unit = js.native
   /* CompleteClass */
-  override def get(keyId: js.Any): java.lang.String = js.native
+  override def get(keyId: js.Any): MediaKeyStatus = js.native
   /* CompleteClass */
   override def has(keyId: js.Any): scala.Boolean = js.native
 }

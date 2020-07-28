@@ -9,6 +9,14 @@ import scala.scalajs.js.annotation._
   * A typed array of 32-bit float values. The contents are initialized to 0. If the requested number
   * of bytes could not be allocated an exception is raised.
   */
+/**
+  * A typed array of 32-bit float values. The contents are initialized to 0. If the requested number
+  * of bytes could not be allocated an exception is raised.
+  */
+/**
+  * A typed array of 32-bit float values. The contents are initialized to 0. If the requested number
+  * of bytes could not be allocated an exception is raised.
+  */
 @js.native
 trait Float32Array extends /* index */ NumberDictionary[Double] {
   /**
@@ -18,7 +26,7 @@ trait Float32Array extends /* index */ NumberDictionary[Double] {
   /**
     * The ArrayBuffer instance referenced by the array.
     */
-  val buffer: ArrayBuffer = js.native
+  val buffer: ArrayBufferLike = js.native
   /**
     * The length in bytes of the array.
     */
@@ -59,33 +67,11 @@ trait Float32Array extends /* index */ NumberDictionary[Double] {
     * If thisArg is omitted, undefined is used as the this value.
     */
   def every(
-    callbackfn: js.ThisFunction3[
-      /* this */ js.UndefOr[scala.Nothing], 
-      /* value */ Double, 
-      /* index */ Double, 
-      /* array */ this.type, 
-      scala.Boolean
-    ]
+    callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, scala.Boolean]
   ): scala.Boolean = js.native
   def every(
-    callbackfn: js.ThisFunction3[
-      /* this */ js.UndefOr[scala.Nothing], 
-      /* value */ Double, 
-      /* index */ Double, 
-      /* array */ this.type, 
-      scala.Boolean
-    ],
-    thisArg: js.UndefOr[scala.Nothing]
-  ): scala.Boolean = js.native
-  def every[Z](
-    callbackfn: js.ThisFunction3[
-      /* this */ Z, 
-      /* value */ Double, 
-      /* index */ Double, 
-      /* array */ this.type, 
-      scala.Boolean
-    ],
-    thisArg: Z
+    callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, scala.Boolean],
+    thisArg: js.Any
   ): scala.Boolean = js.native
   /**
     * Returns the this object after filling the section identified by start and end with value
@@ -106,28 +92,10 @@ trait Float32Array extends /* index */ NumberDictionary[Double] {
     * @param thisArg An object to which the this keyword can refer in the callbackfn function.
     * If thisArg is omitted, undefined is used as the this value.
     */
+  def filter(callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, _]): Float32Array = js.native
   def filter(
-    callbackfn: js.ThisFunction3[
-      /* this */ js.UndefOr[scala.Nothing], 
-      /* value */ Double, 
-      /* index */ Double, 
-      /* array */ this.type, 
-      _
-    ]
-  ): Float32Array = js.native
-  def filter(
-    callbackfn: js.ThisFunction3[
-      /* this */ js.UndefOr[scala.Nothing], 
-      /* value */ Double, 
-      /* index */ Double, 
-      /* array */ this.type, 
-      _
-    ],
-    thisArg: js.UndefOr[scala.Nothing]
-  ): Float32Array = js.native
-  def filter[Z](
-    callbackfn: js.ThisFunction3[/* this */ Z, /* value */ Double, /* index */ Double, /* array */ this.type, _],
-    thisArg: Z
+    callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, _],
+    thisArg: js.Any
   ): Float32Array = js.native
   /**
     * Returns the value of the first element in the array where predicate is true, and undefined
@@ -139,33 +107,11 @@ trait Float32Array extends /* index */ NumberDictionary[Double] {
     * predicate. If it is not provided, undefined is used instead.
     */
   def find(
-    predicate: js.ThisFunction3[
-      /* this */ js.UndefOr[scala.Nothing], 
-      /* value */ Double, 
-      /* index */ Double, 
-      /* obj */ js.Array[Double], 
-      scala.Boolean
-    ]
+    predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ js.Array[Double], scala.Boolean]
   ): js.UndefOr[Double] = js.native
   def find(
-    predicate: js.ThisFunction3[
-      /* this */ js.UndefOr[scala.Nothing], 
-      /* value */ Double, 
-      /* index */ Double, 
-      /* obj */ js.Array[Double], 
-      scala.Boolean
-    ],
-    thisArg: js.UndefOr[scala.Nothing]
-  ): js.UndefOr[Double] = js.native
-  def find[Z](
-    predicate: js.ThisFunction3[
-      /* this */ Z, 
-      /* value */ Double, 
-      /* index */ Double, 
-      /* obj */ js.Array[Double], 
-      scala.Boolean
-    ],
-    thisArg: Z
+    predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ js.Array[Double], scala.Boolean],
+    thisArg: js.Any
   ): js.UndefOr[Double] = js.native
   /**
     * Returns the index of the first element in the array where predicate is true, and -1
@@ -177,33 +123,11 @@ trait Float32Array extends /* index */ NumberDictionary[Double] {
     * predicate. If it is not provided, undefined is used instead.
     */
   def findIndex(
-    predicate: js.ThisFunction3[
-      /* this */ js.UndefOr[scala.Nothing], 
-      /* value */ Double, 
-      /* index */ Double, 
-      /* obj */ js.Array[Double], 
-      scala.Boolean
-    ]
+    predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ js.Array[Double], scala.Boolean]
   ): Double = js.native
   def findIndex(
-    predicate: js.ThisFunction3[
-      /* this */ js.UndefOr[scala.Nothing], 
-      /* value */ Double, 
-      /* index */ Double, 
-      /* obj */ js.Array[Double], 
-      scala.Boolean
-    ],
-    thisArg: js.UndefOr[scala.Nothing]
-  ): Double = js.native
-  def findIndex[Z](
-    predicate: js.ThisFunction3[
-      /* this */ Z, 
-      /* value */ Double, 
-      /* index */ Double, 
-      /* obj */ js.Array[Double], 
-      scala.Boolean
-    ],
-    thisArg: Z
+    predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ js.Array[Double], scala.Boolean],
+    thisArg: js.Any
   ): Double = js.native
   /**
     * Performs the specified action for each element in an array.
@@ -212,28 +136,10 @@ trait Float32Array extends /* index */ NumberDictionary[Double] {
     * @param thisArg  An object to which the this keyword can refer in the callbackfn function.
     * If thisArg is omitted, undefined is used as the this value.
     */
+  def forEach(callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Unit]): Unit = js.native
   def forEach(
-    callbackfn: js.ThisFunction3[
-      /* this */ js.UndefOr[scala.Nothing], 
-      /* value */ Double, 
-      /* index */ Double, 
-      /* array */ this.type, 
-      Unit
-    ]
-  ): Unit = js.native
-  def forEach(
-    callbackfn: js.ThisFunction3[
-      /* this */ js.UndefOr[scala.Nothing], 
-      /* value */ Double, 
-      /* index */ Double, 
-      /* array */ this.type, 
-      Unit
-    ],
-    thisArg: js.UndefOr[scala.Nothing]
-  ): Unit = js.native
-  def forEach[Z](
-    callbackfn: js.ThisFunction3[/* this */ Z, /* value */ Double, /* index */ Double, /* array */ this.type, Unit],
-    thisArg: Z
+    callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Unit],
+    thisArg: js.Any
   ): Unit = js.native
   /**
     * Returns the index of the first occurrence of a value in an array.
@@ -271,27 +177,8 @@ trait Float32Array extends /* index */ NumberDictionary[Double] {
     * If thisArg is omitted, undefined is used as the this value.
     */
   def map(
-    callbackfn: js.ThisFunction3[
-      /* this */ js.UndefOr[scala.Nothing], 
-      /* value */ Double, 
-      /* index */ Double, 
-      /* array */ this.type, 
-      Double
-    ]
-  ): Float32Array = js.native
-  def map(
-    callbackfn: js.ThisFunction3[
-      /* this */ js.UndefOr[scala.Nothing], 
-      /* value */ Double, 
-      /* index */ Double, 
-      /* array */ this.type, 
-      Double
-    ],
-    thisArg: js.UndefOr[scala.Nothing]
-  ): Float32Array = js.native
-  def map[Z](
-    callbackfn: js.ThisFunction3[/* this */ Z, /* value */ Double, /* index */ Double, /* array */ this.type, Double],
-    thisArg: Z
+    callbackfn: js.ThisFunction3[/* this */ Unit, /* value */ Double, /* index */ Double, /* array */ this.type, Double],
+    thisArg: js.Any
   ): Float32Array = js.native
   /**
     * Calls the specified callback function for all the elements in an array. The return value of
@@ -403,12 +290,6 @@ trait Float32Array extends /* index */ NumberDictionary[Double] {
   def set(array: ArrayLike[Double]): Unit = js.native
   def set(array: ArrayLike[Double], offset: Double): Unit = js.native
   /**
-    * Sets a value or an array of values.
-    * @param index The index of the location to set.
-    * @param value The value to set.
-    */
-  def set(index: Double, value: Double): Unit = js.native
-  /**
     * Returns a section of an array.
     * @param start The beginning of the specified portion of the array.
     * @param end The end of the specified portion of the array.
@@ -426,33 +307,11 @@ trait Float32Array extends /* index */ NumberDictionary[Double] {
     * If thisArg is omitted, undefined is used as the this value.
     */
   def some(
-    callbackfn: js.ThisFunction3[
-      /* this */ js.UndefOr[scala.Nothing], 
-      /* value */ Double, 
-      /* index */ Double, 
-      /* array */ this.type, 
-      scala.Boolean
-    ]
+    callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, scala.Boolean]
   ): scala.Boolean = js.native
   def some(
-    callbackfn: js.ThisFunction3[
-      /* this */ js.UndefOr[scala.Nothing], 
-      /* value */ Double, 
-      /* index */ Double, 
-      /* array */ this.type, 
-      scala.Boolean
-    ],
-    thisArg: js.UndefOr[scala.Nothing]
-  ): scala.Boolean = js.native
-  def some[Z](
-    callbackfn: js.ThisFunction3[
-      /* this */ Z, 
-      /* value */ Double, 
-      /* index */ Double, 
-      /* array */ this.type, 
-      scala.Boolean
-    ],
-    thisArg: Z
+    callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, scala.Boolean],
+    thisArg: js.Any
   ): scala.Boolean = js.native
   /**
     * Sorts an array.

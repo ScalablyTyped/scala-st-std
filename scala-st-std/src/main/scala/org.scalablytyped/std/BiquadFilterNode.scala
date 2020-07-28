@@ -10,7 +10,7 @@ trait BiquadFilterNode extends AudioNode {
   val detune: AudioParam = js.native
   val frequency: AudioParam = js.native
   val gain: AudioParam = js.native
-  var `type`: java.lang.String = js.native
+  var `type`: BiquadFilterType = js.native
   def getFrequencyResponse(frequencyHz: Float32Array, magResponse: Float32Array, phaseResponse: Float32Array): Unit = js.native
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait RTCDtlsParameters extends js.Object {
   var fingerprints: js.UndefOr[js.Array[RTCDtlsFingerprint]] = js.undefined
-  var role: js.UndefOr[java.lang.String] = js.undefined
+  var role: js.UndefOr[RTCDtlsRole] = js.undefined
 }
 
 object RTCDtlsParameters {
@@ -33,7 +33,7 @@ object RTCDtlsParameters {
     @scala.inline
     def deleteFingerprints: Self = this.set("fingerprints", js.undefined)
     @scala.inline
-    def setRole(value: java.lang.String): Self = this.set("role", value.asInstanceOf[js.Any])
+    def setRole(value: RTCDtlsRole): Self = this.set("role", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteRole: Self = this.set("role", js.undefined)
   }

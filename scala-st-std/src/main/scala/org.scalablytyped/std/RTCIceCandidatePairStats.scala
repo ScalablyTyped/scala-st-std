@@ -15,7 +15,7 @@ trait RTCIceCandidatePairStats extends RTCStats {
   var readable: js.UndefOr[scala.Boolean] = js.undefined
   var remoteCandidateId: js.UndefOr[java.lang.String] = js.undefined
   var roundTripTime: js.UndefOr[Double] = js.undefined
-  var state: js.UndefOr[java.lang.String] = js.undefined
+  var state: js.UndefOr[RTCStatsIceCandidatePairState] = js.undefined
   var transportId: js.UndefOr[java.lang.String] = js.undefined
   var writable: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -78,7 +78,7 @@ object RTCIceCandidatePairStats {
     @scala.inline
     def deleteRoundTripTime: Self = this.set("roundTripTime", js.undefined)
     @scala.inline
-    def setState(value: java.lang.String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: RTCStatsIceCandidatePairState): Self = this.set("state", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteState: Self = this.set("state", js.undefined)
     @scala.inline

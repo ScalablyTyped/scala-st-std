@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait OscillatorNode extends AudioNode {
   val detune: AudioParam = js.native
   val frequency: AudioParam = js.native
-  var `type`: java.lang.String = js.native
+  var `type`: OscillatorType = js.native
   @JSName("addEventListener")
   def addEventListener_ended(`type`: ended, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _]): Unit = js.native
   @JSName("addEventListener")

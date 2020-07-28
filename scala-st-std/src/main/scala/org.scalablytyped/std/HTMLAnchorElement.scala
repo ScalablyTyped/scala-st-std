@@ -76,7 +76,7 @@ trait HTMLAnchorElement extends HTMLElement {
     */
   var target: java.lang.String = js.native
   /**
-    * Retrieves or sets the text of the object as a string. 
+    * Retrieves or sets the text of the object as a string.
     */
   var text: java.lang.String = js.native
   var `type`: java.lang.String = js.native

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("WeakSet")
 @js.native
-class WeakSet[T] ()
+class WeakSet[T /* <: js.Object */] ()
   extends org.scalablytyped.std.WeakSet[T] {
   def this(iterable: Iterable[T]) = this()
   def this(values: js.Array[T]) = this()

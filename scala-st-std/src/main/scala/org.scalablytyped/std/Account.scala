@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /////////////////////////////
-/// IE DOM APIs
+/// DOM APIs
 /////////////////////////////
 trait Account extends js.Object {
   var displayName: js.UndefOr[java.lang.String] = js.undefined

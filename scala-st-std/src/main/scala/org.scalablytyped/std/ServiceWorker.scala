@@ -10,12 +10,12 @@ trait ServiceWorker
   extends EventTarget
      with AbstractWorker {
   val scriptURL: USVString = js.native
-  val state: java.lang.String = js.native
+  val state: ServiceWorkerState = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
     listener: js.UndefOr[EventListenerOrEventListenerObject],
-    useCapture: scala.Boolean
+    options: scala.Boolean
   ): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native

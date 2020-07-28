@@ -22,7 +22,7 @@ trait Range extends js.Object {
   def createContextualFragment(fragment: java.lang.String): DocumentFragment
   def deleteContents(): Unit
   def detach(): Unit
-  def expand(Unit: java.lang.String): scala.Boolean
+  def expand(Unit: ExpandGranularity): scala.Boolean
   def extractContents(): DocumentFragment
   def getBoundingClientRect(): ClientRect
   def getClientRects(): ClientRectList
@@ -56,7 +56,7 @@ object Range {
     detach: () => Unit,
     endContainer: Node,
     endOffset: Double,
-    expand: java.lang.String => scala.Boolean,
+    expand: ExpandGranularity => scala.Boolean,
     extractContents: () => DocumentFragment,
     getBoundingClientRect: () => ClientRect,
     getClientRects: () => ClientRectList,
@@ -118,7 +118,7 @@ object Range {
     @scala.inline
     def setEndOffset(value: Double): Self = this.set("endOffset", value.asInstanceOf[js.Any])
     @scala.inline
-    def setExpand(value: java.lang.String => scala.Boolean): Self = this.set("expand", js.Any.fromFunction1(value))
+    def setExpand(value: ExpandGranularity => scala.Boolean): Self = this.set("expand", js.Any.fromFunction1(value))
     @scala.inline
     def setExtractContents(value: () => DocumentFragment): Self = this.set("extractContents", js.Any.fromFunction0(value))
     @scala.inline

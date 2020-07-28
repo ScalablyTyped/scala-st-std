@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait RTCSessionDescription extends js.Object {
   var sdp: java.lang.String | Null
-  var `type`: java.lang.String | Null
+  var `type`: RTCSdpType | Null
   def toJSON(): js.Any
 }
 
@@ -34,7 +34,7 @@ object RTCSessionDescription {
     @scala.inline
     def setSdpNull: Self = this.set("sdp", null)
     @scala.inline
-    def setType(value: java.lang.String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: RTCSdpType): Self = this.set("type", value.asInstanceOf[js.Any])
     @scala.inline
     def setTypeNull: Self = this.set("type", null)
   }

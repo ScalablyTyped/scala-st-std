@@ -1,5 +1,6 @@
 package org.scalablytyped.std.global
 
+import org.scalablytyped.std.MSCredentialType
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +15,7 @@ class MSFIDOSignatureAssertion ()
   /* CompleteClass */
   override val signature: org.scalablytyped.std.MSFIDOSignature = js.native
   /* CompleteClass */
-  override val `type`: java.lang.String = js.native
+  override val `type`: MSCredentialType = js.native
 }
 
 @JSGlobal("MSFIDOSignatureAssertion")

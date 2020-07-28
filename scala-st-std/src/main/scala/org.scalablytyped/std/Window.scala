@@ -2,6 +2,7 @@ package org.scalablytyped.std
 
 import org.scalablytyped.std.anon.Instantiable
 import org.scalablytyped.std.anon.InstantiableBlob
+import org.scalablytyped.std.anon.InstantiableURLSearchParams
 import org.scalablytyped.std.stdStrings.MSGestureChange
 import org.scalablytyped.std.stdStrings.MSGestureDoubleTap
 import org.scalablytyped.std.stdStrings.MSGestureEnd
@@ -42,6 +43,7 @@ import org.scalablytyped.std.stdStrings.drop
 import org.scalablytyped.std.stdStrings.durationchange
 import org.scalablytyped.std.stdStrings.emptied
 import org.scalablytyped.std.stdStrings.ended
+import org.scalablytyped.std.stdStrings.error
 import org.scalablytyped.std.stdStrings.focus
 import org.scalablytyped.std.stdStrings.hashchange
 import org.scalablytyped.std.stdStrings.input
@@ -85,6 +87,10 @@ import org.scalablytyped.std.stdStrings.storage
 import org.scalablytyped.std.stdStrings.submit
 import org.scalablytyped.std.stdStrings.suspend
 import org.scalablytyped.std.stdStrings.timeupdate
+import org.scalablytyped.std.stdStrings.touchcancel
+import org.scalablytyped.std.stdStrings.touchend
+import org.scalablytyped.std.stdStrings.touchmove
+import org.scalablytyped.std.stdStrings.touchstart
 import org.scalablytyped.std.stdStrings.unload
 import org.scalablytyped.std.stdStrings.volumechange
 import org.scalablytyped.std.stdStrings.waiting
@@ -105,6 +111,7 @@ trait Window
      with GlobalFetch {
   var Blob: InstantiableBlob = js.native
   var URL: Instantiable = js.native
+  var URLSearchParams: InstantiableURLSearchParams = js.native
   val applicationCache: ApplicationCache = js.native
   val caches: CacheStorage = js.native
   val clientInformation: Navigator = js.native
@@ -532,6 +539,14 @@ trait Window
     useCapture: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
+  def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
   def addEventListener_focus(`type`: focus, listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_focus(
@@ -885,6 +900,38 @@ trait Window
     useCapture: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
+  def addEventListener_touchcancel(`type`: touchcancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_touchcancel(
+    `type`: touchcancel,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_touchend(`type`: touchend, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_touchend(
+    `type`: touchend,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_touchmove(`type`: touchmove, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_touchmove(
+    `type`: touchmove,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_touchstart(`type`: touchstart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_touchstart(
+    `type`: touchstart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
   def addEventListener_unload(`type`: unload, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_unload(
@@ -972,7 +1019,7 @@ trait Window
     sh: Double,
     options: ImageBitmapOptions
   ): js.Promise[ImageBitmap] = js.native
-  def departFocus(navigationReason: java.lang.String, origin: FocusNavigationOrigin): Unit = js.native
+  def departFocus(navigationReason: NavigationReason, origin: FocusNavigationOrigin): Unit = js.native
   def focus(): Unit = js.native
   def getComputedStyle(elt: Element): CSSStyleDeclaration = js.native
   def getComputedStyle(elt: Element, pseudoElt: java.lang.String): CSSStyleDeclaration = js.native

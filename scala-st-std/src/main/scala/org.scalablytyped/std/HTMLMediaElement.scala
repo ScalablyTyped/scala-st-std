@@ -200,7 +200,7 @@ trait HTMLMediaElement extends HTMLElement {
   /**
     * Loads and starts playback of a media resource.
     */
-  def play(): Unit = js.native
+  def play(): js.Promise[Unit] = js.native
   def setMediaKeys(): js.Promise[Unit] = js.native
   def setMediaKeys(mediaKeys: MediaKeys): js.Promise[Unit] = js.native
 }

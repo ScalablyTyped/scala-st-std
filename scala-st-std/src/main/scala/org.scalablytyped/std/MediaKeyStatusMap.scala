@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait MediaKeyStatusMap extends js.Object {
   val size: Double
   def forEach(callback: ForEachCallback): Unit
-  def get(keyId: js.Any): java.lang.String
+  def get(keyId: js.Any): MediaKeyStatus
   def has(keyId: js.Any): scala.Boolean
 }
 
@@ -15,7 +15,7 @@ object MediaKeyStatusMap {
   @scala.inline
   def apply(
     forEach: ForEachCallback => Unit,
-    get: js.Any => java.lang.String,
+    get: js.Any => MediaKeyStatus,
     has: js.Any => scala.Boolean,
     size: Double
   ): MediaKeyStatusMap = {
@@ -36,7 +36,7 @@ object MediaKeyStatusMap {
     @scala.inline
     def setForEach(value: ForEachCallback => Unit): Self = this.set("forEach", js.Any.fromFunction1(value))
     @scala.inline
-    def setGet(value: js.Any => java.lang.String): Self = this.set("get", js.Any.fromFunction1(value))
+    def setGet(value: js.Any => MediaKeyStatus): Self = this.set("get", js.Any.fromFunction1(value))
     @scala.inline
     def setHas(value: js.Any => scala.Boolean): Self = this.set("has", js.Any.fromFunction1(value))
     @scala.inline

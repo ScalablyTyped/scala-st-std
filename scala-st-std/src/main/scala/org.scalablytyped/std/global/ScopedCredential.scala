@@ -1,5 +1,6 @@
 package org.scalablytyped.std.global
 
+import org.scalablytyped.std.ScopedCredentialType
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +13,7 @@ class ScopedCredential ()
   /* CompleteClass */
   override val id: org.scalablytyped.std.ArrayBuffer = js.native
   /* CompleteClass */
-  override val `type`: java.lang.String = js.native
+  override val `type`: ScopedCredentialType = js.native
 }
 
 @JSGlobal("ScopedCredential")

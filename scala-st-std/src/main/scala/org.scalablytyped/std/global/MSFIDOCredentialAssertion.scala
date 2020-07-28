@@ -1,6 +1,8 @@
 package org.scalablytyped.std.global
 
 import org.scalablytyped.std.Algorithm
+import org.scalablytyped.std.MSCredentialType
+import org.scalablytyped.std.MSTransportType
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,9 +21,9 @@ class MSFIDOCredentialAssertion ()
   /* CompleteClass */
   override val publicKey: java.lang.String = js.native
   /* CompleteClass */
-  override val transportHints: js.Array[java.lang.String] = js.native
+  override val transportHints: js.Array[MSTransportType] = js.native
   /* CompleteClass */
-  override val `type`: java.lang.String = js.native
+  override val `type`: MSCredentialType = js.native
 }
 
 @JSGlobal("MSFIDOCredentialAssertion")

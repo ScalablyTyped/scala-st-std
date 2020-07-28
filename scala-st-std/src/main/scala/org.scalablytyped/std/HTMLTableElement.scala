@@ -16,7 +16,7 @@ trait HTMLTableElement extends HTMLElement {
     */
   var border: java.lang.String = js.native
   /**
-    * Sets or retrieves the border color of the object. 
+    * Sets or retrieves the border color of the object.
     */
   var borderColor: js.Any = js.native
   /**
