@@ -1,6 +1,6 @@
 val tsVersion = sys.env.get("TS_VERSION").getOrElse("3.9")
 
-def forVersion(name: String, tsVersion: String, pkg: String, libs: String*): Project = {
+def forVersion(name: String, pkg: String, libs: String*): Project = {
   require(libs.nonEmpty)
   Project(name, file(name))
     .enablePlugins(ScalablyTypedConverterGenSourcePlugin)
@@ -14,6 +14,7 @@ def forVersion(name: String, tsVersion: String, pkg: String, libs: String*): Pro
       stUseScalaJsDom := false,
       stSourceGenMode := SourceGenMode.Manual((Compile / scalaSource).value),
       stEnableScalaJsDefined := Selection.All,
+      stTypescriptVersion := tsVersion,
       // publication settings
       homepage := Some(new URL("https://github.com/ScalablyTyped/scala-st-std")),
       startYear := Some(2020),
@@ -44,7 +45,6 @@ def forVersion(name: String, tsVersion: String, pkg: String, libs: String*): Pro
 // es6 is what you get by default
 val `scala-js-std` = forVersion(
   name = "scala-st-std",
-  tsVersion = "3.9",
   pkg = "org.scalablytyped",
   libs = "dom", "es6"
 )
@@ -52,6 +52,5 @@ val `scala-js-std` = forVersion(
 //// also offer esnext for the adventurous
 //val `scala-js-std-esnext` = forVersion(
 //  name = "scala-st-std-esnext",
-//  tsVersion = "3.9",
 //  pkg = "org.scalablytyped.esnext",
 //  libs = "dom", "esnext")
