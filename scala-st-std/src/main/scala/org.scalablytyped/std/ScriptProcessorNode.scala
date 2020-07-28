@@ -20,5 +20,16 @@ trait ScriptProcessorNode extends AudioNode {
     useCapture: scala.Boolean
   ): Unit = js.native
   def onaudioprocess(ev: AudioProcessingEvent): js.Any = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_audioprocess(
+    `type`: audioprocess,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ AudioProcessingEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_audioprocess(
+    `type`: audioprocess,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ AudioProcessingEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
 }
 

@@ -22,6 +22,14 @@ trait AudioBufferSourceNode extends AudioNode {
     useCapture: scala.Boolean
   ): Unit = js.native
   def onended(ev: MediaStreamErrorEvent): js.Any = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_ended(`type`: ended, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_ended(
+    `type`: ended,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   def start(): Unit = js.native
   def start(when: js.UndefOr[scala.Nothing], offset: js.UndefOr[scala.Nothing], duration: Double): Unit = js.native
   def start(when: js.UndefOr[scala.Nothing], offset: Double): Unit = js.native

@@ -8,8 +8,8 @@ trait ServiceWorkerMessageEventInit extends EventInit {
   var data: js.UndefOr[js.Any] = js.undefined
   var lastEventId: js.UndefOr[java.lang.String] = js.undefined
   var origin: js.UndefOr[java.lang.String] = js.undefined
-  var ports: js.UndefOr[js.Array[MessagePort]] = js.undefined
-  var source: js.UndefOr[ServiceWorker | MessagePort] = js.undefined
+  var ports: js.UndefOr[js.Array[MessagePort] | Null] = js.undefined
+  var source: js.UndefOr[ServiceWorker | MessagePort | Null] = js.undefined
 }
 
 object ServiceWorkerMessageEventInit {
@@ -48,9 +48,13 @@ object ServiceWorkerMessageEventInit {
     @scala.inline
     def deletePorts: Self = this.set("ports", js.undefined)
     @scala.inline
+    def setPortsNull: Self = this.set("ports", null)
+    @scala.inline
     def setSource(value: ServiceWorker | MessagePort): Self = this.set("source", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setSourceNull: Self = this.set("source", null)
   }
   
 }

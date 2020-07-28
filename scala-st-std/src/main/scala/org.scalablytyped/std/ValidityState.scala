@@ -12,6 +12,7 @@ trait ValidityState extends js.Object {
   val rangeUnderflow: scala.Boolean
   val stepMismatch: scala.Boolean
   val tooLong: scala.Boolean
+  val tooShort: scala.Boolean
   val typeMismatch: scala.Boolean
   val valid: scala.Boolean
   val valueMissing: scala.Boolean
@@ -27,11 +28,12 @@ object ValidityState {
     rangeUnderflow: scala.Boolean,
     stepMismatch: scala.Boolean,
     tooLong: scala.Boolean,
+    tooShort: scala.Boolean,
     typeMismatch: scala.Boolean,
     valid: scala.Boolean,
     valueMissing: scala.Boolean
   ): ValidityState = {
-    val __obj = js.Dynamic.literal(badInput = badInput.asInstanceOf[js.Any], customError = customError.asInstanceOf[js.Any], patternMismatch = patternMismatch.asInstanceOf[js.Any], rangeOverflow = rangeOverflow.asInstanceOf[js.Any], rangeUnderflow = rangeUnderflow.asInstanceOf[js.Any], stepMismatch = stepMismatch.asInstanceOf[js.Any], tooLong = tooLong.asInstanceOf[js.Any], typeMismatch = typeMismatch.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], valueMissing = valueMissing.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(badInput = badInput.asInstanceOf[js.Any], customError = customError.asInstanceOf[js.Any], patternMismatch = patternMismatch.asInstanceOf[js.Any], rangeOverflow = rangeOverflow.asInstanceOf[js.Any], rangeUnderflow = rangeUnderflow.asInstanceOf[js.Any], stepMismatch = stepMismatch.asInstanceOf[js.Any], tooLong = tooLong.asInstanceOf[js.Any], tooShort = tooShort.asInstanceOf[js.Any], typeMismatch = typeMismatch.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], valueMissing = valueMissing.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidityState]
   }
   @scala.inline
@@ -59,6 +61,8 @@ object ValidityState {
     def setStepMismatch(value: scala.Boolean): Self = this.set("stepMismatch", value.asInstanceOf[js.Any])
     @scala.inline
     def setTooLong(value: scala.Boolean): Self = this.set("tooLong", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTooShort(value: scala.Boolean): Self = this.set("tooShort", value.asInstanceOf[js.Any])
     @scala.inline
     def setTypeMismatch(value: scala.Boolean): Self = this.set("typeMismatch", value.asInstanceOf[js.Any])
     @scala.inline

@@ -13,12 +13,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class Uint32Array protected ()
   extends org.scalablytyped.std.Uint32Array {
-  def this(array: ArrayLike[Double]) = this()
-  def this(buffer: ArrayBufferLike) = this()
+  def this(arrayOrArrayBuffer: ArrayBufferLike) = this()
+  def this(arrayOrArrayBuffer: ArrayLike[Double]) = this()
   def this(elements: Iterable[Double]) = this()
   def this(length: Double) = this()
   def this(buffer: ArrayBufferLike, byteOffset: Double) = this()
-  def this(buffer: ArrayBufferLike, byteOffset: js.UndefOr[scala.Nothing], length: Double) = this()
   def this(buffer: ArrayBufferLike, byteOffset: Double, length: Double) = this()
 }
 

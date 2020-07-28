@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait UIEventInit extends EventInit {
   var detail: js.UndefOr[Double] = js.undefined
-  var view: js.UndefOr[Window] = js.undefined
+  var view: js.UndefOr[Window | Null] = js.undefined
 }
 
 object UIEventInit {
@@ -34,6 +34,8 @@ object UIEventInit {
     def setView(value: Window): Self = this.set("view", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteView: Self = this.set("view", js.undefined)
+    @scala.inline
+    def setViewNull: Self = this.set("view", null)
   }
   
 }

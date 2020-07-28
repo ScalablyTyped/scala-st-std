@@ -185,9 +185,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait NodeSelector extends js.Object {
-  def querySelector(selectors: java.lang.String): Element | Null = js.native
-  def querySelectorAll(selectors: java.lang.String): NodeListOf[Element] = js.native
+  def querySelector[E /* <: Element */](selectors: java.lang.String): E | Null = js.native
   def querySelectorAll[K /* <: /* keyof std.ElementListTagNameMap */ java.lang.String */](selectors: K): /* import warning: importer.ImportType#apply Failed type conversion: std.ElementListTagNameMap[K] */ js.Any = js.native
+  def querySelectorAll[E /* <: Element */](selectors: java.lang.String): NodeListOf[E] = js.native
   @JSName("querySelector")
   def querySelector_a(selectors: a): HTMLAnchorElement | Null = js.native
   @JSName("querySelector")

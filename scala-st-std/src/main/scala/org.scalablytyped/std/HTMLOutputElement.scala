@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait HTMLOutputElement extends HTMLElement {
   var defaultValue: java.lang.String = js.native
-  val form: HTMLFormElement = js.native
+  val form: HTMLFormElement | Null = js.native
   val htmlFor: DOMSettableTokenList = js.native
   var name: java.lang.String = js.native
   val `type`: java.lang.String = js.native

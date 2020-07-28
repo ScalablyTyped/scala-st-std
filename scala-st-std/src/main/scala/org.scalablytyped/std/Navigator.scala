@@ -19,6 +19,7 @@ trait Navigator
      with NavigatorUserMedia {
   val authentication: WebAuthentication = js.native
   val cookieEnabled: scala.Boolean = js.native
+  val doNotTrack: java.lang.String | Null = js.native
   var gamepadInputEmulation: GamepadInputEmulationType = js.native
   val language: java.lang.String = js.native
   val languages: js.Array[java.lang.String] = js.native

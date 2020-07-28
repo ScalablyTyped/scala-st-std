@@ -98,5 +98,79 @@ trait GlobalEventHandlers extends js.Object {
   def onpointerover(ev: PointerEvent): js.Any = js.native
   def onpointerup(ev: PointerEvent): js.Any = js.native
   def onwheel(ev: WheelEvent): js.Any = js.native
+  def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, useCapture: scala.Boolean): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pointercancel(`type`: pointercancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pointercancel(
+    `type`: pointercancel,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pointerdown(`type`: pointerdown, listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pointerdown(
+    `type`: pointerdown,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pointerenter(`type`: pointerenter, listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pointerenter(
+    `type`: pointerenter,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pointerleave(`type`: pointerleave, listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pointerleave(
+    `type`: pointerleave,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pointermove(`type`: pointermove, listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pointermove(
+    `type`: pointermove,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pointerout(`type`: pointerout, listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pointerout(
+    `type`: pointerout,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pointerover(`type`: pointerover, listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pointerover(
+    `type`: pointerover,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pointerup(`type`: pointerup, listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pointerup(
+    `type`: pointerup,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_wheel(`type`: wheel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_wheel(
+    `type`: wheel,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
 }
 

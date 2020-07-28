@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MediaStreamTrackEventInit extends EventInit {
-  var track: js.UndefOr[MediaStreamTrack] = js.undefined
+  var track: js.UndefOr[MediaStreamTrack | Null] = js.undefined
 }
 
 object MediaStreamTrackEventInit {
@@ -29,6 +29,8 @@ object MediaStreamTrackEventInit {
     def setTrack(value: MediaStreamTrack): Self = this.set("track", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteTrack: Self = this.set("track", js.undefined)
+    @scala.inline
+    def setTrackNull: Self = this.set("track", null)
   }
   
 }

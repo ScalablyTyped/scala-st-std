@@ -19,5 +19,13 @@ trait RTCSrtpSdesTransport
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     useCapture: scala.Boolean
   ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
 }
 

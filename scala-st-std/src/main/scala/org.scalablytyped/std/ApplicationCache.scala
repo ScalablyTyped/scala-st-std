@@ -94,6 +94,70 @@ trait ApplicationCache extends EventTarget {
   def onobsolete(ev: Event): js.Any = js.native
   def onprogress(ev: ProgressEvent): js.Any = js.native
   def onupdateready(ev: Event): js.Any = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_cached(`type`: cached, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_cached(
+    `type`: cached,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_checking(`type`: checking, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_checking(
+    `type`: checking,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_downloading(`type`: downloading, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_downloading(
+    `type`: downloading,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_noupdate(`type`: noupdate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_noupdate(
+    `type`: noupdate,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_obsolete(`type`: obsolete, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_obsolete(
+    `type`: obsolete,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_progress(`type`: progress, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_progress(
+    `type`: progress,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_updateready(`type`: updateready, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_updateready(
+    `type`: updateready,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   def swapCache(): Unit = js.native
   def update(): Unit = js.native
 }

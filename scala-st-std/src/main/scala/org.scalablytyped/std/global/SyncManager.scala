@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class SyncManager ()
   extends org.scalablytyped.std.SyncManager {
   /* CompleteClass */
-  override def getTags(): js.Any = js.native
+  override def getTags(): js.Promise[js.Array[java.lang.String]] = js.native
   /* CompleteClass */
   override def register(tag: java.lang.String): js.Promise[Unit] = js.native
 }

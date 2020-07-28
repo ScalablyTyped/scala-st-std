@@ -61,6 +61,41 @@ trait MediaStreamTrack extends EventTarget {
   def onmute(ev: Event): js.Any = js.native
   def onoverconstrained(ev: MediaStreamErrorEvent): js.Any = js.native
   def onunmute(ev: Event): js.Any = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_ended(`type`: ended, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_ended(
+    `type`: ended,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_mute(`type`: mute, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_mute(
+    `type`: mute,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_overconstrained(
+    `type`: overconstrained,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_overconstrained(
+    `type`: overconstrained,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_unmute(`type`: unmute, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_unmute(
+    `type`: unmute,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   def stop(): Unit = js.native
 }
 

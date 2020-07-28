@@ -29,5 +29,13 @@ trait MSStreamReader
   def readAsText(stream: MSStream, encoding: js.UndefOr[scala.Nothing], size: Double): Unit = js.native
   def readAsText(stream: MSStream, encoding: java.lang.String): Unit = js.native
   def readAsText(stream: MSStream, encoding: java.lang.String, size: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(
+    `type`: java.lang.String,
+    listener: js.UndefOr[EventListenerOrEventListenerObject],
+    options: scala.Boolean
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
 }
 

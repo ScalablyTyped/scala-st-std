@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceRotationRateDict extends js.Object {
-  var alpha: js.UndefOr[Double] = js.undefined
-  var beta: js.UndefOr[Double] = js.undefined
-  var gamma: js.UndefOr[Double] = js.undefined
+  var alpha: js.UndefOr[Double | Null] = js.undefined
+  var beta: js.UndefOr[Double | Null] = js.undefined
+  var gamma: js.UndefOr[Double | Null] = js.undefined
 }
 
 object DeviceRotationRateDict {
@@ -32,13 +32,19 @@ object DeviceRotationRateDict {
     @scala.inline
     def deleteAlpha: Self = this.set("alpha", js.undefined)
     @scala.inline
+    def setAlphaNull: Self = this.set("alpha", null)
+    @scala.inline
     def setBeta(value: Double): Self = this.set("beta", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteBeta: Self = this.set("beta", js.undefined)
     @scala.inline
+    def setBetaNull: Self = this.set("beta", null)
+    @scala.inline
     def setGamma(value: Double): Self = this.set("gamma", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteGamma: Self = this.set("gamma", js.undefined)
+    @scala.inline
+    def setGammaNull: Self = this.set("gamma", null)
   }
   
 }

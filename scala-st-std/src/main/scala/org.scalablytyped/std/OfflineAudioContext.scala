@@ -20,6 +20,17 @@ trait OfflineAudioContext extends AudioContextBase {
     useCapture: scala.Boolean
   ): Unit = js.native
   def oncomplete(ev: OfflineAudioCompletionEvent): js.Any = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_complete(
+    `type`: complete,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ OfflineAudioCompletionEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_complete(
+    `type`: complete,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ OfflineAudioCompletionEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   def startRendering(): js.Promise[AudioBuffer] = js.native
   def suspend(suspendTime: Double): js.Promise[Unit] = js.native
 }

@@ -34,5 +34,13 @@ trait Screen extends EventTarget {
   def msLockOrientation(orientations: js.Array[java.lang.String]): scala.Boolean = js.native
   def msUnlockOrientation(): Unit = js.native
   def onmsorientationchange(ev: Event): js.Any = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSOrientationChange(`type`: MSOrientationChange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSOrientationChange(
+    `type`: MSOrientationChange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
 }
 

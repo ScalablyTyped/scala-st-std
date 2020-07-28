@@ -61,6 +61,47 @@ trait MediaStream extends EventTarget {
   def onaddtrack(ev: MediaStreamTrackEvent): js.Any = js.native
   def oninactive(ev: Event): js.Any = js.native
   def onremovetrack(ev: MediaStreamTrackEvent): js.Any = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_active(
+    `type`: org.scalablytyped.std.stdStrings.active,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_active(
+    `type`: org.scalablytyped.std.stdStrings.active,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_addtrack(
+    `type`: addtrack,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_addtrack(
+    `type`: addtrack,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_inactive(`type`: inactive, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_inactive(
+    `type`: inactive,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_removetrack(
+    `type`: removetrack,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_removetrack(
+    `type`: removetrack,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   def removeTrack(track: MediaStreamTrack): Unit = js.native
   def stop(): Unit = js.native
 }

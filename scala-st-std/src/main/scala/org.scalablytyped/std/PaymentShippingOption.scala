@@ -5,16 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PaymentShippingOption extends js.Object {
-  var amount: js.UndefOr[PaymentCurrencyAmount] = js.undefined
-  var id: js.UndefOr[java.lang.String] = js.undefined
-  var label: js.UndefOr[java.lang.String] = js.undefined
+  var amount: PaymentCurrencyAmount
+  var id: java.lang.String
+  var label: java.lang.String
   var selected: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object PaymentShippingOption {
   @scala.inline
-  def apply(): PaymentShippingOption = {
-    val __obj = js.Dynamic.literal()
+  def apply(amount: PaymentCurrencyAmount, id: java.lang.String, label: java.lang.String): PaymentShippingOption = {
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentShippingOption]
   }
   @scala.inline
@@ -31,15 +31,9 @@ object PaymentShippingOption {
     @scala.inline
     def setAmount(value: PaymentCurrencyAmount): Self = this.set("amount", value.asInstanceOf[js.Any])
     @scala.inline
-    def deleteAmount: Self = this.set("amount", js.undefined)
-    @scala.inline
     def setId(value: java.lang.String): Self = this.set("id", value.asInstanceOf[js.Any])
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    @scala.inline
     def setLabel(value: java.lang.String): Self = this.set("label", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
     @scala.inline
     def setSelected(value: scala.Boolean): Self = this.set("selected", value.asInstanceOf[js.Any])
     @scala.inline

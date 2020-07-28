@@ -20,7 +20,7 @@ object Reflect extends js.Object {
   def enumerate(target: js.Object): IterableIterator[_] = js.native
   def get(target: js.Object, propertyKey: PropertyKey): js.Any = js.native
   def get(target: js.Object, propertyKey: PropertyKey, receiver: js.Any): js.Any = js.native
-  def getOwnPropertyDescriptor(target: js.Object, propertyKey: PropertyKey): PropertyDescriptor = js.native
+  def getOwnPropertyDescriptor(target: js.Object, propertyKey: PropertyKey): js.UndefOr[PropertyDescriptor] = js.native
   def getPrototypeOf(target: js.Object): js.Object = js.native
   def has(target: js.Object, propertyKey: PropertyKey): scala.Boolean = js.native
   def isExtensible(target: js.Object): scala.Boolean = js.native

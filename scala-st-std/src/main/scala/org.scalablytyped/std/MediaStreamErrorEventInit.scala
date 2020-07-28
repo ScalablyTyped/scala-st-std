@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MediaStreamErrorEventInit extends EventInit {
-  var error: js.UndefOr[MediaStreamError] = js.undefined
+  var error: js.UndefOr[MediaStreamError | Null] = js.undefined
 }
 
 object MediaStreamErrorEventInit {
@@ -29,6 +29,8 @@ object MediaStreamErrorEventInit {
     def setError(value: MediaStreamError): Self = this.set("error", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setErrorNull: Self = this.set("error", null)
   }
   
 }

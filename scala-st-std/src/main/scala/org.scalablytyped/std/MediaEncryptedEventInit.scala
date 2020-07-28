@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MediaEncryptedEventInit extends EventInit {
-  var initData: js.UndefOr[ArrayBuffer] = js.undefined
+  var initData: js.UndefOr[ArrayBuffer | Null] = js.undefined
   var initDataType: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -30,6 +30,8 @@ object MediaEncryptedEventInit {
     def setInitData(value: ArrayBuffer): Self = this.set("initData", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteInitData: Self = this.set("initData", js.undefined)
+    @scala.inline
+    def setInitDataNull: Self = this.set("initData", null)
     @scala.inline
     def setInitDataType(value: java.lang.String): Self = this.set("initDataType", value.asInstanceOf[js.Any])
     @scala.inline

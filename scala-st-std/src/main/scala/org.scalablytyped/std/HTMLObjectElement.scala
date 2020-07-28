@@ -50,7 +50,7 @@ trait HTMLObjectElement
   /**
     * Retrieves a reference to the form that the object is embedded in.
     */
-  val form: HTMLFormElement = js.native
+  val form: HTMLFormElement | Null = js.native
   /**
     * Sets or retrieves the height of the object.
     */
@@ -114,6 +114,10 @@ trait HTMLObjectElement
     * Returns whether a form will validate when it is submitted, without having to submit it.
     */
   def checkValidity(): scala.Boolean = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, useCapture: scala.Boolean): Unit = js.native
   /**
     * Sets a custom error message that is displayed when a form is submitted.
     * @param error Sets a custom error message that is displayed when a form is submitted.

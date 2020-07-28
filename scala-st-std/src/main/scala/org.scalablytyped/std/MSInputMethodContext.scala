@@ -46,5 +46,32 @@ trait MSInputMethodContext extends EventTarget {
   def oncandidatewindowhide(ev: Event): js.Any = js.native
   def oncandidatewindowshow(ev: Event): js.Any = js.native
   def oncandidatewindowupdate(ev: Event): js.Any = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSCandidateWindowHide(`type`: MSCandidateWindowHide, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSCandidateWindowHide(
+    `type`: MSCandidateWindowHide,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSCandidateWindowShow(`type`: MSCandidateWindowShow, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSCandidateWindowShow(
+    `type`: MSCandidateWindowShow,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSCandidateWindowUpdate(
+    `type`: MSCandidateWindowUpdate,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSCandidateWindowUpdate(
+    `type`: MSCandidateWindowUpdate,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
 }
 

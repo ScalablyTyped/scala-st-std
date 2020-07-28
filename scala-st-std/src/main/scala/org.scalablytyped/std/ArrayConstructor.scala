@@ -19,47 +19,23 @@ trait ArrayConstructor
   /**
     * Creates an array from an array-like object.
     * @param arrayLike An array-like object to convert to an array.
-    */
-  def from[T](arrayLike: ArrayLike[T]): js.Array[T] = js.native
-  /**
-    * Creates an array from an iterable object.
-    * @param iterable An iterable object to convert to an array.
-    */
-  def from[T](iterable: Iterable[T]): js.Array[T] = js.native
-  /**
-    * Creates an array from an array-like object.
-    * @param arrayLike An array-like object to convert to an array.
     * @param mapfn A mapping function to call on every element of the array.
     * @param thisArg Value of 'this' used to invoke the mapfn.
     */
-  def from[T, U](arrayLike: ArrayLike[T], mapfn: js.ThisFunction2[/* this */ Unit, /* v */ T, /* k */ Double, U]): js.Array[U] = js.native
-  def from[T, U](
-    arrayLike: ArrayLike[T],
-    mapfn: js.ThisFunction2[/* this */ Unit, /* v */ T, /* k */ Double, U],
-    thisArg: js.UndefOr[scala.Nothing]
-  ): js.Array[U] = js.native
+  def from[T, U](arrayLike: ArrayLike[T]): js.Array[U] = js.native
+  def from[T, U](arrayLike: ArrayLike[T], mapfn: js.UndefOr[scala.Nothing], thisArg: js.Any): js.Array[U] = js.native
+  def from[T, U](arrayLike: ArrayLike[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U]): js.Array[U] = js.native
+  def from[T, U](arrayLike: ArrayLike[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U], thisArg: js.Any): js.Array[U] = js.native
   /**
     * Creates an array from an iterable object.
     * @param iterable An iterable object to convert to an array.
     * @param mapfn A mapping function to call on every element of the array.
     * @param thisArg Value of 'this' used to invoke the mapfn.
     */
-  def from[T, U](iterable: Iterable[T], mapfn: js.ThisFunction2[/* this */ Unit, /* v */ T, /* k */ Double, U]): js.Array[U] = js.native
-  def from[T, U](
-    iterable: Iterable[T],
-    mapfn: js.ThisFunction2[/* this */ Unit, /* v */ T, /* k */ Double, U],
-    thisArg: js.UndefOr[scala.Nothing]
-  ): js.Array[U] = js.native
-  def from[Z, T, U](
-    arrayLike: ArrayLike[T],
-    mapfn: js.ThisFunction2[/* this */ Z, /* v */ T, /* k */ Double, U],
-    thisArg: Z
-  ): js.Array[U] = js.native
-  def from[Z, T, U](
-    iterable: Iterable[T],
-    mapfn: js.ThisFunction2[/* this */ Z, /* v */ T, /* k */ Double, U],
-    thisArg: Z
-  ): js.Array[U] = js.native
+  def from[T, U](iterable: Iterable[T]): js.Array[U] = js.native
+  def from[T, U](iterable: Iterable[T], mapfn: js.UndefOr[scala.Nothing], thisArg: js.Any): js.Array[U] = js.native
+  def from[T, U](iterable: Iterable[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U]): js.Array[U] = js.native
+  def from[T, U](iterable: Iterable[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U], thisArg: js.Any): js.Array[U] = js.native
   def isArray(arg: js.Any): /* is std.Array<any> */ scala.Boolean = js.native
   /**
     * Returns a new array from a set of elements.

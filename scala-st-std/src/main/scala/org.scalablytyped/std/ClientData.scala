@@ -5,18 +5,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ClientData extends js.Object {
-  var challenge: js.UndefOr[java.lang.String] = js.undefined
+  var challenge: java.lang.String
   var extensions: js.UndefOr[WebAuthnExtensions] = js.undefined
-  var hashAlg: js.UndefOr[java.lang.String | Algorithm] = js.undefined
-  var origin: js.UndefOr[java.lang.String] = js.undefined
-  var rpId: js.UndefOr[java.lang.String] = js.undefined
+  var hashAlg: java.lang.String | Algorithm
+  var origin: java.lang.String
+  var rpId: java.lang.String
   var tokenBinding: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object ClientData {
   @scala.inline
-  def apply(): ClientData = {
-    val __obj = js.Dynamic.literal()
+  def apply(
+    challenge: java.lang.String,
+    hashAlg: java.lang.String | Algorithm,
+    origin: java.lang.String,
+    rpId: java.lang.String
+  ): ClientData = {
+    val __obj = js.Dynamic.literal(challenge = challenge.asInstanceOf[js.Any], hashAlg = hashAlg.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], rpId = rpId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientData]
   }
   @scala.inline
@@ -33,23 +38,15 @@ object ClientData {
     @scala.inline
     def setChallenge(value: java.lang.String): Self = this.set("challenge", value.asInstanceOf[js.Any])
     @scala.inline
-    def deleteChallenge: Self = this.set("challenge", js.undefined)
+    def setHashAlg(value: java.lang.String | Algorithm): Self = this.set("hashAlg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOrigin(value: java.lang.String): Self = this.set("origin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRpId(value: java.lang.String): Self = this.set("rpId", value.asInstanceOf[js.Any])
     @scala.inline
     def setExtensions(value: WebAuthnExtensions): Self = this.set("extensions", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteExtensions: Self = this.set("extensions", js.undefined)
-    @scala.inline
-    def setHashAlg(value: java.lang.String | Algorithm): Self = this.set("hashAlg", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteHashAlg: Self = this.set("hashAlg", js.undefined)
-    @scala.inline
-    def setOrigin(value: java.lang.String): Self = this.set("origin", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteOrigin: Self = this.set("origin", js.undefined)
-    @scala.inline
-    def setRpId(value: java.lang.String): Self = this.set("rpId", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteRpId: Self = this.set("rpId", js.undefined)
     @scala.inline
     def setTokenBinding(value: java.lang.String): Self = this.set("tokenBinding", value.asInstanceOf[js.Any])
     @scala.inline

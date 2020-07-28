@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait StoreExceptionsInformation extends ExceptionInformation {
-  var detailURI: js.UndefOr[java.lang.String] = js.undefined
-  var explanationString: js.UndefOr[java.lang.String] = js.undefined
-  var siteName: js.UndefOr[java.lang.String] = js.undefined
+  var detailURI: js.UndefOr[java.lang.String | Null] = js.undefined
+  var explanationString: js.UndefOr[java.lang.String | Null] = js.undefined
+  var siteName: js.UndefOr[java.lang.String | Null] = js.undefined
 }
 
 object StoreExceptionsInformation {
@@ -32,13 +32,19 @@ object StoreExceptionsInformation {
     @scala.inline
     def deleteDetailURI: Self = this.set("detailURI", js.undefined)
     @scala.inline
+    def setDetailURINull: Self = this.set("detailURI", null)
+    @scala.inline
     def setExplanationString(value: java.lang.String): Self = this.set("explanationString", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteExplanationString: Self = this.set("explanationString", js.undefined)
     @scala.inline
+    def setExplanationStringNull: Self = this.set("explanationString", null)
+    @scala.inline
     def setSiteName(value: java.lang.String): Self = this.set("siteName", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteSiteName: Self = this.set("siteName", js.undefined)
+    @scala.inline
+    def setSiteNameNull: Self = this.set("siteName", null)
   }
   
 }

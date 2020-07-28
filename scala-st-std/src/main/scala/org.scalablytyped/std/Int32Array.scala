@@ -9,14 +9,6 @@ import scala.scalajs.js.annotation._
   * A typed array of 32-bit signed integer values. The contents are initialized to 0. If the
   * requested number of bytes could not be allocated an exception is raised.
   */
-/**
-  * A typed array of 32-bit signed integer values. The contents are initialized to 0. If the
-  * requested number of bytes could not be allocated an exception is raised.
-  */
-/**
-  * A typed array of 32-bit signed integer values. The contents are initialized to 0. If the
-  * requested number of bytes could not be allocated an exception is raised.
-  */
 @js.native
 trait Int32Array extends /* index */ NumberDictionary[Double] {
   /**
@@ -107,10 +99,10 @@ trait Int32Array extends /* index */ NumberDictionary[Double] {
     * predicate. If it is not provided, undefined is used instead.
     */
   def find(
-    predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ js.Array[Double], scala.Boolean]
+    predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ this.type, scala.Boolean]
   ): js.UndefOr[Double] = js.native
   def find(
-    predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ js.Array[Double], scala.Boolean],
+    predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ this.type, scala.Boolean],
     thisArg: js.Any
   ): js.UndefOr[Double] = js.native
   /**
@@ -123,10 +115,10 @@ trait Int32Array extends /* index */ NumberDictionary[Double] {
     * predicate. If it is not provided, undefined is used instead.
     */
   def findIndex(
-    predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ js.Array[Double], scala.Boolean]
+    predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ this.type, scala.Boolean]
   ): Double = js.native
   def findIndex(
-    predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ js.Array[Double], scala.Boolean],
+    predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ this.type, scala.Boolean],
     thisArg: js.Any
   ): Double = js.native
   /**

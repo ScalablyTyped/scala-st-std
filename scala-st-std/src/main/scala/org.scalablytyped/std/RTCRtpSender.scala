@@ -32,6 +32,25 @@ trait RTCRtpSender extends RTCStatsProvider {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCSsrcConflictEvent, _],
     useCapture: scala.Boolean
   ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_ssrcconflict(
+    `type`: ssrcconflict,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCSsrcConflictEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_ssrcconflict(
+    `type`: ssrcconflict,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCSsrcConflictEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   def send(parameters: RTCRtpParameters): Unit = js.native
   def setTrack(track: MediaStreamTrack): Unit = js.native
   def setTransport(transport: RTCDtlsTransport): Unit = js.native

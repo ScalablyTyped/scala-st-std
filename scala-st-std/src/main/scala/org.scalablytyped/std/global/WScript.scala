@@ -2,7 +2,7 @@ package org.scalablytyped.std.global
 
 import org.scalablytyped.std.TextStreamReader
 import org.scalablytyped.std.TextStreamWriter
-import org.scalablytyped.std.anon.Item
+import org.scalablytyped.std.anon.Length
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("WScript")
 @js.native
 object WScript extends js.Object {
-  var Arguments: Item = js.native
+  var Arguments: Length = js.native
   /**
     * The Windows Script Host build version number.
     */

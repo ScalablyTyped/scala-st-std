@@ -43,5 +43,29 @@ trait VideoTrackList
   def onaddtrack(ev: TrackEvent): js.Any = js.native
   def onchange(ev: Event): js.Any = js.native
   def onremovetrack(ev: TrackEvent): js.Any = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_addtrack(`type`: addtrack, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_addtrack(
+    `type`: addtrack,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_change(`type`: change, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_change(
+    `type`: change,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_removetrack(`type`: removetrack, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_removetrack(
+    `type`: removetrack,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
 }
 

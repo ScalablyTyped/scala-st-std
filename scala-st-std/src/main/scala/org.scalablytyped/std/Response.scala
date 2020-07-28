@@ -11,6 +11,7 @@ trait Response
   val body: ReadableStream | Null = js.native
   val headers: Headers = js.native
   val ok: scala.Boolean = js.native
+  val redirected: scala.Boolean = js.native
   val status: Double = js.native
   val statusText: java.lang.String = js.native
   val `type`: ResponseType = js.native

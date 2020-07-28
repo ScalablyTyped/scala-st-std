@@ -28,6 +28,22 @@ trait Worker
   def onmessage(ev: MessageEvent): js.Any = js.native
   def postMessage(message: js.Any): Unit = js.native
   def postMessage(message: js.Any, transfer: js.Array[_]): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(
+    `type`: java.lang.String,
+    listener: js.UndefOr[EventListenerOrEventListenerObject],
+    options: scala.Boolean
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_message(`type`: message, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_message(
+    `type`: message,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   def terminate(): Unit = js.native
 }
 

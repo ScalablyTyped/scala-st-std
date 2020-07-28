@@ -8,7 +8,7 @@ trait SpeechSynthesisEventInit extends EventInit {
   var charIndex: js.UndefOr[Double] = js.undefined
   var elapsedTime: js.UndefOr[Double] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
-  var utterance: js.UndefOr[SpeechSynthesisUtterance] = js.undefined
+  var utterance: js.UndefOr[SpeechSynthesisUtterance | Null] = js.undefined
 }
 
 object SpeechSynthesisEventInit {
@@ -44,6 +44,8 @@ object SpeechSynthesisEventInit {
     def setUtterance(value: SpeechSynthesisUtterance): Self = this.set("utterance", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteUtterance: Self = this.set("utterance", js.undefined)
+    @scala.inline
+    def setUtteranceNull: Self = this.set("utterance", null)
   }
   
 }

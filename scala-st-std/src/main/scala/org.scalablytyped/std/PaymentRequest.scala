@@ -30,6 +30,22 @@ trait PaymentRequest extends EventTarget {
   ): Unit = js.native
   def onshippingaddresschange(ev: Event): js.Any = js.native
   def onshippingoptionchange(ev: Event): js.Any = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_shippingaddresschange(`type`: shippingaddresschange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_shippingaddresschange(
+    `type`: shippingaddresschange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_shippingoptionchange(`type`: shippingoptionchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_shippingoptionchange(
+    `type`: shippingoptionchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   def show(): js.Promise[PaymentResponse] = js.native
 }
 

@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceAccelerationDict extends js.Object {
-  var x: js.UndefOr[Double] = js.undefined
-  var y: js.UndefOr[Double] = js.undefined
-  var z: js.UndefOr[Double] = js.undefined
+  var x: js.UndefOr[Double | Null] = js.undefined
+  var y: js.UndefOr[Double | Null] = js.undefined
+  var z: js.UndefOr[Double | Null] = js.undefined
 }
 
 object DeviceAccelerationDict {
@@ -32,13 +32,19 @@ object DeviceAccelerationDict {
     @scala.inline
     def deleteX: Self = this.set("x", js.undefined)
     @scala.inline
+    def setXNull: Self = this.set("x", null)
+    @scala.inline
     def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteY: Self = this.set("y", js.undefined)
     @scala.inline
+    def setYNull: Self = this.set("y", null)
+    @scala.inline
     def setZ(value: Double): Self = this.set("z", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteZ: Self = this.set("z", js.undefined)
+    @scala.inline
+    def setZNull: Self = this.set("z", null)
   }
   
 }

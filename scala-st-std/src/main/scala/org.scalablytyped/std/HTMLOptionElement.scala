@@ -14,7 +14,7 @@ trait HTMLOptionElement extends HTMLElement {
   /**
     * Retrieves a reference to the form that the object is embedded in.
     */
-  val form: HTMLFormElement = js.native
+  val form: HTMLFormElement | Null = js.native
   /**
     * Sets or retrieves the ordinal position of an option in a list box.
     */

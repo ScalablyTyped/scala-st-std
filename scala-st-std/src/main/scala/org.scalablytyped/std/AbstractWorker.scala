@@ -18,5 +18,15 @@ trait AbstractWorker extends js.Object {
     useCapture: scala.Boolean
   ): Unit = js.native
   def onerror(ev: ErrorEvent): js.Any = js.native
+  def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, useCapture: scala.Boolean): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
 }
 

@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 trait PaymentDetailsModifier extends js.Object {
   var additionalDisplayItems: js.UndefOr[js.Array[PaymentItem]] = js.undefined
   var data: js.UndefOr[js.Any] = js.undefined
-  var supportedMethods: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var supportedMethods: js.Array[java.lang.String]
   var total: js.UndefOr[PaymentItem] = js.undefined
 }
 
 object PaymentDetailsModifier {
   @scala.inline
-  def apply(): PaymentDetailsModifier = {
-    val __obj = js.Dynamic.literal()
+  def apply(supportedMethods: js.Array[java.lang.String]): PaymentDetailsModifier = {
+    val __obj = js.Dynamic.literal(supportedMethods = supportedMethods.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentDetailsModifier]
   }
   @scala.inline
@@ -29,6 +29,10 @@ object PaymentDetailsModifier {
         x
     }
     @scala.inline
+    def setSupportedMethodsVarargs(value: java.lang.String*): Self = this.set("supportedMethods", js.Array(value :_*))
+    @scala.inline
+    def setSupportedMethods(value: js.Array[java.lang.String]): Self = this.set("supportedMethods", value.asInstanceOf[js.Any])
+    @scala.inline
     def setAdditionalDisplayItemsVarargs(value: PaymentItem*): Self = this.set("additionalDisplayItems", js.Array(value :_*))
     @scala.inline
     def setAdditionalDisplayItems(value: js.Array[PaymentItem]): Self = this.set("additionalDisplayItems", value.asInstanceOf[js.Any])
@@ -38,12 +42,6 @@ object PaymentDetailsModifier {
     def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteData: Self = this.set("data", js.undefined)
-    @scala.inline
-    def setSupportedMethodsVarargs(value: java.lang.String*): Self = this.set("supportedMethods", js.Array(value :_*))
-    @scala.inline
-    def setSupportedMethods(value: js.Array[java.lang.String]): Self = this.set("supportedMethods", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteSupportedMethods: Self = this.set("supportedMethods", js.undefined)
     @scala.inline
     def setTotal(value: PaymentItem): Self = this.set("total", value.asInstanceOf[js.Any])
     @scala.inline

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TrackEventInit extends EventInit {
-  var track: js.UndefOr[VideoTrack | AudioTrack | TextTrack] = js.undefined
+  var track: js.UndefOr[VideoTrack | AudioTrack | TextTrack | Null] = js.undefined
 }
 
 object TrackEventInit {
@@ -29,6 +29,8 @@ object TrackEventInit {
     def setTrack(value: VideoTrack | AudioTrack | TextTrack): Self = this.set("track", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteTrack: Self = this.set("track", js.undefined)
+    @scala.inline
+    def setTrackNull: Self = this.set("track", null)
   }
   
 }

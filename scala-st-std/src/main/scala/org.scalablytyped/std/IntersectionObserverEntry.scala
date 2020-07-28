@@ -8,6 +8,7 @@ trait IntersectionObserverEntry extends js.Object {
   val boundingClientRect: ClientRect
   val intersectionRatio: Double
   val intersectionRect: ClientRect
+  val isIntersecting: scala.Boolean
   val rootBounds: ClientRect
   val target: Element
   val time: Double
@@ -19,11 +20,12 @@ object IntersectionObserverEntry {
     boundingClientRect: ClientRect,
     intersectionRatio: Double,
     intersectionRect: ClientRect,
+    isIntersecting: scala.Boolean,
     rootBounds: ClientRect,
     target: Element,
     time: Double
   ): IntersectionObserverEntry = {
-    val __obj = js.Dynamic.literal(boundingClientRect = boundingClientRect.asInstanceOf[js.Any], intersectionRatio = intersectionRatio.asInstanceOf[js.Any], intersectionRect = intersectionRect.asInstanceOf[js.Any], rootBounds = rootBounds.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(boundingClientRect = boundingClientRect.asInstanceOf[js.Any], intersectionRatio = intersectionRatio.asInstanceOf[js.Any], intersectionRect = intersectionRect.asInstanceOf[js.Any], isIntersecting = isIntersecting.asInstanceOf[js.Any], rootBounds = rootBounds.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntersectionObserverEntry]
   }
   @scala.inline
@@ -43,6 +45,8 @@ object IntersectionObserverEntry {
     def setIntersectionRatio(value: Double): Self = this.set("intersectionRatio", value.asInstanceOf[js.Any])
     @scala.inline
     def setIntersectionRect(value: ClientRect): Self = this.set("intersectionRect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIsIntersecting(value: scala.Boolean): Self = this.set("isIntersecting", value.asInstanceOf[js.Any])
     @scala.inline
     def setRootBounds(value: ClientRect): Self = this.set("rootBounds", value.asInstanceOf[js.Any])
     @scala.inline

@@ -163,5 +163,126 @@ trait HTMLBodyElement extends HTMLElement {
   def onresize(ev: UIEvent): js.Any = js.native
   def onstorage(ev: StorageEvent): js.Any = js.native
   def onunload(ev: Event): js.Any = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_afterprint(`type`: afterprint, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_afterprint(
+    `type`: afterprint,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_beforeprint(`type`: beforeprint, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_beforeprint(
+    `type`: beforeprint,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_beforeunload(
+    `type`: beforeunload,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ BeforeUnloadEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_beforeunload(
+    `type`: beforeunload,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ BeforeUnloadEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_hashchange(`type`: hashchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ HashChangeEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_hashchange(
+    `type`: hashchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ HashChangeEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_message(`type`: message, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_message(
+    `type`: message,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_offline(`type`: offline, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_offline(
+    `type`: offline,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_online(`type`: online, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_online(
+    `type`: online,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_orientationchange(`type`: orientationchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_orientationchange(
+    `type`: orientationchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pagehide(
+    `type`: pagehide,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pagehide(
+    `type`: pagehide,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pageshow(
+    `type`: pageshow,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pageshow(
+    `type`: pageshow,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_popstate(`type`: popstate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ PopStateEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_popstate(
+    `type`: popstate,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PopStateEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_resize(`type`: resize, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_resize(
+    `type`: resize,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_storage(`type`: storage, listener: js.ThisFunction1[/* this */ this.type, /* ev */ StorageEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_storage(
+    `type`: storage,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ StorageEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_unload(`type`: unload, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_unload(
+    `type`: unload,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
 }
 

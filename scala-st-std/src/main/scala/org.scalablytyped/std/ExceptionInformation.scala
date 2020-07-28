@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ExceptionInformation extends js.Object {
-  var domain: js.UndefOr[java.lang.String] = js.undefined
+  var domain: js.UndefOr[java.lang.String | Null] = js.undefined
 }
 
 object ExceptionInformation {
@@ -29,6 +29,8 @@ object ExceptionInformation {
     def setDomain(value: java.lang.String): Self = this.set("domain", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteDomain: Self = this.set("domain", js.undefined)
+    @scala.inline
+    def setDomainNull: Self = this.set("domain", null)
   }
   
 }

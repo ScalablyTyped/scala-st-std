@@ -42,6 +42,28 @@ trait RTCIceTransport extends RTCStatsProvider {
   def getNominatedCandidatePair(): RTCIceCandidatePair | Null = js.native
   def getRemoteCandidates(): js.Array[RTCIceCandidateDictionary] = js.native
   def getRemoteParameters(): RTCIceParameters | Null = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_candidatepairchange(
+    `type`: candidatepairchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceCandidatePairChangedEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_candidatepairchange(
+    `type`: candidatepairchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceCandidatePairChangedEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_icestatechange(
+    `type`: icestatechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceTransportStateChangedEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_icestatechange(
+    `type`: icestatechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceTransportStateChangedEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   def setRemoteCandidates(remoteCandidates: js.Array[RTCIceCandidateDictionary]): Unit = js.native
   def start(gatherer: RTCIceGatherer, remoteParameters: RTCIceParameters): Unit = js.native
   def start(gatherer: RTCIceGatherer, remoteParameters: RTCIceParameters, role: RTCIceRole): Unit = js.native

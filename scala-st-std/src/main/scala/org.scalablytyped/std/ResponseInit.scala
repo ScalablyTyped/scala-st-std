@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ResponseInit extends js.Object {
-  var headers: js.UndefOr[js.Any] = js.undefined
+  var headers: js.UndefOr[Headers | js.Array[js.Array[java.lang.String]]] = js.undefined
   var status: js.UndefOr[Double] = js.undefined
   var statusText: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -28,7 +28,9 @@ object ResponseInit {
         x
     }
     @scala.inline
-    def setHeaders(value: js.Any): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setHeadersVarargs(value: js.Array[java.lang.String]*): Self = this.set("headers", js.Array(value :_*))
+    @scala.inline
+    def setHeaders(value: Headers | js.Array[js.Array[java.lang.String]]): Self = this.set("headers", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteHeaders: Self = this.set("headers", js.undefined)
     @scala.inline

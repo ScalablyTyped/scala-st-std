@@ -1474,6 +1474,9 @@ object stdStrings {
   sealed trait message extends js.Object
   
   @js.native
+  sealed trait messageerror extends js.Object
+  
+  @js.native
   sealed trait meta extends js.Object
   
   @js.native
@@ -3226,6 +3229,8 @@ object stdStrings {
   def menu: menu = "menu".asInstanceOf[menu]
   @scala.inline
   def message: message = "message".asInstanceOf[message]
+  @scala.inline
+  def messageerror: messageerror = "messageerror".asInstanceOf[messageerror]
   @scala.inline
   def meta: meta = "meta".asInstanceOf[meta]
   @scala.inline

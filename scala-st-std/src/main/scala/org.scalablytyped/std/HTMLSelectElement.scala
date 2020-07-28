@@ -17,7 +17,7 @@ trait HTMLSelectElement
   /**
     * Retrieves a reference to the form that the object is embedded in.
     */
-  val form: HTMLFormElement = js.native
+  val form: HTMLFormElement | Null = js.native
   /**
     * Sets or retrieves the number of objects in a collection.
     */
@@ -95,6 +95,10 @@ trait HTMLSelectElement
     */
   def namedItem(name: java.lang.String): js.Any = js.native
   def remove(index: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, useCapture: scala.Boolean): Unit = js.native
   /**
     * Sets a custom error message that is displayed when a form is submitted.
     * @param error Sets a custom error message that is displayed when a form is submitted.

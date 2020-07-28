@@ -9,8 +9,8 @@ trait MsZoomToOptions extends js.Object {
   var contentX: js.UndefOr[Double] = js.undefined
   var contentY: js.UndefOr[Double] = js.undefined
   var scaleFactor: js.UndefOr[Double] = js.undefined
-  var viewportX: js.UndefOr[java.lang.String] = js.undefined
-  var viewportY: js.UndefOr[java.lang.String] = js.undefined
+  var viewportX: js.UndefOr[java.lang.String | Null] = js.undefined
+  var viewportY: js.UndefOr[java.lang.String | Null] = js.undefined
 }
 
 object MsZoomToOptions {
@@ -51,9 +51,13 @@ object MsZoomToOptions {
     @scala.inline
     def deleteViewportX: Self = this.set("viewportX", js.undefined)
     @scala.inline
+    def setViewportXNull: Self = this.set("viewportX", null)
+    @scala.inline
     def setViewportY(value: java.lang.String): Self = this.set("viewportY", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteViewportY: Self = this.set("viewportY", js.undefined)
+    @scala.inline
+    def setViewportYNull: Self = this.set("viewportY", null)
   }
   
 }

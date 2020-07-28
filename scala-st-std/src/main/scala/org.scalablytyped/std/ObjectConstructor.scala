@@ -100,7 +100,7 @@ trait ObjectConstructor
     * @param o Object that contains the property.
     * @param p Name of the property.
     */
-  def getOwnPropertyDescriptor(o: js.Any, p: java.lang.String): PropertyDescriptor = js.native
+  def getOwnPropertyDescriptor(o: js.Any, p: java.lang.String): js.UndefOr[PropertyDescriptor] = js.native
   /**
     * Gets the own property descriptor of the specified object.
     * An own property descriptor is one that is defined directly on the object and is not
@@ -108,7 +108,7 @@ trait ObjectConstructor
     * @param o Object that contains the property.
     * @param p Name of the property.
     */
-  def getOwnPropertyDescriptor(o: js.Any, propertyKey: PropertyKey): PropertyDescriptor = js.native
+  def getOwnPropertyDescriptor(o: js.Any, propertyKey: PropertyKey): js.UndefOr[PropertyDescriptor] = js.native
   /**
     * Returns the names of the own properties of an object. The own properties of an object are those that are defined directly
     * on that object, and are not inherited from the object's prototype. The properties of an object include both fields (objects) and functions.
@@ -150,7 +150,7 @@ trait ObjectConstructor
     * Returns the names of the enumerable properties and methods of an object.
     * @param o Object that contains the properties and methods. This can be an object that you created or an existing Document Object Model (DOM) object.
     */
-  def keys(o: js.Any): js.Array[java.lang.String] = js.native
+  def keys(o: js.Object): js.Array[java.lang.String] = js.native
   /**
     * Prevents the addition of new properties to an object.
     * @param o Object to make non-extensible.

@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FilePropertyBag extends js.Object {
+trait FilePropertyBag extends BlobPropertyBag {
   var lastModified: js.UndefOr[Double] = js.undefined
-  var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object FilePropertyBag {
@@ -30,10 +29,6 @@ object FilePropertyBag {
     def setLastModified(value: Double): Self = this.set("lastModified", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteLastModified: Self = this.set("lastModified", js.undefined)
-    @scala.inline
-    def setType(value: java.lang.String): Self = this.set("type", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
   }
   
 }

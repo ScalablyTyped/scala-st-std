@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation._
 /// DOM APIs
 /////////////////////////////
 trait Account extends js.Object {
-  var displayName: js.UndefOr[java.lang.String] = js.undefined
-  var id: js.UndefOr[java.lang.String] = js.undefined
+  var displayName: java.lang.String
+  var id: java.lang.String
   var imageURL: js.UndefOr[java.lang.String] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
-  var rpDisplayName: js.UndefOr[java.lang.String] = js.undefined
+  var rpDisplayName: java.lang.String
 }
 
 object Account {
   @scala.inline
-  def apply(): Account = {
-    val __obj = js.Dynamic.literal()
+  def apply(displayName: java.lang.String, id: java.lang.String, rpDisplayName: java.lang.String): Account = {
+    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], rpDisplayName = rpDisplayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Account]
   }
   @scala.inline
@@ -35,11 +35,9 @@ object Account {
     @scala.inline
     def setDisplayName(value: java.lang.String): Self = this.set("displayName", value.asInstanceOf[js.Any])
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
-    @scala.inline
     def setId(value: java.lang.String): Self = this.set("id", value.asInstanceOf[js.Any])
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setRpDisplayName(value: java.lang.String): Self = this.set("rpDisplayName", value.asInstanceOf[js.Any])
     @scala.inline
     def setImageURL(value: java.lang.String): Self = this.set("imageURL", value.asInstanceOf[js.Any])
     @scala.inline
@@ -48,10 +46,6 @@ object Account {
     def setName(value: java.lang.String): Self = this.set("name", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteName: Self = this.set("name", js.undefined)
-    @scala.inline
-    def setRpDisplayName(value: java.lang.String): Self = this.set("rpDisplayName", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteRpDisplayName: Self = this.set("rpDisplayName", js.undefined)
   }
   
 }

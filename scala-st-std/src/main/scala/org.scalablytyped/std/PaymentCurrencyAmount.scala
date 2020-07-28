@@ -5,15 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PaymentCurrencyAmount extends js.Object {
-  var currency: js.UndefOr[java.lang.String] = js.undefined
+  var currency: java.lang.String
   var currencySystem: js.UndefOr[java.lang.String] = js.undefined
-  var value: js.UndefOr[java.lang.String] = js.undefined
+  var value: java.lang.String
 }
 
 object PaymentCurrencyAmount {
   @scala.inline
-  def apply(): PaymentCurrencyAmount = {
-    val __obj = js.Dynamic.literal()
+  def apply(currency: java.lang.String, value: java.lang.String): PaymentCurrencyAmount = {
+    val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentCurrencyAmount]
   }
   @scala.inline
@@ -30,15 +30,11 @@ object PaymentCurrencyAmount {
     @scala.inline
     def setCurrency(value: java.lang.String): Self = this.set("currency", value.asInstanceOf[js.Any])
     @scala.inline
-    def deleteCurrency: Self = this.set("currency", js.undefined)
+    def setValue(value: java.lang.String): Self = this.set("value", value.asInstanceOf[js.Any])
     @scala.inline
     def setCurrencySystem(value: java.lang.String): Self = this.set("currencySystem", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteCurrencySystem: Self = this.set("currencySystem", js.undefined)
-    @scala.inline
-    def setValue(value: java.lang.String): Self = this.set("value", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
   }
   
 }

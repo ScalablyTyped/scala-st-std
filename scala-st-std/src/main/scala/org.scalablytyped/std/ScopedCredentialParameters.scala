@@ -5,14 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ScopedCredentialParameters extends js.Object {
-  var algorithm: js.UndefOr[java.lang.String | Algorithm] = js.undefined
-  var `type`: js.UndefOr[ScopedCredentialType] = js.undefined
+  var algorithm: java.lang.String | Algorithm
+  var `type`: ScopedCredentialType
 }
 
 object ScopedCredentialParameters {
   @scala.inline
-  def apply(): ScopedCredentialParameters = {
-    val __obj = js.Dynamic.literal()
+  def apply(algorithm: java.lang.String | Algorithm, `type`: ScopedCredentialType): ScopedCredentialParameters = {
+    val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScopedCredentialParameters]
   }
   @scala.inline
@@ -29,11 +30,7 @@ object ScopedCredentialParameters {
     @scala.inline
     def setAlgorithm(value: java.lang.String | Algorithm): Self = this.set("algorithm", value.asInstanceOf[js.Any])
     @scala.inline
-    def deleteAlgorithm: Self = this.set("algorithm", js.undefined)
-    @scala.inline
     def setType(value: ScopedCredentialType): Self = this.set("type", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
   }
   
 }

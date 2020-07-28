@@ -9,7 +9,7 @@ trait MouseEventInit extends EventModifierInit {
   var buttons: js.UndefOr[Double] = js.undefined
   var clientX: js.UndefOr[Double] = js.undefined
   var clientY: js.UndefOr[Double] = js.undefined
-  var relatedTarget: js.UndefOr[EventTarget] = js.undefined
+  var relatedTarget: js.UndefOr[EventTarget | Null] = js.undefined
   var screenX: js.UndefOr[Double] = js.undefined
   var screenY: js.UndefOr[Double] = js.undefined
 }
@@ -51,6 +51,8 @@ object MouseEventInit {
     def setRelatedTarget(value: EventTarget): Self = this.set("relatedTarget", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteRelatedTarget: Self = this.set("relatedTarget", js.undefined)
+    @scala.inline
+    def setRelatedTargetNull: Self = this.set("relatedTarget", null)
     @scala.inline
     def setScreenX(value: Double): Self = this.set("screenX", value.asInstanceOf[js.Any])
     @scala.inline

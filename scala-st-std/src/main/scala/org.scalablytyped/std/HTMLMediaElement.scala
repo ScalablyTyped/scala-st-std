@@ -201,6 +201,28 @@ trait HTMLMediaElement extends HTMLElement {
     * Loads and starts playback of a media resource.
     */
   def play(): js.Promise[Unit] = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_encrypted(
+    `type`: encrypted,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaEncryptedEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_encrypted(
+    `type`: encrypted,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaEncryptedEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_msneedkey(
+    `type`: msneedkey,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSMediaKeyNeededEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_msneedkey(
+    `type`: msneedkey,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSMediaKeyNeededEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   def setMediaKeys(): js.Promise[Unit] = js.native
   def setMediaKeys(mediaKeys: MediaKeys): js.Promise[Unit] = js.native
 }

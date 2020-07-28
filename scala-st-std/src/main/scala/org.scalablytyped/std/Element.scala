@@ -394,6 +394,274 @@ trait Element
   def removeAttribute(qualifiedName: java.lang.String): Unit = js.native
   def removeAttributeNS(namespaceURI: java.lang.String, localName: java.lang.String): Unit = js.native
   def removeAttributeNode(oldAttr: Attr): Attr = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, useCapture: scala.Boolean): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSGestureChange(
+    `type`: MSGestureChange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSGestureChange(
+    `type`: MSGestureChange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSGestureDoubleTap(
+    `type`: MSGestureDoubleTap,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSGestureDoubleTap(
+    `type`: MSGestureDoubleTap,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSGestureEnd(`type`: MSGestureEnd, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSGestureEnd(
+    `type`: MSGestureEnd,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSGestureHold(
+    `type`: MSGestureHold,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSGestureHold(
+    `type`: MSGestureHold,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSGestureStart(
+    `type`: MSGestureStart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSGestureStart(
+    `type`: MSGestureStart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSGestureTap(`type`: MSGestureTap, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSGestureTap(
+    `type`: MSGestureTap,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSGotPointerCapture(
+    `type`: MSGotPointerCapture,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSGotPointerCapture(
+    `type`: MSGotPointerCapture,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSInertiaStart(
+    `type`: MSInertiaStart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSInertiaStart(
+    `type`: MSInertiaStart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSLostPointerCapture(
+    `type`: MSLostPointerCapture,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSLostPointerCapture(
+    `type`: MSLostPointerCapture,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSPointerCancel(
+    `type`: MSPointerCancel,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSPointerCancel(
+    `type`: MSPointerCancel,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSPointerDown(
+    `type`: MSPointerDown,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSPointerDown(
+    `type`: MSPointerDown,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSPointerEnter(
+    `type`: MSPointerEnter,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSPointerEnter(
+    `type`: MSPointerEnter,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSPointerLeave(
+    `type`: MSPointerLeave,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSPointerLeave(
+    `type`: MSPointerLeave,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSPointerMove(
+    `type`: MSPointerMove,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSPointerMove(
+    `type`: MSPointerMove,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSPointerOut(`type`: MSPointerOut, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSPointerOut(
+    `type`: MSPointerOut,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSPointerOver(
+    `type`: MSPointerOver,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSPointerOver(
+    `type`: MSPointerOver,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSPointerUp(`type`: MSPointerUp, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSPointerUp(
+    `type`: MSPointerUp,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_ariarequest(`type`: ariarequest, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_ariarequest(
+    `type`: ariarequest,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_command(`type`: command, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_command(
+    `type`: command,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_gotpointercapture(
+    `type`: gotpointercapture,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_gotpointercapture(
+    `type`: gotpointercapture,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_lostpointercapture(
+    `type`: lostpointercapture,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_lostpointercapture(
+    `type`: lostpointercapture,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_touchcancel(`type`: touchcancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_touchcancel(
+    `type`: touchcancel,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_touchend(`type`: touchend, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_touchend(
+    `type`: touchend,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_touchmove(`type`: touchmove, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_touchmove(
+    `type`: touchmove,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_touchstart(`type`: touchstart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_touchstart(
+    `type`: touchstart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_webkitfullscreenchange(
+    `type`: webkitfullscreenchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_webkitfullscreenchange(
+    `type`: webkitfullscreenchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_webkitfullscreenerror(`type`: webkitfullscreenerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_webkitfullscreenerror(
+    `type`: webkitfullscreenerror,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   def requestFullscreen(): Unit = js.native
   def requestPointerLock(): Unit = js.native
   def scroll(): Unit = js.native

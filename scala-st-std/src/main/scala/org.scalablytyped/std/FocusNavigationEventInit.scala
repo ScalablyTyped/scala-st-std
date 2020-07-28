@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FocusNavigationEventInit extends EventInit {
-  var navigationReason: js.UndefOr[java.lang.String] = js.undefined
+  var navigationReason: js.UndefOr[java.lang.String | Null] = js.undefined
   var originHeight: js.UndefOr[Double] = js.undefined
   var originLeft: js.UndefOr[Double] = js.undefined
   var originTop: js.UndefOr[Double] = js.undefined
@@ -33,6 +33,8 @@ object FocusNavigationEventInit {
     def setNavigationReason(value: java.lang.String): Self = this.set("navigationReason", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteNavigationReason: Self = this.set("navigationReason", js.undefined)
+    @scala.inline
+    def setNavigationReasonNull: Self = this.set("navigationReason", null)
     @scala.inline
     def setOriginHeight(value: Double): Self = this.set("originHeight", value.asInstanceOf[js.Any])
     @scala.inline

@@ -45,7 +45,7 @@ trait HTMLAppletElement extends HTMLElement {
     * Sets or retrieves a character string that can be used to implement your own declare functionality for the object.
     */
   var declare: scala.Boolean = js.native
-  val form: HTMLFormElement = js.native
+  val form: HTMLFormElement | Null = js.native
   /**
     * Sets or retrieves the height of the object.
     */

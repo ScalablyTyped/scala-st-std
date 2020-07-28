@@ -22,6 +22,14 @@ trait SpeechSynthesis extends EventTarget {
   def getVoices(): js.Array[SpeechSynthesisVoice] = js.native
   def onvoiceschanged(ev: Event): js.Any = js.native
   def pause(): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_voiceschanged(`type`: voiceschanged, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_voiceschanged(
+    `type`: voiceschanged,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   def resume(): Unit = js.native
   def speak(utterance: SpeechSynthesisUtterance): Unit = js.native
 }

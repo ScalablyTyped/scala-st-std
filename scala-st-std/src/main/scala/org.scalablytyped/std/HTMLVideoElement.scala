@@ -75,6 +75,36 @@ trait HTMLVideoElement extends HTMLMediaElement {
   def onMSVideoFormatChanged(ev: Event): js.Any = js.native
   def onMSVideoFrameStepCompleted(ev: Event): js.Any = js.native
   def onMSVideoOptimalLayoutChanged(ev: Event): js.Any = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSVideoFormatChanged(`type`: MSVideoFormatChanged, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSVideoFormatChanged(
+    `type`: MSVideoFormatChanged,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSVideoFrameStepCompleted(
+    `type`: MSVideoFrameStepCompleted,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSVideoFrameStepCompleted(
+    `type`: MSVideoFrameStepCompleted,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSVideoOptimalLayoutChanged(
+    `type`: MSVideoOptimalLayoutChanged,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSVideoOptimalLayoutChanged(
+    `type`: MSVideoOptimalLayoutChanged,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   def webkitEnterFullScreen(): Unit = js.native
   def webkitEnterFullscreen(): Unit = js.native
   def webkitExitFullScreen(): Unit = js.native

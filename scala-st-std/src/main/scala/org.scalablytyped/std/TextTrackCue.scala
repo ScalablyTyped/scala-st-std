@@ -33,5 +33,21 @@ trait TextTrackCue extends EventTarget {
   def getCueAsHTML(): DocumentFragment = js.native
   def onenter(ev: Event): js.Any = js.native
   def onexit(ev: Event): js.Any = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_enter(`type`: enter, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_enter(
+    `type`: enter,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_exit(`type`: exit, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_exit(
+    `type`: exit,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
 }
 

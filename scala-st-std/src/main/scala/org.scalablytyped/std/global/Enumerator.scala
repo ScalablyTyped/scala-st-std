@@ -1,6 +1,7 @@
 package org.scalablytyped.std.global
 
 import org.scalablytyped.std.EnumeratorConstructor
+import org.scalablytyped.std.anon.Item
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +11,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class Enumerator[T] protected ()
   extends org.scalablytyped.std.Enumerator[T] {
+  def this(collection: Item[T]) = this()
   def this(collection: js.Any) = this()
+  def this(safearray: org.scalablytyped.std.SafeArray[T]) = this()
   /**
     * Returns true if the current item is the last one in the collection, or the collection is empty,
     * or the current item is undefined.

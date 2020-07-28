@@ -5,17 +5,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IntersectionObserverEntryInit extends js.Object {
-  var boundingClientRect: js.UndefOr[DOMRectInit] = js.undefined
-  var intersectionRect: js.UndefOr[DOMRectInit] = js.undefined
-  var rootBounds: js.UndefOr[DOMRectInit] = js.undefined
-  var target: js.UndefOr[Element] = js.undefined
-  var time: js.UndefOr[Double] = js.undefined
+  var boundingClientRect: DOMRectInit
+  var intersectionRect: DOMRectInit
+  var isIntersecting: scala.Boolean
+  var rootBounds: DOMRectInit
+  var target: Element
+  var time: Double
 }
 
 object IntersectionObserverEntryInit {
   @scala.inline
-  def apply(): IntersectionObserverEntryInit = {
-    val __obj = js.Dynamic.literal()
+  def apply(
+    boundingClientRect: DOMRectInit,
+    intersectionRect: DOMRectInit,
+    isIntersecting: scala.Boolean,
+    rootBounds: DOMRectInit,
+    target: Element,
+    time: Double
+  ): IntersectionObserverEntryInit = {
+    val __obj = js.Dynamic.literal(boundingClientRect = boundingClientRect.asInstanceOf[js.Any], intersectionRect = intersectionRect.asInstanceOf[js.Any], isIntersecting = isIntersecting.asInstanceOf[js.Any], rootBounds = rootBounds.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntersectionObserverEntryInit]
   }
   @scala.inline
@@ -32,23 +40,15 @@ object IntersectionObserverEntryInit {
     @scala.inline
     def setBoundingClientRect(value: DOMRectInit): Self = this.set("boundingClientRect", value.asInstanceOf[js.Any])
     @scala.inline
-    def deleteBoundingClientRect: Self = this.set("boundingClientRect", js.undefined)
-    @scala.inline
     def setIntersectionRect(value: DOMRectInit): Self = this.set("intersectionRect", value.asInstanceOf[js.Any])
     @scala.inline
-    def deleteIntersectionRect: Self = this.set("intersectionRect", js.undefined)
+    def setIsIntersecting(value: scala.Boolean): Self = this.set("isIntersecting", value.asInstanceOf[js.Any])
     @scala.inline
     def setRootBounds(value: DOMRectInit): Self = this.set("rootBounds", value.asInstanceOf[js.Any])
     @scala.inline
-    def deleteRootBounds: Self = this.set("rootBounds", js.undefined)
-    @scala.inline
     def setTarget(value: Element): Self = this.set("target", value.asInstanceOf[js.Any])
     @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
-    @scala.inline
     def setTime(value: Double): Self = this.set("time", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteTime: Self = this.set("time", js.undefined)
   }
   
 }

@@ -62,6 +62,11 @@ trait ReadonlyArray[T] extends /* n */ NumberDictionary[T] {
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], /* is S */ scala.Boolean],
     thisArg: js.Any
   ): js.Array[S] = js.native
+  def find(predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], scala.Boolean]): js.UndefOr[T] = js.native
+  def find(
+    predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], scala.Boolean],
+    thisArg: js.Any
+  ): js.UndefOr[T] = js.native
   /**
     * Returns the value of the first element in the array where predicate is true, and undefined
     * otherwise.
@@ -71,17 +76,25 @@ trait ReadonlyArray[T] extends /* n */ NumberDictionary[T] {
     * @param thisArg If provided, it will be used as the this value for each invocation of
     * predicate. If it is not provided, undefined is used instead.
     */
-  def find(
-    predicate: js.ThisFunction3[/* this */ Unit, /* value */ T, /* index */ Double, /* obj */ js.Array[T], scala.Boolean]
-  ): js.UndefOr[T] = js.native
-  def find(
-    predicate: js.ThisFunction3[/* this */ Unit, /* value */ T, /* index */ Double, /* obj */ js.Array[T], scala.Boolean],
-    thisArg: js.UndefOr[scala.Nothing]
-  ): js.UndefOr[T] = js.native
-  def find[Z](
-    predicate: js.ThisFunction3[/* this */ Z, /* value */ T, /* index */ Double, /* obj */ js.Array[T], scala.Boolean],
-    thisArg: Z
-  ): js.UndefOr[T] = js.native
+  def find[S /* <: T */](
+    predicate: js.ThisFunction3[
+      /* this */ Unit, 
+      /* value */ T, 
+      /* index */ Double, 
+      /* obj */ js.Array[T], 
+      /* is S */ scala.Boolean
+    ]
+  ): js.UndefOr[S] = js.native
+  def find[S /* <: T */](
+    predicate: js.ThisFunction3[
+      /* this */ Unit, 
+      /* value */ T, 
+      /* index */ Double, 
+      /* obj */ js.Array[T], 
+      /* is S */ scala.Boolean
+    ],
+    thisArg: js.Any
+  ): js.UndefOr[S] = js.native
   /**
     * Returns the index of the first element in the array where predicate is true, and -1
     * otherwise.
@@ -91,16 +104,10 @@ trait ReadonlyArray[T] extends /* n */ NumberDictionary[T] {
     * @param thisArg If provided, it will be used as the this value for each invocation of
     * predicate. If it is not provided, undefined is used instead.
     */
+  def findIndex(predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], scala.Boolean]): Double = js.native
   def findIndex(
-    predicate: js.ThisFunction3[/* this */ Unit, /* value */ T, /* index */ Double, /* obj */ js.Array[T], scala.Boolean]
-  ): Double = js.native
-  def findIndex(
-    predicate: js.ThisFunction3[/* this */ Unit, /* value */ T, /* index */ Double, /* obj */ js.Array[T], scala.Boolean],
-    thisArg: js.UndefOr[scala.Nothing]
-  ): Double = js.native
-  def findIndex[Z](
-    predicate: js.ThisFunction3[/* this */ Z, /* value */ T, /* index */ Double, /* obj */ js.Array[T], scala.Boolean],
-    thisArg: Z
+    predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], scala.Boolean],
+    thisArg: js.Any
   ): Double = js.native
   /**
     * Performs the specified action for each element in an array.

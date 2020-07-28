@@ -21,6 +21,14 @@ trait RTCRtpReceiver extends RTCStatsProvider {
   ): Unit = js.native
   def getContributingSources(): js.Array[RTCRtpContributingSource] = js.native
   def receive(parameters: RTCRtpParameters): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   def requestSendCSRC(csrc: Double): Unit = js.native
   def setTransport(transport: RTCDtlsTransport): Unit = js.native
   def setTransport(transport: RTCDtlsTransport, rtcpTransport: RTCDtlsTransport): Unit = js.native

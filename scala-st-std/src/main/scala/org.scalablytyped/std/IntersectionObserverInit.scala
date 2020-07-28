@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IntersectionObserverInit extends js.Object {
-  var root: js.UndefOr[Element] = js.undefined
+  var root: js.UndefOr[Element | Null] = js.undefined
   var rootMargin: js.UndefOr[java.lang.String] = js.undefined
   var threshold: js.UndefOr[Double | js.Array[Double]] = js.undefined
 }
@@ -31,6 +31,8 @@ object IntersectionObserverInit {
     def setRoot(value: Element): Self = this.set("root", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setRootNull: Self = this.set("root", null)
     @scala.inline
     def setRootMargin(value: java.lang.String): Self = this.set("rootMargin", value.asInstanceOf[js.Any])
     @scala.inline

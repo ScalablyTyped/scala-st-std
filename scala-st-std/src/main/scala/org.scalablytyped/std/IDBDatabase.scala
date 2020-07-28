@@ -43,6 +43,22 @@ trait IDBDatabase extends EventTarget {
   def onabort(ev: Event): js.Any = js.native
   def onerror(ev: Event): js.Any = js.native
   def onversionchange(ev: IDBVersionChangeEvent): js.Any = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_abort(
+    `type`: abort,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   def transaction(storeNames: java.lang.String): IDBTransaction = js.native
   def transaction(storeNames: java.lang.String, mode: IDBTransactionMode): IDBTransaction = js.native
   def transaction(storeNames: js.Array[java.lang.String]): IDBTransaction = js.native

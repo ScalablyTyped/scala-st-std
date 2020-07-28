@@ -6,13 +6,14 @@ import scala.scalajs.js.annotation._
 
 trait MSCredentialSpec extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
-  var `type`: js.UndefOr[MSCredentialType] = js.undefined
+  var `type`: MSCredentialType
 }
 
 object MSCredentialSpec {
   @scala.inline
-  def apply(): MSCredentialSpec = {
+  def apply(`type`: MSCredentialType): MSCredentialSpec = {
     val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MSCredentialSpec]
   }
   @scala.inline
@@ -27,13 +28,11 @@ object MSCredentialSpec {
         x
     }
     @scala.inline
+    def setType(value: MSCredentialType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
     def setId(value: java.lang.String): Self = this.set("id", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteId: Self = this.set("id", js.undefined)
-    @scala.inline
-    def setType(value: MSCredentialType): Self = this.set("type", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
   }
   
 }

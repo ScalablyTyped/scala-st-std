@@ -160,6 +160,74 @@ trait RTCPeerConnection extends EventTarget {
   def onnegotiationneeded(ev: Event): js.Any = js.native
   def onremovestream(ev: MediaStreamEvent): js.Any = js.native
   def onsignalingstatechange(ev: Event): js.Any = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_addstream(`type`: addstream, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_addstream(
+    `type`: addstream,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_icecandidate(
+    `type`: icecandidate,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCPeerConnectionIceEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_icecandidate(
+    `type`: icecandidate,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCPeerConnectionIceEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_iceconnectionstatechange(
+    `type`: iceconnectionstatechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_iceconnectionstatechange(
+    `type`: iceconnectionstatechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_icegatheringstatechange(
+    `type`: icegatheringstatechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_icegatheringstatechange(
+    `type`: icegatheringstatechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_negotiationneeded(`type`: negotiationneeded, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_negotiationneeded(
+    `type`: negotiationneeded,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_removestream(
+    `type`: removestream,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_removestream(
+    `type`: removestream,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_signalingstatechange(`type`: signalingstatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_signalingstatechange(
+    `type`: signalingstatechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   def removeStream(stream: MediaStream): Unit = js.native
   def setLocalDescription(description: RTCSessionDescription): js.Promise[Unit] = js.native
   def setLocalDescription(

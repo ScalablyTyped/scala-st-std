@@ -21,6 +21,14 @@ trait MessagePort extends EventTarget {
   def postMessage(message: js.UndefOr[scala.Nothing], transfer: js.Array[_]): Unit = js.native
   def postMessage(message: js.Any): Unit = js.native
   def postMessage(message: js.Any, transfer: js.Array[_]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_message(`type`: message, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_message(
+    `type`: message,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
   def start(): Unit = js.native
 }
 

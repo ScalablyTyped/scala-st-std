@@ -8,7 +8,7 @@ trait RequestInit extends js.Object {
   var body: js.UndefOr[js.Any] = js.undefined
   var cache: js.UndefOr[RequestCache] = js.undefined
   var credentials: js.UndefOr[RequestCredentials] = js.undefined
-  var headers: js.UndefOr[js.Any] = js.undefined
+  var headers: js.UndefOr[Headers | js.Array[js.Array[java.lang.String]]] = js.undefined
   var integrity: js.UndefOr[java.lang.String] = js.undefined
   var keepalive: js.UndefOr[scala.Boolean] = js.undefined
   var method: js.UndefOr[java.lang.String] = js.undefined
@@ -49,7 +49,9 @@ object RequestInit {
     @scala.inline
     def deleteCredentials: Self = this.set("credentials", js.undefined)
     @scala.inline
-    def setHeaders(value: js.Any): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setHeadersVarargs(value: js.Array[java.lang.String]*): Self = this.set("headers", js.Array(value :_*))
+    @scala.inline
+    def setHeaders(value: Headers | js.Array[js.Array[java.lang.String]]): Self = this.set("headers", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteHeaders: Self = this.set("headers", js.undefined)
     @scala.inline

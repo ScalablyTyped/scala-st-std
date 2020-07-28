@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DOMRectInit extends js.Object {
-  var height: js.UndefOr[js.Any] = js.undefined
-  var width: js.UndefOr[js.Any] = js.undefined
-  var x: js.UndefOr[js.Any] = js.undefined
-  var y: js.UndefOr[js.Any] = js.undefined
+  var height: js.UndefOr[Double] = js.undefined
+  var width: js.UndefOr[Double] = js.undefined
+  var x: js.UndefOr[Double] = js.undefined
+  var y: js.UndefOr[Double] = js.undefined
 }
 
 object DOMRectInit {
@@ -29,19 +29,19 @@ object DOMRectInit {
         x
     }
     @scala.inline
-    def setHeight(value: js.Any): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteHeight: Self = this.set("height", js.undefined)
     @scala.inline
-    def setWidth(value: js.Any): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteWidth: Self = this.set("width", js.undefined)
     @scala.inline
-    def setX(value: js.Any): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteX: Self = this.set("x", js.undefined)
     @scala.inline
-    def setY(value: js.Any): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteY: Self = this.set("y", js.undefined)
   }

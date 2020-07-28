@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RTCIceServer extends js.Object {
-  var credential: js.UndefOr[java.lang.String] = js.undefined
+  var credential: js.UndefOr[java.lang.String | Null] = js.undefined
   var urls: js.UndefOr[js.Any] = js.undefined
-  var username: js.UndefOr[java.lang.String] = js.undefined
+  var username: js.UndefOr[java.lang.String | Null] = js.undefined
 }
 
 object RTCIceServer {
@@ -32,6 +32,8 @@ object RTCIceServer {
     @scala.inline
     def deleteCredential: Self = this.set("credential", js.undefined)
     @scala.inline
+    def setCredentialNull: Self = this.set("credential", null)
+    @scala.inline
     def setUrls(value: js.Any): Self = this.set("urls", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteUrls: Self = this.set("urls", js.undefined)
@@ -39,6 +41,8 @@ object RTCIceServer {
     def setUsername(value: java.lang.String): Self = this.set("username", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteUsername: Self = this.set("username", js.undefined)
+    @scala.inline
+    def setUsernameNull: Self = this.set("username", null)
   }
   
 }

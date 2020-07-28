@@ -19,5 +19,9 @@ trait SVGGraphicsElement
   def getCTM(): SVGMatrix = js.native
   def getScreenCTM(): SVGMatrix = js.native
   def getTransformToElement(element: SVGElement): SVGMatrix = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, useCapture: scala.Boolean): Unit = js.native
 }
 

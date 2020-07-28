@@ -24,6 +24,8 @@ class ValidityState ()
   /* CompleteClass */
   override val tooLong: scala.Boolean = js.native
   /* CompleteClass */
+  override val tooShort: scala.Boolean = js.native
+  /* CompleteClass */
   override val typeMismatch: scala.Boolean = js.native
   /* CompleteClass */
   override val valid: scala.Boolean = js.native

@@ -4,19 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Item extends js.Object {
-  var length: Double
-  def Item(n: Double): String
+trait Item[T] extends js.Object {
+  def Item(index: js.Any): T
 }
 
 object Item {
   @scala.inline
-  def apply(Item: Double => String, length: Double): Item = {
-    val __obj = js.Dynamic.literal(Item = js.Any.fromFunction1(Item), length = length.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Item]
+  def apply[T](Item: js.Any => T): Item[T] = {
+    val __obj = js.Dynamic.literal(Item = js.Any.fromFunction1(Item))
+    __obj.asInstanceOf[Item[T]]
   }
   @scala.inline
-  implicit class ItemOps[Self <: Item] (val x: Self) extends AnyVal {
+  implicit class ItemOps[Self <: Item[_], T] (val x: Self with Item[T]) extends AnyVal {
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
     @scala.inline
@@ -27,9 +26,7 @@ object Item {
         x
     }
     @scala.inline
-    def setItem(value: Double => String): Self = this.set("Item", js.Any.fromFunction1(value))
-    @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setItem(value: js.Any => T): Self = this.set("Item", js.Any.fromFunction1(value))
   }
   
 }

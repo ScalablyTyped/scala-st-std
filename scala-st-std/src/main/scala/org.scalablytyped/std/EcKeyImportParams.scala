@@ -4,14 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait EcKeyImportParams extends js.Object {
+trait EcKeyImportParams extends Algorithm {
   var namedCurve: java.lang.String
 }
 
 object EcKeyImportParams {
   @scala.inline
-  def apply(namedCurve: java.lang.String): EcKeyImportParams = {
-    val __obj = js.Dynamic.literal(namedCurve = namedCurve.asInstanceOf[js.Any])
+  def apply(name: java.lang.String, namedCurve: java.lang.String): EcKeyImportParams = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], namedCurve = namedCurve.asInstanceOf[js.Any])
     __obj.asInstanceOf[EcKeyImportParams]
   }
   @scala.inline

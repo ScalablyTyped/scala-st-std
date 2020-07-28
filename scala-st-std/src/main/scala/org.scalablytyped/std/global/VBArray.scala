@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class VBArray[T] protected ()
   extends org.scalablytyped.std.VBArray[T] {
-  def this(safeArray: js.Any) = this()
+  def this(safeArray: org.scalablytyped.std.SafeArray[T]) = this()
 }
 
 @JSGlobal("VBArray")

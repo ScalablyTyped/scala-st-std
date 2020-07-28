@@ -74,6 +74,11 @@ trait HTMLFormElement
     * Retrieves a form object or an object from an elements collection.
     */
   def namedItem(name: java.lang.String): js.Any = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, useCapture: scala.Boolean): Unit = js.native
+  def reportValidity(): scala.Boolean = js.native
   /**
     * Fires when the user resets a form.
     */

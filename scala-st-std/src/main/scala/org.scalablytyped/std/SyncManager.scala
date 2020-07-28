@@ -5,13 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SyncManager extends js.Object {
-  def getTags(): js.Any
+  def getTags(): js.Promise[js.Array[java.lang.String]]
   def register(tag: java.lang.String): js.Promise[Unit]
 }
 
 object SyncManager {
   @scala.inline
-  def apply(getTags: () => js.Any, register: java.lang.String => js.Promise[Unit]): SyncManager = {
+  def apply(
+    getTags: () => js.Promise[js.Array[java.lang.String]],
+    register: java.lang.String => js.Promise[Unit]
+  ): SyncManager = {
     val __obj = js.Dynamic.literal(getTags = js.Any.fromFunction0(getTags), register = js.Any.fromFunction1(register))
     __obj.asInstanceOf[SyncManager]
   }
@@ -27,7 +30,7 @@ object SyncManager {
         x
     }
     @scala.inline
-    def setGetTags(value: () => js.Any): Self = this.set("getTags", js.Any.fromFunction0(value))
+    def setGetTags(value: () => js.Promise[js.Array[java.lang.String]]): Self = this.set("getTags", js.Any.fromFunction0(value))
     @scala.inline
     def setRegister(value: java.lang.String => js.Promise[Unit]): Self = this.set("register", js.Any.fromFunction1(value))
   }

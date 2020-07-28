@@ -9,14 +9,6 @@ import scala.scalajs.js.annotation._
   * A typed array of 16-bit signed integer values. The contents are initialized to 0. If the
   * requested number of bytes could not be allocated an exception is raised.
   */
-/**
-  * A typed array of 16-bit signed integer values. The contents are initialized to 0. If the
-  * requested number of bytes could not be allocated an exception is raised.
-  */
-/**
-  * A typed array of 16-bit signed integer values. The contents are initialized to 0. If the
-  * requested number of bytes could not be allocated an exception is raised.
-  */
 @js.native
 trait Int16Array extends /* index */ NumberDictionary[Double] {
   /**
@@ -92,11 +84,9 @@ trait Int16Array extends /* index */ NumberDictionary[Double] {
     * @param thisArg An object to which the this keyword can refer in the callbackfn function.
     * If thisArg is omitted, undefined is used as the this value.
     */
+  def filter(callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, _]): Int16Array = js.native
   def filter(
-    callbackfn: js.ThisFunction3[/* this */ Unit, /* value */ Double, /* index */ Double, /* array */ this.type, _]
-  ): Int16Array = js.native
-  def filter(
-    callbackfn: js.ThisFunction3[/* this */ Unit, /* value */ Double, /* index */ Double, /* array */ this.type, _],
+    callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, _],
     thisArg: js.Any
   ): Int16Array = js.native
   /**
@@ -109,10 +99,10 @@ trait Int16Array extends /* index */ NumberDictionary[Double] {
     * predicate. If it is not provided, undefined is used instead.
     */
   def find(
-    predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ js.Array[Double], scala.Boolean]
+    predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ this.type, scala.Boolean]
   ): js.UndefOr[Double] = js.native
   def find(
-    predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ js.Array[Double], scala.Boolean],
+    predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ this.type, scala.Boolean],
     thisArg: js.Any
   ): js.UndefOr[Double] = js.native
   /**
@@ -125,10 +115,10 @@ trait Int16Array extends /* index */ NumberDictionary[Double] {
     * predicate. If it is not provided, undefined is used instead.
     */
   def findIndex(
-    predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ js.Array[Double], scala.Boolean]
+    predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ this.type, scala.Boolean]
   ): Double = js.native
   def findIndex(
-    predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ js.Array[Double], scala.Boolean],
+    predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ this.type, scala.Boolean],
     thisArg: js.Any
   ): Double = js.native
   /**
@@ -178,11 +168,9 @@ trait Int16Array extends /* index */ NumberDictionary[Double] {
     * @param thisArg An object to which the this keyword can refer in the callbackfn function.
     * If thisArg is omitted, undefined is used as the this value.
     */
+  def map(callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Double]): Int16Array = js.native
   def map(
-    callbackfn: js.ThisFunction3[/* this */ Unit, /* value */ Double, /* index */ Double, /* array */ this.type, Double]
-  ): Int16Array = js.native
-  def map(
-    callbackfn: js.ThisFunction3[/* this */ Unit, /* value */ Double, /* index */ Double, /* array */ this.type, Double],
+    callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Double],
     thisArg: js.Any
   ): Int16Array = js.native
   /**

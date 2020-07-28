@@ -57,7 +57,9 @@ package object std {
   type GLushort = scala.Double
   type Generator = org.scalablytyped.std.Iterator[js.Any]
   type HTMLAreasCollection = org.scalablytyped.std.HTMLCollectionBase
-  type HeadersInit = js.Any
+  type HTMLMainElement = org.scalablytyped.std.HTMLElement
+  type HTMLSummaryElement = org.scalablytyped.std.HTMLElement
+  type HeadersInit = org.scalablytyped.std.Headers | js.Array[js.Array[java.lang.String]]
   type IDBKeyPath = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - scala.Double

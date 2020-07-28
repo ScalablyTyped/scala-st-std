@@ -1,6 +1,8 @@
 package org.scalablytyped.std.global
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +11,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class DOMException ()
   extends org.scalablytyped.std.DOMException {
+  def this(message: java.lang.String) = this()
+  def this(message: js.UndefOr[scala.Nothing], name: java.lang.String) = this()
+  def this(message: java.lang.String, name: java.lang.String) = this()
   /* CompleteClass */
   override val ABORT_ERR: Double = js.native
   /* CompleteClass */
@@ -74,7 +79,13 @@ class DOMException ()
 @JSGlobal("DOMException")
 @js.native
 object DOMException
-  extends Instantiable0[org.scalablytyped.std.DOMException] {
+  extends Instantiable0[org.scalablytyped.std.DOMException]
+     with Instantiable1[/* message */ java.lang.String, org.scalablytyped.std.DOMException]
+     with Instantiable2[
+      js.UndefOr[/* message */ java.lang.String], 
+      /* name */ java.lang.String, 
+      org.scalablytyped.std.DOMException
+    ] {
   val ABORT_ERR: Double = js.native
   val DATA_CLONE_ERR: Double = js.native
   val DOMSTRING_SIZE_ERR: Double = js.native

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FocusEventInit extends UIEventInit {
-  var relatedTarget: js.UndefOr[EventTarget] = js.undefined
+  var relatedTarget: js.UndefOr[EventTarget | Null] = js.undefined
 }
 
 object FocusEventInit {
@@ -29,6 +29,8 @@ object FocusEventInit {
     def setRelatedTarget(value: EventTarget): Self = this.set("relatedTarget", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteRelatedTarget: Self = this.set("relatedTarget", js.undefined)
+    @scala.inline
+    def setRelatedTargetNull: Self = this.set("relatedTarget", null)
   }
   
 }

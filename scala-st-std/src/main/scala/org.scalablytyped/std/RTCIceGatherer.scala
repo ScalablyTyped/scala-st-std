@@ -33,5 +33,24 @@ trait RTCIceGatherer extends RTCStatsProvider {
   def createAssociatedGatherer(): RTCIceGatherer = js.native
   def getLocalCandidates(): js.Array[RTCIceCandidateDictionary] = js.native
   def getLocalParameters(): RTCIceParameters = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_localcandidate(
+    `type`: localcandidate,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceGathererEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_localcandidate(
+    `type`: localcandidate,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceGathererEvent, _],
+    useCapture: scala.Boolean
+  ): Unit = js.native
 }
 

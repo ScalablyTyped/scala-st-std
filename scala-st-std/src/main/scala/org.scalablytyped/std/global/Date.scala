@@ -1,7 +1,6 @@
 package org.scalablytyped.std.global
 
 import org.scalablytyped.std.DateConstructor
-import org.scalablytyped.std.VarDate
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +13,7 @@ class Date ()
   def this(value: org.scalablytyped.std.Date) = this()
   def this(value: java.lang.String) = this()
   def this(value: Double) = this()
-  def this(vd: VarDate) = this()
+  def this(vd: org.scalablytyped.std.VarDate) = this()
   def this(year: Double, month: Double) = this()
   def this(year: Double, month: Double, date: Double) = this()
   def this(year: Double, month: Double, date: js.UndefOr[scala.Nothing], hours: Double) = this()
