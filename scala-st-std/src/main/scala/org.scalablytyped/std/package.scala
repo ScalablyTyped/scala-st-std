@@ -139,6 +139,10 @@ package object std {
     */
   type NonNullable[T] = T
   type NotificationPermissionCallback = js.Function1[/* permission */ org.scalablytyped.std.NotificationPermission, scala.Unit]
+  /**
+    * Removes the 'this' parameter from a function type.
+    */
+  type OmitThisParameter[T] = T | (js.Function1[/* args */ js.Any, js.Any])
   type OnBeforeUnloadEventHandler = org.scalablytyped.std.OnBeforeUnloadEventHandlerNonNull | scala.Null
   type OnBeforeUnloadEventHandlerNonNull = js.Function1[/* event */ org.scalablytyped.std.Event, java.lang.String | scala.Null]
   type OnErrorEventHandler = org.scalablytyped.std.OnErrorEventHandlerNonNull | scala.Null
@@ -245,6 +249,10 @@ package object std {
   type ScopedCredentialType = org.scalablytyped.std.stdStrings.ScopedCred
   type StaticRange = org.scalablytyped.std.AbstractRange
   type SyntaxError = org.scalablytyped.std.Error
+  /**
+    * Extracts the type of the 'this' parameter of a function type, or 'unknown' if the function type has no 'this' parameter.
+    */
+  type ThisParameterType[T] = js.Any
   type TimerHandler = java.lang.String | js.Function
   type TransformStreamDefaultControllerCallback[O] = js.Function1[
     /* controller */ org.scalablytyped.std.TransformStreamDefaultController[O], 

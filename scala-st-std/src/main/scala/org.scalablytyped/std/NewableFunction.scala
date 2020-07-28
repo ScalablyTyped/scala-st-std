@@ -23,7 +23,7 @@ trait NewableFunction
     * @param thisArg The object to be used as the this object.
     * @param args Arguments to bind to the parameters of the function.
     */
-  def bind[A /* <: js.Array[_] */, R](thisArg: js.Any): Instantiable1[/* args */ A, R] = js.native
+  def bind[T](thisArg: js.Any): T = js.native
   def bind[A0, A /* <: js.Array[_] */, R](thisArg: js.Any, arg0: A0): Instantiable1[/* args */ A, R] = js.native
   def bind[A0, A1, A /* <: js.Array[_] */, R](thisArg: js.Any, arg0: A0, arg1: A1): Instantiable1[/* args */ A, R] = js.native
   def bind[A0, A1, A2, A /* <: js.Array[_] */, R](thisArg: js.Any, arg0: A0, arg1: A1, arg2: A2): Instantiable1[/* args */ A, R] = js.native

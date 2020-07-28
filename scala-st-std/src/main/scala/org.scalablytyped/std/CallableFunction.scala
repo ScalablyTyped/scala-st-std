@@ -22,7 +22,7 @@ trait CallableFunction
     * @param thisArg The object to be used as the this object.
     * @param args Arguments to bind to the parameters of the function.
     */
-  def bind[T, A /* <: js.Array[_] */, R](thisArg: T): js.Function1[/* args */ A, R] = js.native
+  def bind[T](thisArg: ThisParameterType[T]): OmitThisParameter[T] = js.native
   def bind[T, AX, R](thisArg: T, args: AX*): js.Function1[/* repeated */ AX, R] = js.native
   def bind[T, A0, A /* <: js.Array[_] */, R](thisArg: T, arg0: A0): js.Function1[/* args */ A, R] = js.native
   def bind[T, A0, A1, A /* <: js.Array[_] */, R](thisArg: T, arg0: A0, arg1: A1): js.Function1[/* args */ A, R] = js.native
