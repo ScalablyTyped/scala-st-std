@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AbortSignalEventMap extends js.Object {
-  var abort: ProgressEvent
+  var abort: Event
 }
 
 object AbortSignalEventMap {
   @scala.inline
-  def apply(abort: ProgressEvent): AbortSignalEventMap = {
+  def apply(abort: Event): AbortSignalEventMap = {
     val __obj = js.Dynamic.literal(abort = abort.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbortSignalEventMap]
   }
@@ -26,7 +26,7 @@ object AbortSignalEventMap {
         x
     }
     @scala.inline
-    def setAbort(value: ProgressEvent): Self = this.set("abort", value.asInstanceOf[js.Any])
+    def setAbort(value: Event): Self = this.set("abort", value.asInstanceOf[js.Any])
   }
   
 }

@@ -23,5 +23,9 @@ object EventSource
       /* url */ java.lang.String, 
       /* eventSourceInitDict */ EventSourceInit, 
       org.scalablytyped.std.EventSource
-    ]
+    ] {
+  val CLOSED: Double = js.native
+  val CONNECTING: Double = js.native
+  val OPEN: Double = js.native
+}
 

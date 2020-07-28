@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The NodeIterator interface represents an iterator over the members of a list of the nodes in a subtree of the DOM. The nodes will be returned in document order. */
 trait NodeIterator extends js.Object {
   val filter: NodeFilter | Null
   val pointerBeforeReferenceNode: scala.Boolean

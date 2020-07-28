@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** Inherits properties from its parent, AudioNode. */
 @js.native
 trait DynamicsCompressorNode extends AudioNode {
   val attack: AudioParam = js.native

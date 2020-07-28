@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGNumberList defines a list of SVGNumber objects. */
 @js.native
 trait SVGNumberList extends /* index */ NumberDictionary[SVGNumber] {
   @JSName(js.Symbol.iterator)

@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The TransitionEvent interface represents events providing information related to transitions. */
 @js.native
 trait TransitionEvent extends Event {
   val elapsedTime: Double = js.native

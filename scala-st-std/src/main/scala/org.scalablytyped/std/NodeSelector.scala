@@ -13,6 +13,7 @@ import org.scalablytyped.std.stdStrings.audio
 import org.scalablytyped.std.stdStrings.b
 import org.scalablytyped.std.stdStrings.base
 import org.scalablytyped.std.stdStrings.basefont
+import org.scalablytyped.std.stdStrings.bdi
 import org.scalablytyped.std.stdStrings.bdo
 import org.scalablytyped.std.stdStrings.blockquote
 import org.scalablytyped.std.stdStrings.body
@@ -101,6 +102,7 @@ import org.scalablytyped.std.stdStrings.li
 import org.scalablytyped.std.stdStrings.line
 import org.scalablytyped.std.stdStrings.linearGradient
 import org.scalablytyped.std.stdStrings.link
+import org.scalablytyped.std.stdStrings.main
 import org.scalablytyped.std.stdStrings.map
 import org.scalablytyped.std.stdStrings.mark
 import org.scalablytyped.std.stdStrings.marker
@@ -128,6 +130,7 @@ import org.scalablytyped.std.stdStrings.progress
 import org.scalablytyped.std.stdStrings.q
 import org.scalablytyped.std.stdStrings.radialGradient
 import org.scalablytyped.std.stdStrings.rect
+import org.scalablytyped.std.stdStrings.rp
 import org.scalablytyped.std.stdStrings.rt
 import org.scalablytyped.std.stdStrings.ruby
 import org.scalablytyped.std.stdStrings.s
@@ -143,6 +146,7 @@ import org.scalablytyped.std.stdStrings.stop
 import org.scalablytyped.std.stdStrings.strong
 import org.scalablytyped.std.stdStrings.style
 import org.scalablytyped.std.stdStrings.sub
+import org.scalablytyped.std.stdStrings.summary
 import org.scalablytyped.std.stdStrings.sup
 import org.scalablytyped.std.stdStrings.svg
 import org.scalablytyped.std.stdStrings.switch
@@ -198,6 +202,8 @@ trait NodeSelector extends js.Object {
   def querySelectorAll_base(selectors: base): NodeListOf[HTMLBaseElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_basefont(selectors: basefont): NodeListOf[HTMLBaseFontElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_bdi(selectors: bdi): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_bdo(selectors: bdo): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
@@ -375,6 +381,8 @@ trait NodeSelector extends js.Object {
   @JSName("querySelectorAll")
   def querySelectorAll_link(selectors: link): NodeListOf[HTMLLinkElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_main(selectors: main): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_map(selectors: map): NodeListOf[HTMLMapElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_mark(selectors: mark): NodeListOf[HTMLElement] = js.native
@@ -431,6 +439,8 @@ trait NodeSelector extends js.Object {
   @JSName("querySelectorAll")
   def querySelectorAll_rect(selectors: rect): NodeListOf[SVGRectElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_rp(selectors: rp): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_rt(selectors: rt): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_ruby(selectors: ruby): NodeListOf[HTMLElement] = js.native
@@ -460,6 +470,8 @@ trait NodeSelector extends js.Object {
   def querySelectorAll_style(selectors: style): NodeListOf[HTMLStyleElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_sub(selectors: sub): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_summary(selectors: summary): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_sup(selectors: sup): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
@@ -534,6 +546,8 @@ trait NodeSelector extends js.Object {
   def querySelector_base(selectors: base): HTMLBaseElement | Null = js.native
   @JSName("querySelector")
   def querySelector_basefont(selectors: basefont): HTMLBaseFontElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_bdi(selectors: bdi): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_bdo(selectors: bdo): HTMLElement | Null = js.native
   @JSName("querySelector")
@@ -711,6 +725,8 @@ trait NodeSelector extends js.Object {
   @JSName("querySelector")
   def querySelector_link(selectors: link): HTMLLinkElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_main(selectors: main): HTMLElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_map(selectors: map): HTMLMapElement | Null = js.native
   @JSName("querySelector")
   def querySelector_mark(selectors: mark): HTMLElement | Null = js.native
@@ -767,6 +783,8 @@ trait NodeSelector extends js.Object {
   @JSName("querySelector")
   def querySelector_rect(selectors: rect): SVGRectElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_rp(selectors: rp): HTMLElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_rt(selectors: rt): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_ruby(selectors: ruby): HTMLElement | Null = js.native
@@ -796,6 +814,8 @@ trait NodeSelector extends js.Object {
   def querySelector_style(selectors: style): HTMLStyleElement | Null = js.native
   @JSName("querySelector")
   def querySelector_sub(selectors: sub): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_summary(selectors: summary): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_sup(selectors: sup): HTMLElement | Null = js.native
   @JSName("querySelector")

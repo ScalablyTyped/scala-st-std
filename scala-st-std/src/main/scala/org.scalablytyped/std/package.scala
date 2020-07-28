@@ -26,11 +26,16 @@ package object std {
     - java.lang.String
   */
   type BodyInit = org.scalablytyped.std._BodyInit | org.scalablytyped.std.ReadableStream[org.scalablytyped.std.Uint8Array] | java.lang.String
+  /** The CDATASection interface represents a CDATA section that can be used within XML to include extended portions of unescaped text. The symbols < and & don’t need escaping as they normally do when inside a CDATA section. */
   type CDATASection = org.scalablytyped.std.Text
+  /** The CSSSupportsRule interface describes an object representing a single CSS @supports at-rule. It implements the CSSConditionRule interface, and therefore the CSSRule and CSSGroupingRule interfaces with a type value of 12 (CSSRule.SUPPORTS_RULE). */
   type CSSSupportsRule = org.scalablytyped.std.CSSConditionRule
+  /** The ChannelMergerNode interface, often used in conjunction with its opposite, ChannelSplitterNode, reunites different mono inputs into a single output. Each input is used to fill a channel of the output. This is useful for accessing each channels separately, e.g. for performing channel mixing where gain must be separately controlled on each channel. */
   type ChannelMergerNode = org.scalablytyped.std.AudioNode
+  /** The ChannelSplitterNode interface, often used in conjunction with its opposite, ChannelMergerNode, separates the different channels of an audio source into a set of mono outputs. This is useful for accessing each channel separately, e.g. for performing channel mixing where gain must be separately controlled on each channel. */
   type ChannelSplitterNode = org.scalablytyped.std.AudioNode
   type ClassDecorator = js.Function1[/* target */ js.Function, js.Function | scala.Unit]
+  /** The Comment interface represents textual notations within markup; although it is generally not visually shown, such comments are available to be read in the source view. Comments are represented in HTML and XML as content between '<!--' and '-->'. In XML, the character sequence '--' cannot be used within a comment. */
   type Comment = org.scalablytyped.std.CharacterData
   type ConstrainBoolean = scala.Boolean | org.scalablytyped.std.ConstrainBooleanParameters
   type ConstrainDOMString = java.lang.String | js.Array[java.lang.String] | org.scalablytyped.std.ConstrainDOMStringParameters
@@ -39,21 +44,14 @@ package object std {
   /**
     * Obtain the parameters of a constructor function type in a tuple
     */
-  type ConstructorParameters[T /* <: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, js.Any] */] = js.Any
+  type ConstructorParameters[T /* <: org.scalablytyped.runtime.Instantiable1[/* args */ js.Any, js.Any] */] = js.Any
   type DOMHighResTimeStamp = scala.Double
+  /** Used by the dataset HTML attribute to represent data for custom attributes added to elements. */
   type DOMStringMap = org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]
   type DOMTimeStamp = scala.Double
   type DecodeErrorCallback = js.Function1[/* error */ org.scalablytyped.std.DOMException, scala.Unit]
   type DecodeSuccessCallback = js.Function1[/* decodedData */ org.scalablytyped.std.AudioBuffer, scala.Unit]
   type DocumentTimeline = org.scalablytyped.std.AnimationTimeline
-  type ErrorEventHandler = js.Function5[
-    /* event */ org.scalablytyped.std.Event | java.lang.String, 
-    /* source */ js.UndefOr[java.lang.String], 
-    /* fileno */ js.UndefOr[scala.Double], 
-    /* columnNumber */ js.UndefOr[scala.Double], 
-    /* error */ js.UndefOr[org.scalablytyped.std.Error], 
-    scala.Unit
-  ]
   type EvalError = org.scalablytyped.std.Error
   type EventHandlerNonNull = js.Function1[/* event */ org.scalablytyped.std.Event, js.Any]
   type EventListener = js.Function1[/* evt */ org.scalablytyped.std.Event, scala.Unit]
@@ -101,7 +99,7 @@ package object std {
   /**
     * Obtain the return type of a constructor function type
     */
-  type InstanceType[T /* <: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, js.Any] */] = js.Any
+  type InstanceType[T /* <: org.scalablytyped.runtime.Instantiable1[/* args */ js.Any, js.Any] */] = js.Any
   type Int32List = org.scalablytyped.std.Int32Array | js.Array[org.scalablytyped.std.GLint]
   type IntersectionObserverCallback = js.Function2[
     /* entries */ js.Array[org.scalablytyped.std.IntersectionObserverEntry], 
@@ -151,7 +149,7 @@ package object std {
     /* source */ js.UndefOr[java.lang.String], 
     /* lineno */ js.UndefOr[scala.Double], 
     /* colno */ js.UndefOr[scala.Double], 
-    /* error */ js.UndefOr[js.Any], 
+    /* error */ js.UndefOr[org.scalablytyped.std.Error], 
     js.Any
   ]
   type ParameterDecorator = js.Function3[
@@ -163,7 +161,7 @@ package object std {
   /**
     * Obtain the parameters of a function type in a tuple
     */
-  type Parameters[T /* <: js.Function1[/* repeated */ js.Any, _] */] = js.Any
+  type Parameters[T /* <: js.Function1[/* args */ js.Any, _] */] = js.Any
   /**
     * Make all properties in T optional
     */
@@ -172,7 +170,9 @@ package object std {
     */ org.scalablytyped.std.stdStrings.Partial with org.scalablytyped.runtime.TopLevel[T]
   type PaymentRequestUpdateEventInit = org.scalablytyped.std.EventInit
   type PerformanceEntryList = js.Array[org.scalablytyped.std.PerformanceEntry]
+  /** PerformanceMark is an abstract interface for PerformanceEntry objects with an entryType of "mark". Entries of this type are created by calling performance.mark() to add a named DOMHighResTimeStamp (the mark) to the browser's performance timeline. */
   type PerformanceMark = org.scalablytyped.std.PerformanceEntry
+  /** PerformanceMeasure is an abstract interface for PerformanceEntry objects with an entryType of "measure". Entries of this type are created by calling performance.measure() to add a named DOMHighResTimeStamp (the measure) between two marks to the browser's performance timeline. */
   type PerformanceMeasure = org.scalablytyped.std.PerformanceEntry
   type PerformanceObserverCallback = js.Function2[
     /* entries */ org.scalablytyped.std.PerformanceObserverEntryList, 
@@ -241,7 +241,7 @@ package object std {
   /**
     * Obtain the return type of a function type
     */
-  type ReturnType[T /* <: js.Function1[/* repeated */ js.Any, _] */] = js.Any
+  type ReturnType[T /* <: js.Function1[/* args */ js.Any, _] */] = js.Any
   type SVGMatrix = org.scalablytyped.std.DOMMatrix
   type SVGPathSegClosePath = org.scalablytyped.std.SVGPathSeg
   type SVGPoint = org.scalablytyped.std.DOMPoint
@@ -267,12 +267,19 @@ package object std {
   type URIError = org.scalablytyped.std.Error
   type VibratePattern = scala.Double | js.Array[scala.Double]
   type VoidFunction = js.Function0[scala.Unit]
+  /** The WebGLBuffer interface is part of the WebGL API and represents an opaque buffer object storing data such as vertices or colors. */
   type WebGLBuffer = org.scalablytyped.std.WebGLObject
+  /** The WebGLFramebuffer interface is part of the WebGL API and represents a collection of buffers that serve as a rendering destination. */
   type WebGLFramebuffer = org.scalablytyped.std.WebGLObject
+  /** The WebGLProgram is part of the WebGL API and is a combination of two compiled WebGLShaders consisting of a vertex shader and a fragment shader (both written in GLSL). */
   type WebGLProgram = org.scalablytyped.std.WebGLObject
+  /** The WebGLRenderbuffer interface is part of the WebGL API and represents a buffer that can contain an image, or can be source or target of an rendering operation. */
   type WebGLRenderbuffer = org.scalablytyped.std.WebGLObject
+  /** The WebGLRenderingContext interface provides an interface to the OpenGL ES 2.0 graphics rendering context for the drawing surface of an HTML <canvas> element. */
   type WebGLRenderingContext = org.scalablytyped.std.WebGLRenderingContextBase
+  /** The WebGLShader is part of the WebGL API and can either be a vertex or a fragment shader. A WebGLProgram requires both types of shaders. */
   type WebGLShader = org.scalablytyped.std.WebGLObject
+  /** The WebGLTexture interface is part of the WebGL API and represents an opaque texture object providing storage and state for texturing operations. */
   type WebGLTexture = org.scalablytyped.std.WebGLObject
   type WebGLVertexArrayObjectOES = org.scalablytyped.std.WebGLObject
   type WebKitCSSMatrix = org.scalablytyped.std.DOMMatrix

@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** A DeviceAcceleration object provides information about the amount of acceleration the device is experiencing along all three axes. */
 trait DeviceAcceleration extends js.Object {
   val x: Double | Null
   val y: Double | Null

@@ -11,16 +11,21 @@ import scala.scalajs.js.annotation._
 @js.native
 class Worker protected ()
   extends org.scalablytyped.std.Worker {
+  def this(stringUrl: org.scalablytyped.std.URL) = this()
   def this(stringUrl: java.lang.String) = this()
+  def this(stringUrl: org.scalablytyped.std.URL, options: WorkerOptions) = this()
   def this(stringUrl: java.lang.String, options: WorkerOptions) = this()
 }
 
 @JSGlobal("Worker")
 @js.native
 object Worker
-  extends Instantiable1[/* stringUrl */ java.lang.String, org.scalablytyped.std.Worker]
+  extends Instantiable1[
+      (/* stringUrl */ java.lang.String) | (/* stringUrl */ org.scalablytyped.std.URL), 
+      org.scalablytyped.std.Worker
+    ]
      with Instantiable2[
-      /* stringUrl */ java.lang.String, 
+      (/* stringUrl */ java.lang.String) | (/* stringUrl */ org.scalablytyped.std.URL), 
       /* options */ WorkerOptions, 
       org.scalablytyped.std.Worker
     ]

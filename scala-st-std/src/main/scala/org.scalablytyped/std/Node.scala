@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** Node is an interface from which a number of DOM API object types inherit. It allows those types to be treated similarly; for example, inheriting the same set of methods, or being tested in the same way. */
 @js.native
 trait Node extends EventTarget {
   val ATTRIBUTE_NODE: Double = js.native
@@ -49,7 +50,7 @@ trait Node extends EventTarget {
   /**
     * Returns the next sibling.
     */
-  val nextSibling: Node | Null = js.native
+  val nextSibling: ChildNode | Null = js.native
   /**
     * Returns a string appropriate for the type of node, as
     * follows:

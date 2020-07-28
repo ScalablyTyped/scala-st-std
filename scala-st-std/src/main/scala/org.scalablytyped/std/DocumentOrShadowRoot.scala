@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait DocumentOrShadowRoot extends js.Object {
   val activeElement: Element | Null
+  val fullscreenElement: Element | Null
+  val pointerLockElement: Element | Null
   /**
     * Retrieves a collection of styleSheet objects representing the style sheets that correspond to each instance of a link or style object in the document.
     */
@@ -58,6 +60,14 @@ object DocumentOrShadowRoot {
     def setActiveElement(value: Element): Self = this.set("activeElement", value.asInstanceOf[js.Any])
     @scala.inline
     def setActiveElementNull: Self = this.set("activeElement", null)
+    @scala.inline
+    def setFullscreenElement(value: Element): Self = this.set("fullscreenElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFullscreenElementNull: Self = this.set("fullscreenElement", null)
+    @scala.inline
+    def setPointerLockElement(value: Element): Self = this.set("pointerLockElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPointerLockElementNull: Self = this.set("pointerLockElement", null)
   }
   
 }

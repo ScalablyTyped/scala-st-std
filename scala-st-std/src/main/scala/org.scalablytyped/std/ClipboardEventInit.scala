@@ -5,8 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ClipboardEventInit extends EventInit {
-  var data: js.UndefOr[java.lang.String] = js.undefined
-  var dataType: js.UndefOr[java.lang.String] = js.undefined
+  var clipboardData: js.UndefOr[DataTransfer | Null] = js.undefined
 }
 
 object ClipboardEventInit {
@@ -27,13 +26,11 @@ object ClipboardEventInit {
         x
     }
     @scala.inline
-    def setData(value: java.lang.String): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setClipboardData(value: DataTransfer): Self = this.set("clipboardData", value.asInstanceOf[js.Any])
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def deleteClipboardData: Self = this.set("clipboardData", js.undefined)
     @scala.inline
-    def setDataType(value: java.lang.String): Self = this.set("dataType", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteDataType: Self = this.set("dataType", js.undefined)
+    def setClipboardDataNull: Self = this.set("clipboardData", null)
   }
   
 }

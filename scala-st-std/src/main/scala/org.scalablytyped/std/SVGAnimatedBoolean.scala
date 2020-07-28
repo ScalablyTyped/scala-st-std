@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGAnimatedBoolean interface is used for attributes of type boolean which can be animated. */
 trait SVGAnimatedBoolean extends js.Object {
   val animVal: scala.Boolean
   var baseVal: scala.Boolean

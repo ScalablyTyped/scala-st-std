@@ -2,10 +2,12 @@ package org.scalablytyped.std
 
 import org.scalablytyped.std.stdStrings.encrypted
 import org.scalablytyped.std.stdStrings.msneedkey
+import org.scalablytyped.std.stdStrings.waitingforkey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The HTMLMediaElement interface adds to HTMLElement the properties and methods needed to support basic media-related capabilities that are common to audio and video. */
 @js.native
 trait HTMLMediaElement extends HTMLElement {
   val HAVE_CURRENT_DATA: Double = js.native
@@ -109,6 +111,7 @@ trait HTMLMediaElement extends HTMLElement {
   var onencrypted: (js.ThisFunction1[/* this */ this.type, /* ev */ MediaEncryptedEvent, _]) | Null = js.native
   /** @deprecated */
   var onmsneedkey: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onwaitingforkey: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   /**
     * Gets a flag that specifies whether playback is paused.
     */
@@ -173,6 +176,20 @@ trait HTMLMediaElement extends HTMLElement {
   @JSName("addEventListener")
   def addEventListener_msneedkey(
     `type`: msneedkey,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_waitingforkey(`type`: waitingforkey, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_waitingforkey(
+    `type`: waitingforkey,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_waitingforkey(
+    `type`: waitingforkey,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
@@ -241,6 +258,20 @@ trait HTMLMediaElement extends HTMLElement {
   @JSName("removeEventListener")
   def removeEventListener_msneedkey(
     `type`: msneedkey,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_waitingforkey(`type`: waitingforkey, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_waitingforkey(
+    `type`: waitingforkey,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_waitingforkey(
+    `type`: waitingforkey,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native

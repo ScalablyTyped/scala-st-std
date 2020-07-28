@@ -68,6 +68,8 @@ import org.scalablytyped.std.stdStrings.securitypolicyviolation
 import org.scalablytyped.std.stdStrings.seeked
 import org.scalablytyped.std.stdStrings.seeking
 import org.scalablytyped.std.stdStrings.select
+import org.scalablytyped.std.stdStrings.selectionchange
+import org.scalablytyped.std.stdStrings.selectstart
 import org.scalablytyped.std.stdStrings.stalled
 import org.scalablytyped.std.stdStrings.submit
 import org.scalablytyped.std.stdStrings.suspend
@@ -185,8 +187,7 @@ trait GlobalEventHandlers extends js.Object {
     * Fires when an error occurs during object loading.
     * @param ev The event.
     */
-  @JSName("onerror")
-  var onerror_Original: ErrorEventHandler = js.native
+  var onerror: OnErrorEventHandler = js.native
   /**
     * Fires when the object receives focus.
     * @param ev The event.
@@ -302,7 +303,7 @@ trait GlobalEventHandlers extends js.Object {
     * Fires when the user repositions the scroll box in the scroll bar on the object.
     * @param ev The event.
     */
-  var onscroll: (js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]) | Null = js.native
+  var onscroll: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var onsecuritypolicyviolation: (js.ThisFunction1[/* this */ this.type, /* ev */ SecurityPolicyViolationEvent, _]) | Null = js.native
   /**
     * Occurs when the seek operation ends.
@@ -318,7 +319,9 @@ trait GlobalEventHandlers extends js.Object {
     * Fires when the current selection changes.
     * @param ev The event.
     */
-  var onselect: (js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]) | Null = js.native
+  var onselect: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onselectionchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onselectstart: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   /**
     * Occurs when the download has stopped.
     * @param ev The event.
@@ -1260,17 +1263,17 @@ trait GlobalEventHandlers extends js.Object {
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_scroll(`type`: scroll, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
+  def addEventListener_scroll(`type`: scroll, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_scroll(
     `type`: scroll,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_scroll(
     `type`: scroll,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -1319,17 +1322,45 @@ trait GlobalEventHandlers extends js.Object {
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_select(`type`: select, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
+  def addEventListener_select(`type`: select, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_select(
     `type`: select,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_select(
     `type`: select,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectionchange(`type`: selectionchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectionchange(
+    `type`: selectionchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectionchange(
+    `type`: selectionchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectstart(`type`: selectstart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectstart(
+    `type`: selectstart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectstart(
+    `type`: selectstart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -1567,147 +1598,6 @@ trait GlobalEventHandlers extends js.Object {
     `type`: wheel,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, _],
     options: scala.Boolean
-  ): Unit = js.native
-  /**
-    * Fires when an error occurs during object loading.
-    * @param ev The event.
-    */
-  def onerror(event: Event): Unit = js.native
-  def onerror(
-    event: Event,
-    source: js.UndefOr[scala.Nothing],
-    fileno: js.UndefOr[scala.Nothing],
-    columnNumber: js.UndefOr[scala.Nothing],
-    error: Error
-  ): Unit = js.native
-  def onerror(
-    event: Event,
-    source: js.UndefOr[scala.Nothing],
-    fileno: js.UndefOr[scala.Nothing],
-    columnNumber: Double
-  ): Unit = js.native
-  def onerror(
-    event: Event,
-    source: js.UndefOr[scala.Nothing],
-    fileno: js.UndefOr[scala.Nothing],
-    columnNumber: Double,
-    error: Error
-  ): Unit = js.native
-  def onerror(event: Event, source: js.UndefOr[scala.Nothing], fileno: Double): Unit = js.native
-  def onerror(
-    event: Event,
-    source: js.UndefOr[scala.Nothing],
-    fileno: Double,
-    columnNumber: js.UndefOr[scala.Nothing],
-    error: Error
-  ): Unit = js.native
-  def onerror(event: Event, source: js.UndefOr[scala.Nothing], fileno: Double, columnNumber: Double): Unit = js.native
-  def onerror(
-    event: Event,
-    source: js.UndefOr[scala.Nothing],
-    fileno: Double,
-    columnNumber: Double,
-    error: Error
-  ): Unit = js.native
-  def onerror(event: Event, source: java.lang.String): Unit = js.native
-  def onerror(
-    event: Event,
-    source: java.lang.String,
-    fileno: js.UndefOr[scala.Nothing],
-    columnNumber: js.UndefOr[scala.Nothing],
-    error: Error
-  ): Unit = js.native
-  def onerror(event: Event, source: java.lang.String, fileno: js.UndefOr[scala.Nothing], columnNumber: Double): Unit = js.native
-  def onerror(
-    event: Event,
-    source: java.lang.String,
-    fileno: js.UndefOr[scala.Nothing],
-    columnNumber: Double,
-    error: Error
-  ): Unit = js.native
-  def onerror(event: Event, source: java.lang.String, fileno: Double): Unit = js.native
-  def onerror(
-    event: Event,
-    source: java.lang.String,
-    fileno: Double,
-    columnNumber: js.UndefOr[scala.Nothing],
-    error: Error
-  ): Unit = js.native
-  def onerror(event: Event, source: java.lang.String, fileno: Double, columnNumber: Double): Unit = js.native
-  def onerror(event: Event, source: java.lang.String, fileno: Double, columnNumber: Double, error: Error): Unit = js.native
-  def onerror(event: java.lang.String): Unit = js.native
-  def onerror(
-    event: java.lang.String,
-    source: js.UndefOr[scala.Nothing],
-    fileno: js.UndefOr[scala.Nothing],
-    columnNumber: js.UndefOr[scala.Nothing],
-    error: Error
-  ): Unit = js.native
-  def onerror(
-    event: java.lang.String,
-    source: js.UndefOr[scala.Nothing],
-    fileno: js.UndefOr[scala.Nothing],
-    columnNumber: Double
-  ): Unit = js.native
-  def onerror(
-    event: java.lang.String,
-    source: js.UndefOr[scala.Nothing],
-    fileno: js.UndefOr[scala.Nothing],
-    columnNumber: Double,
-    error: Error
-  ): Unit = js.native
-  def onerror(event: java.lang.String, source: js.UndefOr[scala.Nothing], fileno: Double): Unit = js.native
-  def onerror(
-    event: java.lang.String,
-    source: js.UndefOr[scala.Nothing],
-    fileno: Double,
-    columnNumber: js.UndefOr[scala.Nothing],
-    error: Error
-  ): Unit = js.native
-  def onerror(event: java.lang.String, source: js.UndefOr[scala.Nothing], fileno: Double, columnNumber: Double): Unit = js.native
-  def onerror(
-    event: java.lang.String,
-    source: js.UndefOr[scala.Nothing],
-    fileno: Double,
-    columnNumber: Double,
-    error: Error
-  ): Unit = js.native
-  def onerror(event: java.lang.String, source: java.lang.String): Unit = js.native
-  def onerror(
-    event: java.lang.String,
-    source: java.lang.String,
-    fileno: js.UndefOr[scala.Nothing],
-    columnNumber: js.UndefOr[scala.Nothing],
-    error: Error
-  ): Unit = js.native
-  def onerror(
-    event: java.lang.String,
-    source: java.lang.String,
-    fileno: js.UndefOr[scala.Nothing],
-    columnNumber: Double
-  ): Unit = js.native
-  def onerror(
-    event: java.lang.String,
-    source: java.lang.String,
-    fileno: js.UndefOr[scala.Nothing],
-    columnNumber: Double,
-    error: Error
-  ): Unit = js.native
-  def onerror(event: java.lang.String, source: java.lang.String, fileno: Double): Unit = js.native
-  def onerror(
-    event: java.lang.String,
-    source: java.lang.String,
-    fileno: Double,
-    columnNumber: js.UndefOr[scala.Nothing],
-    error: Error
-  ): Unit = js.native
-  def onerror(event: java.lang.String, source: java.lang.String, fileno: Double, columnNumber: Double): Unit = js.native
-  def onerror(
-    event: java.lang.String,
-    source: java.lang.String,
-    fileno: Double,
-    columnNumber: Double,
-    error: Error
   ): Unit = js.native
   def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   def removeEventListener(
@@ -2614,17 +2504,17 @@ trait GlobalEventHandlers extends js.Object {
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_scroll(`type`: scroll, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
+  def removeEventListener_scroll(`type`: scroll, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_scroll(
     `type`: scroll,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_scroll(
     `type`: scroll,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
@@ -2673,17 +2563,45 @@ trait GlobalEventHandlers extends js.Object {
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_select(`type`: select, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
+  def removeEventListener_select(`type`: select, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_select(
     `type`: select,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_select(
     `type`: select,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectionchange(`type`: selectionchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectionchange(
+    `type`: selectionchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectionchange(
+    `type`: selectionchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectstart(`type`: selectstart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectstart(
+    `type`: selectstart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectstart(
+    `type`: selectstart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")

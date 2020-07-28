@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGTransformList defines a list of SVGTransform objects. */
 trait SVGTransformList extends js.Object {
   val numberOfItems: Double
   def appendItem(newItem: SVGTransform): SVGTransform

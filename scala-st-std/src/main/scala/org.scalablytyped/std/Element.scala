@@ -13,6 +13,7 @@ import org.scalablytyped.std.stdStrings.audio
 import org.scalablytyped.std.stdStrings.b
 import org.scalablytyped.std.stdStrings.base
 import org.scalablytyped.std.stdStrings.basefont
+import org.scalablytyped.std.stdStrings.bdi
 import org.scalablytyped.std.stdStrings.bdo
 import org.scalablytyped.std.stdStrings.blockquote
 import org.scalablytyped.std.stdStrings.body
@@ -105,6 +106,7 @@ import org.scalablytyped.std.stdStrings.li
 import org.scalablytyped.std.stdStrings.line
 import org.scalablytyped.std.stdStrings.linearGradient
 import org.scalablytyped.std.stdStrings.link
+import org.scalablytyped.std.stdStrings.main
 import org.scalablytyped.std.stdStrings.map
 import org.scalablytyped.std.stdStrings.mark
 import org.scalablytyped.std.stdStrings.marker
@@ -132,6 +134,7 @@ import org.scalablytyped.std.stdStrings.progress
 import org.scalablytyped.std.stdStrings.q
 import org.scalablytyped.std.stdStrings.radialGradient
 import org.scalablytyped.std.stdStrings.rect
+import org.scalablytyped.std.stdStrings.rp
 import org.scalablytyped.std.stdStrings.rt
 import org.scalablytyped.std.stdStrings.ruby
 import org.scalablytyped.std.stdStrings.s
@@ -147,6 +150,7 @@ import org.scalablytyped.std.stdStrings.stop
 import org.scalablytyped.std.stdStrings.strong
 import org.scalablytyped.std.stdStrings.style
 import org.scalablytyped.std.stdStrings.sub
+import org.scalablytyped.std.stdStrings.summary
 import org.scalablytyped.std.stdStrings.sup
 import org.scalablytyped.std.stdStrings.svg
 import org.scalablytyped.std.stdStrings.switch
@@ -176,6 +180,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** Element is the most general base class from which all objects in a Document inherit. It only has methods and properties common to all kinds of elements. More specific classes inherit from Element. */
 @js.native
 trait Element
   extends ChildNode
@@ -263,7 +268,7 @@ trait Element
   /**
     * Creates a shadow root for element and returns it.
     */
-  def attachShadow(shadowRootInitDict: ShadowRootInit): ShadowRoot = js.native
+  def attachShadow(init: ShadowRootInit): ShadowRoot = js.native
   def closest(selector: java.lang.String): Element | Null = js.native
   /**
     * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
@@ -290,6 +295,8 @@ trait Element
   def closest_base(selector: base): HTMLBaseElement | Null = js.native
   @JSName("closest")
   def closest_basefont(selector: basefont): HTMLBaseFontElement | Null = js.native
+  @JSName("closest")
+  def closest_bdi(selector: bdi): HTMLElement | Null = js.native
   @JSName("closest")
   def closest_bdo(selector: bdo): HTMLElement | Null = js.native
   @JSName("closest")
@@ -467,6 +474,8 @@ trait Element
   @JSName("closest")
   def closest_link(selector: link): HTMLLinkElement | Null = js.native
   @JSName("closest")
+  def closest_main(selector: main): HTMLElement | Null = js.native
+  @JSName("closest")
   def closest_map(selector: map): HTMLMapElement | Null = js.native
   @JSName("closest")
   def closest_mark(selector: mark): HTMLElement | Null = js.native
@@ -523,6 +532,8 @@ trait Element
   @JSName("closest")
   def closest_rect(selector: rect): SVGRectElement | Null = js.native
   @JSName("closest")
+  def closest_rp(selector: rp): HTMLElement | Null = js.native
+  @JSName("closest")
   def closest_rt(selector: rt): HTMLElement | Null = js.native
   @JSName("closest")
   def closest_ruby(selector: ruby): HTMLElement | Null = js.native
@@ -552,6 +563,8 @@ trait Element
   def closest_style(selector: style): HTMLStyleElement | Null = js.native
   @JSName("closest")
   def closest_sub(selector: sub): HTMLElement | Null = js.native
+  @JSName("closest")
+  def closest_summary(selector: summary): HTMLElement | Null = js.native
   @JSName("closest")
   def closest_sup(selector: sup): HTMLElement | Null = js.native
   @JSName("closest")
@@ -652,6 +665,8 @@ trait Element
   def getElementsByTagName_base(qualifiedName: base): HTMLCollectionOf[HTMLBaseElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_basefont(qualifiedName: basefont): HTMLCollectionOf[HTMLBaseFontElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_bdi(qualifiedName: bdi): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_bdo(qualifiedName: bdo): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
@@ -829,6 +844,8 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_link(qualifiedName: link): HTMLCollectionOf[HTMLLinkElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_main(qualifiedName: main): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_map(qualifiedName: map): HTMLCollectionOf[HTMLMapElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_mark(qualifiedName: mark): HTMLCollectionOf[HTMLElement] = js.native
@@ -885,6 +902,8 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_rect(qualifiedName: rect): HTMLCollectionOf[SVGRectElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_rp(qualifiedName: rp): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_rt(qualifiedName: rt): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_ruby(qualifiedName: ruby): HTMLCollectionOf[HTMLElement] = js.native
@@ -914,6 +933,8 @@ trait Element
   def getElementsByTagName_style(qualifiedName: style): HTMLCollectionOf[HTMLStyleElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_sub(qualifiedName: sub): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_summary(qualifiedName: summary): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_sup(qualifiedName: sup): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
@@ -1029,8 +1050,15 @@ trait Element
   ): Unit = js.native
   /**
     * Displays element fullscreen and resolves promise when done.
+    * When supplied, options's navigationUI member indicates whether showing
+    * navigation UI while in fullscreen is preferred or not. If set to "show", navigation
+    * simplicity is preferred over screen space, and if set to "hide", more screen space
+    * is preferred. User agents are always free to honor user preference over the application's. The
+    * default value "auto" indicates no application preference.
     */
   def requestFullscreen(): js.Promise[Unit] = js.native
+  def requestFullscreen(options: FullscreenOptions): js.Promise[Unit] = js.native
+  def requestPointerLock(): Unit = js.native
   def scroll(): Unit = js.native
   def scroll(options: ScrollToOptions): Unit = js.native
   def scroll(x: Double, y: Double): Unit = js.native

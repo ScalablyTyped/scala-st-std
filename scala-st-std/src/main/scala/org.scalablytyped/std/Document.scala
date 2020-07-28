@@ -19,6 +19,7 @@ import org.scalablytyped.std.stdStrings.audio
 import org.scalablytyped.std.stdStrings.b
 import org.scalablytyped.std.stdStrings.base
 import org.scalablytyped.std.stdStrings.basefont
+import org.scalablytyped.std.stdStrings.bdi
 import org.scalablytyped.std.stdStrings.bdo
 import org.scalablytyped.std.stdStrings.blockquote
 import org.scalablytyped.std.stdStrings.body
@@ -32,8 +33,6 @@ import org.scalablytyped.std.stdStrings.clipPath
 import org.scalablytyped.std.stdStrings.code
 import org.scalablytyped.std.stdStrings.col
 import org.scalablytyped.std.stdStrings.colgroup
-import org.scalablytyped.std.stdStrings.componentTransferFunction
-import org.scalablytyped.std.stdStrings.cursor
 import org.scalablytyped.std.stdStrings.data
 import org.scalablytyped.std.stdStrings.datalist
 import org.scalablytyped.std.stdStrings.dd
@@ -87,7 +86,6 @@ import org.scalablytyped.std.stdStrings.frameset
 import org.scalablytyped.std.stdStrings.fullscreenchange
 import org.scalablytyped.std.stdStrings.fullscreenerror
 import org.scalablytyped.std.stdStrings.g
-import org.scalablytyped.std.stdStrings.gradient
 import org.scalablytyped.std.stdStrings.h1
 import org.scalablytyped.std.stdStrings.h2
 import org.scalablytyped.std.stdStrings.h3
@@ -114,6 +112,7 @@ import org.scalablytyped.std.stdStrings.line
 import org.scalablytyped.std.stdStrings.linearGradient
 import org.scalablytyped.std.stdStrings.link
 import org.scalablytyped.std.stdStrings.listing
+import org.scalablytyped.std.stdStrings.main
 import org.scalablytyped.std.stdStrings.map
 import org.scalablytyped.std.stdStrings.mark
 import org.scalablytyped.std.stdStrings.marker
@@ -134,6 +133,8 @@ import org.scalablytyped.std.stdStrings.param
 import org.scalablytyped.std.stdStrings.path
 import org.scalablytyped.std.stdStrings.pattern
 import org.scalablytyped.std.stdStrings.picture
+import org.scalablytyped.std.stdStrings.pointerlockchange
+import org.scalablytyped.std.stdStrings.pointerlockerror
 import org.scalablytyped.std.stdStrings.polygon
 import org.scalablytyped.std.stdStrings.polyline
 import org.scalablytyped.std.stdStrings.pre
@@ -142,6 +143,7 @@ import org.scalablytyped.std.stdStrings.q
 import org.scalablytyped.std.stdStrings.radialGradient
 import org.scalablytyped.std.stdStrings.readystatechange
 import org.scalablytyped.std.stdStrings.rect
+import org.scalablytyped.std.stdStrings.rp
 import org.scalablytyped.std.stdStrings.rt
 import org.scalablytyped.std.stdStrings.ruby
 import org.scalablytyped.std.stdStrings.s
@@ -157,6 +159,7 @@ import org.scalablytyped.std.stdStrings.stop
 import org.scalablytyped.std.stdStrings.strong
 import org.scalablytyped.std.stdStrings.style
 import org.scalablytyped.std.stdStrings.sub
+import org.scalablytyped.std.stdStrings.summary
 import org.scalablytyped.std.stdStrings.sup
 import org.scalablytyped.std.stdStrings.svg
 import org.scalablytyped.std.stdStrings.switch
@@ -166,9 +169,7 @@ import org.scalablytyped.std.stdStrings.tbody
 import org.scalablytyped.std.stdStrings.td
 import org.scalablytyped.std.stdStrings.template
 import org.scalablytyped.std.stdStrings.text
-import org.scalablytyped.std.stdStrings.textContent
 import org.scalablytyped.std.stdStrings.textPath
-import org.scalablytyped.std.stdStrings.textPositioning
 import org.scalablytyped.std.stdStrings.textarea
 import org.scalablytyped.std.stdStrings.tfoot
 import org.scalablytyped.std.stdStrings.th
@@ -190,6 +191,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The Document interface represents any web page loaded in the browser and serves as an entry point into the web page's content, which is the DOM tree. */
 @js.native
 trait Document
   extends Node
@@ -349,6 +351,8 @@ trait Document
   var location: Location = js.native
   var onfullscreenchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var onfullscreenerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onpointerlockchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onpointerlockerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   /**
     * Fires when the state of the object has changed.
     * @param ev The event
@@ -397,9 +401,6 @@ trait Document
   ): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
-  /**
-    * Returns an object representing the current selection of the document that is loaded into the object displaying a webpage.
-    */
   @JSName("addEventListener")
   def addEventListener_fullscreenchange(`type`: fullscreenchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
@@ -425,6 +426,34 @@ trait Document
   @JSName("addEventListener")
   def addEventListener_fullscreenerror(
     `type`: fullscreenerror,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_pointerlockchange(`type`: pointerlockchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_pointerlockchange(
+    `type`: pointerlockchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_pointerlockchange(
+    `type`: pointerlockchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_pointerlockerror(`type`: pointerlockerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_pointerlockerror(
+    `type`: pointerlockerror,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_pointerlockerror(
+    `type`: pointerlockerror,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
@@ -498,11 +527,6 @@ trait Document
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: a): SVGAElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: circle): SVGCircleElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: clipPath): SVGClipPathElement = js.native
-  def createElementNS(
-    namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg,
-    qualifiedName: componentTransferFunction
-  ): SVGComponentTransferFunctionElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: cursor): SVGCursorElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: defs): SVGDefsElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: desc): SVGDescElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: ellipse): SVGEllipseElement = js.native
@@ -539,7 +563,6 @@ trait Document
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: filter): SVGFilterElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: foreignObject): SVGForeignObjectElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: g): SVGGElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: gradient): SVGGradientElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: image): SVGImageElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: line): SVGLineElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: linearGradient): SVGLinearGradientElement = js.native
@@ -559,9 +582,7 @@ trait Document
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: switch): SVGSwitchElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: symbol): SVGSymbolElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: text): SVGTextElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: textContent): SVGTextContentElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: textPath): SVGTextPathElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: textPositioning): SVGTextPositioningElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: title): SVGTitleElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: tspan): SVGTSpanElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: use): SVGUseElement = js.native
@@ -641,6 +662,10 @@ trait Document
   def createElement_basefont(tagName: basefont): HTMLBaseFontElement = js.native
   @JSName("createElement")
   def createElement_basefont(tagName: basefont, options: ElementCreationOptions): HTMLBaseFontElement = js.native
+  @JSName("createElement")
+  def createElement_bdi(tagName: bdi): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_bdi(tagName: bdi, options: ElementCreationOptions): HTMLElement = js.native
   @JSName("createElement")
   def createElement_bdo(tagName: bdo): HTMLElement = js.native
   @JSName("createElement")
@@ -859,6 +884,10 @@ trait Document
   @JSName("createElement")
   def createElement_listing(tagName: listing, options: ElementCreationOptions): HTMLPreElement = js.native
   @JSName("createElement")
+  def createElement_main(tagName: main): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_main(tagName: main, options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
   def createElement_map(tagName: map): HTMLMapElement = js.native
   @JSName("createElement")
   def createElement_map(tagName: map, options: ElementCreationOptions): HTMLMapElement = js.native
@@ -935,6 +964,10 @@ trait Document
   @JSName("createElement")
   def createElement_q(tagName: q, options: ElementCreationOptions): HTMLQuoteElement = js.native
   @JSName("createElement")
+  def createElement_rp(tagName: rp): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_rp(tagName: rp, options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
   def createElement_rt(tagName: rt): HTMLElement = js.native
   @JSName("createElement")
   def createElement_rt(tagName: rt, options: ElementCreationOptions): HTMLElement = js.native
@@ -990,6 +1023,10 @@ trait Document
   def createElement_sub(tagName: sub): HTMLElement = js.native
   @JSName("createElement")
   def createElement_sub(tagName: sub, options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_summary(tagName: summary): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_summary(tagName: summary, options: ElementCreationOptions): HTMLElement = js.native
   @JSName("createElement")
   def createElement_sup(tagName: sup): HTMLElement = js.native
   @JSName("createElement")
@@ -1316,6 +1353,7 @@ trait Document
     * resolves promise when done.
     */
   def exitFullscreen(): js.Promise[Unit] = js.native
+  def exitPointerLock(): Unit = js.native
   def getAnimations(): js.Array[Animation] = js.native
   /**
     * collection = element . getElementsByClassName(classNames)
@@ -1365,6 +1403,8 @@ trait Document
   def getElementsByTagName_base(qualifiedName: base): HTMLCollectionOf[HTMLBaseElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_basefont(qualifiedName: basefont): HTMLCollectionOf[HTMLBaseFontElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_bdi(qualifiedName: bdi): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_bdo(qualifiedName: bdo): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
@@ -1542,6 +1582,8 @@ trait Document
   @JSName("getElementsByTagName")
   def getElementsByTagName_link(qualifiedName: link): HTMLCollectionOf[HTMLLinkElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_main(qualifiedName: main): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_map(qualifiedName: map): HTMLCollectionOf[HTMLMapElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_mark(qualifiedName: mark): HTMLCollectionOf[HTMLElement] = js.native
@@ -1598,6 +1640,8 @@ trait Document
   @JSName("getElementsByTagName")
   def getElementsByTagName_rect(qualifiedName: rect): HTMLCollectionOf[SVGRectElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_rp(qualifiedName: rp): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_rt(qualifiedName: rt): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_ruby(qualifiedName: ruby): HTMLCollectionOf[HTMLElement] = js.native
@@ -1627,6 +1671,8 @@ trait Document
   def getElementsByTagName_style(qualifiedName: style): HTMLCollectionOf[HTMLStyleElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_sub(qualifiedName: sub): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_summary(qualifiedName: summary): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_sup(qualifiedName: sup): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
@@ -1683,6 +1729,11 @@ trait Document
     * Gets a value indicating whether the object currently has focus.
     */
   def hasFocus(): scala.Boolean = js.native
+  /**
+    * Returns a copy of node. If deep is true, the copy also includes the node's descendants.
+    * If node is a document or a shadow root, throws a
+    * "NotSupportedError" DOMException.
+    */
   def importNode[T /* <: Node */](importedNode: T, deep: scala.Boolean): T = js.native
   /**
     * Opens a new window and loads a document specified by a given URL. Also, opens a new window that uses the url parameter and the name parameter to collect the output of the write method and the writeln method.
@@ -1804,6 +1855,34 @@ trait Document
   @JSName("removeEventListener")
   def removeEventListener_fullscreenerror(
     `type`: fullscreenerror,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pointerlockchange(`type`: pointerlockchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pointerlockchange(
+    `type`: pointerlockchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pointerlockchange(
+    `type`: pointerlockchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pointerlockerror(`type`: pointerlockerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pointerlockerror(
+    `type`: pointerlockerror,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pointerlockerror(
+    `type`: pointerlockerror,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native

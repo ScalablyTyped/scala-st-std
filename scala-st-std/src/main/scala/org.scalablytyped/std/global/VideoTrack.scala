@@ -20,7 +20,7 @@ class VideoTrack ()
   /* CompleteClass */
   override var selected: scala.Boolean = js.native
   /* CompleteClass */
-  override val sourceBuffer: org.scalablytyped.std.SourceBuffer = js.native
+  override val sourceBuffer: org.scalablytyped.std.SourceBuffer | Null = js.native
 }
 
 @JSGlobal("VideoTrack")

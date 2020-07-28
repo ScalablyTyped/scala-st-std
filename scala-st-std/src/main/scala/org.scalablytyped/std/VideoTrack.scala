@@ -4,13 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The VideoTrack interface represents a single video track from a <video> element. */
 trait VideoTrack extends js.Object {
   val id: java.lang.String
   var kind: java.lang.String
   val label: java.lang.String
   var language: java.lang.String
   var selected: scala.Boolean
-  val sourceBuffer: SourceBuffer
+  val sourceBuffer: SourceBuffer | Null
 }
 
 object VideoTrack {
@@ -20,10 +21,9 @@ object VideoTrack {
     kind: java.lang.String,
     label: java.lang.String,
     language: java.lang.String,
-    selected: scala.Boolean,
-    sourceBuffer: SourceBuffer
+    selected: scala.Boolean
   ): VideoTrack = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], sourceBuffer = sourceBuffer.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoTrack]
   }
   @scala.inline
@@ -49,6 +49,8 @@ object VideoTrack {
     def setSelected(value: scala.Boolean): Self = this.set("selected", value.asInstanceOf[js.Any])
     @scala.inline
     def setSourceBuffer(value: SourceBuffer): Self = this.set("sourceBuffer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourceBufferNull: Self = this.set("sourceBuffer", null)
   }
   
 }

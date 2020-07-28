@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** @deprecated */
 @JSGlobal("event")
 @js.native
 object event

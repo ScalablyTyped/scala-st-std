@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGComponentTransferFunctionElement interface defines a base interface used by the component transfer function interfaces. */
 @js.native
 trait SVGComponentTransferFunctionElement extends SVGElement {
   val SVG_FECOMPONENTTRANSFER_TYPE_DISCRETE: Double = js.native

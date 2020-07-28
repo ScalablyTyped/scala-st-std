@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGFEFloodElement interface corresponds to the <feFlood> element. */
 @js.native
 trait SVGFEFloodElement
   extends SVGElement

@@ -16,6 +16,7 @@ trait HTMLElementTagNameMap extends js.Object {
   var b: HTMLElement
   var base: HTMLBaseElement
   var basefont: HTMLBaseFontElement
+  var bdi: HTMLElement
   var bdo: HTMLElement
   var blockquote: HTMLQuoteElement
   var body: HTMLBodyElement
@@ -69,6 +70,7 @@ trait HTMLElementTagNameMap extends js.Object {
   var legend: HTMLLegendElement
   var li: HTMLLIElement
   var link: HTMLLinkElement
+  var main: HTMLElement
   var map: HTMLMapElement
   var mark: HTMLElement
   var marquee: HTMLMarqueeElement
@@ -88,6 +90,7 @@ trait HTMLElementTagNameMap extends js.Object {
   var pre: HTMLPreElement
   var progress: HTMLProgressElement
   var q: HTMLQuoteElement
+  var rp: HTMLElement
   var rt: HTMLElement
   var ruby: HTMLElement
   var s: HTMLElement
@@ -102,6 +105,7 @@ trait HTMLElementTagNameMap extends js.Object {
   var strong: HTMLElement
   var style: HTMLStyleElement
   var sub: HTMLElement
+  var summary: HTMLElement
   var sup: HTMLElement
   var table: HTMLTableElement
   var tbody: HTMLTableSectionElement
@@ -136,6 +140,7 @@ object HTMLElementTagNameMap {
     b: HTMLElement,
     base: HTMLBaseElement,
     basefont: HTMLBaseFontElement,
+    bdi: HTMLElement,
     bdo: HTMLElement,
     blockquote: HTMLQuoteElement,
     body: HTMLBodyElement,
@@ -189,6 +194,7 @@ object HTMLElementTagNameMap {
     legend: HTMLLegendElement,
     li: HTMLLIElement,
     link: HTMLLinkElement,
+    main: HTMLElement,
     map: HTMLMapElement,
     mark: HTMLElement,
     marquee: HTMLMarqueeElement,
@@ -208,6 +214,7 @@ object HTMLElementTagNameMap {
     pre: HTMLPreElement,
     progress: HTMLProgressElement,
     q: HTMLQuoteElement,
+    rp: HTMLElement,
     rt: HTMLElement,
     ruby: HTMLElement,
     s: HTMLElement,
@@ -222,6 +229,7 @@ object HTMLElementTagNameMap {
     strong: HTMLElement,
     style: HTMLStyleElement,
     sub: HTMLElement,
+    summary: HTMLElement,
     sup: HTMLElement,
     table: HTMLTableElement,
     tbody: HTMLTableSectionElement,
@@ -241,7 +249,7 @@ object HTMLElementTagNameMap {
     video: HTMLVideoElement,
     wbr: HTMLElement
   ): HTMLElementTagNameMap = {
-    val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], abbr = abbr.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any], applet = applet.asInstanceOf[js.Any], area = area.asInstanceOf[js.Any], article = article.asInstanceOf[js.Any], aside = aside.asInstanceOf[js.Any], audio = audio.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], basefont = basefont.asInstanceOf[js.Any], bdo = bdo.asInstanceOf[js.Any], blockquote = blockquote.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], br = br.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], canvas = canvas.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], cite = cite.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], colgroup = colgroup.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], datalist = datalist.asInstanceOf[js.Any], dd = dd.asInstanceOf[js.Any], del = del.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], dfn = dfn.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any], div = div.asInstanceOf[js.Any], dl = dl.asInstanceOf[js.Any], dt = dt.asInstanceOf[js.Any], em = em.asInstanceOf[js.Any], embed = embed.asInstanceOf[js.Any], fieldset = fieldset.asInstanceOf[js.Any], figcaption = figcaption.asInstanceOf[js.Any], figure = figure.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], frameset = frameset.asInstanceOf[js.Any], h1 = h1.asInstanceOf[js.Any], h2 = h2.asInstanceOf[js.Any], h3 = h3.asInstanceOf[js.Any], h4 = h4.asInstanceOf[js.Any], h5 = h5.asInstanceOf[js.Any], h6 = h6.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], hgroup = hgroup.asInstanceOf[js.Any], hr = hr.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], iframe = iframe.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], ins = ins.asInstanceOf[js.Any], kbd = kbd.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any], li = li.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], marquee = marquee.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], meter = meter.asInstanceOf[js.Any], nav = nav.asInstanceOf[js.Any], noscript = noscript.asInstanceOf[js.Any], ol = ol.asInstanceOf[js.Any], optgroup = optgroup.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], param = param.asInstanceOf[js.Any], picture = picture.asInstanceOf[js.Any], pre = pre.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any], rt = rt.asInstanceOf[js.Any], ruby = ruby.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], samp = samp.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], strong = strong.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any], sup = sup.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], tbody = tbody.asInstanceOf[js.Any], td = td.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], textarea = textarea.asInstanceOf[js.Any], tfoot = tfoot.asInstanceOf[js.Any], th = th.asInstanceOf[js.Any], thead = thead.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], tr = tr.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any], ul = ul.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], wbr = wbr.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], abbr = abbr.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any], applet = applet.asInstanceOf[js.Any], area = area.asInstanceOf[js.Any], article = article.asInstanceOf[js.Any], aside = aside.asInstanceOf[js.Any], audio = audio.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], basefont = basefont.asInstanceOf[js.Any], bdi = bdi.asInstanceOf[js.Any], bdo = bdo.asInstanceOf[js.Any], blockquote = blockquote.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], br = br.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], canvas = canvas.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], cite = cite.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], colgroup = colgroup.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], datalist = datalist.asInstanceOf[js.Any], dd = dd.asInstanceOf[js.Any], del = del.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], dfn = dfn.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any], div = div.asInstanceOf[js.Any], dl = dl.asInstanceOf[js.Any], dt = dt.asInstanceOf[js.Any], em = em.asInstanceOf[js.Any], embed = embed.asInstanceOf[js.Any], fieldset = fieldset.asInstanceOf[js.Any], figcaption = figcaption.asInstanceOf[js.Any], figure = figure.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], frameset = frameset.asInstanceOf[js.Any], h1 = h1.asInstanceOf[js.Any], h2 = h2.asInstanceOf[js.Any], h3 = h3.asInstanceOf[js.Any], h4 = h4.asInstanceOf[js.Any], h5 = h5.asInstanceOf[js.Any], h6 = h6.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], hgroup = hgroup.asInstanceOf[js.Any], hr = hr.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], iframe = iframe.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], ins = ins.asInstanceOf[js.Any], kbd = kbd.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any], li = li.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], main = main.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], marquee = marquee.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], meter = meter.asInstanceOf[js.Any], nav = nav.asInstanceOf[js.Any], noscript = noscript.asInstanceOf[js.Any], ol = ol.asInstanceOf[js.Any], optgroup = optgroup.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], param = param.asInstanceOf[js.Any], picture = picture.asInstanceOf[js.Any], pre = pre.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any], rp = rp.asInstanceOf[js.Any], rt = rt.asInstanceOf[js.Any], ruby = ruby.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], samp = samp.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], strong = strong.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], sup = sup.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], tbody = tbody.asInstanceOf[js.Any], td = td.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], textarea = textarea.asInstanceOf[js.Any], tfoot = tfoot.asInstanceOf[js.Any], th = th.asInstanceOf[js.Any], thead = thead.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], tr = tr.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any], ul = ul.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], wbr = wbr.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("var")(`var`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTMLElementTagNameMap]
@@ -279,6 +287,8 @@ object HTMLElementTagNameMap {
     def setBase(value: HTMLBaseElement): Self = this.set("base", value.asInstanceOf[js.Any])
     @scala.inline
     def setBasefont(value: HTMLBaseFontElement): Self = this.set("basefont", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBdi(value: HTMLElement): Self = this.set("bdi", value.asInstanceOf[js.Any])
     @scala.inline
     def setBdo(value: HTMLElement): Self = this.set("bdo", value.asInstanceOf[js.Any])
     @scala.inline
@@ -386,6 +396,8 @@ object HTMLElementTagNameMap {
     @scala.inline
     def setLink(value: HTMLLinkElement): Self = this.set("link", value.asInstanceOf[js.Any])
     @scala.inline
+    def setMain(value: HTMLElement): Self = this.set("main", value.asInstanceOf[js.Any])
+    @scala.inline
     def setMap(value: HTMLMapElement): Self = this.set("map", value.asInstanceOf[js.Any])
     @scala.inline
     def setMark(value: HTMLElement): Self = this.set("mark", value.asInstanceOf[js.Any])
@@ -424,6 +436,8 @@ object HTMLElementTagNameMap {
     @scala.inline
     def setQ(value: HTMLQuoteElement): Self = this.set("q", value.asInstanceOf[js.Any])
     @scala.inline
+    def setRp(value: HTMLElement): Self = this.set("rp", value.asInstanceOf[js.Any])
+    @scala.inline
     def setRt(value: HTMLElement): Self = this.set("rt", value.asInstanceOf[js.Any])
     @scala.inline
     def setRuby(value: HTMLElement): Self = this.set("ruby", value.asInstanceOf[js.Any])
@@ -451,6 +465,8 @@ object HTMLElementTagNameMap {
     def setStyle(value: HTMLStyleElement): Self = this.set("style", value.asInstanceOf[js.Any])
     @scala.inline
     def setSub(value: HTMLElement): Self = this.set("sub", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSummary(value: HTMLElement): Self = this.set("summary", value.asInstanceOf[js.Any])
     @scala.inline
     def setSup(value: HTMLElement): Self = this.set("sup", value.asInstanceOf[js.Any])
     @scala.inline

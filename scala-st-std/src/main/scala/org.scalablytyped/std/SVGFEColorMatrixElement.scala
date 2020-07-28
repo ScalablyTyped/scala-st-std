@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGFEColorMatrixElement interface corresponds to the <feColorMatrix> element. */
 @js.native
 trait SVGFEColorMatrixElement
   extends SVGElement

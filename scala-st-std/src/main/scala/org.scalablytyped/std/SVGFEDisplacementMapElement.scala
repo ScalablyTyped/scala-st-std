@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGFEDisplacementMapElement interface corresponds to the <feDisplacementMap> element. */
 @js.native
 trait SVGFEDisplacementMapElement
   extends SVGElement

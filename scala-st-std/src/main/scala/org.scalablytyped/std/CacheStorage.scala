@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The CacheStorage interface represents the storage for Cache objects. */
 @js.native
 trait CacheStorage extends js.Object {
   def delete(cacheName: java.lang.String): js.Promise[scala.Boolean] = js.native

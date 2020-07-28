@@ -514,6 +514,7 @@ trait WebGLRenderingContextBase extends js.Object {
   def isTexture(texture: WebGLTexture): GLboolean = js.native
   def lineWidth(width: GLfloat): Unit = js.native
   def linkProgram(program: WebGLProgram): Unit = js.native
+  def pixelStorei(pname: GLenum, param: GLboolean): Unit = js.native
   def pixelStorei(pname: GLenum, param: GLint): Unit = js.native
   def polygonOffset(factor: GLfloat, units: GLfloat): Unit = js.native
   def readPixels(x: GLint, y: GLint, width: GLsizei, height: GLsizei, format: GLenum, `type`: GLenum): Unit = js.native

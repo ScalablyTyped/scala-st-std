@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The VRPose interface of the WebVR API represents the state of a VR sensor at a given timestamp (which includes orientation, position, velocity, and acceleration information.) */
 trait VRPose extends js.Object {
   val angularAcceleration: Float32Array | Null
   val angularVelocity: Float32Array | Null

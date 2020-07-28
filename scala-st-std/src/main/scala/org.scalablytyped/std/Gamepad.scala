@@ -4,11 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The Gamepad interface of the Gamepad API defines an individual gamepad or other controller, allowing access to information such as button presses, axis positions, and id. */
 trait Gamepad extends js.Object {
   val axes: js.Array[Double]
   val buttons: js.Array[GamepadButton]
   val connected: scala.Boolean
-  val displayId: Double
   val hand: GamepadHand
   val hapticActuators: js.Array[GamepadHapticActuator]
   val id: java.lang.String
@@ -24,7 +24,6 @@ object Gamepad {
     axes: js.Array[Double],
     buttons: js.Array[GamepadButton],
     connected: scala.Boolean,
-    displayId: Double,
     hand: GamepadHand,
     hapticActuators: js.Array[GamepadHapticActuator],
     id: java.lang.String,
@@ -32,7 +31,7 @@ object Gamepad {
     mapping: GamepadMappingType,
     timestamp: Double
   ): Gamepad = {
-    val __obj = js.Dynamic.literal(axes = axes.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], connected = connected.asInstanceOf[js.Any], displayId = displayId.asInstanceOf[js.Any], hand = hand.asInstanceOf[js.Any], hapticActuators = hapticActuators.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], mapping = mapping.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(axes = axes.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], connected = connected.asInstanceOf[js.Any], hand = hand.asInstanceOf[js.Any], hapticActuators = hapticActuators.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], mapping = mapping.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Gamepad]
   }
   @scala.inline
@@ -56,8 +55,6 @@ object Gamepad {
     def setButtons(value: js.Array[GamepadButton]): Self = this.set("buttons", value.asInstanceOf[js.Any])
     @scala.inline
     def setConnected(value: scala.Boolean): Self = this.set("connected", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setDisplayId(value: Double): Self = this.set("displayId", value.asInstanceOf[js.Any])
     @scala.inline
     def setHand(value: GamepadHand): Self = this.set("hand", value.asInstanceOf[js.Any])
     @scala.inline

@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The Coordinates interface represents the position and altitude of the device on Earth, as well as the accuracy with which these properties are calculated. */
 trait Coordinates extends js.Object {
   val accuracy: Double
   val altitude: Double | Null

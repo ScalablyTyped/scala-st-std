@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGFEGaussianBlurElement interface corresponds to the <feGaussianBlur> element. */
 @js.native
 trait SVGFEGaussianBlurElement
   extends SVGElement

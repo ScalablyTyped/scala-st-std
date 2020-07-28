@@ -8,7 +8,9 @@ trait MediaKeySystemConfiguration extends js.Object {
   var audioCapabilities: js.UndefOr[js.Array[MediaKeySystemMediaCapability]] = js.undefined
   var distinctiveIdentifier: js.UndefOr[MediaKeysRequirement] = js.undefined
   var initDataTypes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var label: js.UndefOr[java.lang.String] = js.undefined
   var persistentState: js.UndefOr[MediaKeysRequirement] = js.undefined
+  var sessionTypes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var videoCapabilities: js.UndefOr[js.Array[MediaKeySystemMediaCapability]] = js.undefined
 }
 
@@ -46,9 +48,19 @@ object MediaKeySystemConfiguration {
     @scala.inline
     def deleteInitDataTypes: Self = this.set("initDataTypes", js.undefined)
     @scala.inline
+    def setLabel(value: java.lang.String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
     def setPersistentState(value: MediaKeysRequirement): Self = this.set("persistentState", value.asInstanceOf[js.Any])
     @scala.inline
     def deletePersistentState: Self = this.set("persistentState", js.undefined)
+    @scala.inline
+    def setSessionTypesVarargs(value: java.lang.String*): Self = this.set("sessionTypes", js.Array(value :_*))
+    @scala.inline
+    def setSessionTypes(value: js.Array[java.lang.String]): Self = this.set("sessionTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionTypes: Self = this.set("sessionTypes", js.undefined)
     @scala.inline
     def setVideoCapabilitiesVarargs(value: MediaKeySystemMediaCapability*): Self = this.set("videoCapabilities", js.Array(value :_*))
     @scala.inline

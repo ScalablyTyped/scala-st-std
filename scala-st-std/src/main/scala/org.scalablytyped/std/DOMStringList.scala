@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** A type returned by some APIs which contains a list of DOMString (strings). */
 @js.native
 trait DOMStringList
   extends /* index */ NumberDictionary[java.lang.String] {

@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGStringList defines a list of DOMString objects. */
 @js.native
 trait SVGStringList
   extends /* index */ NumberDictionary[java.lang.String] {

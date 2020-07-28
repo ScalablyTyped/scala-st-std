@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The WheelEvent interface represents events that occur due to the user moving a mouse wheel or similar input device. */
 @js.native
 trait WheelEvent extends MouseEvent {
   val DOM_DELTA_LINE: Double = js.native

@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EventSourceInit extends js.Object {
-  val withCredentials: scala.Boolean
+  var withCredentials: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object EventSourceInit {
   @scala.inline
-  def apply(withCredentials: scala.Boolean): EventSourceInit = {
-    val __obj = js.Dynamic.literal(withCredentials = withCredentials.asInstanceOf[js.Any])
+  def apply(): EventSourceInit = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventSourceInit]
   }
   @scala.inline
@@ -27,6 +27,8 @@ object EventSourceInit {
     }
     @scala.inline
     def setWithCredentials(value: scala.Boolean): Self = this.set("withCredentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWithCredentials: Self = this.set("withCredentials", js.undefined)
   }
   
 }

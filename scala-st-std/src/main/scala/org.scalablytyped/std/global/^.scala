@@ -1,24 +1,50 @@
 package org.scalablytyped.std.global
 
 import org.scalablytyped.std.ApplicationCache
+import org.scalablytyped.std.ArrayBufferConstructor
+import org.scalablytyped.std.ArrayConstructor
+import org.scalablytyped.std.BooleanConstructor
 import org.scalablytyped.std.Console
 import org.scalablytyped.std.Crypto
+import org.scalablytyped.std.DataViewConstructor
+import org.scalablytyped.std.DateConstructor
 import org.scalablytyped.std.Document
 import org.scalablytyped.std.EnumeratorConstructor
-import org.scalablytyped.std.ErrorEventHandler
+import org.scalablytyped.std.ErrorConstructor
+import org.scalablytyped.std.EvalErrorConstructor
 import org.scalablytyped.std.Event
 import org.scalablytyped.std.External
+import org.scalablytyped.std.Float32ArrayConstructor
+import org.scalablytyped.std.Float64ArrayConstructor
+import org.scalablytyped.std.FunctionConstructor
 import org.scalablytyped.std.History
+import org.scalablytyped.std.Int16ArrayConstructor
+import org.scalablytyped.std.Int32ArrayConstructor
+import org.scalablytyped.std.Int8ArrayConstructor
 import org.scalablytyped.std.Location
 import org.scalablytyped.std.MapConstructor
 import org.scalablytyped.std.Navigator
+import org.scalablytyped.std.NumberConstructor
+import org.scalablytyped.std.ObjectConstructor
+import org.scalablytyped.std.OnErrorEventHandler
 import org.scalablytyped.std.Performance
 import org.scalablytyped.std.PromiseConstructor
 import org.scalablytyped.std.ProxyConstructor
+import org.scalablytyped.std.RangeErrorConstructor
+import org.scalablytyped.std.ReferenceErrorConstructor
+import org.scalablytyped.std.RegExpConstructor
 import org.scalablytyped.std.Screen
 import org.scalablytyped.std.SetConstructor
 import org.scalablytyped.std.SpeechSynthesis
+import org.scalablytyped.std.StringConstructor
 import org.scalablytyped.std.StyleMedia
+import org.scalablytyped.std.SyntaxErrorConstructor
+import org.scalablytyped.std.TypeErrorConstructor
+import org.scalablytyped.std.URIErrorConstructor
+import org.scalablytyped.std.Uint16ArrayConstructor
+import org.scalablytyped.std.Uint32ArrayConstructor
+import org.scalablytyped.std.Uint8ArrayConstructor
+import org.scalablytyped.std.Uint8ClampedArrayConstructor
 import org.scalablytyped.std.VBArrayConstructor
 import org.scalablytyped.std.WeakMapConstructor
 import org.scalablytyped.std.WeakSetConstructor
@@ -31,13 +57,57 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var ActiveXObject: org.scalablytyped.std.ActiveXObject = js.native
+  var Array: ArrayConstructor = js.native
+  var ArrayBuffer: ArrayBufferConstructor = js.native
+  var Boolean: BooleanConstructor = js.native
   var CSS: org.scalablytyped.std.CSS = js.native
+  var DataView: DataViewConstructor = js.native
+  var Date: DateConstructor = js.native
   var Enumerator: EnumeratorConstructor = js.native
+  var Error: ErrorConstructor = js.native
+  var EvalError: EvalErrorConstructor = js.native
+  var Float32Array: Float32ArrayConstructor = js.native
+  var Float64Array: Float64ArrayConstructor = js.native
+  var Function: FunctionConstructor = js.native
+  var Infinity: Double = js.native
+  var Int16Array: Int16ArrayConstructor = js.native
+  var Int32Array: Int32ArrayConstructor = js.native
+  var Int8Array: Int8ArrayConstructor = js.native
+  /**
+    * An intrinsic object that provides functions to convert JavaScript values to and from the JavaScript Object Notation (JSON) format.
+    */
+  var JSON: org.scalablytyped.std.JSON = js.native
   var Map: MapConstructor = js.native
+  /** An intrinsic object that provides basic mathematics functionality and constants. */
+  var Math: org.scalablytyped.std.Math = js.native
+  /////////////////////////////
+  /// ECMAScript APIs
+  /////////////////////////////
+  var NaN: Double = js.native
+  /** An object that represents a number of any kind. All JavaScript numbers are 64-bit floating-point numbers. */
+  var Number: NumberConstructor = js.native
+  /**
+    * Provides functionality common to all JavaScript objects.
+    */
+  var Object: ObjectConstructor = js.native
   var Promise: PromiseConstructor = js.native
   var Proxy: ProxyConstructor = js.native
+  var RangeError: RangeErrorConstructor = js.native
+  var ReferenceError: ReferenceErrorConstructor = js.native
+  var RegExp: RegExpConstructor = js.native
   var ServiceUIFrameContext: org.scalablytyped.std.ServiceUIFrameContext = js.native
   var Set: SetConstructor = js.native
+  /**
+    * Allows manipulation and formatting of text strings and determination and location of substrings within strings.
+    */
+  var String: StringConstructor = js.native
+  var SyntaxError: SyntaxErrorConstructor = js.native
+  var TypeError: TypeErrorConstructor = js.native
+  var URIError: URIErrorConstructor = js.native
+  var Uint16Array: Uint16ArrayConstructor = js.native
+  var Uint32Array: Uint32ArrayConstructor = js.native
+  var Uint8Array: Uint8ArrayConstructor = js.native
+  var Uint8ClampedArray: Uint8ClampedArrayConstructor = js.native
   var VBArray: VBArrayConstructor = js.native
   var WeakMap: WeakMapConstructor = js.native
   var WeakSet: WeakSetConstructor = js.native
@@ -52,6 +122,7 @@ object ^ extends js.Object {
   var devicePixelRatio: Double = js.native
   var doNotTrack: java.lang.String = js.native
   var document: Document = js.native
+  /** @deprecated */
   var event: js.UndefOr[Event] = js.native
   /** @deprecated */
   var external: External = js.native
@@ -172,7 +243,7 @@ object ^ extends js.Object {
     * Fires when an error occurs during object loading.
     * @param ev The event.
     */
-  var onerror: ErrorEventHandler = js.native
+  var onerror: OnErrorEventHandler = js.native
   /**
     * Fires when the object receives focus.
     * @param ev The event.
@@ -317,7 +388,7 @@ object ^ extends js.Object {
     * Fires when the user repositions the scroll box in the scroll bar on the object.
     * @param ev The event.
     */
-  var onscroll: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.UIEvent, js.Any]) | Null = js.native
+  var onscroll: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null = js.native
   var onsecuritypolicyviolation: (js.ThisFunction1[
     /* this */ Window, 
     /* ev */ org.scalablytyped.std.SecurityPolicyViolationEvent, 
@@ -337,7 +408,9 @@ object ^ extends js.Object {
     * Fires when the current selection changes.
     * @param ev The event.
     */
-  var onselect: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.UIEvent, js.Any]) | Null = js.native
+  var onselect: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null = js.native
+  var onselectionchange: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null = js.native
+  var onselectstart: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null = js.native
   /**
     * Occurs when the download has stopped.
     * @param ev The event.

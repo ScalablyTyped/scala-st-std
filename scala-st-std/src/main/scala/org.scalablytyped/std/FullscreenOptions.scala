@@ -4,18 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait GetSVGDocument extends js.Object {
-  def getSVGDocument(): Document
+trait FullscreenOptions extends js.Object {
+  var navigationUI: js.UndefOr[FullscreenNavigationUI] = js.undefined
 }
 
-object GetSVGDocument {
+object FullscreenOptions {
   @scala.inline
-  def apply(getSVGDocument: () => Document): GetSVGDocument = {
-    val __obj = js.Dynamic.literal(getSVGDocument = js.Any.fromFunction0(getSVGDocument))
-    __obj.asInstanceOf[GetSVGDocument]
+  def apply(): FullscreenOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[FullscreenOptions]
   }
   @scala.inline
-  implicit class GetSVGDocumentOps[Self <: GetSVGDocument] (val x: Self) extends AnyVal {
+  implicit class FullscreenOptionsOps[Self <: FullscreenOptions] (val x: Self) extends AnyVal {
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
     @scala.inline
@@ -26,7 +26,9 @@ object GetSVGDocument {
         x
     }
     @scala.inline
-    def setGetSVGDocument(value: () => Document): Self = this.set("getSVGDocument", js.Any.fromFunction0(value))
+    def setNavigationUI(value: FullscreenNavigationUI): Self = this.set("navigationUI", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavigationUI: Self = this.set("navigationUI", js.undefined)
   }
   
 }

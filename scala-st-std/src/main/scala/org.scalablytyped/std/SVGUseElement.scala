@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGUseElement interface corresponds to the <use> element. */
 @js.native
 trait SVGUseElement
   extends SVGGraphicsElement

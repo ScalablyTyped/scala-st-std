@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The AbortSignal interface represents a signal object that allows you to communicate with a DOM request (such as a Fetch) and abort it if required via an AbortController object. */
 @js.native
 trait AbortSignal extends EventTarget {
   /**
@@ -12,33 +13,33 @@ trait AbortSignal extends EventTarget {
     * otherwise.
     */
   val aborted: scala.Boolean = js.native
-  var onabort: (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]) | Null = js.native
+  var onabort: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   @JSName("addEventListener")
-  def addEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]): Unit = js.native
+  def addEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_abort(
     `type`: abort,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_abort(
     `type`: abort,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]): Unit = js.native
+  def removeEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_abort(
     `type`: abort,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_abort(
     `type`: abort,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
 }

@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGLengthList defines a list of SVGLength objects. */
 @js.native
 trait SVGLengthList extends /* index */ NumberDictionary[SVGLength] {
   @JSName(js.Symbol.iterator)

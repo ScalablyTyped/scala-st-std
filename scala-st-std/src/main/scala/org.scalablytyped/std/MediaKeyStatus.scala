@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation._
 /* Rewritten from type alias, can be one of: 
   - `org.scalablytyped`.std.stdStrings.usable
   - `org.scalablytyped`.std.stdStrings.expired
+  - `org.scalablytyped`.std.stdStrings.released
+  - `org.scalablytyped`.std.stdStrings.`output-restricted`
   - `org.scalablytyped`.std.stdStrings.`output-downscaled`
-  - `org.scalablytyped`.std.stdStrings.`output-not-allowed`
   - `org.scalablytyped`.std.stdStrings.`status-pending`
   - `org.scalablytyped`.std.stdStrings.`internal-error`
 */
@@ -22,7 +23,9 @@ object MediaKeyStatus {
   @scala.inline
   def `output-downscaled`: org.scalablytyped.std.stdStrings.`output-downscaled` = "output-downscaled".asInstanceOf[org.scalablytyped.std.stdStrings.`output-downscaled`]
   @scala.inline
-  def `output-not-allowed`: org.scalablytyped.std.stdStrings.`output-not-allowed` = "output-not-allowed".asInstanceOf[org.scalablytyped.std.stdStrings.`output-not-allowed`]
+  def `output-restricted`: org.scalablytyped.std.stdStrings.`output-restricted` = "output-restricted".asInstanceOf[org.scalablytyped.std.stdStrings.`output-restricted`]
+  @scala.inline
+  def released: org.scalablytyped.std.stdStrings.released = "released".asInstanceOf[org.scalablytyped.std.stdStrings.released]
   @scala.inline
   def `status-pending`: org.scalablytyped.std.stdStrings.`status-pending` = "status-pending".asInstanceOf[org.scalablytyped.std.stdStrings.`status-pending`]
   @scala.inline

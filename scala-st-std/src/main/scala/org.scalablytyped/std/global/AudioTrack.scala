@@ -20,7 +20,7 @@ class AudioTrack ()
   /* CompleteClass */
   override var language: java.lang.String = js.native
   /* CompleteClass */
-  override val sourceBuffer: org.scalablytyped.std.SourceBuffer = js.native
+  override val sourceBuffer: org.scalablytyped.std.SourceBuffer | Null = js.native
 }
 
 @JSGlobal("AudioTrack")

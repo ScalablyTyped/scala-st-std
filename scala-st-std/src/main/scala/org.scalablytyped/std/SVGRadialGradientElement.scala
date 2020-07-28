@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGRadialGradientElement interface corresponds to the <RadialGradient> element. */
 @js.native
 trait SVGRadialGradientElement extends SVGGradientElement {
   val cx: SVGAnimatedLength = js.native

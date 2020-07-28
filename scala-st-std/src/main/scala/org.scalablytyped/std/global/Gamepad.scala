@@ -18,8 +18,6 @@ class Gamepad ()
   /* CompleteClass */
   override val connected: scala.Boolean = js.native
   /* CompleteClass */
-  override val displayId: Double = js.native
-  /* CompleteClass */
   override val hand: GamepadHand = js.native
   /* CompleteClass */
   override val hapticActuators: js.Array[org.scalablytyped.std.GamepadHapticActuator] = js.native

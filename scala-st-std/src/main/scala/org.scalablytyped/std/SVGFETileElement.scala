@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGFETileElement interface corresponds to the <feTile> element. */
 @js.native
 trait SVGFETileElement
   extends SVGElement

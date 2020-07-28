@@ -1,19 +1,17 @@
 package org.scalablytyped.std
 
-import org.scalablytyped.std.stdStrings.closed
-import org.scalablytyped.std.stdStrings.open
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ShadowRootInit extends js.Object {
   var delegatesFocus: js.UndefOr[scala.Boolean] = js.undefined
-  var mode: open | closed
+  var mode: ShadowRootMode
 }
 
 object ShadowRootInit {
   @scala.inline
-  def apply(mode: open | closed): ShadowRootInit = {
+  def apply(mode: ShadowRootMode): ShadowRootInit = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShadowRootInit]
   }
@@ -29,7 +27,7 @@ object ShadowRootInit {
         x
     }
     @scala.inline
-    def setMode(value: open | closed): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setMode(value: ShadowRootMode): Self = this.set("mode", value.asInstanceOf[js.Any])
     @scala.inline
     def setDelegatesFocus(value: scala.Boolean): Self = this.set("delegatesFocus", value.asInstanceOf[js.Any])
     @scala.inline

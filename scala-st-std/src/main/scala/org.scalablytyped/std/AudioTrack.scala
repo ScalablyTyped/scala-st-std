@@ -4,13 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The AudioTrack interface represents a single audio track from one of the HTML media elements, <audio> or <video>.  */
 trait AudioTrack extends js.Object {
   var enabled: scala.Boolean
   val id: java.lang.String
   var kind: java.lang.String
   val label: java.lang.String
   var language: java.lang.String
-  val sourceBuffer: SourceBuffer
+  val sourceBuffer: SourceBuffer | Null
 }
 
 object AudioTrack {
@@ -20,10 +21,9 @@ object AudioTrack {
     id: java.lang.String,
     kind: java.lang.String,
     label: java.lang.String,
-    language: java.lang.String,
-    sourceBuffer: SourceBuffer
+    language: java.lang.String
   ): AudioTrack = {
-    val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], sourceBuffer = sourceBuffer.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioTrack]
   }
   @scala.inline
@@ -49,6 +49,8 @@ object AudioTrack {
     def setLanguage(value: java.lang.String): Self = this.set("language", value.asInstanceOf[js.Any])
     @scala.inline
     def setSourceBuffer(value: SourceBuffer): Self = this.set("sourceBuffer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourceBufferNull: Self = this.set("sourceBuffer", null)
   }
   
 }

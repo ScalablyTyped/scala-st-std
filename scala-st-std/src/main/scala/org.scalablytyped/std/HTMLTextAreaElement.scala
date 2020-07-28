@@ -7,6 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The HTMLTextAreaElement interface provides special properties and methods for manipulating the layout and presentation of <textarea> elements. */
 @js.native
 trait HTMLTextAreaElement extends HTMLElement {
   var autocomplete: java.lang.String = js.native

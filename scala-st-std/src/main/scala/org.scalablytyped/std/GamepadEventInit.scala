@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GamepadEventInit extends EventInit {
-  var gamepad: js.UndefOr[Gamepad] = js.undefined
+  var gamepad: Gamepad
 }
 
 object GamepadEventInit {
   @scala.inline
-  def apply(): GamepadEventInit = {
-    val __obj = js.Dynamic.literal()
+  def apply(gamepad: Gamepad): GamepadEventInit = {
+    val __obj = js.Dynamic.literal(gamepad = gamepad.asInstanceOf[js.Any])
     __obj.asInstanceOf[GamepadEventInit]
   }
   @scala.inline
@@ -27,8 +27,6 @@ object GamepadEventInit {
     }
     @scala.inline
     def setGamepad(value: Gamepad): Self = this.set("gamepad", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteGamepad: Self = this.set("gamepad", js.undefined)
   }
   
 }

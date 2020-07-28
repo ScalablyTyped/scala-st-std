@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The HTMLTrackElement */
 @js.native
 trait HTMLTrackElement extends HTMLElement {
   val ERROR: Double = js.native
