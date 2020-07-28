@@ -12,6 +12,8 @@ class HTMLBaseFontElement ()
   /* CompleteClass */
   override val childElementCount: Double = js.native
   /* CompleteClass */
+  override val children: org.scalablytyped.std.HTMLCollection = js.native
+  /* CompleteClass */
   override var color: java.lang.String = js.native
   /* CompleteClass */
   override val firstElementChild: org.scalablytyped.std.Element = js.native

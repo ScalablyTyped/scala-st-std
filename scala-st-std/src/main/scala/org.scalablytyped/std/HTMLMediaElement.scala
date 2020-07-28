@@ -172,7 +172,7 @@ trait HTMLMediaElement extends HTMLElement {
     */
   def canPlayType(`type`: java.lang.String): java.lang.String = js.native
   /**
-    * Fires immediately after the client loads the object.
+    * Resets the audio or video object and loads a new media resource.
     */
   def load(): Unit = js.native
   /**

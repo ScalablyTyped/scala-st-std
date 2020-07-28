@@ -19,9 +19,9 @@ trait Number extends js.Object {
     */
   def toFixed(): java.lang.String = js.native
   def toFixed(fractionDigits: Double): java.lang.String = js.native
-  def toLocaleString(locale: java.lang.String): java.lang.String = js.native
-  def toLocaleString(locale: java.lang.String, options: NumberFormatOptions): java.lang.String = js.native
   def toLocaleString(locales: js.UndefOr[scala.Nothing], options: NumberFormatOptions): java.lang.String = js.native
+  def toLocaleString(locales: java.lang.String): java.lang.String = js.native
+  def toLocaleString(locales: java.lang.String, options: NumberFormatOptions): java.lang.String = js.native
   def toLocaleString(locales: js.Array[java.lang.String]): java.lang.String = js.native
   def toLocaleString(locales: js.Array[java.lang.String], options: NumberFormatOptions): java.lang.String = js.native
   /**

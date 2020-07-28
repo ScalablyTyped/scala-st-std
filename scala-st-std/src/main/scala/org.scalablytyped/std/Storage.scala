@@ -11,8 +11,8 @@ trait Storage
      with /* key */ StringDictionary[js.Any] {
   val length: Double
   def clear(): Unit
-  def getItem(key: java.lang.String): java.lang.String
-  def key(index: Double): java.lang.String
+  def getItem(key: java.lang.String): java.lang.String | Null
+  def key(index: Double): java.lang.String | Null
   def removeItem(key: java.lang.String): Unit
   def setItem(key: java.lang.String, data: java.lang.String): Unit
 }
@@ -21,8 +21,8 @@ object Storage {
   @scala.inline
   def apply(
     clear: () => Unit,
-    getItem: java.lang.String => java.lang.String,
-    key: Double => java.lang.String,
+    getItem: java.lang.String => java.lang.String | Null,
+    key: Double => java.lang.String | Null,
     length: Double,
     removeItem: java.lang.String => Unit,
     setItem: (java.lang.String, java.lang.String) => Unit
@@ -44,9 +44,9 @@ object Storage {
     @scala.inline
     def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
     @scala.inline
-    def setGetItem(value: java.lang.String => java.lang.String): Self = this.set("getItem", js.Any.fromFunction1(value))
+    def setGetItem(value: java.lang.String => java.lang.String | Null): Self = this.set("getItem", js.Any.fromFunction1(value))
     @scala.inline
-    def setKey(value: Double => java.lang.String): Self = this.set("key", js.Any.fromFunction1(value))
+    def setKey(value: Double => java.lang.String | Null): Self = this.set("key", js.Any.fromFunction1(value))
     @scala.inline
     def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
     @scala.inline

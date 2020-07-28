@@ -71,6 +71,8 @@ class Option ()
   /* CompleteClass */
   override val childElementCount: Double = js.native
   /* CompleteClass */
+  override val children: org.scalablytyped.std.HTMLCollection = js.native
+  /* CompleteClass */
   override val firstElementChild: org.scalablytyped.std.Element = js.native
   /* CompleteClass */
   override val lastElementChild: org.scalablytyped.std.Element = js.native

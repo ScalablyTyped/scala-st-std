@@ -8,7 +8,16 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("HTMLDocument")
 @js.native
-class HTMLDocument () extends Document
+class HTMLDocument () extends Document {
+  /* CompleteClass */
+  override val childElementCount: Double = js.native
+  /* CompleteClass */
+  override val children: org.scalablytyped.std.HTMLCollection = js.native
+  /* CompleteClass */
+  override val firstElementChild: org.scalablytyped.std.Element = js.native
+  /* CompleteClass */
+  override val lastElementChild: org.scalablytyped.std.Element = js.native
+}
 
 @JSGlobal("HTMLDocument")
 @js.native

@@ -35,20 +35,17 @@ trait XMLHttpRequest
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_readystatechange(
-    `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]
-  ): Unit = js.native
+  def addEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     useCapture: scala.Boolean
   ): Unit = js.native
   def getAllResponseHeaders(): java.lang.String = js.native
   def getResponseHeader(header: java.lang.String): java.lang.String | Null = js.native
   def msCachingEnabled(): scala.Boolean = js.native
-  def onreadystatechange(ev: ProgressEvent): js.Any = js.native
+  def onreadystatechange(ev: Event): js.Any = js.native
   def open(method: java.lang.String, url: java.lang.String): Unit = js.native
   def open(
     method: java.lang.String,

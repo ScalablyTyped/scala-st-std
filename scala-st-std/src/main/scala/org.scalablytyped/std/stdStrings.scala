@@ -420,6 +420,11 @@ object stdStrings {
   sealed trait audioprocess extends js.Object
   
   @js.native
+  sealed trait auto
+    extends ScrollBehavior
+       with ScrollRestoration
+  
+  @js.native
   sealed trait b extends js.Object
   
   @js.native
@@ -495,7 +500,7 @@ object stdStrings {
   sealed trait caption extends js.Object
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center extends ScrollLogicalPosition
   
   @js.native
   sealed trait change extends js.Object
@@ -649,6 +654,9 @@ object stdStrings {
   
   @js.native
   sealed trait encrypted extends js.Object
+  
+  @js.native
+  sealed trait end extends ScrollLogicalPosition
   
   @js.native
   sealed trait ended extends js.Object
@@ -936,6 +944,9 @@ object stdStrings {
   sealed trait ins extends js.Object
   
   @js.native
+  sealed trait instant extends ScrollBehavior
+  
+  @js.native
   sealed trait invalid extends js.Object
   
   @js.native
@@ -1005,6 +1016,9 @@ object stdStrings {
   sealed trait lostpointercapture extends js.Object
   
   @js.native
+  sealed trait manual extends ScrollRestoration
+  
+  @js.native
   sealed trait map_ extends js.Object
   
   @js.native
@@ -1072,6 +1086,9 @@ object stdStrings {
   
   @js.native
   sealed trait nav extends js.Object
+  
+  @js.native
+  sealed trait nearest extends ScrollLogicalPosition
   
   @js.native
   sealed trait nextid extends js.Object
@@ -1275,6 +1292,9 @@ object stdStrings {
   sealed trait small extends js.Object
   
   @js.native
+  sealed trait smooth extends ScrollBehavior
+  
+  @js.native
   sealed trait source extends js.Object
   
   @js.native
@@ -1290,7 +1310,7 @@ object stdStrings {
   sealed trait stalled extends js.Object
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait start extends ScrollLogicalPosition
   
   @js.native
   sealed trait stop extends js.Object
@@ -1746,6 +1766,8 @@ object stdStrings {
   @scala.inline
   def audioprocess: audioprocess = "audioprocess".asInstanceOf[audioprocess]
   @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
   def b: b = "b".asInstanceOf[b]
   @scala.inline
   def base: base = "base".asInstanceOf[base]
@@ -1899,6 +1921,8 @@ object stdStrings {
   def emptied: emptied = "emptied".asInstanceOf[emptied]
   @scala.inline
   def encrypted: encrypted = "encrypted".asInstanceOf[encrypted]
+  @scala.inline
+  def end: end = "end".asInstanceOf[end]
   @scala.inline
   def ended: ended = "ended".asInstanceOf[ended]
   @scala.inline
@@ -2090,6 +2114,8 @@ object stdStrings {
   @scala.inline
   def ins: ins = "ins".asInstanceOf[ins]
   @scala.inline
+  def instant: instant = "instant".asInstanceOf[instant]
+  @scala.inline
   def invalid: invalid = "invalid".asInstanceOf[invalid]
   @scala.inline
   def isindex: isindex = "isindex".asInstanceOf[isindex]
@@ -2136,6 +2162,8 @@ object stdStrings {
   @scala.inline
   def lostpointercapture: lostpointercapture = "lostpointercapture".asInstanceOf[lostpointercapture]
   @scala.inline
+  def manual: manual = "manual".asInstanceOf[manual]
+  @scala.inline
   def map_ : map_ = "map".asInstanceOf[map_]
   @scala.inline
   def mark: mark = "mark".asInstanceOf[mark]
@@ -2181,6 +2209,8 @@ object stdStrings {
   def mute: mute = "mute".asInstanceOf[mute]
   @scala.inline
   def nav: nav = "nav".asInstanceOf[nav]
+  @scala.inline
+  def nearest: nearest = "nearest".asInstanceOf[nearest]
   @scala.inline
   def nextid: nextid = "nextid".asInstanceOf[nextid]
   @scala.inline
@@ -2315,6 +2345,8 @@ object stdStrings {
   def selectstart: selectstart = "selectstart".asInstanceOf[selectstart]
   @scala.inline
   def small: small = "small".asInstanceOf[small]
+  @scala.inline
+  def smooth: smooth = "smooth".asInstanceOf[smooth]
   @scala.inline
   def source: source = "source".asInstanceOf[source]
   @scala.inline

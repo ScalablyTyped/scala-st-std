@@ -74,7 +74,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait HTMLElement extends Element {
   var accessKey: java.lang.String = js.native
-  val children: HTMLCollection = js.native
   var contentEditable: java.lang.String = js.native
   val dataset: DOMStringMap = js.native
   var dir: java.lang.String = js.native
@@ -638,9 +637,6 @@ trait HTMLElement extends Element {
   def click(): Unit = js.native
   def dragDrop(): scala.Boolean = js.native
   def focus(): Unit = js.native
-  def insertAdjacentElement(position: java.lang.String, insertedElement: Element): Element = js.native
-  def insertAdjacentHTML(where: java.lang.String, html: java.lang.String): Unit = js.native
-  def insertAdjacentText(where: java.lang.String, text: java.lang.String): Unit = js.native
   def msGetInputContext(): MSInputMethodContext = js.native
   def onabort(ev: UIEvent): js.Any = js.native
   def onactivate(ev: UIEvent): js.Any = js.native
@@ -709,8 +705,6 @@ trait HTMLElement extends Element {
   def ontimeupdate(ev: Event): js.Any = js.native
   def onvolumechange(ev: Event): js.Any = js.native
   def onwaiting(ev: Event): js.Any = js.native
-  def scrollIntoView(): Unit = js.native
-  def scrollIntoView(top: scala.Boolean): Unit = js.native
   def setActive(): Unit = js.native
 }
 

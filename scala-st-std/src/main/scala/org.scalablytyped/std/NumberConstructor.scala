@@ -19,7 +19,7 @@ trait NumberConstructor
   /**
     * The value of the largest integer n such that n and n + 1 are both exactly representable as
     * a Number value.
-    * The value of Number.MIN_SAFE_INTEGER is 9007199254740991 2^53 − 1.
+    * The value of Number.MAX_SAFE_INTEGER is 9007199254740991 2^53 − 1.
     */
   val MAX_SAFE_INTEGER: Double = js.native
   /** The largest number that can be represented in JavaScript. Equal to approximately 1.79E+308. */
@@ -51,28 +51,28 @@ trait NumberConstructor
   def apply(value: js.Any): Double = js.native
   /**
     * Returns true if passed value is finite.
-    * Unlike the global isFininte, Number.isFinite doesn't forcibly convert the parameter to a
+    * Unlike the global isFinite, Number.isFinite doesn't forcibly convert the parameter to a
     * number. Only finite values of the type number, result in true.
     * @param number A numeric value.
     */
-  def isFinite(number: Double): scala.Boolean = js.native
+  def isFinite(value: js.Any): /* is number */ scala.Boolean = js.native
   /**
     * Returns true if the value passed is an integer, false otherwise.
     * @param number A numeric value.
     */
-  def isInteger(number: Double): scala.Boolean = js.native
+  def isInteger(value: js.Any): /* is number */ scala.Boolean = js.native
   /**
     * Returns a Boolean value that indicates whether a value is the reserved value NaN (not a
     * number). Unlike the global isNaN(), Number.isNaN() doesn't forcefully convert the parameter
     * to a number. Only values of the type number, that are also NaN, result in true.
     * @param number A numeric value.
     */
-  def isNaN(number: Double): scala.Boolean = js.native
+  def isNaN(value: js.Any): /* is number */ scala.Boolean = js.native
   /**
     * Returns true if the value passed is a safe integer.
     * @param number A numeric value.
     */
-  def isSafeInteger(number: Double): scala.Boolean = js.native
+  def isSafeInteger(value: js.Any): /* is number */ scala.Boolean = js.native
   /**
     * Converts a string to a floating-point number.
     * @param string A string that contains a floating-point number.

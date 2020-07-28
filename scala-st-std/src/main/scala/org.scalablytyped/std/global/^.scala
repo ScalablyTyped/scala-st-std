@@ -67,7 +67,6 @@ object ^ extends js.Object {
   var locationbar: org.scalablytyped.std.BarProp = js.native
   var menubar: org.scalablytyped.std.BarProp = js.native
   var msCredentials: MSCredentials = js.native
-  var name: java.lang.String = js.native
   var navigator: Navigator = js.native
   var offscreenBuffering: java.lang.String | scala.Boolean = js.native
   var onabort: js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.UIEvent, js.Any] = js.native
@@ -170,7 +169,7 @@ object ^ extends js.Object {
   var onvolumechange: js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any] = js.native
   var onwaiting: js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any] = js.native
   var onwheel: js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.WheelEvent, js.Any] = js.native
-  var opener: Window = js.native
+  var opener: js.Any = js.native
   var orientation: java.lang.String | Double = js.native
   var outerHeight: Double = js.native
   var outerWidth: Double = js.native

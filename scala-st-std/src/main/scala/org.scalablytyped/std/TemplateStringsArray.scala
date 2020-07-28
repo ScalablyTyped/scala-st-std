@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TemplateStringsArray
-  extends Array[java.lang.String] {
+  extends ReadonlyArray[java.lang.String] {
   val raw: js.Array[java.lang.String] = js.native
 }
 

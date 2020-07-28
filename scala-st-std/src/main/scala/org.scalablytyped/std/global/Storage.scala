@@ -14,9 +14,9 @@ class Storage ()
   /* CompleteClass */
   override def clear(): Unit = js.native
   /* CompleteClass */
-  override def getItem(key: java.lang.String): java.lang.String = js.native
+  override def getItem(key: java.lang.String): java.lang.String | Null = js.native
   /* CompleteClass */
-  override def key(index: Double): java.lang.String = js.native
+  override def key(index: Double): java.lang.String | Null = js.native
   /* CompleteClass */
   override def removeItem(key: java.lang.String): Unit = js.native
   /* CompleteClass */

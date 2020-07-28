@@ -14,8 +14,8 @@ trait Map[K, V] extends js.Object {
   def clear(): Unit = js.native
   def delete(key: K): scala.Boolean = js.native
   def entries(): IterableIterator[js.Tuple2[K, V]] = js.native
-  def forEach(callbackfn: js.Function3[/* value */ V, /* index */ K, /* map */ Map[K, V], Unit]): Unit = js.native
-  def forEach(callbackfn: js.Function3[/* value */ V, /* index */ K, /* map */ Map[K, V], Unit], thisArg: js.Any): Unit = js.native
+  def forEach(callbackfn: js.Function3[/* value */ V, /* key */ K, /* map */ Map[K, V], Unit]): Unit = js.native
+  def forEach(callbackfn: js.Function3[/* value */ V, /* key */ K, /* map */ Map[K, V], Unit], thisArg: js.Any): Unit = js.native
   def get(key: K): js.UndefOr[V] = js.native
   def has(key: K): scala.Boolean = js.native
   def keys(): IterableIterator[K] = js.native

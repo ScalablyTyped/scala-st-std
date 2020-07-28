@@ -15,8 +15,8 @@ trait Set[T] extends js.Object {
   def clear(): Unit = js.native
   def delete(value: T): scala.Boolean = js.native
   def entries(): IterableIterator[js.Tuple2[T, T]] = js.native
-  def forEach(callbackfn: js.Function3[/* value */ T, /* index */ T, /* set */ Set[T], Unit]): Unit = js.native
-  def forEach(callbackfn: js.Function3[/* value */ T, /* index */ T, /* set */ Set[T], Unit], thisArg: js.Any): Unit = js.native
+  def forEach(callbackfn: js.Function3[/* value */ T, /* value2 */ T, /* set */ Set[T], Unit]): Unit = js.native
+  def forEach(callbackfn: js.Function3[/* value */ T, /* value2 */ T, /* set */ Set[T], Unit], thisArg: js.Any): Unit = js.native
   def has(value: T): scala.Boolean = js.native
   def keys(): IterableIterator[T] = js.native
   def values(): IterableIterator[T] = js.native

@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait KeyboardEventInit extends EventModifierInit {
+  var code: js.UndefOr[java.lang.String] = js.undefined
   var key: js.UndefOr[java.lang.String] = js.undefined
   var location: js.UndefOr[Double] = js.undefined
   var repeat: js.UndefOr[scala.Boolean] = js.undefined
@@ -27,6 +28,10 @@ object KeyboardEventInit {
         x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
         x
     }
+    @scala.inline
+    def setCode(value: java.lang.String): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("code", js.undefined)
     @scala.inline
     def setKey(value: java.lang.String): Self = this.set("key", value.asInstanceOf[js.Any])
     @scala.inline

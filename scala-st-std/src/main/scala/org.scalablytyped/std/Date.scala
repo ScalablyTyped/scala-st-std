@@ -196,23 +196,23 @@ trait Date extends _IDBValidKey {
   def toJSON(key: js.Any): java.lang.String = js.native
   /** Returns a date as a string value appropriate to the host environment's current locale. */
   def toLocaleDateString(): java.lang.String = js.native
-  def toLocaleDateString(locale: java.lang.String): java.lang.String = js.native
-  def toLocaleDateString(locale: java.lang.String, options: DateTimeFormatOptions): java.lang.String = js.native
   def toLocaleDateString(locales: js.UndefOr[scala.Nothing], options: DateTimeFormatOptions): java.lang.String = js.native
+  def toLocaleDateString(locales: java.lang.String): java.lang.String = js.native
+  def toLocaleDateString(locales: java.lang.String, options: DateTimeFormatOptions): java.lang.String = js.native
   def toLocaleDateString(locales: js.Array[java.lang.String]): java.lang.String = js.native
   def toLocaleDateString(locales: js.Array[java.lang.String], options: DateTimeFormatOptions): java.lang.String = js.native
-  def toLocaleString(locale: java.lang.String): java.lang.String = js.native
-  def toLocaleString(locale: java.lang.String, options: DateTimeFormatOptions): java.lang.String = js.native
   def toLocaleString(locales: js.UndefOr[scala.Nothing], options: DateTimeFormatOptions): java.lang.String = js.native
+  def toLocaleString(locales: java.lang.String): java.lang.String = js.native
+  def toLocaleString(locales: java.lang.String, options: DateTimeFormatOptions): java.lang.String = js.native
   def toLocaleString(locales: js.Array[java.lang.String]): java.lang.String = js.native
   def toLocaleString(locales: js.Array[java.lang.String], options: DateTimeFormatOptions): java.lang.String = js.native
   /** Returns a time as a string value appropriate to the host environment's current locale. */
   def toLocaleTimeString(): java.lang.String = js.native
-  def toLocaleTimeString(locale: js.UndefOr[scala.Nothing], options: DateTimeFormatOptions): java.lang.String = js.native
-  def toLocaleTimeString(locale: java.lang.String): java.lang.String = js.native
-  def toLocaleTimeString(locale: java.lang.String, options: DateTimeFormatOptions): java.lang.String = js.native
-  def toLocaleTimeString(locale: js.Array[java.lang.String]): java.lang.String = js.native
-  def toLocaleTimeString(locale: js.Array[java.lang.String], options: DateTimeFormatOptions): java.lang.String = js.native
+  def toLocaleTimeString(locales: js.UndefOr[scala.Nothing], options: DateTimeFormatOptions): java.lang.String = js.native
+  def toLocaleTimeString(locales: java.lang.String): java.lang.String = js.native
+  def toLocaleTimeString(locales: java.lang.String, options: DateTimeFormatOptions): java.lang.String = js.native
+  def toLocaleTimeString(locales: js.Array[java.lang.String]): java.lang.String = js.native
+  def toLocaleTimeString(locales: js.Array[java.lang.String], options: DateTimeFormatOptions): java.lang.String = js.native
   /** Returns a time as a string value. */
   def toTimeString(): java.lang.String = js.native
   /** Returns a date converted to a string using Universal Coordinated Time (UTC). */

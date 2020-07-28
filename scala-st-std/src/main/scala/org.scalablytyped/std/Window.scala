@@ -88,7 +88,6 @@ import org.scalablytyped.std.stdStrings.timeupdate
 import org.scalablytyped.std.stdStrings.unload
 import org.scalablytyped.std.stdStrings.volumechange
 import org.scalablytyped.std.stdStrings.waiting
-import org.scalablytyped.runtime.NumberDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -102,8 +101,7 @@ trait Window
      with WindowConsole
      with GlobalEventHandlers
      with IDBEnvironment
-     with WindowBase64
-     with /* index */ NumberDictionary[Window] {
+     with WindowBase64 {
   var Blob: InstantiableBlob = js.native
   var URL: Instantiable = js.native
   val applicationCache: ApplicationCache = js.native
@@ -131,7 +129,7 @@ trait Window
   var offscreenBuffering: java.lang.String | scala.Boolean = js.native
   @JSName("onerror")
   var onerror_Original: ErrorEventHandler = js.native
-  val opener: Window = js.native
+  var opener: js.Any = js.native
   var orientation: java.lang.String | Double = js.native
   val outerHeight: Double = js.native
   val outerWidth: Double = js.native
@@ -1160,14 +1158,17 @@ trait Window
   def resizeTo(x: Double): Unit = js.native
   def resizeTo(x: Double, y: Double): Unit = js.native
   def scroll(): Unit = js.native
+  def scroll(options: ScrollToOptions): Unit = js.native
   def scroll(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
   def scroll(x: Double): Unit = js.native
   def scroll(x: Double, y: Double): Unit = js.native
   def scrollBy(): Unit = js.native
+  def scrollBy(options: ScrollToOptions): Unit = js.native
   def scrollBy(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
   def scrollBy(x: Double): Unit = js.native
   def scrollBy(x: Double, y: Double): Unit = js.native
   def scrollTo(): Unit = js.native
+  def scrollTo(options: ScrollToOptions): Unit = js.native
   def scrollTo(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
   def scrollTo(x: Double): Unit = js.native
   def scrollTo(x: Double, y: Double): Unit = js.native

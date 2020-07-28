@@ -45,6 +45,8 @@ class KeyboardEvent protected ()
   /* CompleteClass */
   override val charCode: Double = js.native
   /* CompleteClass */
+  override val code: java.lang.String = js.native
+  /* CompleteClass */
   override val ctrlKey: scala.Boolean = js.native
   /* CompleteClass */
   override val currentTarget: org.scalablytyped.std.EventTarget = js.native

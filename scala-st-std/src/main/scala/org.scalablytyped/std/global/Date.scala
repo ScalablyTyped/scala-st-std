@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Date ()
   extends org.scalablytyped.std.Date {
+  def this(value: org.scalablytyped.std.Date) = this()
   def this(value: java.lang.String) = this()
   def this(value: Double) = this()
   def this(vd: VarDate) = this()

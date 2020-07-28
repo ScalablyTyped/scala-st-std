@@ -9,7 +9,6 @@ trait WeakSet[T] extends js.Object {
   @JSName(js.Symbol.toStringTag)
   val toStringTag: org.scalablytyped.std.stdStrings.WeakSet = js.native
   def add(value: T): this.type = js.native
-  def clear(): Unit = js.native
   def delete(value: T): scala.Boolean = js.native
   def has(value: T): scala.Boolean = js.native
 }

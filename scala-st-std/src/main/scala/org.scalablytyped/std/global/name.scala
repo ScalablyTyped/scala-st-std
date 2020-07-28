@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("name")
 @js.native
 object name
-  extends TopLevel[java.lang.String]
+  extends TopLevel[scala.Nothing]
 

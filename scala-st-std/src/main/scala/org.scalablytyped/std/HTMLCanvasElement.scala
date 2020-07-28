@@ -39,7 +39,16 @@ trait HTMLCanvasElement extends HTMLElement {
     * Returns a blob object encoded as a Portable Network Graphics (PNG) format from a canvas image or drawing.
     */
   def msToBlob(): Blob = js.native
-  def toBlob(callback: js.Function1[/* result */ Blob | Null, Unit], arguments: js.Any*): Unit = js.native
+  def toBlob(
+    callback: js.Function1[/* result */ Blob | Null, Unit],
+    `type`: js.UndefOr[scala.Nothing],
+    arguments: js.Any*
+  ): Unit = js.native
+  def toBlob(
+    callback: js.Function1[/* result */ Blob | Null, Unit],
+    `type`: java.lang.String,
+    arguments: js.Any*
+  ): Unit = js.native
   def toDataURL(`type`: js.UndefOr[scala.Nothing], args: js.Any*): java.lang.String = js.native
   /**
     * Returns the content of the current canvas as an image that you can use as a source for another canvas or an HTML element.

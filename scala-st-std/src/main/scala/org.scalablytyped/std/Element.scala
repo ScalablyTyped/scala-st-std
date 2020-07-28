@@ -215,15 +215,22 @@ trait Element
      with GlobalEventHandlers
      with ElementTraversal
      with NodeSelector
-     with ChildNode {
+     with ChildNode
+     with ParentNode {
+  /* InferMemberOverrides */
+  override val childElementCount: Double = js.native
   val classList: DOMTokenList = js.native
   var className: java.lang.String = js.native
   val clientHeight: Double = js.native
   val clientLeft: Double = js.native
   val clientTop: Double = js.native
   val clientWidth: Double = js.native
+  /* InferMemberOverrides */
+  override val firstElementChild: Element = js.native
   var id: java.lang.String = js.native
   var innerHTML: java.lang.String = js.native
+  /* InferMemberOverrides */
+  override val lastElementChild: Element = js.native
   var msContentZoomFactor: Double = js.native
   val msRegionOverflow: java.lang.String = js.native
   val prefix: java.lang.String | Null = js.native
@@ -871,6 +878,9 @@ trait Element
   def getElementsByTagName_xmswebview(name: `x-ms-webview`): NodeListOf[MSHTMLWebViewElement] = js.native
   def hasAttribute(name: java.lang.String): scala.Boolean = js.native
   def hasAttributeNS(namespaceURI: java.lang.String, localName: java.lang.String): scala.Boolean = js.native
+  def insertAdjacentElement(position: java.lang.String, insertedElement: Element): Element | Null = js.native
+  def insertAdjacentHTML(where: java.lang.String, html: java.lang.String): Unit = js.native
+  def insertAdjacentText(where: java.lang.String, text: java.lang.String): Unit = js.native
   def matches(selector: java.lang.String): scala.Boolean = js.native
   def msGetRegionContent(): MSRangeCollection = js.native
   def msGetUntransformedBounds(): ClientRect = js.native
@@ -912,6 +922,18 @@ trait Element
   def removeAttributeNode(oldAttr: Attr): Attr = js.native
   def requestFullscreen(): Unit = js.native
   def requestPointerLock(): Unit = js.native
+  def scroll(): Unit = js.native
+  def scroll(options: ScrollToOptions): Unit = js.native
+  def scroll(x: Double, y: Double): Unit = js.native
+  def scrollBy(): Unit = js.native
+  def scrollBy(options: ScrollToOptions): Unit = js.native
+  def scrollBy(x: Double, y: Double): Unit = js.native
+  def scrollIntoView(): Unit = js.native
+  def scrollIntoView(arg: ScrollIntoViewOptions): Unit = js.native
+  def scrollIntoView(arg: scala.Boolean): Unit = js.native
+  def scrollTo(): Unit = js.native
+  def scrollTo(options: ScrollToOptions): Unit = js.native
+  def scrollTo(x: Double, y: Double): Unit = js.native
   def setAttribute(name: java.lang.String, value: java.lang.String): Unit = js.native
   def setAttributeNS(namespaceURI: java.lang.String, qualifiedName: java.lang.String, value: java.lang.String): Unit = js.native
   def setAttributeNode(newAttr: Attr): Attr = js.native

@@ -13,22 +13,22 @@ import scala.scalajs.js.annotation._
 object DateTimeFormat
   extends Instantiable0[org.scalablytyped.std.Intl.DateTimeFormat]
      with Instantiable1[
-      (/* locales */ js.Array[String]) | (/* locale */ String), 
+      (/* locales */ js.Array[String]) | (/* locales */ String), 
       org.scalablytyped.std.Intl.DateTimeFormat
     ]
      with Instantiable2[
-      js.UndefOr[(/* locales */ js.Array[String]) | (/* locale */ String)], 
+      js.UndefOr[(/* locales */ js.Array[String]) | (/* locales */ String)], 
       /* options */ DateTimeFormatOptions, 
       org.scalablytyped.std.Intl.DateTimeFormat
     ] {
   def apply(): org.scalablytyped.std.Intl.DateTimeFormat = js.native
-  def apply(locale: String): org.scalablytyped.std.Intl.DateTimeFormat = js.native
-  def apply(locale: String, options: DateTimeFormatOptions): org.scalablytyped.std.Intl.DateTimeFormat = js.native
   def apply(locales: js.UndefOr[scala.Nothing], options: DateTimeFormatOptions): org.scalablytyped.std.Intl.DateTimeFormat = js.native
+  def apply(locales: String): org.scalablytyped.std.Intl.DateTimeFormat = js.native
+  def apply(locales: String, options: DateTimeFormatOptions): org.scalablytyped.std.Intl.DateTimeFormat = js.native
   def apply(locales: js.Array[String]): org.scalablytyped.std.Intl.DateTimeFormat = js.native
   def apply(locales: js.Array[String], options: DateTimeFormatOptions): org.scalablytyped.std.Intl.DateTimeFormat = js.native
-  def supportedLocalesOf(locale: String): js.Array[String] = js.native
-  def supportedLocalesOf(locale: String, options: DateTimeFormatOptions): js.Array[String] = js.native
+  def supportedLocalesOf(locales: String): js.Array[String] = js.native
+  def supportedLocalesOf(locales: String, options: DateTimeFormatOptions): js.Array[String] = js.native
   def supportedLocalesOf(locales: js.Array[String]): js.Array[String] = js.native
   def supportedLocalesOf(locales: js.Array[String], options: DateTimeFormatOptions): js.Array[String] = js.native
 }

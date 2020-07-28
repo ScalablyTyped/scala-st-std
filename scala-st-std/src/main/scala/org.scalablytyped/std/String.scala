@@ -104,20 +104,9 @@ trait String
     * @param that String to compare to target string
     */
   def localeCompare(that: java.lang.String): Double = js.native
-  /**
-    * Determines whether two strings are equivalent in the current locale.
-    * @param that String to compare to target string
-    * @param locale Locale tag. If you omit this parameter, the default locale of the JavaScript runtime is used. This parameter must conform to BCP 47 standards; see the Intl.Collator object for details.
-    * @param options An object that contains one or more properties that specify comparison options. see the Intl.Collator object for details.
-    */
-  def localeCompare(that: java.lang.String, locale: java.lang.String): Double = js.native
-  def localeCompare(that: java.lang.String, locale: java.lang.String, options: CollatorOptions): Double = js.native
-  /**
-    * Determines whether two strings are equivalent in the current locale.
-    * @param that String to compare to target string
-    * @param locales An array of locale strings that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used. This parameter must conform to BCP 47 standards; see the Intl.Collator object for details.
-    * @param options An object that contains one or more properties that specify comparison options. see the Intl.Collator object for details.
-    */
+  def localeCompare(that: java.lang.String, locales: js.UndefOr[scala.Nothing], options: CollatorOptions): Double = js.native
+  def localeCompare(that: java.lang.String, locales: java.lang.String): Double = js.native
+  def localeCompare(that: java.lang.String, locales: java.lang.String, options: CollatorOptions): Double = js.native
   def localeCompare(that: java.lang.String, locales: js.Array[java.lang.String]): Double = js.native
   def localeCompare(that: java.lang.String, locales: js.Array[java.lang.String], options: CollatorOptions): Double = js.native
   /**

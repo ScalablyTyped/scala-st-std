@@ -23,6 +23,7 @@ trait HTMLScriptElement extends HTMLElement {
     * Sets or retrieves the object that is bound to the event script.
     */
   var htmlFor: java.lang.String = js.native
+  var integrity: java.lang.String = js.native
   /**
     * Retrieves the URL to an external file that contains the source code or data.
     */

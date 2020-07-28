@@ -48,6 +48,8 @@ class PerformanceTiming ()
   /* CompleteClass */
   override val responseStart: Double = js.native
   /* CompleteClass */
+  override val secureConnectionStart: Double = js.native
+  /* CompleteClass */
   override val unloadEventEnd: Double = js.native
   /* CompleteClass */
   override val unloadEventStart: Double = js.native

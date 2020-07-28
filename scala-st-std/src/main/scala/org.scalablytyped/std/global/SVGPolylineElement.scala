@@ -14,6 +14,8 @@ class SVGPolylineElement ()
   /* CompleteClass */
   override val childElementCount: Double = js.native
   /* CompleteClass */
+  override val children: org.scalablytyped.std.HTMLCollection = js.native
+  /* CompleteClass */
   override val externalResourcesRequired: org.scalablytyped.std.SVGAnimatedBoolean = js.native
   /* CompleteClass */
   override val farthestViewportElement: org.scalablytyped.std.SVGElement = js.native

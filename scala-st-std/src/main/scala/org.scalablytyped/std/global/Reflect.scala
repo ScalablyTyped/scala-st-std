@@ -22,8 +22,7 @@ object Reflect extends js.Object {
   def get(target: js.Any, propertyKey: PropertyKey, receiver: js.Any): js.Any = js.native
   def getOwnPropertyDescriptor(target: js.Any, propertyKey: PropertyKey): PropertyDescriptor = js.native
   def getPrototypeOf(target: js.Any): js.Any = js.native
-  def has(target: js.Any, propertyKey: java.lang.String): scala.Boolean = js.native
-  def has(target: js.Any, propertyKey: js.Symbol): scala.Boolean = js.native
+  def has(target: js.Any, propertyKey: PropertyKey): scala.Boolean = js.native
   def isExtensible(target: js.Any): scala.Boolean = js.native
   def ownKeys(target: js.Any): js.Array[PropertyKey] = js.native
   def preventExtensions(target: js.Any): scala.Boolean = js.native

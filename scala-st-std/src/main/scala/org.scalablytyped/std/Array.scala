@@ -25,7 +25,7 @@ trait Array[T] extends /* n */ NumberDictionary[T] {
     * Combines two or more arrays.
     * @param items Additional items to add to the end of array1.
     */
-  def concat(items: (T | js.Array[T])*): js.Array[T] = js.native
+  def concat(items: (js.Array[T] | T)*): js.Array[T] = js.native
   /**
     * Returns the this object after copying a section of the array identified by start and end
     * to the same array starting at position target
@@ -90,16 +90,19 @@ trait Array[T] extends /* n */ NumberDictionary[T] {
     thisArg: js.Any
   ): js.UndefOr[T] = js.native
   /**
-    * Returns the index of the first element in the array where predicate is true, and undefined
+    * Returns the index of the first element in the array where predicate is true, and -1
     * otherwise.
     * @param predicate find calls predicate once for each element of the array, in ascending
-    * order, until it finds one where predicate returns true. If such an element is found, 
+    * order, until it finds one where predicate returns true. If such an element is found,
     * findIndex immediately returns that element index. Otherwise, findIndex returns -1.
     * @param thisArg If provided, it will be used as the this value for each invocation of
     * predicate. If it is not provided, undefined is used instead.
     */
-  def findIndex(predicate: js.Function1[/* value */ T, scala.Boolean]): Double = js.native
-  def findIndex(predicate: js.Function1[/* value */ T, scala.Boolean], thisArg: js.Any): Double = js.native
+  def findIndex(predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], scala.Boolean]): Double = js.native
+  def findIndex(
+    predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], scala.Boolean],
+    thisArg: js.Any
+  ): Double = js.native
   /**
     * Performs the specified action for each element in an array.
     * @param callbackfn  A function that accepts up to three arguments. forEach calls the callbackfn function one time for each element in the array.
@@ -139,11 +142,59 @@ trait Array[T] extends /* n */ NumberDictionary[T] {
     * @param callbackfn A function that accepts up to three arguments. The map method calls the callbackfn function one time for each element in the array.
     * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
     */
-  def map[U](callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U]): js.Array[U] = js.native
+  def map[U](callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U]): js.Tuple4[U, U, U, U] = js.native
   def map[U](
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U],
     thisArg: js.Any
+  ): js.Tuple4[U, U, U, U] = js.native
+  /**
+    * Calls a defined callback function on each element of an array, and returns an array that contains the results.
+    * @param callbackfn A function that accepts up to three arguments. The map method calls the callbackfn function one time for each element in the array.
+    * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
+    */
+  @JSName("map")
+  def map_U_Array[U](callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U]): js.Array[U] = js.native
+  @JSName("map")
+  def map_U_Array[U](
+    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U],
+    thisArg: js.Any
   ): js.Array[U] = js.native
+  /**
+    * Calls a defined callback function on each element of an array, and returns an array that contains the results.
+    * @param callbackfn A function that accepts up to three arguments. The map method calls the callbackfn function one time for each element in the array.
+    * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
+    */
+  @JSName("map")
+  def map_U_Tuple2[U](callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U]): js.Tuple2[U, U] = js.native
+  @JSName("map")
+  def map_U_Tuple2[U](
+    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U],
+    thisArg: js.Any
+  ): js.Tuple2[U, U] = js.native
+  /**
+    * Calls a defined callback function on each element of an array, and returns an array that contains the results.
+    * @param callbackfn A function that accepts up to three arguments. The map method calls the callbackfn function one time for each element in the array.
+    * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
+    */
+  @JSName("map")
+  def map_U_Tuple3[U](callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U]): js.Tuple3[U, U, U] = js.native
+  @JSName("map")
+  def map_U_Tuple3[U](
+    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U],
+    thisArg: js.Any
+  ): js.Tuple3[U, U, U] = js.native
+  /**
+    * Calls a defined callback function on each element of an array, and returns an array that contains the results.
+    * @param callbackfn A function that accepts up to three arguments. The map method calls the callbackfn function one time for each element in the array.
+    * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
+    */
+  @JSName("map")
+  def map_U_Tuple5[U](callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U]): js.Tuple5[U, U, U, U, U] = js.native
+  @JSName("map")
+  def map_U_Tuple5[U](
+    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U],
+    thisArg: js.Any
+  ): js.Tuple5[U, U, U, U, U] = js.native
   /**
     * Removes the last element from an array and returns it.
     */

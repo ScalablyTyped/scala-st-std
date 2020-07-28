@@ -303,7 +303,8 @@ trait Document
   extends Node
      with GlobalEventHandlers
      with NodeSelector
-     with DocumentEvent {
+     with DocumentEvent
+     with ParentNode {
   /**
     * Sets or gets the URL for the current document. 
     */

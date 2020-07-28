@@ -22,6 +22,7 @@ trait HTMLLinkElement
     */
   var hreflang: java.lang.String = js.native
   var `import`: js.UndefOr[Document] = js.native
+  var integrity: java.lang.String = js.native
   /**
     * Sets or retrieves the media type.
     */

@@ -1,6 +1,5 @@
 package org.scalablytyped.std.global
 
-import org.scalablytyped.std.Window
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,5 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("opener")
 @js.native
-object opener extends TopLevel[Window]
+object opener
+  extends TopLevel[js.Any]
 

@@ -8,7 +8,16 @@ import scala.scalajs.js.annotation._
 @JSGlobal("DocumentFragment")
 @js.native
 class DocumentFragment ()
-  extends org.scalablytyped.std.DocumentFragment
+  extends org.scalablytyped.std.DocumentFragment {
+  /* CompleteClass */
+  override val childElementCount: Double = js.native
+  /* CompleteClass */
+  override val children: org.scalablytyped.std.HTMLCollection = js.native
+  /* CompleteClass */
+  override val firstElementChild: org.scalablytyped.std.Element = js.native
+  /* CompleteClass */
+  override val lastElementChild: org.scalablytyped.std.Element = js.native
+}
 
 @JSGlobal("DocumentFragment")
 @js.native
