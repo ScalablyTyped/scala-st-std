@@ -7,6 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** @deprecated */
 @JSGlobal("onorientationchange")
 @js.native
 object onorientationchange

@@ -1,5 +1,6 @@
 package org.scalablytyped.std
 
+import org.scalablytyped.std.stdBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,9 +18,7 @@ trait DOMImplementation extends js.Object {
   def createDocumentType(qualifiedName: java.lang.String, publicId: java.lang.String, systemId: java.lang.String): DocumentType = js.native
   def createHTMLDocument(): Document = js.native
   def createHTMLDocument(title: java.lang.String): Document = js.native
-  def hasFeature(): scala.Boolean = js.native
-  def hasFeature(feature: java.lang.String): scala.Boolean = js.native
-  def hasFeature(feature: java.lang.String, version: java.lang.String): scala.Boolean = js.native
-  def hasFeature(feature: Null, version: java.lang.String): scala.Boolean = js.native
+  /** @deprecated */
+  def hasFeature(args: js.Any*): `true` = js.native
 }
 

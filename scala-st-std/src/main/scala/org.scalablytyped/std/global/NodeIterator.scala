@@ -9,11 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class NodeIterator ()
   extends org.scalablytyped.std.NodeIterator {
-  /** @deprecated */
-  /* CompleteClass */
-  override val expandEntityReferences: scala.Boolean = js.native
   /* CompleteClass */
   override val filter: org.scalablytyped.std.NodeFilter | Null = js.native
+  /* CompleteClass */
+  override val pointerBeforeReferenceNode: scala.Boolean = js.native
+  /* CompleteClass */
+  override val referenceNode: org.scalablytyped.std.Node = js.native
   /* CompleteClass */
   override val root: org.scalablytyped.std.Node = js.native
   /* CompleteClass */

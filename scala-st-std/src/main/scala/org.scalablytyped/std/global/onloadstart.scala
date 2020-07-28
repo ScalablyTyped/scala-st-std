@@ -7,6 +7,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Occurs when Internet Explorer begins looking for media data.
+  * @param ev The event.
+  */
 @JSGlobal("onloadstart")
 @js.native
 object onloadstart

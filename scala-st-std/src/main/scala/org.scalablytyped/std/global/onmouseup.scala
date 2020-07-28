@@ -6,6 +6,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Fires when the user releases a mouse button while the mouse is over the object.
+  * @param ev The mouse event.
+  */
 @JSGlobal("onmouseup")
 @js.native
 object onmouseup

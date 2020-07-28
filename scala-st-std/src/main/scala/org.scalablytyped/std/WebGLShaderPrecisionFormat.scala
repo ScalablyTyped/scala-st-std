@@ -5,14 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WebGLShaderPrecisionFormat extends js.Object {
-  val precision: Double
-  val rangeMax: Double
-  val rangeMin: Double
+  val precision: GLint
+  val rangeMax: GLint
+  val rangeMin: GLint
 }
 
 object WebGLShaderPrecisionFormat {
   @scala.inline
-  def apply(precision: Double, rangeMax: Double, rangeMin: Double): WebGLShaderPrecisionFormat = {
+  def apply(precision: GLint, rangeMax: GLint, rangeMin: GLint): WebGLShaderPrecisionFormat = {
     val __obj = js.Dynamic.literal(precision = precision.asInstanceOf[js.Any], rangeMax = rangeMax.asInstanceOf[js.Any], rangeMin = rangeMin.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebGLShaderPrecisionFormat]
   }
@@ -28,11 +28,11 @@ object WebGLShaderPrecisionFormat {
         x
     }
     @scala.inline
-    def setPrecision(value: Double): Self = this.set("precision", value.asInstanceOf[js.Any])
+    def setPrecision(value: GLint): Self = this.set("precision", value.asInstanceOf[js.Any])
     @scala.inline
-    def setRangeMax(value: Double): Self = this.set("rangeMax", value.asInstanceOf[js.Any])
+    def setRangeMax(value: GLint): Self = this.set("rangeMax", value.asInstanceOf[js.Any])
     @scala.inline
-    def setRangeMin(value: Double): Self = this.set("rangeMin", value.asInstanceOf[js.Any])
+    def setRangeMin(value: GLint): Self = this.set("rangeMin", value.asInstanceOf[js.Any])
   }
   
 }

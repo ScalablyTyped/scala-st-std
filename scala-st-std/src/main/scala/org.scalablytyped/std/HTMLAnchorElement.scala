@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 trait HTMLAnchorElement
   extends HTMLElement
      with HTMLHyperlinkElementUtils {
-  var Methods: java.lang.String = js.native
   /**
     * Sets or retrieves the character set used to encode the object.
     */
@@ -24,14 +23,13 @@ trait HTMLAnchorElement
     * Sets or retrieves the language code of the object.
     */
   var hreflang: java.lang.String = js.native
-  val mimeType: java.lang.String = js.native
   /**
     * Sets or retrieves the shape of the object.
     */
   /** @deprecated */
   var name: java.lang.String = js.native
-  val nameProp: java.lang.String = js.native
-  val protocolLong: java.lang.String = js.native
+  var ping: java.lang.String = js.native
+  var referrerPolicy: java.lang.String = js.native
   /**
     * Sets or retrieves the relationship between the object and the destination of the link.
     */
@@ -56,7 +54,6 @@ trait HTMLAnchorElement
     */
   var text: java.lang.String = js.native
   var `type`: java.lang.String = js.native
-  var urn: java.lang.String = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */

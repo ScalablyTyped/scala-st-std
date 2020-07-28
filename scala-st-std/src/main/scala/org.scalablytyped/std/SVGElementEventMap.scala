@@ -4,57 +4,70 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SVGElementEventMap extends ElementEventMap {
-  var click: MouseEvent
-  var dblclick: MouseEvent
-  var focusin: FocusEvent
-  var focusout: FocusEvent
-  var load: Event
-  var mousedown: MouseEvent
-  var mousemove: MouseEvent
-  var mouseout: MouseEvent
-  var mouseover: MouseEvent
-  var mouseup: MouseEvent
-}
+trait SVGElementEventMap
+  extends ElementEventMap
+     with GlobalEventHandlersEventMap
+     with DocumentAndElementEventHandlersEventMap
 
 object SVGElementEventMap {
   @scala.inline
   def apply(
-    MSGestureChange: Event,
-    MSGestureDoubleTap: Event,
-    MSGestureEnd: Event,
-    MSGestureHold: Event,
-    MSGestureStart: Event,
-    MSGestureTap: Event,
-    MSGotPointerCapture: Event,
-    MSInertiaStart: Event,
-    MSLostPointerCapture: Event,
-    MSPointerCancel: Event,
-    MSPointerDown: Event,
-    MSPointerEnter: Event,
-    MSPointerLeave: Event,
-    MSPointerMove: Event,
-    MSPointerOut: Event,
-    MSPointerOver: Event,
-    MSPointerUp: Event,
+    abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,
     animationiteration: AnimationEvent,
     animationstart: AnimationEvent,
-    ariarequest: Event,
+    auxclick: Event,
+    blur: FocusEvent,
+    cancel: Event,
+    canplay: Event,
+    canplaythrough: Event,
+    change: Event,
     click: MouseEvent,
-    command: Event,
+    close: Event,
+    contextmenu: MouseEvent,
+    copy: ClipboardEvent,
+    cuechange: Event,
+    cut: ClipboardEvent,
     dblclick: MouseEvent,
-    focusin: FocusEvent,
-    focusout: FocusEvent,
+    drag: DragEvent,
+    dragend: DragEvent,
+    dragenter: DragEvent,
+    dragexit: Event,
+    dragleave: DragEvent,
+    dragover: DragEvent,
+    dragstart: DragEvent,
+    drop: DragEvent,
+    durationchange: Event,
+    emptied: Event,
+    ended: Event,
+    error: ErrorEvent,
+    focus: FocusEvent,
+    fullscreenchange: Event,
+    fullscreenerror: Event,
     gotpointercapture: PointerEvent,
+    input: Event,
+    invalid: Event,
+    keydown: KeyboardEvent,
+    keypress: KeyboardEvent,
+    keyup: KeyboardEvent,
     load: Event,
+    loadeddata: Event,
+    loadedmetadata: Event,
+    loadend: ProgressEvent,
+    loadstart: Event,
     lostpointercapture: PointerEvent,
     mousedown: MouseEvent,
+    mouseenter: MouseEvent,
+    mouseleave: MouseEvent,
     mousemove: MouseEvent,
     mouseout: MouseEvent,
     mouseover: MouseEvent,
     mouseup: MouseEvent,
+    paste: ClipboardEvent,
+    pause: Event,
+    play: Event,
+    playing: Event,
     pointercancel: PointerEvent,
     pointerdown: PointerEvent,
     pointerenter: PointerEvent,
@@ -63,6 +76,20 @@ object SVGElementEventMap {
     pointerout: PointerEvent,
     pointerover: PointerEvent,
     pointerup: PointerEvent,
+    progress: ProgressEvent,
+    ratechange: Event,
+    reset: Event,
+    resize: UIEvent,
+    scroll: UIEvent,
+    securitypolicyviolation: SecurityPolicyViolationEvent,
+    seeked: Event,
+    seeking: Event,
+    select: UIEvent,
+    stalled: Event,
+    submit: Event,
+    suspend: Event,
+    timeupdate: Event,
+    toggle: Event,
     touchcancel: TouchEvent,
     touchend: TouchEvent,
     touchmove: TouchEvent,
@@ -71,45 +98,12 @@ object SVGElementEventMap {
     transitionend: TransitionEvent,
     transitionrun: TransitionEvent,
     transitionstart: TransitionEvent,
-    webkitfullscreenchange: Event,
-    webkitfullscreenerror: Event,
+    volumechange: Event,
+    waiting: Event,
     wheel: WheelEvent
   ): SVGElementEventMap = {
-    val __obj = js.Dynamic.literal(MSGestureChange = MSGestureChange.asInstanceOf[js.Any], MSGestureDoubleTap = MSGestureDoubleTap.asInstanceOf[js.Any], MSGestureEnd = MSGestureEnd.asInstanceOf[js.Any], MSGestureHold = MSGestureHold.asInstanceOf[js.Any], MSGestureStart = MSGestureStart.asInstanceOf[js.Any], MSGestureTap = MSGestureTap.asInstanceOf[js.Any], MSGotPointerCapture = MSGotPointerCapture.asInstanceOf[js.Any], MSInertiaStart = MSInertiaStart.asInstanceOf[js.Any], MSLostPointerCapture = MSLostPointerCapture.asInstanceOf[js.Any], MSPointerCancel = MSPointerCancel.asInstanceOf[js.Any], MSPointerDown = MSPointerDown.asInstanceOf[js.Any], MSPointerEnter = MSPointerEnter.asInstanceOf[js.Any], MSPointerLeave = MSPointerLeave.asInstanceOf[js.Any], MSPointerMove = MSPointerMove.asInstanceOf[js.Any], MSPointerOut = MSPointerOut.asInstanceOf[js.Any], MSPointerOver = MSPointerOver.asInstanceOf[js.Any], MSPointerUp = MSPointerUp.asInstanceOf[js.Any], animationcancel = animationcancel.asInstanceOf[js.Any], animationend = animationend.asInstanceOf[js.Any], animationiteration = animationiteration.asInstanceOf[js.Any], animationstart = animationstart.asInstanceOf[js.Any], ariarequest = ariarequest.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any], dblclick = dblclick.asInstanceOf[js.Any], focusin = focusin.asInstanceOf[js.Any], focusout = focusout.asInstanceOf[js.Any], gotpointercapture = gotpointercapture.asInstanceOf[js.Any], load = load.asInstanceOf[js.Any], lostpointercapture = lostpointercapture.asInstanceOf[js.Any], mousedown = mousedown.asInstanceOf[js.Any], mousemove = mousemove.asInstanceOf[js.Any], mouseout = mouseout.asInstanceOf[js.Any], mouseover = mouseover.asInstanceOf[js.Any], mouseup = mouseup.asInstanceOf[js.Any], pointercancel = pointercancel.asInstanceOf[js.Any], pointerdown = pointerdown.asInstanceOf[js.Any], pointerenter = pointerenter.asInstanceOf[js.Any], pointerleave = pointerleave.asInstanceOf[js.Any], pointermove = pointermove.asInstanceOf[js.Any], pointerout = pointerout.asInstanceOf[js.Any], pointerover = pointerover.asInstanceOf[js.Any], pointerup = pointerup.asInstanceOf[js.Any], touchcancel = touchcancel.asInstanceOf[js.Any], touchend = touchend.asInstanceOf[js.Any], touchmove = touchmove.asInstanceOf[js.Any], touchstart = touchstart.asInstanceOf[js.Any], transitioncancel = transitioncancel.asInstanceOf[js.Any], transitionend = transitionend.asInstanceOf[js.Any], transitionrun = transitionrun.asInstanceOf[js.Any], transitionstart = transitionstart.asInstanceOf[js.Any], webkitfullscreenchange = webkitfullscreenchange.asInstanceOf[js.Any], webkitfullscreenerror = webkitfullscreenerror.asInstanceOf[js.Any], wheel = wheel.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(abort = abort.asInstanceOf[js.Any], animationcancel = animationcancel.asInstanceOf[js.Any], animationend = animationend.asInstanceOf[js.Any], animationiteration = animationiteration.asInstanceOf[js.Any], animationstart = animationstart.asInstanceOf[js.Any], auxclick = auxclick.asInstanceOf[js.Any], blur = blur.asInstanceOf[js.Any], cancel = cancel.asInstanceOf[js.Any], canplay = canplay.asInstanceOf[js.Any], canplaythrough = canplaythrough.asInstanceOf[js.Any], change = change.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], contextmenu = contextmenu.asInstanceOf[js.Any], copy = copy.asInstanceOf[js.Any], cuechange = cuechange.asInstanceOf[js.Any], cut = cut.asInstanceOf[js.Any], dblclick = dblclick.asInstanceOf[js.Any], drag = drag.asInstanceOf[js.Any], dragend = dragend.asInstanceOf[js.Any], dragenter = dragenter.asInstanceOf[js.Any], dragexit = dragexit.asInstanceOf[js.Any], dragleave = dragleave.asInstanceOf[js.Any], dragover = dragover.asInstanceOf[js.Any], dragstart = dragstart.asInstanceOf[js.Any], drop = drop.asInstanceOf[js.Any], durationchange = durationchange.asInstanceOf[js.Any], emptied = emptied.asInstanceOf[js.Any], ended = ended.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], fullscreenchange = fullscreenchange.asInstanceOf[js.Any], fullscreenerror = fullscreenerror.asInstanceOf[js.Any], gotpointercapture = gotpointercapture.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], invalid = invalid.asInstanceOf[js.Any], keydown = keydown.asInstanceOf[js.Any], keypress = keypress.asInstanceOf[js.Any], keyup = keyup.asInstanceOf[js.Any], load = load.asInstanceOf[js.Any], loadeddata = loadeddata.asInstanceOf[js.Any], loadedmetadata = loadedmetadata.asInstanceOf[js.Any], loadend = loadend.asInstanceOf[js.Any], loadstart = loadstart.asInstanceOf[js.Any], lostpointercapture = lostpointercapture.asInstanceOf[js.Any], mousedown = mousedown.asInstanceOf[js.Any], mouseenter = mouseenter.asInstanceOf[js.Any], mouseleave = mouseleave.asInstanceOf[js.Any], mousemove = mousemove.asInstanceOf[js.Any], mouseout = mouseout.asInstanceOf[js.Any], mouseover = mouseover.asInstanceOf[js.Any], mouseup = mouseup.asInstanceOf[js.Any], paste = paste.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], play = play.asInstanceOf[js.Any], playing = playing.asInstanceOf[js.Any], pointercancel = pointercancel.asInstanceOf[js.Any], pointerdown = pointerdown.asInstanceOf[js.Any], pointerenter = pointerenter.asInstanceOf[js.Any], pointerleave = pointerleave.asInstanceOf[js.Any], pointermove = pointermove.asInstanceOf[js.Any], pointerout = pointerout.asInstanceOf[js.Any], pointerover = pointerover.asInstanceOf[js.Any], pointerup = pointerup.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], ratechange = ratechange.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any], resize = resize.asInstanceOf[js.Any], scroll = scroll.asInstanceOf[js.Any], securitypolicyviolation = securitypolicyviolation.asInstanceOf[js.Any], seeked = seeked.asInstanceOf[js.Any], seeking = seeking.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], stalled = stalled.asInstanceOf[js.Any], submit = submit.asInstanceOf[js.Any], suspend = suspend.asInstanceOf[js.Any], timeupdate = timeupdate.asInstanceOf[js.Any], toggle = toggle.asInstanceOf[js.Any], touchcancel = touchcancel.asInstanceOf[js.Any], touchend = touchend.asInstanceOf[js.Any], touchmove = touchmove.asInstanceOf[js.Any], touchstart = touchstart.asInstanceOf[js.Any], transitioncancel = transitioncancel.asInstanceOf[js.Any], transitionend = transitionend.asInstanceOf[js.Any], transitionrun = transitionrun.asInstanceOf[js.Any], transitionstart = transitionstart.asInstanceOf[js.Any], volumechange = volumechange.asInstanceOf[js.Any], waiting = waiting.asInstanceOf[js.Any], wheel = wheel.asInstanceOf[js.Any])
     __obj.asInstanceOf[SVGElementEventMap]
   }
-  @scala.inline
-  implicit class SVGElementEventMapOps[Self <: SVGElementEventMap] (val x: Self) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setClick(value: MouseEvent): Self = this.set("click", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setDblclick(value: MouseEvent): Self = this.set("dblclick", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setFocusin(value: FocusEvent): Self = this.set("focusin", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setFocusout(value: FocusEvent): Self = this.set("focusout", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setLoad(value: Event): Self = this.set("load", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setMousedown(value: MouseEvent): Self = this.set("mousedown", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setMousemove(value: MouseEvent): Self = this.set("mousemove", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setMouseout(value: MouseEvent): Self = this.set("mouseout", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setMouseover(value: MouseEvent): Self = this.set("mouseover", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setMouseup(value: MouseEvent): Self = this.set("mouseup", value.asInstanceOf[js.Any])
-  }
-  
 }
 

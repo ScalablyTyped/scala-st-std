@@ -12,16 +12,16 @@ import scala.scalajs.js.annotation._
 object removeEventListener_contextmenu extends js.Object {
   def apply(
     `type`: contextmenu,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.PointerEvent, _]
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.MouseEvent, _]
   ): Unit = js.native
   def apply(
     `type`: contextmenu,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.PointerEvent, _],
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.MouseEvent, _],
     options: EventListenerOptions
   ): Unit = js.native
   def apply(
     `type`: contextmenu,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.PointerEvent, _],
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.MouseEvent, _],
     options: scala.Boolean
   ): Unit = js.native
 }

@@ -8,7 +8,18 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Range")
 @js.native
 class Range ()
-  extends org.scalablytyped.std.Range
+  extends org.scalablytyped.std.Range {
+  /* CompleteClass */
+  override val collapsed: scala.Boolean = js.native
+  /* CompleteClass */
+  override val endContainer: org.scalablytyped.std.Node = js.native
+  /* CompleteClass */
+  override val endOffset: Double = js.native
+  /* CompleteClass */
+  override val startContainer: org.scalablytyped.std.Node = js.native
+  /* CompleteClass */
+  override val startOffset: Double = js.native
+}
 
 @JSGlobal("Range")
 @js.native

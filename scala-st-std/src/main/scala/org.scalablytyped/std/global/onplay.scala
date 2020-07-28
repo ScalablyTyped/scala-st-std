@@ -7,6 +7,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Occurs when the play method is requested.
+  * @param ev The event.
+  */
 @JSGlobal("onplay")
 @js.native
 object onplay

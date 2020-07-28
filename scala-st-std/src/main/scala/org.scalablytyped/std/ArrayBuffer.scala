@@ -11,7 +11,9 @@ import scala.scalajs.js.annotation._
   * buffer as needed.
   */
 @js.native
-trait ArrayBuffer extends BufferSource {
+trait ArrayBuffer
+  extends BufferSource
+     with Transferable {
   /**
     * Read-only. The length of the ArrayBuffer (in bytes).
     */

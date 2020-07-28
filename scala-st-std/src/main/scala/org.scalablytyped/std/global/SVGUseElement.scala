@@ -10,31 +10,27 @@ import scala.scalajs.js.annotation._
 class SVGUseElement ()
   extends org.scalablytyped.std.SVGUseElement {
   /* CompleteClass */
-  override val childElementCount: Double = js.native
-  /* CompleteClass */
-  override val firstElementChild: org.scalablytyped.std.Element | Null = js.native
+  override val assignedSlot: org.scalablytyped.std.HTMLSlotElement | Null = js.native
   /* CompleteClass */
   override val href: org.scalablytyped.std.SVGAnimatedString = js.native
-  /* CompleteClass */
-  override val lastElementChild: org.scalablytyped.std.Element | Null = js.native
+  /**
+    * Returns the first following sibling that
+    * is an element, and null otherwise.
+    */
   /* CompleteClass */
   override val nextElementSibling: org.scalablytyped.std.Element | Null = js.native
+  /**
+    * Returns the first preceding sibling that
+    * is an element, and null otherwise.
+    */
   /* CompleteClass */
   override val previousElementSibling: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
   override val requiredExtensions: org.scalablytyped.std.SVGStringList = js.native
-  /** @deprecated */
-  /* CompleteClass */
-  override val requiredFeatures: org.scalablytyped.std.SVGStringList = js.native
   /* CompleteClass */
   override val style: org.scalablytyped.std.CSSStyleDeclaration = js.native
   /* CompleteClass */
   override val systemLanguage: org.scalablytyped.std.SVGStringList = js.native
-  /** @deprecated */
-  /* CompleteClass */
-  override def hasExtension(extension: java.lang.String): scala.Boolean = js.native
-  /* CompleteClass */
-  override def remove(): Unit = js.native
 }
 
 @JSGlobal("SVGUseElement")

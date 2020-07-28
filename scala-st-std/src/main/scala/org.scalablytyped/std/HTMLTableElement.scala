@@ -92,7 +92,6 @@ trait HTMLTableElement extends HTMLElement {
     * Removes the specified row (tr) from the element and from the rows collection.
     * @param index Number that specifies the zero-based position in the rows collection of the row to remove.
     */
-  def deleteRow(): Unit = js.native
   def deleteRow(index: Double): Unit = js.native
   /**
     * Deletes the tFoot element and its contents from the table.

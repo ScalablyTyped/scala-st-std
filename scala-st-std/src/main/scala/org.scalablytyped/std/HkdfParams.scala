@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait HkdfParams extends Algorithm {
-  var hash: java.lang.String | Algorithm
+  var hash: HashAlgorithmIdentifier
   var info: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
   var salt: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
 }
@@ -13,7 +13,7 @@ trait HkdfParams extends Algorithm {
 object HkdfParams {
   @scala.inline
   def apply(
-    hash: java.lang.String | Algorithm,
+    hash: HashAlgorithmIdentifier,
     info: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
     name: java.lang.String,
     salt: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
@@ -33,7 +33,7 @@ object HkdfParams {
         x
     }
     @scala.inline
-    def setHash(value: java.lang.String | Algorithm): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setHash(value: HashAlgorithmIdentifier): Self = this.set("hash", value.asInstanceOf[js.Any])
     @scala.inline
     def setInfo(
       value: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer

@@ -1,10 +1,12 @@
 package org.scalablytyped.std
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Storage extends js.Object {
+trait Storage
+  extends /* name */ StringDictionary[js.Any] {
   /**
     * Returns the number of key/value pairs currently present in the list associated with the
     * object.

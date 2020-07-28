@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SVGFilterElement
   extends SVGElement
-     with SVGUnitTypes
      with SVGURIReference {
   /** @deprecated */
   val filterResX: SVGAnimatedInteger = js.native

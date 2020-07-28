@@ -7,6 +7,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Fires when the user resets a form.
+  * @param ev The event.
+  */
 @JSGlobal("onreset")
 @js.native
 object onreset

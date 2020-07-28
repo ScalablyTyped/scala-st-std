@@ -83,6 +83,7 @@ trait BaseAudioContext extends EventTarget {
   ): js.Promise[AudioBuffer] = js.native
   def decodeAudioData(audioData: ArrayBuffer, successCallback: DecodeSuccessCallback): js.Promise[AudioBuffer] = js.native
   def decodeAudioData(audioData: ArrayBuffer, successCallback: DecodeSuccessCallback, errorCallback: DecodeErrorCallback): js.Promise[AudioBuffer] = js.native
+  def decodeAudioData(audioData: ArrayBuffer, successCallback: Null, errorCallback: DecodeErrorCallback): js.Promise[AudioBuffer] = js.native
   @JSName("removeEventListener")
   def removeEventListener_statechange(`type`: statechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")

@@ -20,15 +20,25 @@ trait ApplicationCache extends EventTarget {
   val OBSOLETE: Double = js.native
   val UNCACHED: Double = js.native
   val UPDATEREADY: Double = js.native
+  /** @deprecated */
   var oncached: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /** @deprecated */
   var onchecking: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /** @deprecated */
   var ondownloading: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /** @deprecated */
   var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /** @deprecated */
   var onnoupdate: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /** @deprecated */
   var onobsolete: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /** @deprecated */
   var onprogress: (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]) | Null = js.native
+  /** @deprecated */
   var onupdateready: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /** @deprecated */
   val status: Double = js.native
+  /** @deprecated */
   def abort(): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_cached(`type`: cached, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -254,7 +264,9 @@ trait ApplicationCache extends EventTarget {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
+  /** @deprecated */
   def swapCache(): Unit = js.native
+  /** @deprecated */
   def update(): Unit = js.native
 }
 

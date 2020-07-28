@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 trait DocumentOrShadowRoot extends js.Object {
   val activeElement: Element | Null
+  /**
+    * Retrieves a collection of styleSheet objects representing the style sheets that correspond to each instance of a link or style object in the document.
+    */
   val styleSheets: StyleSheetList
   def elementFromPoint(x: Double, y: Double): Element | Null
   def elementsFromPoint(x: Double, y: Double): js.Array[Element]

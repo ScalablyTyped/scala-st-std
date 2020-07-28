@@ -7,6 +7,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Occurs when playback is paused.
+  * @param ev The event.
+  */
 @JSGlobal("onpause")
 @js.native
 object onpause

@@ -7,6 +7,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Occurs to indicate the current playback position.
+  * @param ev The event.
+  */
 @JSGlobal("ontimeupdate")
 @js.native
 object ontimeupdate

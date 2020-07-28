@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 trait RTCIceGatherOptions extends js.Object {
   var gatherPolicy: js.UndefOr[RTCIceGatherPolicy] = js.undefined
   var iceservers: js.UndefOr[js.Array[RTCIceServer]] = js.undefined
-  var portRange: js.UndefOr[MSPortRange] = js.undefined
 }
 
 object RTCIceGatherOptions {
@@ -37,10 +36,6 @@ object RTCIceGatherOptions {
     def setIceservers(value: js.Array[RTCIceServer]): Self = this.set("iceservers", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteIceservers: Self = this.set("iceservers", js.undefined)
-    @scala.inline
-    def setPortRange(value: MSPortRange): Self = this.set("portRange", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deletePortRange: Self = this.set("portRange", js.undefined)
   }
   
 }

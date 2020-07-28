@@ -1,5 +1,7 @@
 package org.scalablytyped.std.global
 
+import org.scalablytyped.std.GLenum
+import org.scalablytyped.std.GLint
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,9 +14,9 @@ class WebGLActiveInfo ()
   /* CompleteClass */
   override val name: java.lang.String = js.native
   /* CompleteClass */
-  override val size: Double = js.native
+  override val size: GLint = js.native
   /* CompleteClass */
-  override val `type`: Double = js.native
+  override val `type`: GLenum = js.native
 }
 
 @JSGlobal("WebGLActiveInfo")

@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Attr extends Node {
+  val localName: java.lang.String = js.native
   val name: java.lang.String = js.native
   val ownerElement: Element | Null = js.native
   val prefix: java.lang.String | Null = js.native

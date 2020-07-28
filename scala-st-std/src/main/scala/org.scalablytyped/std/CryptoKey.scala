@@ -7,18 +7,13 @@ import scala.scalajs.js.annotation._
 trait CryptoKey extends js.Object {
   val algorithm: KeyAlgorithm
   val extractable: scala.Boolean
-  val `type`: java.lang.String
-  val usages: js.Array[java.lang.String]
+  val `type`: KeyType
+  val usages: js.Array[KeyUsage]
 }
 
 object CryptoKey {
   @scala.inline
-  def apply(
-    algorithm: KeyAlgorithm,
-    extractable: scala.Boolean,
-    `type`: java.lang.String,
-    usages: js.Array[java.lang.String]
-  ): CryptoKey = {
+  def apply(algorithm: KeyAlgorithm, extractable: scala.Boolean, `type`: KeyType, usages: js.Array[KeyUsage]): CryptoKey = {
     val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any], extractable = extractable.asInstanceOf[js.Any], usages = usages.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CryptoKey]
@@ -39,11 +34,11 @@ object CryptoKey {
     @scala.inline
     def setExtractable(value: scala.Boolean): Self = this.set("extractable", value.asInstanceOf[js.Any])
     @scala.inline
-    def setType(value: java.lang.String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: KeyType): Self = this.set("type", value.asInstanceOf[js.Any])
     @scala.inline
-    def setUsagesVarargs(value: java.lang.String*): Self = this.set("usages", js.Array(value :_*))
+    def setUsagesVarargs(value: KeyUsage*): Self = this.set("usages", js.Array(value :_*))
     @scala.inline
-    def setUsages(value: js.Array[java.lang.String]): Self = this.set("usages", value.asInstanceOf[js.Any])
+    def setUsages(value: js.Array[KeyUsage]): Self = this.set("usages", value.asInstanceOf[js.Any])
   }
   
 }

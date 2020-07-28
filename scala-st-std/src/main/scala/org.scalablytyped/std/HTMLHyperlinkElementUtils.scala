@@ -9,11 +9,13 @@ trait HTMLHyperlinkElementUtils extends js.Object {
   var host: java.lang.String
   var hostname: java.lang.String
   var href: java.lang.String
-  var origin: java.lang.String
+  val origin: java.lang.String
+  var password: java.lang.String
   var pathname: java.lang.String
   var port: java.lang.String
   var protocol: java.lang.String
   var search: java.lang.String
+  var username: java.lang.String
 }
 
 object HTMLHyperlinkElementUtils {
@@ -24,12 +26,14 @@ object HTMLHyperlinkElementUtils {
     hostname: java.lang.String,
     href: java.lang.String,
     origin: java.lang.String,
+    password: java.lang.String,
     pathname: java.lang.String,
     port: java.lang.String,
     protocol: java.lang.String,
-    search: java.lang.String
+    search: java.lang.String,
+    username: java.lang.String
   ): HTMLHyperlinkElementUtils = {
-    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTMLHyperlinkElementUtils]
   }
   @scala.inline
@@ -54,6 +58,8 @@ object HTMLHyperlinkElementUtils {
     @scala.inline
     def setOrigin(value: java.lang.String): Self = this.set("origin", value.asInstanceOf[js.Any])
     @scala.inline
+    def setPassword(value: java.lang.String): Self = this.set("password", value.asInstanceOf[js.Any])
+    @scala.inline
     def setPathname(value: java.lang.String): Self = this.set("pathname", value.asInstanceOf[js.Any])
     @scala.inline
     def setPort(value: java.lang.String): Self = this.set("port", value.asInstanceOf[js.Any])
@@ -61,6 +67,8 @@ object HTMLHyperlinkElementUtils {
     def setProtocol(value: java.lang.String): Self = this.set("protocol", value.asInstanceOf[js.Any])
     @scala.inline
     def setSearch(value: java.lang.String): Self = this.set("search", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUsername(value: java.lang.String): Self = this.set("username", value.asInstanceOf[js.Any])
   }
   
 }

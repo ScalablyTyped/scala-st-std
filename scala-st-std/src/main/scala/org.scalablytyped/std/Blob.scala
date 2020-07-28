@@ -6,7 +6,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Blob
-  extends _BlobPart
+  extends ImageBitmapSource
+     with _BlobPart
      with _BodyInit {
   val size: Double = js.native
   val `type`: java.lang.String = js.native

@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DOMParser extends js.Object {
-  def parseFromString(source: java.lang.String, mimeType: java.lang.String): Document
+  def parseFromString(str: java.lang.String, `type`: SupportedType): Document
 }
 
 object DOMParser {
   @scala.inline
-  def apply(parseFromString: (java.lang.String, java.lang.String) => Document): DOMParser = {
+  def apply(parseFromString: (java.lang.String, SupportedType) => Document): DOMParser = {
     val __obj = js.Dynamic.literal(parseFromString = js.Any.fromFunction2(parseFromString))
     __obj.asInstanceOf[DOMParser]
   }
@@ -26,7 +26,7 @@ object DOMParser {
         x
     }
     @scala.inline
-    def setParseFromString(value: (java.lang.String, java.lang.String) => Document): Self = this.set("parseFromString", js.Any.fromFunction2(value))
+    def setParseFromString(value: (java.lang.String, SupportedType) => Document): Self = this.set("parseFromString", js.Any.fromFunction2(value))
   }
   
 }

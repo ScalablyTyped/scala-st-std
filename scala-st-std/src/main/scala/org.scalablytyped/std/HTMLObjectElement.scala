@@ -133,6 +133,7 @@ trait HTMLObjectElement
   ): Unit = js.native
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  def reportValidity(): scala.Boolean = js.native
   /**
     * Sets a custom error message that is displayed when a form is submitted.
     * @param error Sets a custom error message that is displayed when a form is submitted.

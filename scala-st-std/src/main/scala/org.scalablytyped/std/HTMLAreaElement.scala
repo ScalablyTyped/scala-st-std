@@ -22,6 +22,8 @@ trait HTMLAreaElement
     */
   /** @deprecated */
   var noHref: scala.Boolean = js.native
+  var ping: java.lang.String = js.native
+  var referrerPolicy: java.lang.String = js.native
   var rel: java.lang.String = js.native
   val relList: DOMTokenList = js.native
   /**

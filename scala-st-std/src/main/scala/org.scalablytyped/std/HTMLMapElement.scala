@@ -9,7 +9,7 @@ trait HTMLMapElement extends HTMLElement {
   /**
     * Retrieves a collection of the area objects defined for the given map object.
     */
-  val areas: HTMLAreasCollection = js.native
+  val areas: HTMLCollection = js.native
   /**
     * Sets or retrieves the name of the object.
     */

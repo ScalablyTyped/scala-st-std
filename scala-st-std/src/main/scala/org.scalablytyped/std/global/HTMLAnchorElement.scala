@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 class HTMLAnchorElement ()
   extends org.scalablytyped.std.HTMLAnchorElement {
   /* CompleteClass */
-  override val childElementCount: Double = js.native
+  override val assignedSlot: org.scalablytyped.std.HTMLSlotElement | Null = js.native
   /* CompleteClass */
-  override val firstElementChild: org.scalablytyped.std.Element | Null = js.native
+  override var contentEditable: java.lang.String = js.native
   /* CompleteClass */
   override var hash: java.lang.String = js.native
   /* CompleteClass */
@@ -22,15 +22,27 @@ class HTMLAnchorElement ()
   /* CompleteClass */
   override var href: java.lang.String = js.native
   /* CompleteClass */
-  override val lastElementChild: org.scalablytyped.std.Element | Null = js.native
+  override var inputMode: java.lang.String = js.native
+  /* CompleteClass */
+  override val isContentEditable: scala.Boolean = js.native
+  /**
+    * Returns the first following sibling that
+    * is an element, and null otherwise.
+    */
   /* CompleteClass */
   override val nextElementSibling: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
-  override var origin: java.lang.String = js.native
+  override val origin: java.lang.String = js.native
+  /* CompleteClass */
+  override var password: java.lang.String = js.native
   /* CompleteClass */
   override var pathname: java.lang.String = js.native
   /* CompleteClass */
   override var port: java.lang.String = js.native
+  /**
+    * Returns the first preceding sibling that
+    * is an element, and null otherwise.
+    */
   /* CompleteClass */
   override val previousElementSibling: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
@@ -40,7 +52,7 @@ class HTMLAnchorElement ()
   /* CompleteClass */
   override val style: org.scalablytyped.std.CSSStyleDeclaration = js.native
   /* CompleteClass */
-  override def remove(): Unit = js.native
+  override var username: java.lang.String = js.native
 }
 
 @JSGlobal("HTMLAnchorElement")

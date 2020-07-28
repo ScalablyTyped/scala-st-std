@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @JSGlobal("IDBRequest")
 @js.native
 class IDBRequest ()
-  extends org.scalablytyped.std.IDBRequest
+  extends org.scalablytyped.std.IDBRequest[js.Any]
 
 @JSGlobal("IDBRequest")
 @js.native
 object IDBRequest
-  extends Instantiable0[org.scalablytyped.std.IDBRequest]
+  extends Instantiable0[org.scalablytyped.std.IDBRequest[js.Any]]
 

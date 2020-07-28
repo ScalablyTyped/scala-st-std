@@ -5,13 +5,40 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TextMetrics extends js.Object {
+  val actualBoundingBoxAscent: Double
+  val actualBoundingBoxDescent: Double
+  val actualBoundingBoxLeft: Double
+  val actualBoundingBoxRight: Double
+  val alphabeticBaseline: Double
+  val emHeightAscent: Double
+  val emHeightDescent: Double
+  val fontBoundingBoxAscent: Double
+  val fontBoundingBoxDescent: Double
+  val hangingBaseline: Double
+  /**
+    * Returns the measurement described below.
+    */
+  val ideographicBaseline: Double
   val width: Double
 }
 
 object TextMetrics {
   @scala.inline
-  def apply(width: Double): TextMetrics = {
-    val __obj = js.Dynamic.literal(width = width.asInstanceOf[js.Any])
+  def apply(
+    actualBoundingBoxAscent: Double,
+    actualBoundingBoxDescent: Double,
+    actualBoundingBoxLeft: Double,
+    actualBoundingBoxRight: Double,
+    alphabeticBaseline: Double,
+    emHeightAscent: Double,
+    emHeightDescent: Double,
+    fontBoundingBoxAscent: Double,
+    fontBoundingBoxDescent: Double,
+    hangingBaseline: Double,
+    ideographicBaseline: Double,
+    width: Double
+  ): TextMetrics = {
+    val __obj = js.Dynamic.literal(actualBoundingBoxAscent = actualBoundingBoxAscent.asInstanceOf[js.Any], actualBoundingBoxDescent = actualBoundingBoxDescent.asInstanceOf[js.Any], actualBoundingBoxLeft = actualBoundingBoxLeft.asInstanceOf[js.Any], actualBoundingBoxRight = actualBoundingBoxRight.asInstanceOf[js.Any], alphabeticBaseline = alphabeticBaseline.asInstanceOf[js.Any], emHeightAscent = emHeightAscent.asInstanceOf[js.Any], emHeightDescent = emHeightDescent.asInstanceOf[js.Any], fontBoundingBoxAscent = fontBoundingBoxAscent.asInstanceOf[js.Any], fontBoundingBoxDescent = fontBoundingBoxDescent.asInstanceOf[js.Any], hangingBaseline = hangingBaseline.asInstanceOf[js.Any], ideographicBaseline = ideographicBaseline.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextMetrics]
   }
   @scala.inline
@@ -25,6 +52,28 @@ object TextMetrics {
         x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
         x
     }
+    @scala.inline
+    def setActualBoundingBoxAscent(value: Double): Self = this.set("actualBoundingBoxAscent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setActualBoundingBoxDescent(value: Double): Self = this.set("actualBoundingBoxDescent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setActualBoundingBoxLeft(value: Double): Self = this.set("actualBoundingBoxLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setActualBoundingBoxRight(value: Double): Self = this.set("actualBoundingBoxRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAlphabeticBaseline(value: Double): Self = this.set("alphabeticBaseline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEmHeightAscent(value: Double): Self = this.set("emHeightAscent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEmHeightDescent(value: Double): Self = this.set("emHeightDescent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFontBoundingBoxAscent(value: Double): Self = this.set("fontBoundingBoxAscent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFontBoundingBoxDescent(value: Double): Self = this.set("fontBoundingBoxDescent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHangingBaseline(value: Double): Self = this.set("hangingBaseline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIdeographicBaseline(value: Double): Self = this.set("ideographicBaseline", value.asInstanceOf[js.Any])
     @scala.inline
     def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
   }

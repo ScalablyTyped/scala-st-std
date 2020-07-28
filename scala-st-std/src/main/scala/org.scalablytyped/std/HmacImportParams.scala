@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait HmacImportParams extends Algorithm {
-  var hash: java.lang.String | Algorithm
+  var hash: HashAlgorithmIdentifier
   var length: js.UndefOr[Double] = js.undefined
 }
 
 object HmacImportParams {
   @scala.inline
-  def apply(hash: java.lang.String | Algorithm, name: java.lang.String): HmacImportParams = {
+  def apply(hash: HashAlgorithmIdentifier, name: java.lang.String): HmacImportParams = {
     val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[HmacImportParams]
   }
@@ -27,7 +27,7 @@ object HmacImportParams {
         x
     }
     @scala.inline
-    def setHash(value: java.lang.String | Algorithm): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setHash(value: HashAlgorithmIdentifier): Self = this.set("hash", value.asInstanceOf[js.Any])
     @scala.inline
     def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
     @scala.inline

@@ -6,26 +6,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DragEvent extends MouseEvent {
-  val dataTransfer: DataTransfer = js.native
-  def initDragEvent(
-    typeArg: java.lang.String,
-    canBubbleArg: scala.Boolean,
-    cancelableArg: scala.Boolean,
-    viewArg: Window,
-    detailArg: Double,
-    screenXArg: Double,
-    screenYArg: Double,
-    clientXArg: Double,
-    clientYArg: Double,
-    ctrlKeyArg: scala.Boolean,
-    altKeyArg: scala.Boolean,
-    shiftKeyArg: scala.Boolean,
-    metaKeyArg: scala.Boolean,
-    buttonArg: Double,
-    relatedTargetArg: EventTarget,
-    dataTransferArg: DataTransfer
-  ): Unit = js.native
-  def msConvertURL(file: File, targetType: java.lang.String): Unit = js.native
-  def msConvertURL(file: File, targetType: java.lang.String, targetURL: java.lang.String): Unit = js.native
+  /**
+    * Returns the DataTransfer object for the event.
+    */
+  val dataTransfer: DataTransfer | Null = js.native
 }
 

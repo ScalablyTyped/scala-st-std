@@ -4,13 +4,17 @@ import org.scalablytyped.std.stdStrings.afterprint
 import org.scalablytyped.std.stdStrings.beforeprint
 import org.scalablytyped.std.stdStrings.beforeunload
 import org.scalablytyped.std.stdStrings.hashchange
+import org.scalablytyped.std.stdStrings.languagechange
 import org.scalablytyped.std.stdStrings.message
+import org.scalablytyped.std.stdStrings.messageerror
 import org.scalablytyped.std.stdStrings.offline
 import org.scalablytyped.std.stdStrings.online
 import org.scalablytyped.std.stdStrings.pagehide
 import org.scalablytyped.std.stdStrings.pageshow
 import org.scalablytyped.std.stdStrings.popstate
+import org.scalablytyped.std.stdStrings.rejectionhandled
 import org.scalablytyped.std.stdStrings.storage
+import org.scalablytyped.std.stdStrings.unhandledrejection
 import org.scalablytyped.std.stdStrings.unload
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,13 +26,17 @@ trait WindowEventHandlers extends js.Object {
   var onbeforeprint: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var onbeforeunload: (js.ThisFunction1[/* this */ this.type, /* ev */ BeforeUnloadEvent, _]) | Null = js.native
   var onhashchange: (js.ThisFunction1[/* this */ this.type, /* ev */ HashChangeEvent, _]) | Null = js.native
+  var onlanguagechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var onmessage: (js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _]) | Null = js.native
+  var onmessageerror: (js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _]) | Null = js.native
   var onoffline: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var ononline: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var onpagehide: (js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, _]) | Null = js.native
   var onpageshow: (js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, _]) | Null = js.native
   var onpopstate: (js.ThisFunction1[/* this */ this.type, /* ev */ PopStateEvent, _]) | Null = js.native
+  var onrejectionhandled: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var onstorage: (js.ThisFunction1[/* this */ this.type, /* ev */ StorageEvent, _]) | Null = js.native
+  var onunhandledrejection: (js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, _]) | Null = js.native
   var onunload: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   def addEventListener(
@@ -97,6 +105,20 @@ trait WindowEventHandlers extends js.Object {
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
+  def addEventListener_languagechange(`type`: languagechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_languagechange(
+    `type`: languagechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_languagechange(
+    `type`: languagechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
   def addEventListener_message(`type`: message, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_message(
@@ -107,6 +129,20 @@ trait WindowEventHandlers extends js.Object {
   @JSName("addEventListener")
   def addEventListener_message(
     `type`: message,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_messageerror(`type`: messageerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_messageerror(
+    `type`: messageerror,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_messageerror(
+    `type`: messageerror,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _],
     options: scala.Boolean
   ): Unit = js.native
@@ -187,6 +223,20 @@ trait WindowEventHandlers extends js.Object {
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
+  def addEventListener_rejectionhandled(`type`: rejectionhandled, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_rejectionhandled(
+    `type`: rejectionhandled,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_rejectionhandled(
+    `type`: rejectionhandled,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
   def addEventListener_storage(`type`: storage, listener: js.ThisFunction1[/* this */ this.type, /* ev */ StorageEvent, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_storage(
@@ -198,6 +248,23 @@ trait WindowEventHandlers extends js.Object {
   def addEventListener_storage(
     `type`: storage,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ StorageEvent, _],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_unhandledrejection(
+    `type`: unhandledrejection,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, _]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_unhandledrejection(
+    `type`: unhandledrejection,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, _],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_unhandledrejection(
+    `type`: unhandledrejection,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -281,6 +348,20 @@ trait WindowEventHandlers extends js.Object {
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
+  def removeEventListener_languagechange(`type`: languagechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_languagechange(
+    `type`: languagechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_languagechange(
+    `type`: languagechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
   def removeEventListener_message(`type`: message, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_message(
@@ -291,6 +372,20 @@ trait WindowEventHandlers extends js.Object {
   @JSName("removeEventListener")
   def removeEventListener_message(
     `type`: message,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_messageerror(`type`: messageerror, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_messageerror(
+    `type`: messageerror,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_messageerror(
+    `type`: messageerror,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _],
     options: scala.Boolean
   ): Unit = js.native
@@ -371,6 +466,20 @@ trait WindowEventHandlers extends js.Object {
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
+  def removeEventListener_rejectionhandled(`type`: rejectionhandled, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_rejectionhandled(
+    `type`: rejectionhandled,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_rejectionhandled(
+    `type`: rejectionhandled,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
   def removeEventListener_storage(`type`: storage, listener: js.ThisFunction1[/* this */ this.type, /* ev */ StorageEvent, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_storage(
@@ -382,6 +491,23 @@ trait WindowEventHandlers extends js.Object {
   def removeEventListener_storage(
     `type`: storage,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ StorageEvent, _],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_unhandledrejection(
+    `type`: unhandledrejection,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_unhandledrejection(
+    `type`: unhandledrejection,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, _],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_unhandledrejection(
+    `type`: unhandledrejection,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")

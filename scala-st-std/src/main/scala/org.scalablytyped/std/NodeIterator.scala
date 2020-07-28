@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NodeIterator extends js.Object {
-  /** @deprecated */
-  val expandEntityReferences: scala.Boolean
   val filter: NodeFilter | Null
+  val pointerBeforeReferenceNode: scala.Boolean
+  val referenceNode: Node
   val root: Node
   val whatToShow: Double
   def detach(): Unit
@@ -19,13 +19,14 @@ object NodeIterator {
   @scala.inline
   def apply(
     detach: () => Unit,
-    expandEntityReferences: scala.Boolean,
     nextNode: () => Node | Null,
+    pointerBeforeReferenceNode: scala.Boolean,
     previousNode: () => Node | Null,
+    referenceNode: Node,
     root: Node,
     whatToShow: Double
   ): NodeIterator = {
-    val __obj = js.Dynamic.literal(detach = js.Any.fromFunction0(detach), expandEntityReferences = expandEntityReferences.asInstanceOf[js.Any], nextNode = js.Any.fromFunction0(nextNode), previousNode = js.Any.fromFunction0(previousNode), root = root.asInstanceOf[js.Any], whatToShow = whatToShow.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(detach = js.Any.fromFunction0(detach), nextNode = js.Any.fromFunction0(nextNode), pointerBeforeReferenceNode = pointerBeforeReferenceNode.asInstanceOf[js.Any], previousNode = js.Any.fromFunction0(previousNode), referenceNode = referenceNode.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], whatToShow = whatToShow.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeIterator]
   }
   @scala.inline
@@ -42,11 +43,13 @@ object NodeIterator {
     @scala.inline
     def setDetach(value: () => Unit): Self = this.set("detach", js.Any.fromFunction0(value))
     @scala.inline
-    def setExpandEntityReferences(value: scala.Boolean): Self = this.set("expandEntityReferences", value.asInstanceOf[js.Any])
-    @scala.inline
     def setNextNode(value: () => Node | Null): Self = this.set("nextNode", js.Any.fromFunction0(value))
     @scala.inline
+    def setPointerBeforeReferenceNode(value: scala.Boolean): Self = this.set("pointerBeforeReferenceNode", value.asInstanceOf[js.Any])
+    @scala.inline
     def setPreviousNode(value: () => Node | Null): Self = this.set("previousNode", js.Any.fromFunction0(value))
+    @scala.inline
+    def setReferenceNode(value: Node): Self = this.set("referenceNode", value.asInstanceOf[js.Any])
     @scala.inline
     def setRoot(value: Node): Self = this.set("root", value.asInstanceOf[js.Any])
     @scala.inline

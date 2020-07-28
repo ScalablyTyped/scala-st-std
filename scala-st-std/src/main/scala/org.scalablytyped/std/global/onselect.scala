@@ -6,6 +6,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Fires when the current selection changes.
+  * @param ev The event.
+  */
 @JSGlobal("onselect")
 @js.native
 object onselect

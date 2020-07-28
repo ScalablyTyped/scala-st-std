@@ -16,6 +16,6 @@ trait HTMLCollectionBase extends /* index */ NumberDictionary[Element] {
   /**
     * Retrieves an object from various collections.
     */
-  def item(index: Double): Element = js.native
+  def item(index: Double): Element | Null = js.native
 }
 

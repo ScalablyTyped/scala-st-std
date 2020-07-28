@@ -8,7 +8,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait HTMLImageElement extends HTMLElement {
+trait HTMLImageElement
+  extends HTMLElement
+     with HTMLOrSVGImageElement
+     with TexImageSource {
   /**
     * Sets or retrieves how the object is aligned with adjacent text.
     */
@@ -51,19 +54,6 @@ trait HTMLImageElement extends HTMLElement {
   /** @deprecated */
   var lowsrc: java.lang.String = js.native
   /**
-    * Gets or sets whether the DLNA PlayTo device is available.
-    */
-  var msPlayToDisabled: scala.Boolean = js.native
-  var msPlayToPreferredSourceUri: java.lang.String = js.native
-  /**
-    * Gets or sets the primary DLNA PlayTo device.
-    */
-  var msPlayToPrimary: scala.Boolean = js.native
-  /**
-    * Gets the source associated with the media element for use by the PlayToManager.
-    */
-  val msPlayToSource: js.Any = js.native
-  /**
     * Sets or retrieves the name of the object.
     */
   /** @deprecated */
@@ -76,6 +66,7 @@ trait HTMLImageElement extends HTMLElement {
     * The original width of the image resource before sizing.
     */
   val naturalWidth: Double = js.native
+  var referrerPolicy: java.lang.String = js.native
   var sizes: java.lang.String = js.native
   /**
     * The address or URL of the a media resource that is to be considered.
@@ -97,6 +88,26 @@ trait HTMLImageElement extends HTMLElement {
   var width: Double = js.native
   val x: Double = js.native
   val y: Double = js.native
-  def msGetAsCastingSource(): js.Any = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(
+    `type`: java.lang.String,
+    listener: EventListenerOrEventListenerObject,
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  def decode(): js.Promise[Unit] = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(
+    `type`: java.lang.String,
+    listener: EventListenerOrEventListenerObject,
+    options: EventListenerOptions
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
 }
 

@@ -7,6 +7,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Occurs when the download has stopped.
+  * @param ev The event.
+  */
 @JSGlobal("onstalled")
 @js.native
 object onstalled

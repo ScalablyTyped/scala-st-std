@@ -11,9 +11,6 @@ class TreeWalker ()
   extends org.scalablytyped.std.TreeWalker {
   /* CompleteClass */
   override var currentNode: org.scalablytyped.std.Node = js.native
-  /** @deprecated */
-  /* CompleteClass */
-  override val expandEntityReferences: scala.Boolean = js.native
   /* CompleteClass */
   override val filter: org.scalablytyped.std.NodeFilter | Null = js.native
   /* CompleteClass */

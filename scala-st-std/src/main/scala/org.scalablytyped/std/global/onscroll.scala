@@ -6,6 +6,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Fires when the user repositions the scroll box in the scroll bar on the object.
+  * @param ev The event.
+  */
 @JSGlobal("onscroll")
 @js.native
 object onscroll

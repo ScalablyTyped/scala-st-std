@@ -34,11 +34,10 @@ trait Console extends js.Object {
   def log(message: js.Any, optionalParams: js.Any*): Unit = js.native
   def markTimeline(): Unit = js.native
   def markTimeline(label: java.lang.String): Unit = js.native
-  def msIsIndependentlyComposed(element: Element): scala.Boolean = js.native
   def profile(): Unit = js.native
   def profile(reportName: java.lang.String): Unit = js.native
   def profileEnd(): Unit = js.native
-  def select(element: Element): Unit = js.native
+  def profileEnd(reportName: java.lang.String): Unit = js.native
   def table(tabularData: js.Any*): Unit = js.native
   def time(): Unit = js.native
   def time(label: java.lang.String): Unit = js.native

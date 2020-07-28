@@ -58,17 +58,19 @@ trait DocumentEvent extends js.Object {
   @JSName("createEvent")
   def createEvent_ListeningStateChangedEvent(eventInterface: org.scalablytyped.std.stdStrings.ListeningStateChangedEvent): ListeningStateChangedEvent = js.native
   @JSName("createEvent")
-  def createEvent_MSDCCEvent(eventInterface: org.scalablytyped.std.stdStrings.MSDCCEvent): MSDCCEvent = js.native
-  @JSName("createEvent")
-  def createEvent_MSDSHEvent(eventInterface: org.scalablytyped.std.stdStrings.MSDSHEvent): MSDSHEvent = js.native
+  def createEvent_MSGestureEvent(eventInterface: org.scalablytyped.std.stdStrings.MSGestureEvent): MSGestureEvent = js.native
   @JSName("createEvent")
   def createEvent_MSMediaKeyMessageEvent(eventInterface: org.scalablytyped.std.stdStrings.MSMediaKeyMessageEvent): MSMediaKeyMessageEvent = js.native
   @JSName("createEvent")
   def createEvent_MSMediaKeyNeededEvent(eventInterface: org.scalablytyped.std.stdStrings.MSMediaKeyNeededEvent): MSMediaKeyNeededEvent = js.native
   @JSName("createEvent")
+  def createEvent_MSPointerEvent(eventInterface: org.scalablytyped.std.stdStrings.MSPointerEvent): MSPointerEvent = js.native
+  @JSName("createEvent")
   def createEvent_MediaEncryptedEvent(eventInterface: org.scalablytyped.std.stdStrings.MediaEncryptedEvent): MediaEncryptedEvent = js.native
   @JSName("createEvent")
   def createEvent_MediaKeyMessageEvent(eventInterface: org.scalablytyped.std.stdStrings.MediaKeyMessageEvent): MediaKeyMessageEvent = js.native
+  @JSName("createEvent")
+  def createEvent_MediaQueryListEvent(eventInterface: org.scalablytyped.std.stdStrings.MediaQueryListEvent): MediaQueryListEvent = js.native
   @JSName("createEvent")
   def createEvent_MediaStreamErrorEvent(eventInterface: org.scalablytyped.std.stdStrings.MediaStreamErrorEvent): MediaStreamErrorEvent = js.native
   @JSName("createEvent")
@@ -135,6 +137,12 @@ trait DocumentEvent extends js.Object {
   def createEvent_SecurityPolicyViolationEvent(eventInterface: org.scalablytyped.std.stdStrings.SecurityPolicyViolationEvent): SecurityPolicyViolationEvent = js.native
   @JSName("createEvent")
   def createEvent_ServiceWorkerMessageEvent(eventInterface: org.scalablytyped.std.stdStrings.ServiceWorkerMessageEvent): ServiceWorkerMessageEvent = js.native
+  @JSName("createEvent")
+  def createEvent_SpeechRecognitionError(eventInterface: org.scalablytyped.std.stdStrings.SpeechRecognitionError): SpeechRecognitionError = js.native
+  @JSName("createEvent")
+  def createEvent_SpeechRecognitionEvent(eventInterface: org.scalablytyped.std.stdStrings.SpeechRecognitionEvent): SpeechRecognitionEvent = js.native
+  @JSName("createEvent")
+  def createEvent_SpeechSynthesisErrorEvent(eventInterface: org.scalablytyped.std.stdStrings.SpeechSynthesisErrorEvent): SpeechSynthesisErrorEvent = js.native
   @JSName("createEvent")
   def createEvent_SpeechSynthesisEvent(eventInterface: org.scalablytyped.std.stdStrings.SpeechSynthesisEvent): SpeechSynthesisEvent = js.native
   @JSName("createEvent")

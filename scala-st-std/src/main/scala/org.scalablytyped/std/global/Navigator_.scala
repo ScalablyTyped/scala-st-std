@@ -47,6 +47,8 @@ class Navigator_ () extends Navigator {
   /* CompleteClass */
   override val vendorSub: java.lang.String = js.native
   /* CompleteClass */
+  override val webdriver: scala.Boolean = js.native
+  /* CompleteClass */
   override def confirmSiteSpecificTrackingException(args: ConfirmSiteSpecificExceptionsInformation): scala.Boolean = js.native
   /* CompleteClass */
   override def confirmWebWideTrackingException(args: ExceptionInformation): scala.Boolean = js.native

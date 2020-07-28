@@ -1,5 +1,6 @@
 package org.scalablytyped.std.global
 
+import org.scalablytyped.std.GLint
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,11 +11,11 @@ import scala.scalajs.js.annotation._
 class WebGLShaderPrecisionFormat ()
   extends org.scalablytyped.std.WebGLShaderPrecisionFormat {
   /* CompleteClass */
-  override val precision: Double = js.native
+  override val precision: GLint = js.native
   /* CompleteClass */
-  override val rangeMax: Double = js.native
+  override val rangeMax: GLint = js.native
   /* CompleteClass */
-  override val rangeMin: Double = js.native
+  override val rangeMin: GLint = js.native
 }
 
 @JSGlobal("WebGLShaderPrecisionFormat")

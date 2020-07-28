@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** @deprecated */
 @JSGlobal("orientation")
 @js.native
 object orientation

@@ -9,6 +9,9 @@ import scala.scalajs.js.annotation._
 trait NodeList extends /* index */ NumberDictionary[Node] {
   @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[Node]] = js.native
+  /**
+    * Returns the number of nodes in the collection.
+    */
   val length: Double = js.native
   /**
     * Returns an array of key, value pairs for every entry in the list.
@@ -24,7 +27,10 @@ trait NodeList extends /* index */ NumberDictionary[Node] {
     callbackfn: js.Function3[/* value */ Node, /* key */ Double, /* parent */ this.type, Unit],
     thisArg: js.Any
   ): Unit = js.native
-  def item(index: Double): Node = js.native
+  /**
+    * element = collection[index]
+    */
+  def item(index: Double): Node | Null = js.native
   /**
     * Returns an list of keys in the list.
     */

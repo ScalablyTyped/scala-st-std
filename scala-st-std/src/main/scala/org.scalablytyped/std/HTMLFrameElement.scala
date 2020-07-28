@@ -15,7 +15,7 @@ trait HTMLFrameElement extends HTMLElement {
     * Retrieves the object of the specified.
     */
   /** @deprecated */
-  val contentWindow: Window | Null = js.native
+  val contentWindow: WindowProxy | Null = js.native
   /**
     * Sets or retrieves whether to display a border for the frame.
     */

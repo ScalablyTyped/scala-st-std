@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation._
 
 trait WebGLActiveInfo extends js.Object {
   val name: java.lang.String
-  val size: Double
-  val `type`: Double
+  val size: GLint
+  val `type`: GLenum
 }
 
 object WebGLActiveInfo {
   @scala.inline
-  def apply(name: java.lang.String, size: Double, `type`: Double): WebGLActiveInfo = {
+  def apply(name: java.lang.String, size: GLint, `type`: GLenum): WebGLActiveInfo = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebGLActiveInfo]
@@ -31,9 +31,9 @@ object WebGLActiveInfo {
     @scala.inline
     def setName(value: java.lang.String): Self = this.set("name", value.asInstanceOf[js.Any])
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSize(value: GLint): Self = this.set("size", value.asInstanceOf[js.Any])
     @scala.inline
-    def setType(value: Double): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: GLenum): Self = this.set("type", value.asInstanceOf[js.Any])
   }
   
 }

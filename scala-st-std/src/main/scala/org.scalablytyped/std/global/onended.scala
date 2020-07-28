@@ -7,6 +7,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Occurs when the end of playback is reached.
+  * @param ev The event
+  */
 @JSGlobal("onended")
 @js.native
 object onended

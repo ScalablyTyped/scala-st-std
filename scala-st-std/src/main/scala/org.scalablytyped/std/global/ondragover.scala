@@ -6,6 +6,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Fires on the target element continuously while the user drags the object over a valid drop target.
+  * @param ev The event.
+  */
 @JSGlobal("ondragover")
 @js.native
 object ondragover

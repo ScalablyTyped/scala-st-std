@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait HTMLSelectElement
   extends HTMLElement
-     with /* index */ NumberDictionary[Element] {
+     with /* name */ NumberDictionary[HTMLOptionElement | HTMLOptGroupElement] {
   var autocomplete: java.lang.String = js.native
   /**
     * Provides a way to direct a user to a specific field when a document loads. This can provide both direction and convenience for a user, reducing the need to click or tab to a field when a page opens. This attribute is true when present on an element, and false when missing.

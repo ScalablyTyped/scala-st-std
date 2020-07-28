@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait IDBObjectStoreParameters extends js.Object {
   var autoIncrement: js.UndefOr[scala.Boolean] = js.undefined
-  var keyPath: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
+  var keyPath: js.UndefOr[java.lang.String | js.Array[java.lang.String] | Null] = js.undefined
 }
 
 object IDBObjectStoreParameters {
@@ -36,6 +36,8 @@ object IDBObjectStoreParameters {
     def setKeyPath(value: java.lang.String | js.Array[java.lang.String]): Self = this.set("keyPath", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteKeyPath: Self = this.set("keyPath", js.undefined)
+    @scala.inline
+    def setKeyPathNull: Self = this.set("keyPath", null)
   }
   
 }

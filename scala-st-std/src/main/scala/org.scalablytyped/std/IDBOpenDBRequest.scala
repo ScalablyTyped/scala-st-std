@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait IDBOpenDBRequest extends IDBRequest {
+trait IDBOpenDBRequest extends IDBRequest[IDBDatabase] {
   var onblocked: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var onupgradeneeded: (js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, _]) | Null = js.native
   @JSName("addEventListener")

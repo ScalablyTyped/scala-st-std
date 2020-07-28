@@ -10,17 +10,21 @@ import scala.scalajs.js.annotation._
 class SVGFEImageElement ()
   extends org.scalablytyped.std.SVGFEImageElement {
   /* CompleteClass */
-  override val childElementCount: Double = js.native
-  /* CompleteClass */
-  override val firstElementChild: org.scalablytyped.std.Element | Null = js.native
+  override val assignedSlot: org.scalablytyped.std.HTMLSlotElement | Null = js.native
   /* CompleteClass */
   override val height: org.scalablytyped.std.SVGAnimatedLength = js.native
   /* CompleteClass */
   override val href: org.scalablytyped.std.SVGAnimatedString = js.native
-  /* CompleteClass */
-  override val lastElementChild: org.scalablytyped.std.Element | Null = js.native
+  /**
+    * Returns the first following sibling that
+    * is an element, and null otherwise.
+    */
   /* CompleteClass */
   override val nextElementSibling: org.scalablytyped.std.Element | Null = js.native
+  /**
+    * Returns the first preceding sibling that
+    * is an element, and null otherwise.
+    */
   /* CompleteClass */
   override val previousElementSibling: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
@@ -33,8 +37,6 @@ class SVGFEImageElement ()
   override val x: org.scalablytyped.std.SVGAnimatedLength = js.native
   /* CompleteClass */
   override val y: org.scalablytyped.std.SVGAnimatedLength = js.native
-  /* CompleteClass */
-  override def remove(): Unit = js.native
 }
 
 @JSGlobal("SVGFEImageElement")

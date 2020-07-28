@@ -11,6 +11,5 @@ trait HTMLParagraphElement extends HTMLElement {
     */
   /** @deprecated */
   var align: java.lang.String = js.native
-  var clear: java.lang.String = js.native
 }
 

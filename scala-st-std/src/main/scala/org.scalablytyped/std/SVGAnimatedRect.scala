@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SVGAnimatedRect extends js.Object {
-  val animVal: SVGRect
-  val baseVal: SVGRect
+  val animVal: DOMRectReadOnly
+  val baseVal: DOMRect
 }
 
 object SVGAnimatedRect {
   @scala.inline
-  def apply(animVal: SVGRect, baseVal: SVGRect): SVGAnimatedRect = {
+  def apply(animVal: DOMRectReadOnly, baseVal: DOMRect): SVGAnimatedRect = {
     val __obj = js.Dynamic.literal(animVal = animVal.asInstanceOf[js.Any], baseVal = baseVal.asInstanceOf[js.Any])
     __obj.asInstanceOf[SVGAnimatedRect]
   }
@@ -27,9 +27,9 @@ object SVGAnimatedRect {
         x
     }
     @scala.inline
-    def setAnimVal(value: SVGRect): Self = this.set("animVal", value.asInstanceOf[js.Any])
+    def setAnimVal(value: DOMRectReadOnly): Self = this.set("animVal", value.asInstanceOf[js.Any])
     @scala.inline
-    def setBaseVal(value: SVGRect): Self = this.set("baseVal", value.asInstanceOf[js.Any])
+    def setBaseVal(value: DOMRect): Self = this.set("baseVal", value.asInstanceOf[js.Any])
   }
   
 }

@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait RsaKeyGenParams extends Algorithm {
   var modulusLength: Double
-  var publicExponent: Uint8Array
+  var publicExponent: BigInteger
 }
 
 object RsaKeyGenParams {
   @scala.inline
-  def apply(modulusLength: Double, name: java.lang.String, publicExponent: Uint8Array): RsaKeyGenParams = {
+  def apply(modulusLength: Double, name: java.lang.String, publicExponent: BigInteger): RsaKeyGenParams = {
     val __obj = js.Dynamic.literal(modulusLength = modulusLength.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], publicExponent = publicExponent.asInstanceOf[js.Any])
     __obj.asInstanceOf[RsaKeyGenParams]
   }
@@ -29,7 +29,7 @@ object RsaKeyGenParams {
     @scala.inline
     def setModulusLength(value: Double): Self = this.set("modulusLength", value.asInstanceOf[js.Any])
     @scala.inline
-    def setPublicExponent(value: Uint8Array): Self = this.set("publicExponent", value.asInstanceOf[js.Any])
+    def setPublicExponent(value: BigInteger): Self = this.set("publicExponent", value.asInstanceOf[js.Any])
   }
   
 }

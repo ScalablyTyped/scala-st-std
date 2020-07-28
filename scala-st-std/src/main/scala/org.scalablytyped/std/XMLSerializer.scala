@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait XMLSerializer extends js.Object {
-  def serializeToString(target: Node): java.lang.String
+  def serializeToString(root: Node): java.lang.String
 }
 
 object XMLSerializer {

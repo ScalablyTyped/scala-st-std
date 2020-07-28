@@ -8,6 +8,5 @@ import scala.scalajs.js.annotation._
 trait HTMLMenuElement extends HTMLElement {
   /** @deprecated */
   var compact: scala.Boolean = js.native
-  var `type`: java.lang.String = js.native
 }
 

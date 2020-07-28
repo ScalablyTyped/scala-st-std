@@ -12,7 +12,19 @@ class Text ()
   extends org.scalablytyped.std.Text {
   def this(data: java.lang.String) = this()
   /* CompleteClass */
-  override def remove(): Unit = js.native
+  override val assignedSlot: org.scalablytyped.std.HTMLSlotElement | Null = js.native
+  /**
+    * Returns the first following sibling that
+    * is an element, and null otherwise.
+    */
+  /* CompleteClass */
+  override val nextElementSibling: org.scalablytyped.std.Element | Null = js.native
+  /**
+    * Returns the first preceding sibling that
+    * is an element, and null otherwise.
+    */
+  /* CompleteClass */
+  override val previousElementSibling: org.scalablytyped.std.Element | Null = js.native
 }
 
 @JSGlobal("Text")

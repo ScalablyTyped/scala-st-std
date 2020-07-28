@@ -1,7 +1,6 @@
 package org.scalablytyped.std
 
 import org.scalablytyped.std.stdStrings.orientationchange
-import org.scalablytyped.std.stdStrings.resize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,8 +20,8 @@ trait HTMLBodyElement
   var link: java.lang.String = js.native
   /** @deprecated */
   var noWrap: scala.Boolean = js.native
+  /** @deprecated */
   var onorientationchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onresize: (js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]) | Null = js.native
   /** @deprecated */
   var text: java.lang.String = js.native
   /** @deprecated */
@@ -51,20 +50,6 @@ trait HTMLBodyElement
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_resize(`type`: resize, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_resize(
-    `type`: resize,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_resize(
-    `type`: resize,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
-    options: scala.Boolean
-  ): Unit = js.native
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -87,20 +72,6 @@ trait HTMLBodyElement
   def removeEventListener_orientationchange(
     `type`: orientationchange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_resize(`type`: resize, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_resize(
-    `type`: resize,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_resize(
-    `type`: resize,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
     options: scala.Boolean
   ): Unit = js.native
 }

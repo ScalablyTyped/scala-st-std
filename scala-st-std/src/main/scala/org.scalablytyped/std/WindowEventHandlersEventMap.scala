@@ -9,13 +9,17 @@ trait WindowEventHandlersEventMap extends js.Object {
   var beforeprint: Event
   var beforeunload: BeforeUnloadEvent
   var hashchange: HashChangeEvent
+  var languagechange: Event
   var message: MessageEvent
+  var messageerror: MessageEvent
   var offline: Event
   var online: Event
   var pagehide: PageTransitionEvent
   var pageshow: PageTransitionEvent
   var popstate: PopStateEvent
+  var rejectionhandled: Event
   var storage: StorageEvent
+  var unhandledrejection: PromiseRejectionEvent
   var unload: Event
 }
 
@@ -26,16 +30,20 @@ object WindowEventHandlersEventMap {
     beforeprint: Event,
     beforeunload: BeforeUnloadEvent,
     hashchange: HashChangeEvent,
+    languagechange: Event,
     message: MessageEvent,
+    messageerror: MessageEvent,
     offline: Event,
     online: Event,
     pagehide: PageTransitionEvent,
     pageshow: PageTransitionEvent,
     popstate: PopStateEvent,
+    rejectionhandled: Event,
     storage: StorageEvent,
+    unhandledrejection: PromiseRejectionEvent,
     unload: Event
   ): WindowEventHandlersEventMap = {
-    val __obj = js.Dynamic.literal(afterprint = afterprint.asInstanceOf[js.Any], beforeprint = beforeprint.asInstanceOf[js.Any], beforeunload = beforeunload.asInstanceOf[js.Any], hashchange = hashchange.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], offline = offline.asInstanceOf[js.Any], online = online.asInstanceOf[js.Any], pagehide = pagehide.asInstanceOf[js.Any], pageshow = pageshow.asInstanceOf[js.Any], popstate = popstate.asInstanceOf[js.Any], storage = storage.asInstanceOf[js.Any], unload = unload.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(afterprint = afterprint.asInstanceOf[js.Any], beforeprint = beforeprint.asInstanceOf[js.Any], beforeunload = beforeunload.asInstanceOf[js.Any], hashchange = hashchange.asInstanceOf[js.Any], languagechange = languagechange.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], messageerror = messageerror.asInstanceOf[js.Any], offline = offline.asInstanceOf[js.Any], online = online.asInstanceOf[js.Any], pagehide = pagehide.asInstanceOf[js.Any], pageshow = pageshow.asInstanceOf[js.Any], popstate = popstate.asInstanceOf[js.Any], rejectionhandled = rejectionhandled.asInstanceOf[js.Any], storage = storage.asInstanceOf[js.Any], unhandledrejection = unhandledrejection.asInstanceOf[js.Any], unload = unload.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowEventHandlersEventMap]
   }
   @scala.inline
@@ -58,7 +66,11 @@ object WindowEventHandlersEventMap {
     @scala.inline
     def setHashchange(value: HashChangeEvent): Self = this.set("hashchange", value.asInstanceOf[js.Any])
     @scala.inline
+    def setLanguagechange(value: Event): Self = this.set("languagechange", value.asInstanceOf[js.Any])
+    @scala.inline
     def setMessage(value: MessageEvent): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMessageerror(value: MessageEvent): Self = this.set("messageerror", value.asInstanceOf[js.Any])
     @scala.inline
     def setOffline(value: Event): Self = this.set("offline", value.asInstanceOf[js.Any])
     @scala.inline
@@ -70,7 +82,11 @@ object WindowEventHandlersEventMap {
     @scala.inline
     def setPopstate(value: PopStateEvent): Self = this.set("popstate", value.asInstanceOf[js.Any])
     @scala.inline
+    def setRejectionhandled(value: Event): Self = this.set("rejectionhandled", value.asInstanceOf[js.Any])
+    @scala.inline
     def setStorage(value: StorageEvent): Self = this.set("storage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUnhandledrejection(value: PromiseRejectionEvent): Self = this.set("unhandledrejection", value.asInstanceOf[js.Any])
     @scala.inline
     def setUnload(value: Event): Self = this.set("unload", value.asInstanceOf[js.Any])
   }

@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AbortSignal extends EventTarget {
+  /**
+    * Returns true if this AbortSignal's AbortController has signaled to abort, and false
+    * otherwise.
+    */
   val aborted: scala.Boolean = js.native
   var onabort: (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]) | Null = js.native
   @JSName("addEventListener")

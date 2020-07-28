@@ -5,18 +5,26 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SpeechSynthesisUtteranceEventMap extends js.Object {
-  var boundary: Event
-  var end: Event
-  var error: Event
-  var mark: Event
-  var pause: Event
-  var resume: Event
-  var start: Event
+  var boundary: SpeechSynthesisEvent
+  var end: SpeechSynthesisEvent
+  var error: SpeechSynthesisErrorEvent
+  var mark: SpeechSynthesisEvent
+  var pause: SpeechSynthesisEvent
+  var resume: SpeechSynthesisEvent
+  var start: SpeechSynthesisEvent
 }
 
 object SpeechSynthesisUtteranceEventMap {
   @scala.inline
-  def apply(boundary: Event, end: Event, error: Event, mark: Event, pause: Event, resume: Event, start: Event): SpeechSynthesisUtteranceEventMap = {
+  def apply(
+    boundary: SpeechSynthesisEvent,
+    end: SpeechSynthesisEvent,
+    error: SpeechSynthesisErrorEvent,
+    mark: SpeechSynthesisEvent,
+    pause: SpeechSynthesisEvent,
+    resume: SpeechSynthesisEvent,
+    start: SpeechSynthesisEvent
+  ): SpeechSynthesisUtteranceEventMap = {
     val __obj = js.Dynamic.literal(boundary = boundary.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], resume = resume.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpeechSynthesisUtteranceEventMap]
   }
@@ -32,19 +40,19 @@ object SpeechSynthesisUtteranceEventMap {
         x
     }
     @scala.inline
-    def setBoundary(value: Event): Self = this.set("boundary", value.asInstanceOf[js.Any])
+    def setBoundary(value: SpeechSynthesisEvent): Self = this.set("boundary", value.asInstanceOf[js.Any])
     @scala.inline
-    def setEnd(value: Event): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setEnd(value: SpeechSynthesisEvent): Self = this.set("end", value.asInstanceOf[js.Any])
     @scala.inline
-    def setError(value: Event): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setError(value: SpeechSynthesisErrorEvent): Self = this.set("error", value.asInstanceOf[js.Any])
     @scala.inline
-    def setMark(value: Event): Self = this.set("mark", value.asInstanceOf[js.Any])
+    def setMark(value: SpeechSynthesisEvent): Self = this.set("mark", value.asInstanceOf[js.Any])
     @scala.inline
-    def setPause(value: Event): Self = this.set("pause", value.asInstanceOf[js.Any])
+    def setPause(value: SpeechSynthesisEvent): Self = this.set("pause", value.asInstanceOf[js.Any])
     @scala.inline
-    def setResume(value: Event): Self = this.set("resume", value.asInstanceOf[js.Any])
+    def setResume(value: SpeechSynthesisEvent): Self = this.set("resume", value.asInstanceOf[js.Any])
     @scala.inline
-    def setStart(value: Event): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setStart(value: SpeechSynthesisEvent): Self = this.set("start", value.asInstanceOf[js.Any])
   }
   
 }

@@ -35,21 +35,17 @@ trait Worker
     options: scala.Boolean
   ): Unit = js.native
   def postMessage(message: js.Any): Unit = js.native
-  def postMessage(message: js.Any, transfer: js.Array[_]): Unit = js.native
+  def postMessage(message: js.Any, transfer: js.Array[Transferable]): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
   override def removeEventListener(
     `type`: java.lang.String,
-    listener: js.UndefOr[EventListenerOrEventListenerObject],
+    callback: EventListenerOrEventListenerObject,
     options: EventListenerOptions
   ): Unit = js.native
   /* InferMemberOverrides */
-  override def removeEventListener(
-    `type`: java.lang.String,
-    listener: js.UndefOr[EventListenerOrEventListenerObject],
-    options: scala.Boolean
-  ): Unit = js.native
-  /* InferMemberOverrides */
-  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_message(`type`: message, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _]): Unit = js.native
   @JSName("removeEventListener")

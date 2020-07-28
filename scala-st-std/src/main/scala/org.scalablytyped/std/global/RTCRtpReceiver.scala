@@ -33,6 +33,6 @@ class RTCRtpReceiver ()
 @js.native
 object RTCRtpReceiver
   extends Instantiable0[org.scalablytyped.std.RTCRtpReceiver] {
-  def getCapabilities(kind: java.lang.String): RTCRtpCapabilities = js.native
+  def getCapabilities(kind: java.lang.String): RTCRtpCapabilities | Null = js.native
 }
 

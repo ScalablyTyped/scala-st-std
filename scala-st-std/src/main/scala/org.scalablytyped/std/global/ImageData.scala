@@ -12,8 +12,16 @@ class ImageData protected ()
   extends org.scalablytyped.std.ImageData {
   def this(width: Double, height: Double) = this()
   def this(array: org.scalablytyped.std.Uint8ClampedArray, width: Double, height: Double) = this()
+  /**
+    * Returns the one-dimensional array containing the data in RGBA order, as integers in the
+    * range 0 to 255.
+    */
   /* CompleteClass */
   override val data: org.scalablytyped.std.Uint8ClampedArray = js.native
+  /**
+    * Returns the actual dimensions of the data in the ImageData object, in
+    * pixels.
+    */
   /* CompleteClass */
   override val height: Double = js.native
   /* CompleteClass */

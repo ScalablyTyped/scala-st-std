@@ -8,7 +8,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait HTMLCanvasElement extends HTMLElement {
+trait HTMLCanvasElement
+  extends HTMLElement
+     with CanvasImageSource
+     with TexImageSource {
   /**
     * Gets or sets the height of a canvas element on a document.
     */
@@ -17,6 +20,16 @@ trait HTMLCanvasElement extends HTMLElement {
     * Gets or sets the width of a canvas element on a document.
     */
   var width: Double = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(
+    `type`: java.lang.String,
+    listener: EventListenerOrEventListenerObject,
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   def getContext(contextId: java.lang.String): CanvasRenderingContext2D | WebGLRenderingContext | Null = js.native
   def getContext(contextId: java.lang.String, contextAttributes: js.Object): CanvasRenderingContext2D | WebGLRenderingContext | Null = js.native
   /**
@@ -26,7 +39,7 @@ trait HTMLCanvasElement extends HTMLElement {
   @JSName("getContext")
   def getContext_2d(contextId: `2d`): CanvasRenderingContext2D | Null = js.native
   @JSName("getContext")
-  def getContext_2d(contextId: `2d`, contextAttributes: Canvas2DContextAttributes): CanvasRenderingContext2D | Null = js.native
+  def getContext_2d(contextId: `2d`, contextAttributes: CanvasRenderingContext2DSettings): CanvasRenderingContext2D | Null = js.native
   @JSName("getContext")
   def getContext_experimentalwebgl(contextId: `experimental-webgl`): WebGLRenderingContext | Null = js.native
   @JSName("getContext")
@@ -35,25 +48,27 @@ trait HTMLCanvasElement extends HTMLElement {
   def getContext_webgl(contextId: webgl): WebGLRenderingContext | Null = js.native
   @JSName("getContext")
   def getContext_webgl(contextId: webgl, contextAttributes: WebGLContextAttributes): WebGLRenderingContext | Null = js.native
-  /**
-    * Returns a blob object encoded as a Portable Network Graphics (PNG) format from a canvas image or drawing.
-    */
-  def msToBlob(): Blob = js.native
-  def toBlob(
-    callback: js.Function1[/* result */ Blob | Null, Unit],
-    `type`: js.UndefOr[scala.Nothing],
-    arguments: js.Any*
-  ): Unit = js.native
-  def toBlob(
-    callback: js.Function1[/* result */ Blob | Null, Unit],
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(
     `type`: java.lang.String,
-    arguments: js.Any*
+    listener: EventListenerOrEventListenerObject,
+    options: EventListenerOptions
   ): Unit = js.native
-  def toDataURL(`type`: js.UndefOr[scala.Nothing], args: js.Any*): java.lang.String = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  def toBlob(callback: BlobCallback): Unit = js.native
+  def toBlob(callback: BlobCallback, `type`: js.UndefOr[scala.Nothing], quality: js.Any): Unit = js.native
+  def toBlob(callback: BlobCallback, `type`: java.lang.String): Unit = js.native
+  def toBlob(callback: BlobCallback, `type`: java.lang.String, quality: js.Any): Unit = js.native
   /**
     * Returns the content of the current canvas as an image that you can use as a source for another canvas or an HTML element.
     * @param type The standard MIME type for the image format to return. If you do not specify this parameter, the default value is a PNG format image.
     */
-  def toDataURL(`type`: java.lang.String, args: js.Any*): java.lang.String = js.native
+  def toDataURL(): java.lang.String = js.native
+  def toDataURL(`type`: js.UndefOr[scala.Nothing], quality: js.Any): java.lang.String = js.native
+  def toDataURL(`type`: java.lang.String): java.lang.String = js.native
+  def toDataURL(`type`: java.lang.String, quality: js.Any): java.lang.String = js.native
 }
 

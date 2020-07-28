@@ -4,7 +4,6 @@ import org.scalablytyped.std.stdStrings.`object`
 import org.scalablytyped.std.stdStrings.`var`
 import org.scalablytyped.std.stdStrings.a
 import org.scalablytyped.std.stdStrings.abbr
-import org.scalablytyped.std.stdStrings.acronym
 import org.scalablytyped.std.stdStrings.address
 import org.scalablytyped.std.stdStrings.applet
 import org.scalablytyped.std.stdStrings.area
@@ -15,14 +14,12 @@ import org.scalablytyped.std.stdStrings.b
 import org.scalablytyped.std.stdStrings.base
 import org.scalablytyped.std.stdStrings.basefont
 import org.scalablytyped.std.stdStrings.bdo
-import org.scalablytyped.std.stdStrings.big
 import org.scalablytyped.std.stdStrings.blockquote
 import org.scalablytyped.std.stdStrings.body
 import org.scalablytyped.std.stdStrings.br
 import org.scalablytyped.std.stdStrings.button
 import org.scalablytyped.std.stdStrings.canvas
 import org.scalablytyped.std.stdStrings.caption
-import org.scalablytyped.std.stdStrings.center
 import org.scalablytyped.std.stdStrings.circle
 import org.scalablytyped.std.stdStrings.cite
 import org.scalablytyped.std.stdStrings.clipPath
@@ -35,7 +32,9 @@ import org.scalablytyped.std.stdStrings.dd
 import org.scalablytyped.std.stdStrings.defs
 import org.scalablytyped.std.stdStrings.del
 import org.scalablytyped.std.stdStrings.desc
+import org.scalablytyped.std.stdStrings.details
 import org.scalablytyped.std.stdStrings.dfn
+import org.scalablytyped.std.stdStrings.dialog
 import org.scalablytyped.std.stdStrings.dir
 import org.scalablytyped.std.stdStrings.div
 import org.scalablytyped.std.stdStrings.dl
@@ -95,16 +94,13 @@ import org.scalablytyped.std.stdStrings.image
 import org.scalablytyped.std.stdStrings.img
 import org.scalablytyped.std.stdStrings.input
 import org.scalablytyped.std.stdStrings.ins
-import org.scalablytyped.std.stdStrings.isindex
 import org.scalablytyped.std.stdStrings.kbd
-import org.scalablytyped.std.stdStrings.keygen
 import org.scalablytyped.std.stdStrings.label
 import org.scalablytyped.std.stdStrings.legend
 import org.scalablytyped.std.stdStrings.li
 import org.scalablytyped.std.stdStrings.line
 import org.scalablytyped.std.stdStrings.linearGradient
 import org.scalablytyped.std.stdStrings.link
-import org.scalablytyped.std.stdStrings.listing
 import org.scalablytyped.std.stdStrings.map_
 import org.scalablytyped.std.stdStrings.mark
 import org.scalablytyped.std.stdStrings.marker
@@ -115,9 +111,6 @@ import org.scalablytyped.std.stdStrings.meta
 import org.scalablytyped.std.stdStrings.metadata
 import org.scalablytyped.std.stdStrings.meter
 import org.scalablytyped.std.stdStrings.nav
-import org.scalablytyped.std.stdStrings.nextid
-import org.scalablytyped.std.stdStrings.nobr
-import org.scalablytyped.std.stdStrings.noframes
 import org.scalablytyped.std.stdStrings.noscript
 import org.scalablytyped.std.stdStrings.ol
 import org.scalablytyped.std.stdStrings.optgroup
@@ -128,7 +121,6 @@ import org.scalablytyped.std.stdStrings.param
 import org.scalablytyped.std.stdStrings.path
 import org.scalablytyped.std.stdStrings.pattern
 import org.scalablytyped.std.stdStrings.picture
-import org.scalablytyped.std.stdStrings.plaintext
 import org.scalablytyped.std.stdStrings.polygon
 import org.scalablytyped.std.stdStrings.polyline
 import org.scalablytyped.std.stdStrings.pre
@@ -148,7 +140,6 @@ import org.scalablytyped.std.stdStrings.small
 import org.scalablytyped.std.stdStrings.source
 import org.scalablytyped.std.stdStrings.span
 import org.scalablytyped.std.stdStrings.stop
-import org.scalablytyped.std.stdStrings.strike
 import org.scalablytyped.std.stdStrings.strong
 import org.scalablytyped.std.stdStrings.style
 import org.scalablytyped.std.stdStrings.sub
@@ -171,14 +162,12 @@ import org.scalablytyped.std.stdStrings.title
 import org.scalablytyped.std.stdStrings.tr
 import org.scalablytyped.std.stdStrings.track
 import org.scalablytyped.std.stdStrings.tspan
-import org.scalablytyped.std.stdStrings.tt
 import org.scalablytyped.std.stdStrings.u
 import org.scalablytyped.std.stdStrings.ul
 import org.scalablytyped.std.stdStrings.use
 import org.scalablytyped.std.stdStrings.video
 import org.scalablytyped.std.stdStrings.view
 import org.scalablytyped.std.stdStrings.wbr
-import org.scalablytyped.std.stdStrings.xmp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -191,8 +180,6 @@ trait NodeSelector extends js.Object {
   def querySelectorAll_a(selectors: a): NodeListOf[HTMLAnchorElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_abbr(selectors: abbr): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_acronym(selectors: acronym): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_address(selectors: address): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
@@ -214,8 +201,6 @@ trait NodeSelector extends js.Object {
   @JSName("querySelectorAll")
   def querySelectorAll_bdo(selectors: bdo): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_big(selectors: big): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
   def querySelectorAll_blockquote(selectors: blockquote): NodeListOf[HTMLQuoteElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_body(selectors: body): NodeListOf[HTMLBodyElement] = js.native
@@ -227,8 +212,6 @@ trait NodeSelector extends js.Object {
   def querySelectorAll_canvas(selectors: canvas): NodeListOf[HTMLCanvasElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_caption(selectors: caption): NodeListOf[HTMLTableCaptionElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_center(selectors: center): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_circle(selectors: circle): NodeListOf[SVGCircleElement] = js.native
   @JSName("querySelectorAll")
@@ -254,7 +237,11 @@ trait NodeSelector extends js.Object {
   @JSName("querySelectorAll")
   def querySelectorAll_desc(selectors: desc): NodeListOf[SVGDescElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_details(selectors: details): NodeListOf[HTMLDetailsElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_dfn(selectors: dfn): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_dialog(selectors: dialog): NodeListOf[HTMLDialogElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_dir(selectors: dir): NodeListOf[HTMLDirectoryElement] = js.native
   @JSName("querySelectorAll")
@@ -374,11 +361,7 @@ trait NodeSelector extends js.Object {
   @JSName("querySelectorAll")
   def querySelectorAll_ins(selectors: ins): NodeListOf[HTMLModElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_isindex(selectors: isindex): NodeListOf[HTMLUnknownElement] = js.native
-  @JSName("querySelectorAll")
   def querySelectorAll_kbd(selectors: kbd): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_keygen(selectors: keygen): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_label(selectors: label): NodeListOf[HTMLLabelElement] = js.native
   @JSName("querySelectorAll")
@@ -391,8 +374,6 @@ trait NodeSelector extends js.Object {
   def querySelectorAll_linearGradient(selectors: linearGradient): NodeListOf[SVGLinearGradientElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_link(selectors: link): NodeListOf[HTMLLinkElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_listing(selectors: listing): NodeListOf[HTMLPreElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_map(selectors: map_): NodeListOf[HTMLMapElement] = js.native
   @JSName("querySelectorAll")
@@ -413,12 +394,6 @@ trait NodeSelector extends js.Object {
   def querySelectorAll_meter(selectors: meter): NodeListOf[HTMLMeterElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_nav(selectors: nav): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_nextid(selectors: nextid): NodeListOf[HTMLUnknownElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_nobr(selectors: nobr): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_noframes(selectors: noframes): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_noscript(selectors: noscript): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
@@ -441,8 +416,6 @@ trait NodeSelector extends js.Object {
   def querySelectorAll_pattern(selectors: pattern): NodeListOf[SVGPatternElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_picture(selectors: picture): NodeListOf[HTMLPictureElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_plaintext(selectors: plaintext): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_polygon(selectors: polygon): NodeListOf[SVGPolygonElement] = js.native
   @JSName("querySelectorAll")
@@ -481,8 +454,6 @@ trait NodeSelector extends js.Object {
   def querySelectorAll_span(selectors: span): NodeListOf[HTMLSpanElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_stop(selectors: stop): NodeListOf[SVGStopElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_strike(selectors: strike): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_strong(selectors: strong): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
@@ -528,8 +499,6 @@ trait NodeSelector extends js.Object {
   @JSName("querySelectorAll")
   def querySelectorAll_tspan(selectors: tspan): NodeListOf[SVGTSpanElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_tt(selectors: tt): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
   def querySelectorAll_u(selectors: u): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_ul(selectors: ul): NodeListOf[HTMLUListElement] = js.native
@@ -543,14 +512,10 @@ trait NodeSelector extends js.Object {
   def querySelectorAll_view(selectors: view): NodeListOf[SVGViewElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_wbr(selectors: wbr): NodeListOf[HTMLElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_xmp(selectors: xmp): NodeListOf[HTMLPreElement] = js.native
   @JSName("querySelector")
   def querySelector_a(selectors: a): HTMLAnchorElement | Null = js.native
   @JSName("querySelector")
   def querySelector_abbr(selectors: abbr): HTMLElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_acronym(selectors: acronym): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_address(selectors: address): HTMLElement | Null = js.native
   @JSName("querySelector")
@@ -572,8 +537,6 @@ trait NodeSelector extends js.Object {
   @JSName("querySelector")
   def querySelector_bdo(selectors: bdo): HTMLElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_big(selectors: big): HTMLElement | Null = js.native
-  @JSName("querySelector")
   def querySelector_blockquote(selectors: blockquote): HTMLQuoteElement | Null = js.native
   @JSName("querySelector")
   def querySelector_body(selectors: body): HTMLBodyElement | Null = js.native
@@ -585,8 +548,6 @@ trait NodeSelector extends js.Object {
   def querySelector_canvas(selectors: canvas): HTMLCanvasElement | Null = js.native
   @JSName("querySelector")
   def querySelector_caption(selectors: caption): HTMLTableCaptionElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_center(selectors: center): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_circle(selectors: circle): SVGCircleElement | Null = js.native
   @JSName("querySelector")
@@ -612,7 +573,11 @@ trait NodeSelector extends js.Object {
   @JSName("querySelector")
   def querySelector_desc(selectors: desc): SVGDescElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_details(selectors: details): HTMLDetailsElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_dfn(selectors: dfn): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_dialog(selectors: dialog): HTMLDialogElement | Null = js.native
   @JSName("querySelector")
   def querySelector_dir(selectors: dir): HTMLDirectoryElement | Null = js.native
   @JSName("querySelector")
@@ -732,11 +697,7 @@ trait NodeSelector extends js.Object {
   @JSName("querySelector")
   def querySelector_ins(selectors: ins): HTMLModElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_isindex(selectors: isindex): HTMLUnknownElement | Null = js.native
-  @JSName("querySelector")
   def querySelector_kbd(selectors: kbd): HTMLElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_keygen(selectors: keygen): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_label(selectors: label): HTMLLabelElement | Null = js.native
   @JSName("querySelector")
@@ -749,8 +710,6 @@ trait NodeSelector extends js.Object {
   def querySelector_linearGradient(selectors: linearGradient): SVGLinearGradientElement | Null = js.native
   @JSName("querySelector")
   def querySelector_link(selectors: link): HTMLLinkElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_listing(selectors: listing): HTMLPreElement | Null = js.native
   @JSName("querySelector")
   def querySelector_map(selectors: map_): HTMLMapElement | Null = js.native
   @JSName("querySelector")
@@ -771,12 +730,6 @@ trait NodeSelector extends js.Object {
   def querySelector_meter(selectors: meter): HTMLMeterElement | Null = js.native
   @JSName("querySelector")
   def querySelector_nav(selectors: nav): HTMLElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_nextid(selectors: nextid): HTMLUnknownElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_nobr(selectors: nobr): HTMLElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_noframes(selectors: noframes): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_noscript(selectors: noscript): HTMLElement | Null = js.native
   @JSName("querySelector")
@@ -799,8 +752,6 @@ trait NodeSelector extends js.Object {
   def querySelector_pattern(selectors: pattern): SVGPatternElement | Null = js.native
   @JSName("querySelector")
   def querySelector_picture(selectors: picture): HTMLPictureElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_plaintext(selectors: plaintext): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_polygon(selectors: polygon): SVGPolygonElement | Null = js.native
   @JSName("querySelector")
@@ -839,8 +790,6 @@ trait NodeSelector extends js.Object {
   def querySelector_span(selectors: span): HTMLSpanElement | Null = js.native
   @JSName("querySelector")
   def querySelector_stop(selectors: stop): SVGStopElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_strike(selectors: strike): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_strong(selectors: strong): HTMLElement | Null = js.native
   @JSName("querySelector")
@@ -886,8 +835,6 @@ trait NodeSelector extends js.Object {
   @JSName("querySelector")
   def querySelector_tspan(selectors: tspan): SVGTSpanElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_tt(selectors: tt): HTMLElement | Null = js.native
-  @JSName("querySelector")
   def querySelector_u(selectors: u): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_ul(selectors: ul): HTMLUListElement | Null = js.native
@@ -901,7 +848,5 @@ trait NodeSelector extends js.Object {
   def querySelector_view(selectors: view): SVGViewElement | Null = js.native
   @JSName("querySelector")
   def querySelector_wbr(selectors: wbr): HTMLElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_xmp(selectors: xmp): HTMLPreElement | Null = js.native
 }
 

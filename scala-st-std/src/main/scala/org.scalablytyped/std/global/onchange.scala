@@ -7,6 +7,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Fires when the contents of the object or selection have changed.
+  * @param ev The event.
+  */
 @JSGlobal("onchange")
 @js.native
 object onchange

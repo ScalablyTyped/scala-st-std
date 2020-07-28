@@ -10,5 +10,6 @@ trait ShadowRoot
      with DocumentOrShadowRoot {
   val host: Element = js.native
   var innerHTML: java.lang.String = js.native
+  val mode: ShadowRootMode = js.native
 }
 

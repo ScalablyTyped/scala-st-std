@@ -11,9 +11,5 @@ trait HTMLDivElement extends HTMLElement {
     */
   /** @deprecated */
   var align: java.lang.String = js.native
-  /**
-    * Sets or retrieves whether the browser automatically performs wordwrap.
-    */
-  var noWrap: scala.Boolean = js.native
 }
 

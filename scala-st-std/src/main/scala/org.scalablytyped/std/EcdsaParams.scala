@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EcdsaParams extends Algorithm {
-  var hash: java.lang.String | Algorithm
+  var hash: HashAlgorithmIdentifier
 }
 
 object EcdsaParams {
   @scala.inline
-  def apply(hash: java.lang.String | Algorithm, name: java.lang.String): EcdsaParams = {
+  def apply(hash: HashAlgorithmIdentifier, name: java.lang.String): EcdsaParams = {
     val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[EcdsaParams]
   }
@@ -26,7 +26,7 @@ object EcdsaParams {
         x
     }
     @scala.inline
-    def setHash(value: java.lang.String | Algorithm): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setHash(value: HashAlgorithmIdentifier): Self = this.set("hash", value.asInstanceOf[js.Any])
   }
   
 }

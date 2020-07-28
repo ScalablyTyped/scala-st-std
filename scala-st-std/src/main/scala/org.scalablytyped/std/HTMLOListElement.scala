@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait HTMLOListElement extends HTMLElement {
   /** @deprecated */
   var compact: scala.Boolean = js.native
+  var reversed: scala.Boolean = js.native
   /**
     * The starting number.
     */

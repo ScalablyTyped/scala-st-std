@@ -1,5 +1,6 @@
 package org.scalablytyped.std
 
+import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait HTMLFormElement
   extends HTMLElement
+     with /* index */ NumberDictionary[Element]
      with /* name */ StringDictionary[js.Any] {
   /**
     * Sets or retrieves a list of character encodings for input data that must be accepted by the server processing the form.
@@ -33,6 +35,8 @@ trait HTMLFormElement
     * Sets or retrieves the encoding type for the form.
     */
   var enctype: java.lang.String = js.native
+  @JSName(js.Symbol.iterator)
+  var iterator: js.Function0[IterableIterator[Element]] = js.native
   /**
     * Sets or retrieves the number of objects in a collection.
     */
@@ -67,19 +71,6 @@ trait HTMLFormElement
     * Returns whether a form will validate when it is submitted, without having to submit it.
     */
   def checkValidity(): scala.Boolean = js.native
-  /**
-    * Retrieves a form object or an object from an elements collection.
-    * @param name Variant of type Number or String that specifies the object or collection to retrieve. If this parameter is a Number, it is the zero-based index of the object. If this parameter is a string, all objects with matching name or id properties are retrieved, and a collection is returned if more than one match is made.
-    * @param index Variant of type Number that specifies the zero-based index of the object to retrieve when a collection is returned.
-    */
-  def item(): js.Any = js.native
-  def item(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
-  def item(name: js.Any): js.Any = js.native
-  def item(name: js.Any, index: js.Any): js.Any = js.native
-  /**
-    * Retrieves a form object or an object from an elements collection.
-    */
-  def namedItem(name: java.lang.String): js.Any = js.native
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */

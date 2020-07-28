@@ -16,7 +16,8 @@ trait Navigator
      with NavigatorConcurrentHardware
      with NavigatorUserMedia
      with NavigatorLanguage
-     with NavigatorStorage {
+     with NavigatorStorage
+     with NavigatorAutomationInformation {
   val activeVRDisplays: js.Array[VRDisplay] = js.native
   val authentication: WebAuthentication = js.native
   val cookieEnabled: scala.Boolean = js.native
@@ -31,7 +32,6 @@ trait Navigator
   val plugins: PluginArray = js.native
   val pointerEnabled: scala.Boolean = js.native
   val serviceWorker: ServiceWorkerContainer = js.native
-  val webdriver: scala.Boolean = js.native
   def getGamepads(): js.Array[Gamepad | Null] = js.native
   def getVRDisplays(): js.Promise[js.Array[VRDisplay]] = js.native
   def javaEnabled(): scala.Boolean = js.native

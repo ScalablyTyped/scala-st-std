@@ -49,12 +49,12 @@ trait IDBCursor extends js.Object {
     * Delete the record pointed at by the cursor with a new value.
     * If successful, request's result will be undefined.
     */
-  def delete(): IDBRequest = js.native
+  def delete(): IDBRequest[js.UndefOr[scala.Nothing]] = js.native
   /**
     * Updated the record pointed at by the cursor with a new value.
     * Throws a "DataError" DOMException if the effective object store uses in-line keys and the key would have changed.
     * If successful, request's result will be the record's key.
     */
-  def update(value: js.Any): IDBRequest = js.native
+  def update(value: js.Any): IDBRequest[IDBValidKey] = js.native
 }
 

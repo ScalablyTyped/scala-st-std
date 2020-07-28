@@ -7,6 +7,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Fires immediately after the browser loads the object.
+  * @param ev The event.
+  */
 @JSGlobal("onload")
 @js.native
 object onload

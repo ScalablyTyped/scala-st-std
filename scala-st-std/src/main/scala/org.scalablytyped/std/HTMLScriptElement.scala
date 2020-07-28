@@ -5,7 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait HTMLScriptElement extends HTMLElement {
+trait HTMLScriptElement
+  extends HTMLElement
+     with HTMLOrSVGScriptElement {
   var async: scala.Boolean = js.native
   /**
     * Sets or retrieves the character set used to encode the object.
@@ -29,6 +31,7 @@ trait HTMLScriptElement extends HTMLElement {
   var htmlFor: java.lang.String = js.native
   var integrity: java.lang.String = js.native
   var noModule: scala.Boolean = js.native
+  var referrerPolicy: java.lang.String = js.native
   /**
     * Retrieves the URL to an external file that contains the source code or data.
     */
@@ -41,5 +44,25 @@ trait HTMLScriptElement extends HTMLElement {
     * Sets or retrieves the MIME type for the associated scripting engine.
     */
   var `type`: java.lang.String = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(
+    `type`: java.lang.String,
+    listener: EventListenerOrEventListenerObject,
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(
+    `type`: java.lang.String,
+    listener: EventListenerOrEventListenerObject,
+    options: EventListenerOptions
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
 }
 

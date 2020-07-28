@@ -6,6 +6,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Fires when the user clicks the object with either mouse button.
+  * @param ev The mouse event.
+  */
 @JSGlobal("onmousedown")
 @js.native
 object onmousedown

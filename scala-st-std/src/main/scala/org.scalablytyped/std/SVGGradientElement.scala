@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SVGGradientElement
   extends SVGElement
-     with SVGUnitTypes
      with SVGURIReference {
   val SVG_SPREADMETHOD_PAD: Double = js.native
   val SVG_SPREADMETHOD_REFLECT: Double = js.native

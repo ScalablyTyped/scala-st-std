@@ -6,6 +6,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Fires when the user double-clicks the object.
+  * @param ev The mouse event.
+  */
 @JSGlobal("ondblclick")
 @js.native
 object ondblclick

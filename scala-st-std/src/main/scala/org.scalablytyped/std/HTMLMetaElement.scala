@@ -7,11 +7,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait HTMLMetaElement extends HTMLElement {
   /**
-    * Sets or retrieves the character set used to encode the object.
-    */
-  /** @deprecated */
-  var charset: java.lang.String = js.native
-  /**
     * Gets or sets meta-information to associate with httpEquiv or name.
     */
   var content: java.lang.String = js.native
@@ -28,10 +23,5 @@ trait HTMLMetaElement extends HTMLElement {
     */
   /** @deprecated */
   var scheme: java.lang.String = js.native
-  /**
-    * Sets or retrieves the URL property that will be loaded after the specified time has elapsed.
-    */
-  /** @deprecated */
-  var url: java.lang.String = js.native
 }
 

@@ -5,12 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MessageEventInit extends EventInit {
-  var channel: js.UndefOr[java.lang.String] = js.undefined
   var data: js.UndefOr[js.Any] = js.undefined
   var lastEventId: js.UndefOr[java.lang.String] = js.undefined
   var origin: js.UndefOr[java.lang.String] = js.undefined
   var ports: js.UndefOr[js.Array[MessagePort]] = js.undefined
-  var source: js.UndefOr[Window | Null] = js.undefined
+  var source: js.UndefOr[MessageEventSource | Null] = js.undefined
 }
 
 object MessageEventInit {
@@ -31,10 +30,6 @@ object MessageEventInit {
         x
     }
     @scala.inline
-    def setChannel(value: java.lang.String): Self = this.set("channel", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteChannel: Self = this.set("channel", js.undefined)
-    @scala.inline
     def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteData: Self = this.set("data", js.undefined)
@@ -53,7 +48,7 @@ object MessageEventInit {
     @scala.inline
     def deletePorts: Self = this.set("ports", js.undefined)
     @scala.inline
-    def setSource(value: Window): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setSource(value: MessageEventSource): Self = this.set("source", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteSource: Self = this.set("source", js.undefined)
     @scala.inline

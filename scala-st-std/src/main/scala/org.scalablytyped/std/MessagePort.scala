@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait MessagePort
   extends EventTarget
-     with MessageEventSource {
+     with Transferable
+     with _MessageEventSource {
   var onmessage: (js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _]) | Null = js.native
   var onmessageerror: (js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _]) | Null = js.native
   @JSName("addEventListener")
@@ -52,7 +53,7 @@ trait MessagePort
     * could not be cloned.
     */
   def postMessage(message: js.Any): Unit = js.native
-  def postMessage(message: js.Any, transfer: js.Array[_]): Unit = js.native
+  def postMessage(message: js.Any, transfer: js.Array[Transferable]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_message(`type`: message, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _]): Unit = js.native
   @JSName("removeEventListener")

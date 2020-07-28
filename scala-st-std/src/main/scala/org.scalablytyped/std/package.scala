@@ -5,10 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object std {
-  type AAGUID = java.lang.String
   type AlgorithmIdentifier = java.lang.String | org.scalablytyped.std.Algorithm
   type ArrayBufferLike = org.scalablytyped.std.ArrayBuffer
   type AudioWorklet = org.scalablytyped.std.Worklet
+  type AutoKeyword = org.scalablytyped.std.stdStrings.auto
+  type BigInteger = org.scalablytyped.std.Uint8Array
+  type BlobCallback = js.Function1[/* blob */ org.scalablytyped.std.Blob | scala.Null, scala.Unit]
   /* Rewritten from type alias, can be one of: 
     - `org.scalablytyped`.std.BufferSource
     - `org.scalablytyped`.std.Blob
@@ -24,17 +26,20 @@ package object std {
     - java.lang.String
   */
   type BodyInit = org.scalablytyped.std._BodyInit | java.lang.String
-  type ByteString = java.lang.String
   type CDATASection = org.scalablytyped.std.Text
   type CSSSupportsRule = org.scalablytyped.std.CSSConditionRule
   type ChannelMergerNode = org.scalablytyped.std.AudioNode
   type ChannelSplitterNode = org.scalablytyped.std.AudioNode
   type ClassDecorator = js.Function1[/* target */ js.Function, js.Function | scala.Unit]
+  type Comment = org.scalablytyped.std.CharacterData
   type ConstrainBoolean = scala.Boolean | org.scalablytyped.std.ConstrainBooleanParameters
   type ConstrainDOMString = java.lang.String | js.Array[java.lang.String] | org.scalablytyped.std.ConstrainDOMStringParameters
   type ConstrainDouble = scala.Double | org.scalablytyped.std.ConstrainDoubleRange
   type ConstrainLong = scala.Double | org.scalablytyped.std.ConstrainLongRange
-  type CryptoOperationData = org.scalablytyped.std.ArrayBufferView
+  /**
+    * Obtain the parameters of a constructor function type in a tuple
+    */
+  type ConstructorParameters[T /* <: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, js.Any] */] = js.Any
   type DOMHighResTimeStamp = scala.Double
   type DOMStringMap = org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]
   type DOMTimeStamp = scala.Double
@@ -57,11 +62,11 @@ package object std {
     * Exclude from T those types that are assignable to U
     */
   type Exclude[T, U] = T
-  type ExtendableEventInit = org.scalablytyped.std.EventInit
   /**
     * Extract from T those types that are assignable to U
     */
   type Extract[T, U] = T
+  type Float32List = org.scalablytyped.std.Float32Array | js.Array[org.scalablytyped.std.GLfloat]
   type ForEachCallback = js.Function2[
     /* keyId */ org.scalablytyped.std.Int8Array | org.scalablytyped.std.Int16Array | org.scalablytyped.std.Int32Array | org.scalablytyped.std.Uint8Array | org.scalablytyped.std.Uint16Array | org.scalablytyped.std.Uint32Array | org.scalablytyped.std.Uint8ClampedArray | org.scalablytyped.std.Float32Array | org.scalablytyped.std.Float64Array | org.scalablytyped.std.DataView | org.scalablytyped.std.ArrayBuffer | scala.Null, 
     /* status */ org.scalablytyped.std.MediaKeyStatus, 
@@ -72,27 +77,17 @@ package object std {
   type FunctionStringCallback = js.Function1[/* data */ java.lang.String, scala.Unit]
   type GLbitfield = scala.Double
   type GLboolean = scala.Boolean
-  type GLbyte = scala.Double
   type GLclampf = scala.Double
   type GLenum = scala.Double
   type GLfloat = scala.Double
   type GLint = scala.Double
   type GLintptr = scala.Double
-  type GLshort = scala.Double
   type GLsizei = scala.Double
   type GLsizeiptr = scala.Double
-  type GLubyte = scala.Double
   type GLuint = scala.Double
-  type GLushort = scala.Double
   type GamepadHapticActuatorType = org.scalablytyped.std.stdStrings.vibration
-  type GenerateAssertionCallback = js.Function3[
-    /* contents */ java.lang.String, 
-    /* origin */ java.lang.String, 
-    /* options */ org.scalablytyped.std.RTCIdentityProviderOptions, 
-    js.Promise[org.scalablytyped.std.RTCIdentityAssertionResult]
-  ]
   type Generator = org.scalablytyped.std.Iterator[js.Any]
-  type HTMLAreasCollection = org.scalablytyped.std.HTMLCollectionBase
+  type HashAlgorithmIdentifier = org.scalablytyped.std.AlgorithmIdentifier
   type HeadersInit = org.scalablytyped.std.Headers | js.Array[js.Array[java.lang.String]] | (org.scalablytyped.std.Record[java.lang.String, java.lang.String])
   type IDBKeyPath = java.lang.String
   /* Rewritten from type alias, can be one of: 
@@ -107,15 +102,22 @@ package object std {
     * Obtain the return type of a constructor function type
     */
   type InstanceType[T /* <: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, js.Any] */] = js.Any
+  type Int32List = org.scalablytyped.std.Int32Array | js.Array[org.scalablytyped.std.GLint]
   type IntersectionObserverCallback = js.Function2[
     /* entries */ js.Array[org.scalablytyped.std.IntersectionObserverEntry], 
     /* observer */ org.scalablytyped.std.IntersectionObserver, 
     scala.Unit
   ]
+  type LineAndPositionSetting = scala.Double | org.scalablytyped.std.AutoKeyword
   type MSCredentialType = org.scalablytyped.std.stdStrings.FIDO_2_0
   type MSLaunchUriCallback = js.Function0[scala.Unit]
-  type MediaQueryListListener = js.Function1[/* mql */ org.scalablytyped.std.MediaQueryList, scala.Unit]
   type MediaStreamTrackAudioSourceNode = org.scalablytyped.std.AudioNode
+  /* Rewritten from type alias, can be one of: 
+    - `org.scalablytyped`.std.WindowProxy
+    - `org.scalablytyped`.std.MessagePort
+    - `org.scalablytyped`.std.ServiceWorker
+  */
+  type MessageEventSource = org.scalablytyped.std._MessageEventSource | org.scalablytyped.std.WindowProxy
   type MethodDecorator = js.Function3[
     /* target */ js.Object, 
     /* propertyKey */ java.lang.String | js.Symbol, 
@@ -128,6 +130,7 @@ package object std {
     /* observer */ org.scalablytyped.std.MutationObserver, 
     scala.Unit
   ]
+  type NamedCurve = java.lang.String
   type NavigatorUserMediaErrorCallback = js.Function1[/* error */ org.scalablytyped.std.MediaStreamError, scala.Unit]
   type NavigatorUserMediaSuccessCallback = js.Function1[/* stream */ org.scalablytyped.std.MediaStream, scala.Unit]
   /**
@@ -135,6 +138,17 @@ package object std {
     */
   type NonNullable[T] = T
   type NotificationPermissionCallback = js.Function1[/* permission */ org.scalablytyped.std.NotificationPermission, scala.Unit]
+  type OnBeforeUnloadEventHandler = org.scalablytyped.std.OnBeforeUnloadEventHandlerNonNull | scala.Null
+  type OnBeforeUnloadEventHandlerNonNull = js.Function1[/* event */ org.scalablytyped.std.Event, java.lang.String | scala.Null]
+  type OnErrorEventHandler = org.scalablytyped.std.OnErrorEventHandlerNonNull | scala.Null
+  type OnErrorEventHandlerNonNull = js.Function5[
+    /* event */ org.scalablytyped.std.Event | java.lang.String, 
+    /* source */ js.UndefOr[java.lang.String], 
+    /* lineno */ js.UndefOr[scala.Double], 
+    /* colno */ js.UndefOr[scala.Double], 
+    /* error */ js.UndefOr[js.Any], 
+    js.Any
+  ]
   type ParameterDecorator = js.Function3[
     /* target */ js.Object, 
     /* propertyKey */ java.lang.String | js.Symbol, 
@@ -142,12 +156,15 @@ package object std {
     scala.Unit
   ]
   /**
+    * Obtain the parameters of a function type in a tuple
+    */
+  type Parameters[T /* <: js.Function1[/* repeated */ js.Any, _] */] = js.Any
+  /**
     * Make all properties in T optional
     */
   type Partial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? T[P]}
     */ org.scalablytyped.std.stdStrings.Partial with org.scalablytyped.runtime.TopLevel[T]
-  type Path2D = org.scalablytyped.std.CanvasPathMethods
   type PaymentRequestUpdateEventInit = org.scalablytyped.std.EventInit
   type PerformanceEntryList = js.Array[org.scalablytyped.std.PerformanceEntry]
   type PerformanceMark = org.scalablytyped.std.PerformanceEntry
@@ -176,7 +193,6 @@ package object std {
   type PropertyDecorator = js.Function2[/* target */ js.Object, /* propertyKey */ java.lang.String | js.Symbol, scala.Unit]
   type PropertyDescriptorMap = org.scalablytyped.runtime.StringDictionary[org.scalablytyped.std.PropertyDescriptor]
   type PropertyKey = java.lang.String | scala.Double | js.Symbol
-  type PushMessageDataInit = org.scalablytyped.std.BufferSource | java.lang.String
   type RTCAnswerOptions = org.scalablytyped.std.RTCOfferAnswerOptions
   type RTCPeerConnectionErrorCallback = js.Function1[/* error */ org.scalablytyped.std.DOMException, scala.Unit]
   type RTCRtpDecodingParameters = org.scalablytyped.std.RTCRtpCodingParameters
@@ -194,6 +210,12 @@ package object std {
     */
   type Record[K /* <: /* keyof any */ java.lang.String */, T] = org.scalablytyped.runtime.StringDictionary[T]
   type ReferenceError = org.scalablytyped.std.Error
+  /* Rewritten from type alias, can be one of: 
+    - `org.scalablytyped`.std.CanvasRenderingContext2D
+    - `org.scalablytyped`.std.ImageBitmapRenderingContext
+    - `org.scalablytyped`.std.WebGLRenderingContext
+  */
+  type RenderingContext = org.scalablytyped.std._RenderingContext | org.scalablytyped.std.WebGLRenderingContext
   type RequestInfo = org.scalablytyped.std.Request | java.lang.String
   /**
     * Make all properties in T required
@@ -210,24 +232,22 @@ package object std {
   type SVGPoint = org.scalablytyped.std.DOMPoint
   type SVGRect = org.scalablytyped.std.DOMRect
   type ScopedCredentialType = org.scalablytyped.std.stdStrings.ScopedCred
+  type StaticRange = org.scalablytyped.std.AbstractRange
   type SyntaxError = org.scalablytyped.std.Error
+  type TimerHandler = java.lang.String | js.Function
   type TypeError = org.scalablytyped.std.Error
   type URIError = org.scalablytyped.std.Error
-  type USVString = java.lang.String
-  type ValidateAssertionCallback = js.Function2[
-    /* assertion */ java.lang.String, 
-    /* origin */ java.lang.String, 
-    js.Promise[org.scalablytyped.std.RTCIdentityValidationResult]
-  ]
   type VibratePattern = scala.Double | js.Array[scala.Double]
   type VoidFunction = js.Function0[scala.Unit]
   type WebGLBuffer = org.scalablytyped.std.WebGLObject
   type WebGLFramebuffer = org.scalablytyped.std.WebGLObject
   type WebGLProgram = org.scalablytyped.std.WebGLObject
   type WebGLRenderbuffer = org.scalablytyped.std.WebGLObject
+  type WebGLRenderingContext = org.scalablytyped.std.WebGLRenderingContextBase
   type WebGLShader = org.scalablytyped.std.WebGLObject
   type WebGLTexture = org.scalablytyped.std.WebGLObject
   type WebKitCSSMatrix = org.scalablytyped.std.DOMMatrix
+  type WindowProxy = org.scalablytyped.std.Window
   type WritableStreamChunkCallback = js.Function2[
     /* chunk */ js.Any, 
     /* controller */ org.scalablytyped.std.WritableStreamDefaultController, 
@@ -235,6 +255,5 @@ package object std {
   ]
   type WritableStreamDefaultControllerCallback = js.Function1[/* controller */ org.scalablytyped.std.WritableStreamDefaultController, scala.Unit]
   type WritableStreamErrorCallback = js.Function1[/* reason */ java.lang.String, scala.Unit]
-  type payloadtype = scala.Double
   type webkitURL = org.scalablytyped.std.URL
 }

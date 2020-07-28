@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SVGMaskElement
   extends SVGElement
-     with SVGTests
-     with SVGUnitTypes {
+     with SVGTests {
   val height: SVGAnimatedLength = js.native
   val maskContentUnits: SVGAnimatedEnumeration = js.native
   val maskUnits: SVGAnimatedEnumeration = js.native

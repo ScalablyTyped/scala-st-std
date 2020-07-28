@@ -10,8 +10,6 @@ import scala.scalajs.js.annotation._
 object scrollTo extends js.Object {
   def apply(): Unit = js.native
   def apply(options: ScrollToOptions): Unit = js.native
-  def apply(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
-  def apply(x: Double): Unit = js.native
   def apply(x: Double, y: Double): Unit = js.native
 }
 

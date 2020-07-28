@@ -5,14 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ElementDefinitionOptions extends js.Object {
-  var `extends`: java.lang.String
+  var `extends`: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object ElementDefinitionOptions {
   @scala.inline
-  def apply(`extends`: java.lang.String): ElementDefinitionOptions = {
+  def apply(): ElementDefinitionOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementDefinitionOptions]
   }
   @scala.inline
@@ -28,6 +27,8 @@ object ElementDefinitionOptions {
     }
     @scala.inline
     def setExtends(value: java.lang.String): Self = this.set("extends", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtends: Self = this.set("extends", js.undefined)
   }
   
 }

@@ -9,8 +9,18 @@ import scala.scalajs.js.annotation._
 @js.native
 class CharacterData ()
   extends org.scalablytyped.std.CharacterData {
+  /**
+    * Returns the first following sibling that
+    * is an element, and null otherwise.
+    */
   /* CompleteClass */
-  override def remove(): Unit = js.native
+  override val nextElementSibling: org.scalablytyped.std.Element | Null = js.native
+  /**
+    * Returns the first preceding sibling that
+    * is an element, and null otherwise.
+    */
+  /* CompleteClass */
+  override val previousElementSibling: org.scalablytyped.std.Element | Null = js.native
 }
 
 @JSGlobal("CharacterData")

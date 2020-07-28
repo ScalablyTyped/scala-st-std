@@ -6,6 +6,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Fires when the user moves the mouse pointer into the object.
+  * @param ev The mouse event.
+  */
 @JSGlobal("onmouseover")
 @js.native
 object onmouseover

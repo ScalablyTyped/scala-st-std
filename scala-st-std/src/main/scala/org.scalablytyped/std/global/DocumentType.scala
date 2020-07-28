@@ -8,10 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("DocumentType")
 @js.native
 class DocumentType ()
-  extends org.scalablytyped.std.DocumentType {
-  /* CompleteClass */
-  override def remove(): Unit = js.native
-}
+  extends org.scalablytyped.std.DocumentType
 
 @JSGlobal("DocumentType")
 @js.native

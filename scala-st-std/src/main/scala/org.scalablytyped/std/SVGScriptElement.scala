@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SVGScriptElement
   extends SVGElement
-     with SVGURIReference {
+     with SVGURIReference
+     with HTMLOrSVGScriptElement {
   var `type`: java.lang.String = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native

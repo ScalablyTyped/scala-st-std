@@ -6,8 +6,6 @@ import scala.scalajs.js.annotation._
 
 trait TreeWalker extends js.Object {
   var currentNode: Node
-  /** @deprecated */
-  val expandEntityReferences: scala.Boolean
   val filter: NodeFilter | Null
   val root: Node
   val whatToShow: Double
@@ -24,7 +22,6 @@ object TreeWalker {
   @scala.inline
   def apply(
     currentNode: Node,
-    expandEntityReferences: scala.Boolean,
     firstChild: () => Node | Null,
     lastChild: () => Node | Null,
     nextNode: () => Node | Null,
@@ -35,7 +32,7 @@ object TreeWalker {
     root: Node,
     whatToShow: Double
   ): TreeWalker = {
-    val __obj = js.Dynamic.literal(currentNode = currentNode.asInstanceOf[js.Any], expandEntityReferences = expandEntityReferences.asInstanceOf[js.Any], firstChild = js.Any.fromFunction0(firstChild), lastChild = js.Any.fromFunction0(lastChild), nextNode = js.Any.fromFunction0(nextNode), nextSibling = js.Any.fromFunction0(nextSibling), parentNode = js.Any.fromFunction0(parentNode), previousNode = js.Any.fromFunction0(previousNode), previousSibling = js.Any.fromFunction0(previousSibling), root = root.asInstanceOf[js.Any], whatToShow = whatToShow.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(currentNode = currentNode.asInstanceOf[js.Any], firstChild = js.Any.fromFunction0(firstChild), lastChild = js.Any.fromFunction0(lastChild), nextNode = js.Any.fromFunction0(nextNode), nextSibling = js.Any.fromFunction0(nextSibling), parentNode = js.Any.fromFunction0(parentNode), previousNode = js.Any.fromFunction0(previousNode), previousSibling = js.Any.fromFunction0(previousSibling), root = root.asInstanceOf[js.Any], whatToShow = whatToShow.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeWalker]
   }
   @scala.inline
@@ -51,8 +48,6 @@ object TreeWalker {
     }
     @scala.inline
     def setCurrentNode(value: Node): Self = this.set("currentNode", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setExpandEntityReferences(value: scala.Boolean): Self = this.set("expandEntityReferences", value.asInstanceOf[js.Any])
     @scala.inline
     def setFirstChild(value: () => Node | Null): Self = this.set("firstChild", js.Any.fromFunction0(value))
     @scala.inline

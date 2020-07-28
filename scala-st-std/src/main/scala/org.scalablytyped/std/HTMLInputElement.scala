@@ -42,6 +42,7 @@ trait HTMLInputElement extends HTMLElement {
     * Sets or retrieves the initial contents of the object.
     */
   var defaultValue: java.lang.String = js.native
+  var dirName: java.lang.String = js.native
   var disabled: scala.Boolean = js.native
   /**
     * Returns a FileList object on a file type input object.
@@ -76,6 +77,7 @@ trait HTMLInputElement extends HTMLElement {
     */
   var height: Double = js.native
   var indeterminate: scala.Boolean = js.native
+  val labels: NodeListOf[HTMLLabelElement] | Null = js.native
   /**
     * Specifies the ID of a pre-defined datalist of options for an input element.
     */
@@ -158,7 +160,6 @@ trait HTMLInputElement extends HTMLElement {
     * Returns the input field value as a number.
     */
   var valueAsNumber: Double = js.native
-  var webkitdirectory: scala.Boolean = js.native
   /**
     * Sets or retrieves the width of the object.
     */
@@ -171,6 +172,7 @@ trait HTMLInputElement extends HTMLElement {
     * Returns whether a form will validate when it is submitted, without having to submit it.
     */
   def checkValidity(): scala.Boolean = js.native
+  def reportValidity(): scala.Boolean = js.native
   /**
     * Makes the selection equal to the current object.
     */
@@ -180,6 +182,9 @@ trait HTMLInputElement extends HTMLElement {
     * @param error Sets a custom error message that is displayed when a form is submitted.
     */
   def setCustomValidity(error: java.lang.String): Unit = js.native
+  def setRangeText(replacement: java.lang.String): Unit = js.native
+  def setRangeText(replacement: java.lang.String, start: Double, end: Double): Unit = js.native
+  def setRangeText(replacement: java.lang.String, start: Double, end: Double, selectionMode: SelectionMode): Unit = js.native
   /**
     * Sets the start and end positions of a selection in a text field.
     * @param start The offset into the text field for the start of the selection.

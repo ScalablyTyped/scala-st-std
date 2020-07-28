@@ -1,6 +1,8 @@
 package org.scalablytyped.std.global
 
 import org.scalablytyped.std.KeyAlgorithm
+import org.scalablytyped.std.KeyType
+import org.scalablytyped.std.KeyUsage
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,9 +17,9 @@ class CryptoKey ()
   /* CompleteClass */
   override val extractable: scala.Boolean = js.native
   /* CompleteClass */
-  override val `type`: java.lang.String = js.native
+  override val `type`: KeyType = js.native
   /* CompleteClass */
-  override val usages: js.Array[java.lang.String] = js.native
+  override val usages: js.Array[KeyUsage] = js.native
 }
 
 @JSGlobal("CryptoKey")
