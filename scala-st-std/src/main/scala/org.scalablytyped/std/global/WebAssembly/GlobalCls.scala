@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class GlobalCls protected ()
   extends org.scalablytyped.std.WebAssembly.Global {
   def this(descriptor: GlobalDescriptor) = this()
-  def this(descriptor: GlobalDescriptor, value: js.Any) = this()
+  def this(descriptor: GlobalDescriptor, v: js.Any) = this()
   /* CompleteClass */
   override var value: js.Any = js.native
 }

@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Instance extends js.Object {
-  val exports: js.Any
+  val exports: Exports
 }
 
 object Instance {
   @scala.inline
-  def apply(exports: js.Any): Instance = {
+  def apply(exports: Exports): Instance = {
     val __obj = js.Dynamic.literal(exports = exports.asInstanceOf[js.Any])
     __obj.asInstanceOf[Instance]
   }
@@ -26,7 +26,7 @@ object Instance {
         x
     }
     @scala.inline
-    def setExports(value: js.Any): Self = this.set("exports", value.asInstanceOf[js.Any])
+    def setExports(value: Exports): Self = this.set("exports", value.asInstanceOf[js.Any])
   }
   
 }

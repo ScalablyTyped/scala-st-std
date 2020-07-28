@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait GlobalDescriptor extends js.Object {
   var mutable: js.UndefOr[Boolean] = js.undefined
-  var value: String
+  var value: ValueType
 }
 
 object GlobalDescriptor {
   @scala.inline
-  def apply(value: String): GlobalDescriptor = {
+  def apply(value: ValueType): GlobalDescriptor = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalDescriptor]
   }
@@ -27,7 +27,7 @@ object GlobalDescriptor {
         x
     }
     @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: ValueType): Self = this.set("value", value.asInstanceOf[js.Any])
     @scala.inline
     def setMutable(value: Boolean): Self = this.set("mutable", value.asInstanceOf[js.Any])
     @scala.inline

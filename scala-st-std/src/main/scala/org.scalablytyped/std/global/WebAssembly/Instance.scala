@@ -1,5 +1,6 @@
 package org.scalablytyped.std.global.WebAssembly
 
+import org.scalablytyped.std.WebAssembly.Imports
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
@@ -15,7 +16,7 @@ object Instance
     ]
      with Instantiable2[
       /* module */ org.scalablytyped.std.WebAssembly.Module, 
-      /* importObject */ js.Any, 
+      /* importObject */ Imports, 
       org.scalablytyped.std.WebAssembly.Instance
     ]
 

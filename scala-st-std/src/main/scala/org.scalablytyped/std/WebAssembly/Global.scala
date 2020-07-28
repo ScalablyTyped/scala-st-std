@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Global extends js.Object {
+trait Global extends _ExportValue {
   var value: js.Any
 }
 

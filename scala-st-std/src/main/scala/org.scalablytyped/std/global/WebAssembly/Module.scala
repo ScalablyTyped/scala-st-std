@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object Module
   extends Instantiable1[/* bytes */ BufferSource, org.scalablytyped.std.WebAssembly.Module] {
-  def customSections(module: org.scalablytyped.std.WebAssembly.Module, sectionName: String): js.Array[ArrayBuffer] = js.native
-  def exports(module: org.scalablytyped.std.WebAssembly.Module): js.Array[ModuleExportDescriptor] = js.native
-  def imports(module: org.scalablytyped.std.WebAssembly.Module): js.Array[ModuleImportDescriptor] = js.native
+  def customSections(moduleObject: org.scalablytyped.std.WebAssembly.Module, sectionName: String): js.Array[ArrayBuffer] = js.native
+  def exports(moduleObject: org.scalablytyped.std.WebAssembly.Module): js.Array[ModuleExportDescriptor] = js.native
+  def imports(moduleObject: org.scalablytyped.std.WebAssembly.Module): js.Array[ModuleImportDescriptor] = js.native
 }
 

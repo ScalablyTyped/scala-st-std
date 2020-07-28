@@ -1,5 +1,7 @@
 package org.scalablytyped.std.global.WebAssembly
 
+import org.scalablytyped.std.WebAssembly.Exports
+import org.scalablytyped.std.WebAssembly.Imports
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,8 +11,8 @@ import scala.scalajs.js.annotation._
 class InstanceCls protected ()
   extends org.scalablytyped.std.WebAssembly.Instance {
   def this(module: org.scalablytyped.std.WebAssembly.Module) = this()
-  def this(module: org.scalablytyped.std.WebAssembly.Module, importObject: js.Any) = this()
+  def this(module: org.scalablytyped.std.WebAssembly.Module, importObject: Imports) = this()
   /* CompleteClass */
-  override val exports: js.Any = js.native
+  override val exports: Exports = js.native
 }
 

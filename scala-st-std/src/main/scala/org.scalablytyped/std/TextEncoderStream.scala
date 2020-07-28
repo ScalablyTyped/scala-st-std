@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TextEncoderStream
-  extends TextEncoderCommon
-     with GenericTransformStream
+  extends GenericTransformStream
+     with TextEncoderCommon
 
 object TextEncoderStream {
   @scala.inline

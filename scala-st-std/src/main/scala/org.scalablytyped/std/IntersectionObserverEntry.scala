@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 /** This Intersection Observer API interface describes the intersection between the target element and its root container at a specific moment of transition. */
 trait IntersectionObserverEntry extends js.Object {
-  val boundingClientRect: ClientRect | DOMRect
+  val boundingClientRect: DOMRectReadOnly
   val intersectionRatio: Double
-  val intersectionRect: ClientRect | DOMRect
+  val intersectionRect: DOMRectReadOnly
   val isIntersecting: scala.Boolean
-  val rootBounds: ClientRect | DOMRect | Null
+  val rootBounds: DOMRectReadOnly | Null
   val target: Element
   val time: Double
 }
@@ -18,9 +18,9 @@ trait IntersectionObserverEntry extends js.Object {
 object IntersectionObserverEntry {
   @scala.inline
   def apply(
-    boundingClientRect: ClientRect | DOMRect,
+    boundingClientRect: DOMRectReadOnly,
     intersectionRatio: Double,
-    intersectionRect: ClientRect | DOMRect,
+    intersectionRect: DOMRectReadOnly,
     isIntersecting: scala.Boolean,
     target: Element,
     time: Double
@@ -40,11 +40,11 @@ object IntersectionObserverEntry {
         x
     }
     @scala.inline
-    def setBoundingClientRect(value: ClientRect | DOMRect): Self = this.set("boundingClientRect", value.asInstanceOf[js.Any])
+    def setBoundingClientRect(value: DOMRectReadOnly): Self = this.set("boundingClientRect", value.asInstanceOf[js.Any])
     @scala.inline
     def setIntersectionRatio(value: Double): Self = this.set("intersectionRatio", value.asInstanceOf[js.Any])
     @scala.inline
-    def setIntersectionRect(value: ClientRect | DOMRect): Self = this.set("intersectionRect", value.asInstanceOf[js.Any])
+    def setIntersectionRect(value: DOMRectReadOnly): Self = this.set("intersectionRect", value.asInstanceOf[js.Any])
     @scala.inline
     def setIsIntersecting(value: scala.Boolean): Self = this.set("isIntersecting", value.asInstanceOf[js.Any])
     @scala.inline
@@ -52,7 +52,7 @@ object IntersectionObserverEntry {
     @scala.inline
     def setTime(value: Double): Self = this.set("time", value.asInstanceOf[js.Any])
     @scala.inline
-    def setRootBounds(value: ClientRect | DOMRect): Self = this.set("rootBounds", value.asInstanceOf[js.Any])
+    def setRootBounds(value: DOMRectReadOnly): Self = this.set("rootBounds", value.asInstanceOf[js.Any])
     @scala.inline
     def setRootBoundsNull: Self = this.set("rootBounds", null)
   }

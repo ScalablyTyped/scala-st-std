@@ -13,7 +13,7 @@ object Global
   extends Instantiable1[/* descriptor */ GlobalDescriptor, org.scalablytyped.std.WebAssembly.Global]
      with Instantiable2[
       /* descriptor */ GlobalDescriptor, 
-      /* value */ js.Any, 
+      /* v */ js.Any, 
       org.scalablytyped.std.WebAssembly.Global
     ]
 

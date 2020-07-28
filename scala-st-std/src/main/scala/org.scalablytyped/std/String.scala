@@ -253,8 +253,12 @@ trait String
   def sup(): java.lang.String = js.native
   /** Converts all alphabetic characters to lowercase, taking into account the host environment's current locale. */
   def toLocaleLowerCase(): java.lang.String = js.native
+  def toLocaleLowerCase(locales: java.lang.String): java.lang.String = js.native
+  def toLocaleLowerCase(locales: js.Array[java.lang.String]): java.lang.String = js.native
   /** Returns a string where all alphabetic characters have been converted to uppercase, taking into account the host environment's current locale. */
   def toLocaleUpperCase(): java.lang.String = js.native
+  def toLocaleUpperCase(locales: java.lang.String): java.lang.String = js.native
+  def toLocaleUpperCase(locales: js.Array[java.lang.String]): java.lang.String = js.native
   /** Converts all the alphabetic characters in a string to lowercase. */
   def toLowerCase(): java.lang.String = js.native
   /** Converts all the alphabetic characters in a string to uppercase. */
