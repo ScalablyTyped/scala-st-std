@@ -27,6 +27,7 @@ trait Node extends EventTarget {
   val baseURI: java.lang.String | Null = js.native
   val childNodes: NodeListOf[Node with ChildNode] = js.native
   val firstChild: Node | Null = js.native
+  val isConnected: scala.Boolean = js.native
   val lastChild: Node | Null = js.native
   val localName: java.lang.String | Null = js.native
   val namespaceURI: java.lang.String | Null = js.native

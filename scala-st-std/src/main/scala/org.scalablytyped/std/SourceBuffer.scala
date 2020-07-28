@@ -11,6 +11,7 @@ trait SourceBuffer extends EventTarget {
   val audioTracks: AudioTrackList = js.native
   val buffered: TimeRanges = js.native
   var mode: AppendMode = js.native
+  val textTracks: TextTrackList = js.native
   var timestampOffset: Double = js.native
   val updating: scala.Boolean = js.native
   val videoTracks: VideoTrackList = js.native

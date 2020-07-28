@@ -1,5 +1,8 @@
 package org.scalablytyped.std
 
+import org.scalablytyped.std.stdStrings.async
+import org.scalablytyped.std.stdStrings.auto
+import org.scalablytyped.std.stdStrings.sync
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,6 +29,7 @@ trait HTMLImageElement extends HTMLElement {
   val complete: scala.Boolean = js.native
   var crossOrigin: java.lang.String | Null = js.native
   val currentSrc: java.lang.String = js.native
+  var decoding: async | sync | auto = js.native
   /**
     * Sets or retrieves the height of the object.
     */

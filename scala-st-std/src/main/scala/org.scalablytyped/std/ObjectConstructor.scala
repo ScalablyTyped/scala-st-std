@@ -68,16 +68,7 @@ trait ObjectConstructor
     * @param p The property name.
     * @param attributes Descriptor for the property. It can be for a data property or an accessor property.
     */
-  def defineProperty(o: js.Any, p: java.lang.String, attributes: PropertyDescriptor with ThisType[_]): js.Any = js.native
-  /**
-    * Adds a property to an object, or modifies attributes of an existing property.
-    * @param o Object on which to add or modify the property. This can be a native JavaScript
-    * object (that is, a user-defined object or a built in object) or a DOM object.
-    * @param p The property name.
-    * @param attributes Descriptor for the property. It can be for a data property or an accessor
-    *  property.
-    */
-  def defineProperty(o: js.Any, propertyKey: PropertyKey, attributes: PropertyDescriptor): js.Any = js.native
+  def defineProperty(o: js.Any, p: PropertyKey, attributes: PropertyDescriptor with ThisType[_]): js.Any = js.native
   /**
     * Prevents the modification of existing property attributes and values, and prevents the addition of new properties.
     * @param o Object on which to lock the attributes.
@@ -100,15 +91,7 @@ trait ObjectConstructor
     * @param o Object that contains the property.
     * @param p Name of the property.
     */
-  def getOwnPropertyDescriptor(o: js.Any, p: java.lang.String): js.UndefOr[PropertyDescriptor] = js.native
-  /**
-    * Gets the own property descriptor of the specified object.
-    * An own property descriptor is one that is defined directly on the object and is not
-    * inherited from the object's prototype.
-    * @param o Object that contains the property.
-    * @param p Name of the property.
-    */
-  def getOwnPropertyDescriptor(o: js.Any, propertyKey: PropertyKey): js.UndefOr[PropertyDescriptor] = js.native
+  def getOwnPropertyDescriptor(o: js.Any, p: PropertyKey): js.UndefOr[PropertyDescriptor] = js.native
   /**
     * Returns the names of the own properties of an object. The own properties of an object are those that are defined directly
     * on that object, and are not inherited from the object's prototype. The properties of an object include both fields (objects) and functions.

@@ -46,7 +46,7 @@ trait HTMLInputElement extends HTMLElement {
   /**
     * Returns a FileList object on a file type input object.
     */
-  val files: FileList | Null = js.native
+  var files: FileList | Null = js.native
   /**
     * Retrieves a reference to the form that the object is embedded in.
     */

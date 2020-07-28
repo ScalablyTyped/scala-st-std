@@ -312,14 +312,8 @@ Instantiable1[
     * @param reason The reason the promise was rejected.
     * @returns A new rejected Promise.
     */
-  def reject(reason: js.Any): js.Promise[scala.Nothing] = js.native
-  /**
-    * Creates a new rejected promise for the provided reason.
-    * @param reason The reason the promise was rejected.
-    * @returns A new rejected Promise.
-    */
-  @JSName("reject")
-  def reject_T[T](reason: js.Any): js.Promise[T] = js.native
+  def reject[T](): js.Promise[T] = js.native
+  def reject[T](reason: js.Any): js.Promise[T] = js.native
   /**
     * Creates a new resolved promise .
     * @returns A resolved promise.

@@ -132,6 +132,8 @@ trait DocumentEvent extends js.Object {
   @JSName("createEvent")
   def createEvent_TextEvent(eventInterface: org.scalablytyped.std.stdStrings.TextEvent): TextEvent = js.native
   @JSName("createEvent")
+  def createEvent_TouchEvent(eventInterface: org.scalablytyped.std.stdStrings.TouchEvent): TouchEvent = js.native
+  @JSName("createEvent")
   def createEvent_TrackEvent(eventInterface: org.scalablytyped.std.stdStrings.TrackEvent): TrackEvent = js.native
   @JSName("createEvent")
   def createEvent_TransitionEvent(eventInterface: org.scalablytyped.std.stdStrings.TransitionEvent): TransitionEvent = js.native

@@ -140,7 +140,7 @@ trait WebSocket extends EventTarget {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
-  def send(data: ArrayBuffer): Unit = js.native
+  def send(data: ArrayBufferLike): Unit = js.native
   def send(data: ArrayBufferView): Unit = js.native
   def send(data: Blob): Unit = js.native
   def send(data: java.lang.String): Unit = js.native

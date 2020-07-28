@@ -22,6 +22,8 @@ class MediaError ()
   /* CompleteClass */
   override val code: Double = js.native
   /* CompleteClass */
+  override val message: java.lang.String = js.native
+  /* CompleteClass */
   override val msExtendedCode: Double = js.native
 }
 

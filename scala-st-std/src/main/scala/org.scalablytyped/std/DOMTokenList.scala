@@ -15,6 +15,7 @@ trait DOMTokenList
   def contains(token: java.lang.String): scala.Boolean = js.native
   def item(index: Double): java.lang.String | Null = js.native
   def remove(tokens: java.lang.String*): Unit = js.native
+  def replace(oldToken: java.lang.String, newToken: java.lang.String): Unit = js.native
   def toggle(token: java.lang.String): scala.Boolean = js.native
   def toggle(token: java.lang.String, force: scala.Boolean): scala.Boolean = js.native
 }

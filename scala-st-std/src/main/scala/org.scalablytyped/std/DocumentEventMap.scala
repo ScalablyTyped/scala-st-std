@@ -85,10 +85,10 @@ trait DocumentEventMap extends GlobalEventHandlersEventMap {
   var submit: Event
   var suspend: Event
   var timeupdate: Event
-  var touchcancel: Event
-  var touchend: Event
-  var touchmove: Event
-  var touchstart: Event
+  var touchcancel: TouchEvent
+  var touchend: TouchEvent
+  var touchmove: TouchEvent
+  var touchstart: TouchEvent
   var volumechange: Event
   var waiting: Event
   var webkitfullscreenchange: Event
@@ -186,10 +186,10 @@ object DocumentEventMap {
     submit: Event,
     suspend: Event,
     timeupdate: Event,
-    touchcancel: Event,
-    touchend: Event,
-    touchmove: Event,
-    touchstart: Event,
+    touchcancel: TouchEvent,
+    touchend: TouchEvent,
+    touchmove: TouchEvent,
+    touchstart: TouchEvent,
     volumechange: Event,
     waiting: Event,
     webkitfullscreenchange: Event,
@@ -371,13 +371,13 @@ object DocumentEventMap {
     @scala.inline
     def setTimeupdate(value: Event): Self = this.set("timeupdate", value.asInstanceOf[js.Any])
     @scala.inline
-    def setTouchcancel(value: Event): Self = this.set("touchcancel", value.asInstanceOf[js.Any])
+    def setTouchcancel(value: TouchEvent): Self = this.set("touchcancel", value.asInstanceOf[js.Any])
     @scala.inline
-    def setTouchend(value: Event): Self = this.set("touchend", value.asInstanceOf[js.Any])
+    def setTouchend(value: TouchEvent): Self = this.set("touchend", value.asInstanceOf[js.Any])
     @scala.inline
-    def setTouchmove(value: Event): Self = this.set("touchmove", value.asInstanceOf[js.Any])
+    def setTouchmove(value: TouchEvent): Self = this.set("touchmove", value.asInstanceOf[js.Any])
     @scala.inline
-    def setTouchstart(value: Event): Self = this.set("touchstart", value.asInstanceOf[js.Any])
+    def setTouchstart(value: TouchEvent): Self = this.set("touchstart", value.asInstanceOf[js.Any])
     @scala.inline
     def setVolumechange(value: Event): Self = this.set("volumechange", value.asInstanceOf[js.Any])
     @scala.inline

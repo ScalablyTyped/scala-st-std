@@ -74,6 +74,8 @@ object ^ extends js.Object {
   var navigator: Navigator = js.native
   var offscreenBuffering: java.lang.String | scala.Boolean = js.native
   var onabort: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.UIEvent, js.Any]) | Null = js.native
+  var onafterprint: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null = js.native
+  var onbeforeprint: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null = js.native
   var onbeforeunload: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.BeforeUnloadEvent, js.Any]) | Null = js.native
   var onblur: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.FocusEvent, js.Any]) | Null = js.native
   var oncanplay: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null = js.native

@@ -11,6 +11,7 @@ trait MediaError extends js.Object {
   val MEDIA_ERR_SRC_NOT_SUPPORTED: Double
   val MS_MEDIA_ERR_ENCRYPTED: Double
   val code: Double
+  val message: java.lang.String
   val msExtendedCode: Double
 }
 
@@ -23,9 +24,10 @@ object MediaError {
     MEDIA_ERR_SRC_NOT_SUPPORTED: Double,
     MS_MEDIA_ERR_ENCRYPTED: Double,
     code: Double,
+    message: java.lang.String,
     msExtendedCode: Double
   ): MediaError = {
-    val __obj = js.Dynamic.literal(MEDIA_ERR_ABORTED = MEDIA_ERR_ABORTED.asInstanceOf[js.Any], MEDIA_ERR_DECODE = MEDIA_ERR_DECODE.asInstanceOf[js.Any], MEDIA_ERR_NETWORK = MEDIA_ERR_NETWORK.asInstanceOf[js.Any], MEDIA_ERR_SRC_NOT_SUPPORTED = MEDIA_ERR_SRC_NOT_SUPPORTED.asInstanceOf[js.Any], MS_MEDIA_ERR_ENCRYPTED = MS_MEDIA_ERR_ENCRYPTED.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], msExtendedCode = msExtendedCode.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(MEDIA_ERR_ABORTED = MEDIA_ERR_ABORTED.asInstanceOf[js.Any], MEDIA_ERR_DECODE = MEDIA_ERR_DECODE.asInstanceOf[js.Any], MEDIA_ERR_NETWORK = MEDIA_ERR_NETWORK.asInstanceOf[js.Any], MEDIA_ERR_SRC_NOT_SUPPORTED = MEDIA_ERR_SRC_NOT_SUPPORTED.asInstanceOf[js.Any], MS_MEDIA_ERR_ENCRYPTED = MS_MEDIA_ERR_ENCRYPTED.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], msExtendedCode = msExtendedCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaError]
   }
   @scala.inline
@@ -51,6 +53,8 @@ object MediaError {
     def setMS_MEDIA_ERR_ENCRYPTED(value: Double): Self = this.set("MS_MEDIA_ERR_ENCRYPTED", value.asInstanceOf[js.Any])
     @scala.inline
     def setCode(value: Double): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMessage(value: java.lang.String): Self = this.set("message", value.asInstanceOf[js.Any])
     @scala.inline
     def setMsExtendedCode(value: Double): Self = this.set("msExtendedCode", value.asInstanceOf[js.Any])
   }

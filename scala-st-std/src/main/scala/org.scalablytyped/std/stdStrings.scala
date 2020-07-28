@@ -408,6 +408,9 @@ object stdStrings {
   sealed trait TextEvent extends js.Object
   
   @js.native
+  sealed trait TouchEvent extends js.Object
+  
+  @js.native
   sealed trait TrackEvent extends js.Object
   
   @js.native
@@ -579,6 +582,9 @@ object stdStrings {
   
   @js.native
   sealed trait aside extends js.Object
+  
+  @js.native
+  sealed trait async extends js.Object
   
   @js.native
   sealed trait attributes extends MutationRecordType
@@ -806,7 +812,8 @@ object stdStrings {
   
   @js.native
   sealed trait complete
-    extends RTCIceGathererState
+    extends DocumentReadyState
+       with RTCIceGathererState
        with RTCIceGatheringState
   
   @js.native
@@ -1453,7 +1460,9 @@ object stdStrings {
   sealed trait instant extends ScrollBehavior
   
   @js.native
-  sealed trait interactive extends AudioContextLatencyCategory
+  sealed trait interactive
+    extends AudioContextLatencyCategory
+       with DocumentReadyState
   
   @js.native
   sealed trait `internal-error` extends MediaKeyStatus
@@ -1557,6 +1566,9 @@ object stdStrings {
   
   @js.native
   sealed trait loadend extends js.Object
+  
+  @js.native
+  sealed trait loading extends DocumentReadyState
   
   @js.native
   sealed trait loadstart extends js.Object
@@ -2312,6 +2324,9 @@ object stdStrings {
   sealed trait symbol_ extends js.Object
   
   @js.native
+  sealed trait sync extends js.Object
+  
+  @js.native
   sealed trait table extends js.Object
   
   @js.native
@@ -2838,6 +2853,8 @@ object stdStrings {
   @scala.inline
   def TextEvent: TextEvent = "TextEvent".asInstanceOf[TextEvent]
   @scala.inline
+  def TouchEvent: TouchEvent = "TouchEvent".asInstanceOf[TouchEvent]
+  @scala.inline
   def TrackEvent: TrackEvent = "TrackEvent".asInstanceOf[TrackEvent]
   @scala.inline
   def TransitionEvent: TransitionEvent = "TransitionEvent".asInstanceOf[TransitionEvent]
@@ -2943,6 +2960,8 @@ object stdStrings {
   def article: article = "article".asInstanceOf[article]
   @scala.inline
   def aside: aside = "aside".asInstanceOf[aside]
+  @scala.inline
+  def async: async = "async".asInstanceOf[async]
   @scala.inline
   def attributes: attributes = "attributes".asInstanceOf[attributes]
   @scala.inline
@@ -3560,6 +3579,8 @@ object stdStrings {
   @scala.inline
   def loadend: loadend = "loadend".asInstanceOf[loadend]
   @scala.inline
+  def loading: loading = "loading".asInstanceOf[loading]
+  @scala.inline
   def loadstart: loadstart = "loadstart".asInstanceOf[loadstart]
   @scala.inline
   def localcandidate: localcandidate = "localcandidate".asInstanceOf[localcandidate]
@@ -4043,6 +4064,8 @@ object stdStrings {
   def switch: switch = "switch".asInstanceOf[switch]
   @scala.inline
   def symbol_ : symbol_ = "symbol".asInstanceOf[symbol_]
+  @scala.inline
+  def sync: sync = "sync".asInstanceOf[sync]
   @scala.inline
   def table: table = "table".asInstanceOf[table]
   @scala.inline

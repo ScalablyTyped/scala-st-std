@@ -26,10 +26,10 @@ trait ElementEventMap extends GlobalEventHandlersEventMap {
   var command: Event
   var gotpointercapture: PointerEvent
   var lostpointercapture: PointerEvent
-  var touchcancel: Event
-  var touchend: Event
-  var touchmove: Event
-  var touchstart: Event
+  var touchcancel: TouchEvent
+  var touchend: TouchEvent
+  var touchmove: TouchEvent
+  var touchstart: TouchEvent
   var webkitfullscreenchange: Event
   var webkitfullscreenerror: Event
 }
@@ -66,10 +66,10 @@ object ElementEventMap {
     pointerout: PointerEvent,
     pointerover: PointerEvent,
     pointerup: PointerEvent,
-    touchcancel: Event,
-    touchend: Event,
-    touchmove: Event,
-    touchstart: Event,
+    touchcancel: TouchEvent,
+    touchend: TouchEvent,
+    touchmove: TouchEvent,
+    touchstart: TouchEvent,
     webkitfullscreenchange: Event,
     webkitfullscreenerror: Event,
     wheel: WheelEvent
@@ -131,13 +131,13 @@ object ElementEventMap {
     @scala.inline
     def setLostpointercapture(value: PointerEvent): Self = this.set("lostpointercapture", value.asInstanceOf[js.Any])
     @scala.inline
-    def setTouchcancel(value: Event): Self = this.set("touchcancel", value.asInstanceOf[js.Any])
+    def setTouchcancel(value: TouchEvent): Self = this.set("touchcancel", value.asInstanceOf[js.Any])
     @scala.inline
-    def setTouchend(value: Event): Self = this.set("touchend", value.asInstanceOf[js.Any])
+    def setTouchend(value: TouchEvent): Self = this.set("touchend", value.asInstanceOf[js.Any])
     @scala.inline
-    def setTouchmove(value: Event): Self = this.set("touchmove", value.asInstanceOf[js.Any])
+    def setTouchmove(value: TouchEvent): Self = this.set("touchmove", value.asInstanceOf[js.Any])
     @scala.inline
-    def setTouchstart(value: Event): Self = this.set("touchstart", value.asInstanceOf[js.Any])
+    def setTouchstart(value: TouchEvent): Self = this.set("touchstart", value.asInstanceOf[js.Any])
     @scala.inline
     def setWebkitfullscreenchange(value: Event): Self = this.set("webkitfullscreenchange", value.asInstanceOf[js.Any])
     @scala.inline
