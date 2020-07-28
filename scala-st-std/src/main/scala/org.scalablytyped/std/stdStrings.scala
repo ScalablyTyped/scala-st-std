@@ -862,6 +862,9 @@ object stdStrings {
   sealed trait dragenter extends js.Object
   
   @js.native
+  sealed trait dragexit extends js.Object
+  
+  @js.native
   sealed trait dragleave extends js.Object
   
   @js.native
@@ -2825,6 +2828,8 @@ object stdStrings {
   def dragend: dragend = "dragend".asInstanceOf[dragend]
   @scala.inline
   def dragenter: dragenter = "dragenter".asInstanceOf[dragenter]
+  @scala.inline
+  def dragexit: dragexit = "dragexit".asInstanceOf[dragexit]
   @scala.inline
   def dragleave: dragleave = "dragleave".asInstanceOf[dragleave]
   @scala.inline

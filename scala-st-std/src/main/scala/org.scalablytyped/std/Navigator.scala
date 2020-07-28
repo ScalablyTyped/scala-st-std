@@ -21,6 +21,7 @@ trait Navigator
   val cookieEnabled: scala.Boolean = js.native
   var gamepadInputEmulation: GamepadInputEmulationType = js.native
   val language: java.lang.String = js.native
+  val languages: js.Array[java.lang.String] = js.native
   val maxTouchPoints: Double = js.native
   val mimeTypes: MimeTypeArray = js.native
   val msManipulationViewsEnabled: scala.Boolean = js.native

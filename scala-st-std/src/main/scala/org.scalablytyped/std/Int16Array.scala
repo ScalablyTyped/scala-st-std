@@ -179,6 +179,9 @@ trait Int16Array extends /* index */ NumberDictionary[Double] {
     * If thisArg is omitted, undefined is used as the this value.
     */
   def map(
+    callbackfn: js.ThisFunction3[/* this */ Unit, /* value */ Double, /* index */ Double, /* array */ this.type, Double]
+  ): Int16Array = js.native
+  def map(
     callbackfn: js.ThisFunction3[/* this */ Unit, /* value */ Double, /* index */ Double, /* array */ this.type, Double],
     thisArg: js.Any
   ): Int16Array = js.native
