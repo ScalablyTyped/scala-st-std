@@ -1,0 +1,16 @@
+package org.scalablytyped.std
+
+import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.Instantiable1
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait WeakMapConstructor
+  extends Instantiable0[WeakMap[js.Any | js.Object, js.Any | js.Object]]
+     with Instantiable1[
+      /* iterable */ Iterable[js.Tuple2[js.Object, js.Object]], 
+      WeakMap[js.Object, js.Object]
+    ]
+
