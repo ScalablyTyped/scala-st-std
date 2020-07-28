@@ -50,6 +50,8 @@ class DOMRectReadOnly ()
   override val x: Double = js.native
   /* CompleteClass */
   override val y: Double = js.native
+  /* CompleteClass */
+  override def toJSON(): js.Any = js.native
 }
 
 @JSGlobal("DOMRectReadOnly")
@@ -72,6 +74,6 @@ object DOMRectReadOnly
       org.scalablytyped.std.DOMRectReadOnly
     ] {
   def fromRect(): org.scalablytyped.std.DOMRectReadOnly = js.native
-  def fromRect(rectangle: DOMRectInit): org.scalablytyped.std.DOMRectReadOnly = js.native
+  def fromRect(other: DOMRectInit): org.scalablytyped.std.DOMRectReadOnly = js.native
 }
 

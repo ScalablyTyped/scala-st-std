@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PromiseRejectionEventInit extends EventInit {
-  var promise: js.Thenable[_]
+  var promise: js.Promise[_]
   var reason: js.UndefOr[js.Any] = js.undefined
 }
 
 object PromiseRejectionEventInit {
   @scala.inline
-  def apply(promise: js.Thenable[_]): PromiseRejectionEventInit = {
+  def apply(promise: js.Promise[_]): PromiseRejectionEventInit = {
     val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any])
     __obj.asInstanceOf[PromiseRejectionEventInit]
   }
@@ -27,7 +27,7 @@ object PromiseRejectionEventInit {
         x
     }
     @scala.inline
-    def setPromise(value: js.Thenable[_]): Self = this.set("promise", value.asInstanceOf[js.Any])
+    def setPromise(value: js.Promise[_]): Self = this.set("promise", value.asInstanceOf[js.Any])
     @scala.inline
     def setReason(value: js.Any): Self = this.set("reason", value.asInstanceOf[js.Any])
     @scala.inline

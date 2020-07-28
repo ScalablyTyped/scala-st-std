@@ -13,6 +13,7 @@ trait DOMRectReadOnly extends js.Object {
   val width: Double
   val x: Double
   val y: Double
+  def toJSON(): js.Any
 }
 
 object DOMRectReadOnly {
@@ -22,12 +23,13 @@ object DOMRectReadOnly {
     height: Double,
     left: Double,
     right: Double,
+    toJSON: () => js.Any,
     top: Double,
     width: Double,
     x: Double,
     y: Double
   ): DOMRectReadOnly = {
-    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[DOMRectReadOnly]
   }
   @scala.inline
@@ -49,6 +51,8 @@ object DOMRectReadOnly {
     def setLeft(value: Double): Self = this.set("left", value.asInstanceOf[js.Any])
     @scala.inline
     def setRight(value: Double): Self = this.set("right", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setToJSON(value: () => js.Any): Self = this.set("toJSON", js.Any.fromFunction0(value))
     @scala.inline
     def setTop(value: Double): Self = this.set("top", value.asInstanceOf[js.Any])
     @scala.inline

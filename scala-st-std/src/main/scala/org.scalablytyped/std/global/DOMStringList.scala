@@ -8,14 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("DOMStringList")
 @js.native
 class DOMStringList ()
-  extends org.scalablytyped.std.DOMStringList {
-  /* CompleteClass */
-  override val length: Double = js.native
-  /* CompleteClass */
-  override def contains(str: java.lang.String): scala.Boolean = js.native
-  /* CompleteClass */
-  override def item(index: Double): java.lang.String | Null = js.native
-}
+  extends org.scalablytyped.std.DOMStringList
 
 @JSGlobal("DOMStringList")
 @js.native

@@ -1,6 +1,7 @@
 package org.scalablytyped.std
 
 import org.scalablytyped.std.stdStrings.ended
+import org.scalablytyped.std.stdStrings.isolationchange
 import org.scalablytyped.std.stdStrings.mute
 import org.scalablytyped.std.stdStrings.overconstrained
 import org.scalablytyped.std.stdStrings.unmute
@@ -12,10 +13,12 @@ import scala.scalajs.js.annotation._
 trait MediaStreamTrack extends EventTarget {
   var enabled: scala.Boolean = js.native
   val id: java.lang.String = js.native
+  val isolated: scala.Boolean = js.native
   val kind: java.lang.String = js.native
   val label: java.lang.String = js.native
   val muted: scala.Boolean = js.native
   var onended: (js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _]) | Null = js.native
+  var onisolationchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var onmute: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var onoverconstrained: (js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _]) | Null = js.native
   var onunmute: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
@@ -34,6 +37,20 @@ trait MediaStreamTrack extends EventTarget {
   def addEventListener_ended(
     `type`: ended,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_isolationchange(`type`: isolationchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_isolationchange(
+    `type`: isolationchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_isolationchange(
+    `type`: isolationchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -97,6 +114,20 @@ trait MediaStreamTrack extends EventTarget {
   def removeEventListener_ended(
     `type`: ended,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_isolationchange(`type`: isolationchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_isolationchange(
+    `type`: isolationchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_isolationchange(
+    `type`: isolationchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")

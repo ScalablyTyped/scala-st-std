@@ -49,13 +49,9 @@ class DOMException ()
   /* CompleteClass */
   override val NO_MODIFICATION_ALLOWED_ERR: Double = js.native
   /* CompleteClass */
-  override val PARSE_ERR: Double = js.native
-  /* CompleteClass */
   override val QUOTA_EXCEEDED_ERR: Double = js.native
   /* CompleteClass */
   override val SECURITY_ERR: Double = js.native
-  /* CompleteClass */
-  override val SERIALIZE_ERR: Double = js.native
   /* CompleteClass */
   override val SYNTAX_ERR: Double = js.native
   /* CompleteClass */
@@ -103,10 +99,8 @@ object DOMException
   val NOT_SUPPORTED_ERR: Double = js.native
   val NO_DATA_ALLOWED_ERR: Double = js.native
   val NO_MODIFICATION_ALLOWED_ERR: Double = js.native
-  val PARSE_ERR: Double = js.native
   val QUOTA_EXCEEDED_ERR: Double = js.native
   val SECURITY_ERR: Double = js.native
-  val SERIALIZE_ERR: Double = js.native
   val SYNTAX_ERR: Double = js.native
   val TIMEOUT_ERR: Double = js.native
   val TYPE_MISMATCH_ERR: Double = js.native

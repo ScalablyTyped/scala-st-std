@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class PerformanceNavigationTiming ()
   extends org.scalablytyped.std.PerformanceNavigationTiming {
-  /** @deprecated */
   /* CompleteClass */
   override val connectEnd: Double = js.native
-  /** @deprecated */
   /* CompleteClass */
   override val connectStart: Double = js.native
+  /* CompleteClass */
+  override val decodedBodySize: Double = js.native
   /* CompleteClass */
   override val domComplete: Double = js.native
   /* CompleteClass */
@@ -24,50 +24,46 @@ class PerformanceNavigationTiming ()
   override val domContentLoadedEventStart: Double = js.native
   /* CompleteClass */
   override val domInteractive: Double = js.native
-  /** @deprecated */
-  /* CompleteClass */
-  override val domLoading: Double = js.native
-  /** @deprecated */
   /* CompleteClass */
   override val domainLookupEnd: Double = js.native
-  /** @deprecated */
   /* CompleteClass */
   override val domainLookupStart: Double = js.native
   /* CompleteClass */
   override val duration: Double = js.native
   /* CompleteClass */
+  override val encodedBodySize: Double = js.native
+  /* CompleteClass */
   override val entryType: java.lang.String = js.native
-  /** @deprecated */
   /* CompleteClass */
   override val fetchStart: Double = js.native
+  /* CompleteClass */
+  override val initiatorType: java.lang.String = js.native
   /* CompleteClass */
   override val loadEventEnd: Double = js.native
   /* CompleteClass */
   override val loadEventStart: Double = js.native
   /* CompleteClass */
   override val name: java.lang.String = js.native
-  /** @deprecated */
   /* CompleteClass */
-  override val navigationStart: Double = js.native
+  override val nextHopProtocol: java.lang.String = js.native
   /* CompleteClass */
   override val redirectCount: Double = js.native
-  /** @deprecated */
   /* CompleteClass */
   override val redirectEnd: Double = js.native
-  /** @deprecated */
   /* CompleteClass */
   override val redirectStart: Double = js.native
-  /** @deprecated */
   /* CompleteClass */
   override val requestStart: Double = js.native
-  /** @deprecated */
   /* CompleteClass */
   override val responseEnd: Double = js.native
-  /** @deprecated */
   /* CompleteClass */
   override val responseStart: Double = js.native
   /* CompleteClass */
+  override val secureConnectionStart: Double = js.native
+  /* CompleteClass */
   override val startTime: Double = js.native
+  /* CompleteClass */
+  override val transferSize: Double = js.native
   /* CompleteClass */
   override val `type`: NavigationType = js.native
   /* CompleteClass */

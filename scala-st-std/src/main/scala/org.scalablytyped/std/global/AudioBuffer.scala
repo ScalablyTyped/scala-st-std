@@ -1,17 +1,20 @@
 package org.scalablytyped.std.global
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.std.AudioBufferOptions
+import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSGlobal("AudioBuffer")
 @js.native
-class AudioBuffer ()
-  extends org.scalablytyped.std.AudioBuffer
+class AudioBuffer protected ()
+  extends org.scalablytyped.std.AudioBuffer {
+  def this(options: AudioBufferOptions) = this()
+}
 
 @JSGlobal("AudioBuffer")
 @js.native
 object AudioBuffer
-  extends Instantiable0[org.scalablytyped.std.AudioBuffer]
+  extends Instantiable1[/* options */ AudioBufferOptions, org.scalablytyped.std.AudioBuffer]
 

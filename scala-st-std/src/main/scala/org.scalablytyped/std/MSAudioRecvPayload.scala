@@ -30,8 +30,9 @@ trait MSAudioRecvPayload
 
 object MSAudioRecvPayload {
   @scala.inline
-  def apply(): MSAudioRecvPayload = {
-    val __obj = js.Dynamic.literal()
+  def apply(id: java.lang.String, timestamp: Double, `type`: RTCStatsType): MSAudioRecvPayload = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MSAudioRecvPayload]
   }
   @scala.inline

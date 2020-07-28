@@ -6,16 +6,19 @@ import scala.scalajs.js.annotation._
 
 trait AesGcmParams extends Algorithm {
   var additionalData: js.UndefOr[
-    Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer | Null
+    Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
   ] = js.undefined
-  var iv: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer | Null
+  var iv: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
   var tagLength: js.UndefOr[Double] = js.undefined
 }
 
 object AesGcmParams {
   @scala.inline
-  def apply(name: java.lang.String): AesGcmParams = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  def apply(
+    iv: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
+    name: java.lang.String
+  ): AesGcmParams = {
+    val __obj = js.Dynamic.literal(iv = iv.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AesGcmParams]
   }
   @scala.inline
@@ -30,19 +33,15 @@ object AesGcmParams {
         x
     }
     @scala.inline
+    def setIv(
+      value: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
+    ): Self = this.set("iv", value.asInstanceOf[js.Any])
+    @scala.inline
     def setAdditionalData(
       value: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
     ): Self = this.set("additionalData", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteAdditionalData: Self = this.set("additionalData", js.undefined)
-    @scala.inline
-    def setAdditionalDataNull: Self = this.set("additionalData", null)
-    @scala.inline
-    def setIv(
-      value: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
-    ): Self = this.set("iv", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setIvNull: Self = this.set("iv", null)
     @scala.inline
     def setTagLength(value: Double): Self = this.set("tagLength", value.asInstanceOf[js.Any])
     @scala.inline

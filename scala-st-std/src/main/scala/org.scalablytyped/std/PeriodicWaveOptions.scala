@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PeriodicWaveOptions extends PeriodicWaveConstraints {
-  var imag: js.UndefOr[js.Array[Double]] = js.undefined
-  var real: js.UndefOr[js.Array[Double]] = js.undefined
+  var imag: js.UndefOr[js.Array[Double] | Float32Array] = js.undefined
+  var real: js.UndefOr[js.Array[Double] | Float32Array] = js.undefined
 }
 
 object PeriodicWaveOptions {
@@ -29,13 +29,13 @@ object PeriodicWaveOptions {
     @scala.inline
     def setImagVarargs(value: Double*): Self = this.set("imag", js.Array(value :_*))
     @scala.inline
-    def setImag(value: js.Array[Double]): Self = this.set("imag", value.asInstanceOf[js.Any])
+    def setImag(value: js.Array[Double] | Float32Array): Self = this.set("imag", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteImag: Self = this.set("imag", js.undefined)
     @scala.inline
     def setRealVarargs(value: Double*): Self = this.set("real", js.Array(value :_*))
     @scala.inline
-    def setReal(value: js.Array[Double]): Self = this.set("real", value.asInstanceOf[js.Any])
+    def setReal(value: js.Array[Double] | Float32Array): Self = this.set("real", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteReal: Self = this.set("real", js.undefined)
   }

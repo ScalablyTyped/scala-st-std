@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
   - `org.scalablytyped`.std.stdStrings.connecting
   - `org.scalablytyped`.std.stdStrings.connected
   - `org.scalablytyped`.std.stdStrings.closed
+  - `org.scalablytyped`.std.stdStrings.failed
 */
 trait RTCDtlsTransportState extends js.Object
 
@@ -19,6 +20,8 @@ object RTCDtlsTransportState {
   def connected: org.scalablytyped.std.stdStrings.connected = "connected".asInstanceOf[org.scalablytyped.std.stdStrings.connected]
   @scala.inline
   def connecting: org.scalablytyped.std.stdStrings.connecting = "connecting".asInstanceOf[org.scalablytyped.std.stdStrings.connecting]
+  @scala.inline
+  def failed: org.scalablytyped.std.stdStrings.failed = "failed".asInstanceOf[org.scalablytyped.std.stdStrings.failed]
   @scala.inline
   def `new`: org.scalablytyped.std.stdStrings.`new` = "new".asInstanceOf[org.scalablytyped.std.stdStrings.`new`]
 }

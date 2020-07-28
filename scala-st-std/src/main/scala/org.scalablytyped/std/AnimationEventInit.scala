@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 trait AnimationEventInit extends EventInit {
   var animationName: js.UndefOr[java.lang.String] = js.undefined
   var elapsedTime: js.UndefOr[Double] = js.undefined
+  var pseudoElement: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object AnimationEventInit {
@@ -34,6 +35,10 @@ object AnimationEventInit {
     def setElapsedTime(value: Double): Self = this.set("elapsedTime", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteElapsedTime: Self = this.set("elapsedTime", js.undefined)
+    @scala.inline
+    def setPseudoElement(value: java.lang.String): Self = this.set("pseudoElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePseudoElement: Self = this.set("pseudoElement", js.undefined)
   }
   
 }

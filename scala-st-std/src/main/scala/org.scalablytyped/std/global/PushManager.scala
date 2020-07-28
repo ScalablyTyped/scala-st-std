@@ -13,5 +13,7 @@ class PushManager ()
 @JSGlobal("PushManager")
 @js.native
 object PushManager
-  extends Instantiable0[org.scalablytyped.std.PushManager]
+  extends Instantiable0[org.scalablytyped.std.PushManager] {
+  val supportedContentEncodings: js.Array[java.lang.String] = js.native
+}
 

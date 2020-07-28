@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RTCIceCandidatePair extends js.Object {
-  var local: js.UndefOr[RTCIceCandidateDictionary] = js.undefined
-  var remote: js.UndefOr[RTCIceCandidateDictionary] = js.undefined
+  var local: js.UndefOr[RTCIceCandidate] = js.undefined
+  var remote: js.UndefOr[RTCIceCandidate] = js.undefined
 }
 
 object RTCIceCandidatePair {
@@ -27,11 +27,11 @@ object RTCIceCandidatePair {
         x
     }
     @scala.inline
-    def setLocal(value: RTCIceCandidateDictionary): Self = this.set("local", value.asInstanceOf[js.Any])
+    def setLocal(value: RTCIceCandidate): Self = this.set("local", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteLocal: Self = this.set("local", js.undefined)
     @scala.inline
-    def setRemote(value: RTCIceCandidateDictionary): Self = this.set("remote", value.asInstanceOf[js.Any])
+    def setRemote(value: RTCIceCandidate): Self = this.set("remote", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteRemote: Self = this.set("remote", js.undefined)
   }

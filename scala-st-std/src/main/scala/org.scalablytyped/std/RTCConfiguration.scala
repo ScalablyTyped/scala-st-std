@@ -6,9 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait RTCConfiguration extends js.Object {
   var bundlePolicy: js.UndefOr[RTCBundlePolicy] = js.undefined
+  var certificates: js.UndefOr[js.Array[RTCCertificate]] = js.undefined
+  var iceCandidatePoolSize: js.UndefOr[Double] = js.undefined
   var iceServers: js.UndefOr[js.Array[RTCIceServer]] = js.undefined
   var iceTransportPolicy: js.UndefOr[RTCIceTransportPolicy] = js.undefined
   var peerIdentity: js.UndefOr[java.lang.String] = js.undefined
+  var rtcpMuxPolicy: js.UndefOr[RTCRtcpMuxPolicy] = js.undefined
 }
 
 object RTCConfiguration {
@@ -33,6 +36,16 @@ object RTCConfiguration {
     @scala.inline
     def deleteBundlePolicy: Self = this.set("bundlePolicy", js.undefined)
     @scala.inline
+    def setCertificatesVarargs(value: RTCCertificate*): Self = this.set("certificates", js.Array(value :_*))
+    @scala.inline
+    def setCertificates(value: js.Array[RTCCertificate]): Self = this.set("certificates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificates: Self = this.set("certificates", js.undefined)
+    @scala.inline
+    def setIceCandidatePoolSize(value: Double): Self = this.set("iceCandidatePoolSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIceCandidatePoolSize: Self = this.set("iceCandidatePoolSize", js.undefined)
+    @scala.inline
     def setIceServersVarargs(value: RTCIceServer*): Self = this.set("iceServers", js.Array(value :_*))
     @scala.inline
     def setIceServers(value: js.Array[RTCIceServer]): Self = this.set("iceServers", value.asInstanceOf[js.Any])
@@ -46,6 +59,10 @@ object RTCConfiguration {
     def setPeerIdentity(value: java.lang.String): Self = this.set("peerIdentity", value.asInstanceOf[js.Any])
     @scala.inline
     def deletePeerIdentity: Self = this.set("peerIdentity", js.undefined)
+    @scala.inline
+    def setRtcpMuxPolicy(value: RTCRtcpMuxPolicy): Self = this.set("rtcpMuxPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRtcpMuxPolicy: Self = this.set("rtcpMuxPolicy", js.undefined)
   }
   
 }

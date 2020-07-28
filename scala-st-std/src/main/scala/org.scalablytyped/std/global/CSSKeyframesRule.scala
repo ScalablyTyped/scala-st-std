@@ -48,9 +48,9 @@ class CSSKeyframesRule ()
   /* CompleteClass */
   override def appendRule(rule: java.lang.String): Unit = js.native
   /* CompleteClass */
-  override def deleteRule(rule: java.lang.String): Unit = js.native
+  override def deleteRule(select: java.lang.String): Unit = js.native
   /* CompleteClass */
-  override def findRule(rule: java.lang.String): org.scalablytyped.std.CSSKeyframeRule | Null = js.native
+  override def findRule(select: java.lang.String): org.scalablytyped.std.CSSKeyframeRule | Null = js.native
 }
 
 @JSGlobal("CSSKeyframesRule")

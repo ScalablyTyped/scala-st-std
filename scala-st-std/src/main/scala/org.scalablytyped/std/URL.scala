@@ -17,6 +17,7 @@ trait URL extends js.Object {
   var search: java.lang.String
   val searchParams: URLSearchParams
   var username: java.lang.String
+  def toJSON(): java.lang.String
 }
 
 object URL {
@@ -33,9 +34,10 @@ object URL {
     protocol: java.lang.String,
     search: java.lang.String,
     searchParams: URLSearchParams,
+    toJSON: () => java.lang.String,
     username: java.lang.String
   ): URL = {
-    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], searchParams = searchParams.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], searchParams = searchParams.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[URL]
   }
   @scala.inline
@@ -71,6 +73,8 @@ object URL {
     def setSearch(value: java.lang.String): Self = this.set("search", value.asInstanceOf[js.Any])
     @scala.inline
     def setSearchParams(value: URLSearchParams): Self = this.set("searchParams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setToJSON(value: () => java.lang.String): Self = this.set("toJSON", js.Any.fromFunction0(value))
     @scala.inline
     def setUsername(value: java.lang.String): Self = this.set("username", value.asInstanceOf[js.Any])
   }

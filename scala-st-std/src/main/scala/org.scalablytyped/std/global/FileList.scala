@@ -8,12 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("FileList")
 @js.native
 class FileList ()
-  extends org.scalablytyped.std.FileList {
-  /* CompleteClass */
-  override val length: Double = js.native
-  /* CompleteClass */
-  override def item(index: Double): org.scalablytyped.std.File | Null = js.native
-}
+  extends org.scalablytyped.std.FileList
 
 @JSGlobal("FileList")
 @js.native

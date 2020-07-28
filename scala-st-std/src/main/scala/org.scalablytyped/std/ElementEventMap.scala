@@ -24,12 +24,6 @@ trait ElementEventMap extends GlobalEventHandlersEventMap {
   var MSPointerUp: Event
   var ariarequest: Event
   var command: Event
-  var gotpointercapture: PointerEvent
-  var lostpointercapture: PointerEvent
-  var touchcancel: TouchEvent
-  var touchend: TouchEvent
-  var touchmove: TouchEvent
-  var touchstart: TouchEvent
   var webkitfullscreenchange: Event
   var webkitfullscreenerror: Event
 }
@@ -54,6 +48,10 @@ object ElementEventMap {
     MSPointerOut: Event,
     MSPointerOver: Event,
     MSPointerUp: Event,
+    animationcancel: AnimationEvent,
+    animationend: AnimationEvent,
+    animationiteration: AnimationEvent,
+    animationstart: AnimationEvent,
     ariarequest: Event,
     command: Event,
     gotpointercapture: PointerEvent,
@@ -70,11 +68,15 @@ object ElementEventMap {
     touchend: TouchEvent,
     touchmove: TouchEvent,
     touchstart: TouchEvent,
+    transitioncancel: TransitionEvent,
+    transitionend: TransitionEvent,
+    transitionrun: TransitionEvent,
+    transitionstart: TransitionEvent,
     webkitfullscreenchange: Event,
     webkitfullscreenerror: Event,
     wheel: WheelEvent
   ): ElementEventMap = {
-    val __obj = js.Dynamic.literal(MSGestureChange = MSGestureChange.asInstanceOf[js.Any], MSGestureDoubleTap = MSGestureDoubleTap.asInstanceOf[js.Any], MSGestureEnd = MSGestureEnd.asInstanceOf[js.Any], MSGestureHold = MSGestureHold.asInstanceOf[js.Any], MSGestureStart = MSGestureStart.asInstanceOf[js.Any], MSGestureTap = MSGestureTap.asInstanceOf[js.Any], MSGotPointerCapture = MSGotPointerCapture.asInstanceOf[js.Any], MSInertiaStart = MSInertiaStart.asInstanceOf[js.Any], MSLostPointerCapture = MSLostPointerCapture.asInstanceOf[js.Any], MSPointerCancel = MSPointerCancel.asInstanceOf[js.Any], MSPointerDown = MSPointerDown.asInstanceOf[js.Any], MSPointerEnter = MSPointerEnter.asInstanceOf[js.Any], MSPointerLeave = MSPointerLeave.asInstanceOf[js.Any], MSPointerMove = MSPointerMove.asInstanceOf[js.Any], MSPointerOut = MSPointerOut.asInstanceOf[js.Any], MSPointerOver = MSPointerOver.asInstanceOf[js.Any], MSPointerUp = MSPointerUp.asInstanceOf[js.Any], ariarequest = ariarequest.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any], gotpointercapture = gotpointercapture.asInstanceOf[js.Any], lostpointercapture = lostpointercapture.asInstanceOf[js.Any], pointercancel = pointercancel.asInstanceOf[js.Any], pointerdown = pointerdown.asInstanceOf[js.Any], pointerenter = pointerenter.asInstanceOf[js.Any], pointerleave = pointerleave.asInstanceOf[js.Any], pointermove = pointermove.asInstanceOf[js.Any], pointerout = pointerout.asInstanceOf[js.Any], pointerover = pointerover.asInstanceOf[js.Any], pointerup = pointerup.asInstanceOf[js.Any], touchcancel = touchcancel.asInstanceOf[js.Any], touchend = touchend.asInstanceOf[js.Any], touchmove = touchmove.asInstanceOf[js.Any], touchstart = touchstart.asInstanceOf[js.Any], webkitfullscreenchange = webkitfullscreenchange.asInstanceOf[js.Any], webkitfullscreenerror = webkitfullscreenerror.asInstanceOf[js.Any], wheel = wheel.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(MSGestureChange = MSGestureChange.asInstanceOf[js.Any], MSGestureDoubleTap = MSGestureDoubleTap.asInstanceOf[js.Any], MSGestureEnd = MSGestureEnd.asInstanceOf[js.Any], MSGestureHold = MSGestureHold.asInstanceOf[js.Any], MSGestureStart = MSGestureStart.asInstanceOf[js.Any], MSGestureTap = MSGestureTap.asInstanceOf[js.Any], MSGotPointerCapture = MSGotPointerCapture.asInstanceOf[js.Any], MSInertiaStart = MSInertiaStart.asInstanceOf[js.Any], MSLostPointerCapture = MSLostPointerCapture.asInstanceOf[js.Any], MSPointerCancel = MSPointerCancel.asInstanceOf[js.Any], MSPointerDown = MSPointerDown.asInstanceOf[js.Any], MSPointerEnter = MSPointerEnter.asInstanceOf[js.Any], MSPointerLeave = MSPointerLeave.asInstanceOf[js.Any], MSPointerMove = MSPointerMove.asInstanceOf[js.Any], MSPointerOut = MSPointerOut.asInstanceOf[js.Any], MSPointerOver = MSPointerOver.asInstanceOf[js.Any], MSPointerUp = MSPointerUp.asInstanceOf[js.Any], animationcancel = animationcancel.asInstanceOf[js.Any], animationend = animationend.asInstanceOf[js.Any], animationiteration = animationiteration.asInstanceOf[js.Any], animationstart = animationstart.asInstanceOf[js.Any], ariarequest = ariarequest.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any], gotpointercapture = gotpointercapture.asInstanceOf[js.Any], lostpointercapture = lostpointercapture.asInstanceOf[js.Any], pointercancel = pointercancel.asInstanceOf[js.Any], pointerdown = pointerdown.asInstanceOf[js.Any], pointerenter = pointerenter.asInstanceOf[js.Any], pointerleave = pointerleave.asInstanceOf[js.Any], pointermove = pointermove.asInstanceOf[js.Any], pointerout = pointerout.asInstanceOf[js.Any], pointerover = pointerover.asInstanceOf[js.Any], pointerup = pointerup.asInstanceOf[js.Any], touchcancel = touchcancel.asInstanceOf[js.Any], touchend = touchend.asInstanceOf[js.Any], touchmove = touchmove.asInstanceOf[js.Any], touchstart = touchstart.asInstanceOf[js.Any], transitioncancel = transitioncancel.asInstanceOf[js.Any], transitionend = transitionend.asInstanceOf[js.Any], transitionrun = transitionrun.asInstanceOf[js.Any], transitionstart = transitionstart.asInstanceOf[js.Any], webkitfullscreenchange = webkitfullscreenchange.asInstanceOf[js.Any], webkitfullscreenerror = webkitfullscreenerror.asInstanceOf[js.Any], wheel = wheel.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementEventMap]
   }
   @scala.inline
@@ -126,18 +128,6 @@ object ElementEventMap {
     def setAriarequest(value: Event): Self = this.set("ariarequest", value.asInstanceOf[js.Any])
     @scala.inline
     def setCommand(value: Event): Self = this.set("command", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setGotpointercapture(value: PointerEvent): Self = this.set("gotpointercapture", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setLostpointercapture(value: PointerEvent): Self = this.set("lostpointercapture", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setTouchcancel(value: TouchEvent): Self = this.set("touchcancel", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setTouchend(value: TouchEvent): Self = this.set("touchend", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setTouchmove(value: TouchEvent): Self = this.set("touchmove", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setTouchstart(value: TouchEvent): Self = this.set("touchstart", value.asInstanceOf[js.Any])
     @scala.inline
     def setWebkitfullscreenchange(value: Event): Self = this.set("webkitfullscreenchange", value.asInstanceOf[js.Any])
     @scala.inline

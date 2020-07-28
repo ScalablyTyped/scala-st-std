@@ -26,7 +26,9 @@ object Notification
       /* options */ NotificationOptions, 
       org.scalablytyped.std.Notification
     ] {
+  val maxActions: Double = js.native
+  val permission: NotificationPermission = js.native
   def requestPermission(): js.Promise[NotificationPermission] = js.native
-  def requestPermission(callback: NotificationPermissionCallback): js.Promise[NotificationPermission] = js.native
+  def requestPermission(deprecatedCallback: NotificationPermissionCallback): js.Promise[NotificationPermission] = js.native
 }
 

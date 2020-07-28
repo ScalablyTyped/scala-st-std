@@ -1,6 +1,6 @@
 package org.scalablytyped.std
 
-import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.NumberDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait HTMLSelectElement
   extends HTMLElement
-     with /* name */ StringDictionary[js.Any] {
+     with /* index */ NumberDictionary[Element] {
+  var autocomplete: java.lang.String = js.native
   /**
     * Provides a way to direct a user to a specific field when a document loads. This can provide both direction and convenience for a user, reducing the need to click or tab to a field when a page opens. This attribute is true when present on an element, and false when missing.
     */
@@ -18,6 +19,9 @@ trait HTMLSelectElement
     * Retrieves a reference to the form that the object is embedded in.
     */
   val form: HTMLFormElement | Null = js.native
+  @JSName(js.Symbol.iterator)
+  var iterator: js.Function0[IterableIterator[Element]] = js.native
+  val labels: NodeListOf[HTMLLabelElement] = js.native
   /**
     * Sets or retrieves the number of objects in a collection.
     */
@@ -94,15 +98,12 @@ trait HTMLSelectElement
     * @param name Variant of type Number or String that specifies the object or collection to retrieve. If this parameter is an integer, it is the zero-based index of the object. If this parameter is a string, all objects with matching name or id properties are retrieved, and a collection is returned if more than one match is made.
     * @param index Variant of type Number that specifies the zero-based index of the object to retrieve when a collection is returned.
     */
-  def item(): Element | Null = js.native
-  def item(name: js.UndefOr[scala.Nothing], index: js.Any): Element | Null = js.native
-  def item(name: js.Any): Element | Null = js.native
-  def item(name: js.Any, index: js.Any): Element | Null = js.native
+  def item(index: Double): Element | Null = js.native
   /**
     * Retrieves a select object or an object from an options collection.
     * @param namedItem A String that specifies the name or id property of the object to retrieve. A collection is returned if more than one match is made.
     */
-  def namedItem(name: java.lang.String): js.Any = js.native
+  def namedItem(name: java.lang.String): HTMLOptionElement | Null = js.native
   def remove(index: Double): Unit = js.native
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
@@ -114,6 +115,7 @@ trait HTMLSelectElement
   ): Unit = js.native
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  def reportValidity(): scala.Boolean = js.native
   /**
     * Sets a custom error message that is displayed when a form is submitted.
     * @param error Sets a custom error message that is displayed when a form is submitted.

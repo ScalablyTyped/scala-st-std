@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Body extends js.Object {
+  val body: ReadableStream | Null
   val bodyUsed: scala.Boolean
   def arrayBuffer(): js.Promise[ArrayBuffer]
   def blob(): js.Promise[Blob]
@@ -49,6 +50,10 @@ object Body {
     def setJson(value: () => js.Promise[_]): Self = this.set("json", js.Any.fromFunction0(value))
     @scala.inline
     def setText(value: () => js.Promise[java.lang.String]): Self = this.set("text", js.Any.fromFunction0(value))
+    @scala.inline
+    def setBody(value: ReadableStream): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBodyNull: Self = this.set("body", null)
   }
   
 }

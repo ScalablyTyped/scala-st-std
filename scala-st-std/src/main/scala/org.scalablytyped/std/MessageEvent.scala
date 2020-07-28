@@ -9,7 +9,7 @@ trait MessageEvent extends Event {
   val data: js.Any = js.native
   val origin: java.lang.String = js.native
   val ports: js.Array[MessagePort] = js.native
-  val source: Window | Null = js.native
+  val source: MessageEventSource = js.native
   def initMessageEvent(
     `type`: java.lang.String,
     bubbles: scala.Boolean,

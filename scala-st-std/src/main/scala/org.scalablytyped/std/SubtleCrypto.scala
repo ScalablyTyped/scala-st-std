@@ -323,14 +323,22 @@ trait SubtleCrypto extends js.Object {
   def importKey(
     format: raw | pkcs8 | spki,
     keyData: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
-    algorithm: java.lang.String | RsaHashedImportParams | EcKeyImportParams | HmacImportParams | DhImportKeyParams,
+    algorithm: java.lang.String | RsaHashedImportParams | EcKeyImportParams | HmacImportParams | DhImportKeyParams | AesKeyAlgorithm,
     extractable: scala.Boolean,
     keyUsages: js.Array[java.lang.String]
   ): js.Thenable[CryptoKey] = js.native
   def importKey(
     format: java.lang.String,
     keyData: JsonWebKey | Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
-    algorithm: java.lang.String | RsaHashedImportParams | EcKeyImportParams | HmacImportParams | DhImportKeyParams,
+    algorithm: java.lang.String | RsaHashedImportParams | EcKeyImportParams | HmacImportParams | DhImportKeyParams | AesKeyAlgorithm,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[java.lang.String]
+  ): js.Thenable[CryptoKey] = js.native
+  @JSName("importKey")
+  def importKey_jwk(
+    format: jwk,
+    keyData: JsonWebKey,
+    algorithm: AesKeyAlgorithm,
     extractable: scala.Boolean,
     keyUsages: js.Array[java.lang.String]
   ): js.Thenable[CryptoKey] = js.native

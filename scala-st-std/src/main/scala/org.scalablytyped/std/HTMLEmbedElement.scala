@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 trait HTMLEmbedElement
   extends HTMLElement
      with GetSVGDocument {
+  /** @deprecated */
+  var align: java.lang.String = js.native
   /**
     * Sets or retrieves the height of the object.
     */

@@ -8,12 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("CSSRuleList")
 @js.native
 class CSSRuleList ()
-  extends org.scalablytyped.std.CSSRuleList {
-  /* CompleteClass */
-  override val length: Double = js.native
-  /* CompleteClass */
-  override def item(index: Double): org.scalablytyped.std.CSSRule | Null = js.native
-}
+  extends org.scalablytyped.std.CSSRuleList
 
 @JSGlobal("CSSRuleList")
 @js.native

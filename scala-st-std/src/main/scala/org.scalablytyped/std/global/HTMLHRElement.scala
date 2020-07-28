@@ -12,8 +12,6 @@ class HTMLHRElement ()
   /* CompleteClass */
   override val childElementCount: Double = js.native
   /* CompleteClass */
-  override var color: java.lang.String = js.native
-  /* CompleteClass */
   override val firstElementChild: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
   override val lastElementChild: org.scalablytyped.std.Element | Null = js.native
@@ -21,8 +19,6 @@ class HTMLHRElement ()
   override val nextElementSibling: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
   override val previousElementSibling: org.scalablytyped.std.Element | Null = js.native
-  /* CompleteClass */
-  override var size: Double = js.native
   /* CompleteClass */
   override val style: org.scalablytyped.std.CSSStyleDeclaration = js.native
   /* CompleteClass */

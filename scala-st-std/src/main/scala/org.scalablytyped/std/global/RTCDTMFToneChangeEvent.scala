@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class RTCDTMFToneChangeEvent protected ()
   extends org.scalablytyped.std.RTCDTMFToneChangeEvent {
-  def this(typeArg: java.lang.String, eventInitDict: RTCDTMFToneChangeEventInit) = this()
+  def this(`type`: java.lang.String, eventInitDict: RTCDTMFToneChangeEventInit) = this()
 }
 
 @JSGlobal("RTCDTMFToneChangeEvent")
 @js.native
 object RTCDTMFToneChangeEvent
   extends Instantiable2[
-      /* typeArg */ java.lang.String, 
+      /* type */ java.lang.String, 
       /* eventInitDict */ RTCDTMFToneChangeEventInit, 
       org.scalablytyped.std.RTCDTMFToneChangeEvent
     ]

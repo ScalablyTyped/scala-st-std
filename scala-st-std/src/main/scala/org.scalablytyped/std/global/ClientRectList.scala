@@ -8,12 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ClientRectList")
 @js.native
 class ClientRectList ()
-  extends org.scalablytyped.std.ClientRectList {
-  /* CompleteClass */
-  override val length: Double = js.native
-  /* CompleteClass */
-  override def item(index: Double): org.scalablytyped.std.ClientRect = js.native
-}
+  extends org.scalablytyped.std.ClientRectList
 
 @JSGlobal("ClientRectList")
 @js.native

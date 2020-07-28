@@ -5,20 +5,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RTCRtpCodecParameters extends js.Object {
-  var clockRate: js.UndefOr[Double] = js.undefined
-  var maxptime: js.UndefOr[Double] = js.undefined
-  var name: js.UndefOr[java.lang.String] = js.undefined
-  var numChannels: js.UndefOr[Double] = js.undefined
-  var parameters: js.UndefOr[js.Any] = js.undefined
-  var payloadType: js.UndefOr[Double] = js.undefined
-  var ptime: js.UndefOr[Double] = js.undefined
-  var rtcpFeedback: js.UndefOr[js.Array[RTCRtcpFeedback]] = js.undefined
+  var channels: js.UndefOr[Double] = js.undefined
+  var clockRate: Double
+  var mimeType: java.lang.String
+  var payloadType: Double
+  var sdpFmtpLine: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object RTCRtpCodecParameters {
   @scala.inline
-  def apply(): RTCRtpCodecParameters = {
-    val __obj = js.Dynamic.literal()
+  def apply(clockRate: Double, mimeType: java.lang.String, payloadType: Double): RTCRtpCodecParameters = {
+    val __obj = js.Dynamic.literal(clockRate = clockRate.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any], payloadType = payloadType.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpCodecParameters]
   }
   @scala.inline
@@ -35,37 +32,17 @@ object RTCRtpCodecParameters {
     @scala.inline
     def setClockRate(value: Double): Self = this.set("clockRate", value.asInstanceOf[js.Any])
     @scala.inline
-    def deleteClockRate: Self = this.set("clockRate", js.undefined)
-    @scala.inline
-    def setMaxptime(value: Double): Self = this.set("maxptime", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteMaxptime: Self = this.set("maxptime", js.undefined)
-    @scala.inline
-    def setName(value: java.lang.String): Self = this.set("name", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    @scala.inline
-    def setNumChannels(value: Double): Self = this.set("numChannels", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteNumChannels: Self = this.set("numChannels", js.undefined)
-    @scala.inline
-    def setParameters(value: js.Any): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
+    def setMimeType(value: java.lang.String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
     @scala.inline
     def setPayloadType(value: Double): Self = this.set("payloadType", value.asInstanceOf[js.Any])
     @scala.inline
-    def deletePayloadType: Self = this.set("payloadType", js.undefined)
+    def setChannels(value: Double): Self = this.set("channels", value.asInstanceOf[js.Any])
     @scala.inline
-    def setPtime(value: Double): Self = this.set("ptime", value.asInstanceOf[js.Any])
+    def deleteChannels: Self = this.set("channels", js.undefined)
     @scala.inline
-    def deletePtime: Self = this.set("ptime", js.undefined)
+    def setSdpFmtpLine(value: java.lang.String): Self = this.set("sdpFmtpLine", value.asInstanceOf[js.Any])
     @scala.inline
-    def setRtcpFeedbackVarargs(value: RTCRtcpFeedback*): Self = this.set("rtcpFeedback", js.Array(value :_*))
-    @scala.inline
-    def setRtcpFeedback(value: js.Array[RTCRtcpFeedback]): Self = this.set("rtcpFeedback", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteRtcpFeedback: Self = this.set("rtcpFeedback", js.undefined)
+    def deleteSdpFmtpLine: Self = this.set("sdpFmtpLine", js.undefined)
   }
   
 }

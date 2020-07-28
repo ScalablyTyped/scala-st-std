@@ -39,6 +39,8 @@ class Navigator_ () extends Navigator {
   /* CompleteClass */
   override val productSub: java.lang.String = js.native
   /* CompleteClass */
+  override val storage: org.scalablytyped.std.StorageManager = js.native
+  /* CompleteClass */
   override val userAgent: java.lang.String = js.native
   /* CompleteClass */
   override val vendor: java.lang.String = js.native

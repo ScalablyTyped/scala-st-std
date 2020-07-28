@@ -6,57 +6,129 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IDBObjectStore extends js.Object {
-  var autoIncrement: scala.Boolean = js.native
+  /**
+    * Returns true if the store has a key generator, and false otherwise.
+    */
+  val autoIncrement: scala.Boolean = js.native
+  /**
+    * Returns a list of the names of indexes in the store.
+    */
   val indexNames: DOMStringList = js.native
-  val keyPath: java.lang.String | js.Array[java.lang.String] | Null = js.native
-  val name: java.lang.String = js.native
+  /**
+    * Returns the key path of the store, or null if none.
+    */
+  val keyPath: java.lang.String | js.Array[java.lang.String] = js.native
+  /**
+    * Updates the name of the store to newName.
+    * Throws "InvalidStateError" DOMException if not called within an upgrade
+    * transaction.
+    */
+  var name: java.lang.String = js.native
+  /**
+    * Returns the associated transaction.
+    */
   val transaction: IDBTransaction = js.native
   def add(value: js.Any): IDBRequest = js.native
-  def add(value: js.Any, key: Date): IDBRequest = js.native
-  def add(value: js.Any, key: IDBArrayKey): IDBRequest = js.native
   def add(value: js.Any, key: IDBKeyRange): IDBRequest = js.native
-  def add(value: js.Any, key: java.lang.String): IDBRequest = js.native
-  def add(value: js.Any, key: Double): IDBRequest = js.native
+  def add(value: js.Any, key: IDBValidKey): IDBRequest = js.native
+  /**
+    * Deletes all records in store.
+    * If successful, request's result will
+    * be undefined.
+    */
   def clear(): IDBRequest = js.native
+  /**
+    * Retrieves the number of records matching the
+    * given key or key range in query.
+    * If successful, request's result will be the count.
+    */
   def count(): IDBRequest = js.native
-  def count(key: Date): IDBRequest = js.native
-  def count(key: IDBArrayKey): IDBRequest = js.native
   def count(key: IDBKeyRange): IDBRequest = js.native
-  def count(key: java.lang.String): IDBRequest = js.native
-  def count(key: Double): IDBRequest = js.native
+  def count(key: IDBValidKey): IDBRequest = js.native
+  /**
+    * Creates a new index in store with the given name, keyPath and options and returns a new IDBIndex. If the keyPath and options define constraints that cannot be
+    * satisfied with the data already in store the upgrade
+    * transaction will abort with
+    * a "ConstraintError" DOMException.
+    * Throws an "InvalidStateError" DOMException if not called within an upgrade
+    * transaction.
+    */
   def createIndex(name: java.lang.String, keyPath: java.lang.String): IDBIndex = js.native
-  def createIndex(name: java.lang.String, keyPath: java.lang.String, optionalParameters: IDBIndexParameters): IDBIndex = js.native
+  def createIndex(name: java.lang.String, keyPath: java.lang.String, options: IDBIndexParameters): IDBIndex = js.native
   def createIndex(name: java.lang.String, keyPath: js.Array[java.lang.String]): IDBIndex = js.native
-  def createIndex(
-    name: java.lang.String,
-    keyPath: js.Array[java.lang.String],
-    optionalParameters: IDBIndexParameters
-  ): IDBIndex = js.native
-  def delete(key: Date): IDBRequest = js.native
-  def delete(key: IDBArrayKey): IDBRequest = js.native
+  def createIndex(name: java.lang.String, keyPath: js.Array[java.lang.String], options: IDBIndexParameters): IDBIndex = js.native
   def delete(key: IDBKeyRange): IDBRequest = js.native
-  def delete(key: java.lang.String): IDBRequest = js.native
-  def delete(key: Double): IDBRequest = js.native
-  def deleteIndex(indexName: java.lang.String): Unit = js.native
-  def get(key: js.Any): IDBRequest = js.native
+  /**
+    * Deletes records in store with the given key or in the given key range in query.
+    * If successful, request's result will
+    * be undefined.
+    */
+  def delete(key: IDBValidKey): IDBRequest = js.native
+  /**
+    * Deletes the index in store with the given name.
+    * Throws an "InvalidStateError" DOMException if not called within an upgrade
+    * transaction.
+    */
+  def deleteIndex(name: java.lang.String): Unit = js.native
+  def get(query: IDBKeyRange): IDBRequest = js.native
+  /**
+    * Retrieves the value of the first record matching the
+    * given key or key range in query.
+    * If successful, request's result will be the value, or undefined if there was no matching record.
+    */
+  def get(query: IDBValidKey): IDBRequest = js.native
+  /**
+    * Retrieves the values of the records matching the
+    * given key or key range in query (up to count if given).
+    * If successful, request's result will
+    * be an Array of the values.
+    */
+  def getAll(): IDBRequest = js.native
+  def getAll(query: js.UndefOr[IDBValidKey], count: Double): IDBRequest = js.native
+  def getAll(query: IDBKeyRange): IDBRequest = js.native
+  def getAll(query: IDBKeyRange, count: Double): IDBRequest = js.native
+  def getAll(query: IDBValidKey): IDBRequest = js.native
+  /**
+    * Retrieves the keys of records matching the
+    * given key or key range in query (up to count if given).
+    * If successful, request's result will
+    * be an Array of the keys.
+    */
+  def getAllKeys(): IDBRequest = js.native
+  def getAllKeys(query: js.UndefOr[IDBValidKey], count: Double): IDBRequest = js.native
+  def getAllKeys(query: IDBKeyRange): IDBRequest = js.native
+  def getAllKeys(query: IDBKeyRange, count: Double): IDBRequest = js.native
+  def getAllKeys(query: IDBValidKey): IDBRequest = js.native
+  def getKey(query: IDBKeyRange): IDBRequest = js.native
+  /**
+    * Retrieves the key of the first record matching the
+    * given key or key range in query.
+    * If successful, request's result will be the key, or undefined if there was no matching record.
+    */
+  def getKey(query: IDBValidKey): IDBRequest = js.native
   def index(name: java.lang.String): IDBIndex = js.native
+  /**
+    * Opens a cursor over the records matching query,
+    * ordered by direction. If query is null, all records in store are matched.
+    * If successful, request's result will be an IDBCursorWithValue pointing at the first matching record, or null if there were no matching records.
+    */
   def openCursor(): IDBRequest = js.native
-  def openCursor(range: js.UndefOr[scala.Nothing], direction: IDBCursorDirection): IDBRequest = js.native
-  def openCursor(range: Date): IDBRequest = js.native
-  def openCursor(range: Date, direction: IDBCursorDirection): IDBRequest = js.native
-  def openCursor(range: IDBArrayKey): IDBRequest = js.native
-  def openCursor(range: IDBArrayKey, direction: IDBCursorDirection): IDBRequest = js.native
+  def openCursor(range: js.UndefOr[IDBValidKey], direction: IDBCursorDirection): IDBRequest = js.native
   def openCursor(range: IDBKeyRange): IDBRequest = js.native
   def openCursor(range: IDBKeyRange, direction: IDBCursorDirection): IDBRequest = js.native
-  def openCursor(range: java.lang.String): IDBRequest = js.native
-  def openCursor(range: java.lang.String, direction: IDBCursorDirection): IDBRequest = js.native
-  def openCursor(range: Double): IDBRequest = js.native
-  def openCursor(range: Double, direction: IDBCursorDirection): IDBRequest = js.native
+  def openCursor(range: IDBValidKey): IDBRequest = js.native
+  /**
+    * Opens a cursor with key only flag set over the records matching query, ordered by direction. If query is null, all records in store are matched.
+    * If successful, request's result will be an IDBCursor pointing at the first matching record, or
+    * null if there were no matching records.
+    */
+  def openKeyCursor(): IDBRequest = js.native
+  def openKeyCursor(query: js.UndefOr[IDBValidKey], direction: IDBCursorDirection): IDBRequest = js.native
+  def openKeyCursor(query: IDBKeyRange): IDBRequest = js.native
+  def openKeyCursor(query: IDBKeyRange, direction: IDBCursorDirection): IDBRequest = js.native
+  def openKeyCursor(query: IDBValidKey): IDBRequest = js.native
   def put(value: js.Any): IDBRequest = js.native
-  def put(value: js.Any, key: Date): IDBRequest = js.native
-  def put(value: js.Any, key: IDBArrayKey): IDBRequest = js.native
   def put(value: js.Any, key: IDBKeyRange): IDBRequest = js.native
-  def put(value: js.Any, key: java.lang.String): IDBRequest = js.native
-  def put(value: js.Any, key: Double): IDBRequest = js.native
+  def put(value: js.Any, key: IDBValidKey): IDBRequest = js.native
 }
 

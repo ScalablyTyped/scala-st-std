@@ -34,7 +34,6 @@ trait Worker
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _],
     options: scala.Boolean
   ): Unit = js.native
-  /** @deprecated */
   def postMessage(message: js.Any): Unit = js.native
   def postMessage(message: js.Any, transfer: js.Array[_]): Unit = js.native
   /* InferMemberOverrides */

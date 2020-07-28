@@ -1112,10 +1112,6 @@ trait HTMLElement
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
-  def animate(keyframes: AnimationKeyFrame, options: AnimationOptions): Animation = js.native
-  def animate(keyframes: AnimationKeyFrame, options: Double): Animation = js.native
-  def animate(keyframes: js.Array[AnimationKeyFrame], options: AnimationOptions): Animation = js.native
-  def animate(keyframes: js.Array[AnimationKeyFrame], options: Double): Animation = js.native
   def blur(): Unit = js.native
   def click(): Unit = js.native
   def dragDrop(): scala.Boolean = js.native

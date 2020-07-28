@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 class TouchEvent protected ()
   extends org.scalablytyped.std.TouchEvent {
   def this(`type`: java.lang.String) = this()
-  def this(`type`: java.lang.String, touchEventInit: TouchEventInit) = this()
+  def this(`type`: java.lang.String, eventInitDict: TouchEventInit) = this()
 }
 
 @JSGlobal("TouchEvent")
@@ -21,7 +21,7 @@ object TouchEvent
   extends Instantiable1[/* type */ java.lang.String, org.scalablytyped.std.TouchEvent]
      with Instantiable2[
       /* type */ java.lang.String, 
-      /* touchEventInit */ TouchEventInit, 
+      /* eventInitDict */ TouchEventInit, 
       org.scalablytyped.std.TouchEvent
     ]
 

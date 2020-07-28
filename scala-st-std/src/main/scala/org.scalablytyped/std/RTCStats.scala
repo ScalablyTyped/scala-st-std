@@ -5,16 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RTCStats extends js.Object {
-  var id: js.UndefOr[java.lang.String] = js.undefined
-  var msType: js.UndefOr[MSStatsType] = js.undefined
-  var timestamp: js.UndefOr[Double] = js.undefined
-  var `type`: js.UndefOr[RTCStatsType] = js.undefined
+  var id: java.lang.String
+  var timestamp: Double
+  var `type`: RTCStatsType
 }
 
 object RTCStats {
   @scala.inline
-  def apply(): RTCStats = {
-    val __obj = js.Dynamic.literal()
+  def apply(id: java.lang.String, timestamp: Double, `type`: RTCStatsType): RTCStats = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCStats]
   }
   @scala.inline
@@ -31,19 +31,9 @@ object RTCStats {
     @scala.inline
     def setId(value: java.lang.String): Self = this.set("id", value.asInstanceOf[js.Any])
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    @scala.inline
-    def setMsType(value: MSStatsType): Self = this.set("msType", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteMsType: Self = this.set("msType", js.undefined)
-    @scala.inline
     def setTimestamp(value: Double): Self = this.set("timestamp", value.asInstanceOf[js.Any])
     @scala.inline
-    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
-    @scala.inline
     def setType(value: RTCStatsType): Self = this.set("type", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
   }
   
 }

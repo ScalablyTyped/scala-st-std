@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait OfflineAudioContext extends AudioContextBase {
+trait OfflineAudioContext extends BaseAudioContext {
   val length: Double = js.native
   var oncomplete: (js.ThisFunction1[/* this */ this.type, /* ev */ OfflineAudioCompletionEvent, _]) | Null = js.native
   @JSName("addEventListener")

@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.granted
   - `org.scalablytyped`.std.stdStrings.denied
+  - `org.scalablytyped`.std.stdStrings.granted
   - `org.scalablytyped`.std.stdStrings.prompt
 */
 trait PushPermissionState extends js.Object

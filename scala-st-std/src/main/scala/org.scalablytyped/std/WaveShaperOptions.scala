@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WaveShaperOptions extends AudioNodeOptions {
-  var curve: js.UndefOr[js.Array[Double]] = js.undefined
+  var curve: js.UndefOr[js.Array[Double] | Float32Array] = js.undefined
   var oversample: js.UndefOr[OverSampleType] = js.undefined
 }
 
@@ -29,7 +29,7 @@ object WaveShaperOptions {
     @scala.inline
     def setCurveVarargs(value: Double*): Self = this.set("curve", js.Array(value :_*))
     @scala.inline
-    def setCurve(value: js.Array[Double]): Self = this.set("curve", value.asInstanceOf[js.Any])
+    def setCurve(value: js.Array[Double] | Float32Array): Self = this.set("curve", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteCurve: Self = this.set("curve", js.undefined)
     @scala.inline

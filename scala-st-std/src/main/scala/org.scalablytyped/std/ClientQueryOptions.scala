@@ -5,7 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ClientQueryOptions extends js.Object {
-  var includeReserved: js.UndefOr[scala.Boolean] = js.undefined
   var includeUncontrolled: js.UndefOr[scala.Boolean] = js.undefined
   var `type`: js.UndefOr[ClientTypes] = js.undefined
 }
@@ -27,10 +26,6 @@ object ClientQueryOptions {
         x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
         x
     }
-    @scala.inline
-    def setIncludeReserved(value: scala.Boolean): Self = this.set("includeReserved", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteIncludeReserved: Self = this.set("includeReserved", js.undefined)
     @scala.inline
     def setIncludeUncontrolled(value: scala.Boolean): Self = this.set("includeUncontrolled", value.asInstanceOf[js.Any])
     @scala.inline

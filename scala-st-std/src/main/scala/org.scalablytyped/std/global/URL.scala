@@ -1,6 +1,5 @@
 package org.scalablytyped.std.global
 
-import org.scalablytyped.std.ObjectURLOptions
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import scala.scalajs.js
@@ -38,6 +37,8 @@ class URL protected ()
   override val searchParams: org.scalablytyped.std.URLSearchParams = js.native
   /* CompleteClass */
   override var username: java.lang.String = js.native
+  /* CompleteClass */
+  override def toJSON(): java.lang.String = js.native
 }
 
 @JSGlobal("URL")
@@ -50,7 +51,6 @@ object URL
       org.scalablytyped.std.URL
     ] {
   def createObjectURL(`object`: js.Any): java.lang.String = js.native
-  def createObjectURL(`object`: js.Any, options: ObjectURLOptions): java.lang.String = js.native
   def revokeObjectURL(url: java.lang.String): Unit = js.native
 }
 

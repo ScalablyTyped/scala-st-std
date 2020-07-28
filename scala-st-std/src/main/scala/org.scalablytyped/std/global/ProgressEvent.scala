@@ -11,16 +11,16 @@ import scala.scalajs.js.annotation._
 @js.native
 class ProgressEvent protected ()
   extends org.scalablytyped.std.ProgressEvent {
-  def this(typeArg: java.lang.String) = this()
-  def this(typeArg: java.lang.String, eventInitDict: ProgressEventInit) = this()
+  def this(`type`: java.lang.String) = this()
+  def this(`type`: java.lang.String, eventInitDict: ProgressEventInit) = this()
 }
 
 @JSGlobal("ProgressEvent")
 @js.native
 object ProgressEvent
-  extends Instantiable1[/* typeArg */ java.lang.String, org.scalablytyped.std.ProgressEvent]
+  extends Instantiable1[/* type */ java.lang.String, org.scalablytyped.std.ProgressEvent]
      with Instantiable2[
-      /* typeArg */ java.lang.String, 
+      /* type */ java.lang.String, 
       /* eventInitDict */ ProgressEventInit, 
       org.scalablytyped.std.ProgressEvent
     ]

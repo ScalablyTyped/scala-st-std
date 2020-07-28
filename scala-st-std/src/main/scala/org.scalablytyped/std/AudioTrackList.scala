@@ -12,6 +12,8 @@ import scala.scalajs.js.annotation._
 trait AudioTrackList
   extends EventTarget
      with /* index */ NumberDictionary[AudioTrack] {
+  @JSName(js.Symbol.iterator)
+  var iterator: js.Function0[IterableIterator[AudioTrack]] = js.native
   val length: Double = js.native
   var onaddtrack: (js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _]) | Null = js.native
   var onchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native

@@ -5,12 +5,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NotificationOptions extends js.Object {
+  var actions: js.UndefOr[js.Array[NotificationAction]] = js.undefined
+  var badge: js.UndefOr[java.lang.String] = js.undefined
   var body: js.UndefOr[java.lang.String] = js.undefined
   var data: js.UndefOr[js.Any] = js.undefined
   var dir: js.UndefOr[NotificationDirection] = js.undefined
   var icon: js.UndefOr[java.lang.String] = js.undefined
+  var image: js.UndefOr[java.lang.String] = js.undefined
   var lang: js.UndefOr[java.lang.String] = js.undefined
+  var renotify: js.UndefOr[scala.Boolean] = js.undefined
+  var requireInteraction: js.UndefOr[scala.Boolean] = js.undefined
+  var silent: js.UndefOr[scala.Boolean] = js.undefined
   var tag: js.UndefOr[java.lang.String] = js.undefined
+  var timestamp: js.UndefOr[Double] = js.undefined
+  var vibrate: js.UndefOr[VibratePattern] = js.undefined
 }
 
 object NotificationOptions {
@@ -31,6 +39,16 @@ object NotificationOptions {
         x
     }
     @scala.inline
+    def setActionsVarargs(value: NotificationAction*): Self = this.set("actions", js.Array(value :_*))
+    @scala.inline
+    def setActions(value: js.Array[NotificationAction]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActions: Self = this.set("actions", js.undefined)
+    @scala.inline
+    def setBadge(value: java.lang.String): Self = this.set("badge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBadge: Self = this.set("badge", js.undefined)
+    @scala.inline
     def setBody(value: java.lang.String): Self = this.set("body", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteBody: Self = this.set("body", js.undefined)
@@ -47,13 +65,39 @@ object NotificationOptions {
     @scala.inline
     def deleteIcon: Self = this.set("icon", js.undefined)
     @scala.inline
+    def setImage(value: java.lang.String): Self = this.set("image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImage: Self = this.set("image", js.undefined)
+    @scala.inline
     def setLang(value: java.lang.String): Self = this.set("lang", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteLang: Self = this.set("lang", js.undefined)
     @scala.inline
+    def setRenotify(value: scala.Boolean): Self = this.set("renotify", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenotify: Self = this.set("renotify", js.undefined)
+    @scala.inline
+    def setRequireInteraction(value: scala.Boolean): Self = this.set("requireInteraction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequireInteraction: Self = this.set("requireInteraction", js.undefined)
+    @scala.inline
+    def setSilent(value: scala.Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSilent: Self = this.set("silent", js.undefined)
+    @scala.inline
     def setTag(value: java.lang.String): Self = this.set("tag", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteTag: Self = this.set("tag", js.undefined)
+    @scala.inline
+    def setTimestamp(value: Double): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+    @scala.inline
+    def setVibrateVarargs(value: Double*): Self = this.set("vibrate", js.Array(value :_*))
+    @scala.inline
+    def setVibrate(value: VibratePattern): Self = this.set("vibrate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVibrate: Self = this.set("vibrate", js.undefined)
   }
   
 }

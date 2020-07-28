@@ -6,9 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait RTCRtcpParameters extends js.Object {
   var cname: js.UndefOr[java.lang.String] = js.undefined
-  var mux: js.UndefOr[scala.Boolean] = js.undefined
   var reducedSize: js.UndefOr[scala.Boolean] = js.undefined
-  var ssrc: js.UndefOr[Double] = js.undefined
 }
 
 object RTCRtcpParameters {
@@ -33,17 +31,9 @@ object RTCRtcpParameters {
     @scala.inline
     def deleteCname: Self = this.set("cname", js.undefined)
     @scala.inline
-    def setMux(value: scala.Boolean): Self = this.set("mux", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteMux: Self = this.set("mux", js.undefined)
-    @scala.inline
     def setReducedSize(value: scala.Boolean): Self = this.set("reducedSize", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteReducedSize: Self = this.set("reducedSize", js.undefined)
-    @scala.inline
-    def setSsrc(value: Double): Self = this.set("ssrc", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteSsrc: Self = this.set("ssrc", js.undefined)
   }
   
 }

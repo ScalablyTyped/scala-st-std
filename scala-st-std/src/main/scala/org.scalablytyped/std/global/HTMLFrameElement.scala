@@ -1,6 +1,5 @@
 package org.scalablytyped.std.global
 
-import org.scalablytyped.std.Document
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,8 +21,6 @@ class HTMLFrameElement ()
   override val previousElementSibling: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
   override val style: org.scalablytyped.std.CSSStyleDeclaration = js.native
-  /* CompleteClass */
-  override def getSVGDocument(): Document = js.native
   /* CompleteClass */
   override def remove(): Unit = js.native
 }

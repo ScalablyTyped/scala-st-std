@@ -9,10 +9,12 @@ import scala.scalajs.js.annotation._
 trait ServiceWorkerRegistration extends EventTarget {
   val active: ServiceWorker | Null = js.native
   val installing: ServiceWorker | Null = js.native
+  val navigationPreload: NavigationPreloadManager = js.native
   var onupdatefound: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   val pushManager: PushManager = js.native
   val scope: java.lang.String = js.native
   val sync: SyncManager = js.native
+  val updateViaCache: ServiceWorkerUpdateViaCache = js.native
   val waiting: ServiceWorker | Null = js.native
   @JSName("addEventListener")
   def addEventListener_updatefound(`type`: updatefound, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native

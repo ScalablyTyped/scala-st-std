@@ -56,6 +56,7 @@ object ^ extends js.Object {
   var doNotTrack: java.lang.String = js.native
   var document: Document = js.native
   var event: js.UndefOr[Event] = js.native
+  /** @deprecated */
   var external: External = js.native
   var frameElement: org.scalablytyped.std.Element = js.native
   var frames: Window = js.native
@@ -75,6 +76,10 @@ object ^ extends js.Object {
   var offscreenBuffering: java.lang.String | scala.Boolean = js.native
   var onabort: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.UIEvent, js.Any]) | Null = js.native
   var onafterprint: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null = js.native
+  var onanimationcancel: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.AnimationEvent, js.Any]) | Null = js.native
+  var onanimationend: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.AnimationEvent, js.Any]) | Null = js.native
+  var onanimationiteration: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.AnimationEvent, js.Any]) | Null = js.native
+  var onanimationstart: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.AnimationEvent, js.Any]) | Null = js.native
   var onbeforeprint: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null = js.native
   var onbeforeunload: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.BeforeUnloadEvent, js.Any]) | Null = js.native
   var onblur: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.FocusEvent, js.Any]) | Null = js.native
@@ -100,6 +105,7 @@ object ^ extends js.Object {
   var onended: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null = js.native
   var onerror: ErrorEventHandler = js.native
   var onfocus: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.FocusEvent, js.Any]) | Null = js.native
+  var ongotpointercapture: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.PointerEvent, js.Any]) | Null = js.native
   var onhashchange: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.HashChangeEvent, js.Any]) | Null = js.native
   var oninput: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null = js.native
   var oninvalid: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null = js.native
@@ -110,6 +116,7 @@ object ^ extends js.Object {
   var onloadeddata: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null = js.native
   var onloadedmetadata: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null = js.native
   var onloadstart: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null = js.native
+  var onlostpointercapture: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.PointerEvent, js.Any]) | Null = js.native
   var onmessage: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.MessageEvent, js.Any]) | Null = js.native
   var onmousedown: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.MouseEvent, js.Any]) | Null = js.native
   var onmouseenter: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.MouseEvent, js.Any]) | Null = js.native
@@ -165,10 +172,14 @@ object ^ extends js.Object {
   var onsubmit: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null = js.native
   var onsuspend: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null = js.native
   var ontimeupdate: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null = js.native
-  var ontouchcancel: js.Function1[/* ev */ org.scalablytyped.std.TouchEvent, js.Any] = js.native
-  var ontouchend: js.Function1[/* ev */ org.scalablytyped.std.TouchEvent, js.Any] = js.native
-  var ontouchmove: js.Function1[/* ev */ org.scalablytyped.std.TouchEvent, js.Any] = js.native
-  var ontouchstart: js.Function1[/* ev */ org.scalablytyped.std.TouchEvent, js.Any] = js.native
+  var ontouchcancel: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.TouchEvent, js.Any]) | Null = js.native
+  var ontouchend: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.TouchEvent, js.Any]) | Null = js.native
+  var ontouchmove: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.TouchEvent, js.Any]) | Null = js.native
+  var ontouchstart: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.TouchEvent, js.Any]) | Null = js.native
+  var ontransitioncancel: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.TransitionEvent, js.Any]) | Null = js.native
+  var ontransitionend: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.TransitionEvent, js.Any]) | Null = js.native
+  var ontransitionrun: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.TransitionEvent, js.Any]) | Null = js.native
+  var ontransitionstart: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.TransitionEvent, js.Any]) | Null = js.native
   var onunload: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null = js.native
   var onvolumechange: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null = js.native
   var onvrdisplayactivate: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null = js.native

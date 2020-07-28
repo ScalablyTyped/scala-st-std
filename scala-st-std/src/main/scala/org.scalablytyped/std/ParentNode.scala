@@ -25,7 +25,7 @@ import org.scalablytyped.std.stdStrings.caption
 import org.scalablytyped.std.stdStrings.center
 import org.scalablytyped.std.stdStrings.circle
 import org.scalablytyped.std.stdStrings.cite
-import org.scalablytyped.std.stdStrings.clippath_
+import org.scalablytyped.std.stdStrings.clipPath
 import org.scalablytyped.std.stdStrings.code
 import org.scalablytyped.std.stdStrings.col
 import org.scalablytyped.std.stdStrings.colgroup
@@ -43,37 +43,37 @@ import org.scalablytyped.std.stdStrings.dt
 import org.scalablytyped.std.stdStrings.ellipse
 import org.scalablytyped.std.stdStrings.em
 import org.scalablytyped.std.stdStrings.embed
-import org.scalablytyped.std.stdStrings.feblend_
-import org.scalablytyped.std.stdStrings.fecolormatrix_
-import org.scalablytyped.std.stdStrings.fecomponenttransfer_
-import org.scalablytyped.std.stdStrings.fecomposite_
-import org.scalablytyped.std.stdStrings.feconvolvematrix_
-import org.scalablytyped.std.stdStrings.fediffuselighting_
-import org.scalablytyped.std.stdStrings.fedisplacementmap_
-import org.scalablytyped.std.stdStrings.fedistantlight_
-import org.scalablytyped.std.stdStrings.feflood_
-import org.scalablytyped.std.stdStrings.fefunca_
-import org.scalablytyped.std.stdStrings.fefuncb_
-import org.scalablytyped.std.stdStrings.fefuncg_
-import org.scalablytyped.std.stdStrings.fefuncr_
-import org.scalablytyped.std.stdStrings.fegaussianblur_
-import org.scalablytyped.std.stdStrings.feimage_
-import org.scalablytyped.std.stdStrings.femerge_
-import org.scalablytyped.std.stdStrings.femergenode_
-import org.scalablytyped.std.stdStrings.femorphology_
-import org.scalablytyped.std.stdStrings.feoffset_
-import org.scalablytyped.std.stdStrings.fepointlight_
-import org.scalablytyped.std.stdStrings.fespecularlighting_
-import org.scalablytyped.std.stdStrings.fespotlight_
-import org.scalablytyped.std.stdStrings.fetile_
-import org.scalablytyped.std.stdStrings.feturbulence_
+import org.scalablytyped.std.stdStrings.feBlend
+import org.scalablytyped.std.stdStrings.feColorMatrix
+import org.scalablytyped.std.stdStrings.feComponentTransfer
+import org.scalablytyped.std.stdStrings.feComposite
+import org.scalablytyped.std.stdStrings.feConvolveMatrix
+import org.scalablytyped.std.stdStrings.feDiffuseLighting
+import org.scalablytyped.std.stdStrings.feDisplacementMap
+import org.scalablytyped.std.stdStrings.feDistantLight
+import org.scalablytyped.std.stdStrings.feFlood
+import org.scalablytyped.std.stdStrings.feFuncA
+import org.scalablytyped.std.stdStrings.feFuncB
+import org.scalablytyped.std.stdStrings.feFuncG
+import org.scalablytyped.std.stdStrings.feFuncR
+import org.scalablytyped.std.stdStrings.feGaussianBlur
+import org.scalablytyped.std.stdStrings.feImage
+import org.scalablytyped.std.stdStrings.feMerge
+import org.scalablytyped.std.stdStrings.feMergeNode
+import org.scalablytyped.std.stdStrings.feMorphology
+import org.scalablytyped.std.stdStrings.feOffset
+import org.scalablytyped.std.stdStrings.fePointLight
+import org.scalablytyped.std.stdStrings.feSpecularLighting
+import org.scalablytyped.std.stdStrings.feSpotLight
+import org.scalablytyped.std.stdStrings.feTile
+import org.scalablytyped.std.stdStrings.feTurbulence
 import org.scalablytyped.std.stdStrings.fieldset
 import org.scalablytyped.std.stdStrings.figcaption
 import org.scalablytyped.std.stdStrings.figure
 import org.scalablytyped.std.stdStrings.filter
 import org.scalablytyped.std.stdStrings.font
 import org.scalablytyped.std.stdStrings.footer
-import org.scalablytyped.std.stdStrings.foreignobject_
+import org.scalablytyped.std.stdStrings.foreignObject
 import org.scalablytyped.std.stdStrings.form
 import org.scalablytyped.std.stdStrings.frame
 import org.scalablytyped.std.stdStrings.frameset
@@ -102,7 +102,7 @@ import org.scalablytyped.std.stdStrings.label
 import org.scalablytyped.std.stdStrings.legend
 import org.scalablytyped.std.stdStrings.li
 import org.scalablytyped.std.stdStrings.line
-import org.scalablytyped.std.stdStrings.lineargradient_
+import org.scalablytyped.std.stdStrings.linearGradient
 import org.scalablytyped.std.stdStrings.link
 import org.scalablytyped.std.stdStrings.listing
 import org.scalablytyped.std.stdStrings.map_
@@ -134,7 +134,7 @@ import org.scalablytyped.std.stdStrings.polyline
 import org.scalablytyped.std.stdStrings.pre
 import org.scalablytyped.std.stdStrings.progress
 import org.scalablytyped.std.stdStrings.q
-import org.scalablytyped.std.stdStrings.radialgradient_
+import org.scalablytyped.std.stdStrings.radialGradient
 import org.scalablytyped.std.stdStrings.rect
 import org.scalablytyped.std.stdStrings.rt
 import org.scalablytyped.std.stdStrings.ruby
@@ -161,8 +161,8 @@ import org.scalablytyped.std.stdStrings.tbody
 import org.scalablytyped.std.stdStrings.td
 import org.scalablytyped.std.stdStrings.template
 import org.scalablytyped.std.stdStrings.text
+import org.scalablytyped.std.stdStrings.textPath
 import org.scalablytyped.std.stdStrings.textarea
-import org.scalablytyped.std.stdStrings.textpath_
 import org.scalablytyped.std.stdStrings.tfoot
 import org.scalablytyped.std.stdStrings.th
 import org.scalablytyped.std.stdStrings.thead
@@ -238,7 +238,7 @@ trait ParentNode extends js.Object {
   @JSName("querySelectorAll")
   def querySelectorAll_cite(selectors: cite): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_clippath(selectors: clippath_): NodeListOf[SVGClipPathElement] = js.native
+  def querySelectorAll_clipPath(selectors: clipPath): NodeListOf[SVGClipPathElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_code(selectors: code): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
@@ -274,53 +274,53 @@ trait ParentNode extends js.Object {
   @JSName("querySelectorAll")
   def querySelectorAll_embed(selectors: embed): NodeListOf[HTMLEmbedElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_feblend(selectors: feblend_): NodeListOf[SVGFEBlendElement] = js.native
+  def querySelectorAll_feBlend(selectors: feBlend): NodeListOf[SVGFEBlendElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_fecolormatrix(selectors: fecolormatrix_): NodeListOf[SVGFEColorMatrixElement] = js.native
+  def querySelectorAll_feColorMatrix(selectors: feColorMatrix): NodeListOf[SVGFEColorMatrixElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_fecomponenttransfer(selectors: fecomponenttransfer_): NodeListOf[SVGFEComponentTransferElement] = js.native
+  def querySelectorAll_feComponentTransfer(selectors: feComponentTransfer): NodeListOf[SVGFEComponentTransferElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_fecomposite(selectors: fecomposite_): NodeListOf[SVGFECompositeElement] = js.native
+  def querySelectorAll_feComposite(selectors: feComposite): NodeListOf[SVGFECompositeElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_feconvolvematrix(selectors: feconvolvematrix_): NodeListOf[SVGFEConvolveMatrixElement] = js.native
+  def querySelectorAll_feConvolveMatrix(selectors: feConvolveMatrix): NodeListOf[SVGFEConvolveMatrixElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_fediffuselighting(selectors: fediffuselighting_): NodeListOf[SVGFEDiffuseLightingElement] = js.native
+  def querySelectorAll_feDiffuseLighting(selectors: feDiffuseLighting): NodeListOf[SVGFEDiffuseLightingElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_fedisplacementmap(selectors: fedisplacementmap_): NodeListOf[SVGFEDisplacementMapElement] = js.native
+  def querySelectorAll_feDisplacementMap(selectors: feDisplacementMap): NodeListOf[SVGFEDisplacementMapElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_fedistantlight(selectors: fedistantlight_): NodeListOf[SVGFEDistantLightElement] = js.native
+  def querySelectorAll_feDistantLight(selectors: feDistantLight): NodeListOf[SVGFEDistantLightElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_feflood(selectors: feflood_): NodeListOf[SVGFEFloodElement] = js.native
+  def querySelectorAll_feFlood(selectors: feFlood): NodeListOf[SVGFEFloodElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_fefunca(selectors: fefunca_): NodeListOf[SVGFEFuncAElement] = js.native
+  def querySelectorAll_feFuncA(selectors: feFuncA): NodeListOf[SVGFEFuncAElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_fefuncb(selectors: fefuncb_): NodeListOf[SVGFEFuncBElement] = js.native
+  def querySelectorAll_feFuncB(selectors: feFuncB): NodeListOf[SVGFEFuncBElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_fefuncg(selectors: fefuncg_): NodeListOf[SVGFEFuncGElement] = js.native
+  def querySelectorAll_feFuncG(selectors: feFuncG): NodeListOf[SVGFEFuncGElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_fefuncr(selectors: fefuncr_): NodeListOf[SVGFEFuncRElement] = js.native
+  def querySelectorAll_feFuncR(selectors: feFuncR): NodeListOf[SVGFEFuncRElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_fegaussianblur(selectors: fegaussianblur_): NodeListOf[SVGFEGaussianBlurElement] = js.native
+  def querySelectorAll_feGaussianBlur(selectors: feGaussianBlur): NodeListOf[SVGFEGaussianBlurElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_feimage(selectors: feimage_): NodeListOf[SVGFEImageElement] = js.native
+  def querySelectorAll_feImage(selectors: feImage): NodeListOf[SVGFEImageElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_femerge(selectors: femerge_): NodeListOf[SVGFEMergeElement] = js.native
+  def querySelectorAll_feMerge(selectors: feMerge): NodeListOf[SVGFEMergeElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_femergenode(selectors: femergenode_): NodeListOf[SVGFEMergeNodeElement] = js.native
+  def querySelectorAll_feMergeNode(selectors: feMergeNode): NodeListOf[SVGFEMergeNodeElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_femorphology(selectors: femorphology_): NodeListOf[SVGFEMorphologyElement] = js.native
+  def querySelectorAll_feMorphology(selectors: feMorphology): NodeListOf[SVGFEMorphologyElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_feoffset(selectors: feoffset_): NodeListOf[SVGFEOffsetElement] = js.native
+  def querySelectorAll_feOffset(selectors: feOffset): NodeListOf[SVGFEOffsetElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_fepointlight(selectors: fepointlight_): NodeListOf[SVGFEPointLightElement] = js.native
+  def querySelectorAll_fePointLight(selectors: fePointLight): NodeListOf[SVGFEPointLightElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_fespecularlighting(selectors: fespecularlighting_): NodeListOf[SVGFESpecularLightingElement] = js.native
+  def querySelectorAll_feSpecularLighting(selectors: feSpecularLighting): NodeListOf[SVGFESpecularLightingElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_fespotlight(selectors: fespotlight_): NodeListOf[SVGFESpotLightElement] = js.native
+  def querySelectorAll_feSpotLight(selectors: feSpotLight): NodeListOf[SVGFESpotLightElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_fetile(selectors: fetile_): NodeListOf[SVGFETileElement] = js.native
+  def querySelectorAll_feTile(selectors: feTile): NodeListOf[SVGFETileElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_feturbulence(selectors: feturbulence_): NodeListOf[SVGFETurbulenceElement] = js.native
+  def querySelectorAll_feTurbulence(selectors: feTurbulence): NodeListOf[SVGFETurbulenceElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_fieldset(selectors: fieldset): NodeListOf[HTMLFieldSetElement] = js.native
   @JSName("querySelectorAll")
@@ -334,7 +334,7 @@ trait ParentNode extends js.Object {
   @JSName("querySelectorAll")
   def querySelectorAll_footer(selectors: footer): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_foreignobject(selectors: foreignobject_): NodeListOf[SVGForeignObjectElement] = js.native
+  def querySelectorAll_foreignObject(selectors: foreignObject): NodeListOf[SVGForeignObjectElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_form(selectors: form): NodeListOf[HTMLFormElement] = js.native
   @JSName("querySelectorAll")
@@ -392,7 +392,7 @@ trait ParentNode extends js.Object {
   @JSName("querySelectorAll")
   def querySelectorAll_line(selectors: line): NodeListOf[SVGLineElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_lineargradient(selectors: lineargradient_): NodeListOf[SVGLinearGradientElement] = js.native
+  def querySelectorAll_linearGradient(selectors: linearGradient): NodeListOf[SVGLinearGradientElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_link(selectors: link): NodeListOf[HTMLLinkElement] = js.native
   @JSName("querySelectorAll")
@@ -458,7 +458,7 @@ trait ParentNode extends js.Object {
   @JSName("querySelectorAll")
   def querySelectorAll_q(selectors: q): NodeListOf[HTMLQuoteElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_radialgradient(selectors: radialgradient_): NodeListOf[SVGRadialGradientElement] = js.native
+  def querySelectorAll_radialGradient(selectors: radialGradient): NodeListOf[SVGRadialGradientElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_rect(selectors: rect): NodeListOf[SVGRectElement] = js.native
   @JSName("querySelectorAll")
@@ -512,9 +512,9 @@ trait ParentNode extends js.Object {
   @JSName("querySelectorAll")
   def querySelectorAll_text(selectors: text): NodeListOf[SVGTextElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_textarea(selectors: textarea): NodeListOf[HTMLTextAreaElement] = js.native
+  def querySelectorAll_textPath(selectors: textPath): NodeListOf[SVGTextPathElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_textpath(selectors: textpath_): NodeListOf[SVGTextPathElement] = js.native
+  def querySelectorAll_textarea(selectors: textarea): NodeListOf[HTMLTextAreaElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_tfoot(selectors: tfoot): NodeListOf[HTMLTableSectionElement] = js.native
   @JSName("querySelectorAll")
@@ -596,7 +596,7 @@ trait ParentNode extends js.Object {
   @JSName("querySelector")
   def querySelector_cite(selectors: cite): HTMLElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_clippath(selectors: clippath_): SVGClipPathElement | Null = js.native
+  def querySelector_clipPath(selectors: clipPath): SVGClipPathElement | Null = js.native
   @JSName("querySelector")
   def querySelector_code(selectors: code): HTMLElement | Null = js.native
   @JSName("querySelector")
@@ -632,53 +632,53 @@ trait ParentNode extends js.Object {
   @JSName("querySelector")
   def querySelector_embed(selectors: embed): HTMLEmbedElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_feblend(selectors: feblend_): SVGFEBlendElement | Null = js.native
+  def querySelector_feBlend(selectors: feBlend): SVGFEBlendElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_fecolormatrix(selectors: fecolormatrix_): SVGFEColorMatrixElement | Null = js.native
+  def querySelector_feColorMatrix(selectors: feColorMatrix): SVGFEColorMatrixElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_fecomponenttransfer(selectors: fecomponenttransfer_): SVGFEComponentTransferElement | Null = js.native
+  def querySelector_feComponentTransfer(selectors: feComponentTransfer): SVGFEComponentTransferElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_fecomposite(selectors: fecomposite_): SVGFECompositeElement | Null = js.native
+  def querySelector_feComposite(selectors: feComposite): SVGFECompositeElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_feconvolvematrix(selectors: feconvolvematrix_): SVGFEConvolveMatrixElement | Null = js.native
+  def querySelector_feConvolveMatrix(selectors: feConvolveMatrix): SVGFEConvolveMatrixElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_fediffuselighting(selectors: fediffuselighting_): SVGFEDiffuseLightingElement | Null = js.native
+  def querySelector_feDiffuseLighting(selectors: feDiffuseLighting): SVGFEDiffuseLightingElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_fedisplacementmap(selectors: fedisplacementmap_): SVGFEDisplacementMapElement | Null = js.native
+  def querySelector_feDisplacementMap(selectors: feDisplacementMap): SVGFEDisplacementMapElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_fedistantlight(selectors: fedistantlight_): SVGFEDistantLightElement | Null = js.native
+  def querySelector_feDistantLight(selectors: feDistantLight): SVGFEDistantLightElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_feflood(selectors: feflood_): SVGFEFloodElement | Null = js.native
+  def querySelector_feFlood(selectors: feFlood): SVGFEFloodElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_fefunca(selectors: fefunca_): SVGFEFuncAElement | Null = js.native
+  def querySelector_feFuncA(selectors: feFuncA): SVGFEFuncAElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_fefuncb(selectors: fefuncb_): SVGFEFuncBElement | Null = js.native
+  def querySelector_feFuncB(selectors: feFuncB): SVGFEFuncBElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_fefuncg(selectors: fefuncg_): SVGFEFuncGElement | Null = js.native
+  def querySelector_feFuncG(selectors: feFuncG): SVGFEFuncGElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_fefuncr(selectors: fefuncr_): SVGFEFuncRElement | Null = js.native
+  def querySelector_feFuncR(selectors: feFuncR): SVGFEFuncRElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_fegaussianblur(selectors: fegaussianblur_): SVGFEGaussianBlurElement | Null = js.native
+  def querySelector_feGaussianBlur(selectors: feGaussianBlur): SVGFEGaussianBlurElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_feimage(selectors: feimage_): SVGFEImageElement | Null = js.native
+  def querySelector_feImage(selectors: feImage): SVGFEImageElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_femerge(selectors: femerge_): SVGFEMergeElement | Null = js.native
+  def querySelector_feMerge(selectors: feMerge): SVGFEMergeElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_femergenode(selectors: femergenode_): SVGFEMergeNodeElement | Null = js.native
+  def querySelector_feMergeNode(selectors: feMergeNode): SVGFEMergeNodeElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_femorphology(selectors: femorphology_): SVGFEMorphologyElement | Null = js.native
+  def querySelector_feMorphology(selectors: feMorphology): SVGFEMorphologyElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_feoffset(selectors: feoffset_): SVGFEOffsetElement | Null = js.native
+  def querySelector_feOffset(selectors: feOffset): SVGFEOffsetElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_fepointlight(selectors: fepointlight_): SVGFEPointLightElement | Null = js.native
+  def querySelector_fePointLight(selectors: fePointLight): SVGFEPointLightElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_fespecularlighting(selectors: fespecularlighting_): SVGFESpecularLightingElement | Null = js.native
+  def querySelector_feSpecularLighting(selectors: feSpecularLighting): SVGFESpecularLightingElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_fespotlight(selectors: fespotlight_): SVGFESpotLightElement | Null = js.native
+  def querySelector_feSpotLight(selectors: feSpotLight): SVGFESpotLightElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_fetile(selectors: fetile_): SVGFETileElement | Null = js.native
+  def querySelector_feTile(selectors: feTile): SVGFETileElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_feturbulence(selectors: feturbulence_): SVGFETurbulenceElement | Null = js.native
+  def querySelector_feTurbulence(selectors: feTurbulence): SVGFETurbulenceElement | Null = js.native
   @JSName("querySelector")
   def querySelector_fieldset(selectors: fieldset): HTMLFieldSetElement | Null = js.native
   @JSName("querySelector")
@@ -692,7 +692,7 @@ trait ParentNode extends js.Object {
   @JSName("querySelector")
   def querySelector_footer(selectors: footer): HTMLElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_foreignobject(selectors: foreignobject_): SVGForeignObjectElement | Null = js.native
+  def querySelector_foreignObject(selectors: foreignObject): SVGForeignObjectElement | Null = js.native
   @JSName("querySelector")
   def querySelector_form(selectors: form): HTMLFormElement | Null = js.native
   @JSName("querySelector")
@@ -750,7 +750,7 @@ trait ParentNode extends js.Object {
   @JSName("querySelector")
   def querySelector_line(selectors: line): SVGLineElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_lineargradient(selectors: lineargradient_): SVGLinearGradientElement | Null = js.native
+  def querySelector_linearGradient(selectors: linearGradient): SVGLinearGradientElement | Null = js.native
   @JSName("querySelector")
   def querySelector_link(selectors: link): HTMLLinkElement | Null = js.native
   @JSName("querySelector")
@@ -816,7 +816,7 @@ trait ParentNode extends js.Object {
   @JSName("querySelector")
   def querySelector_q(selectors: q): HTMLQuoteElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_radialgradient(selectors: radialgradient_): SVGRadialGradientElement | Null = js.native
+  def querySelector_radialGradient(selectors: radialGradient): SVGRadialGradientElement | Null = js.native
   @JSName("querySelector")
   def querySelector_rect(selectors: rect): SVGRectElement | Null = js.native
   @JSName("querySelector")
@@ -870,9 +870,9 @@ trait ParentNode extends js.Object {
   @JSName("querySelector")
   def querySelector_text(selectors: text): SVGTextElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_textarea(selectors: textarea): HTMLTextAreaElement | Null = js.native
+  def querySelector_textPath(selectors: textPath): SVGTextPathElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_textpath(selectors: textpath_): SVGTextPathElement | Null = js.native
+  def querySelector_textarea(selectors: textarea): HTMLTextAreaElement | Null = js.native
   @JSName("querySelector")
   def querySelector_tfoot(selectors: tfoot): HTMLTableSectionElement | Null = js.native
   @JSName("querySelector")

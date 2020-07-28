@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 trait TransitionEventInit extends EventInit {
   var elapsedTime: js.UndefOr[Double] = js.undefined
   var propertyName: js.UndefOr[java.lang.String] = js.undefined
+  var pseudoElement: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object TransitionEventInit {
@@ -34,6 +35,10 @@ object TransitionEventInit {
     def setPropertyName(value: java.lang.String): Self = this.set("propertyName", value.asInstanceOf[js.Any])
     @scala.inline
     def deletePropertyName: Self = this.set("propertyName", js.undefined)
+    @scala.inline
+    def setPseudoElement(value: java.lang.String): Self = this.set("pseudoElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePseudoElement: Self = this.set("pseudoElement", js.undefined)
   }
   
 }

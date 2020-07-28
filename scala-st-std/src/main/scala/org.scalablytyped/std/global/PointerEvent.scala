@@ -11,16 +11,16 @@ import scala.scalajs.js.annotation._
 @js.native
 class PointerEvent protected ()
   extends org.scalablytyped.std.PointerEvent {
-  def this(typeArg: java.lang.String) = this()
-  def this(typeArg: java.lang.String, eventInitDict: PointerEventInit) = this()
+  def this(`type`: java.lang.String) = this()
+  def this(`type`: java.lang.String, eventInitDict: PointerEventInit) = this()
 }
 
 @JSGlobal("PointerEvent")
 @js.native
 object PointerEvent
-  extends Instantiable1[/* typeArg */ java.lang.String, org.scalablytyped.std.PointerEvent]
+  extends Instantiable1[/* type */ java.lang.String, org.scalablytyped.std.PointerEvent]
      with Instantiable2[
-      /* typeArg */ java.lang.String, 
+      /* type */ java.lang.String, 
       /* eventInitDict */ PointerEventInit, 
       org.scalablytyped.std.PointerEvent
     ]

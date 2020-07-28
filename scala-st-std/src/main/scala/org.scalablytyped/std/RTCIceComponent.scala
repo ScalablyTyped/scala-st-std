@@ -5,15 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - `org.scalablytyped`.std.stdStrings.RTP
-  - `org.scalablytyped`.std.stdStrings.RTCP
+  - `org.scalablytyped`.std.stdStrings.rtp
+  - `org.scalablytyped`.std.stdStrings.rtcp
 */
 trait RTCIceComponent extends js.Object
 
 object RTCIceComponent {
   @scala.inline
-  def RTCP: org.scalablytyped.std.stdStrings.RTCP = "RTCP".asInstanceOf[org.scalablytyped.std.stdStrings.RTCP]
+  def rtcp: org.scalablytyped.std.stdStrings.rtcp = "rtcp".asInstanceOf[org.scalablytyped.std.stdStrings.rtcp]
   @scala.inline
-  def RTP: org.scalablytyped.std.stdStrings.RTP = "RTP".asInstanceOf[org.scalablytyped.std.stdStrings.RTP]
+  def rtp: org.scalablytyped.std.stdStrings.rtp = "rtp".asInstanceOf[org.scalablytyped.std.stdStrings.rtp]
 }
 

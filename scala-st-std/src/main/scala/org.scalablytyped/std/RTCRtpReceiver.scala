@@ -1,117 +1,61 @@
 package org.scalablytyped.std
 
-import org.scalablytyped.std.stdStrings.error
-import org.scalablytyped.std.stdStrings.msdecodercapacitychange
-import org.scalablytyped.std.stdStrings.msdsh
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-trait RTCRtpReceiver extends RTCStatsProvider {
-  var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onmsdecodercapacitychange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onmsdsh: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  val rtcpTransport: RTCDtlsTransport = js.native
-  val track: MediaStreamTrack | Null = js.native
-  val transport: RTCDtlsTransport | RTCSrtpSdesTransport = js.native
-  @JSName("addEventListener")
-  def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_error(
-    `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_error(
-    `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_msdecodercapacitychange(
-    `type`: msdecodercapacitychange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_msdecodercapacitychange(
-    `type`: msdecodercapacitychange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_msdecodercapacitychange(
-    `type`: msdecodercapacitychange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_msdsh(`type`: msdsh, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_msdsh(
-    `type`: msdsh,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_msdsh(
-    `type`: msdsh,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  def getContributingSources(): js.Array[RTCRtpContributingSource] = js.native
-  def receive(parameters: RTCRtpParameters): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_error(
-    `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_error(
-    `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_msdecodercapacitychange(
-    `type`: msdecodercapacitychange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_msdecodercapacitychange(
-    `type`: msdecodercapacitychange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_msdecodercapacitychange(
-    `type`: msdecodercapacitychange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_msdsh(`type`: msdsh, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_msdsh(
-    `type`: msdsh,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_msdsh(
-    `type`: msdsh,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  def requestSendCSRC(csrc: Double): Unit = js.native
-  def setTransport(transport: RTCDtlsTransport): Unit = js.native
-  def setTransport(transport: RTCDtlsTransport, rtcpTransport: RTCDtlsTransport): Unit = js.native
-  def setTransport(transport: RTCSrtpSdesTransport): Unit = js.native
-  def setTransport(transport: RTCSrtpSdesTransport, rtcpTransport: RTCDtlsTransport): Unit = js.native
-  def stop(): Unit = js.native
+trait RTCRtpReceiver extends js.Object {
+  val rtcpTransport: RTCDtlsTransport | Null
+  val track: MediaStreamTrack
+  val transport: RTCDtlsTransport | Null
+  def getContributingSources(): js.Array[RTCRtpContributingSource]
+  def getParameters(): RTCRtpReceiveParameters
+  def getStats(): js.Promise[RTCStatsReport]
+  def getSynchronizationSources(): js.Array[RTCRtpSynchronizationSource]
+}
+
+object RTCRtpReceiver {
+  @scala.inline
+  def apply(
+    getContributingSources: () => js.Array[RTCRtpContributingSource],
+    getParameters: () => RTCRtpReceiveParameters,
+    getStats: () => js.Promise[RTCStatsReport],
+    getSynchronizationSources: () => js.Array[RTCRtpSynchronizationSource],
+    track: MediaStreamTrack
+  ): RTCRtpReceiver = {
+    val __obj = js.Dynamic.literal(getContributingSources = js.Any.fromFunction0(getContributingSources), getParameters = js.Any.fromFunction0(getParameters), getStats = js.Any.fromFunction0(getStats), getSynchronizationSources = js.Any.fromFunction0(getSynchronizationSources), track = track.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RTCRtpReceiver]
+  }
+  @scala.inline
+  implicit class RTCRtpReceiverOps[Self <: RTCRtpReceiver] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGetContributingSources(value: () => js.Array[RTCRtpContributingSource]): Self = this.set("getContributingSources", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetParameters(value: () => RTCRtpReceiveParameters): Self = this.set("getParameters", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetStats(value: () => js.Promise[RTCStatsReport]): Self = this.set("getStats", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetSynchronizationSources(value: () => js.Array[RTCRtpSynchronizationSource]): Self = this.set("getSynchronizationSources", js.Any.fromFunction0(value))
+    @scala.inline
+    def setTrack(value: MediaStreamTrack): Self = this.set("track", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRtcpTransport(value: RTCDtlsTransport): Self = this.set("rtcpTransport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRtcpTransportNull: Self = this.set("rtcpTransport", null)
+    @scala.inline
+    def setTransport(value: RTCDtlsTransport): Self = this.set("transport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTransportNull: Self = this.set("transport", null)
+  }
+  
 }
 

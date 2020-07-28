@@ -6,14 +6,19 @@ import scala.scalajs.js.annotation._
 
 trait HkdfParams extends Algorithm {
   var hash: java.lang.String | Algorithm
-  var info: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer | Null
-  var salt: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer | Null
+  var info: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
+  var salt: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
 }
 
 object HkdfParams {
   @scala.inline
-  def apply(hash: java.lang.String | Algorithm, name: java.lang.String): HkdfParams = {
-    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(
+    hash: java.lang.String | Algorithm,
+    info: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
+    name: java.lang.String,
+    salt: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
+  ): HkdfParams = {
+    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], salt = salt.asInstanceOf[js.Any])
     __obj.asInstanceOf[HkdfParams]
   }
   @scala.inline
@@ -34,13 +39,9 @@ object HkdfParams {
       value: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
     ): Self = this.set("info", value.asInstanceOf[js.Any])
     @scala.inline
-    def setInfoNull: Self = this.set("info", null)
-    @scala.inline
     def setSalt(
       value: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
     ): Self = this.set("salt", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setSaltNull: Self = this.set("salt", null)
   }
   
 }

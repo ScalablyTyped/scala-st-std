@@ -43,7 +43,7 @@ import org.scalablytyped.std.stdStrings.caption
 import org.scalablytyped.std.stdStrings.center
 import org.scalablytyped.std.stdStrings.circle
 import org.scalablytyped.std.stdStrings.cite
-import org.scalablytyped.std.stdStrings.clippath_
+import org.scalablytyped.std.stdStrings.clipPath
 import org.scalablytyped.std.stdStrings.code
 import org.scalablytyped.std.stdStrings.col
 import org.scalablytyped.std.stdStrings.colgroup
@@ -62,42 +62,41 @@ import org.scalablytyped.std.stdStrings.dt
 import org.scalablytyped.std.stdStrings.ellipse
 import org.scalablytyped.std.stdStrings.em
 import org.scalablytyped.std.stdStrings.embed
-import org.scalablytyped.std.stdStrings.feblend_
-import org.scalablytyped.std.stdStrings.fecolormatrix_
-import org.scalablytyped.std.stdStrings.fecomponenttransfer_
-import org.scalablytyped.std.stdStrings.fecomposite_
-import org.scalablytyped.std.stdStrings.feconvolvematrix_
-import org.scalablytyped.std.stdStrings.fediffuselighting_
-import org.scalablytyped.std.stdStrings.fedisplacementmap_
-import org.scalablytyped.std.stdStrings.fedistantlight_
-import org.scalablytyped.std.stdStrings.feflood_
-import org.scalablytyped.std.stdStrings.fefunca_
-import org.scalablytyped.std.stdStrings.fefuncb_
-import org.scalablytyped.std.stdStrings.fefuncg_
-import org.scalablytyped.std.stdStrings.fefuncr_
-import org.scalablytyped.std.stdStrings.fegaussianblur_
-import org.scalablytyped.std.stdStrings.feimage_
-import org.scalablytyped.std.stdStrings.femerge_
-import org.scalablytyped.std.stdStrings.femergenode_
-import org.scalablytyped.std.stdStrings.femorphology_
-import org.scalablytyped.std.stdStrings.feoffset_
-import org.scalablytyped.std.stdStrings.fepointlight_
-import org.scalablytyped.std.stdStrings.fespecularlighting_
-import org.scalablytyped.std.stdStrings.fespotlight_
-import org.scalablytyped.std.stdStrings.fetile_
-import org.scalablytyped.std.stdStrings.feturbulence_
+import org.scalablytyped.std.stdStrings.feBlend
+import org.scalablytyped.std.stdStrings.feColorMatrix
+import org.scalablytyped.std.stdStrings.feComponentTransfer
+import org.scalablytyped.std.stdStrings.feComposite
+import org.scalablytyped.std.stdStrings.feConvolveMatrix
+import org.scalablytyped.std.stdStrings.feDiffuseLighting
+import org.scalablytyped.std.stdStrings.feDisplacementMap
+import org.scalablytyped.std.stdStrings.feDistantLight
+import org.scalablytyped.std.stdStrings.feFlood
+import org.scalablytyped.std.stdStrings.feFuncA
+import org.scalablytyped.std.stdStrings.feFuncB
+import org.scalablytyped.std.stdStrings.feFuncG
+import org.scalablytyped.std.stdStrings.feFuncR
+import org.scalablytyped.std.stdStrings.feGaussianBlur
+import org.scalablytyped.std.stdStrings.feImage
+import org.scalablytyped.std.stdStrings.feMerge
+import org.scalablytyped.std.stdStrings.feMergeNode
+import org.scalablytyped.std.stdStrings.feMorphology
+import org.scalablytyped.std.stdStrings.feOffset
+import org.scalablytyped.std.stdStrings.fePointLight
+import org.scalablytyped.std.stdStrings.feSpecularLighting
+import org.scalablytyped.std.stdStrings.feSpotLight
+import org.scalablytyped.std.stdStrings.feTile
+import org.scalablytyped.std.stdStrings.feTurbulence
 import org.scalablytyped.std.stdStrings.fieldset
 import org.scalablytyped.std.stdStrings.figcaption
 import org.scalablytyped.std.stdStrings.figure
 import org.scalablytyped.std.stdStrings.filter
 import org.scalablytyped.std.stdStrings.font
 import org.scalablytyped.std.stdStrings.footer
-import org.scalablytyped.std.stdStrings.foreignobject_
+import org.scalablytyped.std.stdStrings.foreignObject
 import org.scalablytyped.std.stdStrings.form
 import org.scalablytyped.std.stdStrings.frame
 import org.scalablytyped.std.stdStrings.frameset
 import org.scalablytyped.std.stdStrings.g
-import org.scalablytyped.std.stdStrings.gotpointercapture
 import org.scalablytyped.std.stdStrings.h1
 import org.scalablytyped.std.stdStrings.h2
 import org.scalablytyped.std.stdStrings.h3
@@ -124,10 +123,9 @@ import org.scalablytyped.std.stdStrings.label
 import org.scalablytyped.std.stdStrings.legend
 import org.scalablytyped.std.stdStrings.li
 import org.scalablytyped.std.stdStrings.line
-import org.scalablytyped.std.stdStrings.lineargradient_
+import org.scalablytyped.std.stdStrings.linearGradient
 import org.scalablytyped.std.stdStrings.link
 import org.scalablytyped.std.stdStrings.listing
-import org.scalablytyped.std.stdStrings.lostpointercapture
 import org.scalablytyped.std.stdStrings.map_
 import org.scalablytyped.std.stdStrings.mark
 import org.scalablytyped.std.stdStrings.marker
@@ -157,7 +155,7 @@ import org.scalablytyped.std.stdStrings.polyline
 import org.scalablytyped.std.stdStrings.pre
 import org.scalablytyped.std.stdStrings.progress
 import org.scalablytyped.std.stdStrings.q
-import org.scalablytyped.std.stdStrings.radialgradient_
+import org.scalablytyped.std.stdStrings.radialGradient
 import org.scalablytyped.std.stdStrings.rect
 import org.scalablytyped.std.stdStrings.rt
 import org.scalablytyped.std.stdStrings.ruby
@@ -184,17 +182,13 @@ import org.scalablytyped.std.stdStrings.tbody
 import org.scalablytyped.std.stdStrings.td
 import org.scalablytyped.std.stdStrings.template
 import org.scalablytyped.std.stdStrings.text
+import org.scalablytyped.std.stdStrings.textPath
 import org.scalablytyped.std.stdStrings.textarea
-import org.scalablytyped.std.stdStrings.textpath_
 import org.scalablytyped.std.stdStrings.tfoot
 import org.scalablytyped.std.stdStrings.th
 import org.scalablytyped.std.stdStrings.thead
 import org.scalablytyped.std.stdStrings.time
 import org.scalablytyped.std.stdStrings.title
-import org.scalablytyped.std.stdStrings.touchcancel
-import org.scalablytyped.std.stdStrings.touchend
-import org.scalablytyped.std.stdStrings.touchmove
-import org.scalablytyped.std.stdStrings.touchstart
 import org.scalablytyped.std.stdStrings.tr
 import org.scalablytyped.std.stdStrings.track
 import org.scalablytyped.std.stdStrings.tspan
@@ -218,7 +212,8 @@ trait Element
      with GlobalEventHandlers
      with ElementTraversal
      with ParentNode
-     with ChildNode {
+     with ChildNode
+     with Animatable {
   val assignedSlot: HTMLSlotElement | Null = js.native
   val attributes: NamedNodeMap = js.native
   /* InferMemberOverrides */
@@ -239,8 +234,6 @@ trait Element
   val msRegionOverflow: java.lang.String = js.native
   var onariarequest: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var oncommand: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var ongotpointercapture: (js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null = js.native
-  var onlostpointercapture: (js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null = js.native
   var onmsgesturechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var onmsgesturedoubletap: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var onmsgestureend: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
@@ -258,10 +251,6 @@ trait Element
   var onmspointerout: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var onmspointerover: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var onmspointerup: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var ontouchcancel: (js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]) | Null = js.native
-  var ontouchend: (js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]) | Null = js.native
-  var ontouchmove: (js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]) | Null = js.native
-  var ontouchstart: (js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]) | Null = js.native
   var onwebkitfullscreenchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var onwebkitfullscreenerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var outerHTML: java.lang.String = js.native
@@ -550,96 +539,6 @@ trait Element
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_gotpointercapture(
-    `type`: gotpointercapture,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_gotpointercapture(
-    `type`: gotpointercapture,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_gotpointercapture(
-    `type`: gotpointercapture,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_lostpointercapture(
-    `type`: lostpointercapture,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_lostpointercapture(
-    `type`: lostpointercapture,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_lostpointercapture(
-    `type`: lostpointercapture,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_touchcancel(`type`: touchcancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_touchcancel(
-    `type`: touchcancel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_touchcancel(
-    `type`: touchcancel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_touchend(`type`: touchend, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_touchend(
-    `type`: touchend,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_touchend(
-    `type`: touchend,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_touchmove(`type`: touchmove, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_touchmove(
-    `type`: touchmove,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_touchmove(
-    `type`: touchmove,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_touchstart(`type`: touchstart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_touchstart(
-    `type`: touchstart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_touchstart(
-    `type`: touchstart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
   def addEventListener_webkitfullscreenchange(
     `type`: webkitfullscreenchange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
@@ -719,7 +618,7 @@ trait Element
   @JSName("closest")
   def closest_cite(selector: cite): HTMLElement | Null = js.native
   @JSName("closest")
-  def closest_clippath(selector: clippath_): SVGClipPathElement | Null = js.native
+  def closest_clipPath(selector: clipPath): SVGClipPathElement | Null = js.native
   @JSName("closest")
   def closest_code(selector: code): HTMLElement | Null = js.native
   @JSName("closest")
@@ -755,53 +654,53 @@ trait Element
   @JSName("closest")
   def closest_embed(selector: embed): HTMLEmbedElement | Null = js.native
   @JSName("closest")
-  def closest_feblend(selector: feblend_): SVGFEBlendElement | Null = js.native
+  def closest_feBlend(selector: feBlend): SVGFEBlendElement | Null = js.native
   @JSName("closest")
-  def closest_fecolormatrix(selector: fecolormatrix_): SVGFEColorMatrixElement | Null = js.native
+  def closest_feColorMatrix(selector: feColorMatrix): SVGFEColorMatrixElement | Null = js.native
   @JSName("closest")
-  def closest_fecomponenttransfer(selector: fecomponenttransfer_): SVGFEComponentTransferElement | Null = js.native
+  def closest_feComponentTransfer(selector: feComponentTransfer): SVGFEComponentTransferElement | Null = js.native
   @JSName("closest")
-  def closest_fecomposite(selector: fecomposite_): SVGFECompositeElement | Null = js.native
+  def closest_feComposite(selector: feComposite): SVGFECompositeElement | Null = js.native
   @JSName("closest")
-  def closest_feconvolvematrix(selector: feconvolvematrix_): SVGFEConvolveMatrixElement | Null = js.native
+  def closest_feConvolveMatrix(selector: feConvolveMatrix): SVGFEConvolveMatrixElement | Null = js.native
   @JSName("closest")
-  def closest_fediffuselighting(selector: fediffuselighting_): SVGFEDiffuseLightingElement | Null = js.native
+  def closest_feDiffuseLighting(selector: feDiffuseLighting): SVGFEDiffuseLightingElement | Null = js.native
   @JSName("closest")
-  def closest_fedisplacementmap(selector: fedisplacementmap_): SVGFEDisplacementMapElement | Null = js.native
+  def closest_feDisplacementMap(selector: feDisplacementMap): SVGFEDisplacementMapElement | Null = js.native
   @JSName("closest")
-  def closest_fedistantlight(selector: fedistantlight_): SVGFEDistantLightElement | Null = js.native
+  def closest_feDistantLight(selector: feDistantLight): SVGFEDistantLightElement | Null = js.native
   @JSName("closest")
-  def closest_feflood(selector: feflood_): SVGFEFloodElement | Null = js.native
+  def closest_feFlood(selector: feFlood): SVGFEFloodElement | Null = js.native
   @JSName("closest")
-  def closest_fefunca(selector: fefunca_): SVGFEFuncAElement | Null = js.native
+  def closest_feFuncA(selector: feFuncA): SVGFEFuncAElement | Null = js.native
   @JSName("closest")
-  def closest_fefuncb(selector: fefuncb_): SVGFEFuncBElement | Null = js.native
+  def closest_feFuncB(selector: feFuncB): SVGFEFuncBElement | Null = js.native
   @JSName("closest")
-  def closest_fefuncg(selector: fefuncg_): SVGFEFuncGElement | Null = js.native
+  def closest_feFuncG(selector: feFuncG): SVGFEFuncGElement | Null = js.native
   @JSName("closest")
-  def closest_fefuncr(selector: fefuncr_): SVGFEFuncRElement | Null = js.native
+  def closest_feFuncR(selector: feFuncR): SVGFEFuncRElement | Null = js.native
   @JSName("closest")
-  def closest_fegaussianblur(selector: fegaussianblur_): SVGFEGaussianBlurElement | Null = js.native
+  def closest_feGaussianBlur(selector: feGaussianBlur): SVGFEGaussianBlurElement | Null = js.native
   @JSName("closest")
-  def closest_feimage(selector: feimage_): SVGFEImageElement | Null = js.native
+  def closest_feImage(selector: feImage): SVGFEImageElement | Null = js.native
   @JSName("closest")
-  def closest_femerge(selector: femerge_): SVGFEMergeElement | Null = js.native
+  def closest_feMerge(selector: feMerge): SVGFEMergeElement | Null = js.native
   @JSName("closest")
-  def closest_femergenode(selector: femergenode_): SVGFEMergeNodeElement | Null = js.native
+  def closest_feMergeNode(selector: feMergeNode): SVGFEMergeNodeElement | Null = js.native
   @JSName("closest")
-  def closest_femorphology(selector: femorphology_): SVGFEMorphologyElement | Null = js.native
+  def closest_feMorphology(selector: feMorphology): SVGFEMorphologyElement | Null = js.native
   @JSName("closest")
-  def closest_feoffset(selector: feoffset_): SVGFEOffsetElement | Null = js.native
+  def closest_feOffset(selector: feOffset): SVGFEOffsetElement | Null = js.native
   @JSName("closest")
-  def closest_fepointlight(selector: fepointlight_): SVGFEPointLightElement | Null = js.native
+  def closest_fePointLight(selector: fePointLight): SVGFEPointLightElement | Null = js.native
   @JSName("closest")
-  def closest_fespecularlighting(selector: fespecularlighting_): SVGFESpecularLightingElement | Null = js.native
+  def closest_feSpecularLighting(selector: feSpecularLighting): SVGFESpecularLightingElement | Null = js.native
   @JSName("closest")
-  def closest_fespotlight(selector: fespotlight_): SVGFESpotLightElement | Null = js.native
+  def closest_feSpotLight(selector: feSpotLight): SVGFESpotLightElement | Null = js.native
   @JSName("closest")
-  def closest_fetile(selector: fetile_): SVGFETileElement | Null = js.native
+  def closest_feTile(selector: feTile): SVGFETileElement | Null = js.native
   @JSName("closest")
-  def closest_feturbulence(selector: feturbulence_): SVGFETurbulenceElement | Null = js.native
+  def closest_feTurbulence(selector: feTurbulence): SVGFETurbulenceElement | Null = js.native
   @JSName("closest")
   def closest_fieldset(selector: fieldset): HTMLFieldSetElement | Null = js.native
   @JSName("closest")
@@ -815,7 +714,7 @@ trait Element
   @JSName("closest")
   def closest_footer(selector: footer): HTMLElement | Null = js.native
   @JSName("closest")
-  def closest_foreignobject(selector: foreignobject_): SVGForeignObjectElement | Null = js.native
+  def closest_foreignObject(selector: foreignObject): SVGForeignObjectElement | Null = js.native
   @JSName("closest")
   def closest_form(selector: form): HTMLFormElement | Null = js.native
   @JSName("closest")
@@ -873,7 +772,7 @@ trait Element
   @JSName("closest")
   def closest_line(selector: line): SVGLineElement | Null = js.native
   @JSName("closest")
-  def closest_lineargradient(selector: lineargradient_): SVGLinearGradientElement | Null = js.native
+  def closest_linearGradient(selector: linearGradient): SVGLinearGradientElement | Null = js.native
   @JSName("closest")
   def closest_link(selector: link): HTMLLinkElement | Null = js.native
   @JSName("closest")
@@ -939,7 +838,7 @@ trait Element
   @JSName("closest")
   def closest_q(selector: q): HTMLQuoteElement | Null = js.native
   @JSName("closest")
-  def closest_radialgradient(selector: radialgradient_): SVGRadialGradientElement | Null = js.native
+  def closest_radialGradient(selector: radialGradient): SVGRadialGradientElement | Null = js.native
   @JSName("closest")
   def closest_rect(selector: rect): SVGRectElement | Null = js.native
   @JSName("closest")
@@ -993,9 +892,9 @@ trait Element
   @JSName("closest")
   def closest_text(selector: text): SVGTextElement | Null = js.native
   @JSName("closest")
-  def closest_textarea(selector: textarea): HTMLTextAreaElement | Null = js.native
+  def closest_textPath(selector: textPath): SVGTextPathElement | Null = js.native
   @JSName("closest")
-  def closest_textpath(selector: textpath_): SVGTextPathElement | Null = js.native
+  def closest_textarea(selector: textarea): HTMLTextAreaElement | Null = js.native
   @JSName("closest")
   def closest_tfoot(selector: tfoot): HTMLTableSectionElement | Null = js.native
   @JSName("closest")
@@ -1090,7 +989,7 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_cite(name: cite): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_clippath(name: clippath_): NodeListOf[SVGClipPathElement] = js.native
+  def getElementsByTagName_clipPath(name: clipPath): NodeListOf[SVGClipPathElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_code(name: code): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
@@ -1126,53 +1025,53 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_embed(name: embed): NodeListOf[HTMLEmbedElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_feblend(name: feblend_): NodeListOf[SVGFEBlendElement] = js.native
+  def getElementsByTagName_feBlend(name: feBlend): NodeListOf[SVGFEBlendElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_fecolormatrix(name: fecolormatrix_): NodeListOf[SVGFEColorMatrixElement] = js.native
+  def getElementsByTagName_feColorMatrix(name: feColorMatrix): NodeListOf[SVGFEColorMatrixElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_fecomponenttransfer(name: fecomponenttransfer_): NodeListOf[SVGFEComponentTransferElement] = js.native
+  def getElementsByTagName_feComponentTransfer(name: feComponentTransfer): NodeListOf[SVGFEComponentTransferElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_fecomposite(name: fecomposite_): NodeListOf[SVGFECompositeElement] = js.native
+  def getElementsByTagName_feComposite(name: feComposite): NodeListOf[SVGFECompositeElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_feconvolvematrix(name: feconvolvematrix_): NodeListOf[SVGFEConvolveMatrixElement] = js.native
+  def getElementsByTagName_feConvolveMatrix(name: feConvolveMatrix): NodeListOf[SVGFEConvolveMatrixElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_fediffuselighting(name: fediffuselighting_): NodeListOf[SVGFEDiffuseLightingElement] = js.native
+  def getElementsByTagName_feDiffuseLighting(name: feDiffuseLighting): NodeListOf[SVGFEDiffuseLightingElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_fedisplacementmap(name: fedisplacementmap_): NodeListOf[SVGFEDisplacementMapElement] = js.native
+  def getElementsByTagName_feDisplacementMap(name: feDisplacementMap): NodeListOf[SVGFEDisplacementMapElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_fedistantlight(name: fedistantlight_): NodeListOf[SVGFEDistantLightElement] = js.native
+  def getElementsByTagName_feDistantLight(name: feDistantLight): NodeListOf[SVGFEDistantLightElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_feflood(name: feflood_): NodeListOf[SVGFEFloodElement] = js.native
+  def getElementsByTagName_feFlood(name: feFlood): NodeListOf[SVGFEFloodElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_fefunca(name: fefunca_): NodeListOf[SVGFEFuncAElement] = js.native
+  def getElementsByTagName_feFuncA(name: feFuncA): NodeListOf[SVGFEFuncAElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_fefuncb(name: fefuncb_): NodeListOf[SVGFEFuncBElement] = js.native
+  def getElementsByTagName_feFuncB(name: feFuncB): NodeListOf[SVGFEFuncBElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_fefuncg(name: fefuncg_): NodeListOf[SVGFEFuncGElement] = js.native
+  def getElementsByTagName_feFuncG(name: feFuncG): NodeListOf[SVGFEFuncGElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_fefuncr(name: fefuncr_): NodeListOf[SVGFEFuncRElement] = js.native
+  def getElementsByTagName_feFuncR(name: feFuncR): NodeListOf[SVGFEFuncRElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_fegaussianblur(name: fegaussianblur_): NodeListOf[SVGFEGaussianBlurElement] = js.native
+  def getElementsByTagName_feGaussianBlur(name: feGaussianBlur): NodeListOf[SVGFEGaussianBlurElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_feimage(name: feimage_): NodeListOf[SVGFEImageElement] = js.native
+  def getElementsByTagName_feImage(name: feImage): NodeListOf[SVGFEImageElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_femerge(name: femerge_): NodeListOf[SVGFEMergeElement] = js.native
+  def getElementsByTagName_feMerge(name: feMerge): NodeListOf[SVGFEMergeElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_femergenode(name: femergenode_): NodeListOf[SVGFEMergeNodeElement] = js.native
+  def getElementsByTagName_feMergeNode(name: feMergeNode): NodeListOf[SVGFEMergeNodeElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_femorphology(name: femorphology_): NodeListOf[SVGFEMorphologyElement] = js.native
+  def getElementsByTagName_feMorphology(name: feMorphology): NodeListOf[SVGFEMorphologyElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_feoffset(name: feoffset_): NodeListOf[SVGFEOffsetElement] = js.native
+  def getElementsByTagName_feOffset(name: feOffset): NodeListOf[SVGFEOffsetElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_fepointlight(name: fepointlight_): NodeListOf[SVGFEPointLightElement] = js.native
+  def getElementsByTagName_fePointLight(name: fePointLight): NodeListOf[SVGFEPointLightElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_fespecularlighting(name: fespecularlighting_): NodeListOf[SVGFESpecularLightingElement] = js.native
+  def getElementsByTagName_feSpecularLighting(name: feSpecularLighting): NodeListOf[SVGFESpecularLightingElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_fespotlight(name: fespotlight_): NodeListOf[SVGFESpotLightElement] = js.native
+  def getElementsByTagName_feSpotLight(name: feSpotLight): NodeListOf[SVGFESpotLightElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_fetile(name: fetile_): NodeListOf[SVGFETileElement] = js.native
+  def getElementsByTagName_feTile(name: feTile): NodeListOf[SVGFETileElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_feturbulence(name: feturbulence_): NodeListOf[SVGFETurbulenceElement] = js.native
+  def getElementsByTagName_feTurbulence(name: feTurbulence): NodeListOf[SVGFETurbulenceElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_fieldset(name: fieldset): NodeListOf[HTMLFieldSetElement] = js.native
   @JSName("getElementsByTagName")
@@ -1186,7 +1085,7 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_footer(name: footer): NodeListOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_foreignobject(name: foreignobject_): NodeListOf[SVGForeignObjectElement] = js.native
+  def getElementsByTagName_foreignObject(name: foreignObject): NodeListOf[SVGForeignObjectElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_form(name: form): NodeListOf[HTMLFormElement] = js.native
   @JSName("getElementsByTagName")
@@ -1244,7 +1143,7 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_line(name: line): NodeListOf[SVGLineElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_lineargradient(name: lineargradient_): NodeListOf[SVGLinearGradientElement] = js.native
+  def getElementsByTagName_linearGradient(name: linearGradient): NodeListOf[SVGLinearGradientElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_link(name: link): NodeListOf[HTMLLinkElement] = js.native
   @JSName("getElementsByTagName")
@@ -1310,7 +1209,7 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_q(name: q): NodeListOf[HTMLQuoteElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_radialgradient(name: radialgradient_): NodeListOf[SVGRadialGradientElement] = js.native
+  def getElementsByTagName_radialGradient(name: radialGradient): NodeListOf[SVGRadialGradientElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_rect(name: rect): NodeListOf[SVGRectElement] = js.native
   @JSName("getElementsByTagName")
@@ -1364,9 +1263,9 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_text(name: text): NodeListOf[SVGTextElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_textarea(name: textarea): NodeListOf[HTMLTextAreaElement] = js.native
+  def getElementsByTagName_textPath(name: textPath): NodeListOf[SVGTextPathElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_textpath(name: textpath_): NodeListOf[SVGTextPathElement] = js.native
+  def getElementsByTagName_textarea(name: textarea): NodeListOf[HTMLTextAreaElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_tfoot(name: tfoot): NodeListOf[HTMLTableSectionElement] = js.native
   @JSName("getElementsByTagName")
@@ -1404,6 +1303,7 @@ trait Element
   def hasAttribute(name: java.lang.String): scala.Boolean = js.native
   def hasAttributeNS(namespaceURI: java.lang.String, localName: java.lang.String): scala.Boolean = js.native
   def hasAttributes(): scala.Boolean = js.native
+  def hasPointerCapture(pointerId: Double): scala.Boolean = js.native
   def insertAdjacentElement(position: InsertPosition, insertedElement: Element): Element | Null = js.native
   def insertAdjacentHTML(where: InsertPosition, html: java.lang.String): Unit = js.native
   def insertAdjacentText(where: InsertPosition, text: java.lang.String): Unit = js.native
@@ -1692,96 +1592,6 @@ trait Element
   def removeEventListener_command(
     `type`: command,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_gotpointercapture(
-    `type`: gotpointercapture,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_gotpointercapture(
-    `type`: gotpointercapture,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_gotpointercapture(
-    `type`: gotpointercapture,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_lostpointercapture(
-    `type`: lostpointercapture,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_lostpointercapture(
-    `type`: lostpointercapture,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_lostpointercapture(
-    `type`: lostpointercapture,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_touchcancel(`type`: touchcancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_touchcancel(
-    `type`: touchcancel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_touchcancel(
-    `type`: touchcancel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_touchend(`type`: touchend, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_touchend(
-    `type`: touchend,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_touchend(
-    `type`: touchend,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_touchmove(`type`: touchmove, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_touchmove(
-    `type`: touchmove,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_touchmove(
-    `type`: touchmove,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_touchstart(`type`: touchstart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_touchstart(
-    `type`: touchstart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_touchstart(
-    `type`: touchstart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")

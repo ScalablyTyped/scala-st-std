@@ -1,17 +1,35 @@
 package org.scalablytyped.std
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Storage
-  extends /* key */ StringDictionary[js.Any] {
+trait Storage extends js.Object {
+  /**
+    * Returns the number of key/value pairs currently present in the list associated with the
+    * object.
+    */
   val length: Double
+  /**
+    * Empties the list associated with the object of all key/value pairs, if there are any.
+    */
   def clear(): Unit
+  /**
+    * value = storage[key]
+    */
   def getItem(key: java.lang.String): java.lang.String | Null
+  /**
+    * Returns the name of the nth key in the list, or null if n is greater
+    * than or equal to the number of key/value pairs in the object.
+    */
   def key(index: Double): java.lang.String | Null
+  /**
+    * delete storage[key]
+    */
   def removeItem(key: java.lang.String): Unit
+  /**
+    * storage[key] = value
+    */
   def setItem(key: java.lang.String, value: java.lang.String): Unit
 }
 

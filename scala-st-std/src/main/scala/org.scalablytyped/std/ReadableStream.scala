@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ReadableStream extends js.Object {
+trait ReadableStream extends _BodyInit {
   val locked: scala.Boolean
   def cancel(): js.Promise[Unit]
   def getReader(): ReadableStreamReader

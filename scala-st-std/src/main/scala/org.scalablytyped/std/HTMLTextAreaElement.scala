@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait HTMLTextAreaElement extends HTMLElement {
+  var autocomplete: java.lang.String = js.native
   /**
     * Provides a way to direct a user to a specific field when a document loads. This can provide both direction and convenience for a user, reducing the need to click or tab to a field when a page opens. This attribute is true when present on an element, and false when missing.
     */
@@ -21,11 +22,13 @@ trait HTMLTextAreaElement extends HTMLElement {
     * Sets or retrieves the initial contents of the object.
     */
   var defaultValue: java.lang.String = js.native
+  var dirName: java.lang.String = js.native
   var disabled: scala.Boolean = js.native
   /**
     * Retrieves a reference to the form that the object is embedded in.
     */
   val form: HTMLFormElement | Null = js.native
+  val labels: NodeListOf[HTMLLabelElement] = js.native
   /**
     * Sets or retrieves the maximum number of characters that the user can enter in a text control.
     */
@@ -51,6 +54,7 @@ trait HTMLTextAreaElement extends HTMLElement {
     * Sets or retrieves the number of horizontal rows contained in the object.
     */
   var rows: Double = js.native
+  var selectionDirection: java.lang.String = js.native
   /**
     * Gets or sets the end position or offset of a text selection.
     */
@@ -59,6 +63,7 @@ trait HTMLTextAreaElement extends HTMLElement {
     * Gets or sets the starting position or offset of a text selection.
     */
   var selectionStart: Double = js.native
+  val textLength: Double = js.native
   /**
     * Retrieves the type of control.
     */
@@ -87,6 +92,7 @@ trait HTMLTextAreaElement extends HTMLElement {
     * Returns whether a form will validate when it is submitted, without having to submit it.
     */
   def checkValidity(): scala.Boolean = js.native
+  def reportValidity(): scala.Boolean = js.native
   /**
     * Highlights the input area of a form element.
     */
@@ -96,6 +102,9 @@ trait HTMLTextAreaElement extends HTMLElement {
     * @param error Sets a custom error message that is displayed when a form is submitted.
     */
   def setCustomValidity(error: java.lang.String): Unit = js.native
+  def setRangeText(replacement: java.lang.String): Unit = js.native
+  def setRangeText(replacement: java.lang.String, start: Double, end: Double): Unit = js.native
+  def setRangeText(replacement: java.lang.String, start: Double, end: Double, selectionMode: SelectionMode): Unit = js.native
   /**
     * Sets the start and end positions of a selection in a text field.
     * @param start The offset into the text field for the start of the selection.

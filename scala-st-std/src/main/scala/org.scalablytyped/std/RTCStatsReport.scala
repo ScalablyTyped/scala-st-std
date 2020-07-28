@@ -4,5 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RTCStatsReport extends js.Object
+@js.native
+trait RTCStatsReport
+  extends ReadonlyMap[java.lang.String, js.Any]
 

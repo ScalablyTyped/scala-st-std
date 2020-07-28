@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait HTMLMeterElement extends HTMLElement {
   var high: Double = js.native
+  val labels: NodeListOf[HTMLLabelElement] = js.native
   var low: Double = js.native
   var max: Double = js.native
   var min: Double = js.native

@@ -6,40 +6,40 @@ import scala.scalajs.js.annotation._
 
 trait SVGElementTagNameMap extends js.Object {
   var circle: SVGCircleElement
-  var clippath: SVGClipPathElement
+  var clipPath: SVGClipPathElement
   var defs: SVGDefsElement
   var desc: SVGDescElement
   var ellipse: SVGEllipseElement
-  var feblend: SVGFEBlendElement
-  var fecolormatrix: SVGFEColorMatrixElement
-  var fecomponenttransfer: SVGFEComponentTransferElement
-  var fecomposite: SVGFECompositeElement
-  var feconvolvematrix: SVGFEConvolveMatrixElement
-  var fediffuselighting: SVGFEDiffuseLightingElement
-  var fedisplacementmap: SVGFEDisplacementMapElement
-  var fedistantlight: SVGFEDistantLightElement
-  var feflood: SVGFEFloodElement
-  var fefunca: SVGFEFuncAElement
-  var fefuncb: SVGFEFuncBElement
-  var fefuncg: SVGFEFuncGElement
-  var fefuncr: SVGFEFuncRElement
-  var fegaussianblur: SVGFEGaussianBlurElement
-  var feimage: SVGFEImageElement
-  var femerge: SVGFEMergeElement
-  var femergenode: SVGFEMergeNodeElement
-  var femorphology: SVGFEMorphologyElement
-  var feoffset: SVGFEOffsetElement
-  var fepointlight: SVGFEPointLightElement
-  var fespecularlighting: SVGFESpecularLightingElement
-  var fespotlight: SVGFESpotLightElement
-  var fetile: SVGFETileElement
-  var feturbulence: SVGFETurbulenceElement
+  var feBlend: SVGFEBlendElement
+  var feColorMatrix: SVGFEColorMatrixElement
+  var feComponentTransfer: SVGFEComponentTransferElement
+  var feComposite: SVGFECompositeElement
+  var feConvolveMatrix: SVGFEConvolveMatrixElement
+  var feDiffuseLighting: SVGFEDiffuseLightingElement
+  var feDisplacementMap: SVGFEDisplacementMapElement
+  var feDistantLight: SVGFEDistantLightElement
+  var feFlood: SVGFEFloodElement
+  var feFuncA: SVGFEFuncAElement
+  var feFuncB: SVGFEFuncBElement
+  var feFuncG: SVGFEFuncGElement
+  var feFuncR: SVGFEFuncRElement
+  var feGaussianBlur: SVGFEGaussianBlurElement
+  var feImage: SVGFEImageElement
+  var feMerge: SVGFEMergeElement
+  var feMergeNode: SVGFEMergeNodeElement
+  var feMorphology: SVGFEMorphologyElement
+  var feOffset: SVGFEOffsetElement
+  var fePointLight: SVGFEPointLightElement
+  var feSpecularLighting: SVGFESpecularLightingElement
+  var feSpotLight: SVGFESpotLightElement
+  var feTile: SVGFETileElement
+  var feTurbulence: SVGFETurbulenceElement
   var filter: SVGFilterElement
-  var foreignobject: SVGForeignObjectElement
+  var foreignObject: SVGForeignObjectElement
   var g: SVGGElement
   var image: SVGImageElement
   var line: SVGLineElement
-  var lineargradient: SVGLinearGradientElement
+  var linearGradient: SVGLinearGradientElement
   var marker: SVGMarkerElement
   var mask: SVGMaskElement
   var metadata: SVGMetadataElement
@@ -47,14 +47,14 @@ trait SVGElementTagNameMap extends js.Object {
   var pattern: SVGPatternElement
   var polygon: SVGPolygonElement
   var polyline: SVGPolylineElement
-  var radialgradient: SVGRadialGradientElement
+  var radialGradient: SVGRadialGradientElement
   var rect: SVGRectElement
   var stop: SVGStopElement
   var svg: SVGSVGElement
   var switch: SVGSwitchElement
   var symbol: SVGSymbolElement
   var text: SVGTextElement
-  var textpath: SVGTextPathElement
+  var textPath: SVGTextPathElement
   var tspan: SVGTSpanElement
   var use: SVGUseElement
   var view: SVGViewElement
@@ -64,40 +64,40 @@ object SVGElementTagNameMap {
   @scala.inline
   def apply(
     circle: SVGCircleElement,
-    clippath: SVGClipPathElement,
+    clipPath: SVGClipPathElement,
     defs: SVGDefsElement,
     desc: SVGDescElement,
     ellipse: SVGEllipseElement,
-    feblend: SVGFEBlendElement,
-    fecolormatrix: SVGFEColorMatrixElement,
-    fecomponenttransfer: SVGFEComponentTransferElement,
-    fecomposite: SVGFECompositeElement,
-    feconvolvematrix: SVGFEConvolveMatrixElement,
-    fediffuselighting: SVGFEDiffuseLightingElement,
-    fedisplacementmap: SVGFEDisplacementMapElement,
-    fedistantlight: SVGFEDistantLightElement,
-    feflood: SVGFEFloodElement,
-    fefunca: SVGFEFuncAElement,
-    fefuncb: SVGFEFuncBElement,
-    fefuncg: SVGFEFuncGElement,
-    fefuncr: SVGFEFuncRElement,
-    fegaussianblur: SVGFEGaussianBlurElement,
-    feimage: SVGFEImageElement,
-    femerge: SVGFEMergeElement,
-    femergenode: SVGFEMergeNodeElement,
-    femorphology: SVGFEMorphologyElement,
-    feoffset: SVGFEOffsetElement,
-    fepointlight: SVGFEPointLightElement,
-    fespecularlighting: SVGFESpecularLightingElement,
-    fespotlight: SVGFESpotLightElement,
-    fetile: SVGFETileElement,
-    feturbulence: SVGFETurbulenceElement,
+    feBlend: SVGFEBlendElement,
+    feColorMatrix: SVGFEColorMatrixElement,
+    feComponentTransfer: SVGFEComponentTransferElement,
+    feComposite: SVGFECompositeElement,
+    feConvolveMatrix: SVGFEConvolveMatrixElement,
+    feDiffuseLighting: SVGFEDiffuseLightingElement,
+    feDisplacementMap: SVGFEDisplacementMapElement,
+    feDistantLight: SVGFEDistantLightElement,
+    feFlood: SVGFEFloodElement,
+    feFuncA: SVGFEFuncAElement,
+    feFuncB: SVGFEFuncBElement,
+    feFuncG: SVGFEFuncGElement,
+    feFuncR: SVGFEFuncRElement,
+    feGaussianBlur: SVGFEGaussianBlurElement,
+    feImage: SVGFEImageElement,
+    feMerge: SVGFEMergeElement,
+    feMergeNode: SVGFEMergeNodeElement,
+    feMorphology: SVGFEMorphologyElement,
+    feOffset: SVGFEOffsetElement,
+    fePointLight: SVGFEPointLightElement,
+    feSpecularLighting: SVGFESpecularLightingElement,
+    feSpotLight: SVGFESpotLightElement,
+    feTile: SVGFETileElement,
+    feTurbulence: SVGFETurbulenceElement,
     filter: SVGFilterElement,
-    foreignobject: SVGForeignObjectElement,
+    foreignObject: SVGForeignObjectElement,
     g: SVGGElement,
     image: SVGImageElement,
     line: SVGLineElement,
-    lineargradient: SVGLinearGradientElement,
+    linearGradient: SVGLinearGradientElement,
     marker: SVGMarkerElement,
     mask: SVGMaskElement,
     metadata: SVGMetadataElement,
@@ -105,19 +105,19 @@ object SVGElementTagNameMap {
     pattern: SVGPatternElement,
     polygon: SVGPolygonElement,
     polyline: SVGPolylineElement,
-    radialgradient: SVGRadialGradientElement,
+    radialGradient: SVGRadialGradientElement,
     rect: SVGRectElement,
     stop: SVGStopElement,
     svg: SVGSVGElement,
     switch: SVGSwitchElement,
     symbol: SVGSymbolElement,
     text: SVGTextElement,
-    textpath: SVGTextPathElement,
+    textPath: SVGTextPathElement,
     tspan: SVGTSpanElement,
     use: SVGUseElement,
     view: SVGViewElement
   ): SVGElementTagNameMap = {
-    val __obj = js.Dynamic.literal(circle = circle.asInstanceOf[js.Any], clippath = clippath.asInstanceOf[js.Any], defs = defs.asInstanceOf[js.Any], desc = desc.asInstanceOf[js.Any], ellipse = ellipse.asInstanceOf[js.Any], feblend = feblend.asInstanceOf[js.Any], fecolormatrix = fecolormatrix.asInstanceOf[js.Any], fecomponenttransfer = fecomponenttransfer.asInstanceOf[js.Any], fecomposite = fecomposite.asInstanceOf[js.Any], feconvolvematrix = feconvolvematrix.asInstanceOf[js.Any], fediffuselighting = fediffuselighting.asInstanceOf[js.Any], fedisplacementmap = fedisplacementmap.asInstanceOf[js.Any], fedistantlight = fedistantlight.asInstanceOf[js.Any], feflood = feflood.asInstanceOf[js.Any], fefunca = fefunca.asInstanceOf[js.Any], fefuncb = fefuncb.asInstanceOf[js.Any], fefuncg = fefuncg.asInstanceOf[js.Any], fefuncr = fefuncr.asInstanceOf[js.Any], fegaussianblur = fegaussianblur.asInstanceOf[js.Any], feimage = feimage.asInstanceOf[js.Any], femerge = femerge.asInstanceOf[js.Any], femergenode = femergenode.asInstanceOf[js.Any], femorphology = femorphology.asInstanceOf[js.Any], feoffset = feoffset.asInstanceOf[js.Any], fepointlight = fepointlight.asInstanceOf[js.Any], fespecularlighting = fespecularlighting.asInstanceOf[js.Any], fespotlight = fespotlight.asInstanceOf[js.Any], fetile = fetile.asInstanceOf[js.Any], feturbulence = feturbulence.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], foreignobject = foreignobject.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], lineargradient = lineargradient.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], polygon = polygon.asInstanceOf[js.Any], polyline = polyline.asInstanceOf[js.Any], radialgradient = radialgradient.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any], switch = switch.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textpath = textpath.asInstanceOf[js.Any], tspan = tspan.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(circle = circle.asInstanceOf[js.Any], clipPath = clipPath.asInstanceOf[js.Any], defs = defs.asInstanceOf[js.Any], desc = desc.asInstanceOf[js.Any], ellipse = ellipse.asInstanceOf[js.Any], feBlend = feBlend.asInstanceOf[js.Any], feColorMatrix = feColorMatrix.asInstanceOf[js.Any], feComponentTransfer = feComponentTransfer.asInstanceOf[js.Any], feComposite = feComposite.asInstanceOf[js.Any], feConvolveMatrix = feConvolveMatrix.asInstanceOf[js.Any], feDiffuseLighting = feDiffuseLighting.asInstanceOf[js.Any], feDisplacementMap = feDisplacementMap.asInstanceOf[js.Any], feDistantLight = feDistantLight.asInstanceOf[js.Any], feFlood = feFlood.asInstanceOf[js.Any], feFuncA = feFuncA.asInstanceOf[js.Any], feFuncB = feFuncB.asInstanceOf[js.Any], feFuncG = feFuncG.asInstanceOf[js.Any], feFuncR = feFuncR.asInstanceOf[js.Any], feGaussianBlur = feGaussianBlur.asInstanceOf[js.Any], feImage = feImage.asInstanceOf[js.Any], feMerge = feMerge.asInstanceOf[js.Any], feMergeNode = feMergeNode.asInstanceOf[js.Any], feMorphology = feMorphology.asInstanceOf[js.Any], feOffset = feOffset.asInstanceOf[js.Any], fePointLight = fePointLight.asInstanceOf[js.Any], feSpecularLighting = feSpecularLighting.asInstanceOf[js.Any], feSpotLight = feSpotLight.asInstanceOf[js.Any], feTile = feTile.asInstanceOf[js.Any], feTurbulence = feTurbulence.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], foreignObject = foreignObject.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], linearGradient = linearGradient.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], polygon = polygon.asInstanceOf[js.Any], polyline = polyline.asInstanceOf[js.Any], radialGradient = radialGradient.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any], switch = switch.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textPath = textPath.asInstanceOf[js.Any], tspan = tspan.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[SVGElementTagNameMap]
   }
   @scala.inline
@@ -134,7 +134,7 @@ object SVGElementTagNameMap {
     @scala.inline
     def setCircle(value: SVGCircleElement): Self = this.set("circle", value.asInstanceOf[js.Any])
     @scala.inline
-    def setClippath(value: SVGClipPathElement): Self = this.set("clippath", value.asInstanceOf[js.Any])
+    def setClipPath(value: SVGClipPathElement): Self = this.set("clipPath", value.asInstanceOf[js.Any])
     @scala.inline
     def setDefs(value: SVGDefsElement): Self = this.set("defs", value.asInstanceOf[js.Any])
     @scala.inline
@@ -142,57 +142,57 @@ object SVGElementTagNameMap {
     @scala.inline
     def setEllipse(value: SVGEllipseElement): Self = this.set("ellipse", value.asInstanceOf[js.Any])
     @scala.inline
-    def setFeblend(value: SVGFEBlendElement): Self = this.set("feblend", value.asInstanceOf[js.Any])
+    def setFeBlend(value: SVGFEBlendElement): Self = this.set("feBlend", value.asInstanceOf[js.Any])
     @scala.inline
-    def setFecolormatrix(value: SVGFEColorMatrixElement): Self = this.set("fecolormatrix", value.asInstanceOf[js.Any])
+    def setFeColorMatrix(value: SVGFEColorMatrixElement): Self = this.set("feColorMatrix", value.asInstanceOf[js.Any])
     @scala.inline
-    def setFecomponenttransfer(value: SVGFEComponentTransferElement): Self = this.set("fecomponenttransfer", value.asInstanceOf[js.Any])
+    def setFeComponentTransfer(value: SVGFEComponentTransferElement): Self = this.set("feComponentTransfer", value.asInstanceOf[js.Any])
     @scala.inline
-    def setFecomposite(value: SVGFECompositeElement): Self = this.set("fecomposite", value.asInstanceOf[js.Any])
+    def setFeComposite(value: SVGFECompositeElement): Self = this.set("feComposite", value.asInstanceOf[js.Any])
     @scala.inline
-    def setFeconvolvematrix(value: SVGFEConvolveMatrixElement): Self = this.set("feconvolvematrix", value.asInstanceOf[js.Any])
+    def setFeConvolveMatrix(value: SVGFEConvolveMatrixElement): Self = this.set("feConvolveMatrix", value.asInstanceOf[js.Any])
     @scala.inline
-    def setFediffuselighting(value: SVGFEDiffuseLightingElement): Self = this.set("fediffuselighting", value.asInstanceOf[js.Any])
+    def setFeDiffuseLighting(value: SVGFEDiffuseLightingElement): Self = this.set("feDiffuseLighting", value.asInstanceOf[js.Any])
     @scala.inline
-    def setFedisplacementmap(value: SVGFEDisplacementMapElement): Self = this.set("fedisplacementmap", value.asInstanceOf[js.Any])
+    def setFeDisplacementMap(value: SVGFEDisplacementMapElement): Self = this.set("feDisplacementMap", value.asInstanceOf[js.Any])
     @scala.inline
-    def setFedistantlight(value: SVGFEDistantLightElement): Self = this.set("fedistantlight", value.asInstanceOf[js.Any])
+    def setFeDistantLight(value: SVGFEDistantLightElement): Self = this.set("feDistantLight", value.asInstanceOf[js.Any])
     @scala.inline
-    def setFeflood(value: SVGFEFloodElement): Self = this.set("feflood", value.asInstanceOf[js.Any])
+    def setFeFlood(value: SVGFEFloodElement): Self = this.set("feFlood", value.asInstanceOf[js.Any])
     @scala.inline
-    def setFefunca(value: SVGFEFuncAElement): Self = this.set("fefunca", value.asInstanceOf[js.Any])
+    def setFeFuncA(value: SVGFEFuncAElement): Self = this.set("feFuncA", value.asInstanceOf[js.Any])
     @scala.inline
-    def setFefuncb(value: SVGFEFuncBElement): Self = this.set("fefuncb", value.asInstanceOf[js.Any])
+    def setFeFuncB(value: SVGFEFuncBElement): Self = this.set("feFuncB", value.asInstanceOf[js.Any])
     @scala.inline
-    def setFefuncg(value: SVGFEFuncGElement): Self = this.set("fefuncg", value.asInstanceOf[js.Any])
+    def setFeFuncG(value: SVGFEFuncGElement): Self = this.set("feFuncG", value.asInstanceOf[js.Any])
     @scala.inline
-    def setFefuncr(value: SVGFEFuncRElement): Self = this.set("fefuncr", value.asInstanceOf[js.Any])
+    def setFeFuncR(value: SVGFEFuncRElement): Self = this.set("feFuncR", value.asInstanceOf[js.Any])
     @scala.inline
-    def setFegaussianblur(value: SVGFEGaussianBlurElement): Self = this.set("fegaussianblur", value.asInstanceOf[js.Any])
+    def setFeGaussianBlur(value: SVGFEGaussianBlurElement): Self = this.set("feGaussianBlur", value.asInstanceOf[js.Any])
     @scala.inline
-    def setFeimage(value: SVGFEImageElement): Self = this.set("feimage", value.asInstanceOf[js.Any])
+    def setFeImage(value: SVGFEImageElement): Self = this.set("feImage", value.asInstanceOf[js.Any])
     @scala.inline
-    def setFemerge(value: SVGFEMergeElement): Self = this.set("femerge", value.asInstanceOf[js.Any])
+    def setFeMerge(value: SVGFEMergeElement): Self = this.set("feMerge", value.asInstanceOf[js.Any])
     @scala.inline
-    def setFemergenode(value: SVGFEMergeNodeElement): Self = this.set("femergenode", value.asInstanceOf[js.Any])
+    def setFeMergeNode(value: SVGFEMergeNodeElement): Self = this.set("feMergeNode", value.asInstanceOf[js.Any])
     @scala.inline
-    def setFemorphology(value: SVGFEMorphologyElement): Self = this.set("femorphology", value.asInstanceOf[js.Any])
+    def setFeMorphology(value: SVGFEMorphologyElement): Self = this.set("feMorphology", value.asInstanceOf[js.Any])
     @scala.inline
-    def setFeoffset(value: SVGFEOffsetElement): Self = this.set("feoffset", value.asInstanceOf[js.Any])
+    def setFeOffset(value: SVGFEOffsetElement): Self = this.set("feOffset", value.asInstanceOf[js.Any])
     @scala.inline
-    def setFepointlight(value: SVGFEPointLightElement): Self = this.set("fepointlight", value.asInstanceOf[js.Any])
+    def setFePointLight(value: SVGFEPointLightElement): Self = this.set("fePointLight", value.asInstanceOf[js.Any])
     @scala.inline
-    def setFespecularlighting(value: SVGFESpecularLightingElement): Self = this.set("fespecularlighting", value.asInstanceOf[js.Any])
+    def setFeSpecularLighting(value: SVGFESpecularLightingElement): Self = this.set("feSpecularLighting", value.asInstanceOf[js.Any])
     @scala.inline
-    def setFespotlight(value: SVGFESpotLightElement): Self = this.set("fespotlight", value.asInstanceOf[js.Any])
+    def setFeSpotLight(value: SVGFESpotLightElement): Self = this.set("feSpotLight", value.asInstanceOf[js.Any])
     @scala.inline
-    def setFetile(value: SVGFETileElement): Self = this.set("fetile", value.asInstanceOf[js.Any])
+    def setFeTile(value: SVGFETileElement): Self = this.set("feTile", value.asInstanceOf[js.Any])
     @scala.inline
-    def setFeturbulence(value: SVGFETurbulenceElement): Self = this.set("feturbulence", value.asInstanceOf[js.Any])
+    def setFeTurbulence(value: SVGFETurbulenceElement): Self = this.set("feTurbulence", value.asInstanceOf[js.Any])
     @scala.inline
     def setFilter(value: SVGFilterElement): Self = this.set("filter", value.asInstanceOf[js.Any])
     @scala.inline
-    def setForeignobject(value: SVGForeignObjectElement): Self = this.set("foreignobject", value.asInstanceOf[js.Any])
+    def setForeignObject(value: SVGForeignObjectElement): Self = this.set("foreignObject", value.asInstanceOf[js.Any])
     @scala.inline
     def setG(value: SVGGElement): Self = this.set("g", value.asInstanceOf[js.Any])
     @scala.inline
@@ -200,7 +200,7 @@ object SVGElementTagNameMap {
     @scala.inline
     def setLine(value: SVGLineElement): Self = this.set("line", value.asInstanceOf[js.Any])
     @scala.inline
-    def setLineargradient(value: SVGLinearGradientElement): Self = this.set("lineargradient", value.asInstanceOf[js.Any])
+    def setLinearGradient(value: SVGLinearGradientElement): Self = this.set("linearGradient", value.asInstanceOf[js.Any])
     @scala.inline
     def setMarker(value: SVGMarkerElement): Self = this.set("marker", value.asInstanceOf[js.Any])
     @scala.inline
@@ -216,7 +216,7 @@ object SVGElementTagNameMap {
     @scala.inline
     def setPolyline(value: SVGPolylineElement): Self = this.set("polyline", value.asInstanceOf[js.Any])
     @scala.inline
-    def setRadialgradient(value: SVGRadialGradientElement): Self = this.set("radialgradient", value.asInstanceOf[js.Any])
+    def setRadialGradient(value: SVGRadialGradientElement): Self = this.set("radialGradient", value.asInstanceOf[js.Any])
     @scala.inline
     def setRect(value: SVGRectElement): Self = this.set("rect", value.asInstanceOf[js.Any])
     @scala.inline
@@ -230,7 +230,7 @@ object SVGElementTagNameMap {
     @scala.inline
     def setText(value: SVGTextElement): Self = this.set("text", value.asInstanceOf[js.Any])
     @scala.inline
-    def setTextpath(value: SVGTextPathElement): Self = this.set("textpath", value.asInstanceOf[js.Any])
+    def setTextPath(value: SVGTextPathElement): Self = this.set("textPath", value.asInstanceOf[js.Any])
     @scala.inline
     def setTspan(value: SVGTSpanElement): Self = this.set("tspan", value.asInstanceOf[js.Any])
     @scala.inline

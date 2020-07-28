@@ -17,6 +17,7 @@ trait HTMLStyleElement
   /**
     * Retrieves the CSS language in which the style sheet is written.
     */
+  /** @deprecated */
   var `type`: java.lang.String = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native

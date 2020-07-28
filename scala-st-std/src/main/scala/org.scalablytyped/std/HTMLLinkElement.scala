@@ -34,6 +34,7 @@ trait HTMLLinkElement
     * Sets or retrieves the relationship between the object and the destination of the link.
     */
   var rel: java.lang.String = js.native
+  val relList: DOMTokenList = js.native
   /**
     * Sets or retrieves the relationship between the object and the destination of the link.
     */

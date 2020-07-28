@@ -9,7 +9,7 @@ trait PushSubscription extends js.Object {
   val expirationTime: Double | Null
   val options: PushSubscriptionOptions
   def getKey(name: PushEncryptionKeyName): ArrayBuffer | Null
-  def toJSON(): js.Any
+  def toJSON(): PushSubscriptionJSON
   def unsubscribe(): js.Promise[scala.Boolean]
 }
 
@@ -19,7 +19,7 @@ object PushSubscription {
     endpoint: java.lang.String,
     getKey: PushEncryptionKeyName => ArrayBuffer | Null,
     options: PushSubscriptionOptions,
-    toJSON: () => js.Any,
+    toJSON: () => PushSubscriptionJSON,
     unsubscribe: () => js.Promise[scala.Boolean]
   ): PushSubscription = {
     val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any], getKey = js.Any.fromFunction1(getKey), options = options.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), unsubscribe = js.Any.fromFunction0(unsubscribe))
@@ -43,7 +43,7 @@ object PushSubscription {
     @scala.inline
     def setOptions(value: PushSubscriptionOptions): Self = this.set("options", value.asInstanceOf[js.Any])
     @scala.inline
-    def setToJSON(value: () => js.Any): Self = this.set("toJSON", js.Any.fromFunction0(value))
+    def setToJSON(value: () => PushSubscriptionJSON): Self = this.set("toJSON", js.Any.fromFunction0(value))
     @scala.inline
     def setUnsubscribe(value: () => js.Promise[scala.Boolean]): Self = this.set("unsubscribe", js.Any.fromFunction0(value))
     @scala.inline

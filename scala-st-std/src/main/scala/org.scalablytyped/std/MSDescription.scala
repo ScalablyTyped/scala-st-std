@@ -16,8 +16,9 @@ trait MSDescription extends RTCStats {
 
 object MSDescription {
   @scala.inline
-  def apply(): MSDescription = {
-    val __obj = js.Dynamic.literal()
+  def apply(id: java.lang.String, timestamp: Double, `type`: RTCStatsType): MSDescription = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MSDescription]
   }
   @scala.inline

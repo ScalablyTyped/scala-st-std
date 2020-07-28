@@ -13,9 +13,5 @@ class IDBTransaction ()
 @JSGlobal("IDBTransaction")
 @js.native
 object IDBTransaction
-  extends Instantiable0[org.scalablytyped.std.IDBTransaction] {
-  val READ_ONLY: java.lang.String = js.native
-  val READ_WRITE: java.lang.String = js.native
-  val VERSION_CHANGE: java.lang.String = js.native
-}
+  extends Instantiable0[org.scalablytyped.std.IDBTransaction]
 

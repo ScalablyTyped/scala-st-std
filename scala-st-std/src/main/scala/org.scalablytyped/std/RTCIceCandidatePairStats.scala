@@ -22,8 +22,9 @@ trait RTCIceCandidatePairStats extends RTCStats {
 
 object RTCIceCandidatePairStats {
   @scala.inline
-  def apply(): RTCIceCandidatePairStats = {
-    val __obj = js.Dynamic.literal()
+  def apply(id: java.lang.String, timestamp: Double, `type`: RTCStatsType): RTCIceCandidatePairStats = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCIceCandidatePairStats]
   }
   @scala.inline

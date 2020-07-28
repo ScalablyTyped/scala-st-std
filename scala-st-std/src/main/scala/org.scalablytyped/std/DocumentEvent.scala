@@ -106,7 +106,11 @@ trait DocumentEvent extends js.Object {
   @JSName("createEvent")
   def createEvent_RTCDTMFToneChangeEvent(eventInterface: org.scalablytyped.std.stdStrings.RTCDTMFToneChangeEvent): RTCDTMFToneChangeEvent = js.native
   @JSName("createEvent")
+  def createEvent_RTCDataChannelEvent(eventInterface: org.scalablytyped.std.stdStrings.RTCDataChannelEvent): RTCDataChannelEvent = js.native
+  @JSName("createEvent")
   def createEvent_RTCDtlsTransportStateChangedEvent(eventInterface: org.scalablytyped.std.stdStrings.RTCDtlsTransportStateChangedEvent): RTCDtlsTransportStateChangedEvent = js.native
+  @JSName("createEvent")
+  def createEvent_RTCErrorEvent(eventInterface: org.scalablytyped.std.stdStrings.RTCErrorEvent): RTCErrorEvent = js.native
   @JSName("createEvent")
   def createEvent_RTCIceCandidatePairChangedEvent(eventInterface: org.scalablytyped.std.stdStrings.RTCIceCandidatePairChangedEvent): RTCIceCandidatePairChangedEvent = js.native
   @JSName("createEvent")
@@ -114,9 +118,15 @@ trait DocumentEvent extends js.Object {
   @JSName("createEvent")
   def createEvent_RTCIceTransportStateChangedEvent(eventInterface: org.scalablytyped.std.stdStrings.RTCIceTransportStateChangedEvent): RTCIceTransportStateChangedEvent = js.native
   @JSName("createEvent")
+  def createEvent_RTCPeerConnectionIceErrorEvent(eventInterface: org.scalablytyped.std.stdStrings.RTCPeerConnectionIceErrorEvent): RTCPeerConnectionIceErrorEvent = js.native
+  @JSName("createEvent")
   def createEvent_RTCPeerConnectionIceEvent(eventInterface: org.scalablytyped.std.stdStrings.RTCPeerConnectionIceEvent): RTCPeerConnectionIceEvent = js.native
   @JSName("createEvent")
   def createEvent_RTCSsrcConflictEvent(eventInterface: org.scalablytyped.std.stdStrings.RTCSsrcConflictEvent): RTCSsrcConflictEvent = js.native
+  @JSName("createEvent")
+  def createEvent_RTCStatsEvent(eventInterface: org.scalablytyped.std.stdStrings.RTCStatsEvent): RTCStatsEvent = js.native
+  @JSName("createEvent")
+  def createEvent_RTCTrackEvent(eventInterface: org.scalablytyped.std.stdStrings.RTCTrackEvent): RTCTrackEvent = js.native
   @JSName("createEvent")
   def createEvent_SVGZoomEvent(eventInterface: org.scalablytyped.std.stdStrings.SVGZoomEvent): SVGZoomEvent = js.native
   @JSName("createEvent")

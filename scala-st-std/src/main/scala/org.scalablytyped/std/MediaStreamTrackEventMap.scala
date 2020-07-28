@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait MediaStreamTrackEventMap extends js.Object {
   var ended: MediaStreamErrorEvent
+  var isolationchange: Event
   var mute: Event
   var overconstrained: MediaStreamErrorEvent
   var unmute: Event
@@ -13,8 +14,14 @@ trait MediaStreamTrackEventMap extends js.Object {
 
 object MediaStreamTrackEventMap {
   @scala.inline
-  def apply(ended: MediaStreamErrorEvent, mute: Event, overconstrained: MediaStreamErrorEvent, unmute: Event): MediaStreamTrackEventMap = {
-    val __obj = js.Dynamic.literal(ended = ended.asInstanceOf[js.Any], mute = mute.asInstanceOf[js.Any], overconstrained = overconstrained.asInstanceOf[js.Any], unmute = unmute.asInstanceOf[js.Any])
+  def apply(
+    ended: MediaStreamErrorEvent,
+    isolationchange: Event,
+    mute: Event,
+    overconstrained: MediaStreamErrorEvent,
+    unmute: Event
+  ): MediaStreamTrackEventMap = {
+    val __obj = js.Dynamic.literal(ended = ended.asInstanceOf[js.Any], isolationchange = isolationchange.asInstanceOf[js.Any], mute = mute.asInstanceOf[js.Any], overconstrained = overconstrained.asInstanceOf[js.Any], unmute = unmute.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaStreamTrackEventMap]
   }
   @scala.inline
@@ -30,6 +37,8 @@ object MediaStreamTrackEventMap {
     }
     @scala.inline
     def setEnded(value: MediaStreamErrorEvent): Self = this.set("ended", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIsolationchange(value: Event): Self = this.set("isolationchange", value.asInstanceOf[js.Any])
     @scala.inline
     def setMute(value: Event): Self = this.set("mute", value.asInstanceOf[js.Any])
     @scala.inline

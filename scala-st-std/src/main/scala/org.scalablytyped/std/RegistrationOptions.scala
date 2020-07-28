@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait RegistrationOptions extends js.Object {
   var scope: js.UndefOr[java.lang.String] = js.undefined
+  var `type`: js.UndefOr[WorkerType] = js.undefined
+  var updateViaCache: js.UndefOr[ServiceWorkerUpdateViaCache] = js.undefined
 }
 
 object RegistrationOptions {
@@ -29,6 +31,14 @@ object RegistrationOptions {
     def setScope(value: java.lang.String): Self = this.set("scope", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteScope: Self = this.set("scope", js.undefined)
+    @scala.inline
+    def setType(value: WorkerType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUpdateViaCache(value: ServiceWorkerUpdateViaCache): Self = this.set("updateViaCache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateViaCache: Self = this.set("updateViaCache", js.undefined)
   }
   
 }

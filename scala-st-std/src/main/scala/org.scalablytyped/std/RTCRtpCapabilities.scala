@@ -5,15 +5,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RTCRtpCapabilities extends js.Object {
-  var codecs: js.UndefOr[js.Array[RTCRtpCodecCapability]] = js.undefined
-  var fecMechanisms: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  var headerExtensions: js.UndefOr[js.Array[RTCRtpHeaderExtension]] = js.undefined
+  var codecs: js.Array[RTCRtpCodecCapability]
+  var headerExtensions: js.Array[RTCRtpHeaderExtensionCapability]
 }
 
 object RTCRtpCapabilities {
   @scala.inline
-  def apply(): RTCRtpCapabilities = {
-    val __obj = js.Dynamic.literal()
+  def apply(
+    codecs: js.Array[RTCRtpCodecCapability],
+    headerExtensions: js.Array[RTCRtpHeaderExtensionCapability]
+  ): RTCRtpCapabilities = {
+    val __obj = js.Dynamic.literal(codecs = codecs.asInstanceOf[js.Any], headerExtensions = headerExtensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpCapabilities]
   }
   @scala.inline
@@ -32,19 +34,9 @@ object RTCRtpCapabilities {
     @scala.inline
     def setCodecs(value: js.Array[RTCRtpCodecCapability]): Self = this.set("codecs", value.asInstanceOf[js.Any])
     @scala.inline
-    def deleteCodecs: Self = this.set("codecs", js.undefined)
+    def setHeaderExtensionsVarargs(value: RTCRtpHeaderExtensionCapability*): Self = this.set("headerExtensions", js.Array(value :_*))
     @scala.inline
-    def setFecMechanismsVarargs(value: java.lang.String*): Self = this.set("fecMechanisms", js.Array(value :_*))
-    @scala.inline
-    def setFecMechanisms(value: js.Array[java.lang.String]): Self = this.set("fecMechanisms", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteFecMechanisms: Self = this.set("fecMechanisms", js.undefined)
-    @scala.inline
-    def setHeaderExtensionsVarargs(value: RTCRtpHeaderExtension*): Self = this.set("headerExtensions", js.Array(value :_*))
-    @scala.inline
-    def setHeaderExtensions(value: js.Array[RTCRtpHeaderExtension]): Self = this.set("headerExtensions", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteHeaderExtensions: Self = this.set("headerExtensions", js.undefined)
+    def setHeaderExtensions(value: js.Array[RTCRtpHeaderExtensionCapability]): Self = this.set("headerExtensions", value.asInstanceOf[js.Any])
   }
   
 }

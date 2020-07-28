@@ -12,13 +12,15 @@ trait MSOutboundPayload extends js.Object
 
 object MSOutboundPayload {
   @scala.inline
-  def MSVideoSendPayload(): MSOutboundPayload = {
-    val __obj = js.Dynamic.literal()
+  def MSVideoSendPayload(id: java.lang.String, timestamp: Double, `type`: RTCStatsType): MSOutboundPayload = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MSOutboundPayload]
   }
   @scala.inline
-  def MSAudioSendPayload(): MSOutboundPayload = {
-    val __obj = js.Dynamic.literal()
+  def MSAudioSendPayload(id: java.lang.String, timestamp: Double, `type`: RTCStatsType): MSOutboundPayload = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MSOutboundPayload]
   }
 }

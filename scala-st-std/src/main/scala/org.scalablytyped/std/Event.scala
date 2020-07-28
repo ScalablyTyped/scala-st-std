@@ -13,12 +13,12 @@ trait Event extends js.Object {
   val bubbles: scala.Boolean = js.native
   var cancelBubble: scala.Boolean = js.native
   val cancelable: scala.Boolean = js.native
+  val composed: scala.Boolean = js.native
   val currentTarget: EventTarget | Null = js.native
   val defaultPrevented: scala.Boolean = js.native
   val eventPhase: Double = js.native
   val isTrusted: scala.Boolean = js.native
   var returnValue: scala.Boolean = js.native
-  val scoped: scala.Boolean = js.native
   val srcElement: Element | Null = js.native
   val target: EventTarget | Null = js.native
   val timeStamp: Double = js.native

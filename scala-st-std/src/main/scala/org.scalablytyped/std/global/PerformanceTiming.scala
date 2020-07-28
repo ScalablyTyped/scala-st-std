@@ -34,8 +34,6 @@ class PerformanceTiming ()
   /* CompleteClass */
   override val loadEventStart: Double = js.native
   /* CompleteClass */
-  override val msFirstPaint: Double = js.native
-  /* CompleteClass */
   override val navigationStart: Double = js.native
   /* CompleteClass */
   override val redirectEnd: Double = js.native

@@ -10,18 +10,25 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Notification extends EventTarget {
-  val body: java.lang.String | Null = js.native
+  val actions: js.Array[NotificationAction] = js.native
+  val badge: java.lang.String = js.native
+  val body: java.lang.String = js.native
   val data: js.Any = js.native
   val dir: NotificationDirection = js.native
-  val icon: java.lang.String | Null = js.native
-  val lang: java.lang.String | Null = js.native
+  val icon: java.lang.String = js.native
+  val image: java.lang.String = js.native
+  val lang: java.lang.String = js.native
   var onclick: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var onclose: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var onshow: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  val permission: NotificationPermission = js.native
-  val tag: java.lang.String | Null = js.native
+  val renotify: scala.Boolean = js.native
+  val requireInteraction: scala.Boolean = js.native
+  val silent: scala.Boolean = js.native
+  val tag: java.lang.String = js.native
+  val timestamp: Double = js.native
   val title: java.lang.String = js.native
+  val vibrate: js.Array[Double] = js.native
   @JSName("addEventListener")
   def addEventListener_click(`type`: click, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")

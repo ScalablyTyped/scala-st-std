@@ -11,17 +11,17 @@ import scala.scalajs.js.annotation._
 @js.native
 class AnimationEvent protected ()
   extends org.scalablytyped.std.AnimationEvent {
-  def this(typeArg: java.lang.String) = this()
-  def this(typeArg: java.lang.String, eventInitDict: AnimationEventInit) = this()
+  def this(`type`: java.lang.String) = this()
+  def this(`type`: java.lang.String, animationEventInitDict: AnimationEventInit) = this()
 }
 
 @JSGlobal("AnimationEvent")
 @js.native
 object AnimationEvent
-  extends Instantiable1[/* typeArg */ java.lang.String, org.scalablytyped.std.AnimationEvent]
+  extends Instantiable1[/* type */ java.lang.String, org.scalablytyped.std.AnimationEvent]
      with Instantiable2[
-      /* typeArg */ java.lang.String, 
-      /* eventInitDict */ AnimationEventInit, 
+      /* type */ java.lang.String, 
+      /* animationEventInitDict */ AnimationEventInit, 
       org.scalablytyped.std.AnimationEvent
     ]
 

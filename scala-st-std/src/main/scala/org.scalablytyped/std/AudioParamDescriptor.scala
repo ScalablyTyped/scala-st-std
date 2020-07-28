@@ -5,16 +5,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AudioParamDescriptor extends js.Object {
+  var automationRate: js.UndefOr[AutomationRate] = js.undefined
   var defaultValue: js.UndefOr[Double] = js.undefined
   var maxValue: js.UndefOr[Double] = js.undefined
   var minValue: js.UndefOr[Double] = js.undefined
-  var name: js.UndefOr[java.lang.String] = js.undefined
+  var name: java.lang.String
 }
 
 object AudioParamDescriptor {
   @scala.inline
-  def apply(): AudioParamDescriptor = {
-    val __obj = js.Dynamic.literal()
+  def apply(name: java.lang.String): AudioParamDescriptor = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioParamDescriptor]
   }
   @scala.inline
@@ -29,6 +30,12 @@ object AudioParamDescriptor {
         x
     }
     @scala.inline
+    def setName(value: java.lang.String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutomationRate(value: AutomationRate): Self = this.set("automationRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutomationRate: Self = this.set("automationRate", js.undefined)
+    @scala.inline
     def setDefaultValue(value: Double): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
@@ -40,10 +47,6 @@ object AudioParamDescriptor {
     def setMinValue(value: Double): Self = this.set("minValue", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteMinValue: Self = this.set("minValue", js.undefined)
-    @scala.inline
-    def setName(value: java.lang.String): Self = this.set("name", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
   }
   
 }

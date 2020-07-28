@@ -12,13 +12,15 @@ trait MSLocalClientEvent extends js.Object
 
 object MSLocalClientEvent {
   @scala.inline
-  def MSLocalClientEventBase(): MSLocalClientEvent = {
-    val __obj = js.Dynamic.literal()
+  def MSLocalClientEventBase(id: java.lang.String, timestamp: Double, `type`: RTCStatsType): MSLocalClientEvent = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MSLocalClientEvent]
   }
   @scala.inline
-  def MSAudioLocalClientEvent(): MSLocalClientEvent = {
-    val __obj = js.Dynamic.literal()
+  def MSAudioLocalClientEvent(id: java.lang.String, timestamp: Double, `type`: RTCStatsType): MSLocalClientEvent = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MSLocalClientEvent]
   }
 }

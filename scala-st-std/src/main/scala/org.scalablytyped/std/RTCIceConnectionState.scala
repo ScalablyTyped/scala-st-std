@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
   - `org.scalablytyped`.std.stdStrings.checking
   - `org.scalablytyped`.std.stdStrings.connected
   - `org.scalablytyped`.std.stdStrings.completed
-  - `org.scalablytyped`.std.stdStrings.failed
   - `org.scalablytyped`.std.stdStrings.disconnected
+  - `org.scalablytyped`.std.stdStrings.failed
   - `org.scalablytyped`.std.stdStrings.closed
 */
 trait RTCIceConnectionState extends js.Object

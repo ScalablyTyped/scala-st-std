@@ -15,14 +15,14 @@ trait FileReader extends EventTarget {
   val EMPTY: Double = js.native
   val LOADING: Double = js.native
   val error: DOMException | Null = js.native
-  var onabort: (js.ThisFunction1[/* this */ this.type, /* ev */ FileReaderProgressEvent, _]) | Null = js.native
-  var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ FileReaderProgressEvent, _]) | Null = js.native
-  var onload: (js.ThisFunction1[/* this */ this.type, /* ev */ FileReaderProgressEvent, _]) | Null = js.native
-  var onloadend: (js.ThisFunction1[/* this */ this.type, /* ev */ FileReaderProgressEvent, _]) | Null = js.native
-  var onloadstart: (js.ThisFunction1[/* this */ this.type, /* ev */ FileReaderProgressEvent, _]) | Null = js.native
-  var onprogress: (js.ThisFunction1[/* this */ this.type, /* ev */ FileReaderProgressEvent, _]) | Null = js.native
+  var onabort: (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]) | Null = js.native
+  var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]) | Null = js.native
+  var onload: (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]) | Null = js.native
+  var onloadend: (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]) | Null = js.native
+  var onloadstart: (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]) | Null = js.native
+  var onprogress: (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]) | Null = js.native
   val readyState: Double = js.native
-  val result: js.Any = js.native
+  val result: java.lang.String | ArrayBuffer | Null = js.native
   def abort(): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]): Unit = js.native

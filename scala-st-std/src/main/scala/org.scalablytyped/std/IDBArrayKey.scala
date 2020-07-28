@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IDBArrayKey
-  extends Array[Double | java.lang.String | Date | IDBArrayKey]
+  extends Array[IDBValidKey]
      with _IDBValidKey
 

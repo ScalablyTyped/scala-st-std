@@ -5,17 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait HTMLFrameElement
-  extends HTMLElement
-     with GetSVGDocument {
-  /**
-    * Specifies the properties of a border drawn around an object.
-    */
-  var border: java.lang.String = js.native
-  /**
-    * Sets or retrieves the border color of the object.
-    */
-  var borderColor: js.Any = js.native
+trait HTMLFrameElement extends HTMLElement {
   /**
     * Retrieves the document object of the page or frame.
     */
@@ -31,14 +21,6 @@ trait HTMLFrameElement
     */
   /** @deprecated */
   var frameBorder: java.lang.String = js.native
-  /**
-    * Sets or retrieves the amount of additional space between the frames.
-    */
-  var frameSpacing: js.Any = js.native
-  /**
-    * Sets or retrieves the height of the object.
-    */
-  var height: java.lang.String | Double = js.native
   /**
     * Sets or retrieves a URI to a long description of the object.
     */
@@ -74,29 +56,5 @@ trait HTMLFrameElement
     */
   /** @deprecated */
   var src: java.lang.String = js.native
-  /**
-    * Sets or retrieves the width of the object.
-    */
-  var width: java.lang.String | Double = js.native
-  /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
-  /* InferMemberOverrides */
-  override def addEventListener(
-    `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
-  /* InferMemberOverrides */
-  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
-  /* InferMemberOverrides */
-  override def removeEventListener(
-    `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
-    options: EventListenerOptions
-  ): Unit = js.native
-  /* InferMemberOverrides */
-  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
 }
 

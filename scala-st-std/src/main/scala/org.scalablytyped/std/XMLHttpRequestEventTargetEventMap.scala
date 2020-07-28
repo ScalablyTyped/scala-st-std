@@ -5,11 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait XMLHttpRequestEventTargetEventMap extends js.Object {
-  var abort: Event
-  var error: ErrorEvent
-  var load: Event
+  var abort: ProgressEvent
+  var error: ProgressEvent
+  var load: ProgressEvent
   var loadend: ProgressEvent
-  var loadstart: Event
+  var loadstart: ProgressEvent
   var progress: ProgressEvent
   var timeout: ProgressEvent
 }
@@ -17,11 +17,11 @@ trait XMLHttpRequestEventTargetEventMap extends js.Object {
 object XMLHttpRequestEventTargetEventMap {
   @scala.inline
   def apply(
-    abort: Event,
-    error: ErrorEvent,
-    load: Event,
+    abort: ProgressEvent,
+    error: ProgressEvent,
+    load: ProgressEvent,
     loadend: ProgressEvent,
-    loadstart: Event,
+    loadstart: ProgressEvent,
     progress: ProgressEvent,
     timeout: ProgressEvent
   ): XMLHttpRequestEventTargetEventMap = {
@@ -40,15 +40,15 @@ object XMLHttpRequestEventTargetEventMap {
         x
     }
     @scala.inline
-    def setAbort(value: Event): Self = this.set("abort", value.asInstanceOf[js.Any])
+    def setAbort(value: ProgressEvent): Self = this.set("abort", value.asInstanceOf[js.Any])
     @scala.inline
-    def setError(value: ErrorEvent): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setError(value: ProgressEvent): Self = this.set("error", value.asInstanceOf[js.Any])
     @scala.inline
-    def setLoad(value: Event): Self = this.set("load", value.asInstanceOf[js.Any])
+    def setLoad(value: ProgressEvent): Self = this.set("load", value.asInstanceOf[js.Any])
     @scala.inline
     def setLoadend(value: ProgressEvent): Self = this.set("loadend", value.asInstanceOf[js.Any])
     @scala.inline
-    def setLoadstart(value: Event): Self = this.set("loadstart", value.asInstanceOf[js.Any])
+    def setLoadstart(value: ProgressEvent): Self = this.set("loadstart", value.asInstanceOf[js.Any])
     @scala.inline
     def setProgress(value: ProgressEvent): Self = this.set("progress", value.asInstanceOf[js.Any])
     @scala.inline

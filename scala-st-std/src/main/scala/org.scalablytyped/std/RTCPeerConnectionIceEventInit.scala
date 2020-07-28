@@ -5,7 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RTCPeerConnectionIceEventInit extends EventInit {
-  var candidate: js.UndefOr[RTCIceCandidate] = js.undefined
+  var candidate: js.UndefOr[RTCIceCandidate | Null] = js.undefined
+  var url: js.UndefOr[java.lang.String | Null] = js.undefined
 }
 
 object RTCPeerConnectionIceEventInit {
@@ -29,6 +30,14 @@ object RTCPeerConnectionIceEventInit {
     def setCandidate(value: RTCIceCandidate): Self = this.set("candidate", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteCandidate: Self = this.set("candidate", js.undefined)
+    @scala.inline
+    def setCandidateNull: Self = this.set("candidate", null)
+    @scala.inline
+    def setUrl(value: java.lang.String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setUrlNull: Self = this.set("url", null)
   }
   
 }

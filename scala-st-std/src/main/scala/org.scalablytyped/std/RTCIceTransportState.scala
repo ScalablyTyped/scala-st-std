@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   - `org.scalablytyped`.std.stdStrings.connected
   - `org.scalablytyped`.std.stdStrings.completed
   - `org.scalablytyped`.std.stdStrings.disconnected
+  - `org.scalablytyped`.std.stdStrings.failed
   - `org.scalablytyped`.std.stdStrings.closed
 */
 trait RTCIceTransportState extends js.Object
@@ -25,6 +26,8 @@ object RTCIceTransportState {
   def connected: org.scalablytyped.std.stdStrings.connected = "connected".asInstanceOf[org.scalablytyped.std.stdStrings.connected]
   @scala.inline
   def disconnected: org.scalablytyped.std.stdStrings.disconnected = "disconnected".asInstanceOf[org.scalablytyped.std.stdStrings.disconnected]
+  @scala.inline
+  def failed: org.scalablytyped.std.stdStrings.failed = "failed".asInstanceOf[org.scalablytyped.std.stdStrings.failed]
   @scala.inline
   def `new`: org.scalablytyped.std.stdStrings.`new` = "new".asInstanceOf[org.scalablytyped.std.stdStrings.`new`]
 }

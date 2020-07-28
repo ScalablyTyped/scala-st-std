@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation._
 
 trait RTCRtpContributingSource extends js.Object {
   var audioLevel: js.UndefOr[Double] = js.undefined
-  var csrc: js.UndefOr[Double] = js.undefined
-  var timestamp: js.UndefOr[Double] = js.undefined
+  var source: Double
+  var timestamp: Double
 }
 
 object RTCRtpContributingSource {
   @scala.inline
-  def apply(): RTCRtpContributingSource = {
-    val __obj = js.Dynamic.literal()
+  def apply(source: Double, timestamp: Double): RTCRtpContributingSource = {
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpContributingSource]
   }
   @scala.inline
@@ -28,17 +28,13 @@ object RTCRtpContributingSource {
         x
     }
     @scala.inline
-    def setAudioLevel(value: Double): Self = this.set("audioLevel", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteAudioLevel: Self = this.set("audioLevel", js.undefined)
-    @scala.inline
-    def setCsrc(value: Double): Self = this.set("csrc", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteCsrc: Self = this.set("csrc", js.undefined)
+    def setSource(value: Double): Self = this.set("source", value.asInstanceOf[js.Any])
     @scala.inline
     def setTimestamp(value: Double): Self = this.set("timestamp", value.asInstanceOf[js.Any])
     @scala.inline
-    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+    def setAudioLevel(value: Double): Self = this.set("audioLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioLevel: Self = this.set("audioLevel", js.undefined)
   }
   
 }

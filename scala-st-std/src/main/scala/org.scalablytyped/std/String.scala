@@ -5,7 +5,7 @@ import org.scalablytyped.std.anon.Match
 import org.scalablytyped.std.anon.Replace
 import org.scalablytyped.std.anon.Search
 import org.scalablytyped.std.anon.Split
-import org.scalablytyped.std.anon.`2`
+import org.scalablytyped.std.anon.`0`
 import org.scalablytyped.std.stdStrings.NFC
 import org.scalablytyped.std.stdStrings.NFD
 import org.scalablytyped.std.stdStrings.NFKC
@@ -165,7 +165,7 @@ trait String
     * @param replacer A function that returns the replacement text.
     */
   def replace(
-    searchValue: `2`,
+    searchValue: `0`,
     replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
   ): java.lang.String = js.native
   /**

@@ -6,10 +6,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait HTMLProgressElement extends HTMLElement {
-  /**
-    * Retrieves a reference to the form that the object is embedded in.
-    */
-  val form: HTMLFormElement | Null = js.native
+  val labels: NodeListOf[HTMLLabelElement] = js.native
   /**
     * Defines the maximum, or "done" value for a progress element.
     */

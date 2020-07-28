@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DataTransferItemList extends /* name */ NumberDictionary[DataTransferItem] {
+  @JSName(js.Symbol.iterator)
+  var iterator: js.Function0[IterableIterator[File]] = js.native
   val length: Double = js.native
   def add(data: File): DataTransferItem | Null = js.native
   def add(data: java.lang.String, `type`: java.lang.String): DataTransferItem | Null = js.native

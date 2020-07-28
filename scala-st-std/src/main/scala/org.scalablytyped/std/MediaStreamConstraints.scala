@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait MediaStreamConstraints extends js.Object {
   var audio: js.UndefOr[scala.Boolean | MediaTrackConstraints] = js.undefined
+  var peerIdentity: js.UndefOr[java.lang.String] = js.undefined
   var video: js.UndefOr[scala.Boolean | MediaTrackConstraints] = js.undefined
 }
 
@@ -30,6 +31,10 @@ object MediaStreamConstraints {
     def setAudio(value: scala.Boolean | MediaTrackConstraints): Self = this.set("audio", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteAudio: Self = this.set("audio", js.undefined)
+    @scala.inline
+    def setPeerIdentity(value: java.lang.String): Self = this.set("peerIdentity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeerIdentity: Self = this.set("peerIdentity", js.undefined)
     @scala.inline
     def setVideo(value: scala.Boolean | MediaTrackConstraints): Self = this.set("video", value.asInstanceOf[js.Any])
     @scala.inline

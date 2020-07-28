@@ -10,8 +10,9 @@ trait MSPayloadBase extends RTCStats {
 
 object MSPayloadBase {
   @scala.inline
-  def apply(): MSPayloadBase = {
-    val __obj = js.Dynamic.literal()
+  def apply(id: java.lang.String, timestamp: Double, `type`: RTCStatsType): MSPayloadBase = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MSPayloadBase]
   }
   @scala.inline

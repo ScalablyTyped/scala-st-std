@@ -5,10 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait URLSearchParams extends js.Object {
-  /**
-    * iterate over key/value pairs
-    */
+trait URLSearchParams extends _BodyInit {
   @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[js.Tuple2[java.lang.String, java.lang.String]]] = js.native
   /**
@@ -20,9 +17,16 @@ trait URLSearchParams extends js.Object {
     */
   def delete(name: java.lang.String): Unit = js.native
   /**
-    * Returns an array of key, value pairs for every entry in the search params
+    * Returns an array of key, value pairs for every entry in the search params.
     */
   def entries(): IterableIterator[js.Tuple2[java.lang.String, java.lang.String]] = js.native
+  def forEach(
+    callbackfn: js.Function3[/* value */ java.lang.String, /* key */ java.lang.String, /* parent */ this.type, Unit]
+  ): Unit = js.native
+  def forEach(
+    callbackfn: js.Function3[/* value */ java.lang.String, /* key */ java.lang.String, /* parent */ this.type, Unit],
+    thisArg: js.Any
+  ): Unit = js.native
   /**
     * Returns the first value associated to the given search parameter.
     */
@@ -36,15 +40,16 @@ trait URLSearchParams extends js.Object {
     */
   def has(name: java.lang.String): scala.Boolean = js.native
   /**
-    * Returns a list of keys in the search params
+    * Returns a list of keys in the search params.
     */
   def keys(): IterableIterator[java.lang.String] = js.native
   /**
     * Sets the value associated to a given search parameter to the given value. If there were several values, delete the others.
     */
   def set(name: java.lang.String, value: java.lang.String): Unit = js.native
+  def sort(): Unit = js.native
   /**
-    * Returns a list of values in the search params
+    * Returns a list of values in the search params.
     */
   def values(): IterableIterator[java.lang.String] = js.native
 }

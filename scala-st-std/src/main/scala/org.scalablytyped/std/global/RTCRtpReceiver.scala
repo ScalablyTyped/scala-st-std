@@ -1,45 +1,38 @@
 package org.scalablytyped.std.global
 
 import org.scalablytyped.std.RTCRtpCapabilities
-import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.Instantiable3
+import org.scalablytyped.std.RTCRtpContributingSource
+import org.scalablytyped.std.RTCRtpReceiveParameters
+import org.scalablytyped.std.RTCRtpSynchronizationSource
+import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSGlobal("RTCRtpReceiver")
 @js.native
-class RTCRtpReceiver protected ()
+class RTCRtpReceiver ()
   extends org.scalablytyped.std.RTCRtpReceiver {
-  def this(transport: org.scalablytyped.std.RTCDtlsTransport, kind: java.lang.String) = this()
-  def this(transport: org.scalablytyped.std.RTCSrtpSdesTransport, kind: java.lang.String) = this()
-  def this(
-    transport: org.scalablytyped.std.RTCDtlsTransport,
-    kind: java.lang.String,
-    rtcpTransport: org.scalablytyped.std.RTCDtlsTransport
-  ) = this()
-  def this(
-    transport: org.scalablytyped.std.RTCSrtpSdesTransport,
-    kind: java.lang.String,
-    rtcpTransport: org.scalablytyped.std.RTCDtlsTransport
-  ) = this()
+  /* CompleteClass */
+  override val rtcpTransport: org.scalablytyped.std.RTCDtlsTransport | Null = js.native
+  /* CompleteClass */
+  override val track: org.scalablytyped.std.MediaStreamTrack = js.native
+  /* CompleteClass */
+  override val transport: org.scalablytyped.std.RTCDtlsTransport | Null = js.native
+  /* CompleteClass */
+  override def getContributingSources(): js.Array[RTCRtpContributingSource] = js.native
+  /* CompleteClass */
+  override def getParameters(): RTCRtpReceiveParameters = js.native
+  /* CompleteClass */
+  override def getStats(): js.Promise[org.scalablytyped.std.RTCStatsReport] = js.native
+  /* CompleteClass */
+  override def getSynchronizationSources(): js.Array[RTCRtpSynchronizationSource] = js.native
 }
 
 @JSGlobal("RTCRtpReceiver")
 @js.native
 object RTCRtpReceiver
-  extends Instantiable2[
-      (/* transport */ org.scalablytyped.std.RTCDtlsTransport) | (/* transport */ org.scalablytyped.std.RTCSrtpSdesTransport), 
-      /* kind */ java.lang.String, 
-      org.scalablytyped.std.RTCRtpReceiver
-    ]
-     with Instantiable3[
-      (/* transport */ org.scalablytyped.std.RTCDtlsTransport) | (/* transport */ org.scalablytyped.std.RTCSrtpSdesTransport), 
-      /* kind */ java.lang.String, 
-      /* rtcpTransport */ org.scalablytyped.std.RTCDtlsTransport, 
-      org.scalablytyped.std.RTCRtpReceiver
-    ] {
-  def getCapabilities(): RTCRtpCapabilities = js.native
+  extends Instantiable0[org.scalablytyped.std.RTCRtpReceiver] {
   def getCapabilities(kind: java.lang.String): RTCRtpCapabilities = js.native
 }
 

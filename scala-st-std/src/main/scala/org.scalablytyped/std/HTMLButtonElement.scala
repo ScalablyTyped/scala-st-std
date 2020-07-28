@@ -35,11 +35,11 @@ trait HTMLButtonElement extends HTMLElement {
     * Overrides the target attribute on a form element.
     */
   var formTarget: java.lang.String = js.native
+  val labels: NodeListOf[HTMLLabelElement] = js.native
   /**
     * Sets or retrieves the name of the object.
     */
   var name: java.lang.String = js.native
-  var status: js.Any = js.native
   /**
     * Gets the classification and default behavior of the button.
     */
@@ -64,6 +64,7 @@ trait HTMLButtonElement extends HTMLElement {
     * Returns whether a form will validate when it is submitted, without having to submit it.
     */
   def checkValidity(): scala.Boolean = js.native
+  def reportValidity(): scala.Boolean = js.native
   /**
     * Sets a custom error message that is displayed when a form is submitted.
     * @param error Sets a custom error message that is displayed when a form is submitted.

@@ -11,11 +11,11 @@ trait XMLHttpRequestEventMap extends XMLHttpRequestEventTargetEventMap {
 object XMLHttpRequestEventMap {
   @scala.inline
   def apply(
-    abort: Event,
-    error: ErrorEvent,
-    load: Event,
+    abort: ProgressEvent,
+    error: ProgressEvent,
+    load: ProgressEvent,
     loadend: ProgressEvent,
-    loadstart: Event,
+    loadstart: ProgressEvent,
     progress: ProgressEvent,
     readystatechange: Event,
     timeout: ProgressEvent

@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RTCDTMFToneChangeEventInit extends EventInit {
-  var tone: js.UndefOr[java.lang.String] = js.undefined
+  var tone: java.lang.String
 }
 
 object RTCDTMFToneChangeEventInit {
   @scala.inline
-  def apply(): RTCDTMFToneChangeEventInit = {
-    val __obj = js.Dynamic.literal()
+  def apply(tone: java.lang.String): RTCDTMFToneChangeEventInit = {
+    val __obj = js.Dynamic.literal(tone = tone.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCDTMFToneChangeEventInit]
   }
   @scala.inline
@@ -27,8 +27,6 @@ object RTCDTMFToneChangeEventInit {
     }
     @scala.inline
     def setTone(value: java.lang.String): Self = this.set("tone", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteTone: Self = this.set("tone", js.undefined)
   }
   
 }

@@ -1,6 +1,7 @@
 package org.scalablytyped.std.global
 
 import org.scalablytyped.std.PushEncryptionKeyName
+import org.scalablytyped.std.PushSubscriptionJSON
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +20,7 @@ class PushSubscription ()
   /* CompleteClass */
   override def getKey(name: PushEncryptionKeyName): org.scalablytyped.std.ArrayBuffer | Null = js.native
   /* CompleteClass */
-  override def toJSON(): js.Any = js.native
+  override def toJSON(): PushSubscriptionJSON = js.native
   /* CompleteClass */
   override def unsubscribe(): js.Promise[scala.Boolean] = js.native
 }

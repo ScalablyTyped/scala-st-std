@@ -1,6 +1,6 @@
 package org.scalablytyped.std.global
 
-import org.scalablytyped.std.ArrayBufferView
+import org.scalablytyped.std.BlobPart
 import org.scalablytyped.std.FilePropertyBag
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
@@ -12,37 +12,22 @@ import scala.scalajs.js.annotation._
 @js.native
 class File protected ()
   extends org.scalablytyped.std.File {
-  def this(
-    parts: js.Array[
-        org.scalablytyped.std.ArrayBuffer | ArrayBufferView | org.scalablytyped.std.Blob | java.lang.String
-      ],
-    filename: java.lang.String
-  ) = this()
-  def this(
-    parts: js.Array[
-        org.scalablytyped.std.ArrayBuffer | ArrayBufferView | org.scalablytyped.std.Blob | java.lang.String
-      ],
-    filename: java.lang.String,
-    properties: FilePropertyBag
-  ) = this()
+  def this(fileBits: js.Array[BlobPart], fileName: java.lang.String) = this()
+  def this(fileBits: js.Array[BlobPart], fileName: java.lang.String, options: FilePropertyBag) = this()
 }
 
 @JSGlobal("File")
 @js.native
 object File
   extends Instantiable2[
-      /* parts */ js.Array[
-        org.scalablytyped.std.ArrayBuffer | ArrayBufferView | org.scalablytyped.std.Blob | java.lang.String
-      ], 
-      /* filename */ java.lang.String, 
+      /* fileBits */ js.Array[BlobPart], 
+      /* fileName */ java.lang.String, 
       org.scalablytyped.std.File
     ]
      with Instantiable3[
-      /* parts */ js.Array[
-        org.scalablytyped.std.ArrayBuffer | ArrayBufferView | org.scalablytyped.std.Blob | java.lang.String
-      ], 
-      /* filename */ java.lang.String, 
-      /* properties */ FilePropertyBag, 
+      /* fileBits */ js.Array[BlobPart], 
+      /* fileName */ java.lang.String, 
+      /* options */ FilePropertyBag, 
       org.scalablytyped.std.File
     ]
 

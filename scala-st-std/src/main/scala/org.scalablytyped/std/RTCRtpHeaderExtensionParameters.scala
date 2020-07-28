@@ -5,15 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RTCRtpHeaderExtensionParameters extends js.Object {
-  var encrypt: js.UndefOr[scala.Boolean] = js.undefined
-  var id: js.UndefOr[Double] = js.undefined
-  var uri: js.UndefOr[java.lang.String] = js.undefined
+  var encrypted: js.UndefOr[scala.Boolean] = js.undefined
+  var id: Double
+  var uri: java.lang.String
 }
 
 object RTCRtpHeaderExtensionParameters {
   @scala.inline
-  def apply(): RTCRtpHeaderExtensionParameters = {
-    val __obj = js.Dynamic.literal()
+  def apply(id: Double, uri: java.lang.String): RTCRtpHeaderExtensionParameters = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpHeaderExtensionParameters]
   }
   @scala.inline
@@ -28,17 +28,13 @@ object RTCRtpHeaderExtensionParameters {
         x
     }
     @scala.inline
-    def setEncrypt(value: scala.Boolean): Self = this.set("encrypt", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteEncrypt: Self = this.set("encrypt", js.undefined)
-    @scala.inline
     def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
     @scala.inline
     def setUri(value: java.lang.String): Self = this.set("uri", value.asInstanceOf[js.Any])
     @scala.inline
-    def deleteUri: Self = this.set("uri", js.undefined)
+    def setEncrypted(value: scala.Boolean): Self = this.set("encrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncrypted: Self = this.set("encrypted", js.undefined)
   }
   
 }

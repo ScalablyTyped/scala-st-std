@@ -8,24 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("AudioParam")
 @js.native
 class AudioParam ()
-  extends org.scalablytyped.std.AudioParam {
-  /* CompleteClass */
-  override val defaultValue: Double = js.native
-  /* CompleteClass */
-  override var value: Double = js.native
-  /* CompleteClass */
-  override def cancelScheduledValues(cancelTime: Double): org.scalablytyped.std.AudioParam = js.native
-  /* CompleteClass */
-  override def exponentialRampToValueAtTime(value: Double, endTime: Double): org.scalablytyped.std.AudioParam = js.native
-  /* CompleteClass */
-  override def linearRampToValueAtTime(value: Double, endTime: Double): org.scalablytyped.std.AudioParam = js.native
-  /* CompleteClass */
-  override def setTargetAtTime(target: Double, startTime: Double, timeConstant: Double): org.scalablytyped.std.AudioParam = js.native
-  /* CompleteClass */
-  override def setValueAtTime(value: Double, startTime: Double): org.scalablytyped.std.AudioParam = js.native
-  /* CompleteClass */
-  override def setValueCurveAtTime(values: js.Array[Double], startTime: Double, duration: Double): org.scalablytyped.std.AudioParam = js.native
-}
+  extends org.scalablytyped.std.AudioParam
 
 @JSGlobal("AudioParam")
 @js.native

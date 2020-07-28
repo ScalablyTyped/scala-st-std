@@ -13,8 +13,9 @@ trait MSNetwork extends RTCStats {
 
 object MSNetwork {
   @scala.inline
-  def apply(): MSNetwork = {
-    val __obj = js.Dynamic.literal()
+  def apply(id: java.lang.String, timestamp: Double, `type`: RTCStatsType): MSNetwork = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MSNetwork]
   }
   @scala.inline

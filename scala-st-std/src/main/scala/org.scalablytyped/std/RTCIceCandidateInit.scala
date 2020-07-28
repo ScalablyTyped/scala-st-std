@@ -6,8 +6,9 @@ import scala.scalajs.js.annotation._
 
 trait RTCIceCandidateInit extends js.Object {
   var candidate: js.UndefOr[java.lang.String] = js.undefined
-  var sdpMLineIndex: js.UndefOr[Double] = js.undefined
-  var sdpMid: js.UndefOr[java.lang.String] = js.undefined
+  var sdpMLineIndex: js.UndefOr[Double | Null] = js.undefined
+  var sdpMid: js.UndefOr[java.lang.String | Null] = js.undefined
+  var usernameFragment: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object RTCIceCandidateInit {
@@ -36,9 +37,17 @@ object RTCIceCandidateInit {
     @scala.inline
     def deleteSdpMLineIndex: Self = this.set("sdpMLineIndex", js.undefined)
     @scala.inline
+    def setSdpMLineIndexNull: Self = this.set("sdpMLineIndex", null)
+    @scala.inline
     def setSdpMid(value: java.lang.String): Self = this.set("sdpMid", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteSdpMid: Self = this.set("sdpMid", js.undefined)
+    @scala.inline
+    def setSdpMidNull: Self = this.set("sdpMid", null)
+    @scala.inline
+    def setUsernameFragment(value: java.lang.String): Self = this.set("usernameFragment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsernameFragment: Self = this.set("usernameFragment", js.undefined)
   }
   
 }

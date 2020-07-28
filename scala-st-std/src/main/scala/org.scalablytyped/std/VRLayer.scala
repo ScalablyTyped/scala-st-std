@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait VRLayer extends js.Object {
-  var leftBounds: js.UndefOr[js.Array[Double] | Null] = js.undefined
-  var rightBounds: js.UndefOr[js.Array[Double] | Null] = js.undefined
+  var leftBounds: js.UndefOr[js.Array[Double] | Float32Array | Null] = js.undefined
+  var rightBounds: js.UndefOr[js.Array[Double] | Float32Array | Null] = js.undefined
   var source: js.UndefOr[HTMLCanvasElement | Null] = js.undefined
 }
 
@@ -30,7 +30,7 @@ object VRLayer {
     @scala.inline
     def setLeftBoundsVarargs(value: Double*): Self = this.set("leftBounds", js.Array(value :_*))
     @scala.inline
-    def setLeftBounds(value: js.Array[Double]): Self = this.set("leftBounds", value.asInstanceOf[js.Any])
+    def setLeftBounds(value: js.Array[Double] | Float32Array): Self = this.set("leftBounds", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteLeftBounds: Self = this.set("leftBounds", js.undefined)
     @scala.inline
@@ -38,7 +38,7 @@ object VRLayer {
     @scala.inline
     def setRightBoundsVarargs(value: Double*): Self = this.set("rightBounds", js.Array(value :_*))
     @scala.inline
-    def setRightBounds(value: js.Array[Double]): Self = this.set("rightBounds", value.asInstanceOf[js.Any])
+    def setRightBounds(value: js.Array[Double] | Float32Array): Self = this.set("rightBounds", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteRightBounds: Self = this.set("rightBounds", js.undefined)
     @scala.inline

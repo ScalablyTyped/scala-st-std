@@ -87,10 +87,6 @@ import org.scalablytyped.std.stdStrings.storage
 import org.scalablytyped.std.stdStrings.submit
 import org.scalablytyped.std.stdStrings.suspend
 import org.scalablytyped.std.stdStrings.timeupdate
-import org.scalablytyped.std.stdStrings.touchcancel
-import org.scalablytyped.std.stdStrings.touchend
-import org.scalablytyped.std.stdStrings.touchmove
-import org.scalablytyped.std.stdStrings.touchstart
 import org.scalablytyped.std.stdStrings.unload
 import org.scalablytyped.std.stdStrings.volumechange
 import org.scalablytyped.std.stdStrings.vrdisplayactivate
@@ -117,7 +113,8 @@ trait Window
      with GlobalEventHandlers
      with IDBEnvironment
      with WindowBase64
-     with GlobalFetch {
+     with GlobalFetch
+     with MessageEventSource {
   var Blob: Instantiable = js.native
   var URL: CreateObjectURL = js.native
   var URLSearchParams: InstantiableURLSearchParams = js.native
@@ -132,6 +129,7 @@ trait Window
   val doNotTrack: java.lang.String = js.native
   val document: Document = js.native
   var event: js.UndefOr[Event] = js.native
+  /** @deprecated */
   val external: External = js.native
   val frameElement: Element = js.native
   val frames: Window = js.native
@@ -1481,62 +1479,6 @@ trait Window
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_touchcancel(`type`: touchcancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_touchcancel(
-    `type`: touchcancel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_touchcancel(
-    `type`: touchcancel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_touchend(`type`: touchend, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_touchend(
-    `type`: touchend,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_touchend(
-    `type`: touchend,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_touchmove(`type`: touchmove, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_touchmove(
-    `type`: touchmove,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_touchmove(
-    `type`: touchmove,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_touchstart(`type`: touchstart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_touchstart(
-    `type`: touchstart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_touchstart(
-    `type`: touchstart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
   def addEventListener_unload(`type`: unload, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_unload(
@@ -1717,6 +1659,7 @@ trait Window
   def alert(message: js.Any): Unit = js.native
   def blur(): Unit = js.native
   def cancelAnimationFrame(handle: Double): Unit = js.native
+  /** @deprecated */
   def captureEvents(): Unit = js.native
   def close(): Unit = js.native
   def confirm(): scala.Boolean = js.native
@@ -1931,10 +1874,6 @@ trait Window
     columnNumber: Double,
     error: Error
   ): Unit = js.native
-  def ontouchcancel(ev: TouchEvent): js.Any = js.native
-  def ontouchend(ev: TouchEvent): js.Any = js.native
-  def ontouchmove(ev: TouchEvent): js.Any = js.native
-  def ontouchstart(ev: TouchEvent): js.Any = js.native
   def open(): Window | Null = js.native
   def open(
     url: js.UndefOr[scala.Nothing],
@@ -1998,6 +1937,7 @@ trait Window
   def prompt(message: js.UndefOr[scala.Nothing], _default: java.lang.String): java.lang.String | Null = js.native
   def prompt(message: java.lang.String): java.lang.String | Null = js.native
   def prompt(message: java.lang.String, _default: java.lang.String): java.lang.String | Null = js.native
+  /** @deprecated */
   def releaseEvents(): Unit = js.native
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
@@ -3207,62 +3147,6 @@ trait Window
   def removeEventListener_timeupdate(
     `type`: timeupdate,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_touchcancel(`type`: touchcancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_touchcancel(
-    `type`: touchcancel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_touchcancel(
-    `type`: touchcancel,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_touchend(`type`: touchend, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_touchend(
-    `type`: touchend,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_touchend(
-    `type`: touchend,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_touchmove(`type`: touchmove, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_touchmove(
-    `type`: touchmove,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_touchmove(
-    `type`: touchmove,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_touchstart(`type`: touchstart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_touchstart(
-    `type`: touchstart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_touchstart(
-    `type`: touchstart,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")

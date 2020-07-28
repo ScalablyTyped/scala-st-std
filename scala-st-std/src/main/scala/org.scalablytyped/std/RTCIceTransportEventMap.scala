@@ -5,17 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RTCIceTransportEventMap extends js.Object {
-  var candidatepairchange: RTCIceCandidatePairChangedEvent
-  var icestatechange: RTCIceTransportStateChangedEvent
+  var gatheringstatechange: Event
+  var selectedcandidatepairchange: Event
+  var statechange: Event
 }
 
 object RTCIceTransportEventMap {
   @scala.inline
-  def apply(
-    candidatepairchange: RTCIceCandidatePairChangedEvent,
-    icestatechange: RTCIceTransportStateChangedEvent
-  ): RTCIceTransportEventMap = {
-    val __obj = js.Dynamic.literal(candidatepairchange = candidatepairchange.asInstanceOf[js.Any], icestatechange = icestatechange.asInstanceOf[js.Any])
+  def apply(gatheringstatechange: Event, selectedcandidatepairchange: Event, statechange: Event): RTCIceTransportEventMap = {
+    val __obj = js.Dynamic.literal(gatheringstatechange = gatheringstatechange.asInstanceOf[js.Any], selectedcandidatepairchange = selectedcandidatepairchange.asInstanceOf[js.Any], statechange = statechange.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCIceTransportEventMap]
   }
   @scala.inline
@@ -30,9 +28,11 @@ object RTCIceTransportEventMap {
         x
     }
     @scala.inline
-    def setCandidatepairchange(value: RTCIceCandidatePairChangedEvent): Self = this.set("candidatepairchange", value.asInstanceOf[js.Any])
+    def setGatheringstatechange(value: Event): Self = this.set("gatheringstatechange", value.asInstanceOf[js.Any])
     @scala.inline
-    def setIcestatechange(value: RTCIceTransportStateChangedEvent): Self = this.set("icestatechange", value.asInstanceOf[js.Any])
+    def setSelectedcandidatepairchange(value: Event): Self = this.set("selectedcandidatepairchange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatechange(value: Event): Self = this.set("statechange", value.asInstanceOf[js.Any])
   }
   
 }

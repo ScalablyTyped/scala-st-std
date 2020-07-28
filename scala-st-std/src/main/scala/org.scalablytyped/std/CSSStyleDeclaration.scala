@@ -146,6 +146,8 @@ trait CSSStyleDeclaration
   var gridTemplateRows: java.lang.String | Null = js.native
   var height: java.lang.String | Null = js.native
   var imeMode: java.lang.String | Null = js.native
+  @JSName(js.Symbol.iterator)
+  var iterator: js.Function0[IterableIterator[java.lang.String]] = js.native
   var justifyContent: java.lang.String | Null = js.native
   var justifyItems: java.lang.String | Null = js.native
   var justifySelf: java.lang.String | Null = js.native

@@ -23,8 +23,9 @@ trait RTCMediaStreamTrackStats extends RTCStats {
 
 object RTCMediaStreamTrackStats {
   @scala.inline
-  def apply(): RTCMediaStreamTrackStats = {
-    val __obj = js.Dynamic.literal()
+  def apply(id: java.lang.String, timestamp: Double, `type`: RTCStatsType): RTCMediaStreamTrackStats = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCMediaStreamTrackStats]
   }
   @scala.inline

@@ -5,15 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RTCSessionDescription extends js.Object {
-  var sdp: java.lang.String | Null
-  var `type`: RTCSdpType | Null
+  val sdp: java.lang.String
+  val `type`: RTCSdpType
   def toJSON(): js.Any
 }
 
 object RTCSessionDescription {
   @scala.inline
-  def apply(toJSON: () => js.Any): RTCSessionDescription = {
-    val __obj = js.Dynamic.literal(toJSON = js.Any.fromFunction0(toJSON))
+  def apply(sdp: java.lang.String, toJSON: () => js.Any, `type`: RTCSdpType): RTCSessionDescription = {
+    val __obj = js.Dynamic.literal(sdp = sdp.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCSessionDescription]
   }
   @scala.inline
@@ -28,15 +29,11 @@ object RTCSessionDescription {
         x
     }
     @scala.inline
-    def setToJSON(value: () => js.Any): Self = this.set("toJSON", js.Any.fromFunction0(value))
-    @scala.inline
     def setSdp(value: java.lang.String): Self = this.set("sdp", value.asInstanceOf[js.Any])
     @scala.inline
-    def setSdpNull: Self = this.set("sdp", null)
+    def setToJSON(value: () => js.Any): Self = this.set("toJSON", js.Any.fromFunction0(value))
     @scala.inline
     def setType(value: RTCSdpType): Self = this.set("type", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setTypeNull: Self = this.set("type", null)
   }
   
 }

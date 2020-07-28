@@ -5,17 +5,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait StorageEventInit extends EventInit {
-  var key: js.UndefOr[java.lang.String] = js.undefined
-  var newValue: js.UndefOr[java.lang.String] = js.undefined
-  var oldValue: js.UndefOr[java.lang.String] = js.undefined
-  var storageArea: js.UndefOr[Storage] = js.undefined
-  var url: java.lang.String
+  var key: js.UndefOr[java.lang.String | Null] = js.undefined
+  var newValue: js.UndefOr[java.lang.String | Null] = js.undefined
+  var oldValue: js.UndefOr[java.lang.String | Null] = js.undefined
+  var storageArea: js.UndefOr[Storage | Null] = js.undefined
+  var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object StorageEventInit {
   @scala.inline
-  def apply(url: java.lang.String): StorageEventInit = {
-    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+  def apply(): StorageEventInit = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StorageEventInit]
   }
   @scala.inline
@@ -30,23 +30,33 @@ object StorageEventInit {
         x
     }
     @scala.inline
-    def setUrl(value: java.lang.String): Self = this.set("url", value.asInstanceOf[js.Any])
-    @scala.inline
     def setKey(value: java.lang.String): Self = this.set("key", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setKeyNull: Self = this.set("key", null)
     @scala.inline
     def setNewValue(value: java.lang.String): Self = this.set("newValue", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteNewValue: Self = this.set("newValue", js.undefined)
     @scala.inline
+    def setNewValueNull: Self = this.set("newValue", null)
+    @scala.inline
     def setOldValue(value: java.lang.String): Self = this.set("oldValue", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteOldValue: Self = this.set("oldValue", js.undefined)
     @scala.inline
+    def setOldValueNull: Self = this.set("oldValue", null)
+    @scala.inline
     def setStorageArea(value: Storage): Self = this.set("storageArea", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteStorageArea: Self = this.set("storageArea", js.undefined)
+    @scala.inline
+    def setStorageAreaNull: Self = this.set("storageArea", null)
+    @scala.inline
+    def setUrl(value: java.lang.String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
   }
   
 }

@@ -46,6 +46,7 @@ trait HTMLImageElement extends HTMLElement {
   /**
     * Sets or retrieves a Uniform Resource Identifier (URI) to a long description of the object.
     */
+  /** @deprecated */
   var longDesc: java.lang.String = js.native
   /** @deprecated */
   var lowsrc: java.lang.String = js.native

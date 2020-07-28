@@ -33,8 +33,9 @@ trait MSVideoRecvPayload
 
 object MSVideoRecvPayload {
   @scala.inline
-  def apply(): MSVideoRecvPayload = {
-    val __obj = js.Dynamic.literal()
+  def apply(id: java.lang.String, timestamp: Double, `type`: RTCStatsType): MSVideoRecvPayload = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MSVideoRecvPayload]
   }
   @scala.inline

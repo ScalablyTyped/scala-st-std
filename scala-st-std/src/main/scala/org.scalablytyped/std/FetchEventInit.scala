@@ -6,15 +6,16 @@ import scala.scalajs.js.annotation._
 
 trait FetchEventInit extends EventInit {
   var clientId: js.UndefOr[java.lang.String] = js.undefined
+  var preloadResponse: js.Promise[_]
   var request: Request
-  var reservedClientId: js.UndefOr[java.lang.String] = js.undefined
+  var resultingClientId: js.UndefOr[java.lang.String] = js.undefined
   var targetClientId: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object FetchEventInit {
   @scala.inline
-  def apply(request: Request): FetchEventInit = {
-    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
+  def apply(preloadResponse: js.Promise[_], request: Request): FetchEventInit = {
+    val __obj = js.Dynamic.literal(preloadResponse = preloadResponse.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchEventInit]
   }
   @scala.inline
@@ -29,15 +30,17 @@ object FetchEventInit {
         x
     }
     @scala.inline
+    def setPreloadResponse(value: js.Promise[_]): Self = this.set("preloadResponse", value.asInstanceOf[js.Any])
+    @scala.inline
     def setRequest(value: Request): Self = this.set("request", value.asInstanceOf[js.Any])
     @scala.inline
     def setClientId(value: java.lang.String): Self = this.set("clientId", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteClientId: Self = this.set("clientId", js.undefined)
     @scala.inline
-    def setReservedClientId(value: java.lang.String): Self = this.set("reservedClientId", value.asInstanceOf[js.Any])
+    def setResultingClientId(value: java.lang.String): Self = this.set("resultingClientId", value.asInstanceOf[js.Any])
     @scala.inline
-    def deleteReservedClientId: Self = this.set("reservedClientId", js.undefined)
+    def deleteResultingClientId: Self = this.set("resultingClientId", js.undefined)
     @scala.inline
     def setTargetClientId(value: java.lang.String): Self = this.set("targetClientId", value.asInstanceOf[js.Any])
     @scala.inline

@@ -9,6 +9,7 @@ trait HTMLOutputElement extends HTMLElement {
   var defaultValue: java.lang.String = js.native
   val form: HTMLFormElement | Null = js.native
   val htmlFor: DOMTokenList = js.native
+  val labels: NodeListOf[HTMLLabelElement] = js.native
   var name: java.lang.String = js.native
   val `type`: java.lang.String = js.native
   val validationMessage: java.lang.String = js.native

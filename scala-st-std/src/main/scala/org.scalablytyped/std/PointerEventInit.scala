@@ -10,8 +10,10 @@ trait PointerEventInit extends MouseEventInit {
   var pointerId: js.UndefOr[Double] = js.undefined
   var pointerType: js.UndefOr[java.lang.String] = js.undefined
   var pressure: js.UndefOr[Double] = js.undefined
+  var tangentialPressure: js.UndefOr[Double] = js.undefined
   var tiltX: js.UndefOr[Double] = js.undefined
   var tiltY: js.UndefOr[Double] = js.undefined
+  var twist: js.UndefOr[Double] = js.undefined
   var width: js.UndefOr[Double] = js.undefined
 }
 
@@ -53,6 +55,10 @@ object PointerEventInit {
     @scala.inline
     def deletePressure: Self = this.set("pressure", js.undefined)
     @scala.inline
+    def setTangentialPressure(value: Double): Self = this.set("tangentialPressure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTangentialPressure: Self = this.set("tangentialPressure", js.undefined)
+    @scala.inline
     def setTiltX(value: Double): Self = this.set("tiltX", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteTiltX: Self = this.set("tiltX", js.undefined)
@@ -60,6 +66,10 @@ object PointerEventInit {
     def setTiltY(value: Double): Self = this.set("tiltY", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteTiltY: Self = this.set("tiltY", js.undefined)
+    @scala.inline
+    def setTwist(value: Double): Self = this.set("twist", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTwist: Self = this.set("twist", js.undefined)
     @scala.inline
     def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
     @scala.inline

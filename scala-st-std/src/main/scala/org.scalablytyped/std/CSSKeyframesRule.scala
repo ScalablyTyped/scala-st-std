@@ -8,8 +8,8 @@ trait CSSKeyframesRule extends CSSRule {
   val cssRules: CSSRuleList
   var name: java.lang.String
   def appendRule(rule: java.lang.String): Unit
-  def deleteRule(rule: java.lang.String): Unit
-  def findRule(rule: java.lang.String): CSSKeyframeRule | Null
+  def deleteRule(select: java.lang.String): Unit
+  def findRule(select: java.lang.String): CSSKeyframeRule | Null
 }
 
 object CSSKeyframesRule {

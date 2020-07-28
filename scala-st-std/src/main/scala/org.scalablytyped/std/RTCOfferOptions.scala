@@ -4,11 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RTCOfferOptions extends js.Object {
+trait RTCOfferOptions extends RTCOfferAnswerOptions {
   var iceRestart: js.UndefOr[scala.Boolean] = js.undefined
-  var offerToReceiveAudio: js.UndefOr[Double] = js.undefined
-  var offerToReceiveVideo: js.UndefOr[Double] = js.undefined
-  var voiceActivityDetection: js.UndefOr[scala.Boolean] = js.undefined
+  var offerToReceiveAudio: js.UndefOr[scala.Boolean] = js.undefined
+  var offerToReceiveVideo: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object RTCOfferOptions {
@@ -33,17 +32,13 @@ object RTCOfferOptions {
     @scala.inline
     def deleteIceRestart: Self = this.set("iceRestart", js.undefined)
     @scala.inline
-    def setOfferToReceiveAudio(value: Double): Self = this.set("offerToReceiveAudio", value.asInstanceOf[js.Any])
+    def setOfferToReceiveAudio(value: scala.Boolean): Self = this.set("offerToReceiveAudio", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteOfferToReceiveAudio: Self = this.set("offerToReceiveAudio", js.undefined)
     @scala.inline
-    def setOfferToReceiveVideo(value: Double): Self = this.set("offerToReceiveVideo", value.asInstanceOf[js.Any])
+    def setOfferToReceiveVideo(value: scala.Boolean): Self = this.set("offerToReceiveVideo", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteOfferToReceiveVideo: Self = this.set("offerToReceiveVideo", js.undefined)
-    @scala.inline
-    def setVoiceActivityDetection(value: scala.Boolean): Self = this.set("voiceActivityDetection", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteVoiceActivityDetection: Self = this.set("voiceActivityDetection", js.undefined)
   }
   
 }

@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Response extends Body {
-  val body: ReadableStream | Null
   val headers: Headers
   val ok: scala.Boolean
   val redirected: scala.Boolean
   val status: Double
   val statusText: java.lang.String
+  val trailer: js.Promise[Headers]
   val `type`: ResponseType
   val url: java.lang.String
 }
@@ -29,10 +29,11 @@ object Response {
     status: Double,
     statusText: java.lang.String,
     text: () => js.Promise[java.lang.String],
+    trailer: js.Promise[Headers],
     `type`: ResponseType,
     url: java.lang.String
   ): Response = {
-    val __obj = js.Dynamic.literal(arrayBuffer = js.Any.fromFunction0(arrayBuffer), blob = js.Any.fromFunction0(blob), bodyUsed = bodyUsed.asInstanceOf[js.Any], formData = js.Any.fromFunction0(formData), headers = headers.asInstanceOf[js.Any], json = js.Any.fromFunction0(json), ok = ok.asInstanceOf[js.Any], redirected = redirected.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any], text = js.Any.fromFunction0(text), url = url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(arrayBuffer = js.Any.fromFunction0(arrayBuffer), blob = js.Any.fromFunction0(blob), bodyUsed = bodyUsed.asInstanceOf[js.Any], formData = js.Any.fromFunction0(formData), headers = headers.asInstanceOf[js.Any], json = js.Any.fromFunction0(json), ok = ok.asInstanceOf[js.Any], redirected = redirected.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any], text = js.Any.fromFunction0(text), trailer = trailer.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response]
   }
@@ -58,13 +59,11 @@ object Response {
     @scala.inline
     def setStatusText(value: java.lang.String): Self = this.set("statusText", value.asInstanceOf[js.Any])
     @scala.inline
+    def setTrailer(value: js.Promise[Headers]): Self = this.set("trailer", value.asInstanceOf[js.Any])
+    @scala.inline
     def setType(value: ResponseType): Self = this.set("type", value.asInstanceOf[js.Any])
     @scala.inline
     def setUrl(value: java.lang.String): Self = this.set("url", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setBody(value: ReadableStream): Self = this.set("body", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setBodyNull: Self = this.set("body", null)
   }
   
 }

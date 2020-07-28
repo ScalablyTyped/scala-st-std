@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
 trait AnimationEvent extends Event {
   val animationName: java.lang.String = js.native
   val elapsedTime: Double = js.native
+  val pseudoElement: java.lang.String = js.native
 }
 

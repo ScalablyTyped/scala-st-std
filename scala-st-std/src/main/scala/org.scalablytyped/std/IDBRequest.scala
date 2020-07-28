@@ -7,13 +7,34 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IDBRequest extends EventTarget {
-  val error: DOMException = js.native
+  /**
+    * When a request is completed, returns the error (a DOMException), or null if the request succeeded. Throws
+    * a "InvalidStateError" DOMException if the request is still pending.
+    */
+  val error: DOMException | Null = js.native
   var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var onsuccess: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  /**
+    * Returns "pending" until a request is complete,
+    * then returns "done".
+    */
   val readyState: IDBRequestReadyState = js.native
+  /**
+    * When a request is completed, returns the result,
+    * or undefined if the request failed. Throws a
+    * "InvalidStateError" DOMException if the request is still pending.
+    */
   val result: js.Any = js.native
+  /**
+    * Returns the IDBObjectStore, IDBIndex, or IDBCursor the request was made against, or null if is was an open
+    * request.
+    */
   val source: IDBObjectStore | IDBIndex | IDBCursor = js.native
-  val transaction: IDBTransaction = js.native
+  /**
+    * Returns the IDBTransaction the request was made within.
+    * If this as an open request, then it returns an upgrade transaction while it is running, or null otherwise.
+    */
+  val transaction: IDBTransaction | Null = js.native
   @JSName("addEventListener")
   def addEventListener_error(
     `type`: org.scalablytyped.std.stdStrings.error,

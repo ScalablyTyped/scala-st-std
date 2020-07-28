@@ -16,8 +16,9 @@ trait RTCTransportStats extends RTCStats {
 
 object RTCTransportStats {
   @scala.inline
-  def apply(): RTCTransportStats = {
-    val __obj = js.Dynamic.literal()
+  def apply(id: java.lang.String, timestamp: Double, `type`: RTCStatsType): RTCTransportStats = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCTransportStats]
   }
   @scala.inline

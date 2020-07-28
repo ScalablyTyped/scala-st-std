@@ -11,17 +11,17 @@ import scala.scalajs.js.annotation._
 @js.native
 class TransitionEvent protected ()
   extends org.scalablytyped.std.TransitionEvent {
-  def this(typeArg: java.lang.String) = this()
-  def this(typeArg: java.lang.String, eventInitDict: TransitionEventInit) = this()
+  def this(`type`: java.lang.String) = this()
+  def this(`type`: java.lang.String, transitionEventInitDict: TransitionEventInit) = this()
 }
 
 @JSGlobal("TransitionEvent")
 @js.native
 object TransitionEvent
-  extends Instantiable1[/* typeArg */ java.lang.String, org.scalablytyped.std.TransitionEvent]
+  extends Instantiable1[/* type */ java.lang.String, org.scalablytyped.std.TransitionEvent]
      with Instantiable2[
-      /* typeArg */ java.lang.String, 
-      /* eventInitDict */ TransitionEventInit, 
+      /* type */ java.lang.String, 
+      /* transitionEventInitDict */ TransitionEventInit, 
       org.scalablytyped.std.TransitionEvent
     ]
 

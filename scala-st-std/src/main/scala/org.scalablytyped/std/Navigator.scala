@@ -15,7 +15,8 @@ trait Navigator
      with NavigatorBeacon
      with NavigatorConcurrentHardware
      with NavigatorUserMedia
-     with NavigatorLanguage {
+     with NavigatorLanguage
+     with NavigatorStorage {
   val activeVRDisplays: js.Array[VRDisplay] = js.native
   val authentication: WebAuthentication = js.native
   val cookieEnabled: scala.Boolean = js.native

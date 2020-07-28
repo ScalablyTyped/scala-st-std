@@ -6,9 +6,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait HTMLLegendElement extends HTMLElement {
-  /**
-    * Retrieves a reference to the form that the object is embedded in.
-    */
   /** @deprecated */
   var align: java.lang.String = js.native
   /**

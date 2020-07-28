@@ -6,12 +6,13 @@ import scala.scalajs.js.annotation._
 
 trait MessagePortEventMap extends js.Object {
   var message: MessageEvent
+  var messageerror: MessageEvent
 }
 
 object MessagePortEventMap {
   @scala.inline
-  def apply(message: MessageEvent): MessagePortEventMap = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+  def apply(message: MessageEvent, messageerror: MessageEvent): MessagePortEventMap = {
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], messageerror = messageerror.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessagePortEventMap]
   }
   @scala.inline
@@ -27,6 +28,8 @@ object MessagePortEventMap {
     }
     @scala.inline
     def setMessage(value: MessageEvent): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMessageerror(value: MessageEvent): Self = this.set("messageerror", value.asInstanceOf[js.Any])
   }
   
 }
