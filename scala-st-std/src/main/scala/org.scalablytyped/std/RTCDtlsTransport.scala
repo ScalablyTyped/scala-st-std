@@ -23,7 +23,13 @@ trait RTCDtlsTransport
   def addEventListener_dtlsstatechange(
     `type`: dtlsstatechange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDtlsTransportStateChangedEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_dtlsstatechange(
+    `type`: dtlsstatechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDtlsTransportStateChangedEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -31,7 +37,13 @@ trait RTCDtlsTransport
   def addEventListener_error(
     `type`: error,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   def getLocalParameters(): RTCDtlsParameters = js.native
   def getRemoteCertificates(): js.Array[ArrayBuffer] = js.native
@@ -45,7 +57,13 @@ trait RTCDtlsTransport
   def removeEventListener_dtlsstatechange(
     `type`: dtlsstatechange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDtlsTransportStateChangedEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_dtlsstatechange(
+    `type`: dtlsstatechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDtlsTransportStateChangedEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -53,7 +71,13 @@ trait RTCDtlsTransport
   def removeEventListener_error(
     `type`: error,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   def start(remoteParameters: RTCDtlsParameters): Unit = js.native
   def stop(): Unit = js.native

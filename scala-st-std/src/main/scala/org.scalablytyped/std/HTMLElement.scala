@@ -99,7 +99,13 @@ trait HTMLElement extends Element {
   def addEventListener_MSContentZoom(
     `type`: MSContentZoom,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_MSContentZoom(
+    `type`: MSContentZoom,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSManipulationStateChanged(
@@ -110,7 +116,13 @@ trait HTMLElement extends Element {
   def addEventListener_MSManipulationStateChanged(
     `type`: MSManipulationStateChanged,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSManipulationEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_MSManipulationStateChanged(
+    `type`: MSManipulationStateChanged,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSManipulationEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
@@ -118,7 +130,13 @@ trait HTMLElement extends Element {
   def addEventListener_abort(
     `type`: abort,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_abort(
+    `type`: abort,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_activate(`type`: activate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
@@ -126,7 +144,13 @@ trait HTMLElement extends Element {
   def addEventListener_activate(
     `type`: activate,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_activate(
+    `type`: activate,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_beforeactivate(`type`: beforeactivate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
@@ -134,7 +158,13 @@ trait HTMLElement extends Element {
   def addEventListener_beforeactivate(
     `type`: beforeactivate,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_beforeactivate(
+    `type`: beforeactivate,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_beforecopy(`type`: beforecopy, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _]): Unit = js.native
@@ -142,7 +172,13 @@ trait HTMLElement extends Element {
   def addEventListener_beforecopy(
     `type`: beforecopy,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_beforecopy(
+    `type`: beforecopy,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_beforecut(`type`: beforecut, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _]): Unit = js.native
@@ -150,7 +186,13 @@ trait HTMLElement extends Element {
   def addEventListener_beforecut(
     `type`: beforecut,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_beforecut(
+    `type`: beforecut,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_beforedeactivate(`type`: beforedeactivate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
@@ -158,7 +200,13 @@ trait HTMLElement extends Element {
   def addEventListener_beforedeactivate(
     `type`: beforedeactivate,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_beforedeactivate(
+    `type`: beforedeactivate,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_beforepaste(`type`: beforepaste, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _]): Unit = js.native
@@ -166,7 +214,13 @@ trait HTMLElement extends Element {
   def addEventListener_beforepaste(
     `type`: beforepaste,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_beforepaste(
+    `type`: beforepaste,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_blur(`type`: blur, listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]): Unit = js.native
@@ -174,7 +228,13 @@ trait HTMLElement extends Element {
   def addEventListener_blur(
     `type`: blur,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_blur(
+    `type`: blur,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_canplay(`type`: canplay, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -182,7 +242,13 @@ trait HTMLElement extends Element {
   def addEventListener_canplay(
     `type`: canplay,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_canplay(
+    `type`: canplay,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_canplaythrough(`type`: canplaythrough, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -190,7 +256,13 @@ trait HTMLElement extends Element {
   def addEventListener_canplaythrough(
     `type`: canplaythrough,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_canplaythrough(
+    `type`: canplaythrough,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_change(`type`: change, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -198,7 +270,13 @@ trait HTMLElement extends Element {
   def addEventListener_change(
     `type`: change,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_change(
+    `type`: change,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_click(`type`: click, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -206,7 +284,13 @@ trait HTMLElement extends Element {
   def addEventListener_click(
     `type`: click,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_click(
+    `type`: click,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_contextmenu(`type`: contextmenu, listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]): Unit = js.native
@@ -214,7 +298,13 @@ trait HTMLElement extends Element {
   def addEventListener_contextmenu(
     `type`: contextmenu,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_contextmenu(
+    `type`: contextmenu,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_copy(`type`: copy, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _]): Unit = js.native
@@ -222,7 +312,13 @@ trait HTMLElement extends Element {
   def addEventListener_copy(
     `type`: copy,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_copy(
+    `type`: copy,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_cuechange(`type`: cuechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -230,7 +326,13 @@ trait HTMLElement extends Element {
   def addEventListener_cuechange(
     `type`: cuechange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_cuechange(
+    `type`: cuechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_cut(`type`: cut, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _]): Unit = js.native
@@ -238,7 +340,13 @@ trait HTMLElement extends Element {
   def addEventListener_cut(
     `type`: cut,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_cut(
+    `type`: cut,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dblclick(`type`: dblclick, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -246,7 +354,13 @@ trait HTMLElement extends Element {
   def addEventListener_dblclick(
     `type`: dblclick,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_dblclick(
+    `type`: dblclick,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_deactivate(`type`: deactivate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
@@ -254,7 +368,13 @@ trait HTMLElement extends Element {
   def addEventListener_deactivate(
     `type`: deactivate,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_deactivate(
+    `type`: deactivate,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_drag(`type`: drag, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]): Unit = js.native
@@ -262,7 +382,13 @@ trait HTMLElement extends Element {
   def addEventListener_drag(
     `type`: drag,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_drag(
+    `type`: drag,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dragend(`type`: dragend, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]): Unit = js.native
@@ -270,7 +396,13 @@ trait HTMLElement extends Element {
   def addEventListener_dragend(
     `type`: dragend,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_dragend(
+    `type`: dragend,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dragenter(`type`: dragenter, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]): Unit = js.native
@@ -278,7 +410,13 @@ trait HTMLElement extends Element {
   def addEventListener_dragenter(
     `type`: dragenter,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_dragenter(
+    `type`: dragenter,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dragleave(`type`: dragleave, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]): Unit = js.native
@@ -286,7 +424,13 @@ trait HTMLElement extends Element {
   def addEventListener_dragleave(
     `type`: dragleave,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_dragleave(
+    `type`: dragleave,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dragover(`type`: dragover, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]): Unit = js.native
@@ -294,7 +438,13 @@ trait HTMLElement extends Element {
   def addEventListener_dragover(
     `type`: dragover,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_dragover(
+    `type`: dragover,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dragstart(`type`: dragstart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]): Unit = js.native
@@ -302,7 +452,13 @@ trait HTMLElement extends Element {
   def addEventListener_dragstart(
     `type`: dragstart,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_dragstart(
+    `type`: dragstart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_drop(`type`: drop, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]): Unit = js.native
@@ -310,7 +466,13 @@ trait HTMLElement extends Element {
   def addEventListener_drop(
     `type`: drop,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_drop(
+    `type`: drop,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_durationchange(`type`: durationchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -318,7 +480,13 @@ trait HTMLElement extends Element {
   def addEventListener_durationchange(
     `type`: durationchange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_durationchange(
+    `type`: durationchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_emptied(`type`: emptied, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -326,7 +494,13 @@ trait HTMLElement extends Element {
   def addEventListener_emptied(
     `type`: emptied,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_emptied(
+    `type`: emptied,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ended(`type`: ended, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _]): Unit = js.native
@@ -334,7 +508,13 @@ trait HTMLElement extends Element {
   def addEventListener_ended(
     `type`: ended,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_ended(
+    `type`: ended,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _]): Unit = js.native
@@ -342,7 +522,13 @@ trait HTMLElement extends Element {
   def addEventListener_error(
     `type`: error,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_focus(`type`: focus, listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]): Unit = js.native
@@ -350,7 +536,13 @@ trait HTMLElement extends Element {
   def addEventListener_focus(
     `type`: focus,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_focus(
+    `type`: focus,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_input(`type`: input, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -358,7 +550,13 @@ trait HTMLElement extends Element {
   def addEventListener_input(
     `type`: input,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_input(
+    `type`: input,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_invalid(`type`: invalid, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -366,7 +564,13 @@ trait HTMLElement extends Element {
   def addEventListener_invalid(
     `type`: invalid,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_invalid(
+    `type`: invalid,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_keydown(`type`: keydown, listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _]): Unit = js.native
@@ -374,7 +578,13 @@ trait HTMLElement extends Element {
   def addEventListener_keydown(
     `type`: keydown,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_keydown(
+    `type`: keydown,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_keypress(`type`: keypress, listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _]): Unit = js.native
@@ -382,7 +592,13 @@ trait HTMLElement extends Element {
   def addEventListener_keypress(
     `type`: keypress,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_keypress(
+    `type`: keypress,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_keyup(`type`: keyup, listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _]): Unit = js.native
@@ -390,7 +606,13 @@ trait HTMLElement extends Element {
   def addEventListener_keyup(
     `type`: keyup,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_keyup(
+    `type`: keyup,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_load(`type`: load, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -398,7 +620,13 @@ trait HTMLElement extends Element {
   def addEventListener_load(
     `type`: load,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_load(
+    `type`: load,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_loadeddata(`type`: loadeddata, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -406,7 +634,13 @@ trait HTMLElement extends Element {
   def addEventListener_loadeddata(
     `type`: loadeddata,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_loadeddata(
+    `type`: loadeddata,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_loadedmetadata(`type`: loadedmetadata, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -414,7 +648,13 @@ trait HTMLElement extends Element {
   def addEventListener_loadedmetadata(
     `type`: loadedmetadata,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_loadedmetadata(
+    `type`: loadedmetadata,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_loadstart(`type`: loadstart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -422,7 +662,13 @@ trait HTMLElement extends Element {
   def addEventListener_loadstart(
     `type`: loadstart,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_loadstart(
+    `type`: loadstart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mousedown(`type`: mousedown, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -430,7 +676,13 @@ trait HTMLElement extends Element {
   def addEventListener_mousedown(
     `type`: mousedown,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_mousedown(
+    `type`: mousedown,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mouseenter(`type`: mouseenter, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -438,7 +690,13 @@ trait HTMLElement extends Element {
   def addEventListener_mouseenter(
     `type`: mouseenter,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_mouseenter(
+    `type`: mouseenter,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mouseleave(`type`: mouseleave, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -446,7 +704,13 @@ trait HTMLElement extends Element {
   def addEventListener_mouseleave(
     `type`: mouseleave,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_mouseleave(
+    `type`: mouseleave,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mousemove(`type`: mousemove, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -454,7 +718,13 @@ trait HTMLElement extends Element {
   def addEventListener_mousemove(
     `type`: mousemove,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_mousemove(
+    `type`: mousemove,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mouseout(`type`: mouseout, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -462,7 +732,13 @@ trait HTMLElement extends Element {
   def addEventListener_mouseout(
     `type`: mouseout,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_mouseout(
+    `type`: mouseout,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mouseover(`type`: mouseover, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -470,7 +746,13 @@ trait HTMLElement extends Element {
   def addEventListener_mouseover(
     `type`: mouseover,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_mouseover(
+    `type`: mouseover,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mouseup(`type`: mouseup, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -478,7 +760,13 @@ trait HTMLElement extends Element {
   def addEventListener_mouseup(
     `type`: mouseup,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_mouseup(
+    `type`: mouseup,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mousewheel(`type`: mousewheel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, _]): Unit = js.native
@@ -486,7 +774,13 @@ trait HTMLElement extends Element {
   def addEventListener_mousewheel(
     `type`: mousewheel,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_mousewheel(
+    `type`: mousewheel,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_paste(`type`: paste, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _]): Unit = js.native
@@ -494,7 +788,13 @@ trait HTMLElement extends Element {
   def addEventListener_paste(
     `type`: paste,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_paste(
+    `type`: paste,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_pause(`type`: pause, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -502,7 +802,13 @@ trait HTMLElement extends Element {
   def addEventListener_pause(
     `type`: pause,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_pause(
+    `type`: pause,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_play(`type`: play, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -510,7 +816,13 @@ trait HTMLElement extends Element {
   def addEventListener_play(
     `type`: play,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_play(
+    `type`: play,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_playing(`type`: playing, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -518,7 +830,13 @@ trait HTMLElement extends Element {
   def addEventListener_playing(
     `type`: playing,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_playing(
+    `type`: playing,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_progress(`type`: progress, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]): Unit = js.native
@@ -526,7 +844,13 @@ trait HTMLElement extends Element {
   def addEventListener_progress(
     `type`: progress,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_progress(
+    `type`: progress,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ratechange(`type`: ratechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -534,7 +858,13 @@ trait HTMLElement extends Element {
   def addEventListener_ratechange(
     `type`: ratechange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_ratechange(
+    `type`: ratechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_reset(`type`: reset, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -542,7 +872,13 @@ trait HTMLElement extends Element {
   def addEventListener_reset(
     `type`: reset,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_reset(
+    `type`: reset,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_scroll(`type`: scroll, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
@@ -550,7 +886,13 @@ trait HTMLElement extends Element {
   def addEventListener_scroll(
     `type`: scroll,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_scroll(
+    `type`: scroll,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_seeked(`type`: seeked, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -558,7 +900,13 @@ trait HTMLElement extends Element {
   def addEventListener_seeked(
     `type`: seeked,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_seeked(
+    `type`: seeked,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_seeking(`type`: seeking, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -566,7 +914,13 @@ trait HTMLElement extends Element {
   def addEventListener_seeking(
     `type`: seeking,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_seeking(
+    `type`: seeking,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_select(`type`: select, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
@@ -574,7 +928,13 @@ trait HTMLElement extends Element {
   def addEventListener_select(
     `type`: select,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_select(
+    `type`: select,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_selectstart(`type`: selectstart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -582,7 +942,13 @@ trait HTMLElement extends Element {
   def addEventListener_selectstart(
     `type`: selectstart,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectstart(
+    `type`: selectstart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_stalled(`type`: stalled, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -590,7 +956,13 @@ trait HTMLElement extends Element {
   def addEventListener_stalled(
     `type`: stalled,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_stalled(
+    `type`: stalled,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_submit(`type`: submit, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -598,7 +970,13 @@ trait HTMLElement extends Element {
   def addEventListener_submit(
     `type`: submit,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_submit(
+    `type`: submit,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_suspend(`type`: suspend, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -606,7 +984,13 @@ trait HTMLElement extends Element {
   def addEventListener_suspend(
     `type`: suspend,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_suspend(
+    `type`: suspend,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_timeupdate(`type`: timeupdate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -614,7 +998,13 @@ trait HTMLElement extends Element {
   def addEventListener_timeupdate(
     `type`: timeupdate,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_timeupdate(
+    `type`: timeupdate,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_volumechange(`type`: volumechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -622,7 +1012,13 @@ trait HTMLElement extends Element {
   def addEventListener_volumechange(
     `type`: volumechange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_volumechange(
+    `type`: volumechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_waiting(`type`: waiting, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -630,7 +1026,13 @@ trait HTMLElement extends Element {
   def addEventListener_waiting(
     `type`: waiting,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_waiting(
+    `type`: waiting,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   def blur(): Unit = js.native
   def click(): Unit = js.native
@@ -710,7 +1112,13 @@ trait HTMLElement extends Element {
   def removeEventListener_MSContentZoom(
     `type`: MSContentZoom,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSContentZoom(
+    `type`: MSContentZoom,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSManipulationStateChanged(
@@ -721,7 +1129,13 @@ trait HTMLElement extends Element {
   def removeEventListener_MSManipulationStateChanged(
     `type`: MSManipulationStateChanged,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSManipulationEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSManipulationStateChanged(
+    `type`: MSManipulationStateChanged,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSManipulationEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
@@ -729,7 +1143,13 @@ trait HTMLElement extends Element {
   def removeEventListener_abort(
     `type`: abort,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_abort(
+    `type`: abort,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_activate(`type`: activate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
@@ -737,7 +1157,13 @@ trait HTMLElement extends Element {
   def removeEventListener_activate(
     `type`: activate,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_activate(
+    `type`: activate,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_beforeactivate(`type`: beforeactivate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
@@ -745,7 +1171,13 @@ trait HTMLElement extends Element {
   def removeEventListener_beforeactivate(
     `type`: beforeactivate,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_beforeactivate(
+    `type`: beforeactivate,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_beforecopy(`type`: beforecopy, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _]): Unit = js.native
@@ -753,7 +1185,13 @@ trait HTMLElement extends Element {
   def removeEventListener_beforecopy(
     `type`: beforecopy,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_beforecopy(
+    `type`: beforecopy,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_beforecut(`type`: beforecut, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _]): Unit = js.native
@@ -761,7 +1199,13 @@ trait HTMLElement extends Element {
   def removeEventListener_beforecut(
     `type`: beforecut,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_beforecut(
+    `type`: beforecut,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_beforedeactivate(`type`: beforedeactivate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
@@ -769,7 +1213,13 @@ trait HTMLElement extends Element {
   def removeEventListener_beforedeactivate(
     `type`: beforedeactivate,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_beforedeactivate(
+    `type`: beforedeactivate,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_beforepaste(`type`: beforepaste, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _]): Unit = js.native
@@ -777,7 +1227,13 @@ trait HTMLElement extends Element {
   def removeEventListener_beforepaste(
     `type`: beforepaste,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_beforepaste(
+    `type`: beforepaste,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_blur(`type`: blur, listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]): Unit = js.native
@@ -785,7 +1241,13 @@ trait HTMLElement extends Element {
   def removeEventListener_blur(
     `type`: blur,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_blur(
+    `type`: blur,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_canplay(`type`: canplay, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -793,7 +1255,13 @@ trait HTMLElement extends Element {
   def removeEventListener_canplay(
     `type`: canplay,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_canplay(
+    `type`: canplay,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_canplaythrough(`type`: canplaythrough, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -801,7 +1269,13 @@ trait HTMLElement extends Element {
   def removeEventListener_canplaythrough(
     `type`: canplaythrough,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_canplaythrough(
+    `type`: canplaythrough,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_change(`type`: change, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -809,7 +1283,13 @@ trait HTMLElement extends Element {
   def removeEventListener_change(
     `type`: change,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_change(
+    `type`: change,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_click(`type`: click, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -817,7 +1297,13 @@ trait HTMLElement extends Element {
   def removeEventListener_click(
     `type`: click,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_click(
+    `type`: click,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_contextmenu(`type`: contextmenu, listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]): Unit = js.native
@@ -825,7 +1311,13 @@ trait HTMLElement extends Element {
   def removeEventListener_contextmenu(
     `type`: contextmenu,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_contextmenu(
+    `type`: contextmenu,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_copy(`type`: copy, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _]): Unit = js.native
@@ -833,7 +1325,13 @@ trait HTMLElement extends Element {
   def removeEventListener_copy(
     `type`: copy,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_copy(
+    `type`: copy,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_cuechange(`type`: cuechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -841,7 +1339,13 @@ trait HTMLElement extends Element {
   def removeEventListener_cuechange(
     `type`: cuechange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_cuechange(
+    `type`: cuechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_cut(`type`: cut, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _]): Unit = js.native
@@ -849,7 +1353,13 @@ trait HTMLElement extends Element {
   def removeEventListener_cut(
     `type`: cut,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_cut(
+    `type`: cut,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_dblclick(`type`: dblclick, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -857,7 +1367,13 @@ trait HTMLElement extends Element {
   def removeEventListener_dblclick(
     `type`: dblclick,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_dblclick(
+    `type`: dblclick,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_deactivate(`type`: deactivate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
@@ -865,7 +1381,13 @@ trait HTMLElement extends Element {
   def removeEventListener_deactivate(
     `type`: deactivate,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_deactivate(
+    `type`: deactivate,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_drag(`type`: drag, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]): Unit = js.native
@@ -873,7 +1395,13 @@ trait HTMLElement extends Element {
   def removeEventListener_drag(
     `type`: drag,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_drag(
+    `type`: drag,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_dragend(`type`: dragend, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]): Unit = js.native
@@ -881,7 +1409,13 @@ trait HTMLElement extends Element {
   def removeEventListener_dragend(
     `type`: dragend,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_dragend(
+    `type`: dragend,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_dragenter(`type`: dragenter, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]): Unit = js.native
@@ -889,7 +1423,13 @@ trait HTMLElement extends Element {
   def removeEventListener_dragenter(
     `type`: dragenter,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_dragenter(
+    `type`: dragenter,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_dragleave(`type`: dragleave, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]): Unit = js.native
@@ -897,7 +1437,13 @@ trait HTMLElement extends Element {
   def removeEventListener_dragleave(
     `type`: dragleave,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_dragleave(
+    `type`: dragleave,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_dragover(`type`: dragover, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]): Unit = js.native
@@ -905,7 +1451,13 @@ trait HTMLElement extends Element {
   def removeEventListener_dragover(
     `type`: dragover,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_dragover(
+    `type`: dragover,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_dragstart(`type`: dragstart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]): Unit = js.native
@@ -913,7 +1465,13 @@ trait HTMLElement extends Element {
   def removeEventListener_dragstart(
     `type`: dragstart,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_dragstart(
+    `type`: dragstart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_drop(`type`: drop, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]): Unit = js.native
@@ -921,7 +1479,13 @@ trait HTMLElement extends Element {
   def removeEventListener_drop(
     `type`: drop,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_drop(
+    `type`: drop,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_durationchange(`type`: durationchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -929,7 +1493,13 @@ trait HTMLElement extends Element {
   def removeEventListener_durationchange(
     `type`: durationchange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_durationchange(
+    `type`: durationchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_emptied(`type`: emptied, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -937,7 +1507,13 @@ trait HTMLElement extends Element {
   def removeEventListener_emptied(
     `type`: emptied,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_emptied(
+    `type`: emptied,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_ended(`type`: ended, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _]): Unit = js.native
@@ -945,7 +1521,13 @@ trait HTMLElement extends Element {
   def removeEventListener_ended(
     `type`: ended,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_ended(
+    `type`: ended,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _]): Unit = js.native
@@ -953,7 +1535,13 @@ trait HTMLElement extends Element {
   def removeEventListener_error(
     `type`: error,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_focus(`type`: focus, listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]): Unit = js.native
@@ -961,7 +1549,13 @@ trait HTMLElement extends Element {
   def removeEventListener_focus(
     `type`: focus,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_focus(
+    `type`: focus,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_input(`type`: input, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -969,7 +1563,13 @@ trait HTMLElement extends Element {
   def removeEventListener_input(
     `type`: input,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_input(
+    `type`: input,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_invalid(`type`: invalid, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -977,7 +1577,13 @@ trait HTMLElement extends Element {
   def removeEventListener_invalid(
     `type`: invalid,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_invalid(
+    `type`: invalid,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_keydown(`type`: keydown, listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _]): Unit = js.native
@@ -985,7 +1591,13 @@ trait HTMLElement extends Element {
   def removeEventListener_keydown(
     `type`: keydown,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_keydown(
+    `type`: keydown,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_keypress(`type`: keypress, listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _]): Unit = js.native
@@ -993,7 +1605,13 @@ trait HTMLElement extends Element {
   def removeEventListener_keypress(
     `type`: keypress,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_keypress(
+    `type`: keypress,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_keyup(`type`: keyup, listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _]): Unit = js.native
@@ -1001,7 +1619,13 @@ trait HTMLElement extends Element {
   def removeEventListener_keyup(
     `type`: keyup,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_keyup(
+    `type`: keyup,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_load(`type`: load, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1009,7 +1633,13 @@ trait HTMLElement extends Element {
   def removeEventListener_load(
     `type`: load,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_load(
+    `type`: load,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_loadeddata(`type`: loadeddata, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1017,7 +1647,13 @@ trait HTMLElement extends Element {
   def removeEventListener_loadeddata(
     `type`: loadeddata,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_loadeddata(
+    `type`: loadeddata,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_loadedmetadata(`type`: loadedmetadata, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1025,7 +1661,13 @@ trait HTMLElement extends Element {
   def removeEventListener_loadedmetadata(
     `type`: loadedmetadata,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_loadedmetadata(
+    `type`: loadedmetadata,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_loadstart(`type`: loadstart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1033,7 +1675,13 @@ trait HTMLElement extends Element {
   def removeEventListener_loadstart(
     `type`: loadstart,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_loadstart(
+    `type`: loadstart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_mousedown(`type`: mousedown, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -1041,7 +1689,13 @@ trait HTMLElement extends Element {
   def removeEventListener_mousedown(
     `type`: mousedown,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_mousedown(
+    `type`: mousedown,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_mouseenter(`type`: mouseenter, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -1049,7 +1703,13 @@ trait HTMLElement extends Element {
   def removeEventListener_mouseenter(
     `type`: mouseenter,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_mouseenter(
+    `type`: mouseenter,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_mouseleave(`type`: mouseleave, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -1057,7 +1717,13 @@ trait HTMLElement extends Element {
   def removeEventListener_mouseleave(
     `type`: mouseleave,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_mouseleave(
+    `type`: mouseleave,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_mousemove(`type`: mousemove, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -1065,7 +1731,13 @@ trait HTMLElement extends Element {
   def removeEventListener_mousemove(
     `type`: mousemove,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_mousemove(
+    `type`: mousemove,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_mouseout(`type`: mouseout, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -1073,7 +1745,13 @@ trait HTMLElement extends Element {
   def removeEventListener_mouseout(
     `type`: mouseout,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_mouseout(
+    `type`: mouseout,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_mouseover(`type`: mouseover, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -1081,7 +1759,13 @@ trait HTMLElement extends Element {
   def removeEventListener_mouseover(
     `type`: mouseover,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_mouseover(
+    `type`: mouseover,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_mouseup(`type`: mouseup, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -1089,7 +1773,13 @@ trait HTMLElement extends Element {
   def removeEventListener_mouseup(
     `type`: mouseup,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_mouseup(
+    `type`: mouseup,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_mousewheel(`type`: mousewheel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, _]): Unit = js.native
@@ -1097,7 +1787,13 @@ trait HTMLElement extends Element {
   def removeEventListener_mousewheel(
     `type`: mousewheel,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_mousewheel(
+    `type`: mousewheel,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_paste(`type`: paste, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _]): Unit = js.native
@@ -1105,7 +1801,13 @@ trait HTMLElement extends Element {
   def removeEventListener_paste(
     `type`: paste,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_paste(
+    `type`: paste,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_pause(`type`: pause, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1113,7 +1815,13 @@ trait HTMLElement extends Element {
   def removeEventListener_pause(
     `type`: pause,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pause(
+    `type`: pause,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_play(`type`: play, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1121,7 +1829,13 @@ trait HTMLElement extends Element {
   def removeEventListener_play(
     `type`: play,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_play(
+    `type`: play,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_playing(`type`: playing, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1129,7 +1843,13 @@ trait HTMLElement extends Element {
   def removeEventListener_playing(
     `type`: playing,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_playing(
+    `type`: playing,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_progress(`type`: progress, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]): Unit = js.native
@@ -1137,7 +1857,13 @@ trait HTMLElement extends Element {
   def removeEventListener_progress(
     `type`: progress,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_progress(
+    `type`: progress,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_ratechange(`type`: ratechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1145,7 +1871,13 @@ trait HTMLElement extends Element {
   def removeEventListener_ratechange(
     `type`: ratechange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_ratechange(
+    `type`: ratechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_reset(`type`: reset, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1153,7 +1885,13 @@ trait HTMLElement extends Element {
   def removeEventListener_reset(
     `type`: reset,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_reset(
+    `type`: reset,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_scroll(`type`: scroll, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
@@ -1161,7 +1899,13 @@ trait HTMLElement extends Element {
   def removeEventListener_scroll(
     `type`: scroll,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_scroll(
+    `type`: scroll,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_seeked(`type`: seeked, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1169,7 +1913,13 @@ trait HTMLElement extends Element {
   def removeEventListener_seeked(
     `type`: seeked,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_seeked(
+    `type`: seeked,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_seeking(`type`: seeking, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1177,7 +1927,13 @@ trait HTMLElement extends Element {
   def removeEventListener_seeking(
     `type`: seeking,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_seeking(
+    `type`: seeking,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_select(`type`: select, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
@@ -1185,7 +1941,13 @@ trait HTMLElement extends Element {
   def removeEventListener_select(
     `type`: select,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_select(
+    `type`: select,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_selectstart(`type`: selectstart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1193,7 +1955,13 @@ trait HTMLElement extends Element {
   def removeEventListener_selectstart(
     `type`: selectstart,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectstart(
+    `type`: selectstart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_stalled(`type`: stalled, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1201,7 +1969,13 @@ trait HTMLElement extends Element {
   def removeEventListener_stalled(
     `type`: stalled,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_stalled(
+    `type`: stalled,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_submit(`type`: submit, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1209,7 +1983,13 @@ trait HTMLElement extends Element {
   def removeEventListener_submit(
     `type`: submit,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_submit(
+    `type`: submit,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_suspend(`type`: suspend, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1217,7 +1997,13 @@ trait HTMLElement extends Element {
   def removeEventListener_suspend(
     `type`: suspend,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_suspend(
+    `type`: suspend,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_timeupdate(`type`: timeupdate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1225,7 +2011,13 @@ trait HTMLElement extends Element {
   def removeEventListener_timeupdate(
     `type`: timeupdate,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_timeupdate(
+    `type`: timeupdate,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_volumechange(`type`: volumechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1233,7 +2025,13 @@ trait HTMLElement extends Element {
   def removeEventListener_volumechange(
     `type`: volumechange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_volumechange(
+    `type`: volumechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_waiting(`type`: waiting, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1241,7 +2039,13 @@ trait HTMLElement extends Element {
   def removeEventListener_waiting(
     `type`: waiting,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_waiting(
+    `type`: waiting,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
 }
 

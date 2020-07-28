@@ -26,7 +26,13 @@ trait HTMLMarqueeElement extends HTMLElement {
   def addEventListener_bounce(
     `type`: bounce,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_bounce(
+    `type`: bounce,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_finish(`type`: finish, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -34,7 +40,13 @@ trait HTMLMarqueeElement extends HTMLElement {
   def addEventListener_finish(
     `type`: finish,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_finish(
+    `type`: finish,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_start(`type`: start, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -42,7 +54,13 @@ trait HTMLMarqueeElement extends HTMLElement {
   def addEventListener_start(
     `type`: start,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_start(
+    `type`: start,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   def onbounce(ev: Event): js.Any = js.native
   def onfinish(ev: Event): js.Any = js.native
@@ -53,7 +71,13 @@ trait HTMLMarqueeElement extends HTMLElement {
   def removeEventListener_bounce(
     `type`: bounce,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_bounce(
+    `type`: bounce,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_finish(`type`: finish, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -61,7 +85,13 @@ trait HTMLMarqueeElement extends HTMLElement {
   def removeEventListener_finish(
     `type`: finish,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_finish(
+    `type`: finish,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_start(`type`: start, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -69,7 +99,13 @@ trait HTMLMarqueeElement extends HTMLElement {
   def removeEventListener_start(
     `type`: start,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_start(
+    `type`: start,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   def start(): Unit = js.native
   def stop(): Unit = js.native

@@ -4,19 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CustomEvent extends Event {
-  val detail: js.Any
-  def initCustomEvent(
-    typeArg: java.lang.String,
-    canBubbleArg: scala.Boolean,
-    cancelableArg: scala.Boolean,
-    detailArg: js.Any
-  ): Unit
+trait CustomEvent[T] extends Event {
+  val detail: T
+  def initCustomEvent(typeArg: java.lang.String, canBubbleArg: scala.Boolean, cancelableArg: scala.Boolean, detailArg: T): Unit
 }
 
 object CustomEvent {
   @scala.inline
-  def apply(
+  def apply[T](
     AT_TARGET: Double,
     BUBBLING_PHASE: Double,
     CAPTURING_PHASE: Double,
@@ -26,9 +21,9 @@ object CustomEvent {
     currentTarget: EventTarget,
     deepPath: () => js.Array[EventTarget],
     defaultPrevented: scala.Boolean,
-    detail: js.Any,
+    detail: T,
     eventPhase: Double,
-    initCustomEvent: (java.lang.String, scala.Boolean, scala.Boolean, js.Any) => Unit,
+    initCustomEvent: (java.lang.String, scala.Boolean, scala.Boolean, T) => Unit,
     initEvent: (java.lang.String, scala.Boolean, scala.Boolean) => Unit,
     isTrusted: scala.Boolean,
     preventDefault: () => Unit,
@@ -39,13 +34,13 @@ object CustomEvent {
     target: EventTarget,
     timeStamp: Double,
     `type`: java.lang.String
-  ): CustomEvent = {
+  ): CustomEvent[T] = {
     val __obj = js.Dynamic.literal(AT_TARGET = AT_TARGET.asInstanceOf[js.Any], BUBBLING_PHASE = BUBBLING_PHASE.asInstanceOf[js.Any], CAPTURING_PHASE = CAPTURING_PHASE.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelBubble = cancelBubble.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], deepPath = js.Any.fromFunction0(deepPath), defaultPrevented = defaultPrevented.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], initCustomEvent = js.Any.fromFunction4(initCustomEvent), initEvent = js.Any.fromFunction3(initEvent), isTrusted = isTrusted.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), returnValue = returnValue.asInstanceOf[js.Any], scoped = scoped.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CustomEvent]
+    __obj.asInstanceOf[CustomEvent[T]]
   }
   @scala.inline
-  implicit class CustomEventOps[Self <: CustomEvent] (val x: Self) extends AnyVal {
+  implicit class CustomEventOps[Self <: CustomEvent[_], T] (val x: Self with CustomEvent[T]) extends AnyVal {
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
     @scala.inline
@@ -56,9 +51,9 @@ object CustomEvent {
         x
     }
     @scala.inline
-    def setDetail(value: js.Any): Self = this.set("detail", value.asInstanceOf[js.Any])
+    def setDetail(value: T): Self = this.set("detail", value.asInstanceOf[js.Any])
     @scala.inline
-    def setInitCustomEvent(value: (java.lang.String, scala.Boolean, scala.Boolean, js.Any) => Unit): Self = this.set("initCustomEvent", js.Any.fromFunction4(value))
+    def setInitCustomEvent(value: (java.lang.String, scala.Boolean, scala.Boolean, T) => Unit): Self = this.set("initCustomEvent", js.Any.fromFunction4(value))
   }
   
 }

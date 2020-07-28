@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 trait PaymentDetailsModifier extends js.Object {
   var additionalDisplayItems: js.UndefOr[js.Array[PaymentItem]] = js.undefined
   var data: js.UndefOr[js.Any] = js.undefined
-  var supportedMethods: js.Array[java.lang.String]
+  var supportedMethods: java.lang.String | js.Array[java.lang.String]
   var total: js.UndefOr[PaymentItem] = js.undefined
 }
 
 object PaymentDetailsModifier {
   @scala.inline
-  def apply(supportedMethods: js.Array[java.lang.String]): PaymentDetailsModifier = {
+  def apply(supportedMethods: java.lang.String | js.Array[java.lang.String]): PaymentDetailsModifier = {
     val __obj = js.Dynamic.literal(supportedMethods = supportedMethods.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentDetailsModifier]
   }
@@ -31,7 +31,7 @@ object PaymentDetailsModifier {
     @scala.inline
     def setSupportedMethodsVarargs(value: java.lang.String*): Self = this.set("supportedMethods", js.Array(value :_*))
     @scala.inline
-    def setSupportedMethods(value: js.Array[java.lang.String]): Self = this.set("supportedMethods", value.asInstanceOf[js.Any])
+    def setSupportedMethods(value: java.lang.String | js.Array[java.lang.String]): Self = this.set("supportedMethods", value.asInstanceOf[js.Any])
     @scala.inline
     def setAdditionalDisplayItemsVarargs(value: PaymentItem*): Self = this.set("additionalDisplayItems", js.Array(value :_*))
     @scala.inline

@@ -12,10 +12,22 @@ trait XMLHttpRequestUpload
   override def addEventListener(
     `type`: java.lang.String,
     listener: js.UndefOr[EventListenerOrEventListenerObject],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(
+    `type`: java.lang.String,
+    listener: js.UndefOr[EventListenerOrEventListenerObject],
     options: scala.Boolean
   ): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(
+    `type`: java.lang.String,
+    listener: js.UndefOr[EventListenerOrEventListenerObject],
+    options: EventListenerOptions
+  ): Unit = js.native
   /* InferMemberOverrides */
   override def removeEventListener(
     `type`: java.lang.String,

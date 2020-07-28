@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait WebAuthentication extends js.Object {
-  def getAssertion(assertionChallenge: js.Any): js.Promise[WebAuthnAssertion] = js.native
-  def getAssertion(assertionChallenge: js.Any, options: AssertionOptions): js.Promise[WebAuthnAssertion] = js.native
+  def getAssertion(assertionChallenge: BufferSource): js.Promise[WebAuthnAssertion] = js.native
+  def getAssertion(assertionChallenge: BufferSource, options: AssertionOptions): js.Promise[WebAuthnAssertion] = js.native
   def makeCredential(
     accountInformation: Account,
     cryptoParameters: js.Array[ScopedCredentialParameters],
-    attestationChallenge: js.Any
+    attestationChallenge: BufferSource
   ): js.Promise[ScopedCredentialInfo] = js.native
   def makeCredential(
     accountInformation: Account,
     cryptoParameters: js.Array[ScopedCredentialParameters],
-    attestationChallenge: js.Any,
+    attestationChallenge: BufferSource,
     options: ScopedCredentialOptions
   ): js.Promise[ScopedCredentialInfo] = js.native
 }

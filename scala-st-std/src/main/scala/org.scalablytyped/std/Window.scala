@@ -169,7 +169,13 @@ trait Window
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, useCapture: scala.Boolean): Unit = js.native
+  override def addEventListener(
+    `type`: java.lang.String,
+    listener: EventListenerOrEventListenerObject,
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSGestureChange(
     `type`: MSGestureChange,
@@ -179,7 +185,13 @@ trait Window
   def addEventListener_MSGestureChange(
     `type`: MSGestureChange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_MSGestureChange(
+    `type`: MSGestureChange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSGestureDoubleTap(
@@ -190,7 +202,13 @@ trait Window
   def addEventListener_MSGestureDoubleTap(
     `type`: MSGestureDoubleTap,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_MSGestureDoubleTap(
+    `type`: MSGestureDoubleTap,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSGestureEnd(`type`: MSGestureEnd, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _]): Unit = js.native
@@ -198,7 +216,13 @@ trait Window
   def addEventListener_MSGestureEnd(
     `type`: MSGestureEnd,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_MSGestureEnd(
+    `type`: MSGestureEnd,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSGestureHold(
@@ -209,7 +233,13 @@ trait Window
   def addEventListener_MSGestureHold(
     `type`: MSGestureHold,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_MSGestureHold(
+    `type`: MSGestureHold,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSGestureStart(
@@ -220,7 +250,13 @@ trait Window
   def addEventListener_MSGestureStart(
     `type`: MSGestureStart,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_MSGestureStart(
+    `type`: MSGestureStart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSGestureTap(`type`: MSGestureTap, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _]): Unit = js.native
@@ -228,7 +264,13 @@ trait Window
   def addEventListener_MSGestureTap(
     `type`: MSGestureTap,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_MSGestureTap(
+    `type`: MSGestureTap,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSInertiaStart(
@@ -239,7 +281,13 @@ trait Window
   def addEventListener_MSInertiaStart(
     `type`: MSInertiaStart,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_MSInertiaStart(
+    `type`: MSInertiaStart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSPointerCancel(
@@ -250,7 +298,13 @@ trait Window
   def addEventListener_MSPointerCancel(
     `type`: MSPointerCancel,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_MSPointerCancel(
+    `type`: MSPointerCancel,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSPointerDown(
@@ -261,7 +315,13 @@ trait Window
   def addEventListener_MSPointerDown(
     `type`: MSPointerDown,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_MSPointerDown(
+    `type`: MSPointerDown,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSPointerEnter(
@@ -272,7 +332,13 @@ trait Window
   def addEventListener_MSPointerEnter(
     `type`: MSPointerEnter,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_MSPointerEnter(
+    `type`: MSPointerEnter,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSPointerLeave(
@@ -283,7 +349,13 @@ trait Window
   def addEventListener_MSPointerLeave(
     `type`: MSPointerLeave,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_MSPointerLeave(
+    `type`: MSPointerLeave,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSPointerMove(
@@ -294,7 +366,13 @@ trait Window
   def addEventListener_MSPointerMove(
     `type`: MSPointerMove,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_MSPointerMove(
+    `type`: MSPointerMove,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSPointerOut(`type`: MSPointerOut, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]): Unit = js.native
@@ -302,7 +380,13 @@ trait Window
   def addEventListener_MSPointerOut(
     `type`: MSPointerOut,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_MSPointerOut(
+    `type`: MSPointerOut,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSPointerOver(
@@ -313,7 +397,13 @@ trait Window
   def addEventListener_MSPointerOver(
     `type`: MSPointerOver,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_MSPointerOver(
+    `type`: MSPointerOver,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSPointerUp(`type`: MSPointerUp, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]): Unit = js.native
@@ -321,7 +411,13 @@ trait Window
   def addEventListener_MSPointerUp(
     `type`: MSPointerUp,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_MSPointerUp(
+    `type`: MSPointerUp,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
@@ -329,7 +425,13 @@ trait Window
   def addEventListener_abort(
     `type`: abort,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_abort(
+    `type`: abort,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_afterprint(`type`: afterprint, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -337,7 +439,13 @@ trait Window
   def addEventListener_afterprint(
     `type`: afterprint,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_afterprint(
+    `type`: afterprint,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_beforeprint(`type`: beforeprint, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -345,7 +453,13 @@ trait Window
   def addEventListener_beforeprint(
     `type`: beforeprint,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_beforeprint(
+    `type`: beforeprint,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_beforeunload(
@@ -356,7 +470,13 @@ trait Window
   def addEventListener_beforeunload(
     `type`: beforeunload,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ BeforeUnloadEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_beforeunload(
+    `type`: beforeunload,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ BeforeUnloadEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_blur(`type`: blur, listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]): Unit = js.native
@@ -364,7 +484,13 @@ trait Window
   def addEventListener_blur(
     `type`: blur,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_blur(
+    `type`: blur,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_canplay(`type`: canplay, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -372,7 +498,13 @@ trait Window
   def addEventListener_canplay(
     `type`: canplay,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_canplay(
+    `type`: canplay,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_canplaythrough(`type`: canplaythrough, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -380,7 +512,13 @@ trait Window
   def addEventListener_canplaythrough(
     `type`: canplaythrough,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_canplaythrough(
+    `type`: canplaythrough,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_change(`type`: change, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -388,7 +526,13 @@ trait Window
   def addEventListener_change(
     `type`: change,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_change(
+    `type`: change,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_click(`type`: click, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -396,7 +540,13 @@ trait Window
   def addEventListener_click(
     `type`: click,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_click(
+    `type`: click,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_compassneedscalibration(
@@ -407,7 +557,13 @@ trait Window
   def addEventListener_compassneedscalibration(
     `type`: compassneedscalibration,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_compassneedscalibration(
+    `type`: compassneedscalibration,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_contextmenu(`type`: contextmenu, listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]): Unit = js.native
@@ -415,7 +571,13 @@ trait Window
   def addEventListener_contextmenu(
     `type`: contextmenu,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_contextmenu(
+    `type`: contextmenu,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dblclick(`type`: dblclick, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -423,7 +585,13 @@ trait Window
   def addEventListener_dblclick(
     `type`: dblclick,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_dblclick(
+    `type`: dblclick,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_devicelight(
@@ -434,7 +602,13 @@ trait Window
   def addEventListener_devicelight(
     `type`: devicelight,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceLightEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_devicelight(
+    `type`: devicelight,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceLightEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_devicemotion(
@@ -445,7 +619,13 @@ trait Window
   def addEventListener_devicemotion(
     `type`: devicemotion,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_devicemotion(
+    `type`: devicemotion,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_deviceorientation(
@@ -456,7 +636,13 @@ trait Window
   def addEventListener_deviceorientation(
     `type`: deviceorientation,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_deviceorientation(
+    `type`: deviceorientation,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_drag(`type`: drag, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]): Unit = js.native
@@ -464,7 +650,13 @@ trait Window
   def addEventListener_drag(
     `type`: drag,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_drag(
+    `type`: drag,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dragend(`type`: dragend, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]): Unit = js.native
@@ -472,7 +664,13 @@ trait Window
   def addEventListener_dragend(
     `type`: dragend,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_dragend(
+    `type`: dragend,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dragenter(`type`: dragenter, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]): Unit = js.native
@@ -480,7 +678,13 @@ trait Window
   def addEventListener_dragenter(
     `type`: dragenter,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_dragenter(
+    `type`: dragenter,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dragleave(`type`: dragleave, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]): Unit = js.native
@@ -488,7 +692,13 @@ trait Window
   def addEventListener_dragleave(
     `type`: dragleave,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_dragleave(
+    `type`: dragleave,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dragover(`type`: dragover, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]): Unit = js.native
@@ -496,7 +706,13 @@ trait Window
   def addEventListener_dragover(
     `type`: dragover,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_dragover(
+    `type`: dragover,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dragstart(`type`: dragstart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]): Unit = js.native
@@ -504,7 +720,13 @@ trait Window
   def addEventListener_dragstart(
     `type`: dragstart,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_dragstart(
+    `type`: dragstart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_drop(`type`: drop, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]): Unit = js.native
@@ -512,7 +734,13 @@ trait Window
   def addEventListener_drop(
     `type`: drop,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_drop(
+    `type`: drop,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_durationchange(`type`: durationchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -520,7 +748,13 @@ trait Window
   def addEventListener_durationchange(
     `type`: durationchange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_durationchange(
+    `type`: durationchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_emptied(`type`: emptied, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -528,7 +762,13 @@ trait Window
   def addEventListener_emptied(
     `type`: emptied,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_emptied(
+    `type`: emptied,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ended(`type`: ended, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _]): Unit = js.native
@@ -536,7 +776,13 @@ trait Window
   def addEventListener_ended(
     `type`: ended,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_ended(
+    `type`: ended,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _]): Unit = js.native
@@ -544,7 +790,13 @@ trait Window
   def addEventListener_error(
     `type`: error,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_focus(`type`: focus, listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]): Unit = js.native
@@ -552,7 +804,13 @@ trait Window
   def addEventListener_focus(
     `type`: focus,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_focus(
+    `type`: focus,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_hashchange(`type`: hashchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ HashChangeEvent, _]): Unit = js.native
@@ -560,7 +818,13 @@ trait Window
   def addEventListener_hashchange(
     `type`: hashchange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ HashChangeEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_hashchange(
+    `type`: hashchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ HashChangeEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_input(`type`: input, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -568,7 +832,13 @@ trait Window
   def addEventListener_input(
     `type`: input,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_input(
+    `type`: input,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_invalid(`type`: invalid, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -576,7 +846,13 @@ trait Window
   def addEventListener_invalid(
     `type`: invalid,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_invalid(
+    `type`: invalid,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_keydown(`type`: keydown, listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _]): Unit = js.native
@@ -584,7 +860,13 @@ trait Window
   def addEventListener_keydown(
     `type`: keydown,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_keydown(
+    `type`: keydown,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_keypress(`type`: keypress, listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _]): Unit = js.native
@@ -592,7 +874,13 @@ trait Window
   def addEventListener_keypress(
     `type`: keypress,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_keypress(
+    `type`: keypress,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_keyup(`type`: keyup, listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _]): Unit = js.native
@@ -600,7 +888,13 @@ trait Window
   def addEventListener_keyup(
     `type`: keyup,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_keyup(
+    `type`: keyup,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_load(`type`: load, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -608,7 +902,13 @@ trait Window
   def addEventListener_load(
     `type`: load,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_load(
+    `type`: load,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_loadeddata(`type`: loadeddata, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -616,7 +916,13 @@ trait Window
   def addEventListener_loadeddata(
     `type`: loadeddata,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_loadeddata(
+    `type`: loadeddata,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_loadedmetadata(`type`: loadedmetadata, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -624,7 +930,13 @@ trait Window
   def addEventListener_loadedmetadata(
     `type`: loadedmetadata,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_loadedmetadata(
+    `type`: loadedmetadata,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_loadstart(`type`: loadstart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -632,7 +944,13 @@ trait Window
   def addEventListener_loadstart(
     `type`: loadstart,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_loadstart(
+    `type`: loadstart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_message(`type`: message, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _]): Unit = js.native
@@ -640,7 +958,13 @@ trait Window
   def addEventListener_message(
     `type`: message,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_message(
+    `type`: message,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mousedown(`type`: mousedown, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -648,7 +972,13 @@ trait Window
   def addEventListener_mousedown(
     `type`: mousedown,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_mousedown(
+    `type`: mousedown,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mouseenter(`type`: mouseenter, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -656,7 +986,13 @@ trait Window
   def addEventListener_mouseenter(
     `type`: mouseenter,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_mouseenter(
+    `type`: mouseenter,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mouseleave(`type`: mouseleave, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -664,7 +1000,13 @@ trait Window
   def addEventListener_mouseleave(
     `type`: mouseleave,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_mouseleave(
+    `type`: mouseleave,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mousemove(`type`: mousemove, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -672,7 +1014,13 @@ trait Window
   def addEventListener_mousemove(
     `type`: mousemove,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_mousemove(
+    `type`: mousemove,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mouseout(`type`: mouseout, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -680,7 +1028,13 @@ trait Window
   def addEventListener_mouseout(
     `type`: mouseout,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_mouseout(
+    `type`: mouseout,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mouseover(`type`: mouseover, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -688,7 +1042,13 @@ trait Window
   def addEventListener_mouseover(
     `type`: mouseover,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_mouseover(
+    `type`: mouseover,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mouseup(`type`: mouseup, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -696,7 +1056,13 @@ trait Window
   def addEventListener_mouseup(
     `type`: mouseup,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_mouseup(
+    `type`: mouseup,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mousewheel(`type`: mousewheel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, _]): Unit = js.native
@@ -704,7 +1070,13 @@ trait Window
   def addEventListener_mousewheel(
     `type`: mousewheel,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_mousewheel(
+    `type`: mousewheel,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_offline(`type`: offline, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -712,7 +1084,13 @@ trait Window
   def addEventListener_offline(
     `type`: offline,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_offline(
+    `type`: offline,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_online(`type`: online, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -720,7 +1098,13 @@ trait Window
   def addEventListener_online(
     `type`: online,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_online(
+    `type`: online,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_orientationchange(`type`: orientationchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -728,7 +1112,13 @@ trait Window
   def addEventListener_orientationchange(
     `type`: orientationchange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_orientationchange(
+    `type`: orientationchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_pagehide(
@@ -739,7 +1129,13 @@ trait Window
   def addEventListener_pagehide(
     `type`: pagehide,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_pagehide(
+    `type`: pagehide,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_pageshow(
@@ -750,7 +1146,13 @@ trait Window
   def addEventListener_pageshow(
     `type`: pageshow,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_pageshow(
+    `type`: pageshow,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_pause(`type`: pause, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -758,7 +1160,13 @@ trait Window
   def addEventListener_pause(
     `type`: pause,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_pause(
+    `type`: pause,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_play(`type`: play, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -766,7 +1174,13 @@ trait Window
   def addEventListener_play(
     `type`: play,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_play(
+    `type`: play,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_playing(`type`: playing, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -774,7 +1188,13 @@ trait Window
   def addEventListener_playing(
     `type`: playing,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_playing(
+    `type`: playing,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_popstate(`type`: popstate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ PopStateEvent, _]): Unit = js.native
@@ -782,7 +1202,13 @@ trait Window
   def addEventListener_popstate(
     `type`: popstate,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ PopStateEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_popstate(
+    `type`: popstate,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PopStateEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_progress(`type`: progress, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]): Unit = js.native
@@ -790,7 +1216,13 @@ trait Window
   def addEventListener_progress(
     `type`: progress,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_progress(
+    `type`: progress,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ratechange(`type`: ratechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -798,7 +1230,13 @@ trait Window
   def addEventListener_ratechange(
     `type`: ratechange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_ratechange(
+    `type`: ratechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readystatechange(
@@ -809,7 +1247,13 @@ trait Window
   def addEventListener_readystatechange(
     `type`: readystatechange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_readystatechange(
+    `type`: readystatechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_reset(`type`: reset, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -817,7 +1261,13 @@ trait Window
   def addEventListener_reset(
     `type`: reset,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_reset(
+    `type`: reset,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_resize(`type`: resize, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
@@ -825,7 +1275,13 @@ trait Window
   def addEventListener_resize(
     `type`: resize,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_resize(
+    `type`: resize,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_scroll(`type`: scroll, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
@@ -833,7 +1289,13 @@ trait Window
   def addEventListener_scroll(
     `type`: scroll,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_scroll(
+    `type`: scroll,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_seeked(`type`: seeked, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -841,7 +1303,13 @@ trait Window
   def addEventListener_seeked(
     `type`: seeked,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_seeked(
+    `type`: seeked,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_seeking(`type`: seeking, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -849,7 +1317,13 @@ trait Window
   def addEventListener_seeking(
     `type`: seeking,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_seeking(
+    `type`: seeking,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_select(`type`: select, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
@@ -857,7 +1331,13 @@ trait Window
   def addEventListener_select(
     `type`: select,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_select(
+    `type`: select,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_stalled(`type`: stalled, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -865,7 +1345,13 @@ trait Window
   def addEventListener_stalled(
     `type`: stalled,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_stalled(
+    `type`: stalled,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_storage(`type`: storage, listener: js.ThisFunction1[/* this */ this.type, /* ev */ StorageEvent, _]): Unit = js.native
@@ -873,7 +1359,13 @@ trait Window
   def addEventListener_storage(
     `type`: storage,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ StorageEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_storage(
+    `type`: storage,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ StorageEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_submit(`type`: submit, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -881,7 +1373,13 @@ trait Window
   def addEventListener_submit(
     `type`: submit,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_submit(
+    `type`: submit,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_suspend(`type`: suspend, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -889,7 +1387,13 @@ trait Window
   def addEventListener_suspend(
     `type`: suspend,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_suspend(
+    `type`: suspend,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_timeupdate(`type`: timeupdate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -897,7 +1401,13 @@ trait Window
   def addEventListener_timeupdate(
     `type`: timeupdate,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_timeupdate(
+    `type`: timeupdate,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_touchcancel(`type`: touchcancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
@@ -905,7 +1415,13 @@ trait Window
   def addEventListener_touchcancel(
     `type`: touchcancel,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_touchcancel(
+    `type`: touchcancel,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_touchend(`type`: touchend, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
@@ -913,7 +1429,13 @@ trait Window
   def addEventListener_touchend(
     `type`: touchend,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_touchend(
+    `type`: touchend,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_touchmove(`type`: touchmove, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
@@ -921,7 +1443,13 @@ trait Window
   def addEventListener_touchmove(
     `type`: touchmove,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_touchmove(
+    `type`: touchmove,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_touchstart(`type`: touchstart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
@@ -929,7 +1457,13 @@ trait Window
   def addEventListener_touchstart(
     `type`: touchstart,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_touchstart(
+    `type`: touchstart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_unload(`type`: unload, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -937,7 +1471,13 @@ trait Window
   def addEventListener_unload(
     `type`: unload,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_unload(
+    `type`: unload,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_volumechange(`type`: volumechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -945,7 +1485,13 @@ trait Window
   def addEventListener_volumechange(
     `type`: volumechange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_volumechange(
+    `type`: volumechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_waiting(`type`: waiting, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -953,7 +1499,13 @@ trait Window
   def addEventListener_waiting(
     `type`: waiting,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_waiting(
+    `type`: waiting,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   def alert(): Unit = js.native
   def alert(message: js.Any): Unit = js.native
@@ -1261,7 +1813,13 @@ trait Window
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, useCapture: scala.Boolean): Unit = js.native
+  override def removeEventListener(
+    `type`: java.lang.String,
+    listener: EventListenerOrEventListenerObject,
+    options: EventListenerOptions
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSGestureChange(
     `type`: MSGestureChange,
@@ -1271,7 +1829,13 @@ trait Window
   def removeEventListener_MSGestureChange(
     `type`: MSGestureChange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSGestureChange(
+    `type`: MSGestureChange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSGestureDoubleTap(
@@ -1282,7 +1846,13 @@ trait Window
   def removeEventListener_MSGestureDoubleTap(
     `type`: MSGestureDoubleTap,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSGestureDoubleTap(
+    `type`: MSGestureDoubleTap,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSGestureEnd(`type`: MSGestureEnd, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _]): Unit = js.native
@@ -1290,7 +1860,13 @@ trait Window
   def removeEventListener_MSGestureEnd(
     `type`: MSGestureEnd,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSGestureEnd(
+    `type`: MSGestureEnd,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSGestureHold(
@@ -1301,7 +1877,13 @@ trait Window
   def removeEventListener_MSGestureHold(
     `type`: MSGestureHold,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSGestureHold(
+    `type`: MSGestureHold,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSGestureStart(
@@ -1312,7 +1894,13 @@ trait Window
   def removeEventListener_MSGestureStart(
     `type`: MSGestureStart,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSGestureStart(
+    `type`: MSGestureStart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSGestureTap(`type`: MSGestureTap, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _]): Unit = js.native
@@ -1320,7 +1908,13 @@ trait Window
   def removeEventListener_MSGestureTap(
     `type`: MSGestureTap,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSGestureTap(
+    `type`: MSGestureTap,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSInertiaStart(
@@ -1331,7 +1925,13 @@ trait Window
   def removeEventListener_MSInertiaStart(
     `type`: MSInertiaStart,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSInertiaStart(
+    `type`: MSInertiaStart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSGestureEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSPointerCancel(
@@ -1342,7 +1942,13 @@ trait Window
   def removeEventListener_MSPointerCancel(
     `type`: MSPointerCancel,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSPointerCancel(
+    `type`: MSPointerCancel,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSPointerDown(
@@ -1353,7 +1959,13 @@ trait Window
   def removeEventListener_MSPointerDown(
     `type`: MSPointerDown,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSPointerDown(
+    `type`: MSPointerDown,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSPointerEnter(
@@ -1364,7 +1976,13 @@ trait Window
   def removeEventListener_MSPointerEnter(
     `type`: MSPointerEnter,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSPointerEnter(
+    `type`: MSPointerEnter,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSPointerLeave(
@@ -1375,7 +1993,13 @@ trait Window
   def removeEventListener_MSPointerLeave(
     `type`: MSPointerLeave,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSPointerLeave(
+    `type`: MSPointerLeave,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSPointerMove(
@@ -1386,7 +2010,13 @@ trait Window
   def removeEventListener_MSPointerMove(
     `type`: MSPointerMove,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSPointerMove(
+    `type`: MSPointerMove,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSPointerOut(`type`: MSPointerOut, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]): Unit = js.native
@@ -1394,7 +2024,13 @@ trait Window
   def removeEventListener_MSPointerOut(
     `type`: MSPointerOut,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSPointerOut(
+    `type`: MSPointerOut,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSPointerOver(
@@ -1405,7 +2041,13 @@ trait Window
   def removeEventListener_MSPointerOver(
     `type`: MSPointerOver,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSPointerOver(
+    `type`: MSPointerOver,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSPointerUp(`type`: MSPointerUp, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _]): Unit = js.native
@@ -1413,7 +2055,13 @@ trait Window
   def removeEventListener_MSPointerUp(
     `type`: MSPointerUp,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSPointerUp(
+    `type`: MSPointerUp,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSPointerEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
@@ -1421,7 +2069,13 @@ trait Window
   def removeEventListener_abort(
     `type`: abort,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_abort(
+    `type`: abort,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_afterprint(`type`: afterprint, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1429,7 +2083,13 @@ trait Window
   def removeEventListener_afterprint(
     `type`: afterprint,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_afterprint(
+    `type`: afterprint,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_beforeprint(`type`: beforeprint, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1437,7 +2097,13 @@ trait Window
   def removeEventListener_beforeprint(
     `type`: beforeprint,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_beforeprint(
+    `type`: beforeprint,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_beforeunload(
@@ -1448,7 +2114,13 @@ trait Window
   def removeEventListener_beforeunload(
     `type`: beforeunload,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ BeforeUnloadEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_beforeunload(
+    `type`: beforeunload,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ BeforeUnloadEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_blur(`type`: blur, listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]): Unit = js.native
@@ -1456,7 +2128,13 @@ trait Window
   def removeEventListener_blur(
     `type`: blur,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_blur(
+    `type`: blur,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_canplay(`type`: canplay, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1464,7 +2142,13 @@ trait Window
   def removeEventListener_canplay(
     `type`: canplay,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_canplay(
+    `type`: canplay,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_canplaythrough(`type`: canplaythrough, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1472,7 +2156,13 @@ trait Window
   def removeEventListener_canplaythrough(
     `type`: canplaythrough,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_canplaythrough(
+    `type`: canplaythrough,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_change(`type`: change, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1480,7 +2170,13 @@ trait Window
   def removeEventListener_change(
     `type`: change,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_change(
+    `type`: change,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_click(`type`: click, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -1488,7 +2184,13 @@ trait Window
   def removeEventListener_click(
     `type`: click,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_click(
+    `type`: click,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_compassneedscalibration(
@@ -1499,7 +2201,13 @@ trait Window
   def removeEventListener_compassneedscalibration(
     `type`: compassneedscalibration,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_compassneedscalibration(
+    `type`: compassneedscalibration,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_contextmenu(`type`: contextmenu, listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]): Unit = js.native
@@ -1507,7 +2215,13 @@ trait Window
   def removeEventListener_contextmenu(
     `type`: contextmenu,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_contextmenu(
+    `type`: contextmenu,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_dblclick(`type`: dblclick, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -1515,7 +2229,13 @@ trait Window
   def removeEventListener_dblclick(
     `type`: dblclick,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_dblclick(
+    `type`: dblclick,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_devicelight(
@@ -1526,7 +2246,13 @@ trait Window
   def removeEventListener_devicelight(
     `type`: devicelight,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceLightEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_devicelight(
+    `type`: devicelight,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceLightEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_devicemotion(
@@ -1537,7 +2263,13 @@ trait Window
   def removeEventListener_devicemotion(
     `type`: devicemotion,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_devicemotion(
+    `type`: devicemotion,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_deviceorientation(
@@ -1548,7 +2280,13 @@ trait Window
   def removeEventListener_deviceorientation(
     `type`: deviceorientation,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_deviceorientation(
+    `type`: deviceorientation,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_drag(`type`: drag, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]): Unit = js.native
@@ -1556,7 +2294,13 @@ trait Window
   def removeEventListener_drag(
     `type`: drag,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_drag(
+    `type`: drag,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_dragend(`type`: dragend, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]): Unit = js.native
@@ -1564,7 +2308,13 @@ trait Window
   def removeEventListener_dragend(
     `type`: dragend,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_dragend(
+    `type`: dragend,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_dragenter(`type`: dragenter, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]): Unit = js.native
@@ -1572,7 +2322,13 @@ trait Window
   def removeEventListener_dragenter(
     `type`: dragenter,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_dragenter(
+    `type`: dragenter,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_dragleave(`type`: dragleave, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]): Unit = js.native
@@ -1580,7 +2336,13 @@ trait Window
   def removeEventListener_dragleave(
     `type`: dragleave,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_dragleave(
+    `type`: dragleave,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_dragover(`type`: dragover, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]): Unit = js.native
@@ -1588,7 +2350,13 @@ trait Window
   def removeEventListener_dragover(
     `type`: dragover,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_dragover(
+    `type`: dragover,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_dragstart(`type`: dragstart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]): Unit = js.native
@@ -1596,7 +2364,13 @@ trait Window
   def removeEventListener_dragstart(
     `type`: dragstart,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_dragstart(
+    `type`: dragstart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_drop(`type`: drop, listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]): Unit = js.native
@@ -1604,7 +2378,13 @@ trait Window
   def removeEventListener_drop(
     `type`: drop,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_drop(
+    `type`: drop,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_durationchange(`type`: durationchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1612,7 +2392,13 @@ trait Window
   def removeEventListener_durationchange(
     `type`: durationchange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_durationchange(
+    `type`: durationchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_emptied(`type`: emptied, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1620,7 +2406,13 @@ trait Window
   def removeEventListener_emptied(
     `type`: emptied,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_emptied(
+    `type`: emptied,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_ended(`type`: ended, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _]): Unit = js.native
@@ -1628,7 +2420,13 @@ trait Window
   def removeEventListener_ended(
     `type`: ended,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_ended(
+    `type`: ended,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _]): Unit = js.native
@@ -1636,7 +2434,13 @@ trait Window
   def removeEventListener_error(
     `type`: error,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_focus(`type`: focus, listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]): Unit = js.native
@@ -1644,7 +2448,13 @@ trait Window
   def removeEventListener_focus(
     `type`: focus,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_focus(
+    `type`: focus,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_hashchange(`type`: hashchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ HashChangeEvent, _]): Unit = js.native
@@ -1652,7 +2462,13 @@ trait Window
   def removeEventListener_hashchange(
     `type`: hashchange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ HashChangeEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_hashchange(
+    `type`: hashchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ HashChangeEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_input(`type`: input, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1660,7 +2476,13 @@ trait Window
   def removeEventListener_input(
     `type`: input,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_input(
+    `type`: input,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_invalid(`type`: invalid, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1668,7 +2490,13 @@ trait Window
   def removeEventListener_invalid(
     `type`: invalid,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_invalid(
+    `type`: invalid,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_keydown(`type`: keydown, listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _]): Unit = js.native
@@ -1676,7 +2504,13 @@ trait Window
   def removeEventListener_keydown(
     `type`: keydown,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_keydown(
+    `type`: keydown,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_keypress(`type`: keypress, listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _]): Unit = js.native
@@ -1684,7 +2518,13 @@ trait Window
   def removeEventListener_keypress(
     `type`: keypress,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_keypress(
+    `type`: keypress,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_keyup(`type`: keyup, listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _]): Unit = js.native
@@ -1692,7 +2532,13 @@ trait Window
   def removeEventListener_keyup(
     `type`: keyup,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_keyup(
+    `type`: keyup,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_load(`type`: load, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1700,7 +2546,13 @@ trait Window
   def removeEventListener_load(
     `type`: load,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_load(
+    `type`: load,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_loadeddata(`type`: loadeddata, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1708,7 +2560,13 @@ trait Window
   def removeEventListener_loadeddata(
     `type`: loadeddata,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_loadeddata(
+    `type`: loadeddata,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_loadedmetadata(`type`: loadedmetadata, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1716,7 +2574,13 @@ trait Window
   def removeEventListener_loadedmetadata(
     `type`: loadedmetadata,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_loadedmetadata(
+    `type`: loadedmetadata,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_loadstart(`type`: loadstart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1724,7 +2588,13 @@ trait Window
   def removeEventListener_loadstart(
     `type`: loadstart,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_loadstart(
+    `type`: loadstart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_message(`type`: message, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _]): Unit = js.native
@@ -1732,7 +2602,13 @@ trait Window
   def removeEventListener_message(
     `type`: message,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_message(
+    `type`: message,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_mousedown(`type`: mousedown, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -1740,7 +2616,13 @@ trait Window
   def removeEventListener_mousedown(
     `type`: mousedown,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_mousedown(
+    `type`: mousedown,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_mouseenter(`type`: mouseenter, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -1748,7 +2630,13 @@ trait Window
   def removeEventListener_mouseenter(
     `type`: mouseenter,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_mouseenter(
+    `type`: mouseenter,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_mouseleave(`type`: mouseleave, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -1756,7 +2644,13 @@ trait Window
   def removeEventListener_mouseleave(
     `type`: mouseleave,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_mouseleave(
+    `type`: mouseleave,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_mousemove(`type`: mousemove, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -1764,7 +2658,13 @@ trait Window
   def removeEventListener_mousemove(
     `type`: mousemove,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_mousemove(
+    `type`: mousemove,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_mouseout(`type`: mouseout, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -1772,7 +2672,13 @@ trait Window
   def removeEventListener_mouseout(
     `type`: mouseout,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_mouseout(
+    `type`: mouseout,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_mouseover(`type`: mouseover, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -1780,7 +2686,13 @@ trait Window
   def removeEventListener_mouseover(
     `type`: mouseover,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_mouseover(
+    `type`: mouseover,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_mouseup(`type`: mouseup, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -1788,7 +2700,13 @@ trait Window
   def removeEventListener_mouseup(
     `type`: mouseup,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_mouseup(
+    `type`: mouseup,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_mousewheel(`type`: mousewheel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, _]): Unit = js.native
@@ -1796,7 +2714,13 @@ trait Window
   def removeEventListener_mousewheel(
     `type`: mousewheel,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_mousewheel(
+    `type`: mousewheel,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_offline(`type`: offline, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1804,7 +2728,13 @@ trait Window
   def removeEventListener_offline(
     `type`: offline,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_offline(
+    `type`: offline,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_online(`type`: online, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1812,7 +2742,13 @@ trait Window
   def removeEventListener_online(
     `type`: online,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_online(
+    `type`: online,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_orientationchange(`type`: orientationchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1820,7 +2756,13 @@ trait Window
   def removeEventListener_orientationchange(
     `type`: orientationchange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_orientationchange(
+    `type`: orientationchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_pagehide(
@@ -1831,7 +2773,13 @@ trait Window
   def removeEventListener_pagehide(
     `type`: pagehide,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pagehide(
+    `type`: pagehide,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_pageshow(
@@ -1842,7 +2790,13 @@ trait Window
   def removeEventListener_pageshow(
     `type`: pageshow,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pageshow(
+    `type`: pageshow,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_pause(`type`: pause, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1850,7 +2804,13 @@ trait Window
   def removeEventListener_pause(
     `type`: pause,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pause(
+    `type`: pause,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_play(`type`: play, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1858,7 +2818,13 @@ trait Window
   def removeEventListener_play(
     `type`: play,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_play(
+    `type`: play,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_playing(`type`: playing, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1866,7 +2832,13 @@ trait Window
   def removeEventListener_playing(
     `type`: playing,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_playing(
+    `type`: playing,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_popstate(`type`: popstate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ PopStateEvent, _]): Unit = js.native
@@ -1874,7 +2846,13 @@ trait Window
   def removeEventListener_popstate(
     `type`: popstate,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ PopStateEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_popstate(
+    `type`: popstate,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ PopStateEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_progress(`type`: progress, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]): Unit = js.native
@@ -1882,7 +2860,13 @@ trait Window
   def removeEventListener_progress(
     `type`: progress,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_progress(
+    `type`: progress,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_ratechange(`type`: ratechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1890,7 +2874,13 @@ trait Window
   def removeEventListener_ratechange(
     `type`: ratechange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_ratechange(
+    `type`: ratechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_readystatechange(
@@ -1901,7 +2891,13 @@ trait Window
   def removeEventListener_readystatechange(
     `type`: readystatechange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_readystatechange(
+    `type`: readystatechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_reset(`type`: reset, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1909,7 +2905,13 @@ trait Window
   def removeEventListener_reset(
     `type`: reset,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_reset(
+    `type`: reset,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_resize(`type`: resize, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
@@ -1917,7 +2919,13 @@ trait Window
   def removeEventListener_resize(
     `type`: resize,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_resize(
+    `type`: resize,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_scroll(`type`: scroll, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
@@ -1925,7 +2933,13 @@ trait Window
   def removeEventListener_scroll(
     `type`: scroll,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_scroll(
+    `type`: scroll,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_seeked(`type`: seeked, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1933,7 +2947,13 @@ trait Window
   def removeEventListener_seeked(
     `type`: seeked,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_seeked(
+    `type`: seeked,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_seeking(`type`: seeking, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1941,7 +2961,13 @@ trait Window
   def removeEventListener_seeking(
     `type`: seeking,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_seeking(
+    `type`: seeking,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_select(`type`: select, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
@@ -1949,7 +2975,13 @@ trait Window
   def removeEventListener_select(
     `type`: select,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_select(
+    `type`: select,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_stalled(`type`: stalled, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1957,7 +2989,13 @@ trait Window
   def removeEventListener_stalled(
     `type`: stalled,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_stalled(
+    `type`: stalled,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_storage(`type`: storage, listener: js.ThisFunction1[/* this */ this.type, /* ev */ StorageEvent, _]): Unit = js.native
@@ -1965,7 +3003,13 @@ trait Window
   def removeEventListener_storage(
     `type`: storage,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ StorageEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_storage(
+    `type`: storage,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ StorageEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_submit(`type`: submit, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1973,7 +3017,13 @@ trait Window
   def removeEventListener_submit(
     `type`: submit,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_submit(
+    `type`: submit,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_suspend(`type`: suspend, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1981,7 +3031,13 @@ trait Window
   def removeEventListener_suspend(
     `type`: suspend,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_suspend(
+    `type`: suspend,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_timeupdate(`type`: timeupdate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -1989,7 +3045,13 @@ trait Window
   def removeEventListener_timeupdate(
     `type`: timeupdate,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_timeupdate(
+    `type`: timeupdate,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_touchcancel(`type`: touchcancel, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
@@ -1997,7 +3059,13 @@ trait Window
   def removeEventListener_touchcancel(
     `type`: touchcancel,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_touchcancel(
+    `type`: touchcancel,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_touchend(`type`: touchend, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
@@ -2005,7 +3073,13 @@ trait Window
   def removeEventListener_touchend(
     `type`: touchend,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_touchend(
+    `type`: touchend,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_touchmove(`type`: touchmove, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
@@ -2013,7 +3087,13 @@ trait Window
   def removeEventListener_touchmove(
     `type`: touchmove,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_touchmove(
+    `type`: touchmove,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_touchstart(`type`: touchstart, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]): Unit = js.native
@@ -2021,7 +3101,13 @@ trait Window
   def removeEventListener_touchstart(
     `type`: touchstart,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_touchstart(
+    `type`: touchstart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_unload(`type`: unload, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -2029,7 +3115,13 @@ trait Window
   def removeEventListener_unload(
     `type`: unload,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_unload(
+    `type`: unload,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_volumechange(`type`: volumechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -2037,7 +3129,13 @@ trait Window
   def removeEventListener_volumechange(
     `type`: volumechange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_volumechange(
+    `type`: volumechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_waiting(`type`: waiting, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -2045,7 +3143,13 @@ trait Window
   def removeEventListener_waiting(
     `type`: waiting,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_waiting(
+    `type`: waiting,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   def requestAnimationFrame(callback: FrameRequestCallback): Double = js.native
   def resizeBy(): Unit = js.native

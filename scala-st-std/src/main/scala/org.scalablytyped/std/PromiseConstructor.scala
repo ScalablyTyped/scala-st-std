@@ -22,7 +22,7 @@ Instantiable1[
       js.Promise[js.Object]
     ] {
   @JSName(js.Symbol.species)
-  val species: js.Function = js.native
+  val species: PromiseConstructor = js.native
   /**
     * Creates a Promise that is resolved with an array of results when all of the provided Promises
     * resolve, or rejected when any Promise is rejected.

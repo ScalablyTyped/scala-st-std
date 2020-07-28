@@ -15,6 +15,9 @@ object stdStrings {
   sealed trait `4x` extends OverSampleType
   
   @js.native
+  sealed trait ANGLE_instanced_arrays extends js.Object
+  
+  @js.native
   sealed trait AnimationEvent extends js.Object
   
   @js.native
@@ -57,7 +60,19 @@ object stdStrings {
   sealed trait DragEvent extends js.Object
   
   @js.native
-  sealed trait ElementListTagNameMap extends js.Object
+  sealed trait EXT_blend_minmax extends js.Object
+  
+  @js.native
+  sealed trait EXT_frag_depth extends js.Object
+  
+  @js.native
+  sealed trait EXT_sRGB extends js.Object
+  
+  @js.native
+  sealed trait EXT_shader_texture_lod extends js.Object
+  
+  @js.native
+  sealed trait EXT_texture_filter_anisotropic extends js.Object
   
   @js.native
   sealed trait Embedded extends MSTransportType
@@ -273,6 +288,27 @@ object stdStrings {
   sealed trait NavigationEventWithReferrer extends js.Object
   
   @js.native
+  sealed trait OES_element_index_uint extends js.Object
+  
+  @js.native
+  sealed trait OES_standard_derivatives extends js.Object
+  
+  @js.native
+  sealed trait OES_texture_float extends js.Object
+  
+  @js.native
+  sealed trait OES_texture_float_linear extends js.Object
+  
+  @js.native
+  sealed trait OES_texture_half_float extends js.Object
+  
+  @js.native
+  sealed trait OES_texture_half_float_linear extends js.Object
+  
+  @js.native
+  sealed trait OES_vertex_array_object extends js.Object
+  
+  @js.native
   sealed trait OfflineAudioCompletionEvent extends js.Object
   
   @js.native
@@ -411,6 +447,33 @@ object stdStrings {
   sealed trait UnviewableContentIdentifiedEvent extends js.Object
   
   @js.native
+  sealed trait WEBGL_color_buffer_float extends js.Object
+  
+  @js.native
+  sealed trait WEBGL_compressed_texture_astc extends js.Object
+  
+  @js.native
+  sealed trait WEBGL_compressed_texture_s3tc extends js.Object
+  
+  @js.native
+  sealed trait WEBGL_compressed_texture_s3tc_srgb extends js.Object
+  
+  @js.native
+  sealed trait WEBGL_debug_renderer_info extends js.Object
+  
+  @js.native
+  sealed trait WEBGL_debug_shaders extends js.Object
+  
+  @js.native
+  sealed trait WEBGL_depth_texture extends js.Object
+  
+  @js.native
+  sealed trait WEBGL_draw_buffers extends js.Object
+  
+  @js.native
+  sealed trait WEBGL_lose_context extends js.Object
+  
+  @js.native
   sealed trait WeakMap extends js.Object
   
   @js.native
@@ -533,6 +596,9 @@ object stdStrings {
   
   @js.native
   sealed trait back_forward extends NavigationType
+  
+  @js.native
+  sealed trait backward extends js.Object
   
   @js.native
   sealed trait balanced
@@ -1138,6 +1204,9 @@ object stdStrings {
   
   @js.native
   sealed trait form extends js.Object
+  
+  @js.native
+  sealed trait forward extends js.Object
   
   @js.native
   sealed trait frame extends js.Object
@@ -2294,6 +2363,8 @@ object stdStrings {
   @scala.inline
   def `4x`: `4x` = "4x".asInstanceOf[`4x`]
   @scala.inline
+  def ANGLE_instanced_arrays: ANGLE_instanced_arrays = "ANGLE_instanced_arrays".asInstanceOf[ANGLE_instanced_arrays]
+  @scala.inline
   def AnimationEvent: AnimationEvent = "AnimationEvent".asInstanceOf[AnimationEvent]
   @scala.inline
   def ArrayBuffer: ArrayBuffer = "ArrayBuffer".asInstanceOf[ArrayBuffer]
@@ -2322,7 +2393,15 @@ object stdStrings {
   @scala.inline
   def DragEvent: DragEvent = "DragEvent".asInstanceOf[DragEvent]
   @scala.inline
-  def ElementListTagNameMap: ElementListTagNameMap = "ElementListTagNameMap".asInstanceOf[ElementListTagNameMap]
+  def EXT_blend_minmax: EXT_blend_minmax = "EXT_blend_minmax".asInstanceOf[EXT_blend_minmax]
+  @scala.inline
+  def EXT_frag_depth: EXT_frag_depth = "EXT_frag_depth".asInstanceOf[EXT_frag_depth]
+  @scala.inline
+  def EXT_sRGB: EXT_sRGB = "EXT_sRGB".asInstanceOf[EXT_sRGB]
+  @scala.inline
+  def EXT_shader_texture_lod: EXT_shader_texture_lod = "EXT_shader_texture_lod".asInstanceOf[EXT_shader_texture_lod]
+  @scala.inline
+  def EXT_texture_filter_anisotropic: EXT_texture_filter_anisotropic = "EXT_texture_filter_anisotropic".asInstanceOf[EXT_texture_filter_anisotropic]
   @scala.inline
   def Embedded: Embedded = "Embedded".asInstanceOf[Embedded]
   @scala.inline
@@ -2466,6 +2545,20 @@ object stdStrings {
   @scala.inline
   def NavigationEventWithReferrer: NavigationEventWithReferrer = "NavigationEventWithReferrer".asInstanceOf[NavigationEventWithReferrer]
   @scala.inline
+  def OES_element_index_uint: OES_element_index_uint = "OES_element_index_uint".asInstanceOf[OES_element_index_uint]
+  @scala.inline
+  def OES_standard_derivatives: OES_standard_derivatives = "OES_standard_derivatives".asInstanceOf[OES_standard_derivatives]
+  @scala.inline
+  def OES_texture_float: OES_texture_float = "OES_texture_float".asInstanceOf[OES_texture_float]
+  @scala.inline
+  def OES_texture_float_linear: OES_texture_float_linear = "OES_texture_float_linear".asInstanceOf[OES_texture_float_linear]
+  @scala.inline
+  def OES_texture_half_float: OES_texture_half_float = "OES_texture_half_float".asInstanceOf[OES_texture_half_float]
+  @scala.inline
+  def OES_texture_half_float_linear: OES_texture_half_float_linear = "OES_texture_half_float_linear".asInstanceOf[OES_texture_half_float_linear]
+  @scala.inline
+  def OES_vertex_array_object: OES_vertex_array_object = "OES_vertex_array_object".asInstanceOf[OES_vertex_array_object]
+  @scala.inline
   def OfflineAudioCompletionEvent: OfflineAudioCompletionEvent = "OfflineAudioCompletionEvent".asInstanceOf[OfflineAudioCompletionEvent]
   @scala.inline
   def OverflowEvent: OverflowEvent = "OverflowEvent".asInstanceOf[OverflowEvent]
@@ -2558,6 +2651,24 @@ object stdStrings {
   @scala.inline
   def UnviewableContentIdentifiedEvent: UnviewableContentIdentifiedEvent = "UnviewableContentIdentifiedEvent".asInstanceOf[UnviewableContentIdentifiedEvent]
   @scala.inline
+  def WEBGL_color_buffer_float: WEBGL_color_buffer_float = "WEBGL_color_buffer_float".asInstanceOf[WEBGL_color_buffer_float]
+  @scala.inline
+  def WEBGL_compressed_texture_astc: WEBGL_compressed_texture_astc = "WEBGL_compressed_texture_astc".asInstanceOf[WEBGL_compressed_texture_astc]
+  @scala.inline
+  def WEBGL_compressed_texture_s3tc: WEBGL_compressed_texture_s3tc = "WEBGL_compressed_texture_s3tc".asInstanceOf[WEBGL_compressed_texture_s3tc]
+  @scala.inline
+  def WEBGL_compressed_texture_s3tc_srgb: WEBGL_compressed_texture_s3tc_srgb = "WEBGL_compressed_texture_s3tc_srgb".asInstanceOf[WEBGL_compressed_texture_s3tc_srgb]
+  @scala.inline
+  def WEBGL_debug_renderer_info: WEBGL_debug_renderer_info = "WEBGL_debug_renderer_info".asInstanceOf[WEBGL_debug_renderer_info]
+  @scala.inline
+  def WEBGL_debug_shaders: WEBGL_debug_shaders = "WEBGL_debug_shaders".asInstanceOf[WEBGL_debug_shaders]
+  @scala.inline
+  def WEBGL_depth_texture: WEBGL_depth_texture = "WEBGL_depth_texture".asInstanceOf[WEBGL_depth_texture]
+  @scala.inline
+  def WEBGL_draw_buffers: WEBGL_draw_buffers = "WEBGL_draw_buffers".asInstanceOf[WEBGL_draw_buffers]
+  @scala.inline
+  def WEBGL_lose_context: WEBGL_lose_context = "WEBGL_lose_context".asInstanceOf[WEBGL_lose_context]
+  @scala.inline
   def WeakMap: WeakMap = "WeakMap".asInstanceOf[WeakMap]
   @scala.inline
   def WeakSet: WeakSet = "WeakSet".asInstanceOf[WeakSet]
@@ -2631,6 +2742,8 @@ object stdStrings {
   def b: b = "b".asInstanceOf[b]
   @scala.inline
   def back_forward: back_forward = "back_forward".asInstanceOf[back_forward]
+  @scala.inline
+  def backward: backward = "backward".asInstanceOf[backward]
   @scala.inline
   def balanced: balanced = "balanced".asInstanceOf[balanced]
   @scala.inline
@@ -3013,6 +3126,8 @@ object stdStrings {
   def foreignobject_ : foreignobject_ = "foreignobject".asInstanceOf[foreignobject_]
   @scala.inline
   def form: form = "form".asInstanceOf[form]
+  @scala.inline
+  def forward: forward = "forward".asInstanceOf[forward]
   @scala.inline
   def frame: frame = "frame".asInstanceOf[frame]
   @scala.inline

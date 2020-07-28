@@ -1,5 +1,8 @@
 package org.scalablytyped.std
 
+import org.scalablytyped.std.stdStrings.backward
+import org.scalablytyped.std.stdStrings.forward
+import org.scalablytyped.std.stdStrings.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -101,7 +104,14 @@ trait HTMLTextAreaElement extends HTMLElement {
     * Sets the start and end positions of a selection in a text field.
     * @param start The offset into the text field for the start of the selection.
     * @param end The offset into the text field for the end of the selection.
+    * @param direction The direction in which the selection is performed.
     */
   def setSelectionRange(start: Double, end: Double): Unit = js.native
+  @JSName("setSelectionRange")
+  def setSelectionRange_backward(start: Double, end: Double, direction: backward): Unit = js.native
+  @JSName("setSelectionRange")
+  def setSelectionRange_forward(start: Double, end: Double, direction: forward): Unit = js.native
+  @JSName("setSelectionRange")
+  def setSelectionRange_none(start: Double, end: Double, direction: none): Unit = js.native
 }
 

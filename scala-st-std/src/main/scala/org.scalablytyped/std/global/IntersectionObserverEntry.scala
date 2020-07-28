@@ -12,15 +12,15 @@ class IntersectionObserverEntry protected ()
   extends org.scalablytyped.std.IntersectionObserverEntry {
   def this(intersectionObserverEntryInit: IntersectionObserverEntryInit) = this()
   /* CompleteClass */
-  override val boundingClientRect: org.scalablytyped.std.ClientRect = js.native
+  override val boundingClientRect: org.scalablytyped.std.ClientRect | org.scalablytyped.std.DOMRect = js.native
   /* CompleteClass */
   override val intersectionRatio: Double = js.native
   /* CompleteClass */
-  override val intersectionRect: org.scalablytyped.std.ClientRect = js.native
+  override val intersectionRect: org.scalablytyped.std.ClientRect | org.scalablytyped.std.DOMRect = js.native
   /* CompleteClass */
   override val isIntersecting: scala.Boolean = js.native
   /* CompleteClass */
-  override val rootBounds: org.scalablytyped.std.ClientRect = js.native
+  override val rootBounds: org.scalablytyped.std.ClientRect | org.scalablytyped.std.DOMRect = js.native
   /* CompleteClass */
   override val target: org.scalablytyped.std.Element = js.native
   /* CompleteClass */

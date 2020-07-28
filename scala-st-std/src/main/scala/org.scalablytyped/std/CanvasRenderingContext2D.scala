@@ -34,6 +34,8 @@ trait CanvasRenderingContext2D
   def clearRect(x: Double, y: Double, w: Double, h: Double): Unit = js.native
   def clip(): Unit = js.native
   def clip(fillRule: CanvasFillRule): Unit = js.native
+  def clip(path: Path2D): Unit = js.native
+  def clip(path: Path2D, fillRule: CanvasFillRule): Unit = js.native
   def createImageData(imageDataOrSw: ImageData): ImageData = js.native
   def createImageData(imageDataOrSw: ImageData, sh: Double): ImageData = js.native
   def createImageData(imageDataOrSw: Double): ImageData = js.native
@@ -98,11 +100,15 @@ trait CanvasRenderingContext2D
   ): Unit = js.native
   def fill(): Unit = js.native
   def fill(fillRule: CanvasFillRule): Unit = js.native
+  def fill(path: Path2D): Unit = js.native
+  def fill(path: Path2D, fillRule: CanvasFillRule): Unit = js.native
   def fillRect(x: Double, y: Double, w: Double, h: Double): Unit = js.native
   def fillText(text: java.lang.String, x: Double, y: Double): Unit = js.native
   def fillText(text: java.lang.String, x: Double, y: Double, maxWidth: Double): Unit = js.native
   def getImageData(sx: Double, sy: Double, sw: Double, sh: Double): ImageData = js.native
   def getLineDash(): js.Array[Double] = js.native
+  def isPointInPath(path: Path2D, x: Double, y: Double): scala.Boolean = js.native
+  def isPointInPath(path: Path2D, x: Double, y: Double, fillRule: CanvasFillRule): scala.Boolean = js.native
   def isPointInPath(x: Double, y: Double): scala.Boolean = js.native
   def isPointInPath(x: Double, y: Double, fillRule: CanvasFillRule): scala.Boolean = js.native
   def measureText(text: java.lang.String): TextMetrics = js.native

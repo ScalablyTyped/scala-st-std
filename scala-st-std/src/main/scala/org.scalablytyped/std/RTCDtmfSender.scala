@@ -21,7 +21,13 @@ trait RTCDtmfSender extends EventTarget {
   def addEventListener_tonechange(
     `type`: tonechange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDTMFToneChangeEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_tonechange(
+    `type`: tonechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDTMFToneChangeEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   def insertDTMF(tones: java.lang.String): Unit = js.native
   def insertDTMF(tones: java.lang.String, duration: js.UndefOr[scala.Nothing], interToneGap: Double): Unit = js.native
@@ -37,7 +43,13 @@ trait RTCDtmfSender extends EventTarget {
   def removeEventListener_tonechange(
     `type`: tonechange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDTMFToneChangeEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_tonechange(
+    `type`: tonechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDTMFToneChangeEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
 }
 

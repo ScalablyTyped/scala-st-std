@@ -18,7 +18,13 @@ trait AudioContextBase extends EventTarget {
   def addEventListener_statechange(
     `type`: statechange,
     listener: js.ThisFunction1[/* this */ AudioContext, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_statechange(
+    `type`: statechange,
+    listener: js.ThisFunction1[/* this */ AudioContext, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   def close(): js.Promise[Unit] = js.native
   def createAnalyser(): AnalyserNode = js.native
@@ -78,7 +84,13 @@ trait AudioContextBase extends EventTarget {
   def removeEventListener_statechange(
     `type`: statechange,
     listener: js.ThisFunction1[/* this */ AudioContext, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_statechange(
+    `type`: statechange,
+    listener: js.ThisFunction1[/* this */ AudioContext, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   def resume(): js.Promise[Unit] = js.native
 }

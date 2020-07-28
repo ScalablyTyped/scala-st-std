@@ -150,7 +150,13 @@ trait HTMLMediaElement extends HTMLElement {
   def addEventListener_encrypted(
     `type`: encrypted,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaEncryptedEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_encrypted(
+    `type`: encrypted,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaEncryptedEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_msneedkey(
@@ -161,7 +167,13 @@ trait HTMLMediaElement extends HTMLElement {
   def addEventListener_msneedkey(
     `type`: msneedkey,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSMediaKeyNeededEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_msneedkey(
+    `type`: msneedkey,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSMediaKeyNeededEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   def addTextTrack(kind: java.lang.String): TextTrack = js.native
   def addTextTrack(kind: java.lang.String, label: js.UndefOr[scala.Nothing], language: java.lang.String): TextTrack = js.native
@@ -210,7 +222,13 @@ trait HTMLMediaElement extends HTMLElement {
   def removeEventListener_encrypted(
     `type`: encrypted,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaEncryptedEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_encrypted(
+    `type`: encrypted,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaEncryptedEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_msneedkey(
@@ -221,7 +239,13 @@ trait HTMLMediaElement extends HTMLElement {
   def removeEventListener_msneedkey(
     `type`: msneedkey,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSMediaKeyNeededEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_msneedkey(
+    `type`: msneedkey,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MSMediaKeyNeededEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   def setMediaKeys(): js.Promise[Unit] = js.native
   def setMediaKeys(mediaKeys: MediaKeys): js.Promise[Unit] = js.native

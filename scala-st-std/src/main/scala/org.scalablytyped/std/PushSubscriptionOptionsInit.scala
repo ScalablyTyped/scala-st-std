@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PushSubscriptionOptionsInit extends js.Object {
-  var applicationServerKey: js.UndefOr[js.Any] = js.undefined
+  var applicationServerKey: js.UndefOr[BufferSource | Null] = js.undefined
   var userVisibleOnly: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -27,9 +27,11 @@ object PushSubscriptionOptionsInit {
         x
     }
     @scala.inline
-    def setApplicationServerKey(value: js.Any): Self = this.set("applicationServerKey", value.asInstanceOf[js.Any])
+    def setApplicationServerKey(value: BufferSource): Self = this.set("applicationServerKey", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteApplicationServerKey: Self = this.set("applicationServerKey", js.undefined)
+    @scala.inline
+    def setApplicationServerKeyNull: Self = this.set("applicationServerKey", null)
     @scala.inline
     def setUserVisibleOnly(value: scala.Boolean): Self = this.set("userVisibleOnly", value.asInstanceOf[js.Any])
     @scala.inline

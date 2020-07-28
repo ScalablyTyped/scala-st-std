@@ -1,5 +1,8 @@
 package org.scalablytyped.std
 
+import org.scalablytyped.std.stdStrings.backward
+import org.scalablytyped.std.stdStrings.forward
+import org.scalablytyped.std.stdStrings.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -196,15 +199,15 @@ trait HTMLInputElement extends HTMLElement {
     * Sets the start and end positions of a selection in a text field.
     * @param start The offset into the text field for the start of the selection.
     * @param end The offset into the text field for the end of the selection.
+    * @param direction The direction in which the selection is performed.
     */
-  def setSelectionRange(): Unit = js.native
-  def setSelectionRange(start: js.UndefOr[scala.Nothing], end: js.UndefOr[scala.Nothing], direction: java.lang.String): Unit = js.native
-  def setSelectionRange(start: js.UndefOr[scala.Nothing], end: Double): Unit = js.native
-  def setSelectionRange(start: js.UndefOr[scala.Nothing], end: Double, direction: java.lang.String): Unit = js.native
-  def setSelectionRange(start: Double): Unit = js.native
-  def setSelectionRange(start: Double, end: js.UndefOr[scala.Nothing], direction: java.lang.String): Unit = js.native
   def setSelectionRange(start: Double, end: Double): Unit = js.native
-  def setSelectionRange(start: Double, end: Double, direction: java.lang.String): Unit = js.native
+  @JSName("setSelectionRange")
+  def setSelectionRange_backward(start: Double, end: Double, direction: backward): Unit = js.native
+  @JSName("setSelectionRange")
+  def setSelectionRange_forward(start: Double, end: Double, direction: forward): Unit = js.native
+  @JSName("setSelectionRange")
+  def setSelectionRange_none(start: Double, end: Double, direction: none): Unit = js.native
   /**
     * Decrements a range input control's value by the value given by the Step attribute. If the optional parameter is used, it will decrement the input control's step value multiplied by the parameter's value.
     * @param n Value to decrement the value by.

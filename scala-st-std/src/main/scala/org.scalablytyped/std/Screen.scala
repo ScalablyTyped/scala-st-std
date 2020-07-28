@@ -28,7 +28,13 @@ trait Screen extends EventTarget {
   def addEventListener_MSOrientationChange(
     `type`: MSOrientationChange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_MSOrientationChange(
+    `type`: MSOrientationChange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   def msLockOrientation(orientations: java.lang.String): scala.Boolean = js.native
   def msLockOrientation(orientations: js.Array[java.lang.String]): scala.Boolean = js.native
@@ -40,7 +46,13 @@ trait Screen extends EventTarget {
   def removeEventListener_MSOrientationChange(
     `type`: MSOrientationChange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSOrientationChange(
+    `type`: MSOrientationChange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
 }
 

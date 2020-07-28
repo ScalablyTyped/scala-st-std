@@ -18,7 +18,13 @@ trait TextTrackList
   def addEventListener_addtrack(
     `type`: addtrack,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_addtrack(
+    `type`: addtrack,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   def item(index: Double): TextTrack = js.native
   @JSName("removeEventListener")
@@ -27,7 +33,13 @@ trait TextTrackList
   def removeEventListener_addtrack(
     `type`: addtrack,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_addtrack(
+    `type`: addtrack,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
 }
 

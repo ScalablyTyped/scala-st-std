@@ -35,7 +35,7 @@ trait RegExpConstructor
   var $9: java.lang.String = js.native
   var lastMatch: java.lang.String = js.native
   @JSName(js.Symbol.species)
-  var species: js.Function0[this.type] = js.native
+  val species: RegExpConstructor = js.native
   def apply(pattern: RegExp): RegExp = js.native
   def apply(pattern: RegExp, flags: java.lang.String): RegExp = js.native
   def apply(pattern: java.lang.String): RegExp = js.native

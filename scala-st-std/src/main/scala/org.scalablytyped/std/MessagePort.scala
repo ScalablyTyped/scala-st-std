@@ -13,7 +13,13 @@ trait MessagePort extends EventTarget {
   def addEventListener_message(
     `type`: message,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_message(
+    `type`: message,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   def close(): Unit = js.native
   def onmessage(ev: MessageEvent): js.Any = js.native
@@ -27,7 +33,13 @@ trait MessagePort extends EventTarget {
   def removeEventListener_message(
     `type`: message,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_message(
+    `type`: message,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   def start(): Unit = js.native
 }

@@ -23,7 +23,13 @@ trait RTCIceTransport extends RTCStatsProvider {
   def addEventListener_candidatepairchange(
     `type`: candidatepairchange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceCandidatePairChangedEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_candidatepairchange(
+    `type`: candidatepairchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceCandidatePairChangedEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_icestatechange(
@@ -34,7 +40,13 @@ trait RTCIceTransport extends RTCStatsProvider {
   def addEventListener_icestatechange(
     `type`: icestatechange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceTransportStateChangedEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_icestatechange(
+    `type`: icestatechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceTransportStateChangedEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   def addRemoteCandidate(remoteCandidate: RTCIceCandidateComplete): Unit = js.native
   def addRemoteCandidate(remoteCandidate: RTCIceCandidateDictionary): Unit = js.native
@@ -51,7 +63,13 @@ trait RTCIceTransport extends RTCStatsProvider {
   def removeEventListener_candidatepairchange(
     `type`: candidatepairchange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceCandidatePairChangedEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_candidatepairchange(
+    `type`: candidatepairchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceCandidatePairChangedEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_icestatechange(
@@ -62,7 +80,13 @@ trait RTCIceTransport extends RTCStatsProvider {
   def removeEventListener_icestatechange(
     `type`: icestatechange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceTransportStateChangedEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_icestatechange(
+    `type`: icestatechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceTransportStateChangedEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   def setRemoteCandidates(remoteCandidates: js.Array[RTCIceCandidateDictionary]): Unit = js.native
   def start(gatherer: RTCIceGatherer, remoteParameters: RTCIceParameters): Unit = js.native

@@ -24,8 +24,8 @@ trait Range extends js.Object {
   def detach(): Unit
   def expand(Unit: ExpandGranularity): scala.Boolean
   def extractContents(): DocumentFragment
-  def getBoundingClientRect(): ClientRect
-  def getClientRects(): ClientRectList
+  def getBoundingClientRect(): ClientRect | DOMRect
+  def getClientRects(): ClientRectList | DOMRectList
   def insertNode(newNode: Node): Unit
   def selectNode(refNode: Node): Unit
   def selectNodeContents(refNode: Node): Unit
@@ -58,8 +58,8 @@ object Range {
     endOffset: Double,
     expand: ExpandGranularity => scala.Boolean,
     extractContents: () => DocumentFragment,
-    getBoundingClientRect: () => ClientRect,
-    getClientRects: () => ClientRectList,
+    getBoundingClientRect: () => ClientRect | DOMRect,
+    getClientRects: () => ClientRectList | DOMRectList,
     insertNode: Node => Unit,
     selectNode: Node => Unit,
     selectNodeContents: Node => Unit,
@@ -122,9 +122,9 @@ object Range {
     @scala.inline
     def setExtractContents(value: () => DocumentFragment): Self = this.set("extractContents", js.Any.fromFunction0(value))
     @scala.inline
-    def setGetBoundingClientRect(value: () => ClientRect): Self = this.set("getBoundingClientRect", js.Any.fromFunction0(value))
+    def setGetBoundingClientRect(value: () => ClientRect | DOMRect): Self = this.set("getBoundingClientRect", js.Any.fromFunction0(value))
     @scala.inline
-    def setGetClientRects(value: () => ClientRectList): Self = this.set("getClientRects", js.Any.fromFunction0(value))
+    def setGetClientRects(value: () => ClientRectList | DOMRectList): Self = this.set("getClientRects", js.Any.fromFunction0(value))
     @scala.inline
     def setInsertNode(value: Node => Unit): Self = this.set("insertNode", js.Any.fromFunction1(value))
     @scala.inline

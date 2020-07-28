@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait HTMLLabelElement extends HTMLElement {
+  val control: HTMLInputElement | Null = js.native
   /**
     * Retrieves a reference to the form that the object is embedded in.
     */

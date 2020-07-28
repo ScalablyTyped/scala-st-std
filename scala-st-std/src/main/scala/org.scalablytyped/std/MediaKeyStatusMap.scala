@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 trait MediaKeyStatusMap extends js.Object {
   val size: Double
   def forEach(callback: ForEachCallback): Unit
-  def get(keyId: js.Any): MediaKeyStatus
-  def has(keyId: js.Any): scala.Boolean
+  def get(keyId: BufferSource): MediaKeyStatus
+  def has(keyId: BufferSource): scala.Boolean
 }
 
 object MediaKeyStatusMap {
   @scala.inline
   def apply(
     forEach: ForEachCallback => Unit,
-    get: js.Any => MediaKeyStatus,
-    has: js.Any => scala.Boolean,
+    get: BufferSource => MediaKeyStatus,
+    has: BufferSource => scala.Boolean,
     size: Double
   ): MediaKeyStatusMap = {
     val __obj = js.Dynamic.literal(forEach = js.Any.fromFunction1(forEach), get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), size = size.asInstanceOf[js.Any])
@@ -36,9 +36,9 @@ object MediaKeyStatusMap {
     @scala.inline
     def setForEach(value: ForEachCallback => Unit): Self = this.set("forEach", js.Any.fromFunction1(value))
     @scala.inline
-    def setGet(value: js.Any => MediaKeyStatus): Self = this.set("get", js.Any.fromFunction1(value))
+    def setGet(value: BufferSource => MediaKeyStatus): Self = this.set("get", js.Any.fromFunction1(value))
     @scala.inline
-    def setHas(value: js.Any => scala.Boolean): Self = this.set("has", js.Any.fromFunction1(value))
+    def setHas(value: BufferSource => scala.Boolean): Self = this.set("has", js.Any.fromFunction1(value))
     @scala.inline
     def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
   }

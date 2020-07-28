@@ -8,7 +8,13 @@ package object std {
   type AAGUID = java.lang.String
   type AlgorithmIdentifier = java.lang.String | org.scalablytyped.std.Algorithm
   type ArrayBufferLike = org.scalablytyped.std.ArrayBuffer
-  type BodyInit = js.Any
+  /* Rewritten from type alias, can be one of: 
+    - `org.scalablytyped`.std.Blob
+    - `org.scalablytyped`.std.BufferSource
+    - `org.scalablytyped`.std.FormData
+    - java.lang.String
+  */
+  type BodyInit = org.scalablytyped.std._BodyInit | java.lang.String
   type ByteString = java.lang.String
   type CDATASection = org.scalablytyped.std.Text
   type CSSSupportsRule = org.scalablytyped.std.CSSConditionRule
@@ -23,9 +29,6 @@ package object std {
   type DOMStringMap = org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]
   type DecodeErrorCallback = js.Function1[/* error */ org.scalablytyped.std.DOMException, scala.Unit]
   type DecodeSuccessCallback = js.Function1[/* decodedData */ org.scalablytyped.std.AudioBuffer, scala.Unit]
-  type ElementListTagNameMap = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in 'abbr' | 'acronym' | 'address' | 'article' | 'aside' | 'b' | 'bdo' | 'big' | 'center' | 'circle' | 'cite' | 'clippath' | 'code' | 'dd' | 'defs' | 'desc' | 'dfn' | 'dt' | 'ellipse' | 'em' | 'feblend' | 'fecolormatrix' | 'fecomponenttransfer' | 'fecomposite' | 'feconvolvematrix' | 'fediffuselighting' | 'fedisplacementmap' | 'fedistantlight' | 'feflood' | 'fefunca' | 'fefuncb' | 'fefuncg' | 'fefuncr' | 'fegaussianblur' | 'feimage' | 'femerge' | 'femergenode' | 'femorphology' | 'feoffset' | 'fepointlight' | 'fespecularlighting' | 'fespotlight' | 'fetile' | 'feturbulence' | 'figcaption' | 'figure' | 'filter' | 'footer' | 'foreignobject' | 'g' | 'header' | 'hgroup' | 'i' | 'image' | 'kbd' | 'keygen' | 'line' | 'lineargradient' | 'mark' | 'marker' | 'mask' | 'metadata' | 'nav' | 'nobr' | 'noframes' | 'noscript' | 'path' | 'pattern' | 'plaintext' | 'polygon' | 'polyline' | 'radialgradient' | 'rect' | 'rt' | 'ruby' | 's' | 'samp' | 'section' | 'small' | 'stop' | 'strike' | 'strong' | 'sub' | 'sup' | 'svg' | 'switch' | 'symbol' | 'text' | 'textpath' | 'tspan' | 'tt' | 'u' | 'use' | 'var' | 'view' | 'wbr' ]: std.NodeListOf<std.ElementTagNameMap[key]>}
-    */ org.scalablytyped.std.stdStrings.ElementListTagNameMap with org.scalablytyped.runtime.TopLevel[org.scalablytyped.std.ElementTagNameMap]
   type ErrorEventHandler = js.Function5[
     /* message */ java.lang.String, 
     /* filename */ js.UndefOr[java.lang.String], 
@@ -59,7 +62,7 @@ package object std {
   type HTMLAreasCollection = org.scalablytyped.std.HTMLCollectionBase
   type HTMLMainElement = org.scalablytyped.std.HTMLElement
   type HTMLSummaryElement = org.scalablytyped.std.HTMLElement
-  type HeadersInit = org.scalablytyped.std.Headers | js.Array[js.Array[java.lang.String]]
+  type HeadersInit = org.scalablytyped.std.Headers | js.Array[js.Array[java.lang.String]] | org.scalablytyped.runtime.StringDictionary[java.lang.String]
   type IDBKeyPath = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - scala.Double

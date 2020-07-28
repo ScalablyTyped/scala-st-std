@@ -18,7 +18,13 @@ trait IDBDatabase extends EventTarget {
   def addEventListener_abort(
     `type`: abort,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_abort(
+    `type`: abort,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -26,15 +32,30 @@ trait IDBDatabase extends EventTarget {
   def addEventListener_error(
     `type`: error,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_versionchange(`type`: versionchange, listener: js.Function1[/* ev */ IDBVersionChangeEvent, _]): Unit = js.native
+  def addEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_versionchange(
     `type`: versionchange,
-    listener: js.Function1[/* ev */ IDBVersionChangeEvent, _],
-    useCapture: scala.Boolean
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, _]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_versionchange(
+    `type`: versionchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, _],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_versionchange(
+    `type`: versionchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   def close(): Unit = js.native
   def createObjectStore(name: java.lang.String): IDBObjectStore = js.native
@@ -49,7 +70,13 @@ trait IDBDatabase extends EventTarget {
   def removeEventListener_abort(
     `type`: abort,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_abort(
+    `type`: abort,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -57,7 +84,30 @@ trait IDBDatabase extends EventTarget {
   def removeEventListener_error(
     `type`: error,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_versionchange(
+    `type`: versionchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_versionchange(
+    `type`: versionchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, _],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_versionchange(
+    `type`: versionchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   def transaction(storeNames: java.lang.String): IDBTransaction = js.native
   def transaction(storeNames: java.lang.String, mode: IDBTransactionMode): IDBTransaction = js.native

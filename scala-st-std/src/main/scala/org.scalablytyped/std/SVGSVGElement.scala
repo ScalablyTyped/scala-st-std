@@ -32,14 +32,26 @@ trait SVGSVGElement
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, useCapture: scala.Boolean): Unit = js.native
+  override def addEventListener(
+    `type`: java.lang.String,
+    listener: EventListenerOrEventListenerObject,
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_SVGAbort(`type`: SVGAbort, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_SVGAbort(
     `type`: SVGAbort,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_SVGAbort(
+    `type`: SVGAbort,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_SVGError(`type`: SVGError, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -47,7 +59,13 @@ trait SVGSVGElement
   def addEventListener_SVGError(
     `type`: SVGError,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_SVGError(
+    `type`: SVGError,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_SVGUnload(`type`: SVGUnload, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -55,7 +73,13 @@ trait SVGSVGElement
   def addEventListener_SVGUnload(
     `type`: SVGUnload,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_SVGUnload(
+    `type`: SVGUnload,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_SVGZoom(`type`: SVGZoom, listener: js.ThisFunction1[/* this */ this.type, /* ev */ SVGZoomEvent, _]): Unit = js.native
@@ -63,7 +87,13 @@ trait SVGSVGElement
   def addEventListener_SVGZoom(
     `type`: SVGZoom,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ SVGZoomEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_SVGZoom(
+    `type`: SVGZoom,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SVGZoomEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_resize(`type`: resize, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
@@ -71,7 +101,13 @@ trait SVGSVGElement
   def addEventListener_resize(
     `type`: resize,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_resize(
+    `type`: resize,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_scroll(`type`: scroll, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
@@ -79,7 +115,13 @@ trait SVGSVGElement
   def addEventListener_scroll(
     `type`: scroll,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_scroll(
+    `type`: scroll,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   def checkEnclosure(element: SVGElement, rect: SVGRect): scala.Boolean = js.native
   def checkIntersection(element: SVGElement, rect: SVGRect): scala.Boolean = js.native
@@ -113,14 +155,26 @@ trait SVGSVGElement
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, useCapture: scala.Boolean): Unit = js.native
+  override def removeEventListener(
+    `type`: java.lang.String,
+    listener: EventListenerOrEventListenerObject,
+    options: EventListenerOptions
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_SVGAbort(`type`: SVGAbort, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_SVGAbort(
     `type`: SVGAbort,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_SVGAbort(
+    `type`: SVGAbort,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_SVGError(`type`: SVGError, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -128,7 +182,13 @@ trait SVGSVGElement
   def removeEventListener_SVGError(
     `type`: SVGError,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_SVGError(
+    `type`: SVGError,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_SVGUnload(`type`: SVGUnload, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -136,7 +196,13 @@ trait SVGSVGElement
   def removeEventListener_SVGUnload(
     `type`: SVGUnload,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_SVGUnload(
+    `type`: SVGUnload,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_SVGZoom(`type`: SVGZoom, listener: js.ThisFunction1[/* this */ this.type, /* ev */ SVGZoomEvent, _]): Unit = js.native
@@ -144,7 +210,13 @@ trait SVGSVGElement
   def removeEventListener_SVGZoom(
     `type`: SVGZoom,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ SVGZoomEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_SVGZoom(
+    `type`: SVGZoom,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SVGZoomEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_resize(`type`: resize, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
@@ -152,7 +224,13 @@ trait SVGSVGElement
   def removeEventListener_resize(
     `type`: resize,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_resize(
+    `type`: resize,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_scroll(`type`: scroll, listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]): Unit = js.native
@@ -160,7 +238,13 @@ trait SVGSVGElement
   def removeEventListener_scroll(
     `type`: scroll,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_scroll(
+    `type`: scroll,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   def setCurrentTime(seconds: Double): Unit = js.native
   def suspendRedraw(maxWaitMilliseconds: Double): Double = js.native

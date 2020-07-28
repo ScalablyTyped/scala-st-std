@@ -1,5 +1,6 @@
 package org.scalablytyped.std.global
 
+import org.scalablytyped.std.AddEventListenerOptions
 import org.scalablytyped.std.Window
 import org.scalablytyped.std.stdStrings.pointerdown
 import scala.scalajs.js
@@ -16,7 +17,12 @@ object addEventListener_pointerdown extends js.Object {
   def apply(
     `type`: pointerdown,
     listener: js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.PointerEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  def apply(
+    `type`: pointerdown,
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.PointerEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
 }
 

@@ -1,5 +1,6 @@
 package org.scalablytyped.std.global
 
+import org.scalablytyped.std.AddEventListenerOptions
 import org.scalablytyped.std.Event
 import org.scalablytyped.std.Window
 import org.scalablytyped.std.stdStrings.online
@@ -14,7 +15,12 @@ object addEventListener_online extends js.Object {
   def apply(
     `type`: online,
     listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  def apply(
+    `type`: online,
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
 }
 

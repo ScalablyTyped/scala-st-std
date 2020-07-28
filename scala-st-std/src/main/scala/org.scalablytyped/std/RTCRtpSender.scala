@@ -19,7 +19,13 @@ trait RTCRtpSender extends RTCStatsProvider {
   def addEventListener_error(
     `type`: error,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ssrcconflict(
@@ -30,7 +36,13 @@ trait RTCRtpSender extends RTCStatsProvider {
   def addEventListener_ssrcconflict(
     `type`: ssrcconflict,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCSsrcConflictEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_ssrcconflict(
+    `type`: ssrcconflict,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCSsrcConflictEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -38,7 +50,13 @@ trait RTCRtpSender extends RTCStatsProvider {
   def removeEventListener_error(
     `type`: error,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_ssrcconflict(
@@ -49,7 +67,13 @@ trait RTCRtpSender extends RTCStatsProvider {
   def removeEventListener_ssrcconflict(
     `type`: ssrcconflict,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCSsrcConflictEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_ssrcconflict(
+    `type`: ssrcconflict,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCSsrcConflictEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   def send(parameters: RTCRtpParameters): Unit = js.native
   def setTrack(track: MediaStreamTrack): Unit = js.native

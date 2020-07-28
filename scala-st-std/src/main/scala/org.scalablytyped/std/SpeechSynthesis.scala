@@ -16,7 +16,13 @@ trait SpeechSynthesis extends EventTarget {
   def addEventListener_voiceschanged(
     `type`: voiceschanged,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_voiceschanged(
+    `type`: voiceschanged,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   def cancel(): Unit = js.native
   def getVoices(): js.Array[SpeechSynthesisVoice] = js.native
@@ -28,7 +34,13 @@ trait SpeechSynthesis extends EventTarget {
   def removeEventListener_voiceschanged(
     `type`: voiceschanged,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_voiceschanged(
+    `type`: voiceschanged,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   def resume(): Unit = js.native
   def speak(utterance: SpeechSynthesisUtterance): Unit = js.native

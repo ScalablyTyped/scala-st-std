@@ -1,5 +1,6 @@
 package org.scalablytyped.std.global
 
+import org.scalablytyped.std.AddEventListenerOptions
 import org.scalablytyped.std.Window
 import org.scalablytyped.std.stdStrings.ended
 import scala.scalajs.js
@@ -16,7 +17,12 @@ object addEventListener_ended extends js.Object {
   def apply(
     `type`: ended,
     listener: js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.MediaStreamErrorEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  def apply(
+    `type`: ended,
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.MediaStreamErrorEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
 }
 

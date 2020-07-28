@@ -13,6 +13,12 @@ trait FileReader
   override def addEventListener(
     `type`: java.lang.String,
     listener: js.UndefOr[EventListenerOrEventListenerObject],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(
+    `type`: java.lang.String,
+    listener: js.UndefOr[EventListenerOrEventListenerObject],
     options: scala.Boolean
   ): Unit = js.native
   /* InferMemberOverrides */
@@ -22,6 +28,12 @@ trait FileReader
   def readAsDataURL(blob: Blob): Unit = js.native
   def readAsText(blob: Blob): Unit = js.native
   def readAsText(blob: Blob, encoding: java.lang.String): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(
+    `type`: java.lang.String,
+    listener: js.UndefOr[EventListenerOrEventListenerObject],
+    options: EventListenerOptions
+  ): Unit = js.native
   /* InferMemberOverrides */
   override def removeEventListener(
     `type`: java.lang.String,

@@ -19,6 +19,7 @@ trait Request
   val redirect: RequestRedirect = js.native
   val referrer: java.lang.String = js.native
   val referrerPolicy: ReferrerPolicy = js.native
+  val signal: AbortSignal = js.native
   val `type`: RequestType = js.native
   val url: java.lang.String = js.native
 }

@@ -72,7 +72,7 @@ trait Math extends js.Object {
     */
   def cbrt(x: Double): Double = js.native
   /**
-    * Returns the smallest number greater than or equal to its numeric argument.
+    * Returns the smallest integer greater than or equal to its numeric argument.
     * @param x A numeric expression.
     */
   def ceil(x: Double): Double = js.native
@@ -97,13 +97,14 @@ trait Math extends js.Object {
     */
   def exp(x: Double): Double = js.native
   /**
-    * Returns the result of (e^x - 1) of x (e raised to the power of x, where e is the base of
-    * the natural logarithms).
+    * Returns the result of (e^x - 1), which is an implementation-dependent approximation to
+    * subtracting 1 from the exponential function of x (e raised to the power of x, where e
+    * is the base of the natural logarithms).
     * @param x A numeric expression.
     */
   def expm1(x: Double): Double = js.native
   /**
-    * Returns the greatest number less than or equal to its numeric argument.
+    * Returns the greatest integer less than or equal to its numeric argument.
     * @param x A numeric expression.
     */
   def floor(x: Double): Double = js.native

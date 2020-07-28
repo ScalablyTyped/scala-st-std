@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait PaymentMethodData extends js.Object {
   var data: js.UndefOr[js.Any] = js.undefined
-  var supportedMethods: js.Array[java.lang.String]
+  var supportedMethods: java.lang.String | js.Array[java.lang.String]
 }
 
 object PaymentMethodData {
   @scala.inline
-  def apply(supportedMethods: js.Array[java.lang.String]): PaymentMethodData = {
+  def apply(supportedMethods: java.lang.String | js.Array[java.lang.String]): PaymentMethodData = {
     val __obj = js.Dynamic.literal(supportedMethods = supportedMethods.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentMethodData]
   }
@@ -29,7 +29,7 @@ object PaymentMethodData {
     @scala.inline
     def setSupportedMethodsVarargs(value: java.lang.String*): Self = this.set("supportedMethods", js.Array(value :_*))
     @scala.inline
-    def setSupportedMethods(value: js.Array[java.lang.String]): Self = this.set("supportedMethods", value.asInstanceOf[js.Any])
+    def setSupportedMethods(value: java.lang.String | js.Array[java.lang.String]): Self = this.set("supportedMethods", value.asInstanceOf[js.Any])
     @scala.inline
     def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
     @scala.inline

@@ -12,5 +12,8 @@ trait SetConstructor
      with Instantiable1[
       (/* values */ js.Array[js.Object]) | (/* iterable */ Iterable[js.Object]), 
       Set[js.Object]
-    ]
+    ] {
+  @JSName(js.Symbol.species)
+  val species: SetConstructor = js.native
+}
 

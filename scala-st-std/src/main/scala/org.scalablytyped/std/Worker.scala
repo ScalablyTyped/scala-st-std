@@ -13,6 +13,12 @@ trait Worker
   override def addEventListener(
     `type`: java.lang.String,
     listener: js.UndefOr[EventListenerOrEventListenerObject],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(
+    `type`: java.lang.String,
+    listener: js.UndefOr[EventListenerOrEventListenerObject],
     options: scala.Boolean
   ): Unit = js.native
   /* InferMemberOverrides */
@@ -23,11 +29,23 @@ trait Worker
   def addEventListener_message(
     `type`: message,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_message(
+    `type`: message,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   def onmessage(ev: MessageEvent): js.Any = js.native
   def postMessage(message: js.Any): Unit = js.native
   def postMessage(message: js.Any, transfer: js.Array[_]): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(
+    `type`: java.lang.String,
+    listener: js.UndefOr[EventListenerOrEventListenerObject],
+    options: EventListenerOptions
+  ): Unit = js.native
   /* InferMemberOverrides */
   override def removeEventListener(
     `type`: java.lang.String,
@@ -42,7 +60,13 @@ trait Worker
   def removeEventListener_message(
     `type`: message,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_message(
+    `type`: message,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   def terminate(): Unit = js.native
 }

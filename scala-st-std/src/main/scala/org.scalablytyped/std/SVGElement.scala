@@ -26,7 +26,13 @@ trait SVGElement extends Element {
   def addEventListener_click(
     `type`: click,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_click(
+    `type`: click,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dblclick(`type`: dblclick, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -34,7 +40,13 @@ trait SVGElement extends Element {
   def addEventListener_dblclick(
     `type`: dblclick,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_dblclick(
+    `type`: dblclick,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_focusin(`type`: focusin, listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]): Unit = js.native
@@ -42,7 +54,13 @@ trait SVGElement extends Element {
   def addEventListener_focusin(
     `type`: focusin,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_focusin(
+    `type`: focusin,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_focusout(`type`: focusout, listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]): Unit = js.native
@@ -50,7 +68,13 @@ trait SVGElement extends Element {
   def addEventListener_focusout(
     `type`: focusout,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_focusout(
+    `type`: focusout,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_load(`type`: load, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -58,7 +82,13 @@ trait SVGElement extends Element {
   def addEventListener_load(
     `type`: load,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_load(
+    `type`: load,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mousedown(`type`: mousedown, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -66,7 +96,13 @@ trait SVGElement extends Element {
   def addEventListener_mousedown(
     `type`: mousedown,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_mousedown(
+    `type`: mousedown,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mousemove(`type`: mousemove, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -74,7 +110,13 @@ trait SVGElement extends Element {
   def addEventListener_mousemove(
     `type`: mousemove,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_mousemove(
+    `type`: mousemove,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mouseout(`type`: mouseout, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -82,7 +124,13 @@ trait SVGElement extends Element {
   def addEventListener_mouseout(
     `type`: mouseout,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_mouseout(
+    `type`: mouseout,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mouseover(`type`: mouseover, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -90,7 +138,13 @@ trait SVGElement extends Element {
   def addEventListener_mouseover(
     `type`: mouseover,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_mouseover(
+    `type`: mouseover,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mouseup(`type`: mouseup, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -98,7 +152,13 @@ trait SVGElement extends Element {
   def addEventListener_mouseup(
     `type`: mouseup,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_mouseup(
+    `type`: mouseup,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   def onclick(ev: MouseEvent): js.Any = js.native
   def ondblclick(ev: MouseEvent): js.Any = js.native
@@ -116,7 +176,13 @@ trait SVGElement extends Element {
   def removeEventListener_click(
     `type`: click,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_click(
+    `type`: click,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_dblclick(`type`: dblclick, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -124,7 +190,13 @@ trait SVGElement extends Element {
   def removeEventListener_dblclick(
     `type`: dblclick,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_dblclick(
+    `type`: dblclick,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_focusin(`type`: focusin, listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]): Unit = js.native
@@ -132,7 +204,13 @@ trait SVGElement extends Element {
   def removeEventListener_focusin(
     `type`: focusin,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_focusin(
+    `type`: focusin,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_focusout(`type`: focusout, listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]): Unit = js.native
@@ -140,7 +218,13 @@ trait SVGElement extends Element {
   def removeEventListener_focusout(
     `type`: focusout,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_focusout(
+    `type`: focusout,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_load(`type`: load, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -148,7 +232,13 @@ trait SVGElement extends Element {
   def removeEventListener_load(
     `type`: load,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_load(
+    `type`: load,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_mousedown(`type`: mousedown, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -156,7 +246,13 @@ trait SVGElement extends Element {
   def removeEventListener_mousedown(
     `type`: mousedown,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_mousedown(
+    `type`: mousedown,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_mousemove(`type`: mousemove, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -164,7 +260,13 @@ trait SVGElement extends Element {
   def removeEventListener_mousemove(
     `type`: mousemove,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_mousemove(
+    `type`: mousemove,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_mouseout(`type`: mouseout, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -172,7 +274,13 @@ trait SVGElement extends Element {
   def removeEventListener_mouseout(
     `type`: mouseout,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_mouseout(
+    `type`: mouseout,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_mouseover(`type`: mouseover, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -180,7 +288,13 @@ trait SVGElement extends Element {
   def removeEventListener_mouseover(
     `type`: mouseover,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_mouseover(
+    `type`: mouseover,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_mouseup(`type`: mouseup, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]): Unit = js.native
@@ -188,7 +302,13 @@ trait SVGElement extends Element {
   def removeEventListener_mouseup(
     `type`: mouseup,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_mouseup(
+    `type`: mouseup,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
 }
 

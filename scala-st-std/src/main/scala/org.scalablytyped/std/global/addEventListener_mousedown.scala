@@ -1,5 +1,6 @@
 package org.scalablytyped.std.global
 
+import org.scalablytyped.std.AddEventListenerOptions
 import org.scalablytyped.std.Window
 import org.scalablytyped.std.stdStrings.mousedown
 import scala.scalajs.js
@@ -16,7 +17,12 @@ object addEventListener_mousedown extends js.Object {
   def apply(
     `type`: mousedown,
     listener: js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.MouseEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  def apply(
+    `type`: mousedown,
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.MouseEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
 }
 

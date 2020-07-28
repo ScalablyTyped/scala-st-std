@@ -17,7 +17,13 @@ trait RTCIceGatherer extends RTCStatsProvider {
   def addEventListener_error(
     `type`: error,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_localcandidate(
@@ -28,7 +34,13 @@ trait RTCIceGatherer extends RTCStatsProvider {
   def addEventListener_localcandidate(
     `type`: localcandidate,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceGathererEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_localcandidate(
+    `type`: localcandidate,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceGathererEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   def createAssociatedGatherer(): RTCIceGatherer = js.native
   def getLocalCandidates(): js.Array[RTCIceCandidateDictionary] = js.native
@@ -39,7 +51,13 @@ trait RTCIceGatherer extends RTCStatsProvider {
   def removeEventListener_error(
     `type`: error,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_localcandidate(
@@ -50,7 +68,13 @@ trait RTCIceGatherer extends RTCStatsProvider {
   def removeEventListener_localcandidate(
     `type`: localcandidate,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceGathererEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_localcandidate(
+    `type`: localcandidate,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceGathererEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
 }
 

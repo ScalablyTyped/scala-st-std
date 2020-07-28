@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 trait MediaKeys extends js.Object {
   def createSession(): MediaKeySession = js.native
   def createSession(sessionType: MediaKeySessionType): MediaKeySession = js.native
-  def setServerCertificate(serverCertificate: js.Any): js.Promise[Unit] = js.native
+  def setServerCertificate(serverCertificate: BufferSource): js.Promise[Unit] = js.native
 }
 

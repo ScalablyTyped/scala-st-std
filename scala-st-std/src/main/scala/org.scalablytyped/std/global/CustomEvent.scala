@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("CustomEvent")
 @js.native
-class CustomEvent protected ()
-  extends org.scalablytyped.std.CustomEvent {
+class CustomEvent[T] protected ()
+  extends org.scalablytyped.std.CustomEvent[T] {
   def this(typeArg: java.lang.String) = this()
-  def this(typeArg: java.lang.String, eventInitDict: CustomEventInit) = this()
+  def this(typeArg: java.lang.String, eventInitDict: CustomEventInit[T]) = this()
   /* CompleteClass */
   override val AT_TARGET: Double = js.native
   /* CompleteClass */
@@ -30,7 +30,7 @@ class CustomEvent protected ()
   /* CompleteClass */
   override val defaultPrevented: scala.Boolean = js.native
   /* CompleteClass */
-  override val detail: js.Any = js.native
+  override val detail: T = js.native
   /* CompleteClass */
   override val eventPhase: Double = js.native
   /* CompleteClass */
@@ -50,12 +50,7 @@ class CustomEvent protected ()
   /* CompleteClass */
   override def deepPath(): js.Array[org.scalablytyped.std.EventTarget] = js.native
   /* CompleteClass */
-  override def initCustomEvent(
-    typeArg: java.lang.String,
-    canBubbleArg: scala.Boolean,
-    cancelableArg: scala.Boolean,
-    detailArg: js.Any
-  ): Unit = js.native
+  override def initCustomEvent(typeArg: java.lang.String, canBubbleArg: scala.Boolean, cancelableArg: scala.Boolean, detailArg: T): Unit = js.native
   /* CompleteClass */
   override def initEvent(eventTypeArg: java.lang.String, canBubbleArg: scala.Boolean, cancelableArg: scala.Boolean): Unit = js.native
   /* CompleteClass */
@@ -69,10 +64,10 @@ class CustomEvent protected ()
 @JSGlobal("CustomEvent")
 @js.native
 object CustomEvent
-  extends Instantiable1[/* typeArg */ java.lang.String, org.scalablytyped.std.CustomEvent]
+  extends Instantiable1[/* typeArg */ java.lang.String, org.scalablytyped.std.CustomEvent[js.Object]]
      with Instantiable2[
       /* typeArg */ java.lang.String, 
-      /* eventInitDict */ CustomEventInit, 
-      org.scalablytyped.std.CustomEvent
+      /* eventInitDict */ CustomEventInit[js.Object], 
+      org.scalablytyped.std.CustomEvent[js.Object]
     ]
 

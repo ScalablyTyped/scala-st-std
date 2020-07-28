@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 class URL protected ()
   extends org.scalablytyped.std.URL {
   def this(url: java.lang.String) = this()
+  def this(url: java.lang.String, base: org.scalablytyped.std.URL) = this()
   def this(url: java.lang.String, base: java.lang.String) = this()
   /* CompleteClass */
   override var hash: java.lang.String = js.native
@@ -43,7 +44,11 @@ class URL protected ()
 @js.native
 object URL
   extends Instantiable1[/* url */ java.lang.String, org.scalablytyped.std.URL]
-     with Instantiable2[/* url */ java.lang.String, /* base */ java.lang.String, org.scalablytyped.std.URL] {
+     with Instantiable2[
+      /* url */ java.lang.String, 
+      (/* base */ java.lang.String) | (/* base */ org.scalablytyped.std.URL), 
+      org.scalablytyped.std.URL
+    ] {
   def createObjectURL(`object`: js.Any): java.lang.String = js.native
   def createObjectURL(`object`: js.Any, options: ObjectURLOptions): java.lang.String = js.native
   def revokeObjectURL(url: java.lang.String): Unit = js.native

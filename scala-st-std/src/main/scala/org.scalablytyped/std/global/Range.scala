@@ -1,5 +1,6 @@
 package org.scalablytyped.std.global
 
+import org.scalablytyped.std.DOMRectList
 import org.scalablytyped.std.ExpandGranularity
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
@@ -49,9 +50,9 @@ class Range ()
   /* CompleteClass */
   override def extractContents(): org.scalablytyped.std.DocumentFragment = js.native
   /* CompleteClass */
-  override def getBoundingClientRect(): org.scalablytyped.std.ClientRect = js.native
+  override def getBoundingClientRect(): org.scalablytyped.std.ClientRect | org.scalablytyped.std.DOMRect = js.native
   /* CompleteClass */
-  override def getClientRects(): org.scalablytyped.std.ClientRectList = js.native
+  override def getClientRects(): org.scalablytyped.std.ClientRectList | DOMRectList = js.native
   /* CompleteClass */
   override def insertNode(newNode: org.scalablytyped.std.Node): Unit = js.native
   /* CompleteClass */

@@ -25,7 +25,7 @@ trait DocumentEvent extends js.Object {
   @JSName("createEvent")
   def createEvent_CompositionEvent(eventInterface: org.scalablytyped.std.stdStrings.CompositionEvent): CompositionEvent = js.native
   @JSName("createEvent")
-  def createEvent_CustomEvent(eventInterface: org.scalablytyped.std.stdStrings.CustomEvent): CustomEvent = js.native
+  def createEvent_CustomEvent(eventInterface: org.scalablytyped.std.stdStrings.CustomEvent): CustomEvent[_] = js.native
   @JSName("createEvent")
   def createEvent_DeviceLightEvent(eventInterface: org.scalablytyped.std.stdStrings.DeviceLightEvent): DeviceLightEvent = js.native
   @JSName("createEvent")

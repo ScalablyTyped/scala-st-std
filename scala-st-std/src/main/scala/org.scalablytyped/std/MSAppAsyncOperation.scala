@@ -19,7 +19,13 @@ trait MSAppAsyncOperation extends EventTarget {
   def addEventListener_complete(
     `type`: complete,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_complete(
+    `type`: complete,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(
@@ -30,7 +36,13 @@ trait MSAppAsyncOperation extends EventTarget {
   def addEventListener_error(
     `type`: org.scalablytyped.std.stdStrings.error,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_error(
+    `type`: org.scalablytyped.std.stdStrings.error,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   def oncomplete(ev: Event): js.Any = js.native
   def onerror(ev: Event): js.Any = js.native
@@ -40,7 +52,13 @@ trait MSAppAsyncOperation extends EventTarget {
   def removeEventListener_complete(
     `type`: complete,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_complete(
+    `type`: complete,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_error(
@@ -51,7 +69,13 @@ trait MSAppAsyncOperation extends EventTarget {
   def removeEventListener_error(
     `type`: org.scalablytyped.std.stdStrings.error,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_error(
+    `type`: org.scalablytyped.std.stdStrings.error,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   def start(): Unit = js.native
 }

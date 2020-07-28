@@ -17,7 +17,13 @@ trait ScriptProcessorNode extends AudioNode {
   def addEventListener_audioprocess(
     `type`: audioprocess,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ AudioProcessingEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_audioprocess(
+    `type`: audioprocess,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ AudioProcessingEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   def onaudioprocess(ev: AudioProcessingEvent): js.Any = js.native
   @JSName("removeEventListener")
@@ -29,7 +35,13 @@ trait ScriptProcessorNode extends AudioNode {
   def removeEventListener_audioprocess(
     `type`: audioprocess,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ AudioProcessingEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_audioprocess(
+    `type`: audioprocess,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ AudioProcessingEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
 }
 

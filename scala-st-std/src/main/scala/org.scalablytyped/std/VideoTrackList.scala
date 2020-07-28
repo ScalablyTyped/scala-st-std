@@ -20,7 +20,13 @@ trait VideoTrackList
   def addEventListener_addtrack(
     `type`: addtrack,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_addtrack(
+    `type`: addtrack,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_change(`type`: change, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -28,7 +34,13 @@ trait VideoTrackList
   def addEventListener_change(
     `type`: change,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_change(
+    `type`: change,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_removetrack(`type`: removetrack, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _]): Unit = js.native
@@ -36,7 +48,13 @@ trait VideoTrackList
   def addEventListener_removetrack(
     `type`: removetrack,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_removetrack(
+    `type`: removetrack,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   def getTrackById(id: java.lang.String): VideoTrack | Null = js.native
   def item(index: Double): VideoTrack = js.native
@@ -49,7 +67,13 @@ trait VideoTrackList
   def removeEventListener_addtrack(
     `type`: addtrack,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_addtrack(
+    `type`: addtrack,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_change(`type`: change, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -57,7 +81,13 @@ trait VideoTrackList
   def removeEventListener_change(
     `type`: change,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_change(
+    `type`: change,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_removetrack(`type`: removetrack, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _]): Unit = js.native
@@ -65,7 +95,13 @@ trait VideoTrackList
   def removeEventListener_removetrack(
     `type`: removetrack,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_removetrack(
+    `type`: removetrack,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _],
+    options: scala.Boolean
   ): Unit = js.native
 }
 

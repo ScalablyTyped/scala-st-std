@@ -18,7 +18,13 @@ trait MSInputMethodContext extends EventTarget {
   def addEventListener_MSCandidateWindowHide(
     `type`: MSCandidateWindowHide,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_MSCandidateWindowHide(
+    `type`: MSCandidateWindowHide,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSCandidateWindowShow(`type`: MSCandidateWindowShow, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -26,7 +32,13 @@ trait MSInputMethodContext extends EventTarget {
   def addEventListener_MSCandidateWindowShow(
     `type`: MSCandidateWindowShow,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_MSCandidateWindowShow(
+    `type`: MSCandidateWindowShow,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSCandidateWindowUpdate(
@@ -37,7 +49,13 @@ trait MSInputMethodContext extends EventTarget {
   def addEventListener_MSCandidateWindowUpdate(
     `type`: MSCandidateWindowUpdate,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_MSCandidateWindowUpdate(
+    `type`: MSCandidateWindowUpdate,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   def getCandidateWindowClientRect(): ClientRect = js.native
   def getCompositionAlternatives(): js.Array[java.lang.String] = js.native
@@ -52,7 +70,13 @@ trait MSInputMethodContext extends EventTarget {
   def removeEventListener_MSCandidateWindowHide(
     `type`: MSCandidateWindowHide,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSCandidateWindowHide(
+    `type`: MSCandidateWindowHide,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSCandidateWindowShow(`type`: MSCandidateWindowShow, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
@@ -60,7 +84,13 @@ trait MSInputMethodContext extends EventTarget {
   def removeEventListener_MSCandidateWindowShow(
     `type`: MSCandidateWindowShow,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSCandidateWindowShow(
+    `type`: MSCandidateWindowShow,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSCandidateWindowUpdate(
@@ -71,7 +101,13 @@ trait MSInputMethodContext extends EventTarget {
   def removeEventListener_MSCandidateWindowUpdate(
     `type`: MSCandidateWindowUpdate,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_MSCandidateWindowUpdate(
+    `type`: MSCandidateWindowUpdate,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
 }
 

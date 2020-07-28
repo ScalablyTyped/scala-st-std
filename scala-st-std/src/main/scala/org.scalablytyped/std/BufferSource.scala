@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
   - `org.scalablytyped`.std.ArrayBuffer
   - `org.scalablytyped`.std.ArrayBufferView
 */
-trait BufferSource extends js.Object
+trait BufferSource extends _BodyInit
 

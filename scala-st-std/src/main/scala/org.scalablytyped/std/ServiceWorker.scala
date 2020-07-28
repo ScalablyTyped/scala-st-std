@@ -15,6 +15,12 @@ trait ServiceWorker
   override def addEventListener(
     `type`: java.lang.String,
     listener: js.UndefOr[EventListenerOrEventListenerObject],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(
+    `type`: java.lang.String,
+    listener: js.UndefOr[EventListenerOrEventListenerObject],
     options: scala.Boolean
   ): Unit = js.native
   /* InferMemberOverrides */
@@ -25,11 +31,23 @@ trait ServiceWorker
   def addEventListener_statechange(
     `type`: statechange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_statechange(
+    `type`: statechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   def onstatechange(ev: Event): js.Any = js.native
   def postMessage(message: js.Any): Unit = js.native
   def postMessage(message: js.Any, transfer: js.Array[_]): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(
+    `type`: java.lang.String,
+    listener: js.UndefOr[EventListenerOrEventListenerObject],
+    options: EventListenerOptions
+  ): Unit = js.native
   /* InferMemberOverrides */
   override def removeEventListener(
     `type`: java.lang.String,
@@ -44,7 +62,13 @@ trait ServiceWorker
   def removeEventListener_statechange(
     `type`: statechange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_statechange(
+    `type`: statechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
 }
 

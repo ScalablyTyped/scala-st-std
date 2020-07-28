@@ -31,6 +31,12 @@ trait XMLHttpRequest
   override def addEventListener(
     `type`: java.lang.String,
     listener: js.UndefOr[EventListenerOrEventListenerObject],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(
+    `type`: java.lang.String,
+    listener: js.UndefOr[EventListenerOrEventListenerObject],
     options: scala.Boolean
   ): Unit = js.native
   /* InferMemberOverrides */
@@ -41,7 +47,13 @@ trait XMLHttpRequest
   def addEventListener_readystatechange(
     `type`: readystatechange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_readystatechange(
+    `type`: readystatechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   def getAllResponseHeaders(): java.lang.String = js.native
   def getResponseHeader(header: java.lang.String): java.lang.String | Null = js.native
@@ -89,6 +101,12 @@ trait XMLHttpRequest
   override def removeEventListener(
     `type`: java.lang.String,
     listener: js.UndefOr[EventListenerOrEventListenerObject],
+    options: EventListenerOptions
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(
+    `type`: java.lang.String,
+    listener: js.UndefOr[EventListenerOrEventListenerObject],
     options: scala.Boolean
   ): Unit = js.native
   /* InferMemberOverrides */
@@ -99,7 +117,13 @@ trait XMLHttpRequest
   def removeEventListener_readystatechange(
     `type`: readystatechange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    useCapture: scala.Boolean
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_readystatechange(
+    `type`: readystatechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
   ): Unit = js.native
   def send(): Unit = js.native
   def send(data: Document): Unit = js.native

@@ -5,14 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ScopedCredentialDescriptor extends js.Object {
-  var id: js.Any
+  var id: BufferSource
   var transports: js.UndefOr[js.Array[Transport]] = js.undefined
   var `type`: ScopedCredentialType
 }
 
 object ScopedCredentialDescriptor {
   @scala.inline
-  def apply(id: js.Any, `type`: ScopedCredentialType): ScopedCredentialDescriptor = {
+  def apply(id: BufferSource, `type`: ScopedCredentialType): ScopedCredentialDescriptor = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScopedCredentialDescriptor]
@@ -29,7 +29,7 @@ object ScopedCredentialDescriptor {
         x
     }
     @scala.inline
-    def setId(value: js.Any): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: BufferSource): Self = this.set("id", value.asInstanceOf[js.Any])
     @scala.inline
     def setType(value: ScopedCredentialType): Self = this.set("type", value.asInstanceOf[js.Any])
     @scala.inline
