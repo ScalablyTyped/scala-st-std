@@ -60,7 +60,6 @@ object ^ extends js.Object {
   var Array: ArrayConstructor = js.native
   var ArrayBuffer: ArrayBufferConstructor = js.native
   var Boolean: BooleanConstructor = js.native
-  var CSS: org.scalablytyped.std.CSS = js.native
   var DataView: DataViewConstructor = js.native
   var Date: DateConstructor = js.native
   var Enumerator: EnumeratorConstructor = js.native

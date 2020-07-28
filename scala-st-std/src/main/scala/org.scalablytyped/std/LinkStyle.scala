@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LinkStyle extends js.Object {
-  val sheet: StyleSheet | Null
+  val sheet: CSSStyleSheet | Null
 }
 
 object LinkStyle {
@@ -26,7 +26,7 @@ object LinkStyle {
         x
     }
     @scala.inline
-    def setSheet(value: StyleSheet): Self = this.set("sheet", value.asInstanceOf[js.Any])
+    def setSheet(value: CSSStyleSheet): Self = this.set("sheet", value.asInstanceOf[js.Any])
     @scala.inline
     def setSheetNull: Self = this.set("sheet", null)
   }

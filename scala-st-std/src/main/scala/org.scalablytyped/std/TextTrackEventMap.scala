@@ -6,14 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait TextTrackEventMap extends js.Object {
   var cuechange: Event
-  var error: Event
-  var load: Event
 }
 
 object TextTrackEventMap {
   @scala.inline
-  def apply(cuechange: Event, error: Event, load: Event): TextTrackEventMap = {
-    val __obj = js.Dynamic.literal(cuechange = cuechange.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], load = load.asInstanceOf[js.Any])
+  def apply(cuechange: Event): TextTrackEventMap = {
+    val __obj = js.Dynamic.literal(cuechange = cuechange.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextTrackEventMap]
   }
   @scala.inline
@@ -29,10 +27,6 @@ object TextTrackEventMap {
     }
     @scala.inline
     def setCuechange(value: Event): Self = this.set("cuechange", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setError(value: Event): Self = this.set("error", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setLoad(value: Event): Self = this.set("load", value.asInstanceOf[js.Any])
   }
   
 }

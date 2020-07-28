@@ -18,13 +18,9 @@ class MediaError ()
   /* CompleteClass */
   override val MEDIA_ERR_SRC_NOT_SUPPORTED: Double = js.native
   /* CompleteClass */
-  override val MS_MEDIA_ERR_ENCRYPTED: Double = js.native
-  /* CompleteClass */
   override val code: Double = js.native
   /* CompleteClass */
   override val message: java.lang.String = js.native
-  /* CompleteClass */
-  override val msExtendedCode: Double = js.native
 }
 
 @JSGlobal("MediaError")
@@ -35,6 +31,5 @@ object MediaError
   val MEDIA_ERR_DECODE: Double = js.native
   val MEDIA_ERR_NETWORK: Double = js.native
   val MEDIA_ERR_SRC_NOT_SUPPORTED: Double = js.native
-  val MS_MEDIA_ERR_ENCRYPTED: Double = js.native
 }
 

@@ -16,9 +16,9 @@ class CSSStyleSheet ()
   /* CompleteClass */
   override val media: org.scalablytyped.std.MediaList = js.native
   /* CompleteClass */
-  override val ownerNode: org.scalablytyped.std.Node = js.native
+  override val ownerNode: org.scalablytyped.std.Element | org.scalablytyped.std.ProcessingInstruction | Null = js.native
   /* CompleteClass */
-  override val parentStyleSheet: org.scalablytyped.std.StyleSheet | Null = js.native
+  override val parentStyleSheet: org.scalablytyped.std.CSSStyleSheet | Null = js.native
   /* CompleteClass */
   override val title: java.lang.String | Null = js.native
   /* CompleteClass */

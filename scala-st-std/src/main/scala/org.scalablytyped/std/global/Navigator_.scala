@@ -32,8 +32,6 @@ class Navigator_ () extends Navigator {
   /* CompleteClass */
   override val onLine: scala.Boolean = js.native
   /* CompleteClass */
-  override val oscpu: java.lang.String = js.native
-  /* CompleteClass */
   override val platform: java.lang.String = js.native
   /* CompleteClass */
   override val plugins: org.scalablytyped.std.PluginArray = js.native
@@ -67,8 +65,6 @@ class Navigator_ () extends Navigator {
   override def storeSiteSpecificTrackingException(args: StoreSiteSpecificExceptionsInformation): Unit = js.native
   /* CompleteClass */
   override def storeWebWideTrackingException(args: StoreExceptionsInformation): Unit = js.native
-  /* CompleteClass */
-  override def taintEnabled(): scala.Boolean = js.native
   /* CompleteClass */
   override def unregisterProtocolHandler(scheme: java.lang.String, url: java.lang.String): Unit = js.native
 }

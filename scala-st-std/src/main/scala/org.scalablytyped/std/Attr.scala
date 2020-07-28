@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 trait Attr extends Node {
   val localName: java.lang.String = js.native
   val name: java.lang.String = js.native
+  @JSName("ownerDocument")
+  val ownerDocument_Attr: Document = js.native
   val ownerElement: Element | Null = js.native
   val prefix: java.lang.String | Null = js.native
   val specified: scala.Boolean = js.native

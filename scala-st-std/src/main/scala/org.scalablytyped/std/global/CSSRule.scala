@@ -30,10 +30,6 @@ class CSSRule ()
   /* CompleteClass */
   override val SUPPORTS_RULE: Double = js.native
   /* CompleteClass */
-  override val UNKNOWN_RULE: Double = js.native
-  /* CompleteClass */
-  override val VIEWPORT_RULE: Double = js.native
-  /* CompleteClass */
   override var cssText: java.lang.String = js.native
   /* CompleteClass */
   override val parentRule: org.scalablytyped.std.CSSRule | Null = js.native
@@ -57,7 +53,5 @@ object CSSRule
   val PAGE_RULE: Double = js.native
   val STYLE_RULE: Double = js.native
   val SUPPORTS_RULE: Double = js.native
-  val UNKNOWN_RULE: Double = js.native
-  val VIEWPORT_RULE: Double = js.native
 }
 

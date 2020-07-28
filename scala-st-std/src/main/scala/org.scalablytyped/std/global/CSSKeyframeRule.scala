@@ -30,10 +30,6 @@ class CSSKeyframeRule ()
   /* CompleteClass */
   override val SUPPORTS_RULE: Double = js.native
   /* CompleteClass */
-  override val UNKNOWN_RULE: Double = js.native
-  /* CompleteClass */
-  override val VIEWPORT_RULE: Double = js.native
-  /* CompleteClass */
   override var cssText: java.lang.String = js.native
   /* CompleteClass */
   override var keyText: java.lang.String = js.native

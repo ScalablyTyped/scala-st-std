@@ -1,6 +1,5 @@
 package org.scalablytyped.std.global
 
-import org.scalablytyped.std.Console
 import org.scalablytyped.std.FrameRequestCallback
 import org.scalablytyped.std.Window
 import org.scalablytyped.runtime.Instantiable0
@@ -11,8 +10,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Window")
 @js.native
 class Window_ () extends Window {
-  /* CompleteClass */
-  override val console: Console = js.native
   /* CompleteClass */
   override val localStorage: org.scalablytyped.std.Storage = js.native
   /* CompleteClass */

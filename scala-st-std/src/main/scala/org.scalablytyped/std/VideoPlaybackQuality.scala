@@ -6,23 +6,15 @@ import scala.scalajs.js.annotation._
 
 /** Returned by the HTMLVideoElement.getVideoPlaybackQuality() method and contains metrics that can be used to determine the playback quality of a video. */
 trait VideoPlaybackQuality extends js.Object {
-  val corruptedVideoFrames: Double
   val creationTime: Double
   val droppedVideoFrames: Double
-  val totalFrameDelay: Double
   val totalVideoFrames: Double
 }
 
 object VideoPlaybackQuality {
   @scala.inline
-  def apply(
-    corruptedVideoFrames: Double,
-    creationTime: Double,
-    droppedVideoFrames: Double,
-    totalFrameDelay: Double,
-    totalVideoFrames: Double
-  ): VideoPlaybackQuality = {
-    val __obj = js.Dynamic.literal(corruptedVideoFrames = corruptedVideoFrames.asInstanceOf[js.Any], creationTime = creationTime.asInstanceOf[js.Any], droppedVideoFrames = droppedVideoFrames.asInstanceOf[js.Any], totalFrameDelay = totalFrameDelay.asInstanceOf[js.Any], totalVideoFrames = totalVideoFrames.asInstanceOf[js.Any])
+  def apply(creationTime: Double, droppedVideoFrames: Double, totalVideoFrames: Double): VideoPlaybackQuality = {
+    val __obj = js.Dynamic.literal(creationTime = creationTime.asInstanceOf[js.Any], droppedVideoFrames = droppedVideoFrames.asInstanceOf[js.Any], totalVideoFrames = totalVideoFrames.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoPlaybackQuality]
   }
   @scala.inline
@@ -37,13 +29,9 @@ object VideoPlaybackQuality {
         x
     }
     @scala.inline
-    def setCorruptedVideoFrames(value: Double): Self = this.set("corruptedVideoFrames", value.asInstanceOf[js.Any])
-    @scala.inline
     def setCreationTime(value: Double): Self = this.set("creationTime", value.asInstanceOf[js.Any])
     @scala.inline
     def setDroppedVideoFrames(value: Double): Self = this.set("droppedVideoFrames", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setTotalFrameDelay(value: Double): Self = this.set("totalFrameDelay", value.asInstanceOf[js.Any])
     @scala.inline
     def setTotalVideoFrames(value: Double): Self = this.set("totalVideoFrames", value.asInstanceOf[js.Any])
   }

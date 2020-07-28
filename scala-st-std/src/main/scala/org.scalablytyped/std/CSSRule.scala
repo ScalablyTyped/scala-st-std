@@ -16,8 +16,6 @@ trait CSSRule extends js.Object {
   val PAGE_RULE: Double
   val STYLE_RULE: Double
   val SUPPORTS_RULE: Double
-  val UNKNOWN_RULE: Double
-  val VIEWPORT_RULE: Double
   var cssText: java.lang.String
   val parentRule: CSSRule | Null
   val parentStyleSheet: CSSStyleSheet | Null
@@ -37,12 +35,10 @@ object CSSRule {
     PAGE_RULE: Double,
     STYLE_RULE: Double,
     SUPPORTS_RULE: Double,
-    UNKNOWN_RULE: Double,
-    VIEWPORT_RULE: Double,
     cssText: java.lang.String,
     `type`: Double
   ): CSSRule = {
-    val __obj = js.Dynamic.literal(CHARSET_RULE = CHARSET_RULE.asInstanceOf[js.Any], FONT_FACE_RULE = FONT_FACE_RULE.asInstanceOf[js.Any], IMPORT_RULE = IMPORT_RULE.asInstanceOf[js.Any], KEYFRAMES_RULE = KEYFRAMES_RULE.asInstanceOf[js.Any], KEYFRAME_RULE = KEYFRAME_RULE.asInstanceOf[js.Any], MEDIA_RULE = MEDIA_RULE.asInstanceOf[js.Any], NAMESPACE_RULE = NAMESPACE_RULE.asInstanceOf[js.Any], PAGE_RULE = PAGE_RULE.asInstanceOf[js.Any], STYLE_RULE = STYLE_RULE.asInstanceOf[js.Any], SUPPORTS_RULE = SUPPORTS_RULE.asInstanceOf[js.Any], UNKNOWN_RULE = UNKNOWN_RULE.asInstanceOf[js.Any], VIEWPORT_RULE = VIEWPORT_RULE.asInstanceOf[js.Any], cssText = cssText.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(CHARSET_RULE = CHARSET_RULE.asInstanceOf[js.Any], FONT_FACE_RULE = FONT_FACE_RULE.asInstanceOf[js.Any], IMPORT_RULE = IMPORT_RULE.asInstanceOf[js.Any], KEYFRAMES_RULE = KEYFRAMES_RULE.asInstanceOf[js.Any], KEYFRAME_RULE = KEYFRAME_RULE.asInstanceOf[js.Any], MEDIA_RULE = MEDIA_RULE.asInstanceOf[js.Any], NAMESPACE_RULE = NAMESPACE_RULE.asInstanceOf[js.Any], PAGE_RULE = PAGE_RULE.asInstanceOf[js.Any], STYLE_RULE = STYLE_RULE.asInstanceOf[js.Any], SUPPORTS_RULE = SUPPORTS_RULE.asInstanceOf[js.Any], cssText = cssText.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CSSRule]
   }
@@ -77,10 +73,6 @@ object CSSRule {
     def setSTYLE_RULE(value: Double): Self = this.set("STYLE_RULE", value.asInstanceOf[js.Any])
     @scala.inline
     def setSUPPORTS_RULE(value: Double): Self = this.set("SUPPORTS_RULE", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setUNKNOWN_RULE(value: Double): Self = this.set("UNKNOWN_RULE", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setVIEWPORT_RULE(value: Double): Self = this.set("VIEWPORT_RULE", value.asInstanceOf[js.Any])
     @scala.inline
     def setCssText(value: java.lang.String): Self = this.set("cssText", value.asInstanceOf[js.Any])
     @scala.inline

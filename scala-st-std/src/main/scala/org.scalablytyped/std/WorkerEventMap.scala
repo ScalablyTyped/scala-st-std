@@ -6,12 +6,13 @@ import scala.scalajs.js.annotation._
 
 trait WorkerEventMap extends AbstractWorkerEventMap {
   var message: MessageEvent
+  var messageerror: MessageEvent
 }
 
 object WorkerEventMap {
   @scala.inline
-  def apply(error: ErrorEvent, message: MessageEvent): WorkerEventMap = {
-    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+  def apply(error: ErrorEvent, message: MessageEvent, messageerror: MessageEvent): WorkerEventMap = {
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], messageerror = messageerror.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkerEventMap]
   }
   @scala.inline
@@ -27,6 +28,8 @@ object WorkerEventMap {
     }
     @scala.inline
     def setMessage(value: MessageEvent): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMessageerror(value: MessageEvent): Self = this.set("messageerror", value.asInstanceOf[js.Any])
   }
   
 }

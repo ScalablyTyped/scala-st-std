@@ -60,7 +60,7 @@ trait TextTrackList
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _],
     options: scala.Boolean
   ): Unit = js.native
-  def item(index: Double): TextTrack = js.native
+  def getTrackById(id: java.lang.String): TextTrack | Null = js.native
   @JSName("removeEventListener")
   def removeEventListener_addtrack(`type`: addtrack, listener: js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _]): Unit = js.native
   @JSName("removeEventListener")

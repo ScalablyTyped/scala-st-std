@@ -213,6 +213,8 @@ trait Element
   var onfullscreenchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var onfullscreenerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var outerHTML: java.lang.String = js.native
+  @JSName("ownerDocument")
+  val ownerDocument_Element: Document = js.native
   /**
     * Returns the namespace prefix.
     */

@@ -110,7 +110,8 @@ trait String
   def localeCompare(that: java.lang.String, locales: js.Array[java.lang.String]): Double = js.native
   def localeCompare(that: java.lang.String, locales: js.Array[java.lang.String], options: CollatorOptions): Double = js.native
   /**
-    * Matches a string an object that supports being matched against, and returns an array containing the results of that search.
+    * Matches a string or an object that supports being matched against, and returns an array
+    * containing the results of that search, or null if no matches are found.
     * @param matcher An object that supports being matched against.
     */
   def `match`(matcher: Match): RegExpMatchArray | Null = js.native

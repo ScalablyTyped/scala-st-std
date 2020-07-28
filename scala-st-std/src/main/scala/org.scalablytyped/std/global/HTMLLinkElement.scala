@@ -30,7 +30,7 @@ class HTMLLinkElement ()
   /* CompleteClass */
   override val previousElementSibling: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
-  override val sheet: org.scalablytyped.std.StyleSheet | Null = js.native
+  override val sheet: org.scalablytyped.std.CSSStyleSheet | Null = js.native
   /* CompleteClass */
   override val style: org.scalablytyped.std.CSSStyleDeclaration = js.native
 }

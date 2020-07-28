@@ -197,15 +197,6 @@ object stdStrings {
   sealed trait MSPointerUp extends js.Object
   
   @js.native
-  sealed trait MSVideoFormatChanged extends js.Object
-  
-  @js.native
-  sealed trait MSVideoFrameStepCompleted extends js.Object
-  
-  @js.native
-  sealed trait MSVideoOptimalLayoutChanged extends js.Object
-  
-  @js.native
   sealed trait MediaEncryptedEvent extends js.Object
   
   @js.native
@@ -398,9 +389,6 @@ object stdStrings {
   sealed trait UIEvents extends js.Object
   
   @js.native
-  sealed trait UInt8Array extends js.Object
-  
-  @js.native
   sealed trait USB extends MSTransportType
   
   @js.native
@@ -408,6 +396,9 @@ object stdStrings {
   
   @js.native
   sealed trait Uint32Array extends js.Object
+  
+  @js.native
+  sealed trait Uint8Array extends js.Object
   
   @js.native
   sealed trait Uint8ClampedArray extends js.Object
@@ -954,7 +945,9 @@ object stdStrings {
   
   @js.native
   sealed trait default
-    extends NotificationPermission
+    extends ColorSpaceConversion
+       with NotificationPermission
+       with PremultiplyAlpha
        with RequestCache
        with ResponseType
        with WebGLPowerPreference
@@ -1274,7 +1267,7 @@ object stdStrings {
   sealed trait finished extends AnimationPlayState
   
   @js.native
-  sealed trait flipY extends js.Object
+  sealed trait flipY extends ImageOrientation
   
   @js.native
   sealed trait focus extends js.Object
@@ -1421,6 +1414,7 @@ object stdStrings {
   sealed trait high
     extends ImageSmoothingQuality
        with RTCPriorityType
+       with ResizeQuality
   
   @js.native
   sealed trait `high-performance` extends WebGLPowerPreference
@@ -1696,6 +1690,7 @@ object stdStrings {
   sealed trait low
     extends ImageSmoothingQuality
        with RTCPriorityType
+       with ResizeQuality
   
   @js.native
   sealed trait `low-power` extends WebGLPowerPreference
@@ -1768,6 +1763,7 @@ object stdStrings {
   sealed trait medium
     extends ImageSmoothingQuality
        with RTCPriorityType
+       with ResizeQuality
   
   @js.native
   sealed trait memory extends ImportExportKind
@@ -1834,9 +1830,6 @@ object stdStrings {
   
   @js.native
   sealed trait mousewheel extends js.Object
-  
-  @js.native
-  sealed trait msneedkey extends js.Object
   
   @js.native
   sealed trait mute extends js.Object
@@ -1916,8 +1909,11 @@ object stdStrings {
   @js.native
   sealed trait none
     extends AttestationConveyancePreference
+       with ColorSpaceConversion
        with FillMode
+       with ImageOrientation
        with OverSampleType
+       with PremultiplyAlpha
        with ServiceWorkerUpdateViaCache
   
   @js.native
@@ -2081,7 +2077,7 @@ object stdStrings {
   sealed trait picture extends js.Object
   
   @js.native
-  sealed trait pixelated extends js.Object
+  sealed trait pixelated extends ResizeQuality
   
   @js.native
   sealed trait pkcs8 extends KeyFormat
@@ -2163,7 +2159,7 @@ object stdStrings {
   sealed trait preferred extends UserVerificationRequirement
   
   @js.native
-  sealed trait premultiply extends js.Object
+  sealed trait premultiply extends PremultiplyAlpha
   
   @js.native
   sealed trait prerender extends NavigationType
@@ -3025,12 +3021,6 @@ object stdStrings {
   @scala.inline
   def MSPointerUp: MSPointerUp = "MSPointerUp".asInstanceOf[MSPointerUp]
   @scala.inline
-  def MSVideoFormatChanged: MSVideoFormatChanged = "MSVideoFormatChanged".asInstanceOf[MSVideoFormatChanged]
-  @scala.inline
-  def MSVideoFrameStepCompleted: MSVideoFrameStepCompleted = "MSVideoFrameStepCompleted".asInstanceOf[MSVideoFrameStepCompleted]
-  @scala.inline
-  def MSVideoOptimalLayoutChanged: MSVideoOptimalLayoutChanged = "MSVideoOptimalLayoutChanged".asInstanceOf[MSVideoOptimalLayoutChanged]
-  @scala.inline
   def MediaEncryptedEvent: MediaEncryptedEvent = "MediaEncryptedEvent".asInstanceOf[MediaEncryptedEvent]
   @scala.inline
   def MediaKeyMessageEvent: MediaKeyMessageEvent = "MediaKeyMessageEvent".asInstanceOf[MediaKeyMessageEvent]
@@ -3159,13 +3149,13 @@ object stdStrings {
   @scala.inline
   def UIEvents: UIEvents = "UIEvents".asInstanceOf[UIEvents]
   @scala.inline
-  def UInt8Array: UInt8Array = "UInt8Array".asInstanceOf[UInt8Array]
-  @scala.inline
   def USB: USB = "USB".asInstanceOf[USB]
   @scala.inline
   def Uint16Array: Uint16Array = "Uint16Array".asInstanceOf[Uint16Array]
   @scala.inline
   def Uint32Array: Uint32Array = "Uint32Array".asInstanceOf[Uint32Array]
+  @scala.inline
+  def Uint8Array: Uint8Array = "Uint8Array".asInstanceOf[Uint8Array]
   @scala.inline
   def Uint8ClampedArray: Uint8ClampedArray = "Uint8ClampedArray".asInstanceOf[Uint8ClampedArray]
   @scala.inline
@@ -4028,8 +4018,6 @@ object stdStrings {
   def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
   @scala.inline
   def mousewheel: mousewheel = "mousewheel".asInstanceOf[mousewheel]
-  @scala.inline
-  def msneedkey: msneedkey = "msneedkey".asInstanceOf[msneedkey]
   @scala.inline
   def mute: mute = "mute".asInstanceOf[mute]
   @scala.inline

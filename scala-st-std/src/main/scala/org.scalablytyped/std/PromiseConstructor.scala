@@ -26,10 +26,10 @@ Instantiable1[
   /**
     * Creates a Promise that is resolved with an array of results when all of the provided Promises
     * resolve, or rejected when any Promise is rejected.
-    * @param values An array of Promises.
+    * @param values An iterable of Promises.
     * @returns A new Promise.
     */
-  def all[TAll](values: Iterable[TAll | js.Thenable[TAll]]): js.Promise[js.Array[TAll]] = js.native
+  def all[T](values: Iterable[T | js.Thenable[T]]): js.Promise[js.Array[T]] = js.native
   /**
     * Creates a Promise that is resolved with an array of results when all of the provided Promises
     * resolve, or rejected when any Promise is rejected.
@@ -168,16 +168,12 @@ Instantiable1[
   /**
     * Creates a Promise that is resolved or rejected when any of the provided Promises are resolved
     * or rejected.
-    * @param values An array of Promises.
-    * @returns A new Promise.
-    */
-  /**
-    * Creates a Promise that is resolved or rejected when any of the provided Promises are resolved
-    * or rejected.
     * @param values An iterable of Promises.
     * @returns A new Promise.
     */
   def race[T](values: Iterable[T | js.Thenable[T]]): js.Promise[T] = js.native
+  // see: lib.es2015.iterable.d.ts
+  // all<T>(values: Iterable<T | PromiseLike<T>>): Promise<T[]>;
   /**
     * Creates a Promise that is resolved or rejected when any of the provided Promises are resolved
     * or rejected.
@@ -185,6 +181,8 @@ Instantiable1[
     * @returns A new Promise.
     */
   def race[T](values: js.Array[T]): js.Promise[T] = js.native
+  // see: lib.es2015.iterable.d.ts
+  // race<T>(values: Iterable<T>): Promise<T extends PromiseLike<infer U> ? U : T>;
   /**
     * Creates a new rejected promise for the provided reason.
     * @param reason The reason the promise was rejected.

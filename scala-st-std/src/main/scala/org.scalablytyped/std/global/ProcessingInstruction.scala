@@ -19,6 +19,8 @@ class ProcessingInstruction ()
     */
   /* CompleteClass */
   override val previousElementSibling: org.scalablytyped.std.Element | Null = js.native
+  /* CompleteClass */
+  override val sheet: org.scalablytyped.std.CSSStyleSheet | Null = js.native
 }
 
 @JSGlobal("ProcessingInstruction")

@@ -43,7 +43,6 @@ trait Window
   extends EventTarget
      with AnimationFrameProvider
      with GlobalEventHandlers
-     with WindowConsole
      with WindowEventHandlers
      with WindowLocalStorage
      with WindowOrWorkerGlobalScope
@@ -66,7 +65,6 @@ trait Window
   val history: History = js.native
   val innerHeight: Double = js.native
   val innerWidth: Double = js.native
-  val isSecureContext: scala.Boolean = js.native
   val length: Double = js.native
   var location: Location = js.native
   val locationbar: BarProp = js.native

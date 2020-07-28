@@ -1,23 +1,15 @@
 package org.scalablytyped.std
 
-import org.scalablytyped.std.stdStrings.default
-import org.scalablytyped.std.stdStrings.flipY
-import org.scalablytyped.std.stdStrings.high
-import org.scalablytyped.std.stdStrings.low
-import org.scalablytyped.std.stdStrings.medium
-import org.scalablytyped.std.stdStrings.none
-import org.scalablytyped.std.stdStrings.pixelated
-import org.scalablytyped.std.stdStrings.premultiply
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ImageBitmapOptions extends js.Object {
-  var colorSpaceConversion: js.UndefOr[none | default] = js.undefined
-  var imageOrientation: js.UndefOr[none | flipY] = js.undefined
-  var premultiplyAlpha: js.UndefOr[none | premultiply | default] = js.undefined
+  var colorSpaceConversion: js.UndefOr[ColorSpaceConversion] = js.undefined
+  var imageOrientation: js.UndefOr[ImageOrientation] = js.undefined
+  var premultiplyAlpha: js.UndefOr[PremultiplyAlpha] = js.undefined
   var resizeHeight: js.UndefOr[Double] = js.undefined
-  var resizeQuality: js.UndefOr[pixelated | low | medium | high] = js.undefined
+  var resizeQuality: js.UndefOr[ResizeQuality] = js.undefined
   var resizeWidth: js.UndefOr[Double] = js.undefined
 }
 
@@ -39,15 +31,15 @@ object ImageBitmapOptions {
         x
     }
     @scala.inline
-    def setColorSpaceConversion(value: none | default): Self = this.set("colorSpaceConversion", value.asInstanceOf[js.Any])
+    def setColorSpaceConversion(value: ColorSpaceConversion): Self = this.set("colorSpaceConversion", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteColorSpaceConversion: Self = this.set("colorSpaceConversion", js.undefined)
     @scala.inline
-    def setImageOrientation(value: none | flipY): Self = this.set("imageOrientation", value.asInstanceOf[js.Any])
+    def setImageOrientation(value: ImageOrientation): Self = this.set("imageOrientation", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteImageOrientation: Self = this.set("imageOrientation", js.undefined)
     @scala.inline
-    def setPremultiplyAlpha(value: none | premultiply | default): Self = this.set("premultiplyAlpha", value.asInstanceOf[js.Any])
+    def setPremultiplyAlpha(value: PremultiplyAlpha): Self = this.set("premultiplyAlpha", value.asInstanceOf[js.Any])
     @scala.inline
     def deletePremultiplyAlpha: Self = this.set("premultiplyAlpha", js.undefined)
     @scala.inline
@@ -55,7 +47,7 @@ object ImageBitmapOptions {
     @scala.inline
     def deleteResizeHeight: Self = this.set("resizeHeight", js.undefined)
     @scala.inline
-    def setResizeQuality(value: pixelated | low | medium | high): Self = this.set("resizeQuality", value.asInstanceOf[js.Any])
+    def setResizeQuality(value: ResizeQuality): Self = this.set("resizeQuality", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteResizeQuality: Self = this.set("resizeQuality", js.undefined)
     @scala.inline
