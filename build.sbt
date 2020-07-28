@@ -5,10 +5,10 @@ def forVersion(name: String, pkg: String, libs: String*): Project = {
   Project(name, file(name))
     .enablePlugins(ScalablyTypedConverterGenSourcePlugin)
     .settings(
-      organization := "org.scalablytyped",
+      organization := "com.olvind",
       scalaVersion := "2.13.2",
       crossScalaVersions := List("2.12.10", scalaVersion.value),
-      version := s"${org.scalablytyped.converter.internal.BuildInfo.version}-$tsVersion",
+      version := s"1.0.0-beta22-$tsVersion",
       stOutputPackage := pkg,
       stStdlib := libs.toList,
       stUseScalaJsDom := false,
@@ -16,13 +16,14 @@ def forVersion(name: String, pkg: String, libs: String*): Project = {
       stEnableScalaJsDefined := Selection.All,
       stTypescriptVersion := tsVersion,
       // publication settings
+      sources in (Compile, doc) := Seq(), // doc jar is a few hundred megabytes...
       homepage := Some(new URL("https://github.com/ScalablyTyped/scala-st-std")),
       startYear := Some(2020),
       pomExtra := (
         <scm>
-          <connection>scm:git:github.com:/ScalablyTyped/scala-js-std</connection>
-          <developerConnection>scm:git:git@github.com:ScalablyTyped/scala-js-std.git</developerConnection>
-          <url>github.com:ScalablyTyped/scala-js-std.git</url>
+          <connection>scm:git:github.com:/ScalablyTyped/scala-st-std</connection>
+          <developerConnection>scm:git:git@github.com:ScalablyTyped/scala-st-std.git</developerConnection>
+          <url>github.com:ScalablyTyped/scala-st-std.git</url>
         </scm>
           <developers>
             <developer>
@@ -43,14 +44,32 @@ def forVersion(name: String, pkg: String, libs: String*): Project = {
 }
 
 // es6 is what you get by default
-val `scala-js-std` = forVersion(
+val `scala-st-std` = forVersion(
   name = "scala-st-std",
   pkg = "org.scalablytyped",
   libs = "dom", "es6"
 )
 
 //// also offer esnext for the adventurous
-//val `scala-js-std-esnext` = forVersion(
+//val `scala-st-std-esnext` = forVersion(
 //  name = "scala-st-std-esnext",
 //  pkg = "org.scalablytyped.esnext",
 //  libs = "dom", "esnext")
+
+lazy val root = project
+  .in(file("."))
+  .settings(name := "std-root")
+  .configure(preventPublication)
+  .aggregate(
+    `scala-st-std`
+//    `scala-st-std-esnext`,
+  )
+
+lazy val preventPublication: Project => Project =
+  _.settings(
+    publish := {},
+    publishTo := Some(Resolver.file("Unused transient repository", target.value / "fakepublish")),
+    publishArtifact := false,
+    publishLocal := {},
+    packagedArtifacts := Map.empty,
+  ) // doesn't work - https://github.com/sbt/sbt-pgp/issues/42
