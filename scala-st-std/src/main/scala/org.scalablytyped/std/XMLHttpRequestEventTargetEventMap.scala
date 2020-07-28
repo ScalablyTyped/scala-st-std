@@ -5,25 +5,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait XMLHttpRequestEventTargetEventMap extends js.Object {
-  var abort: ProgressEvent
-  var error: ProgressEvent
-  var load: ProgressEvent
-  var loadend: ProgressEvent
-  var loadstart: ProgressEvent
-  var progress: ProgressEvent
-  var timeout: ProgressEvent
+  var abort: ProgressEvent[XMLHttpRequestEventTarget]
+  var error: ProgressEvent[XMLHttpRequestEventTarget]
+  var load: ProgressEvent[XMLHttpRequestEventTarget]
+  var loadend: ProgressEvent[XMLHttpRequestEventTarget]
+  var loadstart: ProgressEvent[XMLHttpRequestEventTarget]
+  var progress: ProgressEvent[XMLHttpRequestEventTarget]
+  var timeout: ProgressEvent[XMLHttpRequestEventTarget]
 }
 
 object XMLHttpRequestEventTargetEventMap {
   @scala.inline
   def apply(
-    abort: ProgressEvent,
-    error: ProgressEvent,
-    load: ProgressEvent,
-    loadend: ProgressEvent,
-    loadstart: ProgressEvent,
-    progress: ProgressEvent,
-    timeout: ProgressEvent
+    abort: ProgressEvent[XMLHttpRequestEventTarget],
+    error: ProgressEvent[XMLHttpRequestEventTarget],
+    load: ProgressEvent[XMLHttpRequestEventTarget],
+    loadend: ProgressEvent[XMLHttpRequestEventTarget],
+    loadstart: ProgressEvent[XMLHttpRequestEventTarget],
+    progress: ProgressEvent[XMLHttpRequestEventTarget],
+    timeout: ProgressEvent[XMLHttpRequestEventTarget]
   ): XMLHttpRequestEventTargetEventMap = {
     val __obj = js.Dynamic.literal(abort = abort.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], load = load.asInstanceOf[js.Any], loadend = loadend.asInstanceOf[js.Any], loadstart = loadstart.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[XMLHttpRequestEventTargetEventMap]
@@ -40,19 +40,19 @@ object XMLHttpRequestEventTargetEventMap {
         x
     }
     @scala.inline
-    def setAbort(value: ProgressEvent): Self = this.set("abort", value.asInstanceOf[js.Any])
+    def setAbort(value: ProgressEvent[XMLHttpRequestEventTarget]): Self = this.set("abort", value.asInstanceOf[js.Any])
     @scala.inline
-    def setError(value: ProgressEvent): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setError(value: ProgressEvent[XMLHttpRequestEventTarget]): Self = this.set("error", value.asInstanceOf[js.Any])
     @scala.inline
-    def setLoad(value: ProgressEvent): Self = this.set("load", value.asInstanceOf[js.Any])
+    def setLoad(value: ProgressEvent[XMLHttpRequestEventTarget]): Self = this.set("load", value.asInstanceOf[js.Any])
     @scala.inline
-    def setLoadend(value: ProgressEvent): Self = this.set("loadend", value.asInstanceOf[js.Any])
+    def setLoadend(value: ProgressEvent[XMLHttpRequestEventTarget]): Self = this.set("loadend", value.asInstanceOf[js.Any])
     @scala.inline
-    def setLoadstart(value: ProgressEvent): Self = this.set("loadstart", value.asInstanceOf[js.Any])
+    def setLoadstart(value: ProgressEvent[XMLHttpRequestEventTarget]): Self = this.set("loadstart", value.asInstanceOf[js.Any])
     @scala.inline
-    def setProgress(value: ProgressEvent): Self = this.set("progress", value.asInstanceOf[js.Any])
+    def setProgress(value: ProgressEvent[XMLHttpRequestEventTarget]): Self = this.set("progress", value.asInstanceOf[js.Any])
     @scala.inline
-    def setTimeout(value: ProgressEvent): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setTimeout(value: ProgressEvent[XMLHttpRequestEventTarget]): Self = this.set("timeout", value.asInstanceOf[js.Any])
   }
   
 }

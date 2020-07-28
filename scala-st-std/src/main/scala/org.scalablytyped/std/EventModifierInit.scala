@@ -14,7 +14,6 @@ trait EventModifierInit extends UIEventInit {
   var modifierFnLock: js.UndefOr[scala.Boolean] = js.undefined
   var modifierHyper: js.UndefOr[scala.Boolean] = js.undefined
   var modifierNumLock: js.UndefOr[scala.Boolean] = js.undefined
-  var modifierOS: js.UndefOr[scala.Boolean] = js.undefined
   var modifierScrollLock: js.UndefOr[scala.Boolean] = js.undefined
   var modifierSuper: js.UndefOr[scala.Boolean] = js.undefined
   var modifierSymbol: js.UndefOr[scala.Boolean] = js.undefined
@@ -75,10 +74,6 @@ object EventModifierInit {
     def setModifierNumLock(value: scala.Boolean): Self = this.set("modifierNumLock", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteModifierNumLock: Self = this.set("modifierNumLock", js.undefined)
-    @scala.inline
-    def setModifierOS(value: scala.Boolean): Self = this.set("modifierOS", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteModifierOS: Self = this.set("modifierOS", js.undefined)
     @scala.inline
     def setModifierScrollLock(value: scala.Boolean): Self = this.set("modifierScrollLock", value.asInstanceOf[js.Any])
     @scala.inline

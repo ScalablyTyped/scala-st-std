@@ -9,10 +9,6 @@ import scala.scalajs.js.annotation._
 trait SVGFilterElement
   extends SVGElement
      with SVGURIReference {
-  /** @deprecated */
-  val filterResX: SVGAnimatedInteger = js.native
-  /** @deprecated */
-  val filterResY: SVGAnimatedInteger = js.native
   val filterUnits: SVGAnimatedEnumeration = js.native
   val height: SVGAnimatedLength = js.native
   val primitiveUnits: SVGAnimatedEnumeration = js.native
@@ -39,7 +35,5 @@ trait SVGFilterElement
   ): Unit = js.native
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
-  /** @deprecated */
-  def setFilterRes(filterResX: Double, filterResY: Double): Unit = js.native
 }
 

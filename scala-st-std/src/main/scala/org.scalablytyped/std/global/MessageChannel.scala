@@ -9,8 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class MessageChannel ()
   extends org.scalablytyped.std.MessageChannel {
+  /**
+    * Returns the first MessagePort object.
+    */
   /* CompleteClass */
   override val port1: org.scalablytyped.std.MessagePort = js.native
+  /**
+    * Returns the second MessagePort object.
+    */
   /* CompleteClass */
   override val port2: org.scalablytyped.std.MessagePort = js.native
 }

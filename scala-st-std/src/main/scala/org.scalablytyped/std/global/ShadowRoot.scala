@@ -11,6 +11,9 @@ class ShadowRoot ()
   extends org.scalablytyped.std.ShadowRoot {
   /* CompleteClass */
   override val activeElement: org.scalablytyped.std.Element | Null = js.native
+  /**
+    * Returns document's fullscreen element.
+    */
   /* CompleteClass */
   override val fullscreenElement: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */

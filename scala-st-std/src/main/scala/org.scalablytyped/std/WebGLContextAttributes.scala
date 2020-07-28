@@ -5,14 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WebGLContextAttributes extends js.Object {
-  var alpha: js.UndefOr[GLboolean] = js.undefined
-  var antialias: js.UndefOr[GLboolean] = js.undefined
-  var depth: js.UndefOr[GLboolean] = js.undefined
+  var alpha: js.UndefOr[scala.Boolean] = js.undefined
+  var antialias: js.UndefOr[scala.Boolean] = js.undefined
+  var depth: js.UndefOr[scala.Boolean] = js.undefined
+  var desynchronized: js.UndefOr[scala.Boolean] = js.undefined
   var failIfMajorPerformanceCaveat: js.UndefOr[scala.Boolean] = js.undefined
   var powerPreference: js.UndefOr[WebGLPowerPreference] = js.undefined
-  var premultipliedAlpha: js.UndefOr[GLboolean] = js.undefined
-  var preserveDrawingBuffer: js.UndefOr[GLboolean] = js.undefined
-  var stencil: js.UndefOr[GLboolean] = js.undefined
+  var premultipliedAlpha: js.UndefOr[scala.Boolean] = js.undefined
+  var preserveDrawingBuffer: js.UndefOr[scala.Boolean] = js.undefined
+  var stencil: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object WebGLContextAttributes {
@@ -33,17 +34,21 @@ object WebGLContextAttributes {
         x
     }
     @scala.inline
-    def setAlpha(value: GLboolean): Self = this.set("alpha", value.asInstanceOf[js.Any])
+    def setAlpha(value: scala.Boolean): Self = this.set("alpha", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteAlpha: Self = this.set("alpha", js.undefined)
     @scala.inline
-    def setAntialias(value: GLboolean): Self = this.set("antialias", value.asInstanceOf[js.Any])
+    def setAntialias(value: scala.Boolean): Self = this.set("antialias", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteAntialias: Self = this.set("antialias", js.undefined)
     @scala.inline
-    def setDepth(value: GLboolean): Self = this.set("depth", value.asInstanceOf[js.Any])
+    def setDepth(value: scala.Boolean): Self = this.set("depth", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteDepth: Self = this.set("depth", js.undefined)
+    @scala.inline
+    def setDesynchronized(value: scala.Boolean): Self = this.set("desynchronized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesynchronized: Self = this.set("desynchronized", js.undefined)
     @scala.inline
     def setFailIfMajorPerformanceCaveat(value: scala.Boolean): Self = this.set("failIfMajorPerformanceCaveat", value.asInstanceOf[js.Any])
     @scala.inline
@@ -53,15 +58,15 @@ object WebGLContextAttributes {
     @scala.inline
     def deletePowerPreference: Self = this.set("powerPreference", js.undefined)
     @scala.inline
-    def setPremultipliedAlpha(value: GLboolean): Self = this.set("premultipliedAlpha", value.asInstanceOf[js.Any])
+    def setPremultipliedAlpha(value: scala.Boolean): Self = this.set("premultipliedAlpha", value.asInstanceOf[js.Any])
     @scala.inline
     def deletePremultipliedAlpha: Self = this.set("premultipliedAlpha", js.undefined)
     @scala.inline
-    def setPreserveDrawingBuffer(value: GLboolean): Self = this.set("preserveDrawingBuffer", value.asInstanceOf[js.Any])
+    def setPreserveDrawingBuffer(value: scala.Boolean): Self = this.set("preserveDrawingBuffer", value.asInstanceOf[js.Any])
     @scala.inline
     def deletePreserveDrawingBuffer: Self = this.set("preserveDrawingBuffer", js.undefined)
     @scala.inline
-    def setStencil(value: GLboolean): Self = this.set("stencil", value.asInstanceOf[js.Any])
+    def setStencil(value: scala.Boolean): Self = this.set("stencil", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteStencil: Self = this.set("stencil", js.undefined)
   }

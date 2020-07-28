@@ -251,24 +251,17 @@ trait Document
     */
   val contentType: java.lang.String = js.native
   /**
-    * Returns the HTTP cookies that apply to the Document. If there are no cookies or
-    * cookies can't be applied to this resource, the empty string will be returned.
+    * Returns the HTTP cookies that apply to the Document. If there are no cookies or cookies can't be applied to this resource, the empty string will be returned.
+    * 
     * Can be set, to add a new cookie to the element's set of HTTP cookies.
-    * If the contents are sandboxed into a
-    * unique origin (e.g. in an iframe with the sandbox attribute), a
-    * "SecurityError" DOMException will be thrown on getting
-    * and setting.
+    * 
+    * If the contents are sandboxed into a unique origin (e.g. in an iframe with the sandbox attribute), a "SecurityError" DOMException will be thrown on getting and setting.
     */
   var cookie: java.lang.String = js.native
   /**
-    * Returns the script element, or the SVG script element,
-    * that is currently executing, as long as the element represents a classic script.
-    * In the case of reentrant script execution, returns the one that most recently started executing
-    * amongst those that have not yet finished executing.
-    * Returns null if the Document is not currently executing a script
-    * or SVG script element (e.g., because the running script is an event
-    * handler, or a timeout), or if the currently executing script or SVG
-    * script element represents a module script.
+    * Returns the script element, or the SVG script element, that is currently executing, as long as the element represents a classic script. In the case of reentrant script execution, returns the one that most recently started executing amongst those that have not yet finished executing.
+    * 
+    * Returns null if the Document is not currently executing a script or SVG script element (e.g., because the running script is an event handler, or a timeout), or if the currently executing script or SVG script element represents a module script.
     */
   val currentScript: HTMLOrSVGScriptElement | Null = js.native
   val defaultView: WindowProxy | Null = js.native
@@ -312,8 +305,7 @@ trait Document
   /** @deprecated */
   val fullscreen: scala.Boolean = js.native
   /**
-    * Returns true if document has the ability to display elements fullscreen
-    * and fullscreen is supported, or false otherwise.
+    * Returns true if document has the ability to display elements fullscreen and fullscreen is supported, or false otherwise.
     */
   val fullscreenEnabled: scala.Boolean = js.native
   /**
@@ -358,7 +350,7 @@ trait Document
     * Fires when the state of the object has changed.
     * @param ev The event
     */
-  var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]) | Null = js.native
+  var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _]) | Null = js.native
   var onvisibilitychange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   /**
     * Returns document's origin.
@@ -461,18 +453,18 @@ trait Document
   @JSName("addEventListener")
   def addEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -491,8 +483,8 @@ trait Document
   ): Unit = js.native
   /**
     * Moves node from another document and returns it.
-    * If node is a document, throws a "NotSupportedError" DOMException or, if node is a shadow root, throws a
-    * "HierarchyRequestError" DOMException.
+    * 
+    * If node is a document, throws a "NotSupportedError" DOMException or, if node is a shadow root, throws a "HierarchyRequestError" DOMException.
     */
   def adoptNode[T /* <: Node */](source: T): T = js.native
   /** @deprecated */
@@ -595,17 +587,18 @@ trait Document
   def createElementNS(namespace: java.lang.String, qualifiedName: java.lang.String, options: java.lang.String): Element = js.native
   def createElementNS(namespace: Null, qualifiedName: java.lang.String, options: java.lang.String): Element = js.native
   /**
-    * Returns an element with namespace namespace. Its namespace prefix will be everything before ":" (U+003E) in qualifiedName or null. Its local name will be everything after
-    * ":" (U+003E) in qualifiedName or qualifiedName.
-    * If localName does not match the Name production an
-    * "InvalidCharacterError" DOMException will be thrown.
+    * Returns an element with namespace namespace. Its namespace prefix will be everything before ":" (U+003E) in qualifiedName or null. Its local name will be everything after ":" (U+003E) in qualifiedName or qualifiedName.
+    * 
+    * If localName does not match the Name production an "InvalidCharacterError" DOMException will be thrown.
+    * 
     * If one of the following conditions is true a "NamespaceError" DOMException will be thrown:
+    * 
     * localName does not match the QName production.
     * Namespace prefix is not null and namespace is the empty string.
     * Namespace prefix is "xml" and namespace is not the XML namespace.
     * qualifiedName or namespace prefix is "xmlns" and namespace is not the XMLNS namespace.
-    * namespace is the XMLNS namespace and
-    * neither qualifiedName nor namespace prefix is "xmlns".
+    * namespace is the XMLNS namespace and neither qualifiedName nor namespace prefix is "xmlns".
+    * 
     * When supplied, options's is can be used to create a customized built-in element.
     */
   @JSName("createElementNS")
@@ -1146,6 +1139,8 @@ trait Document
   @JSName("createEvent")
   def createEvent_IDBVersionChangeEvent(eventInterface: org.scalablytyped.std.stdStrings.IDBVersionChangeEvent): IDBVersionChangeEvent = js.native
   @JSName("createEvent")
+  def createEvent_InputEvent(eventInterface: org.scalablytyped.std.stdStrings.InputEvent): InputEvent = js.native
+  @JSName("createEvent")
   def createEvent_KeyboardEvent(eventInterface: org.scalablytyped.std.stdStrings.KeyboardEvent): KeyboardEvent = js.native
   @JSName("createEvent")
   def createEvent_ListeningStateChangedEvent(eventInterface: org.scalablytyped.std.stdStrings.ListeningStateChangedEvent): ListeningStateChangedEvent = js.native
@@ -1194,7 +1189,7 @@ trait Document
   @JSName("createEvent")
   def createEvent_PopStateEvent(eventInterface: org.scalablytyped.std.stdStrings.PopStateEvent): PopStateEvent = js.native
   @JSName("createEvent")
-  def createEvent_ProgressEvent(eventInterface: org.scalablytyped.std.stdStrings.ProgressEvent): ProgressEvent = js.native
+  def createEvent_ProgressEvent(eventInterface: org.scalablytyped.std.stdStrings.ProgressEvent): ProgressEvent[EventTarget] = js.native
   @JSName("createEvent")
   def createEvent_PromiseRejectionEvent(eventInterface: org.scalablytyped.std.stdStrings.PromiseRejectionEvent): PromiseRejectionEvent = js.native
   @JSName("createEvent")
@@ -1271,11 +1266,7 @@ trait Document
   def createNodeIterator(root: Node, whatToShow: Double): NodeIterator = js.native
   def createNodeIterator(root: Node, whatToShow: Double, filter: NodeFilter): NodeIterator = js.native
   /**
-    * Returns a ProcessingInstruction node whose target is target and data is data.
-    * If target does not match the Name production an
-    * "InvalidCharacterError" DOMException will be thrown.
-    * If data contains "?>" an
-    * "InvalidCharacterError" DOMException will be thrown.
+    * Returns a ProcessingInstruction node whose target is target and data is data. If target does not match the Name production an "InvalidCharacterError" DOMException will be thrown. If data contains "?>" an "InvalidCharacterError" DOMException will be thrown.
     */
   def createProcessingInstruction(target: java.lang.String, data: java.lang.String): ProcessingInstruction = js.native
   /**
@@ -1287,16 +1278,6 @@ trait Document
     * @param data String that specifies the nodeValue property of the text node.
     */
   def createTextNode(data: java.lang.String): Text = js.native
-  def createTouch(
-    view: WindowProxy,
-    target: EventTarget,
-    identifier: Double,
-    pageX: Double,
-    pageY: Double,
-    screenX: Double,
-    screenY: Double
-  ): Touch = js.native
-  def createTouchList(touches: Touch*): TouchList = js.native
   /**
     * Creates a TreeWalker object that you can use to traverse filtered lists of nodes or elements in a document.
     * @param root The root element or node to start traversing on.
@@ -1321,14 +1302,13 @@ trait Document
   def execCommand(commandId: java.lang.String, showUI: scala.Boolean): scala.Boolean = js.native
   def execCommand(commandId: java.lang.String, showUI: scala.Boolean, value: java.lang.String): scala.Boolean = js.native
   /**
-    * Stops document's fullscreen element from being displayed fullscreen and
-    * resolves promise when done.
+    * Stops document's fullscreen element from being displayed fullscreen and resolves promise when done.
     */
   def exitFullscreen(): js.Promise[Unit] = js.native
   def exitPointerLock(): Unit = js.native
   def getAnimations(): js.Array[Animation] = js.native
   /**
-    * collection = element . getElementsByClassName(classNames)
+    * Returns a HTMLCollection of the elements in the object on which the method was invoked (a document or an element) that have all the classes given by classNames. The classNames argument is interpreted as a space-separated list of classes.
     */
   def getElementsByClassName(classNames: java.lang.String): HTMLCollectionOf[Element] = js.native
   /**
@@ -1339,10 +1319,12 @@ trait Document
   def getElementsByTagName(qualifiedName: java.lang.String): HTMLCollectionOf[Element] = js.native
   def getElementsByTagNameNS(namespaceURI: java.lang.String, localName: java.lang.String): HTMLCollectionOf[Element] = js.native
   /**
-    * If namespace and localName are
-    * "*" returns a HTMLCollection of all descendant elements.
+    * If namespace and localName are "*" returns a HTMLCollection of all descendant elements.
+    * 
     * If only namespace is "*" returns a HTMLCollection of all descendant elements whose local name is localName.
+    * 
     * If only localName is "*" returns a HTMLCollection of all descendant elements whose namespace is namespace.
+    * 
     * Otherwise, returns a HTMLCollection of all descendant elements whose namespace is namespace and local name is localName.
     */
   @JSName("getElementsByTagNameNS")
@@ -1703,8 +1685,8 @@ trait Document
   def hasFocus(): scala.Boolean = js.native
   /**
     * Returns a copy of node. If deep is true, the copy also includes the node's descendants.
-    * If node is a document or a shadow root, throws a
-    * "NotSupportedError" DOMException.
+    * 
+    * If node is a document or a shadow root, throws a "NotSupportedError" DOMException.
     */
   def importNode[T /* <: Node */](importedNode: T, deep: scala.Boolean): T = js.native
   /**
@@ -1861,18 +1843,18 @@ trait Document
   @JSName("removeEventListener")
   def removeEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")

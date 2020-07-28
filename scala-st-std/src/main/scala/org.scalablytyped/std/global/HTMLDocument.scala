@@ -11,6 +11,9 @@ class HTMLDocument ()
   extends org.scalablytyped.std.HTMLDocument {
   /* CompleteClass */
   override val activeElement: org.scalablytyped.std.Element | Null = js.native
+  /**
+    * Returns document's fullscreen element.
+    */
   /* CompleteClass */
   override val fullscreenElement: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */

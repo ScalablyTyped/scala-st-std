@@ -19,7 +19,6 @@ trait MediaTrackSettings extends js.Object {
   var resizeMode: js.UndefOr[java.lang.String] = js.undefined
   var sampleRate: js.UndefOr[Double] = js.undefined
   var sampleSize: js.UndefOr[Double] = js.undefined
-  var volume: js.UndefOr[Double] = js.undefined
   var width: js.UndefOr[Double] = js.undefined
 }
 
@@ -96,10 +95,6 @@ object MediaTrackSettings {
     def setSampleSize(value: Double): Self = this.set("sampleSize", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteSampleSize: Self = this.set("sampleSize", js.undefined)
-    @scala.inline
-    def setVolume(value: Double): Self = this.set("volume", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteVolume: Self = this.set("volume", js.undefined)
     @scala.inline
     def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
     @scala.inline

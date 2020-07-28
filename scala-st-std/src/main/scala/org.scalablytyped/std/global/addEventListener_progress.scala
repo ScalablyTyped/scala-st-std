@@ -12,16 +12,16 @@ import scala.scalajs.js.annotation._
 object addEventListener_progress extends js.Object {
   def apply(
     `type`: progress,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.ProgressEvent, _]
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.ProgressEvent[Window], _]
   ): Unit = js.native
   def apply(
     `type`: progress,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.ProgressEvent[Window], _],
     options: AddEventListenerOptions
   ): Unit = js.native
   def apply(
     `type`: progress,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.ProgressEvent[Window], _],
     options: scala.Boolean
   ): Unit = js.native
 }

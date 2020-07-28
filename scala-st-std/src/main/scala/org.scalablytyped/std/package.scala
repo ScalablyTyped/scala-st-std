@@ -5,9 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object std {
+  type AAGUID = org.scalablytyped.std.BufferSource
   type AlgorithmIdentifier = java.lang.String | org.scalablytyped.std.Algorithm
   type ArrayBufferLike = org.scalablytyped.std.ArrayBuffer
   type AudioWorklet = org.scalablytyped.std.Worklet
+  type AuthenticationExtensionsSupported = js.Array[java.lang.String]
+  type AuthenticatorSelectionList = js.Array[org.scalablytyped.std.AAGUID]
   type AutoKeyword = org.scalablytyped.std.stdStrings.auto
   type BigInteger = org.scalablytyped.std.Uint8Array
   type BlobCallback = js.Function1[/* blob */ org.scalablytyped.std.Blob | scala.Null, scala.Unit]
@@ -28,6 +31,7 @@ package object std {
   type BodyInit = org.scalablytyped.std._BodyInit | org.scalablytyped.std.ReadableStream[org.scalablytyped.std.Uint8Array] | java.lang.String
   /** A CDATA section that can be used within XML to include extended portions of unescaped text. The symbols < and & don’t need escaping as they normally do when inside a CDATA section. */
   type CDATASection = org.scalablytyped.std.Text
+  type COSEAlgorithmIdentifier = scala.Double
   /** An object representing a single CSS @supports at-rule. It implements the CSSConditionRule interface, and therefore the CSSRule and CSSGroupingRule interfaces with a type value of 12 (CSSRule.SUPPORTS_RULE). */
   type CSSSupportsRule = org.scalablytyped.std.CSSConditionRule
   /** The ChannelMergerNode interface, often used in conjunction with its opposite, ChannelSplitterNode, reunites different mono inputs into a single output. Each input is used to fill a channel of the output. This is useful for accessing each channels separately, e.g. for performing channel mixing where gain must be separately controlled on each channel. */
@@ -87,12 +91,13 @@ package object std {
   type GLenum = scala.Double
   type GLfloat = scala.Double
   type GLint = scala.Double
+  type GLint64 = scala.Double
   type GLintptr = scala.Double
   type GLsizei = scala.Double
   type GLsizeiptr = scala.Double
   type GLuint = scala.Double
+  type GLuint64 = scala.Double
   type GamepadHapticActuatorType = org.scalablytyped.std.stdStrings.vibration
-  type Generator = org.scalablytyped.std.Iterator[js.Any]
   type HashAlgorithmIdentifier = org.scalablytyped.std.AlgorithmIdentifier
   type HeadersInit = org.scalablytyped.std.Headers | js.Array[js.Array[java.lang.String]] | (org.scalablytyped.std.Record[java.lang.String, java.lang.String])
   type IDBKeyPath = java.lang.String
@@ -145,7 +150,6 @@ package object std {
     */
   type NonNullable[T] = T
   type NotificationPermissionCallback = js.Function1[/* permission */ org.scalablytyped.std.NotificationPermission, scala.Unit]
-  type OffscreenRenderingContext = org.scalablytyped.std.OffscreenCanvasRenderingContext2D | org.scalablytyped.std.WebGLRenderingContext
   /**
     * Construct a type with the properties of T except for those in type K.
     */
@@ -211,6 +215,7 @@ package object std {
   type PropertyDecorator = js.Function2[/* target */ js.Object, /* propertyKey */ java.lang.String | js.Symbol, scala.Unit]
   type PropertyDescriptorMap = org.scalablytyped.runtime.StringDictionary[org.scalablytyped.std.PropertyDescriptor]
   type PropertyKey = java.lang.String | scala.Double | js.Symbol
+  type PublicKeyCredentialType = org.scalablytyped.std.stdStrings.`public-key`
   type QueuingStrategySizeCallback[T] = js.Function1[/* chunk */ T, scala.Double]
   type RTCAnswerOptions = org.scalablytyped.std.RTCOfferAnswerOptions
   type RTCPeerConnectionErrorCallback = js.Function1[/* error */ org.scalablytyped.std.DOMException, scala.Unit]
@@ -238,12 +243,6 @@ package object std {
     */
   type Record[K /* <: /* keyof any */ java.lang.String */, T] = org.scalablytyped.runtime.StringDictionary[T]
   type ReferenceError = org.scalablytyped.std.Error
-  /* Rewritten from type alias, can be one of: 
-    - `org.scalablytyped`.std.CanvasRenderingContext2D
-    - `org.scalablytyped`.std.ImageBitmapRenderingContext
-    - `org.scalablytyped`.std.WebGLRenderingContext
-  */
-  type RenderingContext = org.scalablytyped.std._RenderingContext | org.scalablytyped.std.WebGLRenderingContext
   type RequestInfo = org.scalablytyped.std.Request | java.lang.String
   /**
     * Make all properties in T required
@@ -278,6 +277,9 @@ package object std {
   ]
   type TypeError = org.scalablytyped.std.Error
   type URIError = org.scalablytyped.std.Error
+  type Uint32List = org.scalablytyped.std.Uint32Array | js.Array[org.scalablytyped.std.GLuint]
+  type UvmEntries = js.Array[org.scalablytyped.std.UvmEntry]
+  type UvmEntry = js.Array[scala.Double]
   type VibratePattern = scala.Double | js.Array[scala.Double]
   type VoidFunction = js.Function0[scala.Unit]
   /** Part of the WebGL API and represents an opaque buffer object storing data such as vertices or colors. */
@@ -286,14 +288,17 @@ package object std {
   type WebGLFramebuffer = org.scalablytyped.std.WebGLObject
   /** The WebGLProgram is part of the WebGL API and is a combination of two compiled WebGLShaders consisting of a vertex shader and a fragment shader (both written in GLSL). */
   type WebGLProgram = org.scalablytyped.std.WebGLObject
+  type WebGLQuery = org.scalablytyped.std.WebGLObject
   /** Part of the WebGL API and represents a buffer that can contain an image, or can be source or target of an rendering operation. */
   type WebGLRenderbuffer = org.scalablytyped.std.WebGLObject
-  /** Provides an interface to the OpenGL ES 2.0 graphics rendering context for the drawing surface of an HTML <canvas> element. */
-  type WebGLRenderingContext = org.scalablytyped.std.WebGLRenderingContextBase
+  type WebGLSampler = org.scalablytyped.std.WebGLObject
   /** The WebGLShader is part of the WebGL API and can either be a vertex or a fragment shader. A WebGLProgram requires both types of shaders. */
   type WebGLShader = org.scalablytyped.std.WebGLObject
+  type WebGLSync = org.scalablytyped.std.WebGLObject
   /** Part of the WebGL API and represents an opaque texture object providing storage and state for texturing operations. */
   type WebGLTexture = org.scalablytyped.std.WebGLObject
+  type WebGLTransformFeedback = org.scalablytyped.std.WebGLObject
+  type WebGLVertexArrayObject = org.scalablytyped.std.WebGLObject
   type WebGLVertexArrayObjectOES = org.scalablytyped.std.WebGLObject
   type WebKitCSSMatrix = org.scalablytyped.std.DOMMatrix
   type WindowProxy = org.scalablytyped.std.Window

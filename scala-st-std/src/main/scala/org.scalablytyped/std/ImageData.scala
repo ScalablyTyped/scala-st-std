@@ -9,15 +9,16 @@ trait ImageData
   extends ImageBitmapSource
      with TexImageSource {
   /**
-    * Returns the one-dimensional array containing the data in RGBA order, as integers in the
-    * range 0 to 255.
+    * Returns the one-dimensional array containing the data in RGBA order, as integers in the range 0 to 255.
     */
   val data: Uint8ClampedArray
   /**
-    * Returns the actual dimensions of the data in the ImageData object, in
-    * pixels.
+    * Returns the actual dimensions of the data in the ImageData object, in pixels.
     */
   val height: Double
+  /**
+    * Returns the actual dimensions of the data in the ImageData object, in pixels.
+    */
   val width: Double
 }
 

@@ -11,16 +11,16 @@ import scala.scalajs.js.annotation._
 @js.native
 class WheelEvent protected ()
   extends org.scalablytyped.std.WheelEvent {
-  def this(typeArg: java.lang.String) = this()
-  def this(typeArg: java.lang.String, eventInitDict: WheelEventInit) = this()
+  def this(`type`: java.lang.String) = this()
+  def this(`type`: java.lang.String, eventInitDict: WheelEventInit) = this()
 }
 
 @JSGlobal("WheelEvent")
 @js.native
 object WheelEvent
-  extends Instantiable1[/* typeArg */ java.lang.String, org.scalablytyped.std.WheelEvent]
+  extends Instantiable1[/* type */ java.lang.String, org.scalablytyped.std.WheelEvent]
      with Instantiable2[
-      /* typeArg */ java.lang.String, 
+      /* type */ java.lang.String, 
       /* eventInitDict */ WheelEventInit, 
       org.scalablytyped.std.WheelEvent
     ] {

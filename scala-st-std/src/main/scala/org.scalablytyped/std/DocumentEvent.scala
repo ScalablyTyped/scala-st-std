@@ -54,6 +54,8 @@ trait DocumentEvent extends js.Object {
   @JSName("createEvent")
   def createEvent_IDBVersionChangeEvent(eventInterface: org.scalablytyped.std.stdStrings.IDBVersionChangeEvent): IDBVersionChangeEvent = js.native
   @JSName("createEvent")
+  def createEvent_InputEvent(eventInterface: org.scalablytyped.std.stdStrings.InputEvent): InputEvent = js.native
+  @JSName("createEvent")
   def createEvent_KeyboardEvent(eventInterface: org.scalablytyped.std.stdStrings.KeyboardEvent): KeyboardEvent = js.native
   @JSName("createEvent")
   def createEvent_ListeningStateChangedEvent(eventInterface: org.scalablytyped.std.stdStrings.ListeningStateChangedEvent): ListeningStateChangedEvent = js.native
@@ -102,7 +104,7 @@ trait DocumentEvent extends js.Object {
   @JSName("createEvent")
   def createEvent_PopStateEvent(eventInterface: org.scalablytyped.std.stdStrings.PopStateEvent): PopStateEvent = js.native
   @JSName("createEvent")
-  def createEvent_ProgressEvent(eventInterface: org.scalablytyped.std.stdStrings.ProgressEvent): ProgressEvent = js.native
+  def createEvent_ProgressEvent(eventInterface: org.scalablytyped.std.stdStrings.ProgressEvent): ProgressEvent[EventTarget] = js.native
   @JSName("createEvent")
   def createEvent_PromiseRejectionEvent(eventInterface: org.scalablytyped.std.stdStrings.PromiseRejectionEvent): PromiseRejectionEvent = js.native
   @JSName("createEvent")

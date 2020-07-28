@@ -5,6 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** The Web Audio API's AudioParam interface represents an audio-related parameter, usually a parameter of an AudioNode (such as GainNode.gain). */
+/** The Web Audio API's AudioParam interface represents an audio-related parameter, usually a parameter of an AudioNode (such as GainNode.gain). */
+/////////////////////////////
+/// DOM Iterable APIs
+/////////////////////////////
 @js.native
 trait AudioParam extends js.Object {
   var automationRate: AutomationRate = js.native
@@ -19,6 +23,7 @@ trait AudioParam extends js.Object {
   def setTargetAtTime(target: Double, startTime: Double, timeConstant: Double): AudioParam = js.native
   def setValueAtTime(value: Double, startTime: Double): AudioParam = js.native
   def setValueCurveAtTime(values: Float32Array, startTime: Double, duration: Double): AudioParam = js.native
+  def setValueCurveAtTime(values: Iterable[Double], startTime: Double, duration: Double): AudioParam = js.native
   def setValueCurveAtTime(values: js.Array[Double], startTime: Double, duration: Double): AudioParam = js.native
 }
 

@@ -65,7 +65,6 @@ trait HTMLObjectElement extends HTMLElement {
     * Sets or retrieves the MIME type of the object.
     */
   var `type`: java.lang.String = js.native
-  var typeMustMatch: scala.Boolean = js.native
   /**
     * Sets or retrieves the URL, often with a bookmark extension (#name), to use as a client-side image map.
     */

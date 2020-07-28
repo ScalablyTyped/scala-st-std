@@ -3,7 +3,6 @@ package org.scalablytyped.std
 import org.scalablytyped.std.stdStrings.ended
 import org.scalablytyped.std.stdStrings.isolationchange
 import org.scalablytyped.std.stdStrings.mute
-import org.scalablytyped.std.stdStrings.overconstrained
 import org.scalablytyped.std.stdStrings.unmute
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,7 +20,6 @@ trait MediaStreamTrack extends EventTarget {
   var onended: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var onisolationchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var onmute: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onoverconstrained: (js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _]) | Null = js.native
   var onunmute: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   val readyState: MediaStreamTrackState = js.native
   @JSName("addEventListener")
@@ -64,23 +62,6 @@ trait MediaStreamTrack extends EventTarget {
   def addEventListener_mute(
     `type`: mute,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_overconstrained(
-    `type`: overconstrained,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_overconstrained(
-    `type`: overconstrained,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_overconstrained(
-    `type`: overconstrained,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -142,23 +123,6 @@ trait MediaStreamTrack extends EventTarget {
   def removeEventListener_mute(
     `type`: mute,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_overconstrained(
-    `type`: overconstrained,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_overconstrained(
-    `type`: overconstrained,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_overconstrained(
-    `type`: overconstrained,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamErrorEvent, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")

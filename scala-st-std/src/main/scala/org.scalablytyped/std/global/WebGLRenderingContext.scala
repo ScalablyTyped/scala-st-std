@@ -1,7 +1,6 @@
 package org.scalablytyped.std.global
 
 import org.scalablytyped.std.GLenum
-import org.scalablytyped.std.WebGLRenderingContextBase
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +8,8 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("WebGLRenderingContext")
 @js.native
-class WebGLRenderingContext () extends WebGLRenderingContextBase
+class WebGLRenderingContext ()
+  extends org.scalablytyped.std.WebGLRenderingContext
 
 @JSGlobal("WebGLRenderingContext")
 @js.native

@@ -12,16 +12,16 @@ import scala.scalajs.js.annotation._
 object removeEventListener_readystatechange extends js.Object {
   def apply(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.ProgressEvent, _]
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.ProgressEvent[Window], _]
   ): Unit = js.native
   def apply(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.ProgressEvent[Window], _],
     options: EventListenerOptions
   ): Unit = js.native
   def apply(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.ProgressEvent[Window], _],
     options: scala.Boolean
   ): Unit = js.native
 }

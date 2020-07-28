@@ -6,34 +6,12 @@ import scala.scalajs.js.annotation._
 
 /** Provides access to the properties of <mask> elements, as well as methods to manipulate them. */
 @js.native
-trait SVGMaskElement
-  extends SVGElement
-     with SVGTests {
+trait SVGMaskElement extends SVGElement {
   val height: SVGAnimatedLength = js.native
   val maskContentUnits: SVGAnimatedEnumeration = js.native
   val maskUnits: SVGAnimatedEnumeration = js.native
   val width: SVGAnimatedLength = js.native
   val x: SVGAnimatedLength = js.native
   val y: SVGAnimatedLength = js.native
-  /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
-  /* InferMemberOverrides */
-  override def addEventListener(
-    `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
-  /* InferMemberOverrides */
-  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
-  /* InferMemberOverrides */
-  override def removeEventListener(
-    `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
-    options: EventListenerOptions
-  ): Unit = js.native
-  /* InferMemberOverrides */
-  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
 }
 

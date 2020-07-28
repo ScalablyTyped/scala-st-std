@@ -12,8 +12,7 @@ trait Range extends AbstractRange {
   val START_TO_END: Double = js.native
   val START_TO_START: Double = js.native
   /**
-    * Returns the node, furthest away from
-    * the document, that is an ancestor of both range's start node and end node.
+    * Returns the node, furthest away from the document, that is an ancestor of both range's start node and end node.
     */
   val commonAncestorContainer: Node = js.native
   def cloneContents(): DocumentFragment = js.native
@@ -22,8 +21,7 @@ trait Range extends AbstractRange {
   def collapse(toStart: scala.Boolean): Unit = js.native
   def compareBoundaryPoints(how: Double, sourceRange: Range): Double = js.native
   /**
-    * Returns −1 if the point is before the range, 0 if the point is
-    * in the range, and 1 if the point is after the range.
+    * Returns −1 if the point is before the range, 0 if the point is in the range, and 1 if the point is after the range.
     */
   def comparePoint(node: Node, offset: Double): Double = js.native
   def createContextualFragment(fragment: java.lang.String): DocumentFragment = js.native

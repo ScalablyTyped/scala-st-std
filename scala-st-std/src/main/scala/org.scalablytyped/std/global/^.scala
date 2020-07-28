@@ -285,7 +285,11 @@ object ^ extends js.Object {
     * @param ev The event.
     */
   var onloadedmetadata: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null = js.native
-  var onloadend: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.ProgressEvent, js.Any]) | Null = js.native
+  var onloadend: (js.ThisFunction1[
+    /* this */ Window, 
+    /* ev */ org.scalablytyped.std.ProgressEvent[org.scalablytyped.std.EventTarget], 
+    js.Any
+  ]) | Null = js.native
   /**
     * Occurs when Internet Explorer begins looking for media data.
     * @param ev The event.
@@ -371,13 +375,17 @@ object ^ extends js.Object {
     * Occurs to indicate progress while downloading media data.
     * @param ev The event.
     */
-  var onprogress: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.ProgressEvent, js.Any]) | Null = js.native
+  var onprogress: (js.ThisFunction1[
+    /* this */ Window, 
+    /* ev */ org.scalablytyped.std.ProgressEvent[org.scalablytyped.std.EventTarget], 
+    js.Any
+  ]) | Null = js.native
   /**
     * Occurs when the playback rate is increased or decreased.
     * @param ev The event.
     */
   var onratechange: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null = js.native
-  var onreadystatechange: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.ProgressEvent, js.Any]) | Null = js.native
+  var onreadystatechange: (js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.ProgressEvent[Window], js.Any]) | Null = js.native
   var onrejectionhandled: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null = js.native
   /**
     * Fires when the user resets a form.
@@ -479,7 +487,7 @@ object ^ extends js.Object {
   var scrollX: Double = js.native
   var scrollY: Double = js.native
   var scrollbars: org.scalablytyped.std.BarProp = js.native
-  var self: Window = js.native
+  var self: Window with (/* globalThis */ js.Any) = js.native
   var sessionStorage: org.scalablytyped.std.Storage = js.native
   var speechSynthesis: SpeechSynthesis = js.native
   var status: java.lang.String = js.native
@@ -487,6 +495,6 @@ object ^ extends js.Object {
   var styleMedia: StyleMedia = js.native
   var toolbar: org.scalablytyped.std.BarProp = js.native
   var top: Window = js.native
-  var window: Window = js.native
+  var window: Window with (/* globalThis */ js.Any) = js.native
 }
 

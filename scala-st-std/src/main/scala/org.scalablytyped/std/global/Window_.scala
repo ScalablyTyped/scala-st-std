@@ -1,6 +1,7 @@
 package org.scalablytyped.std.global
 
 import org.scalablytyped.std.Console
+import org.scalablytyped.std.FrameRequestCallback
 import org.scalablytyped.std.Window
 import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
@@ -22,6 +23,10 @@ class Window_ () extends Window {
   override def atob(encodedString: java.lang.String): java.lang.String = js.native
   /* CompleteClass */
   override def btoa(rawString: java.lang.String): java.lang.String = js.native
+  /* CompleteClass */
+  override def cancelAnimationFrame(handle: Double): Unit = js.native
+  /* CompleteClass */
+  override def requestAnimationFrame(callback: FrameRequestCallback): Double = js.native
 }
 
 @JSGlobal("Window")

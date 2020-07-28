@@ -9,13 +9,11 @@ trait ImageBitmap
      with TexImageSource
      with Transferable {
   /**
-    * Returns the intrinsic height of the image, in CSS
-    * pixels.
+    * Returns the intrinsic height of the image, in CSS pixels.
     */
   val height: Double
   /**
-    * Returns the intrinsic width of the image, in CSS
-    * pixels.
+    * Returns the intrinsic width of the image, in CSS pixels.
     */
   val width: Double
   /**

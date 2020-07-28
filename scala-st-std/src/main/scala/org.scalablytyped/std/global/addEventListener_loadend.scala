@@ -12,16 +12,28 @@ import scala.scalajs.js.annotation._
 object addEventListener_loadend extends js.Object {
   def apply(
     `type`: loadend,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.ProgressEvent, _]
+    listener: js.ThisFunction1[
+      /* this */ Window, 
+      /* ev */ org.scalablytyped.std.ProgressEvent[org.scalablytyped.std.EventTarget], 
+      _
+    ]
   ): Unit = js.native
   def apply(
     `type`: loadend,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.ProgressEvent, _],
+    listener: js.ThisFunction1[
+      /* this */ Window, 
+      /* ev */ org.scalablytyped.std.ProgressEvent[org.scalablytyped.std.EventTarget], 
+      _
+    ],
     options: AddEventListenerOptions
   ): Unit = js.native
   def apply(
     `type`: loadend,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ org.scalablytyped.std.ProgressEvent, _],
+    listener: js.ThisFunction1[
+      /* this */ Window, 
+      /* ev */ org.scalablytyped.std.ProgressEvent[org.scalablytyped.std.EventTarget], 
+      _
+    ],
     options: scala.Boolean
   ): Unit = js.native
 }

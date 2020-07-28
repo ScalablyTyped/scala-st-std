@@ -10,14 +10,12 @@ import scala.scalajs.js.annotation._
 class ImageBitmap ()
   extends org.scalablytyped.std.ImageBitmap {
   /**
-    * Returns the intrinsic height of the image, in CSS
-    * pixels.
+    * Returns the intrinsic height of the image, in CSS pixels.
     */
   /* CompleteClass */
   override val height: Double = js.native
   /**
-    * Returns the intrinsic width of the image, in CSS
-    * pixels.
+    * Returns the intrinsic width of the image, in CSS pixels.
     */
   /* CompleteClass */
   override val width: Double = js.native

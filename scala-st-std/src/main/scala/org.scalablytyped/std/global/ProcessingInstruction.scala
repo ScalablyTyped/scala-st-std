@@ -10,14 +10,12 @@ import scala.scalajs.js.annotation._
 class ProcessingInstruction ()
   extends org.scalablytyped.std.ProcessingInstruction {
   /**
-    * Returns the first following sibling that
-    * is an element, and null otherwise.
+    * Returns the first following sibling that is an element, and null otherwise.
     */
   /* CompleteClass */
   override val nextElementSibling: org.scalablytyped.std.Element | Null = js.native
   /**
-    * Returns the first preceding sibling that
-    * is an element, and null otherwise.
+    * Returns the first preceding sibling that is an element, and null otherwise.
     */
   /* CompleteClass */
   override val previousElementSibling: org.scalablytyped.std.Element | Null = js.native

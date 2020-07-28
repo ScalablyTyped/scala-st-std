@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait CanvasRenderingContext2DSettings extends js.Object {
   var alpha: js.UndefOr[scala.Boolean] = js.undefined
+  var desynchronized: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object CanvasRenderingContext2DSettings {
@@ -29,6 +30,10 @@ object CanvasRenderingContext2DSettings {
     def setAlpha(value: scala.Boolean): Self = this.set("alpha", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteAlpha: Self = this.set("alpha", js.undefined)
+    @scala.inline
+    def setDesynchronized(value: scala.Boolean): Self = this.set("desynchronized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesynchronized: Self = this.set("desynchronized", js.undefined)
   }
   
 }

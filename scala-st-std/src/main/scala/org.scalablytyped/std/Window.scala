@@ -1,10 +1,5 @@
 package org.scalablytyped.std
 
-import org.scalablytyped.std.anon.CreateObjectURL
-import org.scalablytyped.std.anon.Instantiable
-import org.scalablytyped.std.anon.InstantiableTextDecoder
-import org.scalablytyped.std.anon.InstantiableTextEncoder
-import org.scalablytyped.std.anon.InstantiableURLSearchParams
 import org.scalablytyped.std.stdStrings.MSGestureChange
 import org.scalablytyped.std.stdStrings.MSGestureDoubleTap
 import org.scalablytyped.std.stdStrings.MSGestureEnd
@@ -53,15 +48,10 @@ trait Window
      with GlobalEventHandlers
      with IDBEnvironment
      with WindowBase64
-     with GlobalFetch
+     with AnimationFrameProvider
      with WindowOrWorkerGlobalScope
      with WindowEventHandlers
      with /* index */ NumberDictionary[Window] {
-  var Blob: Instantiable = js.native
-  var TextDecoder: InstantiableTextDecoder = js.native
-  var TextEncoder: InstantiableTextEncoder = js.native
-  var URL: CreateObjectURL = js.native
-  var URLSearchParams: InstantiableURLSearchParams = js.native
   val applicationCache: ApplicationCache = js.native
   val clientInformation: Navigator = js.native
   val closed: scala.Boolean = js.native
@@ -113,7 +103,7 @@ trait Window
   var onmspointerup: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   /** @deprecated */
   var onorientationchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]) | Null = js.native
+  var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _]) | Null = js.native
   var onvrdisplayactivate: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var onvrdisplayblur: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var onvrdisplayconnect: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
@@ -140,14 +130,14 @@ trait Window
   val scrollX: Double = js.native
   val scrollY: Double = js.native
   val scrollbars: BarProp = js.native
-  val self: Window = js.native
+  val self: Window with (/* globalThis */ js.Any) = js.native
   val speechSynthesis: SpeechSynthesis = js.native
   var status: java.lang.String = js.native
   val statusbar: BarProp = js.native
   val styleMedia: StyleMedia = js.native
   val toolbar: BarProp = js.native
   val top: Window = js.native
-  val window: Window = js.native
+  val window: Window with (/* globalThis */ js.Any) = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -484,18 +474,18 @@ trait Window
   @JSName("addEventListener")
   def addEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -640,17 +630,12 @@ trait Window
   def blur(): Unit = js.native
   /* InferMemberOverrides */
   override def btoa(data: java.lang.String): java.lang.String = js.native
-  def cancelAnimationFrame(handle: Double): Unit = js.native
   /** @deprecated */
   def captureEvents(): Unit = js.native
   def close(): Unit = js.native
   def confirm(): scala.Boolean = js.native
   def confirm(message: java.lang.String): scala.Boolean = js.native
   def departFocus(navigationReason: NavigationReason, origin: FocusNavigationOrigin): Unit = js.native
-  /* InferMemberOverrides */
-  override def fetch(input: RequestInfo): js.Promise[Response] = js.native
-  /* InferMemberOverrides */
-  override def fetch(input: RequestInfo, init: RequestInit): js.Promise[Response] = js.native
   def focus(): Unit = js.native
   def getComputedStyle(elt: Element): CSSStyleDeclaration = js.native
   def getComputedStyle(elt: Element, pseudoElt: java.lang.String): CSSStyleDeclaration = js.native
@@ -1062,18 +1047,18 @@ trait Window
   @JSName("removeEventListener")
   def removeEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[this.type], _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
@@ -1211,7 +1196,6 @@ trait Window
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
-  def requestAnimationFrame(callback: FrameRequestCallback): Double = js.native
   def resizeBy(x: Double, y: Double): Unit = js.native
   def resizeTo(x: Double, y: Double): Unit = js.native
   def scroll(): Unit = js.native

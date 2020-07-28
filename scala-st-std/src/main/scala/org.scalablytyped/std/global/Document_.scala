@@ -11,6 +11,9 @@ import scala.scalajs.js.annotation._
 class Document_ () extends Document {
   /* CompleteClass */
   override val activeElement: org.scalablytyped.std.Element | Null = js.native
+  /**
+    * Returns document's fullscreen element.
+    */
   /* CompleteClass */
   override val fullscreenElement: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */

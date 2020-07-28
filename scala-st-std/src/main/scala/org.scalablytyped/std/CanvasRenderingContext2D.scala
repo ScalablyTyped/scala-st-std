@@ -23,7 +23,7 @@ trait CanvasRenderingContext2D
      with CanvasPathDrawingStyles
      with CanvasTextDrawingStyles
      with CanvasPath
-     with _RenderingContext {
+     with RenderingContext {
   val canvas: HTMLCanvasElement = js.native
 }
 

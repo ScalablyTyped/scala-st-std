@@ -11,16 +11,16 @@ import scala.scalajs.js.annotation._
 @js.native
 class CompositionEvent protected ()
   extends org.scalablytyped.std.CompositionEvent {
-  def this(typeArg: java.lang.String) = this()
-  def this(typeArg: java.lang.String, eventInitDict: CompositionEventInit) = this()
+  def this(`type`: java.lang.String) = this()
+  def this(`type`: java.lang.String, eventInitDict: CompositionEventInit) = this()
 }
 
 @JSGlobal("CompositionEvent")
 @js.native
 object CompositionEvent
-  extends Instantiable1[/* typeArg */ java.lang.String, org.scalablytyped.std.CompositionEvent]
+  extends Instantiable1[/* type */ java.lang.String, org.scalablytyped.std.CompositionEvent]
      with Instantiable2[
-      /* typeArg */ java.lang.String, 
+      /* type */ java.lang.String, 
       /* eventInitDict */ CompositionEventInit, 
       org.scalablytyped.std.CompositionEvent
     ]

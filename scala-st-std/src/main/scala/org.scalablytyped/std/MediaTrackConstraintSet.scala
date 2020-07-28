@@ -19,7 +19,6 @@ trait MediaTrackConstraintSet extends js.Object {
   var resizeMode: js.UndefOr[ConstrainDOMString] = js.undefined
   var sampleRate: js.UndefOr[ConstrainULong] = js.undefined
   var sampleSize: js.UndefOr[ConstrainULong] = js.undefined
-  var volume: js.UndefOr[ConstrainDouble] = js.undefined
   var width: js.UndefOr[ConstrainULong] = js.undefined
 }
 
@@ -104,10 +103,6 @@ object MediaTrackConstraintSet {
     def setSampleSize(value: ConstrainULong): Self = this.set("sampleSize", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteSampleSize: Self = this.set("sampleSize", js.undefined)
-    @scala.inline
-    def setVolume(value: ConstrainDouble): Self = this.set("volume", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteVolume: Self = this.set("volume", js.undefined)
     @scala.inline
     def setWidth(value: ConstrainULong): Self = this.set("width", value.asInstanceOf[js.Any])
     @scala.inline

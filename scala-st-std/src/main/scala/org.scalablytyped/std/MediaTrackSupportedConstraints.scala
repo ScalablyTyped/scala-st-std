@@ -19,7 +19,6 @@ trait MediaTrackSupportedConstraints extends js.Object {
   var resizeMode: js.UndefOr[scala.Boolean] = js.undefined
   var sampleRate: js.UndefOr[scala.Boolean] = js.undefined
   var sampleSize: js.UndefOr[scala.Boolean] = js.undefined
-  var volume: js.UndefOr[scala.Boolean] = js.undefined
   var width: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -96,10 +95,6 @@ object MediaTrackSupportedConstraints {
     def setSampleSize(value: scala.Boolean): Self = this.set("sampleSize", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteSampleSize: Self = this.set("sampleSize", js.undefined)
-    @scala.inline
-    def setVolume(value: scala.Boolean): Self = this.set("volume", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteVolume: Self = this.set("volume", js.undefined)
     @scala.inline
     def setWidth(value: scala.Boolean): Self = this.set("width", value.asInstanceOf[js.Any])
     @scala.inline

@@ -1,8 +1,9 @@
 package org.scalablytyped.std
 
 import org.scalablytyped.std.stdStrings.`2d`
-import org.scalablytyped.std.stdStrings.`experimental-webgl`
+import org.scalablytyped.std.stdStrings.bitmaprenderer
 import org.scalablytyped.std.stdStrings.webgl
+import org.scalablytyped.std.stdStrings.webgl2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,8 +32,8 @@ trait HTMLCanvasElement
   ): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
-  def getContext(contextId: java.lang.String): CanvasRenderingContext2D | WebGLRenderingContext | Null = js.native
-  def getContext(contextId: java.lang.String, contextAttributes: js.Object): CanvasRenderingContext2D | WebGLRenderingContext | Null = js.native
+  def getContext(contextId: java.lang.String): RenderingContext | Null = js.native
+  def getContext(contextId: java.lang.String, options: js.Any): RenderingContext | Null = js.native
   /**
     * Returns an object that provides methods and properties for drawing and manipulating images and graphics on a canvas element in a document. A context object includes information about colors, line widths, fonts, and other graphic parameters that can be drawn on a canvas.
     * @param contextId The identifier (ID) of the type of canvas to create. Internet Explorer 9 and Internet Explorer 10 support only a 2-D context using canvas.getContext("2d"); IE11 Preview also supports 3-D or WebGL context using canvas.getContext("experimental-webgl");
@@ -40,15 +41,19 @@ trait HTMLCanvasElement
   @JSName("getContext")
   def getContext_2d(contextId: `2d`): CanvasRenderingContext2D | Null = js.native
   @JSName("getContext")
-  def getContext_2d(contextId: `2d`, contextAttributes: CanvasRenderingContext2DSettings): CanvasRenderingContext2D | Null = js.native
+  def getContext_2d(contextId: `2d`, options: CanvasRenderingContext2DSettings): CanvasRenderingContext2D | Null = js.native
   @JSName("getContext")
-  def getContext_experimentalwebgl(contextId: `experimental-webgl`): WebGLRenderingContext | Null = js.native
+  def getContext_bitmaprenderer(contextId: bitmaprenderer): ImageBitmapRenderingContext | Null = js.native
   @JSName("getContext")
-  def getContext_experimentalwebgl(contextId: `experimental-webgl`, contextAttributes: WebGLContextAttributes): WebGLRenderingContext | Null = js.native
+  def getContext_bitmaprenderer(contextId: bitmaprenderer, options: ImageBitmapRenderingContextSettings): ImageBitmapRenderingContext | Null = js.native
   @JSName("getContext")
   def getContext_webgl(contextId: webgl): WebGLRenderingContext | Null = js.native
   @JSName("getContext")
-  def getContext_webgl(contextId: webgl, contextAttributes: WebGLContextAttributes): WebGLRenderingContext | Null = js.native
+  def getContext_webgl(contextId: webgl, options: WebGLContextAttributes): WebGLRenderingContext | Null = js.native
+  @JSName("getContext")
+  def getContext_webgl2(contextId: webgl2): WebGL2RenderingContext | Null = js.native
+  @JSName("getContext")
+  def getContext_webgl2(contextId: webgl2, options: WebGLContextAttributes): WebGL2RenderingContext | Null = js.native
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */

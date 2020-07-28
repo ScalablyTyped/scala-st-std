@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("window")
 @js.native
-object window extends TopLevel[Window]
+object window
+  extends TopLevel[Window with (/* globalThis */ js.Any)]
 

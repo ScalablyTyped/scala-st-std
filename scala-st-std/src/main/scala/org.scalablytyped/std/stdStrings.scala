@@ -112,6 +112,9 @@ object stdStrings {
   sealed trait IDBVersionChangeEvent extends js.Object
   
   @js.native
+  sealed trait InputEvent extends js.Object
+  
+  @js.native
   sealed trait Int16Array extends js.Object
   
   @js.native
@@ -702,7 +705,12 @@ object stdStrings {
   sealed trait bevel extends CanvasLineJoin
   
   @js.native
-  sealed trait ble extends Transport
+  sealed trait bitmaprenderer extends OffscreenRenderingContextId
+  
+  @js.native
+  sealed trait ble
+    extends AuthenticatorTransport
+       with Transport
   
   @js.native
   sealed trait blob
@@ -920,6 +928,9 @@ object stdStrings {
        with ResponseType
   
   @js.native
+  sealed trait `cross-platform` extends AuthenticatorAttachment
+  
+  @js.native
   sealed trait cuechange extends js.Object
   
   @js.native
@@ -1023,7 +1034,9 @@ object stdStrings {
   sealed trait dir extends js.Object
   
   @js.native
-  sealed trait direct extends TouchType
+  sealed trait direct
+    extends AttestationConveyancePreference
+       with TouchType
   
   @js.native
   sealed trait disabled
@@ -1038,6 +1051,9 @@ object stdStrings {
     extends RTCIceConnectionState
        with RTCIceTransportState
        with RTCPeerConnectionState
+  
+  @js.native
+  sealed trait discouraged extends UserVerificationRequirement
   
   @js.native
   sealed trait discrete extends ChannelInterpretation
@@ -1148,9 +1164,6 @@ object stdStrings {
   
   @js.native
   sealed trait exit extends js.Object
-  
-  @js.native
-  sealed trait `experimental-webgl` extends js.Object
   
   @js.native
   sealed trait expired extends MediaKeyStatus
@@ -1272,6 +1285,12 @@ object stdStrings {
   sealed trait focus extends js.Object
   
   @js.native
+  sealed trait focusin extends js.Object
+  
+  @js.native
+  sealed trait focusout extends js.Object
+  
+  @js.native
   sealed trait follow extends RequestRedirect
   
   @js.native
@@ -1315,9 +1334,6 @@ object stdStrings {
   
   @js.native
   sealed trait g extends js.Object
-  
-  @js.native
-  sealed trait gamepad extends GamepadInputEmulationType
   
   @js.native
   sealed trait gathering
@@ -1509,6 +1525,9 @@ object stdStrings {
   sealed trait include extends RequestCredentials
   
   @js.native
+  sealed trait indirect extends AttestationConveyancePreference
+  
+  @js.native
   sealed trait `individualization-request` extends MediaKeyMessageType
   
   @js.native
@@ -1533,6 +1552,9 @@ object stdStrings {
   sealed trait interactive
     extends AudioContextLatencyCategory
        with DocumentReadyState
+  
+  @js.native
+  sealed trait internal extends AuthenticatorTransport
   
   @js.native
   sealed trait `internal-error` extends MediaKeyStatus
@@ -1563,9 +1585,6 @@ object stdStrings {
   
   @js.native
   sealed trait kbd extends js.Object
-  
-  @js.native
-  sealed trait keyboard extends GamepadInputEmulationType
   
   @js.native
   sealed trait keydown extends js.Object
@@ -1795,9 +1814,6 @@ object stdStrings {
   sealed trait mounted extends VRDisplayEventReason
   
   @js.native
-  sealed trait mouse extends GamepadInputEmulationType
-  
-  @js.native
   sealed trait mousedown extends js.Object
   
   @js.native
@@ -1875,7 +1891,9 @@ object stdStrings {
   sealed trait nextunique extends IDBCursorDirection
   
   @js.native
-  sealed trait nfc_ extends Transport
+  sealed trait nfc_
+    extends AuthenticatorTransport
+       with Transport
   
   @js.native
   sealed trait `no-cache` extends RequestCache
@@ -1903,7 +1921,8 @@ object stdStrings {
   
   @js.native
   sealed trait none
-    extends FillMode
+    extends AttestationConveyancePreference
+       with FillMode
        with OverSampleType
        with ServiceWorkerUpdateViaCache
   
@@ -1979,7 +1998,9 @@ object stdStrings {
   sealed trait option extends js.Object
   
   @js.native
-  sealed trait optional extends MediaKeysRequirement
+  sealed trait optional
+    extends CredentialMediationRequirement
+       with MediaKeysRequirement
   
   @js.native
   sealed trait orientationchange extends js.Object
@@ -2001,9 +2022,6 @@ object stdStrings {
   
   @js.native
   sealed trait `output-restricted` extends MediaKeyStatus
-  
-  @js.native
-  sealed trait overconstrained extends js.Object
   
   @js.native
   sealed trait p extends js.Object
@@ -2070,6 +2088,9 @@ object stdStrings {
   
   @js.native
   sealed trait pkcs8 extends KeyFormat
+  
+  @js.native
+  sealed trait platform extends AuthenticatorAttachment
   
   @js.native
   sealed trait play extends js.Object
@@ -2142,6 +2163,9 @@ object stdStrings {
   sealed trait pre extends js.Object
   
   @js.native
+  sealed trait preferred extends UserVerificationRequirement
+  
+  @js.native
   sealed trait premultiply extends js.Object
   
   @js.native
@@ -2180,6 +2204,9 @@ object stdStrings {
   
   @js.native
   sealed trait public extends KeyType
+  
+  @js.native
+  sealed trait `public-key` extends js.Object
   
   @js.native
   sealed trait push extends PermissionName
@@ -2259,7 +2286,10 @@ object stdStrings {
   sealed trait require extends RTCRtcpMuxPolicy
   
   @js.native
-  sealed trait required_ extends MediaKeysRequirement
+  sealed trait required_
+    extends CredentialMediationRequirement
+       with MediaKeysRequirement
+       with UserVerificationRequirement
   
   @js.native
   sealed trait reset extends js.Object
@@ -2426,6 +2456,9 @@ object stdStrings {
   
   @js.native
   sealed trait signalingstatechange extends js.Object
+  
+  @js.native
+  sealed trait silent extends CredentialMediationRequirement
   
   @js.native
   sealed trait sine extends OscillatorType
@@ -2753,7 +2786,9 @@ object stdStrings {
   sealed trait usable extends MediaKeyStatus
   
   @js.native
-  sealed trait usb_ extends Transport
+  sealed trait usb_
+    extends AuthenticatorTransport
+       with Transport
   
   @js.native
   sealed trait use extends js.Object
@@ -2838,6 +2873,9 @@ object stdStrings {
   
   @js.native
   sealed trait webgl extends OffscreenRenderingContextId
+  
+  @js.native
+  sealed trait webgl2 extends OffscreenRenderingContextId
   
   @js.native
   sealed trait webnotifications extends MSWebViewPermissionType
@@ -2934,6 +2972,8 @@ object stdStrings {
   def HashChangeEvent: HashChangeEvent = "HashChangeEvent".asInstanceOf[HashChangeEvent]
   @scala.inline
   def IDBVersionChangeEvent: IDBVersionChangeEvent = "IDBVersionChangeEvent".asInstanceOf[IDBVersionChangeEvent]
+  @scala.inline
+  def InputEvent: InputEvent = "InputEvent".asInstanceOf[InputEvent]
   @scala.inline
   def Int16Array: Int16Array = "Int16Array".asInstanceOf[Int16Array]
   @scala.inline
@@ -3307,6 +3347,8 @@ object stdStrings {
   @scala.inline
   def bevel: bevel = "bevel".asInstanceOf[bevel]
   @scala.inline
+  def bitmaprenderer: bitmaprenderer = "bitmaprenderer".asInstanceOf[bitmaprenderer]
+  @scala.inline
   def ble: ble = "ble".asInstanceOf[ble]
   @scala.inline
   def blob: blob = "blob".asInstanceOf[blob]
@@ -3429,6 +3471,8 @@ object stdStrings {
   @scala.inline
   def cors: cors = "cors".asInstanceOf[cors]
   @scala.inline
+  def `cross-platform`: `cross-platform` = "cross-platform".asInstanceOf[`cross-platform`]
+  @scala.inline
   def cuechange: cuechange = "cuechange".asInstanceOf[cuechange]
   @scala.inline
   def custom: custom = "custom".asInstanceOf[custom]
@@ -3501,6 +3545,8 @@ object stdStrings {
   @scala.inline
   def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
   @scala.inline
+  def discouraged: discouraged = "discouraged".asInstanceOf[discouraged]
+  @scala.inline
   def discrete: discrete = "discrete".asInstanceOf[discrete]
   @scala.inline
   def div: div = "div".asInstanceOf[div]
@@ -3566,8 +3612,6 @@ object stdStrings {
   def evenodd: evenodd = "evenodd".asInstanceOf[evenodd]
   @scala.inline
   def exit: exit = "exit".asInstanceOf[exit]
-  @scala.inline
-  def `experimental-webgl`: `experimental-webgl` = "experimental-webgl".asInstanceOf[`experimental-webgl`]
   @scala.inline
   def expired: expired = "expired".asInstanceOf[expired]
   @scala.inline
@@ -3645,6 +3689,10 @@ object stdStrings {
   @scala.inline
   def focus: focus = "focus".asInstanceOf[focus]
   @scala.inline
+  def focusin: focusin = "focusin".asInstanceOf[focusin]
+  @scala.inline
+  def focusout: focusout = "focusout".asInstanceOf[focusout]
+  @scala.inline
   def follow: follow = "follow".asInstanceOf[follow]
   @scala.inline
   def font: font = "font".asInstanceOf[font]
@@ -3674,8 +3722,6 @@ object stdStrings {
   def function: function = "function".asInstanceOf[function]
   @scala.inline
   def g: g = "g".asInstanceOf[g]
-  @scala.inline
-  def gamepad: gamepad = "gamepad".asInstanceOf[gamepad]
   @scala.inline
   def gathering: gathering = "gathering".asInstanceOf[gathering]
   @scala.inline
@@ -3793,6 +3839,8 @@ object stdStrings {
   @scala.inline
   def include: include = "include".asInstanceOf[include]
   @scala.inline
+  def indirect: indirect = "indirect".asInstanceOf[indirect]
+  @scala.inline
   def `individualization-request`: `individualization-request` = "individualization-request".asInstanceOf[`individualization-request`]
   @scala.inline
   def inherit: inherit = "inherit".asInstanceOf[inherit]
@@ -3808,6 +3856,8 @@ object stdStrings {
   def installing: installing = "installing".asInstanceOf[installing]
   @scala.inline
   def interactive: interactive = "interactive".asInstanceOf[interactive]
+  @scala.inline
+  def internal: internal = "internal".asInstanceOf[internal]
   @scala.inline
   def `internal-error`: `internal-error` = "internal-error".asInstanceOf[`internal-error`]
   @scala.inline
@@ -3828,8 +3878,6 @@ object stdStrings {
   def `k-rate`: `k-rate` = "k-rate".asInstanceOf[`k-rate`]
   @scala.inline
   def kbd: kbd = "kbd".asInstanceOf[kbd]
-  @scala.inline
-  def keyboard: keyboard = "keyboard".asInstanceOf[keyboard]
   @scala.inline
   def keydown: keydown = "keydown".asInstanceOf[keydown]
   @scala.inline
@@ -3971,8 +4019,6 @@ object stdStrings {
   @scala.inline
   def mounted: mounted = "mounted".asInstanceOf[mounted]
   @scala.inline
-  def mouse: mouse = "mouse".asInstanceOf[mouse]
-  @scala.inline
   def mousedown: mousedown = "mousedown".asInstanceOf[mousedown]
   @scala.inline
   def mouseenter: mouseenter = "mouseenter".asInstanceOf[mouseenter]
@@ -4097,8 +4143,6 @@ object stdStrings {
   @scala.inline
   def `output-restricted`: `output-restricted` = "output-restricted".asInstanceOf[`output-restricted`]
   @scala.inline
-  def overconstrained: overconstrained = "overconstrained".asInstanceOf[overconstrained]
-  @scala.inline
   def p: p = "p".asInstanceOf[p]
   @scala.inline
   def p256dh: p256dh = "p256dh".asInstanceOf[p256dh]
@@ -4142,6 +4186,8 @@ object stdStrings {
   def pixelated: pixelated = "pixelated".asInstanceOf[pixelated]
   @scala.inline
   def pkcs8: pkcs8 = "pkcs8".asInstanceOf[pkcs8]
+  @scala.inline
+  def platform: platform = "platform".asInstanceOf[platform]
   @scala.inline
   def play: play = "play".asInstanceOf[play]
   @scala.inline
@@ -4187,6 +4233,8 @@ object stdStrings {
   @scala.inline
   def pre: pre = "pre".asInstanceOf[pre]
   @scala.inline
+  def preferred: preferred = "preferred".asInstanceOf[preferred]
+  @scala.inline
   def premultiply: premultiply = "premultiply".asInstanceOf[premultiply]
   @scala.inline
   def prerender: prerender = "prerender".asInstanceOf[prerender]
@@ -4210,6 +4258,8 @@ object stdStrings {
   def prompt: prompt = "prompt".asInstanceOf[prompt]
   @scala.inline
   def public: public = "public".asInstanceOf[public]
+  @scala.inline
+  def `public-key`: `public-key` = "public-key".asInstanceOf[`public-key`]
   @scala.inline
   def push: push = "push".asInstanceOf[push]
   @scala.inline
@@ -4358,6 +4408,8 @@ object stdStrings {
   def sign: sign = "sign".asInstanceOf[sign]
   @scala.inline
   def signalingstatechange: signalingstatechange = "signalingstatechange".asInstanceOf[signalingstatechange]
+  @scala.inline
+  def silent: silent = "silent".asInstanceOf[silent]
   @scala.inline
   def sine: sine = "sine".asInstanceOf[sine]
   @scala.inline
@@ -4624,6 +4676,8 @@ object stdStrings {
   def wbr: wbr = "wbr".asInstanceOf[wbr]
   @scala.inline
   def webgl: webgl = "webgl".asInstanceOf[webgl]
+  @scala.inline
+  def webgl2: webgl2 = "webgl2".asInstanceOf[webgl2]
   @scala.inline
   def webnotifications: webnotifications = "webnotifications".asInstanceOf[webnotifications]
   @scala.inline
