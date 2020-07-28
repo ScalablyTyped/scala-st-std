@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("HTMLSpanElement")
 @js.native
 class HTMLSpanElement ()
-  extends org.scalablytyped.std.HTMLElement {
+  extends org.scalablytyped.std.HTMLSpanElement {
   /* CompleteClass */
   override val childElementCount: Double = js.native
   /* CompleteClass */

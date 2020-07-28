@@ -58,6 +58,7 @@ object KeyboardEvent {
     code: java.lang.String,
     ctrlKey: scala.Boolean,
     currentTarget: EventTarget,
+    deepPath: () => js.Array[EventTarget],
     defaultPrevented: scala.Boolean,
     detail: Double,
     eventPhase: Double,
@@ -74,6 +75,7 @@ object KeyboardEvent {
     preventDefault: () => Unit,
     repeat: scala.Boolean,
     returnValue: scala.Boolean,
+    scoped: scala.Boolean,
     shiftKey: scala.Boolean,
     stopImmediatePropagation: () => Unit,
     stopPropagation: () => Unit,
@@ -83,7 +85,7 @@ object KeyboardEvent {
     view: Window,
     which: Double
   ): KeyboardEvent = {
-    val __obj = js.Dynamic.literal(AT_TARGET = AT_TARGET.asInstanceOf[js.Any], BUBBLING_PHASE = BUBBLING_PHASE.asInstanceOf[js.Any], CAPTURING_PHASE = CAPTURING_PHASE.asInstanceOf[js.Any], DOM_KEY_LOCATION_JOYSTICK = DOM_KEY_LOCATION_JOYSTICK.asInstanceOf[js.Any], DOM_KEY_LOCATION_LEFT = DOM_KEY_LOCATION_LEFT.asInstanceOf[js.Any], DOM_KEY_LOCATION_MOBILE = DOM_KEY_LOCATION_MOBILE.asInstanceOf[js.Any], DOM_KEY_LOCATION_NUMPAD = DOM_KEY_LOCATION_NUMPAD.asInstanceOf[js.Any], DOM_KEY_LOCATION_RIGHT = DOM_KEY_LOCATION_RIGHT.asInstanceOf[js.Any], DOM_KEY_LOCATION_STANDARD = DOM_KEY_LOCATION_STANDARD.asInstanceOf[js.Any], altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelBubble = cancelBubble.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], getModifierState = js.Any.fromFunction1(getModifierState), initEvent = js.Any.fromFunction3(initEvent), initKeyboardEvent = js.Any.fromFunction9(initKeyboardEvent), initUIEvent = js.Any.fromFunction5(initUIEvent), isTrusted = isTrusted.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), repeat = repeat.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(AT_TARGET = AT_TARGET.asInstanceOf[js.Any], BUBBLING_PHASE = BUBBLING_PHASE.asInstanceOf[js.Any], CAPTURING_PHASE = CAPTURING_PHASE.asInstanceOf[js.Any], DOM_KEY_LOCATION_JOYSTICK = DOM_KEY_LOCATION_JOYSTICK.asInstanceOf[js.Any], DOM_KEY_LOCATION_LEFT = DOM_KEY_LOCATION_LEFT.asInstanceOf[js.Any], DOM_KEY_LOCATION_MOBILE = DOM_KEY_LOCATION_MOBILE.asInstanceOf[js.Any], DOM_KEY_LOCATION_NUMPAD = DOM_KEY_LOCATION_NUMPAD.asInstanceOf[js.Any], DOM_KEY_LOCATION_RIGHT = DOM_KEY_LOCATION_RIGHT.asInstanceOf[js.Any], DOM_KEY_LOCATION_STANDARD = DOM_KEY_LOCATION_STANDARD.asInstanceOf[js.Any], altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelBubble = cancelBubble.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], deepPath = js.Any.fromFunction0(deepPath), defaultPrevented = defaultPrevented.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], getModifierState = js.Any.fromFunction1(getModifierState), initEvent = js.Any.fromFunction3(initEvent), initKeyboardEvent = js.Any.fromFunction9(initKeyboardEvent), initUIEvent = js.Any.fromFunction5(initUIEvent), isTrusted = isTrusted.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), repeat = repeat.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any], scoped = scoped.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyboardEvent]
   }

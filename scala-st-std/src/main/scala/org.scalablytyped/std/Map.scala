@@ -19,7 +19,6 @@ trait Map[K, V] extends js.Object {
   def get(key: K): js.UndefOr[V] = js.native
   def has(key: K): scala.Boolean = js.native
   def keys(): IterableIterator[K] = js.native
-  def set(key: K): this.type = js.native
   def set(key: K, value: V): this.type = js.native
   def values(): IterableIterator[V] = js.native
 }

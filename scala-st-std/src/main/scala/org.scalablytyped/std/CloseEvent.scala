@@ -29,6 +29,7 @@ object CloseEvent {
     cancelable: scala.Boolean,
     code: Double,
     currentTarget: EventTarget,
+    deepPath: () => js.Array[EventTarget],
     defaultPrevented: scala.Boolean,
     eventPhase: Double,
     initCloseEvent: (java.lang.String, scala.Boolean, scala.Boolean, scala.Boolean, Double, java.lang.String) => Unit,
@@ -37,6 +38,7 @@ object CloseEvent {
     preventDefault: () => Unit,
     reason: java.lang.String,
     returnValue: scala.Boolean,
+    scoped: scala.Boolean,
     stopImmediatePropagation: () => Unit,
     stopPropagation: () => Unit,
     target: EventTarget,
@@ -44,7 +46,7 @@ object CloseEvent {
     `type`: java.lang.String,
     wasClean: scala.Boolean
   ): CloseEvent = {
-    val __obj = js.Dynamic.literal(AT_TARGET = AT_TARGET.asInstanceOf[js.Any], BUBBLING_PHASE = BUBBLING_PHASE.asInstanceOf[js.Any], CAPTURING_PHASE = CAPTURING_PHASE.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelBubble = cancelBubble.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], initCloseEvent = js.Any.fromFunction6(initCloseEvent), initEvent = js.Any.fromFunction3(initEvent), isTrusted = isTrusted.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), reason = reason.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], wasClean = wasClean.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(AT_TARGET = AT_TARGET.asInstanceOf[js.Any], BUBBLING_PHASE = BUBBLING_PHASE.asInstanceOf[js.Any], CAPTURING_PHASE = CAPTURING_PHASE.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelBubble = cancelBubble.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], deepPath = js.Any.fromFunction0(deepPath), defaultPrevented = defaultPrevented.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], initCloseEvent = js.Any.fromFunction6(initCloseEvent), initEvent = js.Any.fromFunction3(initEvent), isTrusted = isTrusted.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), reason = reason.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any], scoped = scoped.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], wasClean = wasClean.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloseEvent]
   }

@@ -9,10 +9,19 @@ trait XPathEvaluator extends js.Object {
   def createExpression(expression: java.lang.String, resolver: XPathNSResolver): XPathExpression = js.native
   def createNSResolver(): XPathNSResolver = js.native
   def createNSResolver(nodeResolver: Node): XPathNSResolver = js.native
+  def evaluate(expression: java.lang.String, contextNode: Node, resolver: XPathNSResolver, `type`: Double): XPathResult = js.native
   def evaluate(
     expression: java.lang.String,
     contextNode: Node,
     resolver: XPathNSResolver,
+    `type`: Double,
+    result: XPathResult
+  ): XPathResult = js.native
+  def evaluate(expression: java.lang.String, contextNode: Node, resolver: Null, `type`: Double): XPathResult = js.native
+  def evaluate(
+    expression: java.lang.String,
+    contextNode: Node,
+    resolver: Null,
     `type`: Double,
     result: XPathResult
   ): XPathResult = js.native

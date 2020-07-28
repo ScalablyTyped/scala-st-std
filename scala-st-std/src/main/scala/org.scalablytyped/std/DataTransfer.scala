@@ -10,7 +10,7 @@ trait DataTransfer extends js.Object {
   var effectAllowed: java.lang.String = js.native
   val files: FileList = js.native
   val items: DataTransferItemList = js.native
-  val types: DOMStringList = js.native
+  val types: js.Array[java.lang.String] = js.native
   def clearData(): scala.Boolean = js.native
   def clearData(format: java.lang.String): scala.Boolean = js.native
   def getData(format: java.lang.String): java.lang.String = js.native

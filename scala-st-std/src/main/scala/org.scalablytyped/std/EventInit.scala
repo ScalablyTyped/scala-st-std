@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 trait EventInit extends js.Object {
   var bubbles: js.UndefOr[scala.Boolean] = js.undefined
   var cancelable: js.UndefOr[scala.Boolean] = js.undefined
+  var scoped: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object EventInit {
@@ -34,6 +35,10 @@ object EventInit {
     def setCancelable(value: scala.Boolean): Self = this.set("cancelable", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteCancelable: Self = this.set("cancelable", js.undefined)
+    @scala.inline
+    def setScoped(value: scala.Boolean): Self = this.set("scoped", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScoped: Self = this.set("scoped", js.undefined)
   }
   
 }

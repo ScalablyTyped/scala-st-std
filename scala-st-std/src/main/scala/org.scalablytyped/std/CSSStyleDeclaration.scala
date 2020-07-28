@@ -223,6 +223,7 @@ trait CSSStyleDeclaration
   var pointerEvents: java.lang.String | Null = js.native
   var position: java.lang.String | Null = js.native
   var quotes: java.lang.String | Null = js.native
+  var resize: java.lang.String | Null = js.native
   var right: java.lang.String | Null = js.native
   var rubyAlign: java.lang.String | Null = js.native
   var rubyOverhang: java.lang.String | Null = js.native

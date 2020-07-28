@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("WeakMap")
 @js.native
-class WeakMap[K, V] ()
+class WeakMap[K /* <: js.Object */, V] ()
   extends org.scalablytyped.std.WeakMap[K, V] {
   def this(entries: js.Array[js.Tuple2[K, V]]) = this()
   def this(iterable: Iterable[js.Tuple2[K, V]]) = this()

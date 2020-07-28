@@ -53,7 +53,7 @@ object ^ extends js.Object {
   var devicePixelRatio: Double = js.native
   var doNotTrack: java.lang.String = js.native
   var document: Document = js.native
-  var event: Event = js.native
+  var event: js.UndefOr[Event] = js.native
   var external: External = js.native
   var frameElement: org.scalablytyped.std.Element = js.native
   var frames: Window = js.native

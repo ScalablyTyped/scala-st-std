@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("HTMLPictureElement")
 @js.native
 class HTMLPictureElement ()
-  extends org.scalablytyped.std.HTMLElement {
+  extends org.scalablytyped.std.HTMLPictureElement {
   /* CompleteClass */
   override val childElementCount: Double = js.native
   /* CompleteClass */

@@ -217,6 +217,7 @@ trait Element
      with NodeSelector
      with ChildNode
      with ParentNode {
+  val assignedSlot: HTMLSlotElement | Null = js.native
   /* InferMemberOverrides */
   override val childElementCount: Double = js.native
   val classList: DOMTokenList = js.native
@@ -238,6 +239,8 @@ trait Element
   var scrollLeft: Double = js.native
   var scrollTop: Double = js.native
   val scrollWidth: Double = js.native
+  val shadowRoot: ShadowRoot | Null = js.native
+  var slot: java.lang.String = js.native
   val tagName: java.lang.String = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
@@ -510,6 +513,7 @@ trait Element
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     useCapture: scala.Boolean
   ): Unit = js.native
+  def attachShadow(shadowRootInitDict: ShadowRootInit): ShadowRoot = js.native
   def closest(selector: java.lang.String): Element | Null = js.native
   def getAttribute(name: java.lang.String): java.lang.String | Null = js.native
   def getAttributeNS(namespaceURI: java.lang.String, localName: java.lang.String): java.lang.String = js.native

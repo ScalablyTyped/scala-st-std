@@ -48,12 +48,7 @@ package object std {
   type GLubyte = scala.Double
   type GLuint = scala.Double
   type GLushort = scala.Double
-  type HTMLAudioElement = org.scalablytyped.std.HTMLMediaElement
-  type HTMLDocument = org.scalablytyped.std.Document
-  type HTMLPictureElement = org.scalablytyped.std.HTMLElement
-  type HTMLSpanElement = org.scalablytyped.std.HTMLElement
   type HTMLTableDataCellElement = org.scalablytyped.std.HTMLTableCellElement
-  type HTMLUnknownElement = org.scalablytyped.std.HTMLElement
   type IDBKeyPath = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - scala.Double
@@ -91,8 +86,20 @@ package object std {
     /* parameterIndex */ scala.Double, 
     scala.Unit
   ]
+  /**
+    * Make all properties in T optional
+    */
+  type Partial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in keyof T ]:? T[P]}
+    */ org.scalablytyped.std.stdStrings.Partial with org.scalablytyped.runtime.TopLevel[T]
   type PerformanceMark = org.scalablytyped.std.PerformanceEntry
   type PerformanceMeasure = org.scalablytyped.std.PerformanceEntry
+  /**
+    * From T pick a set of properties K
+    */
+  type Pick[T, K /* <: /* keyof T */ java.lang.String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in K ]: T[P]}
+    */ org.scalablytyped.std.stdStrings.Pick with org.scalablytyped.runtime.TopLevel[T]
   type PositionCallback = js.Function1[/* position */ org.scalablytyped.std.Position, scala.Unit]
   type PositionErrorCallback = js.Function1[/* error */ org.scalablytyped.std.PositionError, scala.Unit]
   type PromiseConstructorLike = org.scalablytyped.runtime.Instantiable1[
@@ -107,12 +114,21 @@ package object std {
   type PropertyDescriptorMap = org.scalablytyped.runtime.StringDictionary[org.scalablytyped.std.PropertyDescriptor]
   type PropertyKey = java.lang.String | scala.Double | js.Symbol
   type RangeError = org.scalablytyped.std.Error
+  /**
+    * Make all properties in T readonly
+    */
+  type Readonly[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {readonly [ P in keyof T ]: T[P]}
+    */ org.scalablytyped.std.stdStrings.Readonly with org.scalablytyped.runtime.TopLevel[T]
+  /**
+    * Construct a type with a set of properties K of type T
+    */
+  type Record[K /* <: java.lang.String */, T] = org.scalablytyped.runtime.StringDictionary[T]
   type ReferenceError = org.scalablytyped.std.Error
   type SVGFEFuncAElement = org.scalablytyped.std.SVGComponentTransferFunctionElement
   type SVGFEFuncBElement = org.scalablytyped.std.SVGComponentTransferFunctionElement
   type SVGFEFuncGElement = org.scalablytyped.std.SVGComponentTransferFunctionElement
   type SVGFEFuncRElement = org.scalablytyped.std.SVGComponentTransferFunctionElement
-  type SVGMetadataElement = org.scalablytyped.std.SVGElement
   type SVGPathSegClosePath = org.scalablytyped.std.SVGPathSeg
   type SVGTSpanElement = org.scalablytyped.std.SVGTextPositioningElement
   type SyntaxError = org.scalablytyped.std.Error
@@ -124,6 +140,5 @@ package object std {
   type WebGLRenderbuffer = org.scalablytyped.std.WebGLObject
   type WebGLShader = org.scalablytyped.std.WebGLObject
   type WebGLTexture = org.scalablytyped.std.WebGLObject
-  type XMLDocument = org.scalablytyped.std.Document
   type payloadtype = scala.Double
 }

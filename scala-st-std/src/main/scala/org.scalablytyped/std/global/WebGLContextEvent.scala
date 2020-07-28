@@ -36,6 +36,8 @@ class WebGLContextEvent protected ()
   /* CompleteClass */
   override var returnValue: scala.Boolean = js.native
   /* CompleteClass */
+  override val scoped: scala.Boolean = js.native
+  /* CompleteClass */
   override val srcElement: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
   override val statusMessage: java.lang.String = js.native
@@ -45,6 +47,8 @@ class WebGLContextEvent protected ()
   override val timeStamp: Double = js.native
   /* CompleteClass */
   override val `type`: java.lang.String = js.native
+  /* CompleteClass */
+  override def deepPath(): js.Array[org.scalablytyped.std.EventTarget] = js.native
   /* CompleteClass */
   override def initEvent(eventTypeArg: java.lang.String, canBubbleArg: scala.Boolean, cancelableArg: scala.Boolean): Unit = js.native
   /* CompleteClass */

@@ -304,7 +304,8 @@ trait Document
      with GlobalEventHandlers
      with NodeSelector
      with DocumentEvent
-     with ParentNode {
+     with ParentNode
+     with DocumentOrShadowRoot {
   /**
     * Sets or gets the URL for the current document. 
     */
@@ -316,7 +317,8 @@ trait Document
   /**
     * Gets the object that has the focus when the parent document has focus.
     */
-  val activeElement: Element = js.native
+  @JSName("activeElement")
+  val activeElement_Document: Element = js.native
   /**
     * Sets or gets the color of all active links in the document.
     */
@@ -1572,16 +1574,19 @@ trait Document
   ): TreeWalker = js.native
   def createTreeWalker(root: Node, whatToShow: Double, filter: NodeFilter): TreeWalker = js.native
   def createTreeWalker(root: Node, whatToShow: Double, filter: NodeFilter, entityReferenceExpansion: scala.Boolean): TreeWalker = js.native
-  /**
-    * Returns the element for the specified x coordinate and the specified y coordinate. 
-    * @param x The x-offset
-    * @param y The y-offset
-    */
-  def elementFromPoint(x: Double, y: Double): Element = js.native
+  def evaluate(expression: java.lang.String, contextNode: Node, resolver: XPathNSResolver, `type`: Double): XPathResult = js.native
   def evaluate(
     expression: java.lang.String,
     contextNode: Node,
     resolver: XPathNSResolver,
+    `type`: Double,
+    result: XPathResult
+  ): XPathResult = js.native
+  def evaluate(expression: java.lang.String, contextNode: Node, resolver: Null, `type`: Double): XPathResult = js.native
+  def evaluate(
+    expression: java.lang.String,
+    contextNode: Node,
+    resolver: Null,
     `type`: Double,
     result: XPathResult
   ): XPathResult = js.native
@@ -1979,10 +1984,6 @@ trait Document
   def getElementsByTagName_xmp(tagname: xmp): NodeListOf[HTMLPreElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_xmswebview(tagname: `x-ms-webview`): NodeListOf[MSHTMLWebViewElement] = js.native
-  /**
-    * Returns an object representing the current selection of the document that is loaded into the object displaying a webpage.
-    */
-  def getSelection(): Selection = js.native
   /**
     * Gets a value indicating whether the object currently has focus.
     */

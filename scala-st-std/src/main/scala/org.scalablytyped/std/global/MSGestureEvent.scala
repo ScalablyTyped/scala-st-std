@@ -63,6 +63,8 @@ class MSGestureEvent ()
   /* CompleteClass */
   override val scale: Double = js.native
   /* CompleteClass */
+  override val scoped: scala.Boolean = js.native
+  /* CompleteClass */
   override val screenX: Double = js.native
   /* CompleteClass */
   override val screenY: Double = js.native
@@ -88,6 +90,8 @@ class MSGestureEvent ()
   override val velocityY: Double = js.native
   /* CompleteClass */
   override val view: Window = js.native
+  /* CompleteClass */
+  override def deepPath(): js.Array[org.scalablytyped.std.EventTarget] = js.native
   /* CompleteClass */
   override def initEvent(eventTypeArg: java.lang.String, canBubbleArg: scala.Boolean, cancelableArg: scala.Boolean): Unit = js.native
   /* CompleteClass */

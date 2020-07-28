@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("event")
 @js.native
-object event extends TopLevel[Event]
+object event
+  extends TopLevel[js.UndefOr[Event]]
 

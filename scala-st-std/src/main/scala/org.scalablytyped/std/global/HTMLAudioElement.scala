@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("HTMLAudioElement")
 @js.native
 class HTMLAudioElement ()
-  extends org.scalablytyped.std.HTMLMediaElement {
+  extends org.scalablytyped.std.HTMLAudioElement {
   /* CompleteClass */
   override val childElementCount: Double = js.native
   /* CompleteClass */

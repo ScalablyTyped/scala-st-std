@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("SVGMetadataElement")
 @js.native
 class SVGMetadataElement ()
-  extends org.scalablytyped.std.SVGElement {
+  extends org.scalablytyped.std.SVGMetadataElement {
   /* CompleteClass */
   override val childElementCount: Double = js.native
   /* CompleteClass */

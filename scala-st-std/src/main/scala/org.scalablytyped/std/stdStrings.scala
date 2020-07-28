@@ -264,7 +264,13 @@ object stdStrings {
   sealed trait PageTransitionEvent extends js.Object
   
   @js.native
+  sealed trait Partial extends js.Object
+  
+  @js.native
   sealed trait PermissionRequestedEvent extends js.Object
+  
+  @js.native
+  sealed trait Pick extends js.Object
   
   @js.native
   sealed trait PointerEvent extends js.Object
@@ -295,6 +301,9 @@ object stdStrings {
   
   @js.native
   sealed trait RTCSsrcConflictEvent extends js.Object
+  
+  @js.native
+  sealed trait Readonly extends js.Object
   
   @js.native
   sealed trait SVGAbort extends js.Object
@@ -525,6 +534,9 @@ object stdStrings {
   
   @js.native
   sealed trait close extends js.Object
+  
+  @js.native
+  sealed trait closed extends js.Object
   
   @js.native
   sealed trait code extends js.Object
@@ -1662,7 +1674,11 @@ object stdStrings {
   @scala.inline
   def PageTransitionEvent: PageTransitionEvent = "PageTransitionEvent".asInstanceOf[PageTransitionEvent]
   @scala.inline
+  def Partial: Partial = "Partial".asInstanceOf[Partial]
+  @scala.inline
   def PermissionRequestedEvent: PermissionRequestedEvent = "PermissionRequestedEvent".asInstanceOf[PermissionRequestedEvent]
+  @scala.inline
+  def Pick: Pick = "Pick".asInstanceOf[Pick]
   @scala.inline
   def PointerEvent: PointerEvent = "PointerEvent".asInstanceOf[PointerEvent]
   @scala.inline
@@ -1683,6 +1699,8 @@ object stdStrings {
   def RTCIceTransportStateChangedEvent: RTCIceTransportStateChangedEvent = "RTCIceTransportStateChangedEvent".asInstanceOf[RTCIceTransportStateChangedEvent]
   @scala.inline
   def RTCSsrcConflictEvent: RTCSsrcConflictEvent = "RTCSsrcConflictEvent".asInstanceOf[RTCSsrcConflictEvent]
+  @scala.inline
+  def Readonly: Readonly = "Readonly".asInstanceOf[Readonly]
   @scala.inline
   def SVGAbort: SVGAbort = "SVGAbort".asInstanceOf[SVGAbort]
   @scala.inline
@@ -1835,6 +1853,8 @@ object stdStrings {
   def clippath_ : clippath_ = "clippath".asInstanceOf[clippath_]
   @scala.inline
   def close: close = "close".asInstanceOf[close]
+  @scala.inline
+  def closed: closed = "closed".asInstanceOf[closed]
   @scala.inline
   def code: code = "code".asInstanceOf[code]
   @scala.inline

@@ -112,7 +112,7 @@ trait Window
   val devicePixelRatio: Double = js.native
   val doNotTrack: java.lang.String = js.native
   val document: Document = js.native
-  var event: Event = js.native
+  var event: js.UndefOr[Event] = js.native
   val external: External = js.native
   val frameElement: Element = js.native
   val frames: Window = js.native

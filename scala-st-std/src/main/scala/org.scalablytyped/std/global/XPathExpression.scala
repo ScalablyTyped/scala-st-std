@@ -8,10 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("XPathExpression")
 @js.native
 class XPathExpression ()
-  extends org.scalablytyped.std.XPathExpression {
-  /* CompleteClass */
-  override def evaluate(contextNode: org.scalablytyped.std.Node, `type`: Double, result: org.scalablytyped.std.XPathResult): org.scalablytyped.std.XPathExpression = js.native
-}
+  extends org.scalablytyped.std.XPathExpression
 
 @JSGlobal("XPathExpression")
 @js.native

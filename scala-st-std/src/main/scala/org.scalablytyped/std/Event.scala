@@ -16,10 +16,12 @@ trait Event extends js.Object {
   val eventPhase: Double
   val isTrusted: scala.Boolean
   var returnValue: scala.Boolean
+  val scoped: scala.Boolean
   val srcElement: Element | Null
   val target: EventTarget
   val timeStamp: Double
   val `type`: java.lang.String
+  def deepPath(): js.Array[EventTarget]
   def initEvent(eventTypeArg: java.lang.String, canBubbleArg: scala.Boolean, cancelableArg: scala.Boolean): Unit
   def preventDefault(): Unit
   def stopImmediatePropagation(): Unit
@@ -36,19 +38,21 @@ object Event {
     cancelBubble: scala.Boolean,
     cancelable: scala.Boolean,
     currentTarget: EventTarget,
+    deepPath: () => js.Array[EventTarget],
     defaultPrevented: scala.Boolean,
     eventPhase: Double,
     initEvent: (java.lang.String, scala.Boolean, scala.Boolean) => Unit,
     isTrusted: scala.Boolean,
     preventDefault: () => Unit,
     returnValue: scala.Boolean,
+    scoped: scala.Boolean,
     stopImmediatePropagation: () => Unit,
     stopPropagation: () => Unit,
     target: EventTarget,
     timeStamp: Double,
     `type`: java.lang.String
   ): Event = {
-    val __obj = js.Dynamic.literal(AT_TARGET = AT_TARGET.asInstanceOf[js.Any], BUBBLING_PHASE = BUBBLING_PHASE.asInstanceOf[js.Any], CAPTURING_PHASE = CAPTURING_PHASE.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelBubble = cancelBubble.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], initEvent = js.Any.fromFunction3(initEvent), isTrusted = isTrusted.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), returnValue = returnValue.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(AT_TARGET = AT_TARGET.asInstanceOf[js.Any], BUBBLING_PHASE = BUBBLING_PHASE.asInstanceOf[js.Any], CAPTURING_PHASE = CAPTURING_PHASE.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelBubble = cancelBubble.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], deepPath = js.Any.fromFunction0(deepPath), defaultPrevented = defaultPrevented.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], initEvent = js.Any.fromFunction3(initEvent), isTrusted = isTrusted.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), returnValue = returnValue.asInstanceOf[js.Any], scoped = scoped.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event]
   }
@@ -78,6 +82,8 @@ object Event {
     @scala.inline
     def setCurrentTarget(value: EventTarget): Self = this.set("currentTarget", value.asInstanceOf[js.Any])
     @scala.inline
+    def setDeepPath(value: () => js.Array[EventTarget]): Self = this.set("deepPath", js.Any.fromFunction0(value))
+    @scala.inline
     def setDefaultPrevented(value: scala.Boolean): Self = this.set("defaultPrevented", value.asInstanceOf[js.Any])
     @scala.inline
     def setEventPhase(value: Double): Self = this.set("eventPhase", value.asInstanceOf[js.Any])
@@ -89,6 +95,8 @@ object Event {
     def setPreventDefault(value: () => Unit): Self = this.set("preventDefault", js.Any.fromFunction0(value))
     @scala.inline
     def setReturnValue(value: scala.Boolean): Self = this.set("returnValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScoped(value: scala.Boolean): Self = this.set("scoped", value.asInstanceOf[js.Any])
     @scala.inline
     def setStopImmediatePropagation(value: () => Unit): Self = this.set("stopImmediatePropagation", js.Any.fromFunction0(value))
     @scala.inline

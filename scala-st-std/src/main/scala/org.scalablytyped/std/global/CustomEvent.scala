@@ -38,6 +38,8 @@ class CustomEvent protected ()
   /* CompleteClass */
   override var returnValue: scala.Boolean = js.native
   /* CompleteClass */
+  override val scoped: scala.Boolean = js.native
+  /* CompleteClass */
   override val srcElement: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
   override val target: org.scalablytyped.std.EventTarget = js.native
@@ -45,6 +47,8 @@ class CustomEvent protected ()
   override val timeStamp: Double = js.native
   /* CompleteClass */
   override val `type`: java.lang.String = js.native
+  /* CompleteClass */
+  override def deepPath(): js.Array[org.scalablytyped.std.EventTarget] = js.native
   /* CompleteClass */
   override def initCustomEvent(
     typeArg: java.lang.String,

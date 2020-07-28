@@ -17,6 +17,7 @@ trait Navigator
      with NavigatorUserMedia {
   val appCodeName: java.lang.String = js.native
   val cookieEnabled: scala.Boolean = js.native
+  val hardwareConcurrency: Double = js.native
   val language: java.lang.String = js.native
   val maxTouchPoints: Double = js.native
   val mimeTypes: MimeTypeArray = js.native
@@ -26,8 +27,6 @@ trait Navigator
   val plugins: PluginArray = js.native
   val pointerEnabled: scala.Boolean = js.native
   val webdriver: scala.Boolean = js.native
-  def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
-  def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, useCapture: scala.Boolean): Unit = js.native
   def getGamepads(): js.Array[Gamepad] = js.native
   def javaEnabled(): scala.Boolean = js.native
   def msLaunchUri(uri: java.lang.String): Unit = js.native

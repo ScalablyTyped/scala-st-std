@@ -48,17 +48,18 @@ trait ObjectConstructor
     * @param o Object to use as a prototype. May be null
     * @param properties JavaScript object that contains one or more property descriptors.
     */
-  def create(o: js.Any, properties: PropertyDescriptorMap): js.Any = js.native
+  def create(o: js.Object, properties: PropertyDescriptorMap): js.Any = js.native
   /**
     * Creates an object that has null prototype.
     * @param o Object to use as a prototype. May be null
     */
   def create(o: Null): js.Any = js.native
+  def create(o: Null, properties: PropertyDescriptorMap): js.Any = js.native
   /**
     * Creates an object that has the specified prototype, and that optionally contains specified properties.
     * @param o Object to use as a prototype. May be null
     */
-  def create[T](o: T): T = js.native
+  def create[T /* <: js.Object */](o: T): T = js.native
   /**
     * Adds one or more properties to an object, and/or modifies attributes of existing properties.
     * @param o Object on which to add or modify the properties. This can be a native JavaScript object or a DOM object.
@@ -85,7 +86,18 @@ trait ObjectConstructor
     * Prevents the modification of existing property attributes and values, and prevents the addition of new properties.
     * @param o Object on which to lock the attributes.
     */
+  def freeze[T](a: js.Array[T]): js.Array[T] = js.native
+  /**
+    * Prevents the modification of existing property attributes and values, and prevents the addition of new properties.
+    * @param o Object on which to lock the attributes.
+    */
   def freeze[T](o: T): T = js.native
+  /**
+    * Prevents the modification of existing property attributes and values, and prevents the addition of new properties.
+    * @param o Object on which to lock the attributes.
+    */
+  @JSName("freeze")
+  def freeze_T_Function[T /* <: js.Function */](f: T): T = js.native
   /**
     * Gets the own property descriptor of the specified object.
     * An own property descriptor is one that is defined directly on the object and is not inherited from the object's prototype.
@@ -158,6 +170,7 @@ trait ObjectConstructor
     * @param o The object to change its prototype.
     * @param proto The value of the new prototype or null.
     */
-  def setPrototypeOf(o: js.Any, proto: js.Any): js.Any = js.native
+  def setPrototypeOf(o: js.Any): js.Any = js.native
+  def setPrototypeOf(o: js.Any, proto: js.Object): js.Any = js.native
 }
 

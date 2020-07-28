@@ -8,7 +8,10 @@ import scala.scalajs.js.annotation._
 @JSGlobal("CanvasPattern")
 @js.native
 class CanvasPattern ()
-  extends org.scalablytyped.std.CanvasPattern
+  extends org.scalablytyped.std.CanvasPattern {
+  /* CompleteClass */
+  override def setTransform(matrix: org.scalablytyped.std.SVGMatrix): Unit = js.native
+}
 
 @JSGlobal("CanvasPattern")
 @js.native

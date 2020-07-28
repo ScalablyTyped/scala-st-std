@@ -73,6 +73,8 @@ class KeyboardEvent protected ()
   /* CompleteClass */
   override var returnValue: scala.Boolean = js.native
   /* CompleteClass */
+  override val scoped: scala.Boolean = js.native
+  /* CompleteClass */
   override val shiftKey: scala.Boolean = js.native
   /* CompleteClass */
   override val srcElement: org.scalablytyped.std.Element | Null = js.native
@@ -86,6 +88,8 @@ class KeyboardEvent protected ()
   override val view: Window = js.native
   /* CompleteClass */
   override val which: Double = js.native
+  /* CompleteClass */
+  override def deepPath(): js.Array[org.scalablytyped.std.EventTarget] = js.native
   /* CompleteClass */
   override def getModifierState(keyArg: java.lang.String): scala.Boolean = js.native
   /* CompleteClass */

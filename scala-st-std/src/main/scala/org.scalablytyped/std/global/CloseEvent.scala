@@ -36,6 +36,8 @@ class CloseEvent ()
   /* CompleteClass */
   override var returnValue: scala.Boolean = js.native
   /* CompleteClass */
+  override val scoped: scala.Boolean = js.native
+  /* CompleteClass */
   override val srcElement: org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
   override val target: org.scalablytyped.std.EventTarget = js.native
@@ -45,6 +47,8 @@ class CloseEvent ()
   override val `type`: java.lang.String = js.native
   /* CompleteClass */
   override val wasClean: scala.Boolean = js.native
+  /* CompleteClass */
+  override def deepPath(): js.Array[org.scalablytyped.std.EventTarget] = js.native
   /* CompleteClass */
   override def initCloseEvent(
     typeArg: java.lang.String,

@@ -322,8 +322,10 @@ trait Array[T] extends /* n */ NumberDictionary[T] {
   /**
     * Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
     * @param start The zero-based location in the array from which to start removing elements.
+    * @param deleteCount The number of elements to remove.
     */
   def splice(start: Double): js.Array[T] = js.native
+  def splice(start: Double, deleteCount: Double): js.Array[T] = js.native
   /**
     * Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
     * @param start The zero-based location in the array from which to start removing elements.

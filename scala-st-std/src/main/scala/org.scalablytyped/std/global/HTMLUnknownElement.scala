@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("HTMLUnknownElement")
 @js.native
 class HTMLUnknownElement ()
-  extends org.scalablytyped.std.HTMLElement {
+  extends org.scalablytyped.std.HTMLUnknownElement {
   /* CompleteClass */
   override val childElementCount: Double = js.native
   /* CompleteClass */
