@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OESStandardDerivatives extends js.Object {
-  val FRAGMENT_SHADER_DERIVATIVE_HINT_OES: Double
+  val FRAGMENT_SHADER_DERIVATIVE_HINT_OES: GLenum
 }
 
 object OESStandardDerivatives {
   @scala.inline
-  def apply(FRAGMENT_SHADER_DERIVATIVE_HINT_OES: Double): OESStandardDerivatives = {
+  def apply(FRAGMENT_SHADER_DERIVATIVE_HINT_OES: GLenum): OESStandardDerivatives = {
     val __obj = js.Dynamic.literal(FRAGMENT_SHADER_DERIVATIVE_HINT_OES = FRAGMENT_SHADER_DERIVATIVE_HINT_OES.asInstanceOf[js.Any])
     __obj.asInstanceOf[OESStandardDerivatives]
   }
@@ -26,7 +26,7 @@ object OESStandardDerivatives {
         x
     }
     @scala.inline
-    def setFRAGMENT_SHADER_DERIVATIVE_HINT_OES(value: Double): Self = this.set("FRAGMENT_SHADER_DERIVATIVE_HINT_OES", value.asInstanceOf[js.Any])
+    def setFRAGMENT_SHADER_DERIVATIVE_HINT_OES(value: GLenum): Self = this.set("FRAGMENT_SHADER_DERIVATIVE_HINT_OES", value.asInstanceOf[js.Any])
   }
   
 }

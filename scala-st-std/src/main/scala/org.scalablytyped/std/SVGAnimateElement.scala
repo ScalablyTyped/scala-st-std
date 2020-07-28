@@ -4,5 +4,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait WebGLVertexArrayObjectOES extends js.Object
+@js.native
+trait SVGAnimateElement extends SVGAnimationElement
 

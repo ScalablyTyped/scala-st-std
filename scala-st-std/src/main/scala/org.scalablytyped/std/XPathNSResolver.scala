@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait XPathNSResolver extends js.Object {
-  def lookupNamespaceURI(prefix: java.lang.String): java.lang.String
+  def lookupNamespaceURI(prefix: java.lang.String): java.lang.String | Null
 }
 
 object XPathNSResolver {
   @scala.inline
-  def apply(lookupNamespaceURI: java.lang.String => java.lang.String): XPathNSResolver = {
+  def apply(lookupNamespaceURI: java.lang.String => java.lang.String | Null): XPathNSResolver = {
     val __obj = js.Dynamic.literal(lookupNamespaceURI = js.Any.fromFunction1(lookupNamespaceURI))
     __obj.asInstanceOf[XPathNSResolver]
   }
@@ -26,7 +26,7 @@ object XPathNSResolver {
         x
     }
     @scala.inline
-    def setLookupNamespaceURI(value: java.lang.String => java.lang.String): Self = this.set("lookupNamespaceURI", js.Any.fromFunction1(value))
+    def setLookupNamespaceURI(value: java.lang.String => java.lang.String | Null): Self = this.set("lookupNamespaceURI", js.Any.fromFunction1(value))
   }
   
 }

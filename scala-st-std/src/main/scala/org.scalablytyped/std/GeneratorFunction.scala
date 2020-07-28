@@ -21,7 +21,7 @@ Instantiable1[/* args (repeated) */ js.Any, Generator] {
     */
   val name: java.lang.String = js.native
   @JSName(js.Symbol.toStringTag)
-  val toStringTag: org.scalablytyped.std.stdStrings.GeneratorFunction = js.native
+  val toStringTag: java.lang.String = js.native
   /**
     * Creates a new Generator object.
     * @param args A list of arguments the function accepts.

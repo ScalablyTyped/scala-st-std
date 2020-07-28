@@ -101,7 +101,7 @@ import org.scalablytyped.std.stdStrings.li
 import org.scalablytyped.std.stdStrings.line
 import org.scalablytyped.std.stdStrings.linearGradient
 import org.scalablytyped.std.stdStrings.link
-import org.scalablytyped.std.stdStrings.map_
+import org.scalablytyped.std.stdStrings.map
 import org.scalablytyped.std.stdStrings.mark
 import org.scalablytyped.std.stdStrings.marker
 import org.scalablytyped.std.stdStrings.marquee
@@ -146,7 +146,7 @@ import org.scalablytyped.std.stdStrings.sub
 import org.scalablytyped.std.stdStrings.sup
 import org.scalablytyped.std.stdStrings.svg
 import org.scalablytyped.std.stdStrings.switch
-import org.scalablytyped.std.stdStrings.symbol_
+import org.scalablytyped.std.stdStrings.symbol
 import org.scalablytyped.std.stdStrings.table
 import org.scalablytyped.std.stdStrings.tbody
 import org.scalablytyped.std.stdStrings.td
@@ -406,7 +406,7 @@ trait ParentNode extends js.Object {
   @JSName("querySelectorAll")
   def querySelectorAll_link(selectors: link): NodeListOf[HTMLLinkElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_map(selectors: map_): NodeListOf[HTMLMapElement] = js.native
+  def querySelectorAll_map(selectors: map): NodeListOf[HTMLMapElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_mark(selectors: mark): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
@@ -498,7 +498,7 @@ trait ParentNode extends js.Object {
   @JSName("querySelectorAll")
   def querySelectorAll_switch(selectors: switch): NodeListOf[SVGSwitchElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_symbol(selectors: symbol_): NodeListOf[SVGSymbolElement] = js.native
+  def querySelectorAll_symbol(selectors: symbol): NodeListOf[SVGSymbolElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_table(selectors: table): NodeListOf[HTMLTableElement] = js.native
   @JSName("querySelectorAll")
@@ -746,7 +746,7 @@ trait ParentNode extends js.Object {
   @JSName("querySelector")
   def querySelector_link(selectors: link): HTMLLinkElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_map(selectors: map_): HTMLMapElement | Null = js.native
+  def querySelector_map(selectors: map): HTMLMapElement | Null = js.native
   @JSName("querySelector")
   def querySelector_mark(selectors: mark): HTMLElement | Null = js.native
   @JSName("querySelector")
@@ -838,7 +838,7 @@ trait ParentNode extends js.Object {
   @JSName("querySelector")
   def querySelector_switch(selectors: switch): SVGSwitchElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_symbol(selectors: symbol_): SVGSymbolElement | Null = js.native
+  def querySelector_symbol(selectors: symbol): SVGSymbolElement | Null = js.native
   @JSName("querySelector")
   def querySelector_table(selectors: table): HTMLTableElement | Null = js.native
   @JSName("querySelector")

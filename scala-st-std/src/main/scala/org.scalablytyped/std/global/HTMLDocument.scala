@@ -17,6 +17,11 @@ class HTMLDocument ()
   /* CompleteClass */
   override val styleSheets: org.scalablytyped.std.StyleSheetList = js.native
   /* CompleteClass */
+  override def caretPositionFromPoint(x: Double, y: Double): org.scalablytyped.std.CaretPosition | Null = js.native
+  /** @deprecated */
+  /* CompleteClass */
+  override def caretRangeFromPoint(x: Double, y: Double): org.scalablytyped.std.Range = js.native
+  /* CompleteClass */
   override def elementFromPoint(x: Double, y: Double): org.scalablytyped.std.Element | Null = js.native
   /* CompleteClass */
   override def elementsFromPoint(x: Double, y: Double): js.Array[org.scalablytyped.std.Element] = js.native

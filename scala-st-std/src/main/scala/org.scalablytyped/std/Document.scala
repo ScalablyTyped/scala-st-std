@@ -33,6 +33,7 @@ import org.scalablytyped.std.stdStrings.code
 import org.scalablytyped.std.stdStrings.col
 import org.scalablytyped.std.stdStrings.colgroup
 import org.scalablytyped.std.stdStrings.componentTransferFunction
+import org.scalablytyped.std.stdStrings.cursor
 import org.scalablytyped.std.stdStrings.data
 import org.scalablytyped.std.stdStrings.datalist
 import org.scalablytyped.std.stdStrings.dd
@@ -113,7 +114,7 @@ import org.scalablytyped.std.stdStrings.line
 import org.scalablytyped.std.stdStrings.linearGradient
 import org.scalablytyped.std.stdStrings.link
 import org.scalablytyped.std.stdStrings.listing
-import org.scalablytyped.std.stdStrings.map_
+import org.scalablytyped.std.stdStrings.map
 import org.scalablytyped.std.stdStrings.mark
 import org.scalablytyped.std.stdStrings.marker
 import org.scalablytyped.std.stdStrings.marquee
@@ -159,7 +160,7 @@ import org.scalablytyped.std.stdStrings.sub
 import org.scalablytyped.std.stdStrings.sup
 import org.scalablytyped.std.stdStrings.svg
 import org.scalablytyped.std.stdStrings.switch
-import org.scalablytyped.std.stdStrings.symbol_
+import org.scalablytyped.std.stdStrings.symbol
 import org.scalablytyped.std.stdStrings.table
 import org.scalablytyped.std.stdStrings.tbody
 import org.scalablytyped.std.stdStrings.td
@@ -283,7 +284,7 @@ trait Document
   /**
     * Gets a reference to the root node of the document.
     */
-  val documentElement: HTMLElement | Null = js.native
+  val documentElement: HTMLElement = js.native
   /**
     * Returns document's URL.
     */
@@ -315,7 +316,7 @@ trait Document
   /**
     * Returns the head element.
     */
-  val head: HTMLHeadElement | Null = js.native
+  val head: HTMLHeadElement = js.native
   val hidden: scala.Boolean = js.native
   /**
     * Retrieves a collection, in source order, of img objects in the document.
@@ -345,7 +346,7 @@ trait Document
   /**
     * Contains information about the current URL.
     */
-  var location: Location | Null = js.native
+  var location: Location = js.native
   var onfullscreenchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   var onfullscreenerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
   /**
@@ -466,8 +467,6 @@ trait Document
   def adoptNode[T /* <: Node */](source: T): T = js.native
   /** @deprecated */
   def captureEvents(): Unit = js.native
-  def caretPositionFromPoint(x: Double, y: Double): CaretPosition | Null = js.native
-  def caretRangeFromPoint(x: Double, y: Double): Range = js.native
   /** @deprecated */
   def clear(): Unit = js.native
   /**
@@ -503,6 +502,7 @@ trait Document
     namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg,
     qualifiedName: componentTransferFunction
   ): SVGComponentTransferFunctionElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: cursor): SVGCursorElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: defs): SVGDefsElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: desc): SVGDescElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: ellipse): SVGEllipseElement = js.native
@@ -557,7 +557,7 @@ trait Document
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: style): SVGStyleElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: svg): SVGSVGElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: switch): SVGSwitchElement = js.native
-  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: symbol_): SVGSymbolElement = js.native
+  def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: symbol): SVGSymbolElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: text): SVGTextElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: textContent): SVGTextContentElement = js.native
   def createElementNS(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, qualifiedName: textPath): SVGTextPathElement = js.native
@@ -859,9 +859,9 @@ trait Document
   @JSName("createElement")
   def createElement_listing(tagName: listing, options: ElementCreationOptions): HTMLPreElement = js.native
   @JSName("createElement")
-  def createElement_map(tagName: map_): HTMLMapElement = js.native
+  def createElement_map(tagName: map): HTMLMapElement = js.native
   @JSName("createElement")
-  def createElement_map(tagName: map_, options: ElementCreationOptions): HTMLMapElement = js.native
+  def createElement_map(tagName: map, options: ElementCreationOptions): HTMLMapElement = js.native
   @JSName("createElement")
   def createElement_mark(tagName: mark): HTMLElement = js.native
   @JSName("createElement")
@@ -1267,32 +1267,8 @@ trait Document
     * @param entityReferenceExpansion A flag that specifies whether entity reference nodes are expanded.
     */
   def createTreeWalker(root: Node): TreeWalker = js.native
-  def createTreeWalker(
-    root: Node,
-    whatToShow: js.UndefOr[scala.Nothing],
-    filter: js.UndefOr[scala.Nothing],
-    entityReferenceExpansion: scala.Boolean
-  ): TreeWalker = js.native
   def createTreeWalker(root: Node, whatToShow: js.UndefOr[scala.Nothing], filter: NodeFilter): TreeWalker = js.native
-  def createTreeWalker(
-    root: Node,
-    whatToShow: js.UndefOr[scala.Nothing],
-    filter: NodeFilter,
-    entityReferenceExpansion: scala.Boolean
-  ): TreeWalker = js.native
-  def createTreeWalker(
-    root: Node,
-    whatToShow: js.UndefOr[scala.Nothing],
-    filter: Null,
-    entityReferenceExpansion: scala.Boolean
-  ): TreeWalker = js.native
   def createTreeWalker(root: Node, whatToShow: Double): TreeWalker = js.native
-  def createTreeWalker(
-    root: Node,
-    whatToShow: Double,
-    filter: js.UndefOr[scala.Nothing],
-    entityReferenceExpansion: scala.Boolean
-  ): TreeWalker = js.native
   def createTreeWalker(root: Node, whatToShow: Double, filter: NodeFilter): TreeWalker = js.native
   def createTreeWalker(root: Node, whatToShow: Double, filter: NodeFilter, entityReferenceExpansion: scala.Boolean): TreeWalker = js.native
   def createTreeWalker(root: Node, whatToShow: Double, filter: Null, entityReferenceExpansion: scala.Boolean): TreeWalker = js.native
@@ -1301,6 +1277,19 @@ trait Document
     expression: java.lang.String,
     contextNode: Node,
     resolver: XPathNSResolver,
+    `type`: Double,
+    result: XPathResult
+  ): XPathResult = js.native
+  def evaluate(
+    expression: java.lang.String,
+    contextNode: Node,
+    resolver: js.Function1[/* prefix */ java.lang.String, java.lang.String | Null],
+    `type`: Double
+  ): XPathResult = js.native
+  def evaluate(
+    expression: java.lang.String,
+    contextNode: Node,
+    resolver: js.Function1[/* prefix */ java.lang.String, java.lang.String | Null],
     `type`: Double,
     result: XPathResult
   ): XPathResult = js.native
@@ -1553,7 +1542,7 @@ trait Document
   @JSName("getElementsByTagName")
   def getElementsByTagName_link(qualifiedName: link): HTMLCollectionOf[HTMLLinkElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_map(qualifiedName: map_): HTMLCollectionOf[HTMLMapElement] = js.native
+  def getElementsByTagName_map(qualifiedName: map): HTMLCollectionOf[HTMLMapElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_mark(qualifiedName: mark): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
@@ -1645,7 +1634,7 @@ trait Document
   @JSName("getElementsByTagName")
   def getElementsByTagName_switch(qualifiedName: switch): HTMLCollectionOf[SVGSwitchElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_symbol(qualifiedName: symbol_): HTMLCollectionOf[SVGSymbolElement] = js.native
+  def getElementsByTagName_symbol(qualifiedName: symbol): HTMLCollectionOf[SVGSymbolElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_table(qualifiedName: table): HTMLCollectionOf[HTMLTableElement] = js.native
   @JSName("getElementsByTagName")

@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BlobPropertyBag extends js.Object {
+  var endings: js.UndefOr[EndingType] = js.undefined
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -25,6 +26,10 @@ object BlobPropertyBag {
         x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
         x
     }
+    @scala.inline
+    def setEndings(value: EndingType): Self = this.set("endings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndings: Self = this.set("endings", js.undefined)
     @scala.inline
     def setType(value: java.lang.String): Self = this.set("type", value.asInstanceOf[js.Any])
     @scala.inline

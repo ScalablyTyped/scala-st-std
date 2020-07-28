@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EXTTextureFilterAnisotropic extends js.Object {
-  val MAX_TEXTURE_MAX_ANISOTROPY_EXT: Double
-  val TEXTURE_MAX_ANISOTROPY_EXT: Double
+  val MAX_TEXTURE_MAX_ANISOTROPY_EXT: GLenum
+  val TEXTURE_MAX_ANISOTROPY_EXT: GLenum
 }
 
 object EXTTextureFilterAnisotropic {
   @scala.inline
-  def apply(MAX_TEXTURE_MAX_ANISOTROPY_EXT: Double, TEXTURE_MAX_ANISOTROPY_EXT: Double): EXTTextureFilterAnisotropic = {
+  def apply(MAX_TEXTURE_MAX_ANISOTROPY_EXT: GLenum, TEXTURE_MAX_ANISOTROPY_EXT: GLenum): EXTTextureFilterAnisotropic = {
     val __obj = js.Dynamic.literal(MAX_TEXTURE_MAX_ANISOTROPY_EXT = MAX_TEXTURE_MAX_ANISOTROPY_EXT.asInstanceOf[js.Any], TEXTURE_MAX_ANISOTROPY_EXT = TEXTURE_MAX_ANISOTROPY_EXT.asInstanceOf[js.Any])
     __obj.asInstanceOf[EXTTextureFilterAnisotropic]
   }
@@ -27,9 +27,9 @@ object EXTTextureFilterAnisotropic {
         x
     }
     @scala.inline
-    def setMAX_TEXTURE_MAX_ANISOTROPY_EXT(value: Double): Self = this.set("MAX_TEXTURE_MAX_ANISOTROPY_EXT", value.asInstanceOf[js.Any])
+    def setMAX_TEXTURE_MAX_ANISOTROPY_EXT(value: GLenum): Self = this.set("MAX_TEXTURE_MAX_ANISOTROPY_EXT", value.asInstanceOf[js.Any])
     @scala.inline
-    def setTEXTURE_MAX_ANISOTROPY_EXT(value: Double): Self = this.set("TEXTURE_MAX_ANISOTROPY_EXT", value.asInstanceOf[js.Any])
+    def setTEXTURE_MAX_ANISOTROPY_EXT(value: GLenum): Self = this.set("TEXTURE_MAX_ANISOTROPY_EXT", value.asInstanceOf[js.Any])
   }
   
 }

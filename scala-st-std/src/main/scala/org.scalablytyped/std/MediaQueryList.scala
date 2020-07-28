@@ -43,6 +43,6 @@ trait MediaQueryList extends EventTarget {
   ): Unit = js.native
   /** @deprecated */
   def removeListener(): Unit = js.native
-  def removeListener(listener: EventListenerOrEventListenerObject): Unit = js.native
+  def removeListener(listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, _]): Unit = js.native
 }
 

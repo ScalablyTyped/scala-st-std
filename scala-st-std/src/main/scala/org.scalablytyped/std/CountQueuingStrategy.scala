@@ -1,18 +1,22 @@
 package org.scalablytyped.std
 
+import org.scalablytyped.std.stdNumbers.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CountQueuingStrategy extends js.Object {
-  var highWaterMark: Double
-  def size(): Double
+trait CountQueuingStrategy
+  extends QueuingStrategy[js.Any] {
+  @JSName("highWaterMark")
+  var highWaterMark_CountQueuingStrategy: Double
+  @JSName("size")
+  def size_MCountQueuingStrategy(chunk: js.Any): `1`
 }
 
 object CountQueuingStrategy {
   @scala.inline
-  def apply(highWaterMark: Double, size: () => Double): CountQueuingStrategy = {
-    val __obj = js.Dynamic.literal(highWaterMark = highWaterMark.asInstanceOf[js.Any], size = js.Any.fromFunction0(size))
+  def apply(highWaterMark: Double, size: js.Any => `1`): CountQueuingStrategy = {
+    val __obj = js.Dynamic.literal(highWaterMark = highWaterMark.asInstanceOf[js.Any], size = js.Any.fromFunction1(size))
     __obj.asInstanceOf[CountQueuingStrategy]
   }
   @scala.inline
@@ -29,7 +33,7 @@ object CountQueuingStrategy {
     @scala.inline
     def setHighWaterMark(value: Double): Self = this.set("highWaterMark", value.asInstanceOf[js.Any])
     @scala.inline
-    def setSize(value: () => Double): Self = this.set("size", js.Any.fromFunction0(value))
+    def setSize(value: js.Any => `1`): Self = this.set("size", js.Any.fromFunction1(value))
   }
   
 }

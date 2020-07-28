@@ -11,21 +11,24 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("WritableStream")
 @js.native
-class WritableStream ()
-  extends org.scalablytyped.std.WritableStream {
-  def this(underlyingSink: UnderlyingSink) = this()
-  def this(underlyingSink: js.UndefOr[scala.Nothing], strategy: QueuingStrategy) = this()
-  def this(underlyingSink: UnderlyingSink, strategy: QueuingStrategy) = this()
+class WritableStream[W] ()
+  extends org.scalablytyped.std.WritableStream[W] {
+  def this(underlyingSink: UnderlyingSink[W]) = this()
+  def this(underlyingSink: js.UndefOr[scala.Nothing], strategy: QueuingStrategy[W]) = this()
+  def this(underlyingSink: UnderlyingSink[W], strategy: QueuingStrategy[W]) = this()
 }
 
 @JSGlobal("WritableStream")
 @js.native
 object WritableStream
-  extends Instantiable0[org.scalablytyped.std.WritableStream]
-     with Instantiable1[/* underlyingSink */ UnderlyingSink, org.scalablytyped.std.WritableStream]
+  extends Instantiable0[org.scalablytyped.std.WritableStream[js.Object]]
+     with Instantiable1[
+      /* underlyingSink */ UnderlyingSink[js.Object], 
+      org.scalablytyped.std.WritableStream[js.Object]
+    ]
      with Instantiable2[
-      js.UndefOr[/* underlyingSink */ UnderlyingSink], 
-      /* strategy */ QueuingStrategy, 
-      org.scalablytyped.std.WritableStream
+      js.UndefOr[/* underlyingSink */ UnderlyingSink[js.Object]], 
+      /* strategy */ QueuingStrategy[js.Object], 
+      org.scalablytyped.std.WritableStream[js.Object]
     ]
 

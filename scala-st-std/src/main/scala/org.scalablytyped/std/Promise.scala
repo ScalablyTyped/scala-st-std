@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Promise[T] extends js.Object {
   @JSName(js.Symbol.toStringTag)
-  val toStringTag: org.scalablytyped.std.stdStrings.Promise = js.native
+  val toStringTag: java.lang.String = js.native
   /**
     * Attaches a callback for only the rejection of the Promise.
     * @param onrejected The callback to execute when the Promise is rejected.

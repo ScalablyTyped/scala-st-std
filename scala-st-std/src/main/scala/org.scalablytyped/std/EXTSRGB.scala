@@ -5,19 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EXTSRGB extends js.Object {
-  val FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT: Double
-  val SRGB8_ALPHA8_EXT: Double
-  val SRGB_ALPHA_EXT: Double
-  val SRGB_EXT: Double
+  val FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT: GLenum
+  val SRGB8_ALPHA8_EXT: GLenum
+  val SRGB_ALPHA_EXT: GLenum
+  val SRGB_EXT: GLenum
 }
 
 object EXTSRGB {
   @scala.inline
   def apply(
-    FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT: Double,
-    SRGB8_ALPHA8_EXT: Double,
-    SRGB_ALPHA_EXT: Double,
-    SRGB_EXT: Double
+    FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT: GLenum,
+    SRGB8_ALPHA8_EXT: GLenum,
+    SRGB_ALPHA_EXT: GLenum,
+    SRGB_EXT: GLenum
   ): EXTSRGB = {
     val __obj = js.Dynamic.literal(FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT = FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT.asInstanceOf[js.Any], SRGB8_ALPHA8_EXT = SRGB8_ALPHA8_EXT.asInstanceOf[js.Any], SRGB_ALPHA_EXT = SRGB_ALPHA_EXT.asInstanceOf[js.Any], SRGB_EXT = SRGB_EXT.asInstanceOf[js.Any])
     __obj.asInstanceOf[EXTSRGB]
@@ -34,13 +34,13 @@ object EXTSRGB {
         x
     }
     @scala.inline
-    def setFRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT(value: Double): Self = this.set("FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT", value.asInstanceOf[js.Any])
+    def setFRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT(value: GLenum): Self = this.set("FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT", value.asInstanceOf[js.Any])
     @scala.inline
-    def setSRGB8_ALPHA8_EXT(value: Double): Self = this.set("SRGB8_ALPHA8_EXT", value.asInstanceOf[js.Any])
+    def setSRGB8_ALPHA8_EXT(value: GLenum): Self = this.set("SRGB8_ALPHA8_EXT", value.asInstanceOf[js.Any])
     @scala.inline
-    def setSRGB_ALPHA_EXT(value: Double): Self = this.set("SRGB_ALPHA_EXT", value.asInstanceOf[js.Any])
+    def setSRGB_ALPHA_EXT(value: GLenum): Self = this.set("SRGB_ALPHA_EXT", value.asInstanceOf[js.Any])
     @scala.inline
-    def setSRGB_EXT(value: Double): Self = this.set("SRGB_EXT", value.asInstanceOf[js.Any])
+    def setSRGB_EXT(value: GLenum): Self = this.set("SRGB_EXT", value.asInstanceOf[js.Any])
   }
   
 }

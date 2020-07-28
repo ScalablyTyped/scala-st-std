@@ -44,6 +44,7 @@ trait Node extends EventTarget {
     * Returns the last child.
     */
   val lastChild: ChildNode | Null = js.native
+  /** @deprecated */
   val namespaceURI: java.lang.String | Null = js.native
   /**
     * Returns the next sibling.

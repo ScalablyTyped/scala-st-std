@@ -11,7 +11,7 @@ trait Map[K, V] extends js.Object {
   var iterator: js.Function0[IterableIterator[js.Tuple2[K, V]]] = js.native
   val size: Double = js.native
   @JSName(js.Symbol.toStringTag)
-  val toStringTag: org.scalablytyped.std.stdStrings.Map = js.native
+  val toStringTag: java.lang.String = js.native
   def clear(): Unit = js.native
   def delete(key: K): scala.Boolean = js.native
   /**

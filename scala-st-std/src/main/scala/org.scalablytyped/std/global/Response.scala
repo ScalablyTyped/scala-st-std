@@ -18,7 +18,7 @@ class Response ()
   def this(body: js.UndefOr[BodyInit], init: ResponseInit) = this()
   def this(body: Null, init: ResponseInit) = this()
   /* CompleteClass */
-  override val body: org.scalablytyped.std.ReadableStream | Null = js.native
+  override val body: org.scalablytyped.std.ReadableStream[org.scalablytyped.std.Uint8Array] | Null = js.native
   /* CompleteClass */
   override val bodyUsed: scala.Boolean = js.native
   /* CompleteClass */

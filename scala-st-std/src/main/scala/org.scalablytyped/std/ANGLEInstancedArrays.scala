@@ -5,19 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ANGLEInstancedArrays extends js.Object {
-  val VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE: Double
-  def drawArraysInstancedANGLE(mode: Double, first: Double, count: Double, primcount: Double): Unit
-  def drawElementsInstancedANGLE(mode: Double, count: Double, `type`: Double, offset: Double, primcount: Double): Unit
-  def vertexAttribDivisorANGLE(index: Double, divisor: Double): Unit
+  val VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE: GLenum
+  def drawArraysInstancedANGLE(mode: GLenum, first: GLint, count: GLsizei, primcount: GLsizei): Unit
+  def drawElementsInstancedANGLE(mode: GLenum, count: GLsizei, `type`: GLenum, offset: GLintptr, primcount: GLsizei): Unit
+  def vertexAttribDivisorANGLE(index: GLuint, divisor: GLuint): Unit
 }
 
 object ANGLEInstancedArrays {
   @scala.inline
   def apply(
-    VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE: Double,
-    drawArraysInstancedANGLE: (Double, Double, Double, Double) => Unit,
-    drawElementsInstancedANGLE: (Double, Double, Double, Double, Double) => Unit,
-    vertexAttribDivisorANGLE: (Double, Double) => Unit
+    VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE: GLenum,
+    drawArraysInstancedANGLE: (GLenum, GLint, GLsizei, GLsizei) => Unit,
+    drawElementsInstancedANGLE: (GLenum, GLsizei, GLenum, GLintptr, GLsizei) => Unit,
+    vertexAttribDivisorANGLE: (GLuint, GLuint) => Unit
   ): ANGLEInstancedArrays = {
     val __obj = js.Dynamic.literal(VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE = VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE.asInstanceOf[js.Any], drawArraysInstancedANGLE = js.Any.fromFunction4(drawArraysInstancedANGLE), drawElementsInstancedANGLE = js.Any.fromFunction5(drawElementsInstancedANGLE), vertexAttribDivisorANGLE = js.Any.fromFunction2(vertexAttribDivisorANGLE))
     __obj.asInstanceOf[ANGLEInstancedArrays]
@@ -34,13 +34,13 @@ object ANGLEInstancedArrays {
         x
     }
     @scala.inline
-    def setVERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE(value: Double): Self = this.set("VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE", value.asInstanceOf[js.Any])
+    def setVERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE(value: GLenum): Self = this.set("VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE", value.asInstanceOf[js.Any])
     @scala.inline
-    def setDrawArraysInstancedANGLE(value: (Double, Double, Double, Double) => Unit): Self = this.set("drawArraysInstancedANGLE", js.Any.fromFunction4(value))
+    def setDrawArraysInstancedANGLE(value: (GLenum, GLint, GLsizei, GLsizei) => Unit): Self = this.set("drawArraysInstancedANGLE", js.Any.fromFunction4(value))
     @scala.inline
-    def setDrawElementsInstancedANGLE(value: (Double, Double, Double, Double, Double) => Unit): Self = this.set("drawElementsInstancedANGLE", js.Any.fromFunction5(value))
+    def setDrawElementsInstancedANGLE(value: (GLenum, GLsizei, GLenum, GLintptr, GLsizei) => Unit): Self = this.set("drawElementsInstancedANGLE", js.Any.fromFunction5(value))
     @scala.inline
-    def setVertexAttribDivisorANGLE(value: (Double, Double) => Unit): Self = this.set("vertexAttribDivisorANGLE", js.Any.fromFunction2(value))
+    def setVertexAttribDivisorANGLE(value: (GLuint, GLuint) => Unit): Self = this.set("vertexAttribDivisorANGLE", js.Any.fromFunction2(value))
   }
   
 }

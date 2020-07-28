@@ -24,9 +24,6 @@ object stdStrings {
   sealed trait AnimationPlaybackEvent extends js.Object
   
   @js.native
-  sealed trait ArrayBuffer extends js.Object
-  
-  @js.native
   sealed trait AudioProcessingEvent extends js.Object
   
   @js.native
@@ -46,9 +43,6 @@ object stdStrings {
   
   @js.native
   sealed trait CustomEvent extends js.Object
-  
-  @js.native
-  sealed trait DataView extends js.Object
   
   @js.native
   sealed trait DeviceLightEvent extends js.Object
@@ -108,9 +102,6 @@ object stdStrings {
   sealed trait GamepadEvent extends js.Object
   
   @js.native
-  sealed trait GeneratorFunction extends js.Object
-  
-  @js.native
   sealed trait HRTF extends PanningModelType
   
   @js.native
@@ -127,9 +118,6 @@ object stdStrings {
   
   @js.native
   sealed trait Int8Array extends js.Object
-  
-  @js.native
-  sealed trait JSON extends js.Object
   
   @js.native
   sealed trait KeyboardEvent extends js.Object
@@ -211,12 +199,6 @@ object stdStrings {
   
   @js.native
   sealed trait MSVideoOptimalLayoutChanged extends js.Object
-  
-  @js.native
-  sealed trait Map extends js.Object
-  
-  @js.native
-  sealed trait Math extends js.Object
   
   @js.native
   sealed trait MediaEncryptedEvent extends js.Object
@@ -315,9 +297,6 @@ object stdStrings {
   sealed trait ProgressEvent extends js.Object
   
   @js.native
-  sealed trait Promise extends js.Object
-  
-  @js.native
   sealed trait PromiseRejectionEvent extends js.Object
   
   @js.native
@@ -384,9 +363,6 @@ object stdStrings {
   sealed trait ServiceWorkerMessageEvent extends js.Object
   
   @js.native
-  sealed trait Set extends js.Object
-  
-  @js.native
   sealed trait SpeechRecognitionError extends js.Object
   
   @js.native
@@ -400,9 +376,6 @@ object stdStrings {
   
   @js.native
   sealed trait StorageEvent extends js.Object
-  
-  @js.native
-  sealed trait Symbol extends js.Object
   
   @js.native
   sealed trait TextEvent extends js.Object
@@ -471,12 +444,6 @@ object stdStrings {
   sealed trait WEBGL_lose_context extends js.Object
   
   @js.native
-  sealed trait WeakMap extends js.Object
-  
-  @js.native
-  sealed trait WeakSet extends js.Object
-  
-  @js.native
   sealed trait WebGLContextEvent extends js.Object
   
   @js.native
@@ -511,6 +478,7 @@ object stdStrings {
   @js.native
   sealed trait accumulate
     extends CompositeOperation
+       with CompositeOperationOrAuto
        with IterationCompositeOperation
   
   @js.native
@@ -525,7 +493,9 @@ object stdStrings {
        with RTCIceTcpCandidateType
   
   @js.native
-  sealed trait add extends CompositeOperation
+  sealed trait add
+    extends CompositeOperation
+       with CompositeOperationOrAuto
   
   @js.native
   sealed trait address extends js.Object
@@ -598,7 +568,7 @@ object stdStrings {
   sealed trait area extends js.Object
   
   @js.native
-  sealed trait arraybuffer_
+  sealed trait arraybuffer
     extends BinaryType
        with XMLHttpRequestResponseType
   
@@ -649,7 +619,8 @@ object stdStrings {
   
   @js.native
   sealed trait auto
-    extends FillMode
+    extends CompositeOperationOrAuto
+       with FillMode
        with NotificationDirection
        with PositionAlignSetting
        with RTCDtlsRole
@@ -756,6 +727,12 @@ object stdStrings {
   
   @js.native
   sealed trait button extends js.Object
+  
+  @js.native
+  sealed trait byob extends js.Object
+  
+  @js.native
+  sealed trait bytes extends js.Object
   
   @js.native
   sealed trait cached extends js.Object
@@ -918,6 +895,9 @@ object stdStrings {
   
   @js.native
   sealed trait cuechange extends js.Object
+  
+  @js.native
+  sealed trait cursor extends js.Object
   
   @js.native
   sealed trait custom extends OscillatorType
@@ -1508,9 +1488,6 @@ object stdStrings {
   sealed trait installing extends ServiceWorkerState
   
   @js.native
-  sealed trait instant extends ScrollBehavior
-  
-  @js.native
   sealed trait interactive
     extends AudioContextLatencyCategory
        with DocumentReadyState
@@ -1534,7 +1511,7 @@ object stdStrings {
   sealed trait isolationchange extends js.Object
   
   @js.native
-  sealed trait json_ extends XMLHttpRequestResponseType
+  sealed trait json extends XMLHttpRequestResponseType
   
   @js.native
   sealed trait jwk extends KeyFormat
@@ -1690,7 +1667,7 @@ object stdStrings {
        with ScrollRestoration
   
   @js.native
-  sealed trait map_ extends js.Object
+  sealed trait map extends js.Object
   
   @js.native
   sealed trait mark extends js.Object
@@ -1789,6 +1766,9 @@ object stdStrings {
   
   @js.native
   sealed trait mute extends js.Object
+  
+  @js.native
+  sealed trait native extends EndingType
   
   @js.native
   sealed trait natural extends OrientationLockType
@@ -2186,6 +2166,7 @@ object stdStrings {
   @js.native
   sealed trait replace
     extends CompositeOperation
+       with CompositeOperationOrAuto
        with IterationCompositeOperation
   
   @js.native
@@ -2478,7 +2459,7 @@ object stdStrings {
   sealed trait switch extends js.Object
   
   @js.native
-  sealed trait symbol_ extends js.Object
+  sealed trait symbol extends js.Object
   
   @js.native
   sealed trait sync extends js.Object
@@ -2592,6 +2573,9 @@ object stdStrings {
   
   @js.native
   sealed trait transitionstart extends js.Object
+  
+  @js.native
+  sealed trait transparent extends EndingType
   
   @js.native
   sealed trait transport extends RTCStatsType
@@ -2776,8 +2760,6 @@ object stdStrings {
   @scala.inline
   def AnimationPlaybackEvent: AnimationPlaybackEvent = "AnimationPlaybackEvent".asInstanceOf[AnimationPlaybackEvent]
   @scala.inline
-  def ArrayBuffer: ArrayBuffer = "ArrayBuffer".asInstanceOf[ArrayBuffer]
-  @scala.inline
   def AudioProcessingEvent: AudioProcessingEvent = "AudioProcessingEvent".asInstanceOf[AudioProcessingEvent]
   @scala.inline
   def BT: BT = "BT".asInstanceOf[BT]
@@ -2791,8 +2773,6 @@ object stdStrings {
   def CompositionEvent: CompositionEvent = "CompositionEvent".asInstanceOf[CompositionEvent]
   @scala.inline
   def CustomEvent: CustomEvent = "CustomEvent".asInstanceOf[CustomEvent]
-  @scala.inline
-  def DataView: DataView = "DataView".asInstanceOf[DataView]
   @scala.inline
   def DeviceLightEvent: DeviceLightEvent = "DeviceLightEvent".asInstanceOf[DeviceLightEvent]
   @scala.inline
@@ -2832,8 +2812,6 @@ object stdStrings {
   @scala.inline
   def GamepadEvent: GamepadEvent = "GamepadEvent".asInstanceOf[GamepadEvent]
   @scala.inline
-  def GeneratorFunction: GeneratorFunction = "GeneratorFunction".asInstanceOf[GeneratorFunction]
-  @scala.inline
   def HRTF: HRTF = "HRTF".asInstanceOf[HRTF]
   @scala.inline
   def HashChangeEvent: HashChangeEvent = "HashChangeEvent".asInstanceOf[HashChangeEvent]
@@ -2845,8 +2823,6 @@ object stdStrings {
   def Int32Array: Int32Array = "Int32Array".asInstanceOf[Int32Array]
   @scala.inline
   def Int8Array: Int8Array = "Int8Array".asInstanceOf[Int8Array]
-  @scala.inline
-  def JSON: JSON = "JSON".asInstanceOf[JSON]
   @scala.inline
   def KeyboardEvent: KeyboardEvent = "KeyboardEvent".asInstanceOf[KeyboardEvent]
   @scala.inline
@@ -2901,10 +2877,6 @@ object stdStrings {
   def MSVideoFrameStepCompleted: MSVideoFrameStepCompleted = "MSVideoFrameStepCompleted".asInstanceOf[MSVideoFrameStepCompleted]
   @scala.inline
   def MSVideoOptimalLayoutChanged: MSVideoOptimalLayoutChanged = "MSVideoOptimalLayoutChanged".asInstanceOf[MSVideoOptimalLayoutChanged]
-  @scala.inline
-  def Map: Map = "Map".asInstanceOf[Map]
-  @scala.inline
-  def Math: Math = "Math".asInstanceOf[Math]
   @scala.inline
   def MediaEncryptedEvent: MediaEncryptedEvent = "MediaEncryptedEvent".asInstanceOf[MediaEncryptedEvent]
   @scala.inline
@@ -2970,8 +2942,6 @@ object stdStrings {
   @scala.inline
   def ProgressEvent: ProgressEvent = "ProgressEvent".asInstanceOf[ProgressEvent]
   @scala.inline
-  def Promise: Promise = "Promise".asInstanceOf[Promise]
-  @scala.inline
   def PromiseRejectionEvent: PromiseRejectionEvent = "PromiseRejectionEvent".asInstanceOf[PromiseRejectionEvent]
   @scala.inline
   def RTCDTMFToneChangeEvent: RTCDTMFToneChangeEvent = "RTCDTMFToneChangeEvent".asInstanceOf[RTCDTMFToneChangeEvent]
@@ -3016,8 +2986,6 @@ object stdStrings {
   @scala.inline
   def ServiceWorkerMessageEvent: ServiceWorkerMessageEvent = "ServiceWorkerMessageEvent".asInstanceOf[ServiceWorkerMessageEvent]
   @scala.inline
-  def Set: Set = "Set".asInstanceOf[Set]
-  @scala.inline
   def SpeechRecognitionError: SpeechRecognitionError = "SpeechRecognitionError".asInstanceOf[SpeechRecognitionError]
   @scala.inline
   def SpeechRecognitionEvent: SpeechRecognitionEvent = "SpeechRecognitionEvent".asInstanceOf[SpeechRecognitionEvent]
@@ -3027,8 +2995,6 @@ object stdStrings {
   def SpeechSynthesisEvent: SpeechSynthesisEvent = "SpeechSynthesisEvent".asInstanceOf[SpeechSynthesisEvent]
   @scala.inline
   def StorageEvent: StorageEvent = "StorageEvent".asInstanceOf[StorageEvent]
-  @scala.inline
-  def Symbol: Symbol = "Symbol".asInstanceOf[Symbol]
   @scala.inline
   def TextEvent: TextEvent = "TextEvent".asInstanceOf[TextEvent]
   @scala.inline
@@ -3073,10 +3039,6 @@ object stdStrings {
   def WEBGL_draw_buffers: WEBGL_draw_buffers = "WEBGL_draw_buffers".asInstanceOf[WEBGL_draw_buffers]
   @scala.inline
   def WEBGL_lose_context: WEBGL_lose_context = "WEBGL_lose_context".asInstanceOf[WEBGL_lose_context]
-  @scala.inline
-  def WeakMap: WeakMap = "WeakMap".asInstanceOf[WeakMap]
-  @scala.inline
-  def WeakSet: WeakSet = "WeakSet".asInstanceOf[WeakSet]
   @scala.inline
   def WebGLContextEvent: WebGLContextEvent = "WebGLContextEvent".asInstanceOf[WebGLContextEvent]
   @scala.inline
@@ -3148,7 +3110,7 @@ object stdStrings {
   @scala.inline
   def area: area = "area".asInstanceOf[area]
   @scala.inline
-  def arraybuffer_ : arraybuffer_ = "arraybuffer".asInstanceOf[arraybuffer_]
+  def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
   @scala.inline
   def article: article = "article".asInstanceOf[article]
   @scala.inline
@@ -3246,6 +3208,10 @@ object stdStrings {
   @scala.inline
   def button: button = "button".asInstanceOf[button]
   @scala.inline
+  def byob: byob = "byob".asInstanceOf[byob]
+  @scala.inline
+  def bytes: bytes = "bytes".asInstanceOf[bytes]
+  @scala.inline
   def cached: cached = "cached".asInstanceOf[cached]
   @scala.inline
   def cancel: cancel = "cancel".asInstanceOf[cancel]
@@ -3331,6 +3297,8 @@ object stdStrings {
   def cors: cors = "cors".asInstanceOf[cors]
   @scala.inline
   def cuechange: cuechange = "cuechange".asInstanceOf[cuechange]
+  @scala.inline
+  def cursor: cursor = "cursor".asInstanceOf[cursor]
   @scala.inline
   def custom: custom = "custom".asInstanceOf[custom]
   @scala.inline
@@ -3698,8 +3666,6 @@ object stdStrings {
   @scala.inline
   def installing: installing = "installing".asInstanceOf[installing]
   @scala.inline
-  def instant: instant = "instant".asInstanceOf[instant]
-  @scala.inline
   def interactive: interactive = "interactive".asInstanceOf[interactive]
   @scala.inline
   def `internal-error`: `internal-error` = "internal-error".asInstanceOf[`internal-error`]
@@ -3714,7 +3680,7 @@ object stdStrings {
   @scala.inline
   def isolationchange: isolationchange = "isolationchange".asInstanceOf[isolationchange]
   @scala.inline
-  def json_ : json_ = "json".asInstanceOf[json_]
+  def json: json = "json".asInstanceOf[json]
   @scala.inline
   def jwk: jwk = "jwk".asInstanceOf[jwk]
   @scala.inline
@@ -3808,7 +3774,7 @@ object stdStrings {
   @scala.inline
   def manual: manual = "manual".asInstanceOf[manual]
   @scala.inline
-  def map_ : map_ = "map".asInstanceOf[map_]
+  def map: map = "map".asInstanceOf[map]
   @scala.inline
   def mark: mark = "mark".asInstanceOf[mark]
   @scala.inline
@@ -3873,6 +3839,8 @@ object stdStrings {
   def msneedkey: msneedkey = "msneedkey".asInstanceOf[msneedkey]
   @scala.inline
   def mute: mute = "mute".asInstanceOf[mute]
+  @scala.inline
+  def native: native = "native".asInstanceOf[native]
   @scala.inline
   def natural: natural = "natural".asInstanceOf[natural]
   @scala.inline
@@ -4296,7 +4264,7 @@ object stdStrings {
   @scala.inline
   def switch: switch = "switch".asInstanceOf[switch]
   @scala.inline
-  def symbol_ : symbol_ = "symbol".asInstanceOf[symbol_]
+  def symbol: symbol = "symbol".asInstanceOf[symbol]
   @scala.inline
   def sync: sync = "sync".asInstanceOf[sync]
   @scala.inline
@@ -4371,6 +4339,8 @@ object stdStrings {
   def transitionrun: transitionrun = "transitionrun".asInstanceOf[transitionrun]
   @scala.inline
   def transitionstart: transitionstart = "transitionstart".asInstanceOf[transitionstart]
+  @scala.inline
+  def transparent: transparent = "transparent".asInstanceOf[transparent]
   @scala.inline
   def transport: transport = "transport".asInstanceOf[transport]
   @scala.inline

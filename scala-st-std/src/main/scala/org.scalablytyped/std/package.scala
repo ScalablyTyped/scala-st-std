@@ -22,10 +22,10 @@ package object std {
     - `org.scalablytyped`.std.BufferSource
     - `org.scalablytyped`.std.FormData
     - `org.scalablytyped`.std.URLSearchParams
-    - `org.scalablytyped`.std.ReadableStream
+    - `org.scalablytyped`.std.ReadableStream[`org.scalablytyped`.std.Uint8Array]
     - java.lang.String
   */
-  type BodyInit = org.scalablytyped.std._BodyInit | java.lang.String
+  type BodyInit = org.scalablytyped.std._BodyInit | org.scalablytyped.std.ReadableStream[org.scalablytyped.std.Uint8Array] | java.lang.String
   type CDATASection = org.scalablytyped.std.Text
   type CSSSupportsRule = org.scalablytyped.std.CSSConditionRule
   type ChannelMergerNode = org.scalablytyped.std.AudioNode
@@ -124,6 +124,7 @@ package object std {
     /* descriptor */ org.scalablytyped.std.TypedPropertyDescriptor[js.Any], 
     org.scalablytyped.std.TypedPropertyDescriptor[js.Any] | scala.Unit
   ]
+  /** @deprecated */
   type MouseWheelEvent = org.scalablytyped.std.WheelEvent
   type MutationCallback = js.Function2[
     /* mutations */ js.Array[org.scalablytyped.std.MutationRecord], 
@@ -175,7 +176,7 @@ package object std {
     scala.Unit
   ]
   /**
-    * From T pick a set of properties K
+    * From T, pick a set of properties whose keys are in the union K
     */
   type Pick[T, K /* <: /* keyof T */ java.lang.String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in K ]: T[P]}
@@ -193,12 +194,22 @@ package object std {
   type PropertyDecorator = js.Function2[/* target */ js.Object, /* propertyKey */ java.lang.String | js.Symbol, scala.Unit]
   type PropertyDescriptorMap = org.scalablytyped.runtime.StringDictionary[org.scalablytyped.std.PropertyDescriptor]
   type PropertyKey = java.lang.String | scala.Double | js.Symbol
+  type QueuingStrategySizeCallback[T] = js.Function1[/* chunk */ T, scala.Double]
   type RTCAnswerOptions = org.scalablytyped.std.RTCOfferAnswerOptions
   type RTCPeerConnectionErrorCallback = js.Function1[/* error */ org.scalablytyped.std.DOMException, scala.Unit]
   type RTCRtpDecodingParameters = org.scalablytyped.std.RTCRtpCodingParameters
   type RTCSessionDescriptionCallback = js.Function1[/* description */ org.scalablytyped.std.RTCSessionDescriptionInit, scala.Unit]
   type RTCStatsCallback = js.Function1[/* report */ org.scalablytyped.std.RTCStatsReport, scala.Unit]
   type RangeError = org.scalablytyped.std.Error
+  type ReadableByteStreamControllerCallback = js.Function1[
+    /* controller */ org.scalablytyped.std.ReadableByteStreamController, 
+    scala.Unit | js.Thenable[scala.Unit]
+  ]
+  type ReadableStreamDefaultControllerCallback[R] = js.Function1[
+    /* controller */ org.scalablytyped.std.ReadableStreamDefaultController[R], 
+    scala.Unit | js.Thenable[scala.Unit]
+  ]
+  type ReadableStreamErrorCallback = js.Function1[/* reason */ js.Any, scala.Unit | js.Thenable[scala.Unit]]
   /**
     * Make all properties in T readonly
     */
@@ -235,6 +246,15 @@ package object std {
   type StaticRange = org.scalablytyped.std.AbstractRange
   type SyntaxError = org.scalablytyped.std.Error
   type TimerHandler = java.lang.String | js.Function
+  type TransformStreamDefaultControllerCallback[O] = js.Function1[
+    /* controller */ org.scalablytyped.std.TransformStreamDefaultController[O], 
+    scala.Unit | js.Thenable[scala.Unit]
+  ]
+  type TransformStreamDefaultControllerTransformCallback[I, O] = js.Function2[
+    /* chunk */ I, 
+    /* controller */ org.scalablytyped.std.TransformStreamDefaultController[O], 
+    scala.Unit | js.Thenable[scala.Unit]
+  ]
   type TypeError = org.scalablytyped.std.Error
   type URIError = org.scalablytyped.std.Error
   type VibratePattern = scala.Double | js.Array[scala.Double]
@@ -246,14 +266,19 @@ package object std {
   type WebGLRenderingContext = org.scalablytyped.std.WebGLRenderingContextBase
   type WebGLShader = org.scalablytyped.std.WebGLObject
   type WebGLTexture = org.scalablytyped.std.WebGLObject
+  type WebGLVertexArrayObjectOES = org.scalablytyped.std.WebGLObject
   type WebKitCSSMatrix = org.scalablytyped.std.DOMMatrix
   type WindowProxy = org.scalablytyped.std.Window
-  type WritableStreamChunkCallback = js.Function2[
-    /* chunk */ js.Any, 
+  type WritableStreamDefaultControllerCloseCallback = js.Function0[scala.Unit | js.Thenable[scala.Unit]]
+  type WritableStreamDefaultControllerStartCallback = js.Function1[
     /* controller */ org.scalablytyped.std.WritableStreamDefaultController, 
-    scala.Unit
+    scala.Unit | js.Thenable[scala.Unit]
   ]
-  type WritableStreamDefaultControllerCallback = js.Function1[/* controller */ org.scalablytyped.std.WritableStreamDefaultController, scala.Unit]
-  type WritableStreamErrorCallback = js.Function1[/* reason */ java.lang.String, scala.Unit]
+  type WritableStreamDefaultControllerWriteCallback[W] = js.Function2[
+    /* chunk */ W, 
+    /* controller */ org.scalablytyped.std.WritableStreamDefaultController, 
+    scala.Unit | js.Thenable[scala.Unit]
+  ]
+  type WritableStreamErrorCallback = js.Function1[/* reason */ js.Any, scala.Unit | js.Thenable[scala.Unit]]
   type webkitURL = org.scalablytyped.std.URL
 }

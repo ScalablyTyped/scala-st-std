@@ -17,6 +17,19 @@ trait XPathEvaluator extends js.Object {
     `type`: Double,
     result: XPathResult
   ): XPathResult = js.native
+  def evaluate(
+    expression: java.lang.String,
+    contextNode: Node,
+    resolver: js.Function1[/* prefix */ java.lang.String, java.lang.String | Null],
+    `type`: Double
+  ): XPathResult = js.native
+  def evaluate(
+    expression: java.lang.String,
+    contextNode: Node,
+    resolver: js.Function1[/* prefix */ java.lang.String, java.lang.String | Null],
+    `type`: Double,
+    result: XPathResult
+  ): XPathResult = js.native
   def evaluate(expression: java.lang.String, contextNode: Node, resolver: Null, `type`: Double): XPathResult = js.native
   def evaluate(
     expression: java.lang.String,

@@ -1,39 +1,22 @@
 package org.scalablytyped.std
 
+import org.scalablytyped.std.anon.Mode
+import org.scalablytyped.std.anon.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ReadableStream extends _BodyInit {
-  val locked: scala.Boolean
-  def cancel(): js.Promise[Unit]
-  def getReader(): ReadableStreamReader
-}
-
-object ReadableStream {
-  @scala.inline
-  def apply(cancel: () => js.Promise[Unit], getReader: () => ReadableStreamReader, locked: scala.Boolean): ReadableStream = {
-    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), getReader = js.Any.fromFunction0(getReader), locked = locked.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ReadableStream]
-  }
-  @scala.inline
-  implicit class ReadableStreamOps[Self <: ReadableStream] (val x: Self) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setCancel(value: () => js.Promise[Unit]): Self = this.set("cancel", js.Any.fromFunction0(value))
-    @scala.inline
-    def setGetReader(value: () => ReadableStreamReader): Self = this.set("getReader", js.Any.fromFunction0(value))
-    @scala.inline
-    def setLocked(value: scala.Boolean): Self = this.set("locked", value.asInstanceOf[js.Any])
-  }
-  
+@js.native
+trait ReadableStream[R] extends js.Object {
+  val locked: scala.Boolean = js.native
+  def cancel(): js.Promise[Unit] = js.native
+  def cancel(reason: js.Any): js.Promise[Unit] = js.native
+  def getReader(): ReadableStreamDefaultReader[R] = js.native
+  def getReader(options: Mode): ReadableStreamBYOBReader = js.native
+  def pipeThrough[T](hasWritableReadable: Readable[R, T]): ReadableStream[T] = js.native
+  def pipeThrough[T](hasWritableReadable: Readable[R, T], options: PipeOptions): ReadableStream[T] = js.native
+  def pipeTo(dest: WritableStream[R]): js.Promise[Unit] = js.native
+  def pipeTo(dest: WritableStream[R], options: PipeOptions): js.Promise[Unit] = js.native
+  def tee(): js.Tuple2[ReadableStream[R], ReadableStream[R]] = js.native
 }
 

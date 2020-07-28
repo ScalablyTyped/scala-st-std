@@ -1,6 +1,7 @@
 package org.scalablytyped.std.global
 
-import org.scalablytyped.std.QueuingStrategy
+import org.scalablytyped.std.anon.HighWaterMark
+import org.scalablytyped.std.stdNumbers.`1`
 import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,15 +11,17 @@ import scala.scalajs.js.annotation._
 @js.native
 class CountQueuingStrategy protected ()
   extends org.scalablytyped.std.CountQueuingStrategy {
-  def this(strategy: QueuingStrategy) = this()
+  def this(options: HighWaterMark) = this()
   /* CompleteClass */
-  override var highWaterMark: Double = js.native
+  @JSName("highWaterMark")
+  override var highWaterMark_CountQueuingStrategy: Double = js.native
   /* CompleteClass */
-  override def size(): Double = js.native
+  @JSName("size")
+  override def size_MCountQueuingStrategy(chunk: js.Any): `1` = js.native
 }
 
 @JSGlobal("CountQueuingStrategy")
 @js.native
 object CountQueuingStrategy
-  extends Instantiable1[/* strategy */ QueuingStrategy, org.scalablytyped.std.CountQueuingStrategy]
+  extends Instantiable1[/* options */ HighWaterMark, org.scalablytyped.std.CountQueuingStrategy]
 

@@ -105,7 +105,7 @@ import org.scalablytyped.std.stdStrings.li
 import org.scalablytyped.std.stdStrings.line
 import org.scalablytyped.std.stdStrings.linearGradient
 import org.scalablytyped.std.stdStrings.link
-import org.scalablytyped.std.stdStrings.map_
+import org.scalablytyped.std.stdStrings.map
 import org.scalablytyped.std.stdStrings.mark
 import org.scalablytyped.std.stdStrings.marker
 import org.scalablytyped.std.stdStrings.marquee
@@ -150,7 +150,7 @@ import org.scalablytyped.std.stdStrings.sub
 import org.scalablytyped.std.stdStrings.sup
 import org.scalablytyped.std.stdStrings.svg
 import org.scalablytyped.std.stdStrings.switch
-import org.scalablytyped.std.stdStrings.symbol_
+import org.scalablytyped.std.stdStrings.symbol
 import org.scalablytyped.std.stdStrings.table
 import org.scalablytyped.std.stdStrings.tbody
 import org.scalablytyped.std.stdStrings.td
@@ -467,7 +467,7 @@ trait Element
   @JSName("closest")
   def closest_link(selector: link): HTMLLinkElement | Null = js.native
   @JSName("closest")
-  def closest_map(selector: map_): HTMLMapElement | Null = js.native
+  def closest_map(selector: map): HTMLMapElement | Null = js.native
   @JSName("closest")
   def closest_mark(selector: mark): HTMLElement | Null = js.native
   @JSName("closest")
@@ -559,7 +559,7 @@ trait Element
   @JSName("closest")
   def closest_switch(selector: switch): SVGSwitchElement | Null = js.native
   @JSName("closest")
-  def closest_symbol(selector: symbol_): SVGSymbolElement | Null = js.native
+  def closest_symbol(selector: symbol): SVGSymbolElement | Null = js.native
   @JSName("closest")
   def closest_table(selector: table): HTMLTableElement | Null = js.native
   @JSName("closest")
@@ -829,7 +829,7 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_link(qualifiedName: link): HTMLCollectionOf[HTMLLinkElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_map(qualifiedName: map_): HTMLCollectionOf[HTMLMapElement] = js.native
+  def getElementsByTagName_map(qualifiedName: map): HTMLCollectionOf[HTMLMapElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_mark(qualifiedName: mark): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
@@ -921,7 +921,7 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_switch(qualifiedName: switch): HTMLCollectionOf[SVGSwitchElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_symbol(qualifiedName: symbol_): HTMLCollectionOf[SVGSymbolElement] = js.native
+  def getElementsByTagName_symbol(qualifiedName: symbol): HTMLCollectionOf[SVGSymbolElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_table(qualifiedName: table): HTMLCollectionOf[HTMLTableElement] = js.native
   @JSName("getElementsByTagName")

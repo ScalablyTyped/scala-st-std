@@ -10,6 +10,9 @@ trait DocumentOrShadowRoot extends js.Object {
     * Retrieves a collection of styleSheet objects representing the style sheets that correspond to each instance of a link or style object in the document.
     */
   val styleSheets: StyleSheetList
+  def caretPositionFromPoint(x: Double, y: Double): CaretPosition | Null
+  /** @deprecated */
+  def caretRangeFromPoint(x: Double, y: Double): Range
   def elementFromPoint(x: Double, y: Double): Element | Null
   def elementsFromPoint(x: Double, y: Double): js.Array[Element]
   def getSelection(): Selection | Null
@@ -18,12 +21,14 @@ trait DocumentOrShadowRoot extends js.Object {
 object DocumentOrShadowRoot {
   @scala.inline
   def apply(
+    caretPositionFromPoint: (Double, Double) => CaretPosition | Null,
+    caretRangeFromPoint: (Double, Double) => Range,
     elementFromPoint: (Double, Double) => Element | Null,
     elementsFromPoint: (Double, Double) => js.Array[Element],
     getSelection: () => Selection | Null,
     styleSheets: StyleSheetList
   ): DocumentOrShadowRoot = {
-    val __obj = js.Dynamic.literal(elementFromPoint = js.Any.fromFunction2(elementFromPoint), elementsFromPoint = js.Any.fromFunction2(elementsFromPoint), getSelection = js.Any.fromFunction0(getSelection), styleSheets = styleSheets.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(caretPositionFromPoint = js.Any.fromFunction2(caretPositionFromPoint), caretRangeFromPoint = js.Any.fromFunction2(caretRangeFromPoint), elementFromPoint = js.Any.fromFunction2(elementFromPoint), elementsFromPoint = js.Any.fromFunction2(elementsFromPoint), getSelection = js.Any.fromFunction0(getSelection), styleSheets = styleSheets.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentOrShadowRoot]
   }
   @scala.inline
@@ -37,6 +42,10 @@ object DocumentOrShadowRoot {
         x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
         x
     }
+    @scala.inline
+    def setCaretPositionFromPoint(value: (Double, Double) => CaretPosition | Null): Self = this.set("caretPositionFromPoint", js.Any.fromFunction2(value))
+    @scala.inline
+    def setCaretRangeFromPoint(value: (Double, Double) => Range): Self = this.set("caretRangeFromPoint", js.Any.fromFunction2(value))
     @scala.inline
     def setElementFromPoint(value: (Double, Double) => Element | Null): Self = this.set("elementFromPoint", js.Any.fromFunction2(value))
     @scala.inline

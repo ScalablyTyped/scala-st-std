@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OESTextureHalfFloat extends js.Object {
-  val HALF_FLOAT_OES: Double
+  val HALF_FLOAT_OES: GLenum
 }
 
 object OESTextureHalfFloat {
   @scala.inline
-  def apply(HALF_FLOAT_OES: Double): OESTextureHalfFloat = {
+  def apply(HALF_FLOAT_OES: GLenum): OESTextureHalfFloat = {
     val __obj = js.Dynamic.literal(HALF_FLOAT_OES = HALF_FLOAT_OES.asInstanceOf[js.Any])
     __obj.asInstanceOf[OESTextureHalfFloat]
   }
@@ -26,7 +26,7 @@ object OESTextureHalfFloat {
         x
     }
     @scala.inline
-    def setHALF_FLOAT_OES(value: Double): Self = this.set("HALF_FLOAT_OES", value.asInstanceOf[js.Any])
+    def setHALF_FLOAT_OES(value: GLenum): Self = this.set("HALF_FLOAT_OES", value.asInstanceOf[js.Any])
   }
   
 }

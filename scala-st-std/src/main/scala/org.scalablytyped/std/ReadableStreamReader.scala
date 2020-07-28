@@ -4,20 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ReadableStreamReader extends js.Object {
+trait ReadableStreamReader[R] extends js.Object {
   def cancel(): js.Promise[Unit]
-  def read(): js.Promise[_]
+  def read(): js.Promise[ReadableStreamReadResult[R]]
   def releaseLock(): Unit
 }
 
 object ReadableStreamReader {
   @scala.inline
-  def apply(cancel: () => js.Promise[Unit], read: () => js.Promise[_], releaseLock: () => Unit): ReadableStreamReader = {
+  def apply[R](
+    cancel: () => js.Promise[Unit],
+    read: () => js.Promise[ReadableStreamReadResult[R]],
+    releaseLock: () => Unit
+  ): ReadableStreamReader[R] = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), read = js.Any.fromFunction0(read), releaseLock = js.Any.fromFunction0(releaseLock))
-    __obj.asInstanceOf[ReadableStreamReader]
+    __obj.asInstanceOf[ReadableStreamReader[R]]
   }
   @scala.inline
-  implicit class ReadableStreamReaderOps[Self <: ReadableStreamReader] (val x: Self) extends AnyVal {
+  implicit class ReadableStreamReaderOps[Self <: ReadableStreamReader[_], R] (val x: Self with ReadableStreamReader[R]) extends AnyVal {
     @scala.inline
     def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
     @scala.inline
@@ -30,7 +34,7 @@ object ReadableStreamReader {
     @scala.inline
     def setCancel(value: () => js.Promise[Unit]): Self = this.set("cancel", js.Any.fromFunction0(value))
     @scala.inline
-    def setRead(value: () => js.Promise[_]): Self = this.set("read", js.Any.fromFunction0(value))
+    def setRead(value: () => js.Promise[ReadableStreamReadResult[R]]): Self = this.set("read", js.Any.fromFunction0(value))
     @scala.inline
     def setReleaseLock(value: () => Unit): Self = this.set("releaseLock", js.Any.fromFunction0(value))
   }

@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EXTBlendMinmax extends js.Object {
-  val MAX_EXT: Double
-  val MIN_EXT: Double
+  val MAX_EXT: GLenum
+  val MIN_EXT: GLenum
 }
 
 object EXTBlendMinmax {
   @scala.inline
-  def apply(MAX_EXT: Double, MIN_EXT: Double): EXTBlendMinmax = {
+  def apply(MAX_EXT: GLenum, MIN_EXT: GLenum): EXTBlendMinmax = {
     val __obj = js.Dynamic.literal(MAX_EXT = MAX_EXT.asInstanceOf[js.Any], MIN_EXT = MIN_EXT.asInstanceOf[js.Any])
     __obj.asInstanceOf[EXTBlendMinmax]
   }
@@ -27,9 +27,9 @@ object EXTBlendMinmax {
         x
     }
     @scala.inline
-    def setMAX_EXT(value: Double): Self = this.set("MAX_EXT", value.asInstanceOf[js.Any])
+    def setMAX_EXT(value: GLenum): Self = this.set("MAX_EXT", value.asInstanceOf[js.Any])
     @scala.inline
-    def setMIN_EXT(value: Double): Self = this.set("MIN_EXT", value.asInstanceOf[js.Any])
+    def setMIN_EXT(value: GLenum): Self = this.set("MIN_EXT", value.asInstanceOf[js.Any])
   }
   
 }

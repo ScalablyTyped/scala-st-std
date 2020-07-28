@@ -10,7 +10,7 @@ trait DataView extends js.Object {
   val byteLength: Double = js.native
   val byteOffset: Double = js.native
   @JSName(js.Symbol.toStringTag)
-  val toStringTag: org.scalablytyped.std.stdStrings.DataView = js.native
+  val toStringTag: java.lang.String = js.native
   /**
     * Gets the Float32 value at the specified byte offset from the start of the view. There is
     * no alignment constraint; multi-byte values may be fetched from any offset.

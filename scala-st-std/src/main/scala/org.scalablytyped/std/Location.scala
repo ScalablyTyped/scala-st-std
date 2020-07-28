@@ -64,6 +64,7 @@ trait Location extends js.Object {
     * Reloads the current page.
     */
   def reload(): Unit = js.native
+  /** @deprecated */
   def reload(forcedReload: scala.Boolean): Unit = js.native
   /**
     * Removes the current page from the session history and navigates to the given URL.

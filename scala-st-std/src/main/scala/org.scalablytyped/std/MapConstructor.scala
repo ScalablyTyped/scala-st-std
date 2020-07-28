@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait MapConstructor
-  extends Instantiable0[Map[js.Object, js.Object]]
+  extends Instantiable0[Map[js.Any | js.Object, js.Any | js.Object]]
      with Instantiable1[
       (/* entries */ js.Array[js.Tuple2[js.Object, js.Object]]) | (/* iterable */ Iterable[js.Tuple2[js.Object, js.Object]]), 
       Map[js.Object, js.Object]

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class XPathNSResolver ()
   extends org.scalablytyped.std.XPathNSResolver {
   /* CompleteClass */
-  override def lookupNamespaceURI(prefix: java.lang.String): java.lang.String = js.native
+  override def lookupNamespaceURI(prefix: java.lang.String): java.lang.String | Null = js.native
 }
 
 @JSGlobal("XPathNSResolver")

@@ -21,12 +21,12 @@ class Request protected ()
   def this(input: RequestInfo) = this()
   def this(input: RequestInfo, init: RequestInit) = this()
   /* CompleteClass */
-  override val body: org.scalablytyped.std.ReadableStream | Null = js.native
+  override val body: org.scalablytyped.std.ReadableStream[org.scalablytyped.std.Uint8Array] | Null = js.native
   /* CompleteClass */
   override val bodyUsed: scala.Boolean = js.native
   /**
     * Returns the cache mode associated with request, which is a string indicating
-    * how the the request will interact with the browser's cache when fetching.
+    * how the request will interact with the browser's cache when fetching.
     */
   /* CompleteClass */
   override val cache: RequestCache = js.native

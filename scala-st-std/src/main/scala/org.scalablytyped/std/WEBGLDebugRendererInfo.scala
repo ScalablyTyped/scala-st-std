@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WEBGLDebugRendererInfo extends js.Object {
-  val UNMASKED_RENDERER_WEBGL: Double
-  val UNMASKED_VENDOR_WEBGL: Double
+  val UNMASKED_RENDERER_WEBGL: GLenum
+  val UNMASKED_VENDOR_WEBGL: GLenum
 }
 
 object WEBGLDebugRendererInfo {
   @scala.inline
-  def apply(UNMASKED_RENDERER_WEBGL: Double, UNMASKED_VENDOR_WEBGL: Double): WEBGLDebugRendererInfo = {
+  def apply(UNMASKED_RENDERER_WEBGL: GLenum, UNMASKED_VENDOR_WEBGL: GLenum): WEBGLDebugRendererInfo = {
     val __obj = js.Dynamic.literal(UNMASKED_RENDERER_WEBGL = UNMASKED_RENDERER_WEBGL.asInstanceOf[js.Any], UNMASKED_VENDOR_WEBGL = UNMASKED_VENDOR_WEBGL.asInstanceOf[js.Any])
     __obj.asInstanceOf[WEBGLDebugRendererInfo]
   }
@@ -27,9 +27,9 @@ object WEBGLDebugRendererInfo {
         x
     }
     @scala.inline
-    def setUNMASKED_RENDERER_WEBGL(value: Double): Self = this.set("UNMASKED_RENDERER_WEBGL", value.asInstanceOf[js.Any])
+    def setUNMASKED_RENDERER_WEBGL(value: GLenum): Self = this.set("UNMASKED_RENDERER_WEBGL", value.asInstanceOf[js.Any])
     @scala.inline
-    def setUNMASKED_VENDOR_WEBGL(value: Double): Self = this.set("UNMASKED_VENDOR_WEBGL", value.asInstanceOf[js.Any])
+    def setUNMASKED_VENDOR_WEBGL(value: GLenum): Self = this.set("UNMASKED_VENDOR_WEBGL", value.asInstanceOf[js.Any])
   }
   
 }

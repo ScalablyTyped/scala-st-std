@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Symbol extends js.Object {
   @JSName(js.Symbol.toStringTag)
-  val toStringTag: org.scalablytyped.std.stdStrings.Symbol = js.native
+  val toStringTag: java.lang.String = js.native
 }
 

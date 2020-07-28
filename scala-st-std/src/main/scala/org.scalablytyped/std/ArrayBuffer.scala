@@ -19,7 +19,7 @@ trait ArrayBuffer
     */
   val byteLength: Double = js.native
   @JSName(js.Symbol.toStringTag)
-  val toStringTag: org.scalablytyped.std.stdStrings.ArrayBuffer = js.native
+  val toStringTag: java.lang.String = js.native
   /**
     * Returns a section of an ArrayBuffer.
     */

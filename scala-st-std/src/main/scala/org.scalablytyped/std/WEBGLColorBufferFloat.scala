@@ -5,21 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WEBGLColorBufferFloat extends js.Object {
-  val FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT: Double
-  val RGB32F_EXT: Double
-  val RGBA32F_EXT: Double
-  val UNSIGNED_NORMALIZED_EXT: Double
+  val FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT: GLenum
+  val RGBA32F_EXT: GLenum
+  val UNSIGNED_NORMALIZED_EXT: GLenum
 }
 
 object WEBGLColorBufferFloat {
   @scala.inline
   def apply(
-    FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT: Double,
-    RGB32F_EXT: Double,
-    RGBA32F_EXT: Double,
-    UNSIGNED_NORMALIZED_EXT: Double
+    FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT: GLenum,
+    RGBA32F_EXT: GLenum,
+    UNSIGNED_NORMALIZED_EXT: GLenum
   ): WEBGLColorBufferFloat = {
-    val __obj = js.Dynamic.literal(FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT = FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT.asInstanceOf[js.Any], RGB32F_EXT = RGB32F_EXT.asInstanceOf[js.Any], RGBA32F_EXT = RGBA32F_EXT.asInstanceOf[js.Any], UNSIGNED_NORMALIZED_EXT = UNSIGNED_NORMALIZED_EXT.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT = FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT.asInstanceOf[js.Any], RGBA32F_EXT = RGBA32F_EXT.asInstanceOf[js.Any], UNSIGNED_NORMALIZED_EXT = UNSIGNED_NORMALIZED_EXT.asInstanceOf[js.Any])
     __obj.asInstanceOf[WEBGLColorBufferFloat]
   }
   @scala.inline
@@ -34,13 +32,11 @@ object WEBGLColorBufferFloat {
         x
     }
     @scala.inline
-    def setFRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT(value: Double): Self = this.set("FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT", value.asInstanceOf[js.Any])
+    def setFRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT(value: GLenum): Self = this.set("FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT", value.asInstanceOf[js.Any])
     @scala.inline
-    def setRGB32F_EXT(value: Double): Self = this.set("RGB32F_EXT", value.asInstanceOf[js.Any])
+    def setRGBA32F_EXT(value: GLenum): Self = this.set("RGBA32F_EXT", value.asInstanceOf[js.Any])
     @scala.inline
-    def setRGBA32F_EXT(value: Double): Self = this.set("RGBA32F_EXT", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setUNSIGNED_NORMALIZED_EXT(value: Double): Self = this.set("UNSIGNED_NORMALIZED_EXT", value.asInstanceOf[js.Any])
+    def setUNSIGNED_NORMALIZED_EXT(value: GLenum): Self = this.set("UNSIGNED_NORMALIZED_EXT", value.asInstanceOf[js.Any])
   }
   
 }
